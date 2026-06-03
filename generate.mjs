@@ -10,7 +10,7 @@
 import { createInterface } from "node:readline/promises";
 import { stdin as input, stdout as output } from "node:process";
 import { writeFileSync, existsSync, readFileSync } from "node:fs";
-import { renderTripHtml } from "./lib/render.mjs";
+import { renderTripHtml, buildKml } from "./lib/render.mjs";
 
 const rl = createInterface({ input, output });
 const C = { b: "\x1b[1m", d: "\x1b[2m", g: "\x1b[32m", c: "\x1b[36m", y: "\x1b[33m", r: "\x1b[0m" };
@@ -61,6 +61,11 @@ while (true) {
   console.log(`  ${C.g}✓${C.r} ${city} · ${nights}n${highlights.length ? ` · ${highlights.length} destaque(s)` : ""}`);
 }
 
+if (await askYes("\nA viagem inclui a China continental?", false)) {
+  trip.maps = "osm"; // China: Google Maps é bloqueado/deslocado; usa OpenStreetMap
+  console.log(`  ${C.d}↳ links de mapa usarão OpenStreetMap (preciso na China)${C.r}`);
+}
+
 if (await askYes("\nQuer registrar voos/trens?", false)) {
   console.log(`${C.d}— um por linha; Enter vazio na data para terminar.${C.r}`);
   trip.flights = [];
@@ -87,8 +92,12 @@ if (existsSync(jsonPath) && readFileSync(jsonPath, "utf8").trim()) {
 writeFileSync(jsonPath, JSON.stringify(trip, null, 2));
 const outPath = "my-trip.html";
 writeFileSync(outPath, renderTripHtml(trip));
+const kml = buildKml(trip);
+if (kml) writeFileSync("my-trip.kml", kml);
 
 console.log(`\n${C.g}${C.b}✅ Pronto!${C.r}`);
 console.log(`   ${C.b}${outPath}${C.r} — abra no navegador (ou imprima como PDF, A4 paisagem)`);
 console.log(`   ${C.b}${jsonPath}${C.r}  — seus dados; edite e rode ${C.c}node lib/render.mjs trip.json${C.r} para atualizar`);
-console.log(`\n${C.d}Dica: para detalhar um dia específico, edite "days" daquela parada no trip.json.${C.r}\n`);
+if (kml) console.log(`   ${C.b}my-trip.kml${C.r} — todos os pontos num mapa + offline (veja ${C.c}OFFLINE-MAPS.md${C.r})`);
+console.log(`\n${C.d}Dica: adicione "url", "tickets" e "coords":[lat,lon] aos itens no trip.json${C.r}`);
+console.log(`${C.d}para virarem links clicáveis e pontos no mapa.${C.r}\n`);

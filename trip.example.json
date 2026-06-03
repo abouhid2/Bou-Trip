@@ -3,6 +3,7 @@
   "emoji": "🇨🇳",
   "travelers": "Roteiro de 22 dias",
   "startDate": "2026-10-10",
+  "maps": "osm",
   "footer": "Exemplo gerado com trip-template · edite e rode: node lib/render.mjs trip.example.json",
   "stops": [
     {
@@ -18,9 +19,21 @@
       "city": "Istambul",
       "nights": 3,
       "days": [
-        [ { "type": "move", "text": "Pouso 11:15 · check-in Karaköy" }, { "type": "star", "text": "Hagia Sofia" }, "Cisterna Basílica" ],
-        [ { "type": "star", "text": "Topkapı + Harém" }, { "type": "star", "text": "Grand Bazaar" }, "Hammam · Galata à noite" ],
-        [ { "type": "move", "text": "Ferry → Büyükada" }, { "type": "star", "text": "Aya Yorgi" }, "Pernoite na ilha" ]
+        [
+          { "type": "move", "text": "Pouso 11:15 · check-in Karaköy" },
+          { "type": "star", "text": "Hagia Sofia", "url": "https://muze.gov.tr", "tickets": "https://muze.gov.tr", "coords": [41.0086, 28.9802] },
+          { "text": "Cisterna Basílica", "coords": [41.0084, 28.9779] }
+        ],
+        [
+          { "type": "star", "text": "Topkapı + Harém", "tickets": "https://muze.gov.tr", "coords": [41.0115, 28.9834] },
+          { "type": "star", "text": "Grand Bazaar", "coords": [41.0106, 28.9681] },
+          { "text": "Hammam · Galata à noite", "coords": [41.0256, 28.9744] }
+        ],
+        [
+          { "type": "move", "text": "Ferry → Büyükada" },
+          { "type": "star", "text": "Aya Yorgi", "coords": [40.8569, 29.1287] },
+          "Pernoite na ilha"
+        ]
       ]
     },
     {
@@ -36,26 +49,46 @@
       "city": "Pequim",
       "nights": 2,
       "days": [
-        [ "Pouso 05:50 · dia leve", "798 Art District", "Hutongs + craft beer" ],
-        [ { "type": "star", "text": "Muralha Mutianyu" }, "Teleférico + toboggan", "Pato laqueado" ]
+        [
+          "Pouso 05:50 · dia leve",
+          { "text": "798 Art District", "url": "https://www.798district.com/", "coords": [39.9847, 116.4951] },
+          "Hutongs + craft beer"
+        ],
+        [
+          { "type": "star", "text": "Muralha Mutianyu", "url": "https://www.mutianyugreatwall.com/", "tickets": "https://www.trip.com/", "coords": [40.4319, 116.5704] },
+          "Teleférico + toboggan",
+          "Pato laqueado"
+        ]
       ]
     },
     {
       "city": "Zhangjiajie",
       "nights": 3,
       "days": [
-        [ { "type": "move", "text": "✈ Pequim → Zhangjiajie" }, "Templo do Céu (manhã)", "Chegada noite" ],
-        [ { "type": "star", "text": "Tianmen Mountain" }, "Heaven's Gate · trilha vidro", { "type": "star", "text": "72 Wonder Tower (noite)" } ],
-        [ { "type": "star", "text": "Avatar Mountains" }, "Yuanjiajie + Tianzi", "Bailong Elevator (326m)" ]
+        [
+          { "type": "move", "text": "✈ Pequim → Zhangjiajie" },
+          { "text": "Templo do Céu (manhã)", "coords": [39.8822, 116.4066] },
+          "Chegada noite"
+        ],
+        [
+          { "type": "star", "text": "Tianmen Mountain", "tickets": "https://www.trip.com/", "coords": [29.0517, 110.4790] },
+          "Heaven's Gate · trilha vidro",
+          { "type": "star", "text": "72 Wonder Tower (noite)", "coords": [29.1163, 110.4790] }
+        ],
+        [
+          { "type": "star", "text": "Avatar Mountains", "tickets": "https://www.trip.com/", "coords": [29.3155, 110.4344] },
+          "Yuanjiajie + Tianzi",
+          "Bailong Elevator (326m)"
+        ]
       ]
     },
     {
       "city": "Furong",
       "nights": 1,
       "highlights": [
-        { "type": "star", "text": "Glass Bridge (430m)" },
+        { "type": "star", "text": "Glass Bridge (430m)", "tickets": "https://www.trip.com/", "coords": [29.3470, 110.5360] },
         { "type": "move", "text": "🚄 → Furong (30min)" },
-        { "type": "star", "text": "Cachoeira iluminada (noite)" }
+        { "type": "star", "text": "Cachoeira iluminada (noite)", "coords": [28.6800, 109.9990] }
       ]
     },
     {
@@ -64,7 +97,7 @@
       "highlights": [
         "Furong manhã (cachoeira)",
         { "type": "move", "text": "🚄 → Fenghuang (40min)" },
-        { "type": "star", "text": "Rio Tuojiang iluminado" }
+        { "type": "star", "text": "Rio Tuojiang iluminado", "coords": [27.9480, 109.5990] }
       ]
     },
     {
@@ -73,21 +106,53 @@
       "highlights": [
         { "type": "move", "text": "🚄 Fenghuang→Huaihua→Shangrao" },
         "Translado longo (~5-6h)",
-        { "type": "star", "text": "Wangxian Valley (noite)" }
+        { "type": "star", "text": "Wangxian Valley (noite)", "url": "https://www.trip.com/", "coords": [28.3300, 117.7800] }
       ]
     },
     {
       "city": "Shanghai",
       "nights": 8,
       "days": [
-        [ "Wangxian de manhã", { "type": "move", "text": "🚄 → Shanghai (~3h)" }, { "type": "star", "text": "The Bund à noite" } ],
-        [ "The Bund · Yu Garden", { "type": "star", "text": "Concessão Francesa" }, "Pudong / Shanghai Tower" ],
-        [ { "type": "move", "text": "🚄 Suzhou (30min)" }, { "type": "star", "text": "Humble Administrator's Garden" }, "Pingjiang · seda" ],
-        [ { "type": "move", "text": "🚄 Hangzhou (1h)" }, { "type": "star", "text": "West Lake" }, "Lingyin · chá Longjing" ],
-        [ { "type": "star", "text": "Water town" }, "Zhujiajiao ou Wuzhen", "Shanghai moderna (M50)" ],
-        [ { "type": "move", "text": "🚄 Nanjing (1h) — opcional" }, "Muralha Ming · Sun Yat-sen", "ou dia em Shanghai" ],
-        [ "Dia livre na cidade", "Rio Huangpu de barco", "Museus / bairros que faltaram" ],
-        [ "Compras finais", "Dia-colchão (buffer)", "Jantar de despedida" ]
+        [
+          "Wangxian de manhã",
+          { "type": "move", "text": "🚄 → Shanghai (~3h)" },
+          { "type": "star", "text": "The Bund à noite", "coords": [31.2397, 121.4900] }
+        ],
+        [
+          { "text": "Yu Garden", "coords": [31.2270, 121.4920] },
+          { "type": "star", "text": "Concessão Francesa", "coords": [31.2110, 121.4570] },
+          "Pudong / Shanghai Tower"
+        ],
+        [
+          { "type": "move", "text": "🚄 Suzhou (30min)" },
+          { "type": "star", "text": "Humble Administrator's Garden", "tickets": "https://www.trip.com/", "coords": [31.3260, 120.6290] },
+          "Pingjiang · seda"
+        ],
+        [
+          { "type": "move", "text": "🚄 Hangzhou (1h)" },
+          { "type": "star", "text": "West Lake", "coords": [30.2447, 120.1490] },
+          { "text": "Lingyin · chá Longjing", "coords": [30.2410, 120.0980] }
+        ],
+        [
+          { "type": "star", "text": "Water town" },
+          "Zhujiajiao ou Wuzhen",
+          "Shanghai moderna (M50)"
+        ],
+        [
+          { "type": "move", "text": "🚄 Nanjing (1h) — opcional" },
+          "Muralha Ming · Sun Yat-sen",
+          "ou dia em Shanghai"
+        ],
+        [
+          "Dia livre na cidade",
+          "Rio Huangpu de barco",
+          "Museus / bairros que faltaram"
+        ],
+        [
+          "Compras finais",
+          "Dia-colchão (buffer)",
+          "Jantar de despedida"
+        ]
       ]
     },
     {
