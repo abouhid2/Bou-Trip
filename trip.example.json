@@ -66,8 +66,8 @@
       "nights": 3,
       "days": [
         [
-          { "type": "move", "text": "✈ Pequim → Zhangjiajie" },
           { "text": "Templo do Céu (manhã)", "coords": [39.8822, 116.4066] },
+          { "type": "move", "text": "✈ Pequim → Zhangjiajie" },
           "Chegada noite"
         ],
         [
@@ -172,7 +172,7 @@
       "highlights": [
         "06:05 IST (conexão 3h55)",
         { "type": "move", "text": "TK15 10:00 → GRU 17:45" },
-        { "type": "move", "text": "GRU → GIG 20:45" }
+        { "type": "move", "text": "TK9187 19:45 → GIG 20:45" }
       ]
     }
   ],
