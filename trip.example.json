@@ -1,0 +1,121 @@
+{
+  "title": "China & Istambul — Outubro 2026",
+  "emoji": "🇨🇳",
+  "travelers": "Roteiro de 22 dias",
+  "startDate": "2026-10-10",
+  "footer": "Exemplo gerado com trip-template · edite e rode: node lib/render.mjs trip.example.json",
+  "stops": [
+    {
+      "city": "Embarque",
+      "nights": 1,
+      "transit": true,
+      "highlights": [
+        { "type": "move", "text": "Rio → GRU" },
+        { "type": "move", "text": "TK216 16:35 → Istambul" }
+      ]
+    },
+    {
+      "city": "Istambul",
+      "nights": 3,
+      "days": [
+        [ { "type": "move", "text": "Pouso 11:15 · check-in Karaköy" }, { "type": "star", "text": "Hagia Sofia" }, "Cisterna Basílica" ],
+        [ { "type": "star", "text": "Topkapı + Harém" }, { "type": "star", "text": "Grand Bazaar" }, "Hammam · Galata à noite" ],
+        [ { "type": "move", "text": "Ferry → Büyükada" }, { "type": "star", "text": "Aya Yorgi" }, "Pernoite na ilha" ]
+      ]
+    },
+    {
+      "city": "IST → Pequim",
+      "nights": 1,
+      "transit": true,
+      "highlights": [
+        { "type": "move", "text": "Ferry volta · Eminönü" },
+        { "type": "move", "text": "TK196 16:00 → Pequim" }
+      ]
+    },
+    {
+      "city": "Pequim",
+      "nights": 2,
+      "days": [
+        [ "Pouso 05:50 · dia leve", "798 Art District", "Hutongs + craft beer" ],
+        [ { "type": "star", "text": "Muralha Mutianyu" }, "Teleférico + toboggan", "Pato laqueado" ]
+      ]
+    },
+    {
+      "city": "Zhangjiajie",
+      "nights": 3,
+      "days": [
+        [ { "type": "move", "text": "✈ Pequim → Zhangjiajie" }, "Templo do Céu (manhã)", "Chegada noite" ],
+        [ { "type": "star", "text": "Tianmen Mountain" }, "Heaven's Gate · trilha vidro", { "type": "star", "text": "72 Wonder Tower (noite)" } ],
+        [ { "type": "star", "text": "Avatar Mountains" }, "Yuanjiajie + Tianzi", "Bailong Elevator (326m)" ]
+      ]
+    },
+    {
+      "city": "Furong",
+      "nights": 1,
+      "highlights": [
+        { "type": "star", "text": "Glass Bridge (430m)" },
+        { "type": "move", "text": "🚄 → Furong (30min)" },
+        { "type": "star", "text": "Cachoeira iluminada (noite)" }
+      ]
+    },
+    {
+      "city": "Fenghuang",
+      "nights": 1,
+      "highlights": [
+        "Furong manhã (cachoeira)",
+        { "type": "move", "text": "🚄 → Fenghuang (40min)" },
+        { "type": "star", "text": "Rio Tuojiang iluminado" }
+      ]
+    },
+    {
+      "city": "Wangxian Valley",
+      "nights": 1,
+      "highlights": [
+        { "type": "move", "text": "🚄 Fenghuang→Huaihua→Shangrao" },
+        "Translado longo (~5-6h)",
+        { "type": "star", "text": "Wangxian Valley (noite)" }
+      ]
+    },
+    {
+      "city": "Shanghai",
+      "nights": 8,
+      "days": [
+        [ "Wangxian de manhã", { "type": "move", "text": "🚄 → Shanghai (~3h)" }, { "type": "star", "text": "The Bund à noite" } ],
+        [ "The Bund · Yu Garden", { "type": "star", "text": "Concessão Francesa" }, "Pudong / Shanghai Tower" ],
+        [ { "type": "move", "text": "🚄 Suzhou (30min)" }, { "type": "star", "text": "Humble Administrator's Garden" }, "Pingjiang · seda" ],
+        [ { "type": "move", "text": "🚄 Hangzhou (1h)" }, { "type": "star", "text": "West Lake" }, "Lingyin · chá Longjing" ],
+        [ { "type": "star", "text": "Water town" }, "Zhujiajiao ou Wuzhen", "Shanghai moderna (M50)" ],
+        [ { "type": "move", "text": "🚄 Nanjing (1h) — opcional" }, "Muralha Ming · Sun Yat-sen", "ou dia em Shanghai" ],
+        [ "Dia livre na cidade", "Rio Huangpu de barco", "Museus / bairros que faltaram" ],
+        [ "Compras finais", "Dia-colchão (buffer)", "Jantar de despedida" ]
+      ]
+    },
+    {
+      "city": "Saída PVG",
+      "nights": 1,
+      "transit": true,
+      "highlights": [
+        "Maglev → PVG (430km/h)",
+        "PVG 4h+ antes (Turkish atrasa)",
+        { "type": "move", "text": "TK27 23:05 → IST" }
+      ]
+    },
+    {
+      "city": "Volta 🇧🇷",
+      "nights": 1,
+      "transit": true,
+      "highlights": [
+        "06:05 IST (conexão 3h55)",
+        { "type": "move", "text": "TK15 10:00 → GRU 17:45" },
+        { "type": "move", "text": "GRU → GIG 20:45" }
+      ]
+    }
+  ],
+  "flights": [
+    { "date": "2026-10-10", "flightNo": "TK216", "from": "GRU", "to": "IST", "dep": "16:35", "arr": "11:15+1" },
+    { "date": "2026-10-14", "flightNo": "TK196", "from": "IST", "to": "PEK", "dep": "16:00", "arr": "05:50+1" },
+    { "date": "2026-10-31", "flightNo": "TK27", "from": "PVG", "to": "IST", "dep": "23:05", "arr": "06:05+1" },
+    { "date": "2026-11-01", "flightNo": "TK15", "from": "IST", "to": "GRU", "dep": "10:00", "arr": "17:45" },
+    { "date": "2026-11-01", "flightNo": "TK9187", "from": "GRU", "to": "GIG", "dep": "19:45", "arr": "20:45" }
+  ]
+}

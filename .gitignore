@@ -1,1 +1,9 @@
 .DS_Store
+node_modules/
+
+# Seu roteiro pessoal vive em trip.json / my-trip.html.
+# Por padrão eles SÃO versionados (é o seu repo, a sua viagem).
+# Se preferir mantê-los fora do git, descomente:
+# trip.json
+# trip.backup.json
+# my-trip.html
