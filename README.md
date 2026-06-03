@@ -1,4 +1,4 @@
-# 🧳 trip-template
+# 🧳 Bou Trip
 
 Monte um roteiro de viagem respondendo perguntas e receba um **calendário visual em HTML**
 (responsivo no celular, imprimível em PDF). Sem instalar nada — só Node.
