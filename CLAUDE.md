@@ -8,6 +8,8 @@ informação no `trip.json` (descrições, endereços, coordenadas, links), melh
 
 ## 1. Entreviste a pessoa (em português, ou no idioma dela)
 Pergunte, de forma leve e uma coisa de cada vez:
+- **Em que idioma?** (vira `lang`). O HTML **sempre tem inglês + o idioma escolhido**, com um
+  toggle. Escreva todo o conteúdo nos **dois idiomas** (ver formato bilíngue abaixo).
 - **Para onde vai?** (uma ou várias cidades)
 - **Quando começa?** (data do 1º dia, formato AAAA-MM-DD)
 - **Quantas noites em cada parada?**
@@ -21,6 +23,15 @@ dados pessoais** (nomes, documentos, código de reserva): pergunte.
 
 ## 2. Monte o `trip.json`
 Escreva um `trip.json` seguindo o formato de **`trip.example.json`** (é o exemplo de referência).
+
+### Idioma (i18n)
+- `lang`: código do idioma principal (ex.: `"pt"`, `"es"`, `"fr"`, `"de"`, `"it"`). Inglês (`"en"`)
+  é **sempre** a alternativa do toggle. Se `lang` for `"en"` ou ausente, não há toggle.
+- **Qualquer texto pode ser bilíngue**: em vez de `"texto"`, use `{ "en": "...", "<lang>": "..." }`.
+  Vale para `title`, `travelers`, `footer`, `city`, a `note` do dia, e `text`/`note` dos itens.
+  Strings simples aparecem igual nos dois idiomas (bom para nomes próprios e `address`).
+- A UI (abas, botões, dias da semana) já é traduzida para en/pt/es/fr/de/it (outros caem em inglês).
+- **Sempre escreva o conteúdo nos dois idiomas** (en + lang) — é o que faz o toggle valer a pena.
 
 ### Nível da viagem
 - `title` (obrigatório na prática), `startDate` (obrigatório, AAAA-MM-DD)

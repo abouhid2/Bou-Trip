@@ -5,7 +5,7 @@ Monte um roteiro de viagem respondendo perguntas e receba um **calendário visua
 
 Dois jeitos de usar: **no terminal** ou **conversando com o Claude**.
 
-O HTML gerado tem **5 abas** — 📅 Calendário · 🗒️ Roteiro · 🚆 Transportes · 📍 Lugares · 🗺️ Mapa — **badges por cidade que filtram as 5 abas** (toque para ver só as cidades escolhidas; "Mostrar tudo" limpa), e cada lugar com **descrição**, **endereço**, links de **info**, **🎟️ ingresso** e **📍 mapa**. As 4 primeiras abas funcionam offline; a aba **Mapa** (Leaflet + OpenStreetMap) e os links precisam de internet.
+O HTML gerado tem **5 abas** — 📅 Calendário · 🗒️ Roteiro · 🚆 Transportes · 📍 Lugares · 🗺️ Mapa — **badges por cidade que filtram as 5 abas** (toque para ver só as cidades escolhidas; "Mostrar tudo" limpa), e cada lugar com **descrição**, **endereço**, links de **info**, **🎟️ ingresso** e **📍 mapa**. Tem **toggle de idioma** (inglês + o idioma da viagem) e, no Mapa, cada ponto abre no **app de mapa do celular / Google Maps / OSM**. As 4 primeiras abas funcionam offline; a aba **Mapa** (Leaflet + OpenStreetMap) e os links precisam de internet.
 
 ![exemplo](examples/china-2026/preview.png)
 
@@ -71,17 +71,19 @@ os links só precisam de internet quando você toca neles.
 ```jsonc
 {
   "title": "Minha Viagem",
+  "lang": "pt",                       // idioma principal; inglês é sempre a alternativa do toggle
   "startDate": "2026-10-10",          // 1º dia (AAAA-MM-DD) — as datas são calculadas daqui
   "maps": "google",                   // "google" (padrão) | "osm" (use na China continental)
   "stops": [
     {
-      "city": "Tóquio", "nights": 4,
+      // qualquer texto pode ser bilíngue: { "en": "...", "pt": "..." }
+      "city": { "pt": "Tóquio", "en": "Tokyo" }, "nights": 4,
       "days": [                        // um item por noite; objeto { note, items } dá visão geral do dia
-        { "note": "Chegada e bairros de Shibuya/Shinjuku.", "items": [
-          { "type": "move", "text": "Chegada Narita" }, "Check-in" ] },
-        { "note": "Templos e o lado tradicional.", "items": [
+        { "note": { "pt": "Chegada e Shibuya.", "en": "Arrival and Shibuya." }, "items": [
+          { "type": "move", "text": { "pt": "Chegada Narita", "en": "Arrive Narita" } } ] },
+        { "note": { "pt": "Templos.", "en": "Temples." }, "items": [
           { "type": "star", "text": "Senso-ji",
-            "note": "O templo budista mais antigo de Tóquio, em Asakusa.",
+            "note": { "pt": "Templo budista mais antigo de Tóquio.", "en": "Tokyo's oldest Buddhist temple." },
             "address": "2-3-1 Asakusa, Taito City, Tokyo",
             "url": "https://...", "tickets": "https://...", "coords": [35.7148, 139.7967] } ] }
       ]

@@ -39,7 +39,8 @@ console.log(`\n${C.b}🧳 Montador de Roteiro${C.r} ${C.d}— responda e geramos
 const trip = {};
 trip.title = await ask("Nome da viagem", "Minha Viagem");
 trip.emoji = await ask("Emoji do título", "🧳");
-trip.travelers = await ask("Quem vai (ex.: Alex & Bia) — opcional", "");
+trip.lang = (await ask("Idioma principal (código: pt, en, es, fr, de, it)", "pt")).toLowerCase();
+trip.travelers = await ask("Quem vai — opcional", "");
 trip.startDate = await askDate("Data de início (1º dia)", "");
 
 console.log(`\n${C.b}Paradas${C.r} ${C.d}— cidade por cidade, na ordem da viagem. Enter vazio para terminar.${C.r}`);
@@ -99,5 +100,7 @@ console.log(`\n${C.g}${C.b}✅ Pronto!${C.r}`);
 console.log(`   ${C.b}${outPath}${C.r} — abra no navegador (ou imprima como PDF, A4 paisagem)`);
 console.log(`   ${C.b}${jsonPath}${C.r}  — seus dados; edite e rode ${C.c}node lib/render.mjs trip.json${C.r} para atualizar`);
 if (kml) console.log(`   ${C.b}my-trip.kml${C.r} — todos os pontos num mapa + offline (veja ${C.c}OFFLINE-MAPS.md${C.r})`);
-console.log(`\n${C.d}Dica: adicione "url", "tickets" e "coords":[lat,lon] aos itens no trip.json${C.r}`);
-console.log(`${C.d}para virarem links clicáveis e pontos no mapa.${C.r}\n`);
+console.log(`\n${C.d}Dica: adicione "url", "tickets", "coords":[lat,lon] e "address" aos itens no trip.json${C.r}`);
+console.log(`${C.d}para virarem links clicáveis, endereços e pontos no mapa.${C.r}`);
+console.log(`${C.d}Para conteúdo em 2 idiomas, use { "en": "...", "${trip.lang}": "..." } nos textos${C.r}`);
+console.log(`${C.d}(o HTML já tem toggle inglês ↔ ${trip.lang}). Ou peça ao Claude para traduzir.${C.r}\n`);

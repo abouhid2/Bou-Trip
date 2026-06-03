@@ -1,87 +1,88 @@
 {
-  "title": "China & Istambul — Outubro 2026",
+  "title": { "pt": "China & Istambul — Outubro 2026", "en": "China & Istanbul — October 2026" },
   "emoji": "🇨🇳",
-  "travelers": "Roteiro de 22 dias",
+  "lang": "pt",
+  "travelers": { "pt": "Roteiro de 22 dias", "en": "22-day trip" },
   "startDate": "2026-10-10",
   "maps": "osm",
-  "footer": "Exemplo gerado com trip-template · edite e rode: node lib/render.mjs trip.example.json",
+  "footer": { "pt": "Exemplo gerado com trip-template · edite e rode: node lib/render.mjs trip.example.json", "en": "Example generated with trip-template · edit and run: node lib/render.mjs trip.example.json" },
   "stops": [
     {
-      "city": "Embarque",
+      "city": { "pt": "Embarque", "en": "Departure" },
       "nights": 1,
       "transit": true,
       "days": [
         {
-          "note": "Saída do Brasil rumo à China, com stopover de 3 noites em Istambul. Chegue em GRU com 3h de antecedência por ser voo internacional.",
+          "note": { "pt": "Saída do Brasil rumo à China, com stopover de 3 noites em Istambul. Chegue em GRU com 3h de antecedência por ser voo internacional.", "en": "Departure from Brazil to China, with a 3-night stopover in Istanbul. Get to GRU 3h early — it's an international flight." },
           "items": [
-            { "type": "move", "text": "Rio → GRU", "note": "De avião ou ônibus até o terminal internacional de Guarulhos." },
-            { "type": "move", "text": "TK216 16:35 → Istambul", "note": "Ajuste o relógio para o fuso de Istambul (+6h em relação ao horário de Brasília) assim que embarcar." }
+            { "type": "move", "text": { "pt": "Rio → GRU", "en": "Rio → GRU" }, "note": { "pt": "De avião ou ônibus até o terminal internacional de Guarulhos.", "en": "By plane or bus to the international terminal in Guarulhos." } },
+            { "type": "move", "text": { "pt": "TK216 16:35 → Istambul", "en": "TK216 16:35 → Istanbul" }, "note": { "pt": "Ajuste o relógio para o fuso de Istambul (+6h em relação a Brasília) assim que embarcar.", "en": "Set your watch to Istanbul time (+6h vs Brasília) as soon as you board." } }
           ]
         }
       ]
     },
     {
-      "city": "Istambul",
+      "city": { "pt": "Istambul", "en": "Istanbul" },
       "nights": 3,
       "days": [
         {
-          "note": "Chegada e tarde no coração histórico de Sultanahmet. Entrar nos monumentos perto do fim do dia evita as filas.",
+          "note": { "pt": "Chegada e tarde no coração histórico de Sultanahmet. Entrar nos monumentos perto do fim do dia evita as filas.", "en": "Arrival and afternoon in the historic heart of Sultanahmet. Entering the sites late in the day avoids the lines." },
           "items": [
-            { "type": "move", "text": "Pouso 11:15 · check-in Karaköy", "note": "Transfer ao hotel pelo Havaist bus ou táxi (~50min sem trânsito)." },
-            { "type": "star", "text": "Hagia Sofia", "url": "https://muze.gen.tr/muze-detay/ayasofya", "tickets": "https://muze.gen.tr", "coords": [41.0086, 28.9802], "address": "Sultanahmet, Ayasofya Meydanı No:1, 34122 Fatih/İstanbul", "note": "A antiga basílica bizantina (hoje mesquita); o ingresso dá acesso à galeria superior com os mosaicos. Bilheteria oficial: DEM Museums." },
-            { "text": "Cisterna Basílica", "coords": [41.0084, 28.9779], "address": "Alemdar, Yerebatan Cd. 1/3, 34110 Fatih/İstanbul", "note": "Cisterna romana subterrânea, recém-reformada, com iluminação nova — fica ao lado da Hagia Sofia." }
+            { "type": "move", "text": { "pt": "Pouso 11:15 · check-in Karaköy", "en": "Land 11:15 · check-in Karaköy" }, "note": { "pt": "Transfer ao hotel pelo Havaist bus ou táxi (~50min sem trânsito).", "en": "Transfer to the hotel by Havaist bus or taxi (~50min without traffic)." } },
+            { "type": "star", "text": "Hagia Sofia", "url": "https://muze.gen.tr/muze-detay/ayasofya", "tickets": "https://muze.gen.tr", "coords": [41.0086, 28.9802], "address": "Sultanahmet, Ayasofya Meydanı No:1, 34122 Fatih/İstanbul", "note": { "pt": "A antiga basílica bizantina (hoje mesquita); o ingresso dá acesso à galeria superior com os mosaicos. Bilheteria oficial: DEM Museums.", "en": "The ancient Byzantine basilica (now a mosque); the ticket gives access to the upper gallery with the mosaics. Official seller: DEM Museums." } },
+            { "text": { "pt": "Cisterna Basílica", "en": "Basilica Cistern" }, "coords": [41.0084, 28.9779], "address": "Alemdar, Yerebatan Cd. 1/3, 34110 Fatih/İstanbul", "note": { "pt": "Cisterna romana subterrânea, recém-reformada, com iluminação nova — fica ao lado da Hagia Sofia.", "en": "Underground Roman cistern, recently restored with new lighting — right next to Hagia Sophia." } }
           ]
         },
         {
-          "note": "Dia cheio de palácios e bazar, fechando com hammam e a Torre de Gálata iluminada à noite.",
+          "note": { "pt": "Dia cheio de palácios e bazar, fechando com hammam e a Torre de Gálata iluminada à noite.", "en": "A full day of palaces and bazaar, ending with a hammam and the Galata Tower lit up at night." },
           "items": [
-            { "type": "star", "text": "Topkapı + Harém", "url": "https://muze.gen.tr", "tickets": "https://muze.gen.tr", "coords": [41.0115, 28.9834], "address": "Cankurtaran, 34122 Fatih/İstanbul", "note": "Palácio dos sultões otomanos; o ingresso do Harém é separado e vale a pena (~3h no total)." },
-            { "type": "star", "text": "Grand Bazaar", "coords": [41.0106, 28.9681], "address": "Beyazıt, Kalpakçılar Cd. No:22, 34126 Fatih/İstanbul", "note": "4000 lojas de tapetes, joias e cerâmica İznik; negocie para ~40-50% do preço inicial." },
-            { "text": "Hammam · Galata à noite", "coords": [41.0256, 28.9744], "address": "Bereketzade, Galata Kulesi, 34421 Beyoğlu/İstanbul", "note": "Banho turco no Kılıç Ali Paşa (reserve com 1 semana) e a Torre de Gálata iluminada (entrada até 22h)." }
+            { "type": "star", "text": { "pt": "Topkapı + Harém", "en": "Topkapı + Harem" }, "url": "https://muze.gen.tr", "tickets": "https://muze.gen.tr", "coords": [41.0115, 28.9834], "address": "Cankurtaran, 34122 Fatih/İstanbul", "note": { "pt": "Palácio dos sultões otomanos; o ingresso do Harém é separado e vale a pena (~3h no total).", "en": "Palace of the Ottoman sultans; the Harem ticket is separate and worth it (~3h total)." } },
+            { "type": "star", "text": "Grand Bazaar", "coords": [41.0106, 28.9681], "address": "Beyazıt, Kalpakçılar Cd. No:22, 34126 Fatih/İstanbul", "note": { "pt": "4000 lojas de tapetes, joias e cerâmica İznik; negocie para ~40-50% do preço inicial.", "en": "4,000 shops of rugs, jewelry and İznik ceramics; haggle down to ~40-50% of the first price." } },
+            { "text": { "pt": "Hammam · Galata à noite", "en": "Hammam · Galata at night" }, "coords": [41.0256, 28.9744], "address": "Bereketzade, Galata Kulesi, 34421 Beyoğlu/İstanbul", "note": { "pt": "Banho turco no Kılıç Ali Paşa (reserve com 1 semana) e a Torre de Gálata iluminada (entrada até 22h).", "en": "Turkish bath at Kılıç Ali Paşa (book 1 week ahead) and the Galata Tower lit up (entry until 22h)." } }
           ]
         },
         {
-          "note": "Bate-volta tranquilo de ferry à ilha de Büyükada, com pernoite fora da cidade.",
+          "note": { "pt": "Bate-volta tranquilo de ferry à ilha de Büyükada, com pernoite fora da cidade.", "en": "Relaxed ferry day trip to Büyükada island, with an overnight away from the city." },
           "items": [
-            { "type": "move", "text": "Ferry → Büyükada", "note": "1h20 de travessia saindo de Kabataş; não há carros na ilha, alugue uma bicicleta." },
-            { "type": "star", "text": "Aya Yorgi", "coords": [40.8569, 29.1287], "address": "Büyükada, Adalar/İstanbul", "note": "Mosteiro grego ortodoxo no ponto mais alto, com vista 360° do mar de Mármara." },
-            { "text": "Pernoite na ilha", "note": "A ilha esvazia após o último ferry de turistas — noite quieta, ex.: no Splendid Palace (1908)." }
+            { "type": "move", "text": { "pt": "Ferry → Büyükada", "en": "Ferry → Büyükada" }, "note": { "pt": "1h20 de travessia saindo de Kabataş; não há carros na ilha, alugue uma bicicleta.", "en": "1h20 crossing from Kabataş; no cars on the island, rent a bike." } },
+            { "type": "star", "text": "Aya Yorgi", "coords": [40.8569, 29.1287], "address": "Büyükada, Adalar/İstanbul", "note": { "pt": "Mosteiro grego ortodoxo no ponto mais alto, com vista 360° do mar de Mármara.", "en": "Greek Orthodox monastery at the highest point, with 360° views of the Sea of Marmara." } },
+            { "text": { "pt": "Pernoite na ilha", "en": "Overnight on the island" }, "note": { "pt": "A ilha esvazia após o último ferry de turistas — noite quieta, ex.: no Splendid Palace (1908).", "en": "The island empties after the last tourist ferry — a quiet night, e.g. at the Splendid Palace (1908)." } }
           ]
         }
       ]
     },
     {
-      "city": "IST → Pequim",
+      "city": { "pt": "IST → Pequim", "en": "IST → Beijing" },
       "nights": 1,
       "transit": true,
       "days": [
         {
-          "note": "Manhã final em Istambul e voo intercontinental para a China.",
+          "note": { "pt": "Manhã final em Istambul e voo intercontinental para a China.", "en": "Final morning in Istanbul and the intercontinental flight to China." },
           "items": [
-            { "type": "move", "text": "Ferry volta · Eminönü", "note": "Volta de ferry e almoço rápido de balık ekmek (sanduíche de peixe) no Corno de Ouro." },
-            { "type": "move", "text": "TK196 16:00 → Pequim", "note": "Ajuste o relógio para o fuso de Pequim (+11h em relação ao Brasil). A Turkish costuma atrasar nessa rota." }
+            { "type": "move", "text": { "pt": "Ferry volta · Eminönü", "en": "Ferry back · Eminönü" }, "note": { "pt": "Volta de ferry e almoço rápido de balık ekmek (sanduíche de peixe) no Corno de Ouro.", "en": "Ferry back and a quick balık ekmek (fish sandwich) lunch at the Golden Horn." } },
+            { "type": "move", "text": { "pt": "TK196 16:00 → Pequim", "en": "TK196 16:00 → Beijing" }, "note": { "pt": "Ajuste o relógio para o fuso de Pequim (+11h vs Brasil). A Turkish costuma atrasar nessa rota.", "en": "Set your watch to Beijing time (+11h vs Brazil). Turkish often runs late on this route." } }
           ]
         }
       ]
     },
     {
-      "city": "Pequim",
+      "city": { "pt": "Pequim", "en": "Beijing" },
       "nights": 2,
       "days": [
         {
-          "note": "Chegada de madrugada e dia leve para vencer o jet lag, com compras de frio e arte urbana.",
+          "note": { "pt": "Chegada de madrugada e dia leve para vencer o jet lag, com compras de frio e arte urbana.", "en": "Pre-dawn arrival and an easy day to beat jet lag, with cold-weather shopping and street art." },
           "items": [
-            { "text": "Pouso 05:50 · dia leve", "note": "Imigração + transfer (~1h ao centro). Cochilo controlado de 1-2h, não mais, para regular o sono." },
-            { "text": "798 Art District", "url": "https://www.798district.com/", "coords": [39.9847, 116.4951], "address": "2-4 Jiuxianqiao Rd, Chaoyang District, Beijing · 北京市朝阳区酒仙桥路2-4号", "note": "Antiga zona industrial Bauhaus virada em galerias e arte urbana — passeio de ritmo leve." },
-            { "text": "Hutongs + craft beer", "note": "Becos antigos de Beiluoguxiang e cerveja artesanal na Great Leap Brewing. Compre HEATTECH na UNIQLO Wangfujing para a muralha amanhã." }
+            { "text": { "pt": "Pouso 05:50 · dia leve", "en": "Land 05:50 · easy day" }, "note": { "pt": "Imigração + transfer (~1h ao centro). Cochilo controlado de 1-2h, não mais, para regular o sono.", "en": "Immigration + transfer (~1h to the center). A controlled 1-2h nap, no more, to reset your sleep." } },
+            { "text": "798 Art District", "url": "https://www.798district.com/", "coords": [39.9847, 116.4951], "address": "2-4 Jiuxianqiao Rd, Chaoyang District, Beijing · 北京市朝阳区酒仙桥路2-4号", "note": { "pt": "Antiga zona industrial Bauhaus virada em galerias e arte urbana — passeio de ritmo leve.", "en": "Former Bauhaus industrial zone turned into galleries and street art — an easy-paced walk." } },
+            { "text": { "pt": "Hutongs + cerveja artesanal", "en": "Hutongs + craft beer" }, "note": { "pt": "Becos antigos de Beiluoguxiang e cerveja artesanal na Great Leap Brewing. Compre HEATTECH na UNIQLO Wangfujing para a muralha amanhã.", "en": "Old Beiluoguxiang alleys and craft beer at Great Leap Brewing. Buy HEATTECH at UNIQLO Wangfujing for the wall tomorrow." } }
           ]
         },
         {
-          "note": "Dia inteiro na Grande Muralha — o único dia de muralha, leve roupa de frio (gorro, luvas, primeira pele).",
+          "note": { "pt": "Dia inteiro na Grande Muralha — o único dia de muralha, leve roupa de frio (gorro, luvas, primeira pele).", "en": "Full day on the Great Wall — the only wall day, bring warm clothes (beanie, gloves, base layer)." },
           "items": [
-            { "type": "star", "text": "Muralha Mutianyu", "url": "https://en.mutianyugreatwall.com/", "tickets": "https://en.mutianyugreatwall.com/reservation-center/tickets", "coords": [40.4319, 116.5704], "address": "Mutianyu Village, Bohai Town, Huairou District, Beijing · 北京市怀柔区渤海镇慕田峪村", "note": "Trecho menos turístico que Badaling. Suba de teleférico, caminhe entre as torres 14-20. Transfer privado via DiDi ou hotel." },
-            { "text": "Teleférico + toboggan", "note": "A descida pode ser de toboggan (trenó de montanha de 1.580m) — você controla a velocidade." },
-            { "text": "Pato laqueado", "note": "Jantar reconfortante de pato laqueado no Siji Minfu após o dia pesado de caminhada." }
+            { "type": "star", "text": { "pt": "Muralha Mutianyu", "en": "Mutianyu Great Wall" }, "url": "https://en.mutianyugreatwall.com/", "tickets": "https://en.mutianyugreatwall.com/reservation-center/tickets", "coords": [40.4319, 116.5704], "address": "Mutianyu Village, Bohai Town, Huairou District, Beijing · 北京市怀柔区渤海镇慕田峪村", "note": { "pt": "Trecho menos turístico que Badaling. Suba de teleférico, caminhe entre as torres 14-20. Transfer privado via DiDi ou hotel.", "en": "Less touristy than Badaling. Go up by cable car, walk between towers 14-20. Private transfer via DiDi or hotel." } },
+            { "text": { "pt": "Teleférico + toboggan", "en": "Cable car + toboggan" }, "note": { "pt": "A descida pode ser de toboggan (trenó de montanha de 1.580m) — você controla a velocidade.", "en": "You can go down by toboggan (a 1,580m mountain slide) — you control the speed." } },
+            { "text": { "pt": "Pato laqueado", "en": "Peking duck" }, "note": { "pt": "Jantar reconfortante de pato laqueado no Siji Minfu após o dia pesado de caminhada.", "en": "Comforting Peking duck dinner at Siji Minfu after the long day of walking." } }
           ]
         }
       ]
@@ -91,27 +92,27 @@
       "nights": 3,
       "days": [
         {
-          "note": "Manhã final em Pequim e voo para as montanhas de Zhangjiajie (as 'montanhas Avatar').",
+          "note": { "pt": "Manhã final em Pequim e voo para as montanhas de Zhangjiajie (as 'montanhas Avatar').", "en": "Final morning in Beijing and the flight to the Zhangjiajie mountains (the 'Avatar mountains')." },
           "items": [
-            { "type": "move", "text": "✈ Pequim → Zhangjiajie", "note": "Voo direto ~2h30 (só 2/dia). Backup: voar a Changsha e pegar trem-bala de 2h." },
-            { "text": "Templo do Céu (manhã)", "coords": [39.8822, 116.4066], "address": "7 Tiantan Dongli, Dongcheng District, Beijing 100061 · 北京市东城区天坛内东里7号", "note": "Parque cheio de locais fazendo tai chi de manhã — atmosfera única antes de ir ao aeroporto." },
-            { "text": "Chegada noite", "note": "Hotel em Wulingyuan, perto do parque. A cozinha de Hunan é bem apimentada — diga 'bù là' (不辣) para pedir sem pimenta." }
+            { "type": "move", "text": { "pt": "✈ Pequim → Zhangjiajie", "en": "✈ Beijing → Zhangjiajie" }, "note": { "pt": "Voo direto ~2h30 (só 2/dia). Backup: voar a Changsha e pegar trem-bala de 2h.", "en": "Direct flight ~2h30 (only 2/day). Backup: fly to Changsha and take a 2h bullet train." } },
+            { "text": { "pt": "Templo do Céu (manhã)", "en": "Temple of Heaven (morning)" }, "coords": [39.8822, 116.4066], "address": "7 Tiantan Dongli, Dongcheng District, Beijing 100061 · 北京市东城区天坛内东里7号", "note": { "pt": "Parque cheio de locais fazendo tai chi de manhã — atmosfera única antes de ir ao aeroporto.", "en": "A park full of locals doing tai chi in the morning — a unique vibe before heading to the airport." } },
+            { "text": { "pt": "Chegada noite", "en": "Evening arrival" }, "note": { "pt": "Hotel em Wulingyuan, perto do parque. A cozinha de Hunan é apimentada — diga 'bù là' (不辣) para sem pimenta.", "en": "Hotel in Wulingyuan, near the park. Hunan food is spicy — say 'bù là' (不辣) for no chili." } }
           ]
         },
         {
-          "note": "Tianmen Mountain de dia e o espetáculo noturno do 72 Wonder Tower.",
+          "note": { "pt": "Tianmen Mountain de dia e o espetáculo noturno do 72 Wonder Tower.", "en": "Tianmen Mountain by day and the 72 Wonder Tower night show." },
           "items": [
-            { "type": "star", "text": "Tianmen Mountain", "tickets": "https://www.klook.com/en-US/search/?query=Tianmen%20Mountain%20Zhangjiajie", "coords": [29.0517, 110.4790], "address": "Tianmen Mountain Cableway Lower Station, Yongding District, Zhangjiajie · 张家界市永定区天门山索道下站", "note": "Teleférico de 7,5km (o mais longo do mundo), 999 degraus, o portal 'Heaven's Gate' e a trilha de vidro no penhasco." },
-            { "text": "Heaven's Gate · trilha vidro" },
-            { "type": "star", "text": "72 Wonder Tower (noite)", "coords": [29.1163, 110.4790], "address": "Wulingyuan District, Zhangjiajie · 张家界市武陵源区", "note": "Maior prédio em palafita do mundo (recorde Guinness); à noite, 3000 lâmpadas + projeções holográficas 7D." }
+            { "type": "star", "text": "Tianmen Mountain", "tickets": "https://www.klook.com/en-US/search/?query=Tianmen%20Mountain%20Zhangjiajie", "coords": [29.0517, 110.4790], "address": "Tianmen Mountain Cableway Lower Station, Yongding District, Zhangjiajie · 张家界市永定区天门山索道下站", "note": { "pt": "Teleférico de 7,5km (o mais longo do mundo), 999 degraus, o portal 'Heaven's Gate' e a trilha de vidro no penhasco.", "en": "7.5km cable car (longest in the world), 999 steps, the 'Heaven's Gate' arch and the glass walkway on the cliff." } },
+            { "text": { "pt": "Heaven's Gate · trilha de vidro", "en": "Heaven's Gate · glass walkway" } },
+            { "type": "star", "text": "72 Wonder Tower", "coords": [29.1163, 110.4790], "address": "Wulingyuan District, Zhangjiajie · 张家界市武陵源区", "note": { "pt": "Maior prédio em palafita do mundo (recorde Guinness); à noite, 3000 lâmpadas + projeções holográficas 7D.", "en": "World's tallest stilt building (Guinness record); at night, 3,000 lamps + 7D holographic projections." } }
           ]
         },
         {
-          "note": "O parque nacional que inspirou as montanhas flutuantes de Avatar.",
+          "note": { "pt": "O parque nacional que inspirou as montanhas flutuantes de Avatar.", "en": "The national park that inspired the floating mountains in Avatar." },
           "items": [
-            { "type": "star", "text": "Avatar Mountains", "tickets": "https://www.klook.com/en-US/search/?query=Zhangjiajie%20National%20Forest%20Park", "coords": [29.3155, 110.4344], "address": "Zhangjiajie National Forest Park, Wulingyuan District, Zhangjiajie · 张家界国家森林公园 (武陵源区)", "note": "Entrada por Wulingyuan (ingresso vale 4 dias); ônibus internos do parque circulam entre os mirantes." },
+            { "type": "star", "text": "Avatar Mountains", "tickets": "https://www.klook.com/en-US/search/?query=Zhangjiajie%20National%20Forest%20Park", "coords": [29.3155, 110.4344], "address": "Zhangjiajie National Forest Park, Wulingyuan District, Zhangjiajie · 张家界国家森林公园 (武陵源区)", "note": { "pt": "Entrada por Wulingyuan (ingresso vale 4 dias); ônibus internos do parque circulam entre os mirantes.", "en": "Enter via Wulingyuan (ticket valid 4 days); internal park buses run between the viewpoints." } },
             { "text": "Yuanjiajie + Tianzi" },
-            { "text": "Bailong Elevator (326m)", "note": "Elevador de vidro de 326m cravado no penhasco — sobe em ~2min." }
+            { "text": { "pt": "Bailong Elevator (326m)", "en": "Bailong Elevator (326m)" }, "note": { "pt": "Elevador de vidro de 326m cravado no penhasco — sobe em ~2min.", "en": "326m glass elevator set into the cliff — goes up in ~2min." } }
           ]
         }
       ]
@@ -121,11 +122,11 @@
       "nights": 1,
       "days": [
         {
-          "note": "Glass Bridge de manhã e, à tarde, a vila milenar Tujia construída sobre uma cachoeira.",
+          "note": { "pt": "Glass Bridge de manhã e, à tarde, a vila milenar Tujia construída sobre uma cachoeira.", "en": "Glass Bridge in the morning and, in the afternoon, the ancient Tujia town built over a waterfall." },
           "items": [
-            { "type": "star", "text": "Glass Bridge (430m)", "tickets": "https://www.klook.com/en-US/activity/6602-grand-canyon-glass-bridge-tickets-zhangjiajie/", "coords": [29.3470, 110.5360], "address": "Zhangjiajie Grand Canyon Scenic Area, Sanguansi, Cili County · 张家界慈利县三官寺大峡谷风景区", "note": "Ponte de vidro de 430m sobre o Grand Canyon; ingresso combo ¥178, reserva antecipada e passaporte obrigatórios." },
-            { "type": "move", "text": "🚄 → Furong (30min)", "note": "Trem-bala de Zhangjiajie West até Furongzhen, 30min, mesma linha." },
-            { "type": "star", "text": "Cachoeira iluminada (noite)", "coords": [28.6800, 109.9990], "address": "Furong Ancient Town (Wangcun), Yongshun County, Xiangxi · 湘西州永顺县芙蓉镇", "note": "A vila é construída sobre uma grande cachoeira; à noite ela é iluminada e dá pra passar por trás da queda d'água. Bem menos turística que Fenghuang." }
+            { "type": "star", "text": "Glass Bridge (430m)", "tickets": "https://www.klook.com/en-US/activity/6602-grand-canyon-glass-bridge-tickets-zhangjiajie/", "coords": [29.3470, 110.5360], "address": "Zhangjiajie Grand Canyon Scenic Area, Sanguansi, Cili County · 张家界慈利县三官寺大峡谷风景区", "note": { "pt": "Ponte de vidro de 430m sobre o Grand Canyon; ingresso combo ¥178, reserva antecipada e passaporte obrigatórios.", "en": "430m glass bridge over the Grand Canyon; ¥178 combo ticket, advance booking and passport required." } },
+            { "type": "move", "text": { "pt": "🚄 → Furong (30min)", "en": "🚄 → Furong (30min)" }, "note": { "pt": "Trem-bala de Zhangjiajie West até Furongzhen, 30min, mesma linha.", "en": "Bullet train from Zhangjiajie West to Furongzhen, 30min, same line." } },
+            { "type": "star", "text": { "pt": "Cachoeira iluminada (noite)", "en": "Illuminated waterfall (night)" }, "coords": [28.6800, 109.9990], "address": "Furong Ancient Town (Wangcun), Yongshun County, Xiangxi · 湘西州永顺县芙蓉镇", "note": { "pt": "A vila é construída sobre uma grande cachoeira; à noite ela é iluminada e dá pra passar por trás da queda d'água. Bem menos turística que Fenghuang.", "en": "The town is built over a big waterfall; at night it's lit and you can walk behind the falls. Far less touristy than Fenghuang." } }
           ]
         }
       ]
@@ -135,11 +136,11 @@
       "nights": 1,
       "days": [
         {
-          "note": "Manhã em Furong e, à tarde, a icônica vila ribeirinha de Fenghuang.",
+          "note": { "pt": "Manhã em Furong e, à tarde, a icônica vila ribeirinha de Fenghuang.", "en": "Morning in Furong and, in the afternoon, the iconic riverside town of Fenghuang." },
           "items": [
-            { "text": "Furong manhã (cachoeira)", "note": "Aproveite a cachoeira sob o sol e os becos tranquilos antes de seguir." },
-            { "type": "move", "text": "🚄 → Fenghuang (40min)", "note": "Trem-bala Furongzhen → Fenghuang Gucheng, 35-45min, mesma linha." },
-            { "type": "star", "text": "Rio Tuojiang iluminado", "coords": [27.9480, 109.5990], "address": "Fenghuang Ancient Town, Fenghuang County, Xiangxi · 湘西州凤凰县凤凰古城", "note": "Casario de palafita (diaojiaolou) sobre o rio Tuojiang; à noite, uma das vilas antigas mais fotogênicas da China. Passeio de barco opcional." }
+            { "text": { "pt": "Furong de manhã (cachoeira)", "en": "Furong in the morning (waterfall)" }, "note": { "pt": "Aproveite a cachoeira sob o sol e os becos tranquilos antes de seguir.", "en": "Enjoy the waterfall in daylight and the quiet alleys before moving on." } },
+            { "type": "move", "text": { "pt": "🚄 → Fenghuang (40min)", "en": "🚄 → Fenghuang (40min)" }, "note": { "pt": "Trem-bala Furongzhen → Fenghuang Gucheng, 35-45min, mesma linha.", "en": "Bullet train Furongzhen → Fenghuang Gucheng, 35-45min, same line." } },
+            { "type": "star", "text": { "pt": "Rio Tuojiang iluminado", "en": "Tuojiang River lit up" }, "coords": [27.9480, 109.5990], "address": "Fenghuang Ancient Town, Fenghuang County, Xiangxi · 湘西州凤凰县凤凰古城", "note": { "pt": "Casario de palafita (diaojiaolou) sobre o rio Tuojiang; à noite, uma das vilas antigas mais fotogênicas da China. Passeio de barco opcional.", "en": "Stilt houses (diaojiaolou) over the Tuojiang River; at night, one of the most photogenic old towns in China. Optional boat ride." } }
           ]
         }
       ]
@@ -149,11 +150,11 @@
       "nights": 1,
       "days": [
         {
-          "note": "Dia mais pesado de translado (~5-6h), terminando na espetacular vila de penhasco. Planeje a noite anterior tranquila.",
+          "note": { "pt": "Dia mais pesado de translado (~5-6h), terminando na espetacular vila de penhasco. Planeje a noite anterior tranquila.", "en": "The heaviest travel day (~5-6h), ending at the spectacular cliff village. Plan a calm night before." },
           "items": [
-            { "type": "move", "text": "🚄 Fenghuang→Huaihua→Shangrao", "note": "Fenghuang Gucheng → Huaihua South (25min) + Huaihua → Shangrao (~4h30). Compre os trens com 1-2 semanas de antecedência." },
-            { "text": "Translado longo (~5-6h)", "note": "De Shangrao até o vale são mais ~1h de ônibus turístico ou DiDi." },
-            { "type": "star", "text": "Wangxian Valley (noite)", "url": "https://www.trip.com/", "coords": [28.3300, 117.7800], "address": "Wangxian Valley, Shangrao, Jiangxi · 江西省上饶市望仙谷", "note": "Vila '网红' cravada no penhasco, com cascatas e pontes suspensas; a iluminação noturna é o grande 'uau'. Durma dentro do vale para aproveitar a noite." }
+            { "type": "move", "text": { "pt": "🚄 Fenghuang→Huaihua→Shangrao", "en": "🚄 Fenghuang→Huaihua→Shangrao" }, "note": { "pt": "Fenghuang Gucheng → Huaihua South (25min) + Huaihua → Shangrao (~4h30). Compre os trens 1-2 semanas antes.", "en": "Fenghuang Gucheng → Huaihua South (25min) + Huaihua → Shangrao (~4h30). Buy the trains 1-2 weeks ahead." } },
+            { "text": { "pt": "Translado longo (~5-6h)", "en": "Long transfer (~5-6h)" }, "note": { "pt": "De Shangrao até o vale são mais ~1h de ônibus turístico ou DiDi.", "en": "From Shangrao to the valley it's another ~1h by tourist bus or DiDi." } },
+            { "type": "star", "text": "Wangxian Valley", "url": "https://www.trip.com/", "coords": [28.3300, 117.7800], "address": "Wangxian Valley, Shangrao, Jiangxi · 江西省上饶市望仙谷", "note": { "pt": "Vila '网红' cravada no penhasco, com cascatas e pontes suspensas; a iluminação noturna é o grande 'uau'. Durma dentro do vale.", "en": "An Instagram-famous village carved into the cliff, with waterfalls and suspension bridges; the night lighting is the big 'wow'. Sleep inside the valley." } }
           ]
         }
       ]
@@ -163,97 +164,97 @@
       "nights": 8,
       "days": [
         {
-          "note": "Manhã em Wangxian e, à noite, o primeiro gostinho de Shanghai no Bund.",
+          "note": { "pt": "Manhã em Wangxian e, à noite, o primeiro gostinho de Shanghai no Bund.", "en": "Morning in Wangxian and, at night, the first taste of Shanghai on the Bund." },
           "items": [
-            { "text": "Wangxian de manhã", "note": "Penhascos, fazendas em terraço, grutas e pontes de vidro à luz do dia." },
-            { "type": "move", "text": "🚄 → Shanghai (~3h)", "note": "Shangrao → Shanghai Hongqiao, ~2h30-3h. Shangrao já está no corredor ferroviário para Shanghai." },
-            { "type": "star", "text": "The Bund à noite", "coords": [31.2397, 121.4900], "address": "Zhongshan East 1st Rd, Huangpu District, Shanghai · 上海市黄浦区中山东一路", "note": "Calçadão histórico à beira do rio Huangpu, com o skyline iluminado de Pudong do outro lado." }
+            { "text": { "pt": "Wangxian de manhã", "en": "Wangxian in the morning" }, "note": { "pt": "Penhascos, fazendas em terraço, grutas e pontes de vidro à luz do dia.", "en": "Cliffs, terraced farms, caves and glass bridges in daylight." } },
+            { "type": "move", "text": { "pt": "🚄 → Shanghai (~3h)", "en": "🚄 → Shanghai (~3h)" }, "note": { "pt": "Shangrao → Shanghai Hongqiao, ~2h30-3h. Shangrao já está no corredor ferroviário para Shanghai.", "en": "Shangrao → Shanghai Hongqiao, ~2h30-3h. Shangrao is already on the rail corridor to Shanghai." } },
+            { "type": "star", "text": { "pt": "The Bund à noite", "en": "The Bund at night" }, "coords": [31.2397, 121.4900], "address": "Zhongshan East 1st Rd, Huangpu District, Shanghai · 上海市黄浦区中山东一路", "note": { "pt": "Calçadão histórico à beira do rio Huangpu, com o skyline iluminado de Pudong do outro lado.", "en": "Historic waterfront promenade along the Huangpu River, with Pudong's lit skyline across the water." } }
           ]
         },
         {
-          "note": "Shanghai clássica: do Bund e Yu Garden à charmosa Concessão Francesa.",
+          "note": { "pt": "Shanghai clássica: do Bund e Yu Garden à charmosa Concessão Francesa.", "en": "Classic Shanghai: from the Bund and Yu Garden to the charming French Concession." },
           "items": [
-            { "text": "Yu Garden", "coords": [31.2270, 121.4920], "address": "168 Fuyou Rd, Huangpu District, Shanghai · 上海市黄浦区福佑路168号", "note": "Jardim clássico Ming e o bazar antigo ao redor; almoce xiaolongbao no Jia Jia Tang Bao." },
-            { "type": "star", "text": "Concessão Francesa", "coords": [31.2110, 121.4570], "address": "Wukang Rd / Anfu Rd, Xuhui District, Shanghai · 上海市徐汇区武康路", "note": "Tianzifang, Wukang Road e Anfu Road — cafés, butiques e ruas arborizadas com platanos." },
-            { "text": "Pudong / Shanghai Tower", "address": "501 Yincheng Middle Rd, Pudong, Shanghai · 上海市浦东新区银城中路501号", "note": "Mirante da Shanghai Tower (118º andar) ou um rooftop de frente para o Bund ao pôr do sol." }
+            { "text": "Yu Garden", "coords": [31.2270, 121.4920], "address": "168 Fuyou Rd, Huangpu District, Shanghai · 上海市黄浦区福佑路168号", "note": { "pt": "Jardim clássico Ming e o bazar antigo ao redor; almoce xiaolongbao no Jia Jia Tang Bao.", "en": "Classic Ming garden and the old bazaar around it; have xiaolongbao for lunch at Jia Jia Tang Bao." } },
+            { "type": "star", "text": { "pt": "Concessão Francesa", "en": "French Concession" }, "coords": [31.2110, 121.4570], "address": "Wukang Rd / Anfu Rd, Xuhui District, Shanghai · 上海市徐汇区武康路", "note": { "pt": "Tianzifang, Wukang Road e Anfu Road — cafés, butiques e ruas arborizadas com platanos.", "en": "Tianzifang, Wukang Road and Anfu Road — cafés, boutiques and plane-tree-lined streets." } },
+            { "text": { "pt": "Pudong / Shanghai Tower", "en": "Pudong / Shanghai Tower" }, "address": "501 Yincheng Middle Rd, Pudong, Shanghai · 上海市浦东新区银城中路501号", "note": { "pt": "Mirante da Shanghai Tower (118º andar) ou um rooftop de frente para o Bund ao pôr do sol.", "en": "Shanghai Tower observation deck (118th floor) or a rooftop facing the Bund at sunset." } }
           ]
         },
         {
-          "note": "Bate-volta a Suzhou, a 'Veneza do Oriente', a 30min de trem.",
+          "note": { "pt": "Bate-volta a Suzhou, a 'Veneza do Oriente', a 30min de trem.", "en": "Day trip to Suzhou, the 'Venice of the East', 30min by train." },
           "items": [
-            { "type": "move", "text": "🚄 Suzhou (30min)" },
-            { "type": "star", "text": "Humble Administrator's Garden", "tickets": "https://www.trip.com/travel-guide/attraction/suzhou/humble-administrator-s-garden-82473/", "coords": [31.3260, 120.6290], "address": "178 Northeast St, Gusu District, Suzhou · 苏州市姑苏区东北街178号", "note": "O jardim clássico chinês mais famoso (UNESCO); reserve pelo mini-program 苏州园林 ou pelo Trip.com." },
-            { "text": "Pingjiang · seda", "note": "Rua histórica Pingjiang com canais e lanternas; cuidado com seda falsa (a real cheira a cabelo queimado, não derrete)." }
+            { "type": "move", "text": { "pt": "🚄 Suzhou (30min)", "en": "🚄 Suzhou (30min)" } },
+            { "type": "star", "text": "Humble Administrator's Garden", "tickets": "https://www.trip.com/travel-guide/attraction/suzhou/humble-administrator-s-garden-82473/", "coords": [31.3260, 120.6290], "address": "178 Northeast St, Gusu District, Suzhou · 苏州市姑苏区东北街178号", "note": { "pt": "O jardim clássico chinês mais famoso (UNESCO); reserve pelo mini-program 苏州园林 ou pelo Trip.com.", "en": "The most famous classical Chinese garden (UNESCO); book via the 苏州园林 mini-program or Trip.com." } },
+            { "text": { "pt": "Pingjiang · seda", "en": "Pingjiang · silk" }, "note": { "pt": "Rua histórica Pingjiang com canais e lanternas; cuidado com seda falsa (a real cheira a cabelo queimado, não derrete).", "en": "Historic Pingjiang street with canals and lanterns; watch out for fake silk (real silk smells like burnt hair, doesn't melt)." } }
           ]
         },
         {
-          "note": "Bate-volta a Hangzhou pelo poético Lago Oeste, a 1h de trem.",
+          "note": { "pt": "Bate-volta a Hangzhou pelo poético Lago Oeste, a 1h de trem.", "en": "Day trip to Hangzhou for the poetic West Lake, 1h by train." },
           "items": [
-            { "type": "move", "text": "🚄 Hangzhou (1h)" },
-            { "type": "star", "text": "West Lake", "coords": [30.2447, 120.1490], "address": "West Lake, Xihu District, Hangzhou · 杭州市西湖区西湖", "note": "Lago Oeste (UNESCO): passeio de barco, pagodes e caminhos arborizados à beira d'água." },
-            { "text": "Lingyin · chá Longjing", "coords": [30.2410, 120.0980], "address": "1 Fayun Lane, Lingyin Rd, Xihu District, Hangzhou · 杭州市西湖区灵隐路法云弄1号", "note": "Templo Lingyin e as plantações de chá verde Longjing (Dragon Well) nas colinas." }
+            { "type": "move", "text": { "pt": "🚄 Hangzhou (1h)", "en": "🚄 Hangzhou (1h)" } },
+            { "type": "star", "text": "West Lake", "coords": [30.2447, 120.1490], "address": "West Lake, Xihu District, Hangzhou · 杭州市西湖区西湖", "note": { "pt": "Lago Oeste (UNESCO): passeio de barco, pagodes e caminhos arborizados à beira d'água.", "en": "West Lake (UNESCO): boat ride, pagodas and tree-lined paths along the water." } },
+            { "text": { "pt": "Lingyin · chá Longjing", "en": "Lingyin · Longjing tea" }, "coords": [30.2410, 120.0980], "address": "1 Fayun Lane, Lingyin Rd, Xihu District, Hangzhou · 杭州市西湖区灵隐路法云弄1号", "note": { "pt": "Templo Lingyin e as plantações de chá verde Longjing (Dragon Well) nas colinas.", "en": "Lingyin Temple and the Longjing (Dragon Well) green-tea plantations in the hills." } }
           ]
         },
         {
-          "note": "Uma water town do Jiangnan de manhã e a Shanghai moderna à tarde.",
+          "note": { "pt": "Uma water town do Jiangnan de manhã e a Shanghai moderna à tarde.", "en": "A Jiangnan water town in the morning and modern Shanghai in the afternoon." },
           "items": [
-            { "type": "star", "text": "Water town", "note": "Zhujiajiao (~1h, dentro de Shanghai, fácil) ou Wuzhen (~1h30, mais bonita)." },
-            { "text": "Zhujiajiao ou Wuzhen" },
-            { "text": "Shanghai moderna (M50)", "note": "À tarde, a Power Station of Art ou o distrito de arte M50." }
+            { "type": "star", "text": "Water town", "note": { "pt": "Zhujiajiao (~1h, dentro de Shanghai, fácil) ou Wuzhen (~1h30, mais bonita).", "en": "Zhujiajiao (~1h, within Shanghai, easy) or Wuzhen (~1h30, prettier)." } },
+            { "text": { "pt": "Zhujiajiao ou Wuzhen", "en": "Zhujiajiao or Wuzhen" } },
+            { "text": { "pt": "Shanghai moderna (M50)", "en": "Modern Shanghai (M50)" }, "note": { "pt": "À tarde, a Power Station of Art ou o distrito de arte M50.", "en": "In the afternoon, the Power Station of Art or the M50 art district." } }
           ]
         },
         {
-          "note": "Bate-volta opcional a Nanjing, antiga capital, a 1h de trem — ou um dia extra em Shanghai.",
+          "note": { "pt": "Bate-volta opcional a Nanjing, antiga capital, a 1h de trem — ou um dia extra em Shanghai.", "en": "Optional day trip to Nanjing, a former capital, 1h by train — or an extra day in Shanghai." },
           "items": [
-            { "type": "move", "text": "🚄 Nanjing (1h) — opcional" },
-            { "text": "Muralha Ming · Sun Yat-sen", "note": "Muralha Ming, Memorial Sun Yat-sen e o Templo de Confúcio (Fuzimiao)." },
-            { "text": "ou dia em Shanghai" }
+            { "type": "move", "text": { "pt": "🚄 Nanjing (1h) — opcional", "en": "🚄 Nanjing (1h) — optional" } },
+            { "text": { "pt": "Muralha Ming · Sun Yat-sen", "en": "Ming Wall · Sun Yat-sen" }, "note": { "pt": "Muralha Ming, Memorial Sun Yat-sen e o Templo de Confúcio (Fuzimiao).", "en": "Ming city wall, Sun Yat-sen Memorial and the Confucius Temple (Fuzimiao)." } },
+            { "text": { "pt": "ou dia em Shanghai", "en": "or a day in Shanghai" } }
           ]
         },
         {
-          "note": "Dia livre para repetir o que mais gostou e ver os bairros que faltaram.",
+          "note": { "pt": "Dia livre para repetir o que mais gostou e ver os bairros que faltaram.", "en": "Free day to repeat what you loved most and see the neighborhoods you missed." },
           "items": [
-            { "text": "Dia livre na cidade" },
-            { "text": "Rio Huangpu de barco", "note": "Cruzeiro pelo Huangpu para ver o skyline da água, de dia ou à noite." },
-            { "text": "Museus / bairros que faltaram" }
+            { "text": { "pt": "Dia livre na cidade", "en": "Free day in the city" } },
+            { "text": { "pt": "Rio Huangpu de barco", "en": "Huangpu River by boat" }, "note": { "pt": "Cruzeiro pelo Huangpu para ver o skyline da água, de dia ou à noite.", "en": "Huangpu cruise to see the skyline from the water, day or night." } },
+            { "text": { "pt": "Museus / bairros que faltaram", "en": "Museums / missed neighborhoods" } }
           ]
         },
         {
-          "note": "Compras finais e dia-colchão proposital para imprevistos.",
+          "note": { "pt": "Compras finais e dia-colchão proposital para imprevistos.", "en": "Final shopping and a deliberate buffer day for the unexpected." },
           "items": [
-            { "text": "Compras finais", "note": "Eletrônicos em Huaihai Rd, chá e lembranças." },
-            { "text": "Dia-colchão (buffer)", "note": "Folga para atrasos, cansaço, refazer algo que gostou — ou o Mutianyu remanejado se o tempo virou em Pequim." },
-            { "text": "Jantar de despedida" }
+            { "text": { "pt": "Compras finais", "en": "Final shopping" }, "note": { "pt": "Eletrônicos em Huaihai Rd, chá e lembranças.", "en": "Electronics on Huaihai Rd, tea and souvenirs." } },
+            { "text": { "pt": "Dia-colchão (buffer)", "en": "Buffer day" }, "note": { "pt": "Folga para atrasos, cansaço, refazer algo — ou o Mutianyu remanejado se o tempo virou em Pequim.", "en": "Slack for delays, tiredness, redoing something — or Mutianyu rescheduled if the weather turned in Beijing." } },
+            { "text": { "pt": "Jantar de despedida", "en": "Farewell dinner" } }
           ]
         }
       ]
     },
     {
-      "city": "Saída PVG",
+      "city": { "pt": "Saída PVG", "en": "PVG departure" },
       "nights": 1,
       "transit": true,
       "days": [
         {
-          "note": "Saída de Shanghai com folga grande no aeroporto, porque a Turkish costuma atrasar.",
+          "note": { "pt": "Saída de Shanghai com folga grande no aeroporto, porque a Turkish costuma atrasar.", "en": "Departure from Shanghai with a big buffer at the airport, because Turkish often runs late." },
           "items": [
-            { "text": "Maglev → PVG (430km/h)", "note": "Trem de levitação magnética de Longyang até o aeroporto: 7min a 430km/h, vale a experiência." },
-            { "text": "PVG 4h+ antes (Turkish atrasa)" },
-            { "type": "move", "text": "TK27 23:05 → IST" }
+            { "text": { "pt": "Maglev → PVG (430km/h)", "en": "Maglev → PVG (430km/h)" }, "note": { "pt": "Trem de levitação magnética de Longyang até o aeroporto: 7min a 430km/h, vale a experiência.", "en": "Maglev train from Longyang to the airport: 7min at 430km/h, worth the experience." } },
+            { "text": { "pt": "PVG 4h+ antes (Turkish atrasa)", "en": "PVG 4h+ early (Turkish runs late)" } },
+            { "type": "move", "text": { "pt": "TK27 23:05 → IST", "en": "TK27 23:05 → IST" } }
           ]
         }
       ]
     },
     {
-      "city": "Volta 🇧🇷",
+      "city": { "pt": "Volta 🇧🇷", "en": "Return 🇧🇷" },
       "nights": 1,
       "transit": true,
       "days": [
         {
-          "note": "Conexão curta em Istambul e volta para casa no mesmo dia.",
+          "note": { "pt": "Conexão curta em Istambul e volta para casa no mesmo dia.", "en": "Short connection in Istanbul and back home the same day." },
           "items": [
-            { "text": "06:05 IST (conexão 3h55)", "note": "Conexão dentro do aeroporto, sem tempo de cidade." },
-            { "type": "move", "text": "TK15 10:00 → GRU 17:45" },
-            { "type": "move", "text": "GRU → GIG 20:45", "note": "Conexão apertada de ~2h em GRU; se o TK15 atrasar, rebooking no balcão." }
+            { "text": { "pt": "06:05 IST (conexão 3h55)", "en": "06:05 IST (3h55 layover)" }, "note": { "pt": "Conexão dentro do aeroporto, sem tempo de cidade.", "en": "Connection inside the airport, no city time." } },
+            { "type": "move", "text": { "pt": "TK15 10:00 → GRU 17:45", "en": "TK15 10:00 → GRU 17:45" } },
+            { "type": "move", "text": { "pt": "GRU → GIG 20:45", "en": "GRU → GIG 20:45" }, "note": { "pt": "Conexão apertada de ~2h em GRU; se o TK15 atrasar, rebooking no balcão.", "en": "Tight ~2h connection at GRU; if TK15 is late, rebook at the counter." } }
           ]
         }
       ]
