@@ -21,11 +21,11 @@
       "days": [
         [
           { "type": "move", "text": "Pouso 11:15 · check-in Karaköy" },
-          { "type": "star", "text": "Hagia Sofia", "url": "https://muze.gov.tr", "tickets": "https://muze.gov.tr", "coords": [41.0086, 28.9802] },
+          { "type": "star", "text": "Hagia Sofia", "url": "https://muze.gen.tr/muze-detay/ayasofya", "tickets": "https://muze.gen.tr", "coords": [41.0086, 28.9802] },
           { "text": "Cisterna Basílica", "coords": [41.0084, 28.9779] }
         ],
         [
-          { "type": "star", "text": "Topkapı + Harém", "tickets": "https://muze.gov.tr", "coords": [41.0115, 28.9834] },
+          { "type": "star", "text": "Topkapı + Harém", "url": "https://muze.gen.tr", "tickets": "https://muze.gen.tr", "coords": [41.0115, 28.9834] },
           { "type": "star", "text": "Grand Bazaar", "coords": [41.0106, 28.9681] },
           { "text": "Hammam · Galata à noite", "coords": [41.0256, 28.9744] }
         ],
@@ -55,7 +55,7 @@
           "Hutongs + craft beer"
         ],
         [
-          { "type": "star", "text": "Muralha Mutianyu", "url": "https://www.mutianyugreatwall.com/", "tickets": "https://www.trip.com/", "coords": [40.4319, 116.5704] },
+          { "type": "star", "text": "Muralha Mutianyu", "url": "https://en.mutianyugreatwall.com/", "tickets": "https://en.mutianyugreatwall.com/reservation-center/tickets", "coords": [40.4319, 116.5704] },
           "Teleférico + toboggan",
           "Pato laqueado"
         ]
@@ -71,12 +71,12 @@
           "Chegada noite"
         ],
         [
-          { "type": "star", "text": "Tianmen Mountain", "tickets": "https://www.trip.com/", "coords": [29.0517, 110.4790] },
+          { "type": "star", "text": "Tianmen Mountain", "tickets": "https://www.klook.com/en-US/search/?query=Tianmen%20Mountain%20Zhangjiajie", "coords": [29.0517, 110.4790] },
           "Heaven's Gate · trilha vidro",
           { "type": "star", "text": "72 Wonder Tower (noite)", "coords": [29.1163, 110.4790] }
         ],
         [
-          { "type": "star", "text": "Avatar Mountains", "tickets": "https://www.trip.com/", "coords": [29.3155, 110.4344] },
+          { "type": "star", "text": "Avatar Mountains", "tickets": "https://www.klook.com/en-US/search/?query=Zhangjiajie%20National%20Forest%20Park", "coords": [29.3155, 110.4344] },
           "Yuanjiajie + Tianzi",
           "Bailong Elevator (326m)"
         ]
@@ -86,7 +86,7 @@
       "city": "Furong",
       "nights": 1,
       "highlights": [
-        { "type": "star", "text": "Glass Bridge (430m)", "tickets": "https://www.trip.com/", "coords": [29.3470, 110.5360] },
+        { "type": "star", "text": "Glass Bridge (430m)", "tickets": "https://www.klook.com/en-US/activity/6602-grand-canyon-glass-bridge-tickets-zhangjiajie/", "coords": [29.3470, 110.5360] },
         { "type": "move", "text": "🚄 → Furong (30min)" },
         { "type": "star", "text": "Cachoeira iluminada (noite)", "coords": [28.6800, 109.9990] }
       ]
@@ -125,7 +125,7 @@
         ],
         [
           { "type": "move", "text": "🚄 Suzhou (30min)" },
-          { "type": "star", "text": "Humble Administrator's Garden", "tickets": "https://www.trip.com/", "coords": [31.3260, 120.6290] },
+          { "type": "star", "text": "Humble Administrator's Garden", "tickets": "https://www.trip.com/travel-guide/attraction/suzhou/humble-administrator-s-garden-82473/", "coords": [31.3260, 120.6290] },
           "Pingjiang · seda"
         ],
         [
