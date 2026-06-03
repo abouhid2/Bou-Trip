@@ -3,142 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Roteiro China — Outubro 2026</title>
+<title>China &amp; Istambul — Outubro 2026</title>
 <style>
-  /* =========================================================
-     MOBILE-FIRST: padrão = lista vertical de cards (1 coluna)
-     Telas largas e impressão = grade-calendário 7 colunas
-     ========================================================= */
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { -webkit-text-size-adjust: 100%; }
-  body {
-    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
-    color: #1a1a2e;
-    background: #f4f4f8;
-    padding: 10px;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-
-  /* ---------- Header ---------- */
-  .header {
-    display: flex; flex-direction: column; gap: 6px;
-    background: linear-gradient(125deg, #c0392b 0%, #8e2de2 55%, #1f6feb 100%);
-    color: #fff; padding: 14px 16px; border-radius: 12px; margin-bottom: 12px;
-  }
-  .header h1 { font-size: 20px; letter-spacing: .2px; line-height: 1.2; }
+  body { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; color: #1a1a2e; background: #f4f4f8; padding: 10px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .header { display: flex; flex-direction: column; gap: 6px; background: linear-gradient(125deg, #c0392b 0%, #8e2de2 55%, #1f6feb 100%); color: #fff; padding: 14px 16px; border-radius: 12px; margin-bottom: 12px; }
+  .header h1 { font-size: 20px; line-height: 1.2; }
   .header .sub { font-size: 12px; opacity: .93; line-height: 1.4; }
   .header .meta { font-size: 11px; line-height: 1.55; opacity: .95; }
-  .header .meta b { font-weight: 700; }
-
-  /* ---------- Legend ---------- */
   .legend { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
-  .chip {
-    display: inline-flex; align-items: center; gap: 5px;
-    font-size: 11px; font-weight: 600; padding: 5px 10px; border-radius: 20px;
-    background: #fff; border: 1px solid rgba(0,0,0,.08);
-  }
+  .chip { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; padding: 5px 10px; border-radius: 20px; background: #fff; border: 1px solid rgba(0,0,0,.08); }
   .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
-
-  /* ---------- Weekday header (só desktop/impressão) ---------- */
   .weekhdr { display: none; }
-
-  /* ---------- Calendar container ---------- */
   .cal { display: grid; grid-template-columns: 1fr; gap: 10px; }
-
-  /* ---------- Day card ---------- */
-  .day {
-    border-radius: 12px; border: 1px solid #e6e6ee; background: #fff;
-    overflow: hidden; box-shadow: 0 1px 3px rgba(20,20,40,.05);
-  }
-  .empty { display: none; } /* espaçadores do calendário: escondidos no mobile */
-
-  .cell-top {
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 9px 13px; color: #fff;
-  }
+  .day { border-radius: 12px; border: 1px solid #e6e6ee; background: #fff; overflow: hidden; box-shadow: 0 1px 3px rgba(20,20,40,.05); }
+  .empty { display: none; }
+  .cell-top { display: flex; align-items: center; justify-content: space-between; padding: 9px 13px; color: #fff; }
   .cell-top .date { font-size: 20px; font-weight: 800; line-height: 1; }
   .cell-top .wknum { font-size: 11px; opacity: .92; text-transform: uppercase; letter-spacing: .5px; }
-  .cell-city {
-    font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px;
-    padding: 4px 13px; color: #fff; opacity: .96;
-  }
+  .cell-city { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; padding: 4px 13px; color: #fff; opacity: .96; }
   .cell-body { padding: 10px 13px 12px; }
   .cell-body ul { list-style: none; }
-  .cell-body li {
-    font-size: 13.5px; line-height: 1.45; margin-bottom: 4px; padding-left: 14px;
-    position: relative; color: #2a2a3a;
-  }
+  .cell-body li { font-size: 13.5px; line-height: 1.45; margin-bottom: 4px; padding-left: 14px; position: relative; color: #2a2a3a; }
   .cell-body li::before { content: "•"; position: absolute; left: 0; color: #b3b3c0; }
   .cell-body li.star { font-weight: 700; color: #1a1a2e; }
   .cell-body li.star::before { content: "★"; color: #e6a817; }
   .cell-body li.move::before { content: "→"; color: #1f6feb; font-weight: 700; }
-
-  /* ---------- City colors ---------- */
-  .c-ist { background: #0e9e96; } .c-bei { background: #c0392b; }
-  .c-zjj { background: #2e8b57; } .c-fur { background: #d98a0b; }
-  .c-fen { background: #7d3cc0; } .c-wan { background: #3b4bc4; }
-  .c-sha { background: #1f6feb; } .c-tra { background: #5a5a6e; }
-
+  .cell-body a { color: inherit; text-decoration: underline; text-decoration-color: rgba(31,111,235,.45); text-underline-offset: 2px; }
+  .cell-body a:hover { text-decoration-color: #1f6feb; }
+  .cell-body a.lk { text-decoration: none; font-size: .9em; opacity: .85; }
+  .cell-body a.lk:hover { opacity: 1; }
+  .sec { font-size: 14px; margin: 16px 0 8px; color: #1a1a2e; }
+  table.flights { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; font-size: 12.5px; }
+  table.flights td { padding: 8px 10px; border-bottom: 1px solid #eee; }
+  table.flights tr:last-child td { border-bottom: none; }
   .footer { margin-top: 14px; font-size: 11px; color: #888; text-align: center; line-height: 1.5; }
-
-  /* =========================================================
-     TABLET — 2 colunas
-     ========================================================= */
-  @media (min-width: 620px) {
-    .cal { grid-template-columns: repeat(2, 1fr); }
-    .header { flex-direction: row; align-items: center; justify-content: space-between; }
-    .header .meta { text-align: right; }
-  }
-
-  /* =========================================================
-     DESKTOP LARGO — grade-calendário 7 colunas
-     ========================================================= */
+  @media (min-width: 620px) { .cal { grid-template-columns: repeat(2, 1fr); } .header { flex-direction: row; align-items: center; justify-content: space-between; } .header .meta { text-align: right; } }
   @media (min-width: 1000px) {
     body { padding: 14px; }
     .cal { grid-template-columns: repeat(7, 1fr); gap: 5px; }
-    .empty {
-      display: block; min-height: 120px; box-shadow: none;
-      background: repeating-linear-gradient(45deg,#fafafc,#fafafc 6px,#f2f2f7 6px,#f2f2f7 12px);
-      border: 1px solid #eee;
-    }
-    .weekhdr {
-      display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; margin-bottom: 5px;
-    }
-    .weekhdr div {
-      font-size: 10px; text-transform: uppercase; letter-spacing: .6px;
-      color: #555; font-weight: 700; text-align: center;
-    }
+    .empty { display: block; min-height: 120px; box-shadow: none; background: repeating-linear-gradient(45deg,#fafafc,#fafafc 6px,#f2f2f7 6px,#f2f2f7 12px); border: 1px solid #eee; }
+    .weekhdr { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; margin-bottom: 5px; }
+    .weekhdr div { font-size: 10px; text-transform: uppercase; letter-spacing: .6px; color: #555; font-weight: 700; text-align: center; }
     .day { box-shadow: none; }
-    .cell-top { padding: 5px 8px; }
-    .cell-top .date { font-size: 15px; } .cell-top .wknum { font-size: 9px; }
+    .cell-top { padding: 5px 8px; } .cell-top .date { font-size: 15px; } .cell-top .wknum { font-size: 9px; }
     .cell-city { font-size: 9px; padding: 2px 8px; }
-    .cell-body { padding: 6px 8px 7px; }
-    .cell-body li { font-size: 9.5px; line-height: 1.34; margin-bottom: 2px; padding-left: 10px; }
+    .cell-body { padding: 6px 8px 7px; } .cell-body li { font-size: 9.5px; line-height: 1.34; margin-bottom: 2px; padding-left: 10px; }
   }
-
-  /* =========================================================
-     IMPRESSÃO / PDF — A4 paisagem, grade 7 colunas compacta
-     ========================================================= */
   @media print {
     @page { size: A4 landscape; margin: 7mm; }
     body { padding: 0; background: #fff; }
     .cal { grid-template-columns: repeat(7, 1fr); gap: 4px; }
     .weekhdr { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin-bottom: 4px; }
     .weekhdr div { font-size: 9px; text-transform: uppercase; letter-spacing: .6px; color: #555; font-weight: 700; text-align: center; }
-    .empty {
-      display: block; min-height: 116px; box-shadow: none;
-      background: repeating-linear-gradient(45deg,#fafafc,#fafafc 6px,#f2f2f7 6px,#f2f2f7 12px);
-      border: 1px solid #eee;
-    }
+    .empty { display: block; min-height: 116px; box-shadow: none; background: repeating-linear-gradient(45deg,#fafafc,#fafafc 6px,#f2f2f7 6px,#f2f2f7 12px); border: 1px solid #eee; }
     .day { box-shadow: none; break-inside: avoid; }
-    .header { flex-direction: row; align-items: center; justify-content: space-between; padding: 10px 16px; }
-    .header h1 { font-size: 19px; } .header .sub { font-size: 10px; } .header .meta { font-size: 9.5px; text-align: right; }
-    .legend { gap: 6px; margin-bottom: 9px; } .chip { font-size: 9px; padding: 3px 8px; }
+    .header { flex-direction: row; align-items: center; justify-content: space-between; }
     .cell-top { padding: 4px 7px; } .cell-top .date { font-size: 13px; } .cell-top .wknum { font-size: 8px; }
     .cell-city { font-size: 8.5px; padding: 2px 7px; }
     .cell-body { padding: 5px 7px; } .cell-body li { font-size: 8.3px; line-height: 1.32; margin-bottom: 1.5px; padding-left: 8px; }
-    .footer { font-size: 8px; margin-top: 8px; }
   }
 </style>
 </head>
@@ -146,26 +70,29 @@
 
   <div class="header">
     <div>
-      <h1>🇨🇳 Roteiro China &amp; Istambul — Outubro 2026</h1>
-      <div class="sub">Rio → Istambul → Pequim → Zhangjiajie → Furong → Fenghuang → Wangxian → Shanghai → Rio · 22 dias</div>
+      <h1>🇨🇳 China &amp; Istambul — Outubro 2026</h1>
+      <div class="sub">Istambul → Pequim → Zhangjiajie → Furong → Fenghuang → Wangxian Valley → Shanghai</div>
     </div>
     <div class="meta">
-      <div>Voos Turkish Airlines</div>
-      <div>China: 16 noites · 6 bases</div>
+      <div>Roteiro de 22 dias</div>
+      <div>19 noites · 7 bases</div>
       <div>10/10/2026 → 01/11/2026</div>
     </div>
   </div>
 
   <div class="legend">
+    <span class="chip"><span class="dot" style="background:#5a5a6e"></span>Embarque · 1n</span>
     <span class="chip"><span class="dot" style="background:#0e9e96"></span>Istambul · 3n</span>
+    <span class="chip"><span class="dot" style="background:#5a5a6e"></span>IST → Pequim · 1n</span>
     <span class="chip"><span class="dot" style="background:#c0392b"></span>Pequim · 2n</span>
     <span class="chip"><span class="dot" style="background:#2e8b57"></span>Zhangjiajie · 3n</span>
     <span class="chip"><span class="dot" style="background:#d98a0b"></span>Furong · 1n</span>
     <span class="chip"><span class="dot" style="background:#7d3cc0"></span>Fenghuang · 1n</span>
-    <span class="chip"><span class="dot" style="background:#3b4bc4"></span>Wangxian · 1n</span>
+    <span class="chip"><span class="dot" style="background:#3b4bc4"></span>Wangxian Valley · 1n</span>
     <span class="chip"><span class="dot" style="background:#1f6feb"></span>Shanghai · 8n</span>
-    <span class="chip"><span class="dot" style="background:#5a5a6e"></span>Trânsito / voo</span>
-    <span class="chip">★ destaque imperdível</span>
+    <span class="chip"><span class="dot" style="background:#5a5a6e"></span>Saída PVG · 1n</span>
+    <span class="chip"><span class="dot" style="background:#5a5a6e"></span>Volta 🇧🇷 · 1n</span>
+    <span class="chip">★ destaque</span>
     <span class="chip">→ deslocamento</span>
   </div>
 
@@ -174,250 +101,133 @@
   </div>
 
   <div class="cal">
-    <!-- espaçadores da 1ª semana (Seg-Sex 5-9 Out) -->
     <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
-
-    <!-- Sáb 10 -->
     <div class="day">
-      <div class="cell-top c-tra"><span class="date">10</span><span class="wknum">Out · Sáb</span></div>
-      <div class="cell-city c-tra">Embarque</div>
-      <div class="cell-body"><ul>
-        <li>Rio → GRU</li>
-        <li class="move">TK216 16:35 → Istambul</li>
-        <li>Relógio +6h (BRT)</li>
-      </ul></div>
+      <div class="cell-top" style="background:#5a5a6e"><span class="date">10</span><span class="wknum">Out · Sáb</span></div>
+      <div class="cell-city" style="background:#5a5a6e">Embarque</div>
+      <div class="cell-body"><ul><li class="move">Rio → GRU</li><li class="move">TK216 16:35 → Istambul</li></ul></div>
     </div>
-    <!-- Dom 11 -->
     <div class="day">
-      <div class="cell-top c-ist"><span class="date">11</span><span class="wknum">Out · Dom</span></div>
-      <div class="cell-city c-ist">Istambul</div>
-      <div class="cell-body"><ul>
-        <li>Pouso 11:15 · check-in Karaköy</li>
-        <li class="star">Hagia Sofia</li>
-        <li>Cisterna Basílica</li>
-        <li>Jantar Sultanahmet</li>
-      </ul></div>
+      <div class="cell-top" style="background:#0e9e96"><span class="date">11</span><span class="wknum">Out · Dom</span></div>
+      <div class="cell-city" style="background:#0e9e96">Istambul · n1</div>
+      <div class="cell-body"><ul><li class="move">Pouso 11:15 · check-in Karaköy</li><li class="star"><a href="https://muze.gen.tr/muze-detay/ayasofya" target="_blank" rel="noopener">Hagia Sofia</a> <a class="lk" href="https://muze.gen.tr" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0086&amp;mlon=28.9802#map=16/41.0086/28.9802" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Cisterna Basílica <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0084&amp;mlon=28.9779#map=16/41.0084/28.9779" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
     </div>
-    <!-- Seg 12 -->
     <div class="day">
-      <div class="cell-top c-ist"><span class="date">12</span><span class="wknum">Out · Seg</span></div>
-      <div class="cell-city c-ist">Istambul</div>
-      <div class="cell-body"><ul>
-        <li>Mesquita Azul</li>
-        <li class="star">Topkapı + Harém</li>
-        <li class="star">Grand Bazaar</li>
-        <li>Hammam Kılıç Ali Paşa</li>
-        <li>Galata Tower (noite)</li>
-      </ul></div>
+      <div class="cell-top" style="background:#0e9e96"><span class="date">12</span><span class="wknum">Out · Seg</span></div>
+      <div class="cell-city" style="background:#0e9e96">Istambul · n2</div>
+      <div class="cell-body"><ul><li class="star"><a href="https://muze.gen.tr" target="_blank" rel="noopener">Topkapı + Harém</a> <a class="lk" href="https://muze.gen.tr" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0115&amp;mlon=28.9834#map=16/41.0115/28.9834" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li class="star">Grand Bazaar <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0106&amp;mlon=28.9681#map=16/41.0106/28.9681" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Hammam · Galata à noite <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0256&amp;mlon=28.9744#map=16/41.0256/28.9744" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
     </div>
-    <!-- Ter 13 -->
     <div class="day">
-      <div class="cell-top c-ist"><span class="date">13</span><span class="wknum">Out · Ter</span></div>
-      <div class="cell-city c-ist">Büyükada</div>
-      <div class="cell-body"><ul>
-        <li class="move">Ferry Kabataş → ilha</li>
-        <li>Bicicleta + mansões</li>
-        <li class="star">Aya Yorgi (mosteiro)</li>
-        <li>Pernoite Splendid Palace</li>
-      </ul></div>
+      <div class="cell-top" style="background:#0e9e96"><span class="date">13</span><span class="wknum">Out · Ter</span></div>
+      <div class="cell-city" style="background:#0e9e96">Istambul · n3</div>
+      <div class="cell-body"><ul><li class="move">Ferry → Büyükada</li><li class="star">Aya Yorgi <a class="lk" href="https://www.openstreetmap.org/?mlat=40.8569&amp;mlon=29.1287#map=16/40.8569/29.1287" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Pernoite na ilha</li></ul></div>
     </div>
-    <!-- Qua 14 -->
     <div class="day">
-      <div class="cell-top c-tra"><span class="date">14</span><span class="wknum">Out · Qua</span></div>
-      <div class="cell-city c-tra">IST → Pequim</div>
-      <div class="cell-body"><ul>
-        <li class="move">Ferry volta · Eminönü</li>
-        <li class="move">TK196 16:00 → Pequim</li>
-        <li>Relógio +5h</li>
-      </ul></div>
+      <div class="cell-top" style="background:#5a5a6e"><span class="date">14</span><span class="wknum">Out · Qua</span></div>
+      <div class="cell-city" style="background:#5a5a6e">IST → Pequim</div>
+      <div class="cell-body"><ul><li class="move">Ferry volta · Eminönü</li><li class="move">TK196 16:00 → Pequim</li></ul></div>
     </div>
-    <!-- Qui 15 -->
     <div class="day">
-      <div class="cell-top c-bei"><span class="date">15</span><span class="wknum">Out · Qui</span></div>
-      <div class="cell-city c-bei">Pequim · noite 1</div>
-      <div class="cell-body"><ul>
-        <li>Pouso 05:50 · dia leve</li>
-        <li>Compras UNIQLO (frio)</li>
-        <li>798 Art District</li>
-        <li>Hutongs + craft beer</li>
-      </ul></div>
+      <div class="cell-top" style="background:#c0392b"><span class="date">15</span><span class="wknum">Out · Qui</span></div>
+      <div class="cell-city" style="background:#c0392b">Pequim · n1</div>
+      <div class="cell-body"><ul><li>Pouso 05:50 · dia leve</li><li><a href="https://www.798district.com/" target="_blank" rel="noopener">798 Art District</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=39.9847&amp;mlon=116.4951#map=16/39.9847/116.4951" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Hutongs + craft beer</li></ul></div>
     </div>
-    <!-- Sex 16 -->
     <div class="day">
-      <div class="cell-top c-bei"><span class="date">16</span><span class="wknum">Out · Sex</span></div>
-      <div class="cell-city c-bei">Pequim · noite 2</div>
-      <div class="cell-body"><ul>
-        <li class="star">Muralha Mutianyu</li>
-        <li>Teleférico + toboggan</li>
-        <li>Pato laqueado (Siji Minfu)</li>
-      </ul></div>
+      <div class="cell-top" style="background:#c0392b"><span class="date">16</span><span class="wknum">Out · Sex</span></div>
+      <div class="cell-city" style="background:#c0392b">Pequim · n2</div>
+      <div class="cell-body"><ul><li class="star"><a href="https://en.mutianyugreatwall.com/" target="_blank" rel="noopener">Muralha Mutianyu</a> <a class="lk" href="https://en.mutianyugreatwall.com/reservation-center/tickets" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=40.4319&amp;mlon=116.5704#map=16/40.4319/116.5704" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Teleférico + toboggan</li><li>Pato laqueado</li></ul></div>
     </div>
-    <!-- Sáb 17 -->
     <div class="day">
-      <div class="cell-top c-zjj"><span class="date">17</span><span class="wknum">Out · Sáb</span></div>
-      <div class="cell-city c-zjj">→ Zhangjiajie</div>
-      <div class="cell-body"><ul>
-        <li>Templo do Céu (tai chi)</li>
-        <li class="move">✈ Pequim → Zhangjiajie</li>
-        <li>Chegada noite · Wulingyuan</li>
-      </ul></div>
+      <div class="cell-top" style="background:#2e8b57"><span class="date">17</span><span class="wknum">Out · Sáb</span></div>
+      <div class="cell-city" style="background:#2e8b57">Zhangjiajie · n1</div>
+      <div class="cell-body"><ul><li class="move">✈ Pequim → Zhangjiajie</li><li>Templo do Céu (manhã) <a class="lk" href="https://www.openstreetmap.org/?mlat=39.8822&amp;mlon=116.4066#map=16/39.8822/116.4066" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Chegada noite</li></ul></div>
     </div>
-    <!-- Dom 18 -->
     <div class="day">
-      <div class="cell-top c-zjj"><span class="date">18</span><span class="wknum">Out · Dom</span></div>
-      <div class="cell-city c-zjj">Zhangjiajie</div>
-      <div class="cell-body"><ul>
-        <li class="star">Tianmen Mountain</li>
-        <li>Heaven's Gate · trilha vidro</li>
-        <li class="star">72 Wonder Tower (noite)</li>
-      </ul></div>
+      <div class="cell-top" style="background:#2e8b57"><span class="date">18</span><span class="wknum">Out · Dom</span></div>
+      <div class="cell-city" style="background:#2e8b57">Zhangjiajie · n2</div>
+      <div class="cell-body"><ul><li class="star">Tianmen Mountain <a class="lk" href="https://www.klook.com/en-US/search/?query=Tianmen%20Mountain%20Zhangjiajie" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=29.0517&amp;mlon=110.479#map=16/29.0517/110.479" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Heaven's Gate · trilha vidro</li><li class="star">72 Wonder Tower (noite) <a class="lk" href="https://www.openstreetmap.org/?mlat=29.1163&amp;mlon=110.479#map=16/29.1163/110.479" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
     </div>
-    <!-- Seg 19 -->
     <div class="day">
-      <div class="cell-top c-zjj"><span class="date">19</span><span class="wknum">Out · Seg</span></div>
-      <div class="cell-city c-zjj">Zhangjiajie</div>
-      <div class="cell-body"><ul>
-        <li class="star">Avatar Mountains</li>
-        <li>Yuanjiajie + Tianzi</li>
-        <li>Bailong Elevator (326m)</li>
-      </ul></div>
+      <div class="cell-top" style="background:#2e8b57"><span class="date">19</span><span class="wknum">Out · Seg</span></div>
+      <div class="cell-city" style="background:#2e8b57">Zhangjiajie · n3</div>
+      <div class="cell-body"><ul><li class="star">Avatar Mountains <a class="lk" href="https://www.klook.com/en-US/search/?query=Zhangjiajie%20National%20Forest%20Park" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=29.3155&amp;mlon=110.4344#map=16/29.3155/110.4344" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Yuanjiajie + Tianzi</li><li>Bailong Elevator (326m)</li></ul></div>
     </div>
-    <!-- Ter 20 -->
     <div class="day">
-      <div class="cell-top c-fur"><span class="date">20</span><span class="wknum">Out · Ter</span></div>
-      <div class="cell-city c-fur">→ Furong</div>
-      <div class="cell-body"><ul>
-        <li class="star">Glass Bridge (430m)</li>
-        <li class="move">🚄 Zhangjiajie → Furong (30min)</li>
-        <li class="star">Cachoeira iluminada (noite)</li>
-      </ul></div>
+      <div class="cell-top" style="background:#d98a0b"><span class="date">20</span><span class="wknum">Out · Ter</span></div>
+      <div class="cell-city" style="background:#d98a0b">Furong</div>
+      <div class="cell-body"><ul><li class="star">Glass Bridge (430m) <a class="lk" href="https://www.klook.com/en-US/activity/6602-grand-canyon-glass-bridge-tickets-zhangjiajie/" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=29.347&amp;mlon=110.536#map=16/29.347/110.536" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li class="move">🚄 → Furong (30min)</li><li class="star">Cachoeira iluminada (noite) <a class="lk" href="https://www.openstreetmap.org/?mlat=28.68&amp;mlon=109.999#map=16/28.68/109.999" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
     </div>
-    <!-- Qua 21 -->
     <div class="day">
-      <div class="cell-top c-fen"><span class="date">21</span><span class="wknum">Out · Qua</span></div>
-      <div class="cell-city c-fen">→ Fenghuang</div>
-      <div class="cell-body"><ul>
-        <li>Furong manhã (cachoeira)</li>
-        <li class="move">🚄 Furong → Fenghuang (40min)</li>
-        <li class="star">Rio Tuojiang iluminado</li>
-      </ul></div>
+      <div class="cell-top" style="background:#7d3cc0"><span class="date">21</span><span class="wknum">Out · Qua</span></div>
+      <div class="cell-city" style="background:#7d3cc0">Fenghuang</div>
+      <div class="cell-body"><ul><li>Furong manhã (cachoeira)</li><li class="move">🚄 → Fenghuang (40min)</li><li class="star">Rio Tuojiang iluminado <a class="lk" href="https://www.openstreetmap.org/?mlat=27.948&amp;mlon=109.599#map=16/27.948/109.599" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
     </div>
-    <!-- Qui 22 -->
     <div class="day">
-      <div class="cell-top c-wan"><span class="date">22</span><span class="wknum">Out · Qui</span></div>
-      <div class="cell-city c-wan">→ Wangxian</div>
-      <div class="cell-body"><ul>
-        <li class="move">🚄 Fenghuang→Huaihua→Shangrao</li>
-        <li>Translado longo (~5-6h)</li>
-        <li class="star">Wangxian Valley (noite)</li>
-      </ul></div>
+      <div class="cell-top" style="background:#3b4bc4"><span class="date">22</span><span class="wknum">Out · Qui</span></div>
+      <div class="cell-city" style="background:#3b4bc4">Wangxian Valley</div>
+      <div class="cell-body"><ul><li class="move">🚄 Fenghuang→Huaihua→Shangrao</li><li>Translado longo (~5-6h)</li><li class="star"><a href="https://www.trip.com/" target="_blank" rel="noopener">Wangxian Valley (noite)</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=28.33&amp;mlon=117.78#map=16/28.33/117.78" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
     </div>
-    <!-- Sex 23 -->
     <div class="day">
-      <div class="cell-top c-sha"><span class="date">23</span><span class="wknum">Out · Sex</span></div>
-      <div class="cell-city c-sha">→ Shanghai · n1</div>
-      <div class="cell-body"><ul>
-        <li>Wangxian de manhã</li>
-        <li class="move">🚄 Shangrao → Shanghai (~3h)</li>
-        <li class="star">The Bund à noite</li>
-      </ul></div>
+      <div class="cell-top" style="background:#1f6feb"><span class="date">23</span><span class="wknum">Out · Sex</span></div>
+      <div class="cell-city" style="background:#1f6feb">Shanghai · n1</div>
+      <div class="cell-body"><ul><li>Wangxian de manhã</li><li class="move">🚄 → Shanghai (~3h)</li><li class="star">The Bund à noite <a class="lk" href="https://www.openstreetmap.org/?mlat=31.2397&amp;mlon=121.49#map=16/31.2397/121.49" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
     </div>
-    <!-- Sáb 24 -->
     <div class="day">
-      <div class="cell-top c-sha"><span class="date">24</span><span class="wknum">Out · Sáb</span></div>
-      <div class="cell-city c-sha">Shanghai · n2</div>
-      <div class="cell-body"><ul>
-        <li>The Bund · Yu Garden</li>
-        <li class="star">Concessão Francesa</li>
-        <li>Pudong / Shanghai Tower</li>
-      </ul></div>
+      <div class="cell-top" style="background:#1f6feb"><span class="date">24</span><span class="wknum">Out · Sáb</span></div>
+      <div class="cell-city" style="background:#1f6feb">Shanghai · n2</div>
+      <div class="cell-body"><ul><li>Yu Garden <a class="lk" href="https://www.openstreetmap.org/?mlat=31.227&amp;mlon=121.492#map=16/31.227/121.492" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li class="star">Concessão Francesa <a class="lk" href="https://www.openstreetmap.org/?mlat=31.211&amp;mlon=121.457#map=16/31.211/121.457" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Pudong / Shanghai Tower</li></ul></div>
     </div>
-    <!-- Dom 25 -->
     <div class="day">
-      <div class="cell-top c-sha"><span class="date">25</span><span class="wknum">Out · Dom</span></div>
-      <div class="cell-city c-sha">Shanghai · n3</div>
-      <div class="cell-body"><ul>
-        <li class="move">🚄 Suzhou (30min)</li>
-        <li class="star">Humble Administrator's Garden</li>
-        <li>Pingjiang · seda</li>
-      </ul></div>
+      <div class="cell-top" style="background:#1f6feb"><span class="date">25</span><span class="wknum">Out · Dom</span></div>
+      <div class="cell-city" style="background:#1f6feb">Shanghai · n3</div>
+      <div class="cell-body"><ul><li class="move">🚄 Suzhou (30min)</li><li class="star">Humble Administrator's Garden <a class="lk" href="https://www.trip.com/travel-guide/attraction/suzhou/humble-administrator-s-garden-82473/" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=31.326&amp;mlon=120.629#map=16/31.326/120.629" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Pingjiang · seda</li></ul></div>
     </div>
-    <!-- Seg 26 -->
     <div class="day">
-      <div class="cell-top c-sha"><span class="date">26</span><span class="wknum">Out · Seg</span></div>
-      <div class="cell-city c-sha">Shanghai · n4</div>
-      <div class="cell-body"><ul>
-        <li class="move">🚄 Hangzhou (1h)</li>
-        <li class="star">West Lake</li>
-        <li>Lingyin · chá Longjing</li>
-      </ul></div>
+      <div class="cell-top" style="background:#1f6feb"><span class="date">26</span><span class="wknum">Out · Seg</span></div>
+      <div class="cell-city" style="background:#1f6feb">Shanghai · n4</div>
+      <div class="cell-body"><ul><li class="move">🚄 Hangzhou (1h)</li><li class="star">West Lake <a class="lk" href="https://www.openstreetmap.org/?mlat=30.2447&amp;mlon=120.149#map=16/30.2447/120.149" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Lingyin · chá Longjing <a class="lk" href="https://www.openstreetmap.org/?mlat=30.241&amp;mlon=120.098#map=16/30.241/120.098" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
     </div>
-    <!-- Ter 27 -->
     <div class="day">
-      <div class="cell-top c-sha"><span class="date">27</span><span class="wknum">Out · Ter</span></div>
-      <div class="cell-city c-sha">Shanghai · n5</div>
-      <div class="cell-body"><ul>
-        <li class="star">Water town</li>
-        <li>Zhujiajiao ou Wuzhen</li>
-        <li>Shanghai moderna (M50)</li>
-      </ul></div>
+      <div class="cell-top" style="background:#1f6feb"><span class="date">27</span><span class="wknum">Out · Ter</span></div>
+      <div class="cell-city" style="background:#1f6feb">Shanghai · n5</div>
+      <div class="cell-body"><ul><li class="star">Water town</li><li>Zhujiajiao ou Wuzhen</li><li>Shanghai moderna (M50)</li></ul></div>
     </div>
-    <!-- Qua 28 -->
     <div class="day">
-      <div class="cell-top c-sha"><span class="date">28</span><span class="wknum">Out · Qua</span></div>
-      <div class="cell-city c-sha">Shanghai · n6</div>
-      <div class="cell-body"><ul>
-        <li class="move">🚄 Nanjing (1h) — opcional</li>
-        <li>Muralha Ming · Sun Yat-sen</li>
-        <li>ou dia em Shanghai</li>
-      </ul></div>
+      <div class="cell-top" style="background:#1f6feb"><span class="date">28</span><span class="wknum">Out · Qua</span></div>
+      <div class="cell-city" style="background:#1f6feb">Shanghai · n6</div>
+      <div class="cell-body"><ul><li class="move">🚄 Nanjing (1h) — opcional</li><li>Muralha Ming · Sun Yat-sen</li><li>ou dia em Shanghai</li></ul></div>
     </div>
-    <!-- Qui 29 -->
     <div class="day">
-      <div class="cell-top c-sha"><span class="date">29</span><span class="wknum">Out · Qui</span></div>
-      <div class="cell-city c-sha">Shanghai · n7</div>
-      <div class="cell-body"><ul>
-        <li>Dia livre na cidade</li>
-        <li>Rio Huangpu de barco</li>
-        <li>Museus / bairros que faltaram</li>
-      </ul></div>
+      <div class="cell-top" style="background:#1f6feb"><span class="date">29</span><span class="wknum">Out · Qui</span></div>
+      <div class="cell-city" style="background:#1f6feb">Shanghai · n7</div>
+      <div class="cell-body"><ul><li>Dia livre na cidade</li><li>Rio Huangpu de barco</li><li>Museus / bairros que faltaram</li></ul></div>
     </div>
-    <!-- Sex 30 -->
     <div class="day">
-      <div class="cell-top c-sha"><span class="date">30</span><span class="wknum">Out · Sex</span></div>
-      <div class="cell-city c-sha">Shanghai · n8</div>
-      <div class="cell-body"><ul>
-        <li>Compras finais</li>
-        <li>Dia-colchão (buffer)</li>
-        <li>Jantar de despedida</li>
-      </ul></div>
+      <div class="cell-top" style="background:#1f6feb"><span class="date">30</span><span class="wknum">Out · Sex</span></div>
+      <div class="cell-city" style="background:#1f6feb">Shanghai · n8</div>
+      <div class="cell-body"><ul><li>Compras finais</li><li>Dia-colchão (buffer)</li><li>Jantar de despedida</li></ul></div>
     </div>
-    <!-- Sáb 31 -->
     <div class="day">
-      <div class="cell-top c-tra"><span class="date">31</span><span class="wknum">Out · Sáb</span></div>
-      <div class="cell-city c-tra">Saída PVG</div>
-      <div class="cell-body"><ul>
-        <li>Maglev → PVG (430km/h)</li>
-        <li>PVG 4h+ antes (Turkish atrasa)</li>
-        <li class="move">TK27 23:05 → IST</li>
-      </ul></div>
+      <div class="cell-top" style="background:#5a5a6e"><span class="date">31</span><span class="wknum">Out · Sáb</span></div>
+      <div class="cell-city" style="background:#5a5a6e">Saída PVG</div>
+      <div class="cell-body"><ul><li>Maglev → PVG (430km/h)</li><li>PVG 4h+ antes (Turkish atrasa)</li><li class="move">TK27 23:05 → IST</li></ul></div>
     </div>
-    <!-- Dom 1 Nov -->
     <div class="day">
-      <div class="cell-top c-tra"><span class="date">01</span><span class="wknum">Nov · Dom</span></div>
-      <div class="cell-city c-tra">Volta 🇧🇷</div>
-      <div class="cell-body"><ul>
-        <li>06:05 IST (conexão 3h55)</li>
-        <li class="move">TK15 10:00 → GRU 17:45</li>
-        <li class="move">GRU → GIG 20:45</li>
-      </ul></div>
+      <div class="cell-top" style="background:#5a5a6e"><span class="date">01</span><span class="wknum">Nov · Dom</span></div>
+      <div class="cell-city" style="background:#5a5a6e">Volta 🇧🇷</div>
+      <div class="cell-body"><ul><li>06:05 IST (conexão 3h55)</li><li class="move">TK15 10:00 → GRU 17:45</li><li class="move">GRU → GIG 20:45</li></ul></div>
     </div>
   </div>
 
-  <div class="footer">
-    Reservar antes: voo Pequim→Zhangjiajie · Glass Bridge · trens Zhangjiajie–Furong–Fenghuang e Huaihua→Shangrao · hotel dentro de Wangxian Valley · Mutianyu transfer.
-    &nbsp;·&nbsp; Detalhe hora a hora em 02-ROTEIRO.md
-  </div>
+  <h2 class="sec">✈️ Voos</h2>
+  <table class="flights"><tbody>
+<tr><td>2026-10-10</td><td>TK216</td><td>GRU → IST</td><td>16:35 → 11:15+1</td></tr>
+<tr><td>2026-10-14</td><td>TK196</td><td>IST → PEK</td><td>16:00 → 05:50+1</td></tr>
+<tr><td>2026-10-31</td><td>TK27</td><td>PVG → IST</td><td>23:05 → 06:05+1</td></tr>
+<tr><td>2026-11-01</td><td>TK15</td><td>IST → GRU</td><td>10:00 → 17:45</td></tr>
+<tr><td>2026-11-01</td><td>TK9187</td><td>GRU → GIG</td><td>19:45 → 20:45</td></tr>
+  </tbody></table>
+  <div class="footer">Exemplo gerado com trip-template · edite e rode: node lib/render.mjs trip.example.json</div>
 
 </body>
 </html>
