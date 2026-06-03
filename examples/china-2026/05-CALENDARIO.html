@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>China &amp; Istambul — Outubro 2026</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { -webkit-text-size-adjust: 100%; }
@@ -13,27 +15,25 @@
   .header .sub { font-size: 12px; opacity: .93; line-height: 1.4; }
   .header .meta { font-size: 11px; line-height: 1.55; opacity: .95; }
 
-  /* Tabs */
-  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
   .tab { -webkit-appearance: none; appearance: none; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; padding: 8px 14px; border-radius: 20px; border: 1px solid #e6e6ee; background: #fff; color: #1a1a2e; }
   .tab.active { background: #1f6feb; color: #fff; border-color: #1f6feb; }
+
+  .filterbar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 6px; }
+  .filter-hint { font-size: 11px; color: #999; margin-bottom: 12px; }
+  .chip { -webkit-appearance: none; appearance: none; font: inherit; display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; padding: 5px 10px; border-radius: 20px; background: #fff; border: 1px solid rgba(0,0,0,.08); color: #1a1a2e; }
+  .chip.showall, .chip.city { cursor: pointer; user-select: none; }
+  .chip.showall.active { background: #1f6feb; color: #fff; border-color: #1f6feb; }
+  .chip.city.sel { box-shadow: 0 0 0 2px #1f6feb; font-weight: 700; }
+  body.filtering .chip.city:not(.sel) { opacity: .4; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+
   .panel { display: none; }
   .panel.active { display: block; }
 
-  /* Legend (chips filtráveis) */
-  .legend { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; }
-  .chip { -webkit-appearance: none; appearance: none; font: inherit; display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; padding: 5px 10px; border-radius: 20px; background: #fff; border: 1px solid rgba(0,0,0,.08); color: #1a1a2e; }
-  .chip.city { cursor: pointer; user-select: none; }
-  .chip.city.off { opacity: .42; text-decoration: line-through; }
-  .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
-  .legend-hint { font-size: 11px; color: #999; margin-bottom: 12px; }
-
-  /* Calendar */
   .weekhdr { display: none; }
   .cal { display: grid; grid-template-columns: 1fr; gap: 10px; }
-  .day { border-radius: 12px; border: 1px solid #e6e6ee; background: #fff; overflow: hidden; box-shadow: 0 1px 3px rgba(20,20,40,.05); transition: opacity .15s; }
-  .day.off { opacity: .16; pointer-events: none; }
-  .empty { display: none; }
+  .day { border-radius: 12px; border: 1px solid #e6e6ee; background: #fff; overflow: hidden; box-shadow: 0 1px 3px rgba(20,20,40,.05); }
   .cell-top { display: flex; align-items: center; justify-content: space-between; padding: 9px 13px; color: #fff; }
   .cell-top .date { font-size: 20px; font-weight: 800; line-height: 1; }
   .cell-top .wknum { font-size: 11px; opacity: .92; text-transform: uppercase; letter-spacing: .5px; }
@@ -46,13 +46,11 @@
   .cell-body li.star::before { content: "★"; color: #e6a817; }
   .cell-body li.move::before { content: "→"; color: #1f6feb; font-weight: 700; }
 
-  /* Links */
   .panel a { color: inherit; text-decoration: underline; text-decoration-color: rgba(31,111,235,.45); text-underline-offset: 2px; }
   .panel a:hover { text-decoration-color: #1f6feb; }
   .panel a.lk { text-decoration: none; font-size: .9em; opacity: .85; }
   .panel a.lk:hover { opacity: 1; }
 
-  /* Transportes / Lugares */
   .sec { font-size: 14px; margin: 16px 0 8px; color: #1a1a2e; }
   .sec:first-child { margin-top: 0; }
   table.flights { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; font-size: 12.5px; }
@@ -64,7 +62,7 @@
   .tl-date { font-weight: 700; min-width: 74px; color: #555; font-size: 12px; }
   .tl-txt { flex: 1; }
   .pl-city { display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 15px; margin: 18px 0 6px; }
-  .pl-city:first-child { margin-top: 0; }
+  .pl-group:first-child .pl-city { margin-top: 0; }
   .pl-dates { font-weight: 600; font-size: 12px; color: #999; }
   .pl-day { display: flex; gap: 12px; padding: 6px 0 6px 16px; border-left: 2px solid #eee; margin-left: 5px; }
   .pl-d { min-width: 72px; font-size: 12px; font-weight: 700; color: #666; padding-top: 1px; }
@@ -74,6 +72,12 @@
   .pl-day li.star { font-weight: 700; }
   .pl-day li.star::before { content: "★"; color: #e6a817; }
   .empty-msg { color: #888; font-size: 13px; padding: 10px; }
+
+  .mapbox { height: 72vh; min-height: 400px; border-radius: 12px; overflow: hidden; border: 1px solid #e6e6ee; background: #e8edf3; }
+  .map-fallback { padding: 40px 24px; color: #7a7a8a; font-size: 13px; text-align: center; }
+  .leaflet-popup-content { font-size: 13px; line-height: 1.5; }
+  .leaflet-popup-content a { color: #1f6feb; text-decoration: none; }
+
   .footer { margin-top: 16px; font-size: 11px; color: #888; text-align: center; line-height: 1.5; }
 
   @media (min-width: 620px) {
@@ -83,11 +87,10 @@
   }
   @media (min-width: 1000px) {
     body { padding: 14px; }
-    .cal { grid-template-columns: repeat(7, 1fr); gap: 5px; }
-    .empty { display: block; min-height: 120px; box-shadow: none; background: repeating-linear-gradient(45deg,#fafafc,#fafafc 6px,#f2f2f7 6px,#f2f2f7 12px); border: 1px solid #eee; }
+    .cal { grid-template-columns: repeat(7, 1fr); gap: 5px; grid-auto-flow: row; }
+    .day { grid-column: var(--c); box-shadow: none; }
     .weekhdr { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; margin-bottom: 5px; }
     .weekhdr div { font-size: 10px; text-transform: uppercase; letter-spacing: .6px; color: #555; font-weight: 700; text-align: center; }
-    .day { box-shadow: none; }
     .cell-top { padding: 5px 8px; } .cell-top .date { font-size: 15px; } .cell-top .wknum { font-size: 9px; }
     .cell-city { font-size: 9px; padding: 2px 8px; }
     .cell-body { padding: 6px 8px 7px; } .cell-body li { font-size: 9.5px; line-height: 1.34; margin-bottom: 2px; padding-left: 10px; }
@@ -95,16 +98,13 @@
   @media print {
     @page { size: A4 landscape; margin: 7mm; }
     body { padding: 0; background: #fff; }
-    .tabs { display: none; }
+    .tabs, .filterbar, .filter-hint { display: none; }
     .panel { display: none !important; }
     .panel[data-tab="cal"] { display: block !important; }
-    .legend, .legend-hint { display: none; }
-    .day.off { opacity: 1 !important; }
-    .cal { grid-template-columns: repeat(7, 1fr); gap: 4px; }
+    .cal { grid-template-columns: repeat(7, 1fr); gap: 4px; grid-auto-flow: row; }
+    .day { grid-column: var(--c); box-shadow: none; break-inside: avoid; }
     .weekhdr { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin-bottom: 4px; }
     .weekhdr div { font-size: 9px; text-transform: uppercase; letter-spacing: .6px; color: #555; font-weight: 700; text-align: center; }
-    .empty { display: block; min-height: 116px; box-shadow: none; background: repeating-linear-gradient(45deg,#fafafc,#fafafc 6px,#f2f2f7 6px,#f2f2f7 12px); border: 1px solid #eee; }
-    .day { box-shadow: none; break-inside: avoid; }
     .header { flex-direction: row; align-items: center; justify-content: space-between; }
     .cell-top { padding: 4px 7px; } .cell-top .date { font-size: 13px; } .cell-top .wknum { font-size: 8px; }
     .cell-city { font-size: 8.5px; padding: 2px 7px; }
@@ -130,10 +130,11 @@
     <button class="tab active" data-panel="cal">📅 Calendário</button>
     <button class="tab" data-panel="trans">🚆 Transportes</button>
     <button class="tab" data-panel="places">📍 Lugares</button>
+    <button class="tab" data-panel="map">🗺️ Mapa</button>
   </div>
 
-  <div class="panel active" data-tab="cal">
-    <div class="legend">
+  <div class="filterbar">
+      <button class="chip showall active">Mostrar tudo</button>
       <button class="chip city" data-idx="0"><span class="dot" style="background:#5a5a6e"></span>Embarque · 1n</button>
       <button class="chip city" data-idx="1"><span class="dot" style="background:#0e9e96"></span>Istambul · 3n</button>
       <button class="chip city" data-idx="2"><span class="dot" style="background:#5a5a6e"></span>IST → Pequim · 1n</button>
@@ -147,124 +148,125 @@
       <button class="chip city" data-idx="10"><span class="dot" style="background:#5a5a6e"></span>Volta 🇧🇷 · 1n</button>
       <span class="chip info">★ destaque</span>
       <span class="chip info">→ deslocamento</span>
-    </div>
-    <div class="legend-hint">Toque numa cidade para mostrar/ocultar os dias dela no calendário.</div>
+  </div>
+  <div class="filter-hint">Toque numa cidade para ver só ela (vale pras 4 abas). "Mostrar tudo" limpa o filtro.</div>
+
+  <div class="panel active" data-tab="cal">
     <div class="weekhdr">
       <div>Segunda</div><div>Terça</div><div>Quarta</div><div>Quinta</div><div>Sexta</div><div>Sábado</div><div>Domingo</div>
     </div>
     <div class="cal">
-      <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
-      <div class="day" data-idx="0">
+      <div class="day" data-idx="0" style="--c:6">
       <div class="cell-top" style="background:#5a5a6e"><span class="date">10</span><span class="wknum">Out · Sáb</span></div>
       <div class="cell-city" style="background:#5a5a6e">Embarque</div>
       <div class="cell-body"><ul><li class="move">Rio → GRU</li><li class="move">TK216 16:35 → Istambul</li></ul></div>
     </div>
-      <div class="day" data-idx="1">
+      <div class="day" data-idx="1" style="--c:7">
       <div class="cell-top" style="background:#0e9e96"><span class="date">11</span><span class="wknum">Out · Dom</span></div>
       <div class="cell-city" style="background:#0e9e96">Istambul · n1</div>
       <div class="cell-body"><ul><li class="move">Pouso 11:15 · check-in Karaköy</li><li class="star"><a href="https://muze.gen.tr/muze-detay/ayasofya" target="_blank" rel="noopener">Hagia Sofia</a> <a class="lk" href="https://muze.gen.tr" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0086&amp;mlon=28.9802#map=16/41.0086/28.9802" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Cisterna Basílica <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0084&amp;mlon=28.9779#map=16/41.0084/28.9779" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
     </div>
-      <div class="day" data-idx="1">
+      <div class="day" data-idx="1" style="--c:1">
       <div class="cell-top" style="background:#0e9e96"><span class="date">12</span><span class="wknum">Out · Seg</span></div>
       <div class="cell-city" style="background:#0e9e96">Istambul · n2</div>
       <div class="cell-body"><ul><li class="star"><a href="https://muze.gen.tr" target="_blank" rel="noopener">Topkapı + Harém</a> <a class="lk" href="https://muze.gen.tr" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0115&amp;mlon=28.9834#map=16/41.0115/28.9834" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li class="star">Grand Bazaar <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0106&amp;mlon=28.9681#map=16/41.0106/28.9681" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Hammam · Galata à noite <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0256&amp;mlon=28.9744#map=16/41.0256/28.9744" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
     </div>
-      <div class="day" data-idx="1">
+      <div class="day" data-idx="1" style="--c:2">
       <div class="cell-top" style="background:#0e9e96"><span class="date">13</span><span class="wknum">Out · Ter</span></div>
       <div class="cell-city" style="background:#0e9e96">Istambul · n3</div>
       <div class="cell-body"><ul><li class="move">Ferry → Büyükada</li><li class="star">Aya Yorgi <a class="lk" href="https://www.openstreetmap.org/?mlat=40.8569&amp;mlon=29.1287#map=16/40.8569/29.1287" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Pernoite na ilha</li></ul></div>
     </div>
-      <div class="day" data-idx="2">
+      <div class="day" data-idx="2" style="--c:3">
       <div class="cell-top" style="background:#5a5a6e"><span class="date">14</span><span class="wknum">Out · Qua</span></div>
       <div class="cell-city" style="background:#5a5a6e">IST → Pequim</div>
       <div class="cell-body"><ul><li class="move">Ferry volta · Eminönü</li><li class="move">TK196 16:00 → Pequim</li></ul></div>
     </div>
-      <div class="day" data-idx="3">
+      <div class="day" data-idx="3" style="--c:4">
       <div class="cell-top" style="background:#c0392b"><span class="date">15</span><span class="wknum">Out · Qui</span></div>
       <div class="cell-city" style="background:#c0392b">Pequim · n1</div>
       <div class="cell-body"><ul><li>Pouso 05:50 · dia leve</li><li><a href="https://www.798district.com/" target="_blank" rel="noopener">798 Art District</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=39.9847&amp;mlon=116.4951#map=16/39.9847/116.4951" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Hutongs + craft beer</li></ul></div>
     </div>
-      <div class="day" data-idx="3">
+      <div class="day" data-idx="3" style="--c:5">
       <div class="cell-top" style="background:#c0392b"><span class="date">16</span><span class="wknum">Out · Sex</span></div>
       <div class="cell-city" style="background:#c0392b">Pequim · n2</div>
       <div class="cell-body"><ul><li class="star"><a href="https://en.mutianyugreatwall.com/" target="_blank" rel="noopener">Muralha Mutianyu</a> <a class="lk" href="https://en.mutianyugreatwall.com/reservation-center/tickets" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=40.4319&amp;mlon=116.5704#map=16/40.4319/116.5704" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Teleférico + toboggan</li><li>Pato laqueado</li></ul></div>
     </div>
-      <div class="day" data-idx="4">
+      <div class="day" data-idx="4" style="--c:6">
       <div class="cell-top" style="background:#2e8b57"><span class="date">17</span><span class="wknum">Out · Sáb</span></div>
       <div class="cell-city" style="background:#2e8b57">Zhangjiajie · n1</div>
       <div class="cell-body"><ul><li class="move">✈ Pequim → Zhangjiajie</li><li>Templo do Céu (manhã) <a class="lk" href="https://www.openstreetmap.org/?mlat=39.8822&amp;mlon=116.4066#map=16/39.8822/116.4066" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Chegada noite</li></ul></div>
     </div>
-      <div class="day" data-idx="4">
+      <div class="day" data-idx="4" style="--c:7">
       <div class="cell-top" style="background:#2e8b57"><span class="date">18</span><span class="wknum">Out · Dom</span></div>
       <div class="cell-city" style="background:#2e8b57">Zhangjiajie · n2</div>
       <div class="cell-body"><ul><li class="star">Tianmen Mountain <a class="lk" href="https://www.klook.com/en-US/search/?query=Tianmen%20Mountain%20Zhangjiajie" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=29.0517&amp;mlon=110.479#map=16/29.0517/110.479" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Heaven's Gate · trilha vidro</li><li class="star">72 Wonder Tower (noite) <a class="lk" href="https://www.openstreetmap.org/?mlat=29.1163&amp;mlon=110.479#map=16/29.1163/110.479" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
     </div>
-      <div class="day" data-idx="4">
+      <div class="day" data-idx="4" style="--c:1">
       <div class="cell-top" style="background:#2e8b57"><span class="date">19</span><span class="wknum">Out · Seg</span></div>
       <div class="cell-city" style="background:#2e8b57">Zhangjiajie · n3</div>
       <div class="cell-body"><ul><li class="star">Avatar Mountains <a class="lk" href="https://www.klook.com/en-US/search/?query=Zhangjiajie%20National%20Forest%20Park" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=29.3155&amp;mlon=110.4344#map=16/29.3155/110.4344" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Yuanjiajie + Tianzi</li><li>Bailong Elevator (326m)</li></ul></div>
     </div>
-      <div class="day" data-idx="5">
+      <div class="day" data-idx="5" style="--c:2">
       <div class="cell-top" style="background:#d98a0b"><span class="date">20</span><span class="wknum">Out · Ter</span></div>
       <div class="cell-city" style="background:#d98a0b">Furong</div>
       <div class="cell-body"><ul><li class="star">Glass Bridge (430m) <a class="lk" href="https://www.klook.com/en-US/activity/6602-grand-canyon-glass-bridge-tickets-zhangjiajie/" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=29.347&amp;mlon=110.536#map=16/29.347/110.536" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li class="move">🚄 → Furong (30min)</li><li class="star">Cachoeira iluminada (noite) <a class="lk" href="https://www.openstreetmap.org/?mlat=28.68&amp;mlon=109.999#map=16/28.68/109.999" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
     </div>
-      <div class="day" data-idx="6">
+      <div class="day" data-idx="6" style="--c:3">
       <div class="cell-top" style="background:#7d3cc0"><span class="date">21</span><span class="wknum">Out · Qua</span></div>
       <div class="cell-city" style="background:#7d3cc0">Fenghuang</div>
       <div class="cell-body"><ul><li>Furong manhã (cachoeira)</li><li class="move">🚄 → Fenghuang (40min)</li><li class="star">Rio Tuojiang iluminado <a class="lk" href="https://www.openstreetmap.org/?mlat=27.948&amp;mlon=109.599#map=16/27.948/109.599" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
     </div>
-      <div class="day" data-idx="7">
+      <div class="day" data-idx="7" style="--c:4">
       <div class="cell-top" style="background:#3b4bc4"><span class="date">22</span><span class="wknum">Out · Qui</span></div>
       <div class="cell-city" style="background:#3b4bc4">Wangxian Valley</div>
       <div class="cell-body"><ul><li class="move">🚄 Fenghuang→Huaihua→Shangrao</li><li>Translado longo (~5-6h)</li><li class="star"><a href="https://www.trip.com/" target="_blank" rel="noopener">Wangxian Valley (noite)</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=28.33&amp;mlon=117.78#map=16/28.33/117.78" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
     </div>
-      <div class="day" data-idx="8">
+      <div class="day" data-idx="8" style="--c:5">
       <div class="cell-top" style="background:#1f6feb"><span class="date">23</span><span class="wknum">Out · Sex</span></div>
       <div class="cell-city" style="background:#1f6feb">Shanghai · n1</div>
       <div class="cell-body"><ul><li>Wangxian de manhã</li><li class="move">🚄 → Shanghai (~3h)</li><li class="star">The Bund à noite <a class="lk" href="https://www.openstreetmap.org/?mlat=31.2397&amp;mlon=121.49#map=16/31.2397/121.49" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
     </div>
-      <div class="day" data-idx="8">
+      <div class="day" data-idx="8" style="--c:6">
       <div class="cell-top" style="background:#1f6feb"><span class="date">24</span><span class="wknum">Out · Sáb</span></div>
       <div class="cell-city" style="background:#1f6feb">Shanghai · n2</div>
       <div class="cell-body"><ul><li>Yu Garden <a class="lk" href="https://www.openstreetmap.org/?mlat=31.227&amp;mlon=121.492#map=16/31.227/121.492" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li class="star">Concessão Francesa <a class="lk" href="https://www.openstreetmap.org/?mlat=31.211&amp;mlon=121.457#map=16/31.211/121.457" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Pudong / Shanghai Tower</li></ul></div>
     </div>
-      <div class="day" data-idx="8">
+      <div class="day" data-idx="8" style="--c:7">
       <div class="cell-top" style="background:#1f6feb"><span class="date">25</span><span class="wknum">Out · Dom</span></div>
       <div class="cell-city" style="background:#1f6feb">Shanghai · n3</div>
       <div class="cell-body"><ul><li class="move">🚄 Suzhou (30min)</li><li class="star">Humble Administrator's Garden <a class="lk" href="https://www.trip.com/travel-guide/attraction/suzhou/humble-administrator-s-garden-82473/" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=31.326&amp;mlon=120.629#map=16/31.326/120.629" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Pingjiang · seda</li></ul></div>
     </div>
-      <div class="day" data-idx="8">
+      <div class="day" data-idx="8" style="--c:1">
       <div class="cell-top" style="background:#1f6feb"><span class="date">26</span><span class="wknum">Out · Seg</span></div>
       <div class="cell-city" style="background:#1f6feb">Shanghai · n4</div>
       <div class="cell-body"><ul><li class="move">🚄 Hangzhou (1h)</li><li class="star">West Lake <a class="lk" href="https://www.openstreetmap.org/?mlat=30.2447&amp;mlon=120.149#map=16/30.2447/120.149" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Lingyin · chá Longjing <a class="lk" href="https://www.openstreetmap.org/?mlat=30.241&amp;mlon=120.098#map=16/30.241/120.098" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
     </div>
-      <div class="day" data-idx="8">
+      <div class="day" data-idx="8" style="--c:2">
       <div class="cell-top" style="background:#1f6feb"><span class="date">27</span><span class="wknum">Out · Ter</span></div>
       <div class="cell-city" style="background:#1f6feb">Shanghai · n5</div>
       <div class="cell-body"><ul><li class="star">Water town</li><li>Zhujiajiao ou Wuzhen</li><li>Shanghai moderna (M50)</li></ul></div>
     </div>
-      <div class="day" data-idx="8">
+      <div class="day" data-idx="8" style="--c:3">
       <div class="cell-top" style="background:#1f6feb"><span class="date">28</span><span class="wknum">Out · Qua</span></div>
       <div class="cell-city" style="background:#1f6feb">Shanghai · n6</div>
       <div class="cell-body"><ul><li class="move">🚄 Nanjing (1h) — opcional</li><li>Muralha Ming · Sun Yat-sen</li><li>ou dia em Shanghai</li></ul></div>
     </div>
-      <div class="day" data-idx="8">
+      <div class="day" data-idx="8" style="--c:4">
       <div class="cell-top" style="background:#1f6feb"><span class="date">29</span><span class="wknum">Out · Qui</span></div>
       <div class="cell-city" style="background:#1f6feb">Shanghai · n7</div>
       <div class="cell-body"><ul><li>Dia livre na cidade</li><li>Rio Huangpu de barco</li><li>Museus / bairros que faltaram</li></ul></div>
     </div>
-      <div class="day" data-idx="8">
+      <div class="day" data-idx="8" style="--c:5">
       <div class="cell-top" style="background:#1f6feb"><span class="date">30</span><span class="wknum">Out · Sex</span></div>
       <div class="cell-city" style="background:#1f6feb">Shanghai · n8</div>
       <div class="cell-body"><ul><li>Compras finais</li><li>Dia-colchão (buffer)</li><li>Jantar de despedida</li></ul></div>
     </div>
-      <div class="day" data-idx="9">
+      <div class="day" data-idx="9" style="--c:6">
       <div class="cell-top" style="background:#5a5a6e"><span class="date">31</span><span class="wknum">Out · Sáb</span></div>
       <div class="cell-city" style="background:#5a5a6e">Saída PVG</div>
       <div class="cell-body"><ul><li>Maglev → PVG (430km/h)</li><li>PVG 4h+ antes (Turkish atrasa)</li><li class="move">TK27 23:05 → IST</li></ul></div>
     </div>
-      <div class="day" data-idx="10">
+      <div class="day" data-idx="10" style="--c:7">
       <div class="cell-top" style="background:#5a5a6e"><span class="date">01</span><span class="wknum">Nov · Dom</span></div>
       <div class="cell-city" style="background:#5a5a6e">Volta 🇧🇷</div>
       <div class="cell-body"><ul><li>06:05 IST (conexão 3h55)</li><li class="move">TK15 10:00 → GRU 17:45</li><li class="move">GRU → GIG 20:45</li></ul></div>
@@ -279,52 +281,106 @@
 <tr><td>2026-10-31</td><td>TK27</td><td>PVG → IST</td><td>23:05 → 06:05+1</td></tr>
 <tr><td>2026-11-01</td><td>TK15</td><td>IST → GRU</td><td>10:00 → 17:45</td></tr>
 <tr><td>2026-11-01</td><td>TK9187</td><td>GRU → GIG</td><td>19:45 → 20:45</td></tr>
-</tbody></table><h2 class="sec">🧭 Deslocamentos no roteiro</h2><div class="tl"><div class="tl-row"><span class="tl-date">10/10 Sáb</span><span class="dot" style="background:#5a5a6e"></span><span class="tl-txt">Rio → GRU</span></div>
-<div class="tl-row"><span class="tl-date">10/10 Sáb</span><span class="dot" style="background:#5a5a6e"></span><span class="tl-txt">TK216 16:35 → Istambul</span></div>
-<div class="tl-row"><span class="tl-date">11/10 Dom</span><span class="dot" style="background:#0e9e96"></span><span class="tl-txt">Pouso 11:15 · check-in Karaköy</span></div>
-<div class="tl-row"><span class="tl-date">13/10 Ter</span><span class="dot" style="background:#0e9e96"></span><span class="tl-txt">Ferry → Büyükada</span></div>
-<div class="tl-row"><span class="tl-date">14/10 Qua</span><span class="dot" style="background:#5a5a6e"></span><span class="tl-txt">Ferry volta · Eminönü</span></div>
-<div class="tl-row"><span class="tl-date">14/10 Qua</span><span class="dot" style="background:#5a5a6e"></span><span class="tl-txt">TK196 16:00 → Pequim</span></div>
-<div class="tl-row"><span class="tl-date">17/10 Sáb</span><span class="dot" style="background:#2e8b57"></span><span class="tl-txt">✈ Pequim → Zhangjiajie</span></div>
-<div class="tl-row"><span class="tl-date">20/10 Ter</span><span class="dot" style="background:#d98a0b"></span><span class="tl-txt">🚄 → Furong (30min)</span></div>
-<div class="tl-row"><span class="tl-date">21/10 Qua</span><span class="dot" style="background:#7d3cc0"></span><span class="tl-txt">🚄 → Fenghuang (40min)</span></div>
-<div class="tl-row"><span class="tl-date">22/10 Qui</span><span class="dot" style="background:#3b4bc4"></span><span class="tl-txt">🚄 Fenghuang→Huaihua→Shangrao</span></div>
-<div class="tl-row"><span class="tl-date">23/10 Sex</span><span class="dot" style="background:#1f6feb"></span><span class="tl-txt">🚄 → Shanghai (~3h)</span></div>
-<div class="tl-row"><span class="tl-date">25/10 Dom</span><span class="dot" style="background:#1f6feb"></span><span class="tl-txt">🚄 Suzhou (30min)</span></div>
-<div class="tl-row"><span class="tl-date">26/10 Seg</span><span class="dot" style="background:#1f6feb"></span><span class="tl-txt">🚄 Hangzhou (1h)</span></div>
-<div class="tl-row"><span class="tl-date">28/10 Qua</span><span class="dot" style="background:#1f6feb"></span><span class="tl-txt">🚄 Nanjing (1h) — opcional</span></div>
-<div class="tl-row"><span class="tl-date">31/10 Sáb</span><span class="dot" style="background:#5a5a6e"></span><span class="tl-txt">TK27 23:05 → IST</span></div>
-<div class="tl-row"><span class="tl-date">01/11 Dom</span><span class="dot" style="background:#5a5a6e"></span><span class="tl-txt">TK15 10:00 → GRU 17:45</span></div>
-<div class="tl-row"><span class="tl-date">01/11 Dom</span><span class="dot" style="background:#5a5a6e"></span><span class="tl-txt">GRU → GIG 20:45</span></div></div>
+</tbody></table><h2 class="sec">🧭 Deslocamentos no roteiro</h2><div class="tl"><div class="tl-row" data-idx="0"><span class="tl-date">10/10 Sáb</span><span class="dot" style="background:#5a5a6e"></span><span class="tl-txt">Rio → GRU</span></div>
+<div class="tl-row" data-idx="0"><span class="tl-date">10/10 Sáb</span><span class="dot" style="background:#5a5a6e"></span><span class="tl-txt">TK216 16:35 → Istambul</span></div>
+<div class="tl-row" data-idx="1"><span class="tl-date">11/10 Dom</span><span class="dot" style="background:#0e9e96"></span><span class="tl-txt">Pouso 11:15 · check-in Karaköy</span></div>
+<div class="tl-row" data-idx="1"><span class="tl-date">13/10 Ter</span><span class="dot" style="background:#0e9e96"></span><span class="tl-txt">Ferry → Büyükada</span></div>
+<div class="tl-row" data-idx="2"><span class="tl-date">14/10 Qua</span><span class="dot" style="background:#5a5a6e"></span><span class="tl-txt">Ferry volta · Eminönü</span></div>
+<div class="tl-row" data-idx="2"><span class="tl-date">14/10 Qua</span><span class="dot" style="background:#5a5a6e"></span><span class="tl-txt">TK196 16:00 → Pequim</span></div>
+<div class="tl-row" data-idx="4"><span class="tl-date">17/10 Sáb</span><span class="dot" style="background:#2e8b57"></span><span class="tl-txt">✈ Pequim → Zhangjiajie</span></div>
+<div class="tl-row" data-idx="5"><span class="tl-date">20/10 Ter</span><span class="dot" style="background:#d98a0b"></span><span class="tl-txt">🚄 → Furong (30min)</span></div>
+<div class="tl-row" data-idx="6"><span class="tl-date">21/10 Qua</span><span class="dot" style="background:#7d3cc0"></span><span class="tl-txt">🚄 → Fenghuang (40min)</span></div>
+<div class="tl-row" data-idx="7"><span class="tl-date">22/10 Qui</span><span class="dot" style="background:#3b4bc4"></span><span class="tl-txt">🚄 Fenghuang→Huaihua→Shangrao</span></div>
+<div class="tl-row" data-idx="8"><span class="tl-date">23/10 Sex</span><span class="dot" style="background:#1f6feb"></span><span class="tl-txt">🚄 → Shanghai (~3h)</span></div>
+<div class="tl-row" data-idx="8"><span class="tl-date">25/10 Dom</span><span class="dot" style="background:#1f6feb"></span><span class="tl-txt">🚄 Suzhou (30min)</span></div>
+<div class="tl-row" data-idx="8"><span class="tl-date">26/10 Seg</span><span class="dot" style="background:#1f6feb"></span><span class="tl-txt">🚄 Hangzhou (1h)</span></div>
+<div class="tl-row" data-idx="8"><span class="tl-date">28/10 Qua</span><span class="dot" style="background:#1f6feb"></span><span class="tl-txt">🚄 Nanjing (1h) — opcional</span></div>
+<div class="tl-row" data-idx="9"><span class="tl-date">31/10 Sáb</span><span class="dot" style="background:#5a5a6e"></span><span class="tl-txt">TK27 23:05 → IST</span></div>
+<div class="tl-row" data-idx="10"><span class="tl-date">01/11 Dom</span><span class="dot" style="background:#5a5a6e"></span><span class="tl-txt">TK15 10:00 → GRU 17:45</span></div>
+<div class="tl-row" data-idx="10"><span class="tl-date">01/11 Dom</span><span class="dot" style="background:#5a5a6e"></span><span class="tl-txt">GRU → GIG 20:45</span></div></div>
   </div>
 
   <div class="panel" data-tab="places">
-    <div class="pl-city"><span class="dot" style="background:#0e9e96"></span>Istambul <span class="pl-dates">11–13/10</span></div><div class="pl-day"><span class="pl-d">11/10 Dom</span><ul><li class="star"><a href="https://muze.gen.tr/muze-detay/ayasofya" target="_blank" rel="noopener">Hagia Sofia</a> <a class="lk" href="https://muze.gen.tr" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0086&amp;mlon=28.9802#map=16/41.0086/28.9802" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Cisterna Basílica <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0084&amp;mlon=28.9779#map=16/41.0084/28.9779" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div><div class="pl-day"><span class="pl-d">12/10 Seg</span><ul><li class="star"><a href="https://muze.gen.tr" target="_blank" rel="noopener">Topkapı + Harém</a> <a class="lk" href="https://muze.gen.tr" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0115&amp;mlon=28.9834#map=16/41.0115/28.9834" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li class="star">Grand Bazaar <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0106&amp;mlon=28.9681#map=16/41.0106/28.9681" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Hammam · Galata à noite <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0256&amp;mlon=28.9744#map=16/41.0256/28.9744" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div><div class="pl-day"><span class="pl-d">13/10 Ter</span><ul><li class="star">Aya Yorgi <a class="lk" href="https://www.openstreetmap.org/?mlat=40.8569&amp;mlon=29.1287#map=16/40.8569/29.1287" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Pernoite na ilha</li></ul></div>
-<div class="pl-city"><span class="dot" style="background:#c0392b"></span>Pequim <span class="pl-dates">15–16/10</span></div><div class="pl-day"><span class="pl-d">15/10 Qui</span><ul><li>Pouso 05:50 · dia leve</li><li><a href="https://www.798district.com/" target="_blank" rel="noopener">798 Art District</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=39.9847&amp;mlon=116.4951#map=16/39.9847/116.4951" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Hutongs + craft beer</li></ul></div><div class="pl-day"><span class="pl-d">16/10 Sex</span><ul><li class="star"><a href="https://en.mutianyugreatwall.com/" target="_blank" rel="noopener">Muralha Mutianyu</a> <a class="lk" href="https://en.mutianyugreatwall.com/reservation-center/tickets" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=40.4319&amp;mlon=116.5704#map=16/40.4319/116.5704" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Teleférico + toboggan</li><li>Pato laqueado</li></ul></div>
-<div class="pl-city"><span class="dot" style="background:#2e8b57"></span>Zhangjiajie <span class="pl-dates">17–19/10</span></div><div class="pl-day"><span class="pl-d">17/10 Sáb</span><ul><li>Templo do Céu (manhã) <a class="lk" href="https://www.openstreetmap.org/?mlat=39.8822&amp;mlon=116.4066#map=16/39.8822/116.4066" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Chegada noite</li></ul></div><div class="pl-day"><span class="pl-d">18/10 Dom</span><ul><li class="star">Tianmen Mountain <a class="lk" href="https://www.klook.com/en-US/search/?query=Tianmen%20Mountain%20Zhangjiajie" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=29.0517&amp;mlon=110.479#map=16/29.0517/110.479" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Heaven's Gate · trilha vidro</li><li class="star">72 Wonder Tower (noite) <a class="lk" href="https://www.openstreetmap.org/?mlat=29.1163&amp;mlon=110.479#map=16/29.1163/110.479" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div><div class="pl-day"><span class="pl-d">19/10 Seg</span><ul><li class="star">Avatar Mountains <a class="lk" href="https://www.klook.com/en-US/search/?query=Zhangjiajie%20National%20Forest%20Park" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=29.3155&amp;mlon=110.4344#map=16/29.3155/110.4344" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Yuanjiajie + Tianzi</li><li>Bailong Elevator (326m)</li></ul></div>
-<div class="pl-city"><span class="dot" style="background:#d98a0b"></span>Furong <span class="pl-dates">20/10 Ter</span></div><div class="pl-day"><span class="pl-d">20/10 Ter</span><ul><li class="star">Glass Bridge (430m) <a class="lk" href="https://www.klook.com/en-US/activity/6602-grand-canyon-glass-bridge-tickets-zhangjiajie/" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=29.347&amp;mlon=110.536#map=16/29.347/110.536" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li class="star">Cachoeira iluminada (noite) <a class="lk" href="https://www.openstreetmap.org/?mlat=28.68&amp;mlon=109.999#map=16/28.68/109.999" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
-<div class="pl-city"><span class="dot" style="background:#7d3cc0"></span>Fenghuang <span class="pl-dates">21/10 Qua</span></div><div class="pl-day"><span class="pl-d">21/10 Qua</span><ul><li>Furong manhã (cachoeira)</li><li class="star">Rio Tuojiang iluminado <a class="lk" href="https://www.openstreetmap.org/?mlat=27.948&amp;mlon=109.599#map=16/27.948/109.599" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
-<div class="pl-city"><span class="dot" style="background:#3b4bc4"></span>Wangxian Valley <span class="pl-dates">22/10 Qui</span></div><div class="pl-day"><span class="pl-d">22/10 Qui</span><ul><li>Translado longo (~5-6h)</li><li class="star"><a href="https://www.trip.com/" target="_blank" rel="noopener">Wangxian Valley (noite)</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=28.33&amp;mlon=117.78#map=16/28.33/117.78" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div>
-<div class="pl-city"><span class="dot" style="background:#1f6feb"></span>Shanghai <span class="pl-dates">23–30/10</span></div><div class="pl-day"><span class="pl-d">23/10 Sex</span><ul><li>Wangxian de manhã</li><li class="star">The Bund à noite <a class="lk" href="https://www.openstreetmap.org/?mlat=31.2397&amp;mlon=121.49#map=16/31.2397/121.49" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div><div class="pl-day"><span class="pl-d">24/10 Sáb</span><ul><li>Yu Garden <a class="lk" href="https://www.openstreetmap.org/?mlat=31.227&amp;mlon=121.492#map=16/31.227/121.492" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li class="star">Concessão Francesa <a class="lk" href="https://www.openstreetmap.org/?mlat=31.211&amp;mlon=121.457#map=16/31.211/121.457" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Pudong / Shanghai Tower</li></ul></div><div class="pl-day"><span class="pl-d">25/10 Dom</span><ul><li class="star">Humble Administrator's Garden <a class="lk" href="https://www.trip.com/travel-guide/attraction/suzhou/humble-administrator-s-garden-82473/" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=31.326&amp;mlon=120.629#map=16/31.326/120.629" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Pingjiang · seda</li></ul></div><div class="pl-day"><span class="pl-d">26/10 Seg</span><ul><li class="star">West Lake <a class="lk" href="https://www.openstreetmap.org/?mlat=30.2447&amp;mlon=120.149#map=16/30.2447/120.149" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Lingyin · chá Longjing <a class="lk" href="https://www.openstreetmap.org/?mlat=30.241&amp;mlon=120.098#map=16/30.241/120.098" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div><div class="pl-day"><span class="pl-d">27/10 Ter</span><ul><li class="star">Water town</li><li>Zhujiajiao ou Wuzhen</li><li>Shanghai moderna (M50)</li></ul></div><div class="pl-day"><span class="pl-d">28/10 Qua</span><ul><li>Muralha Ming · Sun Yat-sen</li><li>ou dia em Shanghai</li></ul></div><div class="pl-day"><span class="pl-d">29/10 Qui</span><ul><li>Dia livre na cidade</li><li>Rio Huangpu de barco</li><li>Museus / bairros que faltaram</li></ul></div><div class="pl-day"><span class="pl-d">30/10 Sex</span><ul><li>Compras finais</li><li>Dia-colchão (buffer)</li><li>Jantar de despedida</li></ul></div>
+    <div class="pl-group" data-idx="1"><div class="pl-city"><span class="dot" style="background:#0e9e96"></span>Istambul <span class="pl-dates">11–13/10</span></div><div class="pl-day"><span class="pl-d">11/10 Dom</span><ul><li class="star"><a href="https://muze.gen.tr/muze-detay/ayasofya" target="_blank" rel="noopener">Hagia Sofia</a> <a class="lk" href="https://muze.gen.tr" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0086&amp;mlon=28.9802#map=16/41.0086/28.9802" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Cisterna Basílica <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0084&amp;mlon=28.9779#map=16/41.0084/28.9779" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div><div class="pl-day"><span class="pl-d">12/10 Seg</span><ul><li class="star"><a href="https://muze.gen.tr" target="_blank" rel="noopener">Topkapı + Harém</a> <a class="lk" href="https://muze.gen.tr" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0115&amp;mlon=28.9834#map=16/41.0115/28.9834" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li class="star">Grand Bazaar <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0106&amp;mlon=28.9681#map=16/41.0106/28.9681" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Hammam · Galata à noite <a class="lk" href="https://www.openstreetmap.org/?mlat=41.0256&amp;mlon=28.9744#map=16/41.0256/28.9744" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div><div class="pl-day"><span class="pl-d">13/10 Ter</span><ul><li class="star">Aya Yorgi <a class="lk" href="https://www.openstreetmap.org/?mlat=40.8569&amp;mlon=29.1287#map=16/40.8569/29.1287" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Pernoite na ilha</li></ul></div></div>
+<div class="pl-group" data-idx="3"><div class="pl-city"><span class="dot" style="background:#c0392b"></span>Pequim <span class="pl-dates">15–16/10</span></div><div class="pl-day"><span class="pl-d">15/10 Qui</span><ul><li>Pouso 05:50 · dia leve</li><li><a href="https://www.798district.com/" target="_blank" rel="noopener">798 Art District</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=39.9847&amp;mlon=116.4951#map=16/39.9847/116.4951" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Hutongs + craft beer</li></ul></div><div class="pl-day"><span class="pl-d">16/10 Sex</span><ul><li class="star"><a href="https://en.mutianyugreatwall.com/" target="_blank" rel="noopener">Muralha Mutianyu</a> <a class="lk" href="https://en.mutianyugreatwall.com/reservation-center/tickets" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=40.4319&amp;mlon=116.5704#map=16/40.4319/116.5704" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Teleférico + toboggan</li><li>Pato laqueado</li></ul></div></div>
+<div class="pl-group" data-idx="4"><div class="pl-city"><span class="dot" style="background:#2e8b57"></span>Zhangjiajie <span class="pl-dates">17–19/10</span></div><div class="pl-day"><span class="pl-d">17/10 Sáb</span><ul><li>Templo do Céu (manhã) <a class="lk" href="https://www.openstreetmap.org/?mlat=39.8822&amp;mlon=116.4066#map=16/39.8822/116.4066" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Chegada noite</li></ul></div><div class="pl-day"><span class="pl-d">18/10 Dom</span><ul><li class="star">Tianmen Mountain <a class="lk" href="https://www.klook.com/en-US/search/?query=Tianmen%20Mountain%20Zhangjiajie" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=29.0517&amp;mlon=110.479#map=16/29.0517/110.479" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Heaven's Gate · trilha vidro</li><li class="star">72 Wonder Tower (noite) <a class="lk" href="https://www.openstreetmap.org/?mlat=29.1163&amp;mlon=110.479#map=16/29.1163/110.479" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div><div class="pl-day"><span class="pl-d">19/10 Seg</span><ul><li class="star">Avatar Mountains <a class="lk" href="https://www.klook.com/en-US/search/?query=Zhangjiajie%20National%20Forest%20Park" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=29.3155&amp;mlon=110.4344#map=16/29.3155/110.4344" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Yuanjiajie + Tianzi</li><li>Bailong Elevator (326m)</li></ul></div></div>
+<div class="pl-group" data-idx="5"><div class="pl-city"><span class="dot" style="background:#d98a0b"></span>Furong <span class="pl-dates">20/10 Ter</span></div><div class="pl-day"><span class="pl-d">20/10 Ter</span><ul><li class="star">Glass Bridge (430m) <a class="lk" href="https://www.klook.com/en-US/activity/6602-grand-canyon-glass-bridge-tickets-zhangjiajie/" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=29.347&amp;mlon=110.536#map=16/29.347/110.536" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li class="star">Cachoeira iluminada (noite) <a class="lk" href="https://www.openstreetmap.org/?mlat=28.68&amp;mlon=109.999#map=16/28.68/109.999" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div></div>
+<div class="pl-group" data-idx="6"><div class="pl-city"><span class="dot" style="background:#7d3cc0"></span>Fenghuang <span class="pl-dates">21/10 Qua</span></div><div class="pl-day"><span class="pl-d">21/10 Qua</span><ul><li>Furong manhã (cachoeira)</li><li class="star">Rio Tuojiang iluminado <a class="lk" href="https://www.openstreetmap.org/?mlat=27.948&amp;mlon=109.599#map=16/27.948/109.599" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div></div>
+<div class="pl-group" data-idx="7"><div class="pl-city"><span class="dot" style="background:#3b4bc4"></span>Wangxian Valley <span class="pl-dates">22/10 Qui</span></div><div class="pl-day"><span class="pl-d">22/10 Qui</span><ul><li>Translado longo (~5-6h)</li><li class="star"><a href="https://www.trip.com/" target="_blank" rel="noopener">Wangxian Valley (noite)</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=28.33&amp;mlon=117.78#map=16/28.33/117.78" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div></div>
+<div class="pl-group" data-idx="8"><div class="pl-city"><span class="dot" style="background:#1f6feb"></span>Shanghai <span class="pl-dates">23–30/10</span></div><div class="pl-day"><span class="pl-d">23/10 Sex</span><ul><li>Wangxian de manhã</li><li class="star">The Bund à noite <a class="lk" href="https://www.openstreetmap.org/?mlat=31.2397&amp;mlon=121.49#map=16/31.2397/121.49" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div><div class="pl-day"><span class="pl-d">24/10 Sáb</span><ul><li>Yu Garden <a class="lk" href="https://www.openstreetmap.org/?mlat=31.227&amp;mlon=121.492#map=16/31.227/121.492" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li class="star">Concessão Francesa <a class="lk" href="https://www.openstreetmap.org/?mlat=31.211&amp;mlon=121.457#map=16/31.211/121.457" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Pudong / Shanghai Tower</li></ul></div><div class="pl-day"><span class="pl-d">25/10 Dom</span><ul><li class="star">Humble Administrator's Garden <a class="lk" href="https://www.trip.com/travel-guide/attraction/suzhou/humble-administrator-s-garden-82473/" target="_blank" rel="noopener" title="Comprar ingressos">🎟️</a> <a class="lk" href="https://www.openstreetmap.org/?mlat=31.326&amp;mlon=120.629#map=16/31.326/120.629" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Pingjiang · seda</li></ul></div><div class="pl-day"><span class="pl-d">26/10 Seg</span><ul><li class="star">West Lake <a class="lk" href="https://www.openstreetmap.org/?mlat=30.2447&amp;mlon=120.149#map=16/30.2447/120.149" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li><li>Lingyin · chá Longjing <a class="lk" href="https://www.openstreetmap.org/?mlat=30.241&amp;mlon=120.098#map=16/30.241/120.098" target="_blank" rel="noopener" title="Ver no mapa">📍</a></li></ul></div><div class="pl-day"><span class="pl-d">27/10 Ter</span><ul><li class="star">Water town</li><li>Zhujiajiao ou Wuzhen</li><li>Shanghai moderna (M50)</li></ul></div><div class="pl-day"><span class="pl-d">28/10 Qua</span><ul><li>Muralha Ming · Sun Yat-sen</li><li>ou dia em Shanghai</li></ul></div><div class="pl-day"><span class="pl-d">29/10 Qui</span><ul><li>Dia livre na cidade</li><li>Rio Huangpu de barco</li><li>Museus / bairros que faltaram</li></ul></div><div class="pl-day"><span class="pl-d">30/10 Sex</span><ul><li>Compras finais</li><li>Dia-colchão (buffer)</li><li>Jantar de despedida</li></ul></div></div>
   </div>
+
+  <div class="panel" data-tab="map"><div id="map" class="mapbox"><div class="map-fallback">🗺️ O mapa precisa de internet para carregar (tiles do OpenStreetMap). As outras abas funcionam offline.</div></div></div>
 
   <div class="footer">Exemplo gerado com trip-template · edite e rode: node lib/render.mjs trip.example.json</div>
 
 <script>
+var TRIP_MARKERS = [{"lat":41.0086,"lon":28.9802,"name":"Hagia Sofia","idx":1,"color":"#0e9e96","url":"https://muze.gen.tr/muze-detay/ayasofya","tickets":"https://muze.gen.tr","map":"https://www.openstreetmap.org/?mlat=41.0086&mlon=28.9802#map=16/41.0086/28.9802"},{"lat":41.0084,"lon":28.9779,"name":"Cisterna Basílica","idx":1,"color":"#0e9e96","url":null,"tickets":null,"map":"https://www.openstreetmap.org/?mlat=41.0084&mlon=28.9779#map=16/41.0084/28.9779"},{"lat":41.0115,"lon":28.9834,"name":"Topkapı + Harém","idx":1,"color":"#0e9e96","url":"https://muze.gen.tr","tickets":"https://muze.gen.tr","map":"https://www.openstreetmap.org/?mlat=41.0115&mlon=28.9834#map=16/41.0115/28.9834"},{"lat":41.0106,"lon":28.9681,"name":"Grand Bazaar","idx":1,"color":"#0e9e96","url":null,"tickets":null,"map":"https://www.openstreetmap.org/?mlat=41.0106&mlon=28.9681#map=16/41.0106/28.9681"},{"lat":41.0256,"lon":28.9744,"name":"Hammam · Galata à noite","idx":1,"color":"#0e9e96","url":null,"tickets":null,"map":"https://www.openstreetmap.org/?mlat=41.0256&mlon=28.9744#map=16/41.0256/28.9744"},{"lat":40.8569,"lon":29.1287,"name":"Aya Yorgi","idx":1,"color":"#0e9e96","url":null,"tickets":null,"map":"https://www.openstreetmap.org/?mlat=40.8569&mlon=29.1287#map=16/40.8569/29.1287"},{"lat":39.9847,"lon":116.4951,"name":"798 Art District","idx":3,"color":"#c0392b","url":"https://www.798district.com/","tickets":null,"map":"https://www.openstreetmap.org/?mlat=39.9847&mlon=116.4951#map=16/39.9847/116.4951"},{"lat":40.4319,"lon":116.5704,"name":"Muralha Mutianyu","idx":3,"color":"#c0392b","url":"https://en.mutianyugreatwall.com/","tickets":"https://en.mutianyugreatwall.com/reservation-center/tickets","map":"https://www.openstreetmap.org/?mlat=40.4319&mlon=116.5704#map=16/40.4319/116.5704"},{"lat":39.8822,"lon":116.4066,"name":"Templo do Céu (manhã)","idx":4,"color":"#2e8b57","url":null,"tickets":null,"map":"https://www.openstreetmap.org/?mlat=39.8822&mlon=116.4066#map=16/39.8822/116.4066"},{"lat":29.0517,"lon":110.479,"name":"Tianmen Mountain","idx":4,"color":"#2e8b57","url":null,"tickets":"https://www.klook.com/en-US/search/?query=Tianmen%20Mountain%20Zhangjiajie","map":"https://www.openstreetmap.org/?mlat=29.0517&mlon=110.479#map=16/29.0517/110.479"},{"lat":29.1163,"lon":110.479,"name":"72 Wonder Tower (noite)","idx":4,"color":"#2e8b57","url":null,"tickets":null,"map":"https://www.openstreetmap.org/?mlat=29.1163&mlon=110.479#map=16/29.1163/110.479"},{"lat":29.3155,"lon":110.4344,"name":"Avatar Mountains","idx":4,"color":"#2e8b57","url":null,"tickets":"https://www.klook.com/en-US/search/?query=Zhangjiajie%20National%20Forest%20Park","map":"https://www.openstreetmap.org/?mlat=29.3155&mlon=110.4344#map=16/29.3155/110.4344"},{"lat":29.347,"lon":110.536,"name":"Glass Bridge (430m)","idx":5,"color":"#d98a0b","url":null,"tickets":"https://www.klook.com/en-US/activity/6602-grand-canyon-glass-bridge-tickets-zhangjiajie/","map":"https://www.openstreetmap.org/?mlat=29.347&mlon=110.536#map=16/29.347/110.536"},{"lat":28.68,"lon":109.999,"name":"Cachoeira iluminada (noite)","idx":5,"color":"#d98a0b","url":null,"tickets":null,"map":"https://www.openstreetmap.org/?mlat=28.68&mlon=109.999#map=16/28.68/109.999"},{"lat":27.948,"lon":109.599,"name":"Rio Tuojiang iluminado","idx":6,"color":"#7d3cc0","url":null,"tickets":null,"map":"https://www.openstreetmap.org/?mlat=27.948&mlon=109.599#map=16/27.948/109.599"},{"lat":28.33,"lon":117.78,"name":"Wangxian Valley (noite)","idx":7,"color":"#3b4bc4","url":"https://www.trip.com/","tickets":null,"map":"https://www.openstreetmap.org/?mlat=28.33&mlon=117.78#map=16/28.33/117.78"},{"lat":31.2397,"lon":121.49,"name":"The Bund à noite","idx":8,"color":"#1f6feb","url":null,"tickets":null,"map":"https://www.openstreetmap.org/?mlat=31.2397&mlon=121.49#map=16/31.2397/121.49"},{"lat":31.227,"lon":121.492,"name":"Yu Garden","idx":8,"color":"#1f6feb","url":null,"tickets":null,"map":"https://www.openstreetmap.org/?mlat=31.227&mlon=121.492#map=16/31.227/121.492"},{"lat":31.211,"lon":121.457,"name":"Concessão Francesa","idx":8,"color":"#1f6feb","url":null,"tickets":null,"map":"https://www.openstreetmap.org/?mlat=31.211&mlon=121.457#map=16/31.211/121.457"},{"lat":31.326,"lon":120.629,"name":"Humble Administrator's Garden","idx":8,"color":"#1f6feb","url":null,"tickets":"https://www.trip.com/travel-guide/attraction/suzhou/humble-administrator-s-garden-82473/","map":"https://www.openstreetmap.org/?mlat=31.326&mlon=120.629#map=16/31.326/120.629"},{"lat":30.2447,"lon":120.149,"name":"West Lake","idx":8,"color":"#1f6feb","url":null,"tickets":null,"map":"https://www.openstreetmap.org/?mlat=30.2447&mlon=120.149#map=16/30.2447/120.149"},{"lat":30.241,"lon":120.098,"name":"Lingyin · chá Longjing","idx":8,"color":"#1f6feb","url":null,"tickets":null,"map":"https://www.openstreetmap.org/?mlat=30.241&mlon=120.098#map=16/30.241/120.098"}];
 (function(){
   function q(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
+
+  // ----- abas -----
   q('.tab').forEach(function(t){t.addEventListener('click',function(){
     q('.tab').forEach(function(x){x.classList.remove('active');});
     q('.panel').forEach(function(x){x.classList.remove('active');});
     t.classList.add('active');
-    var p=document.querySelector('.panel[data-tab="'+t.getAttribute('data-panel')+'"]');
+    var name=t.getAttribute('data-panel');
+    var p=document.querySelector('.panel[data-tab="'+name+'"]');
     if(p){p.classList.add('active');}
+    if(name==='map'){ initMap(); if(lmap){ setTimeout(function(){ lmap.invalidateSize(); renderMarkers(); },60); } }
   });});
-  q('.chip.city').forEach(function(c){c.addEventListener('click',function(){
-    var idx=c.getAttribute('data-idx');
-    var off=c.classList.toggle('off');
-    q('.day[data-idx="'+idx+'"]').forEach(function(d){d.classList.toggle('off',off);});
+
+  // ----- filtros (valem pras 4 abas) -----
+  var allBtn=document.querySelector('.chip.showall');
+  var cityChips=q('.chip.city');
+  var selected=new Set();
+  function apply(){
+    var on=selected.size>0;
+    document.body.classList.toggle('filtering',on);
+    if(allBtn){allBtn.classList.toggle('active',!on);}
+    cityChips.forEach(function(c){ c.classList.toggle('sel', selected.has(c.getAttribute('data-idx'))); });
+    q('[data-idx]').forEach(function(el){
+      if(el.classList.contains('chip')) return;
+      el.style.display = (!on || selected.has(el.getAttribute('data-idx'))) ? '' : 'none';
+    });
+    if(mapInited) renderMarkers();
+  }
+  if(allBtn){allBtn.addEventListener('click',function(){ selected.clear(); apply(); });}
+  cityChips.forEach(function(c){ c.addEventListener('click',function(){
+    var i=c.getAttribute('data-idx');
+    if(selected.has(i)) selected.delete(i); else selected.add(i);
+    apply();
   });});
+
+  // ----- mapa (Leaflet + OpenStreetMap) -----
+  var mapInited=false, lmap=null, layer=null;
+  function popupHtml(m){
+    var s = m.url ? '<a href="'+m.url+'" target="_blank" rel="noopener"><b>'+m.name+'</b></a>' : '<b>'+m.name+'</b>';
+    if(m.tickets) s += ' <a href="'+m.tickets+'" target="_blank" rel="noopener">🎟️</a>';
+    if(m.map) s += ' <a href="'+m.map+'" target="_blank" rel="noopener">📍</a>';
+    return s;
+  }
+  function renderMarkers(){
+    if(!mapInited) return;
+    layer.clearLayers();
+    var on=selected.size>0, pts=[];
+    TRIP_MARKERS.forEach(function(m){
+      if(on && !selected.has(String(m.idx))) return;
+      var mk=L.circleMarker([m.lat,m.lon],{radius:7,color:'#fff',weight:2,fillColor:m.color,fillOpacity:1});
+      mk.bindPopup(popupHtml(m));
+      mk.addTo(layer); pts.push([m.lat,m.lon]);
+    });
+    if(pts.length){ lmap.fitBounds(pts,{padding:[34,34],maxZoom:13}); }
+  }
+  function initMap(){
+    if(mapInited) return;
+    if(typeof L==='undefined' || !document.getElementById('map') || !TRIP_MARKERS.length) return;
+    lmap=L.map('map',{scrollWheelZoom:true});
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(lmap);
+    layer=L.layerGroup().addTo(lmap);
+    mapInited=true;
+    renderMarkers();
+  }
 })();
 </script>
 </body>
