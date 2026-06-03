@@ -5,7 +5,7 @@ Monte um roteiro de viagem respondendo perguntas e receba um **calendário visua
 
 Dois jeitos de usar: **no terminal** ou **conversando com o Claude**.
 
-O HTML gerado tem **4 abas** — 📅 Calendário · 🚆 Transportes · 📍 Lugares · 🗺️ Mapa — **badges por cidade que filtram as 4 abas** (toque para ver só as cidades escolhidas; "Mostrar tudo" limpa), e cada lugar com links de **info**, **🎟️ ingresso** e **📍 mapa**. As 3 primeiras abas funcionam offline; a aba **Mapa** (Leaflet + OpenStreetMap) e os links precisam de internet.
+O HTML gerado tem **5 abas** — 📅 Calendário · 🗒️ Roteiro · 🚆 Transportes · 📍 Lugares · 🗺️ Mapa — **badges por cidade que filtram as 5 abas** (toque para ver só as cidades escolhidas; "Mostrar tudo" limpa), e cada lugar com **descrição**, **endereço**, links de **info**, **🎟️ ingresso** e **📍 mapa**. As 4 primeiras abas funcionam offline; a aba **Mapa** (Leaflet + OpenStreetMap) e os links precisam de internet.
 
 ![exemplo](examples/china-2026/preview.png)
 
@@ -70,21 +70,20 @@ os links só precisam de internet quando você toca neles.
 
 ```jsonc
 {
-  "title": "Minha Viagem", "emoji": "🧳",
-  "travelers": "Alex & Bia",
+  "title": "Minha Viagem",
   "startDate": "2026-10-10",          // 1º dia (AAAA-MM-DD) — as datas são calculadas daqui
   "maps": "google",                   // "google" (padrão) | "osm" (use na China continental)
   "stops": [
     {
       "city": "Tóquio", "nights": 4,
-      "highlights": [
-        "Shibuya",
-        { "type": "star", "text": "Monte Fuji",
-          "url": "https://...", "tickets": "https://...", "coords": [35.3606, 138.7274] }
-      ],
-      "days": [                        // opcional: conteúdo dia a dia (tem prioridade)
-        [ { "type": "move", "text": "Chegada Narita" }, "Check-in" ],
-        [ { "type": "star", "text": "Senso-ji" }, "Asakusa" ]
+      "days": [                        // um item por noite; objeto { note, items } dá visão geral do dia
+        { "note": "Chegada e bairros de Shibuya/Shinjuku.", "items": [
+          { "type": "move", "text": "Chegada Narita" }, "Check-in" ] },
+        { "note": "Templos e o lado tradicional.", "items": [
+          { "type": "star", "text": "Senso-ji",
+            "note": "O templo budista mais antigo de Tóquio, em Asakusa.",
+            "address": "2-3-1 Asakusa, Taito City, Tokyo",
+            "url": "https://...", "tickets": "https://...", "coords": [35.7148, 139.7967] } ] }
       ]
     },
     { "city": "Voo Tóquio→Kyoto", "nights": 1, "transit": true,
