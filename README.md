@@ -5,6 +5,8 @@ Monte um roteiro de viagem respondendo perguntas e receba um **calendário visua
 
 Dois jeitos de usar: **no terminal** ou **conversando com o Claude**.
 
+O HTML gerado tem **3 abas** — 📅 Calendário · 🚆 Transportes · 📍 Lugares — **badges por cidade que filtram o calendário** (toque para ocultar/mostrar), e cada lugar com links de **info**, **🎟️ ingresso** e **📍 mapa**. Funciona offline; só os links precisam de internet.
+
 ![exemplo](examples/china-2026/preview.png)
 
 ---
