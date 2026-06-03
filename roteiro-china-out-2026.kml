@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Roteiro Istambul + China — Outubro 2026</name>
+  <description>3 noites Istambul + 16 noites China: Pequim → Zhangjiajie → Chongqing → Lijiang → Guangzhou → Suzhou → Xangai. Cada pasta = 1 cidade.</description>
+
+  <Style id="hotel"><IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/paddle/H.png</href></Icon></IconStyle></Style>
+  <Style id="sight"><IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon></IconStyle></Style>
+  <Style id="food"><IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/paddle/orange-stars.png</href></Icon></IconStyle></Style>
+  <Style id="airport"><IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href></Icon></IconStyle></Style>
+  <Style id="train"><IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/shapes/rail.png</href></Icon></IconStyle></Style>
+  <Style id="event"><IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/paddle/blu-stars.png</href></Icon></IconStyle></Style>
+  <Style id="ferry"><IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/shapes/ferry.png</href></Icon></IconStyle></Style>
+
+  <Folder>
+    <name>0. ISTAMBUL (11-14/10) — 3 noites</name>
+    <Placemark><name>IST Aeroporto (chegada 11/10 11:15)</name><description>Turkish TK216 vindo de GRU. Havaist bus ou taxi até Karaköy ~50min.</description><styleUrl>#airport</styleUrl><Point><coordinates>28.7406,41.2753,0</coordinates></Point></Placemark>
+    <Placemark><name>Karaköy / Galata (base 2 noites)</name><description>Hospedagem 11-13/10 — sugestões: Georges Hotel Galata, The Galata Istanbul, Sub Karaköy</description><styleUrl>#hotel</styleUrl><Point><coordinates>28.9744,41.0256,0</coordinates></Point></Placemark>
+    <Placemark><name>Karaköy Lokantası</name><description>Dia 11/10 almoço — clássico de Karaköy</description><styleUrl>#food</styleUrl><Point><coordinates>28.9789,41.0252,0</coordinates></Point></Placemark>
+    <Placemark><name>Hagia Sofia</name><description>Dia 11/10 fim de tarde — entrar perto das 19h evita filas</description><styleUrl>#sight</styleUrl><Point><coordinates>28.9802,41.0086,0</coordinates></Point></Placemark>
+    <Placemark><name>Cisterna Basílica (Yerebatan)</name><description>Dia 11/10 noite — recém reformada</description><styleUrl>#sight</styleUrl><Point><coordinates>28.9779,41.0084,0</coordinates></Point></Placemark>
+    <Placemark><name>Sultanahmet Köftecisi</name><description>Dia 11/10 jantar — almôndegas históricas</description><styleUrl>#food</styleUrl><Point><coordinates>28.9772,41.0086,0</coordinates></Point></Placemark>
+    <Placemark><name>Mesquita Azul (Sultanahmet Camii)</name><description>Dia 12/10 manhã — recém reaberta após restauro</description><styleUrl>#sight</styleUrl><Point><coordinates>28.9768,41.0054,0</coordinates></Point></Placemark>
+    <Placemark><name>Topkapı Palace</name><description>Dia 12/10 — palácio + Harém, ingresso combinado</description><styleUrl>#sight</styleUrl><Point><coordinates>28.9836,41.0115,0</coordinates></Point></Placemark>
+    <Placemark><name>Grand Bazaar (Kapalıçarşı)</name><description>Dia 12/10 tarde — 4000 lojas, negocie 40-50%</description><styleUrl>#sight</styleUrl><Point><coordinates>28.9678,41.0107,0</coordinates></Point></Placemark>
+    <Placemark><name>Kılıç Ali Paşa Hamamı (RECOMENDADO)</name><description>Dia 12/10 fim de tarde — projeto de Mimar Sinan, reservar online 1 semana antes</description><styleUrl>#event</styleUrl><Point><coordinates>28.9819,41.0270,0</coordinates></Point></Placemark>
+    <Placemark><name>Çemberlitaş Hamamı (alternativa)</name><description>1584, perto do Grand Bazaar, mais turístico</description><styleUrl>#event</styleUrl><Point><coordinates>28.9707,41.0102,0</coordinates></Point></Placemark>
+    <Placemark><name>Cağaloğlu Hamamı (alternativa)</name><description>1741, histórico (Florence Nightingale, Cameron Diaz)</description><styleUrl>#event</styleUrl><Point><coordinates>28.9755,41.0107,0</coordinates></Point></Placemark>
+    <Placemark><name>Karaköy Güllüoğlu</name><description>Dia 12/10 jantar — baklava lendária, lokantası à noite</description><styleUrl>#food</styleUrl><Point><coordinates>28.9759,41.0247,0</coordinates></Point></Placemark>
+    <Placemark><name>Galata Tower</name><description>Dia 12/10 21h — vista 360° à noite (entrada até 22:00)</description><styleUrl>#sight</styleUrl><Point><coordinates>28.9744,41.0256,0</coordinates></Point></Placemark>
+    <Placemark><name>Asmalı Mescit / Nevizade (meyhanes)</name><description>Dia 12/10 noite — rua de meyhane com rakı</description><styleUrl>#food</styleUrl><Point><coordinates>28.9762,41.0339,0</coordinates></Point></Placemark>
+    <Placemark><name>Kabataş Ferry (saída pra Büyükada)</name><description>Dia 13/10 09:00 — ferry Şehir Hatları/IDO, 1h20</description><styleUrl>#ferry</styleUrl><Point><coordinates>28.9925,41.0331,0</coordinates></Point></Placemark>
+    <Placemark><name>Büyükada (Princes' Island)</name><description>13-14/10 — pernoite na ilha. Mansões otomanas de madeira, sem carros particulares</description><styleUrl>#hotel</styleUrl><Point><coordinates>29.1264,40.8693,0</coordinates></Point></Placemark>
+    <Placemark><name>Splendid Palace Hotel (Büyükada)</name><description>Dia 13/10 — hotel ícone de 1908</description><styleUrl>#hotel</styleUrl><Point><coordinates>29.1235,40.8762,0</coordinates></Point></Placemark>
+    <Placemark><name>Aya Yorgi (mosteiro topo da ilha)</name><description>Dia 13/10 tarde — vista 360° do mar de Mármara</description><styleUrl>#sight</styleUrl><Point><coordinates>29.1409,40.8602,0</coordinates></Point></Placemark>
+    <Placemark><name>Eminönü / Mısır Çarşısı (Bazar Egípcio)</name><description>Dia 14/10 manhã — balık ekmek + especiarias antes do voo</description><styleUrl>#sight</styleUrl><Point><coordinates>28.9706,41.0166,0</coordinates></Point></Placemark>
+    <Placemark><name>IST Aeroporto (saída 14/10 16:00)</name><description>Turkish TK196 → PEK</description><styleUrl>#airport</styleUrl><Point><coordinates>28.7406,41.2753,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>1. PEQUIM (15-19/10) — 4 noites</name>
+    <Placemark><name>PEK Aeroporto (chegada 15/10 05:50)</name><styleUrl>#airport</styleUrl><Point><coordinates>116.6031,40.0799,0</coordinates></Point></Placemark>
+    <Placemark><name>UNIQLO Wangfujing (compras urgentes HEATTECH)</name><description>Dia 15/10 fim de tarde — agasalhos pra Mutianyu (18) e Yulong (26)</description><styleUrl>#event</styleUrl><Point><coordinates>116.4106,39.9134,0</coordinates></Point></Placemark>
+    <Placemark><name>Templo do Céu (Tiantan)</name><description>Dia 15/10 — caminhada anti jet lag</description><styleUrl>#sight</styleUrl><Point><coordinates>116.4067,39.8822,0</coordinates></Point></Placemark>
+    <Placemark><name>Beiluoguxiang (hutongs autênticos)</name><description>Dia 15/10 noite</description><styleUrl>#sight</styleUrl><Point><coordinates>116.4031,39.9379,0</coordinates></Point></Placemark>
+    <Placemark><name>Templo Lama (Yonghegong)</name><description>Dia 16/10 manhã — incenso e Buda gigante de 18m</description><styleUrl>#sight</styleUrl><Point><coordinates>116.4170,39.9476,0</coordinates></Point></Placemark>
+    <Placemark><name>Confucius Temple</name><description>Dia 16/10 — ao lado do Templo Lama</description><styleUrl>#sight</styleUrl><Point><coordinates>116.4140,39.9481,0</coordinates></Point></Placemark>
+    <Placemark><name>Drum and Bell Towers</name><description>Dia 16/10 fim de tarde — pôr-do-sol sobre os telhados</description><styleUrl>#sight</styleUrl><Point><coordinates>116.3927,39.9416,0</coordinates></Point></Placemark>
+    <Placemark><name>Praça Tiananmen</name><description>Dia 17/10 manhã</description><styleUrl>#sight</styleUrl><Point><coordinates>116.3976,39.9054,0</coordinates></Point></Placemark>
+    <Placemark><name>Cidade Proibida</name><description>Dia 17/10 — entra sul, sai norte</description><styleUrl>#sight</styleUrl><Point><coordinates>116.3972,39.9163,0</coordinates></Point></Placemark>
+    <Placemark><name>Jingshan Park (vista da Cidade Proibida)</name><description>Dia 17/10 tarde</description><styleUrl>#sight</styleUrl><Point><coordinates>116.3949,39.9251,0</coordinates></Point></Placemark>
+    <Placemark><name>Lago Houhai</name><description>Dia 17/10 fim da tarde</description><styleUrl>#sight</styleUrl><Point><coordinates>116.3838,39.9389,0</coordinates></Point></Placemark>
+    <Placemark><name>Siji Minfu (pato laqueado)</name><description>Dia 17/10 jantar — melhor relação custo-benefício que Quanjude</description><styleUrl>#food</styleUrl><Point><coordinates>116.4108,39.9163,0</coordinates></Point></Placemark>
+    <Placemark><name>Mutianyu Great Wall</name><description>Dia 18/10 — NÃO Badaling. Toboggan na descida.</description><styleUrl>#sight</styleUrl><Point><coordinates>116.5644,40.4319,0</coordinates></Point></Placemark>
+    <Placemark><name>Palácio de Verão (Yiheyuan)</name><description>Dia 19/10 manhã</description><styleUrl>#sight</styleUrl><Point><coordinates>116.2755,39.9999,0</coordinates></Point></Placemark>
+    <Placemark><name>798 Art District</name><description>Dia 19/10 tarde — passada rápida</description><styleUrl>#sight</styleUrl><Point><coordinates>116.4954,39.9836,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>2. ZHANGJIAJIE (19-22/10) — 3 noites</name>
+    <Placemark><name>DYG Aeroporto (chegada 19/10)</name><styleUrl>#airport</styleUrl><Point><coordinates>110.4439,29.1027,0</coordinates></Point></Placemark>
+    <Placemark><name>Tianmen Mountain</name><description>Dia 20/10 — teleférico 7,5km, Heaven's Gate, escada 999 degraus</description><styleUrl>#sight</styleUrl><Point><coordinates>110.4768,29.0466,0</coordinates></Point></Placemark>
+    <Placemark><name>72 Wonder Tower (72 Qilou)</name><description>Dia 20/10 noite — Guinness do maior prédio em palafita do mundo, 3000 lâmpadas + holografia 7D</description><styleUrl>#event</styleUrl><Point><coordinates>110.4787,29.1287,0</coordinates></Point></Placemark>
+    <Placemark><name>Wulingyuan (entrada Parque Nacional)</name><description>Dia 21/10 — Avatar Mountains</description><styleUrl>#sight</styleUrl><Point><coordinates>110.4476,29.3486,0</coordinates></Point></Placemark>
+    <Placemark><name>Bailong Elevator</name><description>Dia 21/10 — elevador de vidro de 326m no penhasco</description><styleUrl>#sight</styleUrl><Point><coordinates>110.4459,29.3434,0</coordinates></Point></Placemark>
+    <Placemark><name>Yuanjiajie / Avatar Hallelujah Mountain</name><description>Dia 21/10</description><styleUrl>#sight</styleUrl><Point><coordinates>110.4368,29.3465,0</coordinates></Point></Placemark>
+    <Placemark><name>Tianzi Mountain</name><description>Dia 21/10</description><styleUrl>#sight</styleUrl><Point><coordinates>110.4181,29.3814,0</coordinates></Point></Placemark>
+    <Placemark><name>Zhangjiajie Grand Canyon Glass Bridge</name><description>Dia 22/10 manhã — 430m, RESERVAR ONLINE com antecedência</description><styleUrl>#sight</styleUrl><Point><coordinates>110.5341,29.2683,0</coordinates></Point></Placemark>
+    <Placemark><name>Zhangjiajie West Railway Station</name><description>Dia 22/10 tarde — trem-bala pra Chongqing (2h06min)</description><styleUrl>#train</styleUrl><Point><coordinates>110.4541,29.1281,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>3. CHONGQING (22-25/10) — 3 noites — DRONE SHOW SÁB 24</name>
+    <Placemark><name>Chongqing East Railway Station</name><description>Dia 22/10 chegada de trem</description><styleUrl>#train</styleUrl><Point><coordinates>106.6411,29.5394,0</coordinates></Point></Placemark>
+    <Placemark><name>Hongya Cave (Hongyadong)</name><description>Dia 22/10 noite — prédios de palafita iluminados, virou viral</description><styleUrl>#sight</styleUrl><Point><coordinates>106.5839,29.5663,0</coordinates></Point></Placemark>
+    <Placemark><name>Liziba Monorail Station</name><description>Dia 23/10 manhã — monorail atravessando o prédio (linha 2)</description><styleUrl>#sight</styleUrl><Point><coordinates>106.5328,29.5660,0</coordinates></Point></Placemark>
+    <Placemark><name>Ciqikou Ancient Town</name><description>Dia 23/10 — vila antiga de mil anos</description><styleUrl>#sight</styleUrl><Point><coordinates>106.4556,29.5727,0</coordinates></Point></Placemark>
+    <Placemark><name>Eling Park (vista 360°)</name><description>Dia 23/10 tarde</description><styleUrl>#sight</styleUrl><Point><coordinates>106.5329,29.5519,0</coordinates></Point></Placemark>
+    <Placemark><name>Yangtze River Cableway</name><description>Dia 23/10 — teleférico antigo cruzando o rio</description><styleUrl>#sight</styleUrl><Point><coordinates>106.5808,29.5574,0</coordinates></Point></Placemark>
+    <Placemark><name>Jiefangbei (Liberation Monument)</name><description>Dia 23/10 noite — área comercial, rooftops</description><styleUrl>#sight</styleUrl><Point><coordinates>106.5801,29.5571,0</coordinates></Point></Placemark>
+    <Placemark><name>Chaotianmen Square (DRONE SHOW spot)</name><description>Sábado 24/10 às 20:30 — chegar 2h antes</description><styleUrl>#event</styleUrl><Point><coordinates>106.5871,29.5680,0</coordinates></Point></Placemark>
+    <Placemark><name>Jiangbeizui CBD (DRONE SHOW spot alt.)</name><description>Sábado 24/10 — vista do skyline da margem oposta</description><styleUrl>#event</styleUrl><Point><coordinates>106.5839,29.5706,0</coordinates></Point></Placemark>
+    <Placemark><name>Nanbin Road (DRONE SHOW spot alt.)</name><description>Sábado 24/10 — margem sul, ângulo diferente</description><styleUrl>#event</styleUrl><Point><coordinates>106.5826,29.5440,0</coordinates></Point></Placemark>
+    <Placemark><name>Dazu Rock Carvings (UNESCO, bate-volta opcional)</name><description>Dia 24/10 manhã — opcional</description><styleUrl>#sight</styleUrl><Point><coordinates>105.7053,29.6981,0</coordinates></Point></Placemark>
+    <Placemark><name>CKG Aeroporto (saída 25/10)</name><styleUrl>#airport</styleUrl><Point><coordinates>106.6411,29.7194,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>4. LIJIANG (25-28/10) — 3 noites</name>
+    <Placemark><name>LJG Aeroporto (chegada 25/10)</name><description>Altitude 2400m — primeiro dia leve</description><styleUrl>#airport</styleUrl><Point><coordinates>100.2464,26.6800,0</coordinates></Point></Placemark>
+    <Placemark><name>Lijiang Old Town (Dayan)</name><description>UNESCO — canais e arquitetura Naxi</description><styleUrl>#sight</styleUrl><Point><coordinates>100.2374,26.8721,0</coordinates></Point></Placemark>
+    <Placemark><name>Yulong Snow Mountain (Jade Dragon)</name><description>Dia 26/10 — 5596m. Teleférico até Glacier Park 4506m. CUIDADO mal de altitude.</description><styleUrl>#sight</styleUrl><Point><coordinates>100.2003,27.1018,0</coordinates></Point></Placemark>
+    <Placemark><name>Black Dragon Pool</name><description>Vista da Yulong refletida no lago</description><styleUrl>#sight</styleUrl><Point><coordinates>100.2342,26.8870,0</coordinates></Point></Placemark>
+    <Placemark><name>Shuhe Old Town</name><description>Dia 27/10 — versão menos turística da Old Town</description><styleUrl>#sight</styleUrl><Point><coordinates>100.2158,26.9106,0</coordinates></Point></Placemark>
+    <Placemark><name>Tiger Leaping Gorge</name><description>Dia 27/10 — uma das gargantas mais profundas do mundo, 2h ida</description><styleUrl>#sight</styleUrl><Point><coordinates>100.0824,27.2236,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>5. GUANGZHOU (28-30/10) — 2 noites — KART + PHOTOSHOOT</name>
+    <Placemark><name>CAN Aeroporto (chegada 28/10)</name><styleUrl>#airport</styleUrl><Point><coordinates>113.2988,23.3924,0</coordinates></Point></Placemark>
+    <Placemark><name>Tao Tao Ju (dim sum clássico)</name><description>Dia 28/10 jantar</description><styleUrl>#food</styleUrl><Point><coordinates>113.2476,23.1175,0</coordinates></Point></Placemark>
+    <Placemark><name>Kart — área Tianhe (confirmar pista)</name><description>Dia 29/10 manhã — F1 Boutique Karting Club ou similar</description><styleUrl>#event</styleUrl><Point><coordinates>113.3300,23.1300,0</coordinates></Point></Placemark>
+    <Placemark><name>Shamian Island (Photoshoot loc 1)</name><description>Dia 29/10 tarde — colonial pedestre, britânica/francesa</description><styleUrl>#event</styleUrl><Point><coordinates>113.2386,23.1071,0</coordinates></Point></Placemark>
+    <Placemark><name>Yongqingfang (Photoshoot loc 2)</name><description>Dia 29/10 — vintage Lingnan</description><styleUrl>#event</styleUrl><Point><coordinates>113.2462,23.1196,0</coordinates></Point></Placemark>
+    <Placemark><name>Canton Tower (golden hour)</name><description>Dia 29/10 18:30 — observatório 600m + roda gigante horizontal</description><styleUrl>#sight</styleUrl><Point><coordinates>113.3196,23.1066,0</coordinates></Point></Placemark>
+    <Placemark><name>Pearl River Night Cruise</name><description>Dia 29/10 21h — skyline iluminado</description><styleUrl>#sight</styleUrl><Point><coordinates>113.2624,23.1110,0</coordinates></Point></Placemark>
+    <Placemark><name>Beijing Road Pedestrian Street</name><description>Dia 30/10 manhã — caminhada</description><styleUrl>#sight</styleUrl><Point><coordinates>113.2660,23.1255,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>6. SUZHOU (30-31/10) — 1 noite — CANAIS À NOITE</name>
+    <Placemark><name>Pingjiang Historical Street</name><description>Dia 30/10 noite — lanternas no canal</description><styleUrl>#sight</styleUrl><Point><coordinates>120.6276,31.3201,0</coordinates></Point></Placemark>
+    <Placemark><name>Shantang Street</name><description>Dia 30/10 — passeio de barco à noite</description><styleUrl>#sight</styleUrl><Point><coordinates>120.6082,31.3366,0</coordinates></Point></Placemark>
+    <Placemark><name>Humble Administrator's Garden (Zhuozheng Yuan)</name><description>Dia 31/10 manhã — jardim chinês clássico mais famoso do mundo (UNESCO)</description><styleUrl>#sight</styleUrl><Point><coordinates>120.6275,31.3261,0</coordinates></Point></Placemark>
+    <Placemark><name>Lion Grove Garden</name><description>Dia 31/10 — labirinto de pedras, ao lado do Humble</description><styleUrl>#sight</styleUrl><Point><coordinates>120.6284,31.3243,0</coordinates></Point></Placemark>
+    <Placemark><name>Suzhou Railway Station</name><description>Dia 31/10 14h — trem-bala pra Hongqiao</description><styleUrl>#train</styleUrl><Point><coordinates>120.6239,31.3260,0</coordinates></Point></Placemark>
+  </Folder>
+
+  <Folder>
+    <name>7. XANGAI (31/10 dia + saída) — só dia</name>
+    <Placemark><name>Hongqiao Railway Station (chegada 31/10)</name><styleUrl>#train</styleUrl><Point><coordinates>121.3201,31.1948,0</coordinates></Point></Placemark>
+    <Placemark><name>The Bund</name><description>Caso tenha tempo</description><styleUrl>#sight</styleUrl><Point><coordinates>121.4904,31.2398,0</coordinates></Point></Placemark>
+    <Placemark><name>Shanghai Tower (Pudong)</name><description>2º prédio mais alto do mundo</description><styleUrl>#sight</styleUrl><Point><coordinates>121.5051,31.2334,0</coordinates></Point></Placemark>
+    <Placemark><name>Yu Garden</name><styleUrl>#sight</styleUrl><Point><coordinates>121.4923,31.2271,0</coordinates></Point></Placemark>
+    <Placemark><name>Tianzifang</name><description>Becos de arte</description><styleUrl>#sight</styleUrl><Point><coordinates>121.4673,31.2113,0</coordinates></Point></Placemark>
+    <Placemark><name>Wukang Road (Concessão Francesa)</name><styleUrl>#sight</styleUrl><Point><coordinates>121.4477,31.2167,0</coordinates></Point></Placemark>
+    <Placemark><name>Maglev Longyang Station</name><description>Pegar Maglev pra PVG (7min a 430km/h)</description><styleUrl>#train</styleUrl><Point><coordinates>121.5575,31.2105,0</coordinates></Point></Placemark>
+    <Placemark><name>PVG Aeroporto (saída 31/10 noite)</name><description>Chegar 4h+ antes — Turkish atrasa</description><styleUrl>#airport</styleUrl><Point><coordinates>121.8083,31.1428,0</coordinates></Point></Placemark>
+  </Folder>
+
+</Document>
+</kml>
