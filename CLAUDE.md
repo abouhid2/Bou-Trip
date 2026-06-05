@@ -17,9 +17,25 @@ Pergunte, de forma leve e uma coisa de cada vez:
 - **Quer registrar voos/trens?** (opcional: data, nº, origem→destino, horários)
 - Ritmo (corrido x tranquilo), interesses (natureza, comida, história…) — para sugerir destaques
 
-Se a pessoa não souber, **sugira** com base em conhecimento de viagem (e **pesquise na web**
-para preencher endereços oficiais, links de ingresso e coordenadas), mas **nunca invente
-dados pessoais** (nomes, documentos, código de reserva): pergunte.
+### Quanto enriquecer? Pergunte antes (economiza tokens)
+O **custo em tokens não está no HTML** — está na **pesquisa web** que eu faço para preencher
+cada extra. Logo no começo, ofereça as opções **à la carte** e marque só o que a pessoa quer.
+Quanto menos extras, mais barato e rápido (bom para quem está no plano grátis):
+
+- **Base** (sempre incluso, ~zero pesquisa): calendário, roteiro com a `note` de cada dia,
+  transportes e filtro por cidade. Já entrega um roteiro completo e legível.
+- **📍 Mapa & endereços** (`coords` + `address`): pontos no mapa/KML e endereços clicáveis.
+  Exige pesquisar coordenadas WGS-84 e endereços oficiais.
+- **🎟️ Ingressos & links** (`url` + `tickets`): link no nome e ícone de bilheteria.
+- **🖼️ Fotos** (`image`): uma foto por ponto principal. Exige buscar URLs de imagem estáveis.
+- **📝 Notas ricas** (`note` por item): 1-2 frases explicando cada lugar, além da visão do dia.
+
+Se a pessoa não opinar, use o default **Base + Mapa & endereços + Notas ricas** (o que mais
+agrega sem explodir o gasto); **Fotos** e **Ingressos** só quando pedir.
+
+Se a pessoa não souber o conteúdo, **sugira** com base em conhecimento de viagem (e **pesquise na
+web** apenas para os extras escolhidos acima), mas **nunca invente dados pessoais** (nomes,
+documentos, código de reserva): pergunte.
 
 ## 2. Monte o `trip.json`
 Escreva um `trip.json` seguindo o formato de **`trip.example.json`** (é o exemplo de referência).
@@ -62,6 +78,7 @@ String vira bullet simples. Para algo rico, use objeto:
   "address": "Mutianyu Village, Huairou District, Beijing · 北京市怀柔区渤海镇慕田峪村",
   "url": "https://en.mutianyugreatwall.com/",   // página oficial/info — link no nome
   "tickets": "https://...",                       // comprar ingressos — vira ícone 🎟️
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia_Sophia_Mars_2013.jpg?width=600", // foto (Roteiro/Lugares)
   "coords": [40.4319, 116.5704]                   // [lat, lon] WGS-84 — vira 📍 + ponto no mapa/KML
 }
 ```
@@ -71,6 +88,10 @@ String vira bullet simples. Para algo rico, use objeto:
   no idioma local também (ex.: `... · 北京市朝阳区酒仙桥路2-4号`) — útil para mostrar ao taxista.
 - `url`: site oficial / página da atração / guia confiável.
 - `tickets`: bilheteria oficial; para China, `trip.com` ou `klook` (use o link específico da atração).
+- `image`: **URL de foto estável** — prefira **Wikimedia Commons** via
+  `https://commons.wikimedia.org/wiki/Special:FilePath/<Nome_do_arquivo>.jpg?width=600` (aceita
+  hotlink, não quebra). Aparece nas abas Roteiro e Lugares; carrega com internet e **some sozinha
+  se a URL falhar**. **Confirme que a URL existe antes de usar** (ex.: `curl -sIL` deve dar 200 + `image/...`).
 - `coords`: **sempre WGS-84 (GPS real / OpenStreetMap)**. ⚠️ Na China não pegue do Google Maps:
   ele aplica o desvio GCJ-02 e as coordenadas saem ~centenas de metros erradas.
 
@@ -83,7 +104,8 @@ node lib/render.mjs trip.json my-trip.html
 Isso cria `my-trip.html` (responsivo no celular, imprime como PDF A4 paisagem) e, se houver
 `coords`, também `my-trip.kml`. Diga para a pessoa:
 - abrir `my-trip.html` no navegador e usar as 5 abas e o filtro por cidade;
-- a aba **Mapa** precisa de internet (tiles do OpenStreetMap); as outras funcionam offline;
+- a aba **Mapa** e as **fotos** (`image`) precisam de internet; o resto (calendário, roteiro,
+  transportes, lugares sem foto) funciona offline;
 - importar o `my-trip.kml` no Organic Maps / Google My Maps para ver tudo num mapa offline
   (passo a passo em [`OFFLINE-MAPS.md`](OFFLINE-MAPS.md)).
 
