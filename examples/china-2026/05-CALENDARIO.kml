@@ -1,36 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>China &amp; Istambul — Outubro 2026</name>
+    <name>China — Outubro 2026</name>
     <Placemark>
-      <name>Hagia Sofia</name>
-      <description>Istambul · n1</description>
-      <Point><coordinates>28.9802,41.0086,0</coordinates></Point>
+      <name>The Bund à noite</name>
+      <description>Shanghai</description>
+      <Point><coordinates>121.49,31.2397,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Cisterna Basílica</name>
-      <description>Istambul · n1</description>
-      <Point><coordinates>28.9779,41.0084,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Topkapı + Harém</name>
-      <description>Istambul · n2</description>
-      <Point><coordinates>28.9834,41.0115,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Grand Bazaar</name>
-      <description>Istambul · n2</description>
-      <Point><coordinates>28.9681,41.0106,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Hammam · Galata à noite</name>
-      <description>Istambul · n2</description>
-      <Point><coordinates>28.9744,41.0256,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Aya Yorgi</name>
-      <description>Istambul · n3</description>
-      <Point><coordinates>29.1287,40.8569,0</coordinates></Point>
+      <name>Yu Garden · Nanshi Old Town</name>
+      <description>Shanghai</description>
+      <Point><coordinates>121.492,31.227,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>798 Art District</name>
@@ -38,14 +18,34 @@
       <Point><coordinates>116.4951,39.9847,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Muralha Mutianyu</name>
+      <name>Hutongs Nanluoguxiang + Great Leap Brewing</name>
+      <description>Pequim · n1</description>
+      <Point><coordinates>116.407,39.929,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Muralha — Mutianyu</name>
       <description>Pequim · n2</description>
       <Point><coordinates>116.5704,40.4319,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Templo do Céu (manhã)</name>
-      <description>Zhangjiajie · n1</description>
-      <Point><coordinates>116.4066,39.8822,0</coordinates></Point>
+      <name>🦊🐼 Beijing Zoo — pandas gigantes + vermelhos</name>
+      <description>Pequim · n3</description>
+      <Point><coordinates>116.3353,39.9383,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Palácio de Verão (Yiheyuan)</name>
+      <description>Pequim · n3</description>
+      <Point><coordinates>116.2752,40.0003,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Templo Yonghe (Lama Temple)</name>
+      <description>Pequim · n4</description>
+      <Point><coordinates>116.4153,39.9474,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Shichahai + Drum Tower</name>
+      <description>Pequim · n4</description>
+      <Point><coordinates>116.3907,39.9385,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Tianmen Mountain</name>
@@ -53,64 +53,94 @@
       <Point><coordinates>110.479,29.0517,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>72 Wonder Tower</name>
+      <name>72 Wonder Tower (noite)</name>
       <description>Zhangjiajie · n2</description>
       <Point><coordinates>110.479,29.1163,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Avatar Mountains</name>
+      <name>Avatar Mountains (Yuanjiajie)</name>
       <description>Zhangjiajie · n3</description>
       <Point><coordinates>110.4344,29.3155,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Glass Bridge (430m)</name>
-      <description>Furong</description>
+      <name>Yellow Dragon Cave (Huanglong Dong)</name>
+      <description>Zhangjiajie · n4</description>
+      <Point><coordinates>110.5453,29.3567,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Glass Bridge (430m) — reserva obrigatória</name>
+      <description>Zhangjiajie · n4</description>
       <Point><coordinates>110.536,29.347,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Cachoeira iluminada (noite)</name>
+      <name>Furong Ancient Town · cachoeira</name>
       <description>Furong</description>
       <Point><coordinates>109.999,28.68,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Rio Tuojiang iluminado</name>
-      <description>Fenghuang</description>
-      <Point><coordinates>109.599,27.948,0</coordinates></Point>
+      <name>🦊🐼 Chimelong Safari Park — pandas + trigêmeos</name>
+      <description>Guangzhou · Cantão · n2</description>
+      <Point><coordinates>113.328,22.994,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Wangxian Valley</name>
-      <description>Wangxian Valley</description>
-      <Point><coordinates>117.78,28.33,0</coordinates></Point>
+      <name>Canton Tower (600m)</name>
+      <description>Guangzhou · Cantão · n2</description>
+      <Point><coordinates>113.3245,23.1059,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>The Bund à noite</name>
-      <description>Shanghai · n1</description>
-      <Point><coordinates>121.49,31.2397,0</coordinates></Point>
+      <name>Shamian Island · arquitetura colonial</name>
+      <description>Guangzhou · Cantão · n3</description>
+      <Point><coordinates>113.2418,23.1018,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Yu Garden</name>
-      <description>Shanghai · n2</description>
-      <Point><coordinates>121.492,31.227,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Concessão Francesa</name>
-      <description>Shanghai · n2</description>
-      <Point><coordinates>121.457,31.211,0</coordinates></Point>
+      <name>Templo dos 6 Banians · Mercado Qingping</name>
+      <description>Guangzhou · Cantão · n3</description>
+      <Point><coordinates>113.2659,23.1286,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Humble Administrator's Garden</name>
-      <description>Shanghai · n3</description>
+      <description>Shanghai · n2</description>
       <Point><coordinates>120.629,31.326,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>West Lake</name>
-      <description>Shanghai · n4</description>
-      <Point><coordinates>120.149,30.2447,0</coordinates></Point>
+      <name>Suzhou Museum (I.M. Pei)</name>
+      <description>Shanghai · n2</description>
+      <Point><coordinates>120.626,31.326,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Lingyin · chá Longjing</name>
+      <name>Pingjiang Road · canais · seda</name>
+      <description>Shanghai · n2</description>
+      <Point><coordinates>120.635,31.322,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Concessão Francesa — Wukang + Anfu Rd</name>
+      <description>Shanghai · n3</description>
+      <Point><coordinates>121.457,31.211,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Xintiandi</name>
+      <description>Shanghai · n3</description>
+      <Point><coordinates>121.471,31.2196,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>M50 Art District</name>
+      <description>Shanghai · n3</description>
+      <Point><coordinates>121.4369,31.2461,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Zhujiajiao</name>
       <description>Shanghai · n4</description>
-      <Point><coordinates>120.098,30.241,0</coordinates></Point>
+      <Point><coordinates>121.0636,31.1108,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Shanghai Museum</name>
+      <description>Shanghai · n4</description>
+      <Point><coordinates>121.4738,31.2296,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Shanghai Tower — mirante (noite)</name>
+      <description>Shanghai · n5</description>
+      <Point><coordinates>121.5015,31.2356,0</coordinates></Point>
     </Placemark>
   </Document>
 </kml>

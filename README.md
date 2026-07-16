@@ -107,7 +107,7 @@ Veja **[`trip.example.json`](trip.example.json)** para um exemplo completo (a vi
 |---------|---------|
 | `generate.mjs` | Assistente de terminal (perguntas → `trip.json` + `my-trip.html` + `my-trip.kml`) |
 | `lib/render.mjs` | Motor: transforma `trip.json` em HTML e KML (também roda via CLI) |
-| `trip.example.json` | Exemplo de entrada (viagem China & Istambul 2026) |
+| `trip.example.json` | Exemplo de entrada (viagem China 2026) |
 | `CLAUDE.md` | Instruções para o modo Claude |
 | `OFFLINE-MAPS.md` | Como ver os pontos num mapa e usar offline (Organic Maps / Google) |
 | `examples/china-2026/` | Exemplo bem detalhado: logística, dia a dia, dicas, mapa KML, PDF |

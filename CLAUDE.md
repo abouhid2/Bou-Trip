@@ -78,7 +78,7 @@ String vira bullet simples. Para algo rico, use objeto:
   "address": "Mutianyu Village, Huairou District, Beijing · 北京市怀柔区渤海镇慕田峪村",
   "url": "https://en.mutianyugreatwall.com/",   // página oficial/info — link no nome
   "tickets": "https://...",                       // comprar ingressos — vira ícone 🎟️
-  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia_Sophia_Mars_2013.jpg?width=600", // foto (Roteiro/Lugares)
+  "image": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Great_Wall_of_China_at_Jinshanling-edit.jpg?width=600", // foto (Roteiro/Lugares)
   "coords": [40.4319, 116.5704]                   // [lat, lon] WGS-84 — vira 📍 + ponto no mapa/KML
 }
 ```

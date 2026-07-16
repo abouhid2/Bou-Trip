@@ -73,7 +73,7 @@ if (await askYes("\nQuer registrar voos/trens?", false)) {
   while (true) {
     const date = await ask(`Voo ${trip.flights.length + 1} — data (AAAA-MM-DD)`, "");
     if (!date) break;
-    const flightNo = await ask("  Nº do voo/trem (ex.: TK216)", "");
+    const flightNo = await ask("  Nº do voo/trem (ex.: CA1501, G1234)", "");
     const from = await ask("  De", "");
     const to = await ask("  Para", "");
     const dep = await ask("  Saída (hh:mm)", "");
