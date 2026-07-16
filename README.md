@@ -5,7 +5,7 @@ Monte um roteiro de viagem respondendo perguntas e receba um **calendário visua
 
 Dois jeitos de usar: **no terminal** ou **conversando com o Claude**.
 
-O HTML gerado tem **5 abas** — 📅 Calendário · 🗒️ Roteiro · 🚆 Transportes · 📍 Lugares · 🗺️ Mapa — **badges por cidade que filtram as 5 abas** (toque para ver só as cidades escolhidas; "Mostrar tudo" limpa), e cada lugar com **descrição**, **endereço**, links de **info**, **🎟️ ingresso** e **📍 mapa**. Tem **toggle de idioma** (inglês + o idioma da viagem) e, no Mapa, cada ponto abre no **app de mapa do celular / Google Maps / OSM**. As 4 primeiras abas funcionam offline; a aba **Mapa** (Leaflet + OpenStreetMap) e os links precisam de internet.
+O HTML gerado tem **5 abas** — 📅 Calendário · 🗒️ Roteiro · 🚆 Transportes · 📍 Lugares · 🗺️ Mapa — e uma **trilha da viagem** no topo, onde cada parada ocupa espaço proporcional às noites e **filtra as 5 abas** (toque para ver só as cidades escolhidas; "Mostrar tudo" limpa). Cada lugar traz **descrição**, **endereço**, links de **info**, **🎟️ ingresso** e **📍 mapa**. Tem **tema claro/escuro** (segue o sistema, com toggle), **toggle de idioma** (inglês + o idioma da viagem), marca o **dia de hoje** se a viagem estiver rolando e, no Mapa, cada ponto abre no **app de mapa do celular / Google Maps / OSM**. As 4 primeiras abas funcionam offline; a aba **Mapa** (Leaflet + OpenStreetMap) e as fotos precisam de internet.
 
 ![exemplo](examples/china-2026/preview.png)
 
