@@ -2,9 +2,10 @@
 
 Este repositório é um **gerador de roteiro de viagem**. Quando alguém abrir o projeto
 no Claude e pedir algo como *"monta meu roteiro"* / *"me ajuda a planejar minha viagem"*,
-siga este fluxo. O resultado é um HTML com **5 abas** (📅 Calendário, 🗒️ Roteiro,
-🚆 Transportes, 📍 Lugares, 🗺️ Mapa) e **filtro por cidade** — quanto mais rica a
+siga este fluxo. O resultado é um HTML com até **6 abas** (📅 Calendário, 🗒️ Roteiro,
+🚆 Transportes, 📍 Lugares, 🛏️ Hospedagem, 🗺️ Mapa) e **filtro por cidade** — quanto mais rica a
 informação no `trip.json` (descrições, endereços, coordenadas, links), melhor ficam as abas.
+A aba Hospedagem só aparece se houver `stays`.
 
 ## 1. Entreviste a pessoa (em português, ou no idioma dela)
 Pergunte, de forma leve e uma coisa de cada vez:
@@ -15,6 +16,8 @@ Pergunte, de forma leve e uma coisa de cada vez:
 - **Quantas noites em cada parada?**
 - **O que não pode perder em cada lugar?** (destaques)
 - **Quer registrar voos/trens?** (opcional: data, nº, origem→destino, horários)
+- **Já tem hospedagem reservada?** Se sim, peça os dados da reserva e monte `stays` (ver abaixo).
+  Se ainda não, siga sem — a aba não aparece e nada quebra.
 - Ritmo (corrido x tranquilo), interesses (natureza, comida, história…) — para sugerir destaques
 
 ### Quanto enriquecer? Pergunte antes (economiza tokens)
@@ -29,6 +32,9 @@ Quanto menos extras, mais barato e rápido (bom para quem está no plano grátis
 - **🎟️ Ingressos & links** (`url` + `tickets`): link no nome e ícone de bilheteria.
 - **🖼️ Fotos** (`image`): uma foto por ponto principal. Exige buscar URLs de imagem estáveis.
 - **📝 Notas ricas** (`note` por item): 1-2 frases explicando cada lugar, além da visão do dia.
+- **🛏️ Hospedagem** (`stays`): os dados saem dos e-mails de reserva da pessoa, então custa
+  ~zero pesquisa — só as `coords` do hotel exigem uma busca. Ofereça sempre que houver reserva.
+- **🚉 Estações** (`from`/`to` com `coords`): onde pegar cada trem/voo. Uma busca por estação.
 
 Se a pessoa não opinar, use o default **Base + Mapa & endereços + Notas ricas** (o que mais
 agrega sem explodir o gasto); **Fotos** e **Ingressos** só quando pedir.
@@ -36,6 +42,19 @@ agrega sem explodir o gasto); **Fotos** e **Ingressos** só quando pedir.
 Se a pessoa não souber o conteúdo, **sugira** com base em conhecimento de viagem (e **pesquise na
 web** apenas para os extras escolhidos acima), mas **nunca invente dados pessoais** (nomes,
 documentos, código de reserva): pergunte.
+
+### Quer um time de especialistas? (ofereça — não imponha)
+Para viagens **longas ou com muitas cidades**, montar um **subagente por cidade** rende um roteiro
+bem melhor do que um agente só tentando lembrar de tudo. Ofereça assim, uma vez, no começo:
+
+> *"Posso montar um time: um especialista por cidade, mais um de transportes e um de hospedagem.
+> Eles debatem entre si e discordam de mim quando eu erro — o roteiro sai bem mais afiado, mas
+> cada rodada de consulta custa tokens. Quer?"*
+
+**Só monte se a pessoa disser sim** — e depois **confirme cada rodada antes de disparar**
+(mostre o que vai perguntar; cada tanda multiplica o custo pelo número de agentes).
+Se ela recusar, ou se a viagem tiver 1-2 cidades, faça sozinho: não vale o gasto.
+O padrão completo (papéis e regras que se provaram) está em **[`EXPERTS.md`](EXPERTS.md)**.
 
 ## 2. Monte o `trip.json`
 Escreva um `trip.json` seguindo o formato de **`trip.example.json`** (é o exemplo de referência).
@@ -56,6 +75,45 @@ Escreva um `trip.json` seguindo o formato de **`trip.example.json`** (é o exemp
   (lá o Google Maps é bloqueado e desloca as coordenadas). Para o resto do mundo, deixe Google.
 - `stops`: lista de paradas na ordem da viagem (ver abaixo)
 - `flights`: lista opcional `{ date, flightNo, from, to, dep, arr, note }` (aparece na aba Transportes)
+- `stays`: lista opcional de reservas (ver abaixo) — cria a aba 🛏️ Hospedagem
+
+### Hospedagem (`stays[]`) — opcional
+Onde a pessoa despeja os dados da reserva. Só `name` é essencial; **o que faltar simplesmente
+não aparece** no card, então não invente nada para preencher.
+```jsonc
+{
+  "city": { "en": "Beijing", "pt": "Pequim" },  // precisa casar com a "city" de uma parada p/ entrar no filtro
+  "name": "Lezai Hotel",
+  "checkIn": "2026-10-13",                       // AAAA-MM-DD — as noites são calculadas
+  "checkOut": "2026-10-17",
+  "address": "... · 北京市东城区",                 // clicável; inclua a versão no idioma local
+  "coords": [39.9345, 116.4021],                 // 🛏️ ponto próprio no mapa/KML
+  "confirmation": "ABC-123",                     // ⚠️ NUNCA invente — só se a pessoa der
+  "price": "¥520/noite",
+  "phone": "+86 10 1234 5678",                   // vira link de ligar
+  "url": "https://...",
+  "image": "https://...",
+  "note": { "en": "Late check-in ok", "pt": "Check-in tardio ok" }
+}
+```
+- **`city` é o que liga a reserva ao filtro.** Se não casar com nenhuma parada, o card aparece
+  em qualquer filtro (não some) — mas o certo é casar.
+- `confirmation`, `price` e `phone` são **dados pessoais**: pergunte, nunca pesquise nem deduza.
+
+### Estações e aeroportos no mapa
+`from`/`to` — de um voo em `flights` **ou** de um item `type: "move"` — aceitam texto simples
+**ou** um objeto com coordenadas. Com coordenadas, a estação/aeroporto vira 🚉 no mapa e no KML:
+```jsonc
+{
+  "type": "move",
+  "text": "Trem G8 Hongqiao → Pequim Sul",
+  "time": "08:00→12:26",
+  "from": { "name": "Shanghai Hongqiao", "coords": [31.1943, 121.3200] },
+  "to":   { "name": "Beijing South",     "coords": [39.8654, 116.3786] }
+}
+```
+A mesma estação usada em vários trajetos vira **um ponto só**. Vale a mesma regra de sempre:
+**WGS-84 / OpenStreetMap, nunca do Google Maps na China.**
 
 ### Parada (`stops[]`)
 - `city` (texto), `nights` (número)

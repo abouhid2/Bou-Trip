@@ -5,7 +5,9 @@ Monte um roteiro de viagem respondendo perguntas e receba um **calendário visua
 
 Dois jeitos de usar: **no terminal** ou **conversando com o Claude**.
 
-O HTML gerado tem **5 abas** — 📅 Calendário · 🗒️ Roteiro · 🚆 Transportes · 📍 Lugares · 🗺️ Mapa — e uma **trilha da viagem** no topo, onde cada parada ocupa espaço proporcional às noites e **filtra as 5 abas** (toque para ver só as cidades escolhidas; "Mostrar tudo" limpa). Cada lugar traz **descrição**, **endereço**, links de **info**, **🎟️ ingresso** e **📍 mapa**. Tem **tema claro/escuro** (segue o sistema, com toggle), **toggle de idioma** (inglês + o idioma da viagem), marca o **dia de hoje** se a viagem estiver rolando e, no Mapa, cada ponto abre no **app de mapa do celular / Google Maps / OSM**. As 4 primeiras abas funcionam offline; a aba **Mapa** (Leaflet + OpenStreetMap) e as fotos precisam de internet.
+O HTML gerado tem até **6 abas** — 📅 Calendário · 🗒️ Roteiro · 🚆 Transportes · 📍 Lugares · 🛏️ Hospedagem · 🗺️ Mapa — e uma **trilha da viagem** no topo, onde cada parada ocupa espaço proporcional às noites e **filtra todas as abas** (toque para ver só as cidades escolhidas; "Mostrar tudo" limpa). Cada lugar traz **descrição**, **endereço**, links de **info**, **🎟️ ingresso** e **📍 mapa**. Tem **tema claro/escuro** (segue o sistema, com toggle), **toggle de idioma** (inglês + o idioma da viagem), marca o **dia de hoje** se a viagem estiver rolando e, no Mapa, cada ponto abre no **app de mapa do celular / Google Maps / OSM**. O mapa distingue três tipos de ponto: **lugares** do roteiro, **🛏️ hospedagem** e **🚉 estações/aeroportos**. As abas de texto funcionam offline; a aba **Mapa** (Leaflet + OpenStreetMap) e as fotos precisam de internet.
+
+> A aba **Hospedagem** só existe se o `trip.json` tiver `stays` — é onde você despeja os dados da reserva (endereço, código, preço, telefone). Sem `stays`, o roteiro fica exatamente como era.
 
 ![exemplo](examples/china-2026/preview.png)
 
