@@ -112,8 +112,13 @@ não aparece** no card, então não invente nada para preencher.
   "to":   { "name": "Beijing South",     "coords": [39.8654, 116.3786] }
 }
 ```
-A mesma estação usada em vários trajetos vira **um ponto só**. Vale a mesma regra de sempre:
-**WGS-84 / OpenStreetMap, nunca do Google Maps na China.**
+A mesma estação usada em vários trajetos vira **um ponto só**, acendendo em todos os dias em
+que é usada. Vale a mesma regra de sempre: **WGS-84 / OpenStreetMap, nunca do Google Maps na
+China.** Para estação chinesa, busque pelo nome local (`芙蓉镇站`) — o nome ocidental costuma
+não achar nada. Confira que o resultado é `railway=station` e não a cidade homônima.
+
+A aba Mapa tem **filtro por dia** além do filtro por cidade. Ele sai de graça das datas que já
+existem: cada ponto sabe em que dia(s) aparece, e uma reserva acende em todas as suas noites.
 
 ### Parada (`stops[]`)
 - `city` (texto), `nights` (número)
