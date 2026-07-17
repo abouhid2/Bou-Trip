@@ -28,6 +28,17 @@
                 "en": "BA0169 · Heathrow T5 12:05 → Shanghai PVG T2 07:55 (+1)",
                 "pt": "BA0169 · Heathrow T5 12:05 → Shanghai PVG T2 07:55 (+1)"
               }
+            },
+            {
+              "type": "bullet",
+              "text": {
+                "en": "Homework before boarding: eSIM, Alipay, bank notice",
+                "pt": "Dever de casa antes de embarcar: eSIM, Alipay, aviso no banco"
+              },
+              "note": {
+                "en": "The eSIM profile has to be installed before you fly — you cannot download it from inside the firewall. An eSIM routed via HK/Singapore makes Google Maps and WhatsApp work without any VPN, so install the eSIM, not a VPN. Alipay: register with the BR number, upload the passport, link the card, expect ~10 min of verification. Use Didi through the Alipay mini-program, not the standalone app. Tell your bank you are travelling to China, or 3DS blocks the card link and you find out at the airport. Fill the digital arrival card up to 72h before, and carry CNY 300–500 in cash as a net: the airport taxi takes it.",
+                "pt": "O perfil do eSIM precisa ser instalado antes de voar — não dá para baixar de dentro do firewall. Um eSIM roteado por HK/Singapura faz o Google Maps e o WhatsApp funcionarem sem VPN nenhuma, então instale o eSIM, não uma VPN. Alipay: registre com o número BR, suba o passaporte, vincule o cartão, ~10 min de verificação. Use o Didi pelo mini-programa dentro do Alipay, não pelo app avulso. Avise o banco que vai à China, senão o 3DS trava a vinculação e você descobre no aeroporto. Preencha o cartão de chegada digital até 72h antes e leve CNY 300–500 em espécie como rede: o táxi do aeroporto aceita."
+              }
             }
           ],
           "note": {
@@ -46,32 +57,60 @@
       "days": [
         {
           "note": {
-            "en": "Monday 12 Oct. You land at PVG 07:55 and clear the terminal around 09:15, which makes this a full day, not a lost half-day. One catch you cannot beat: Monday shuts the Yu Garden, the M50 galleries and every museum in the city. So today is deliberately the version of Shanghai that never closes, streets, river and food, and the garden waits for 30 Oct. Flat, outdoors, no tickets. Get afternoon sun on your face and stay up until 22:00, because tomorrow you fly to Beijing and the jet lag is better beaten tonight than carried north.",
-            "pt": "Segunda, 12/out. Voce pousa no PVG as 07:55 e sai do terminal por volta das 09:15, o que faz disto um dia cheio, nao meio-dia perdido. Um problema que nao da para contornar: segunda fecha o Yu Garden, as galerias do M50 e todos os museus da cidade. Entao hoje e de proposito a Shanghai que nunca fecha, rua, rio e comida, e o jardim fica para 30/out. Plano, ao ar livre, sem ingresso. Pegue sol da tarde no rosto e fique acordado ate as 22h, porque amanha voce voa para Pequim e o jet-lag e melhor vencido hoje do que carregado para o norte."
+            "en": "Monday 12 Oct. You land at 07:55 and are realistically in a taxi around 09:45, not 09:15 — 07:55 is the peak of European arrivals and the non-resident immigration queue runs 30–70 min. Monday also closes Yu Garden and every museum in the city, so today is deliberately the Shanghai that never closes: street, river and food. No tickets, nothing booked, everything outdoors. Roughly two hours of this day are left unallocated on purpose — that slack is the most important thing on it, because it absorbs the queue that took 70 min instead of 30. Stay up until about 21:00, not 22:00: you are 11 time zones and 28 door-to-door hours in, and the first day should not be an endurance test.",
+            "pt": "Segunda, 12/out. Você pousa às 07:55 e realisticamente está num táxi por volta das 09:45, não 09:15 — 07:55 é o pico das chegadas europeias e a fila de imigração para não residentes roda de 30 a 70 min. Segunda também fecha o Yu Garden e todos os museus da cidade, então hoje é de propósito a Shanghai que nunca fecha: rua, rio e comida. Sem ingresso, sem reserva, tudo ao ar livre. Cerca de duas horas deste dia ficam sem nada marcado de propósito — essa folga é a coisa mais importante dele, porque é o que absorve a fila que demorou 70 min em vez de 30. Fique acordado até umas 21h, não 22h: são 11 fusos e 28 horas de porta a porta, e o primeiro dia não precisa ser prova de resistência."
           },
           "items": [
             {
-              "type": "move",
+              "type": "bullet",
               "period": "morning",
-              "time": "09:15 → ~10:15",
+              "time": "~09:30",
               "text": {
-                "en": "PVG Terminal 2 to downtown by taxi",
-                "pt": "PVG Terminal 2 ate o centro de taxi"
+                "en": "Turn on the eSIM and test Alipay on a CNY 5 buy, before the taxi",
+                "pt": "Ative o eSIM e teste o Alipay numa compra de CNY 5, antes do táxi"
               },
               "note": {
-                "en": "About 50 minutes, roughly CNY 200. With luggage and a night in the air the taxi beats the Maglev, which would mean two legs instead of one. Drop bags and be back on the street by 11:00.",
-                "pt": "Cerca de 50 minutos, uns CNY 200. Com malas e uma noite voando, o taxi ganha do Maglev, que significaria duas pernas em vez de uma. Largue as malas e esteja de volta na rua as 11:00."
+                "en": "About 20 minutes if the homework is done: switch on data roaming and make one real purchase, because that is where risk control can block you — better at a 7-Eleven than at a taxi door. If the homework was not done, this becomes 60–90 min of airport suffering with a real chance of not resolving at all.",
+                "pt": "Uns 20 minutos se o dever de casa foi feito: ligue o roaming de dados e faça uma compra real, que é onde o controle de risco pode barrar — melhor num 7-Eleven que na porta do táxi. Se o dever de casa não foi feito, isto vira 60–90 min de sofrimento no aeroporto, com risco real de não resolver."
+              }
+            },
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "~09:45 → ~10:45",
+              "from": {
+                "name": "Shanghai Pudong PVG 上海浦东国际机场",
+                "coords": [
+                  31.1427,
+                  121.8041
+                ]
               },
-              "address": "Shanghai Pudong International Airport, T2 · 上海浦东国际机场 2号航站楼",
-              "coords": [
-                31.1427359,
-                121.8041131
-              ]
+              "text": {
+                "en": "PVG Terminal 2 to the centre by taxi",
+                "pt": "PVG Terminal 2 até o centro de táxi"
+              },
+              "note": {
+                "en": "About 50 minutes, around CNY 200. With bags and a night in the air the taxi beats the Maglev, which would mean two legs instead of one. Ask the hotel for early check-in by message now, not at the desk — in Shanghai it is usually granted when warned ahead and a lottery when asked on the spot. A shower after 28 hours is worth more than any attraction on this list.",
+                "pt": "Cerca de 50 minutos, uns CNY 200. Com malas e uma noite voando, o táxi ganha do Maglev, que significaria duas pernas em vez de uma. Peça early check-in ao hotel por mensagem agora, não no balcão — em Shanghai costuma ser concedido quando avisado e é loteria quando pedido na hora. Um banho depois de 28h vale mais que qualquer atração desta lista."
+              }
+            },
+            {
+              "type": "bullet",
+              "period": "morning",
+              "time": "~10:45 → ~12:15",
+              "text": {
+                "en": "Hotel: bags, shower, and a 30 min nap at most",
+                "pt": "Hotel: malas, banho e no máximo 30 min de cochilo"
+              },
+              "note": {
+                "en": "If the room is not ready, left luggage solves the bags but not the shower. Nap with an alarm, 30 minutes, never after 15:00 — a two-hour nap destroys the night and you wake at 03:00, which is the opposite of the goal.",
+                "pt": "Se o quarto não sair, a bagageira resolve as malas mas não resolve o banho. Cochilo com alarme, 30 minutos, nunca depois das 15h — um cochilo de duas horas destrói a noite e você acorda às 3h da manhã, que é o oposto do objetivo."
+              }
             },
             {
               "type": "star",
-              "period": "morning",
-              "time": "~11:30–12:30",
+              "period": "afternoon",
+              "time": "~12:30–13:30",
               "text": {
                 "en": "Xiaolongbao at Jia Jia Tang Bao",
                 "pt": "Xiaolongbao no Jia Jia Tang Bao"
@@ -89,7 +128,7 @@
             {
               "type": "star",
               "period": "afternoon",
-              "time": "~13:15–15:30",
+              "time": "~14:30–16:30",
               "text": {
                 "en": "Nanshi Old Town and Yuyuan Bazaar",
                 "pt": "Nanshi Old Town e Bazar Yuyuan"
@@ -105,27 +144,9 @@
               ]
             },
             {
-              "type": "bullet",
-              "period": "afternoon",
-              "time": "~15:45–16:45",
-              "text": {
-                "en": "Nanjing Road pedestrian street",
-                "pt": "Rua de pedestres Nanjing Road"
-              },
-              "note": {
-                "en": "The loud neon shopping spine that runs east to the river. Not subtle and not trying to be, but it walks you to the Bund without a metro ride and keeps you upright and moving, which is the real job today.",
-                "pt": "A espinha comercial de neon barulhento que corre para leste ate o rio. Nao e sutil e nem tenta ser, mas te leva ao Bund a pe, sem metro, e te mantem de pe e andando, que e a tarefa real de hoje."
-              },
-              "address": "Nanjing East Road, Huangpu District · 上海市黄浦区南京东路步行街",
-              "coords": [
-                31.2376841,
-                121.4753016
-              ]
-            },
-            {
               "type": "star",
               "period": "afternoon",
-              "time": "~17:00–17:45",
+              "time": "~16:45–17:45",
               "text": {
                 "en": "The Bund, walked north",
                 "pt": "The Bund, caminhando para o norte"
@@ -143,7 +164,7 @@
             {
               "type": "bullet",
               "period": "afternoon",
-              "time": "~17:45–18:20",
+              "time": "~17:45–18:15",
               "text": {
                 "en": "Waibaidu Bridge and Bund Source",
                 "pt": "Waibaidu Bridge e Bund Source"
@@ -161,7 +182,7 @@
             {
               "type": "star",
               "period": "night",
-              "time": "~18:30–20:00",
+              "time": "~18:30–19:30",
               "text": {
                 "en": "The Bund lit up",
                 "pt": "The Bund iluminado"
@@ -209,7 +230,21 @@
               "coords": [
                 39.8653,
                 116.3786
-              ]
+              ],
+              "from": {
+                "name": "Shanghai Hongqiao 上海虹桥站",
+                "coords": [
+                  31.196,
+                  121.3162
+                ]
+              },
+              "to": {
+                "name": "Beijing South 北京南站",
+                "coords": [
+                  39.8635,
+                  116.3726
+                ]
+              }
             },
             {
               "type": "star",
@@ -620,7 +655,21 @@
               "coords": [
                 29.103,
                 110.4416
-              ]
+              ],
+              "from": {
+                "name": "Beijing Capital PEK 北京首都国际机场",
+                "coords": [
+                  40.0802,
+                  116.5939
+                ]
+              },
+              "to": {
+                "name": "Zhangjiajie Hehua DYG 张家界荷花国际机场",
+                "coords": [
+                  29.103,
+                  110.4416
+                ]
+              }
             },
             {
               "type": "move",
@@ -1047,7 +1096,21 @@
               "coords": [
                 29.1714,
                 110.458
-              ]
+              ],
+              "from": {
+                "name": "Zhangjiajie West 张家界西站",
+                "coords": [
+                  29.1714,
+                  110.4577
+                ]
+              },
+              "to": {
+                "name": "Furongzhen 芙蓉镇站",
+                "coords": [
+                  28.773,
+                  109.982
+                ]
+              }
             },
             {
               "type": "move",
@@ -1216,7 +1279,21 @@
               "coords": [
                 24.9633089,
                 110.5634609
-              ]
+              ],
+              "from": {
+                "name": "Furongzhen 芙蓉镇站",
+                "coords": [
+                  28.773,
+                  109.982
+                ]
+              },
+              "to": {
+                "name": "Yangshuo 阳朔站",
+                "coords": [
+                  24.9636,
+                  110.5634
+                ]
+              }
             },
             {
               "type": "move",
@@ -1832,7 +1909,21 @@
               "coords": [
                 31.3318337,
                 120.6062832
-              ]
+              ],
+              "from": {
+                "name": "Shanghai Hongqiao 上海虹桥站",
+                "coords": [
+                  31.196,
+                  121.3162
+                ]
+              },
+              "to": {
+                "name": "Suzhou 苏州站",
+                "coords": [
+                  31.3329,
+                  120.6064
+                ]
+              }
             },
             {
               "type": "star",
@@ -1958,7 +2049,21 @@
               "coords": [
                 31.3318337,
                 120.6062832
-              ]
+              ],
+              "from": {
+                "name": "Suzhou 苏州站",
+                "coords": [
+                  31.3329,
+                  120.6064
+                ]
+              },
+              "to": {
+                "name": "Shanghai Hongqiao 上海虹桥站",
+                "coords": [
+                  31.196,
+                  121.3162
+                ]
+              }
             },
             {
               "type": "star",
@@ -2155,7 +2260,13 @@
       "date": "2026-10-11",
       "flightNo": "BA0169",
       "from": "London LHR T5",
-      "to": "Shanghai PVG T2",
+      "to": {
+        "name": "Shanghai Pudong PVG 上海浦东国际机场",
+        "coords": [
+          31.1427,
+          121.8041
+        ]
+      },
       "dep": "12:05",
       "arr": "07:55 (+1)",
       "note": {
@@ -2166,8 +2277,20 @@
     {
       "date": "2026-10-17",
       "flightNo": "CA9659",
-      "from": "Beijing PEK",
-      "to": "Zhangjiajie DYG",
+      "from": {
+        "name": "Beijing Capital PEK 北京首都国际机场",
+        "coords": [
+          40.0802,
+          116.5939
+        ]
+      },
+      "to": {
+        "name": "Zhangjiajie Hehua DYG 张家界荷花国际机场",
+        "coords": [
+          29.103,
+          110.4416
+        ]
+      },
       "dep": "07:00",
       "arr": "09:35",
       "note": {
@@ -2178,7 +2301,13 @@
     {
       "date": "2026-10-31",
       "flightNo": "BA0168",
-      "from": "Shanghai PVG T2",
+      "from": {
+        "name": "Shanghai Pudong PVG 上海浦东国际机场",
+        "coords": [
+          31.1427,
+          121.8041
+        ]
+      },
       "to": "London LHR T5",
       "dep": "10:55",
       "arr": "17:45",
