@@ -40,6 +40,11 @@
     --dur-fast: 110ms; --dur: 210ms;
     --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
     --tap: 44px;
+    /* Largura do segmento da trilha enquanto ela é carrossel. Uniforme de
+       propósito: só onde a trilha inteira cabe na tela a largura pode
+       codificar duração — comparar tamanhos exige ver os dois juntos. */
+    --seg-w: 136px;
+    --fade: var(--sp-6);
   }
   :root[data-theme="light"] { color-scheme: light;
     --bg: #f5f6fa;
@@ -162,14 +167,26 @@
   }
 
   /* ---------- journey rail (filtro por cidade) ---------- */
+  /* O fade nas bordas é o único sinal de que a trilha continua fora da tela:
+     ela some sem aviso, e o scrollbar está escondido. As classes vêm do JS,
+     conforme a posição do scroll; sem overflow, nenhuma classe e nenhum fade. */
   .rail {
+    --fade-l: 0px; --fade-r: 0px;
     display: flex; gap: 3px; margin-bottom: var(--sp-2); padding-bottom: var(--sp-1);
     overflow-x: auto; scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 var(--fade-l), #000 calc(100% - var(--fade-r)), transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0, #000 var(--fade-l), #000 calc(100% - var(--fade-r)), transparent 100%);
   }
+  .rail.fade-l { --fade-l: var(--fade); }
+  .rail.fade-r { --fade-r: var(--fade); }
   .rail::-webkit-scrollbar { display: none; }
+  /* Carrossel: largura uniforme, porque aqui ela não mede nada — quem conta as
+     noites é o "4n" no próprio segmento. Com min-width:max-content a largura
+     acabava ditada pelo tamanho do NOME, e a leitura saía invertida (a parada
+     de 1 noite com o nome mais longo virava o segmento mais largo da trilha). */
   .seg {
     -webkit-appearance: none; appearance: none; font: inherit; cursor: pointer; text-align: left;
-    flex: var(--grow) 1 auto; min-width: max-content;
+    flex: 0 0 var(--seg-w); min-width: 0;
     display: flex; flex-direction: column; gap: 5px;
     padding: var(--sp-2) var(--sp-3);
     border: 0; border-radius: var(--r-sm);
@@ -179,7 +196,7 @@
   }
   .seg:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
   .seg-bar { height: 4px; border-radius: var(--r-full); background: var(--city, var(--border-strong)); opacity: .45; transition: opacity var(--dur) var(--ease); }
-  .seg-name { font-size: 12px; font-weight: 700; letter-spacing: -.1px; white-space: nowrap; }
+  .seg-name { font-size: 12px; font-weight: 700; letter-spacing: -.1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .seg-n { font-size: 10.5px; font-weight: 600; color: var(--muted); }
   .seg[aria-pressed="true"] .seg-bar, .seg.all[aria-pressed="true"] .seg-bar { opacity: 1; }
   .seg[aria-pressed="true"] { box-shadow: var(--shadow-md); }
@@ -367,18 +384,29 @@
   /* seletor de dia do mapa */
   .map-days { display: flex; align-items: center; gap: var(--sp-2); margin-bottom: var(--sp-2); }
   .mday-nav {
-    -webkit-appearance: none; appearance: none; font: inherit; font-size: 11px; cursor: pointer; flex: none;
-    width: 28px; height: 28px; border-radius: var(--r-full);
+    -webkit-appearance: none; appearance: none; font: inherit; font-size: 12px; cursor: pointer; flex: none;
+    display: inline-flex; align-items: center; justify-content: center;
+    width: var(--tap); height: var(--tap); border-radius: var(--r-full);
     border: 1px solid var(--border); background: var(--surface); color: var(--text-2);
   }
   .mday-nav:hover { border-color: var(--border-strong); color: var(--text); }
   .mday-range { flex: 1 1 auto; min-width: 0; max-width: 380px; accent-color: var(--accent); cursor: pointer; }
   .mday-lbl { font-size: 12px; font-weight: 600; color: var(--text-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
-  .map-legend { display: flex; flex-wrap: wrap; gap: var(--sp-3); margin-bottom: var(--sp-2); font-size: 11.5px; color: var(--muted); }
-  /* a legenda é o filtro: cada item é um checkbox */
-  .mk-lg { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; user-select: none; }
-  .mk-lg:hover { color: var(--text-2); }
-  .mk-cb { accent-color: var(--accent); cursor: pointer; margin: 0; width: 13px; height: 13px; }
+  .map-legend { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-bottom: var(--sp-2); font-size: 12px; color: var(--muted); }
+  /* A legenda É o filtro — e filtro é controle, não texto. Por isso o item é
+     dimensionado pelo alvo de toque (--tap) e desenhado como chip: quem usa
+     isto anda na rua, com uma mão. Herdar a métrica de legenda (o que ele era
+     antes) dava um alvo de 18px, abaixo do mínimo de 44px. */
+  .mk-lg {
+    display: inline-flex; align-items: center; gap: var(--sp-2);
+    cursor: pointer; user-select: none;
+    min-height: var(--tap); padding: 0 var(--sp-3);
+    border: 1px solid var(--border); border-radius: var(--r-full);
+    background: var(--surface);
+    transition: color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease), opacity var(--dur) var(--ease);
+  }
+  .mk-lg:hover { color: var(--text-2); border-color: var(--border-strong); }
+  .mk-cb { accent-color: var(--accent); cursor: pointer; margin: 0; width: 16px; height: 16px; flex: none; }
   /* desmarcado = tipo escondido no mapa; o rótulo apaga junto */
   .mk-lg:has(.mk-cb:not(:checked)) { opacity: .45; }
   .mk-lg:has(.mk-cb:not(:checked)) .mk-lg-ico { filter: grayscale(1); }
@@ -516,25 +544,25 @@
 
   <div class="rail" role="group" aria-label="Filtrar por cidade">
       <button class="seg all" aria-pressed="true"><span class="seg-bar"></span><span class="seg-name"><span data-l="en">Show all</span><span data-l="pt">Mostrar tudo</span></span><span class="seg-n">21d</span></button>
-      <button class="seg city" data-idx="1" aria-pressed="false" style="--city:#0d9488;--grow:1">
+      <button class="seg city" data-idx="1" aria-pressed="false" style="--city:#0d9488">
         <span class="seg-bar"></span><span class="seg-name">Shanghai</span><span class="seg-n">1n</span>
       </button>
-      <button class="seg city" data-idx="2" aria-pressed="false" style="--city:#e11d48;--grow:4">
+      <button class="seg city" data-idx="2" aria-pressed="false" style="--city:#e11d48">
         <span class="seg-bar"></span><span class="seg-name"><span data-l="en">Beijing</span><span data-l="pt">Pequim</span></span><span class="seg-n">4n</span>
       </button>
-      <button class="seg city" data-idx="3" aria-pressed="false" style="--city:#059669;--grow:4">
+      <button class="seg city" data-idx="3" aria-pressed="false" style="--city:#059669">
         <span class="seg-bar"></span><span class="seg-name">Zhangjiajie</span><span class="seg-n">4n</span>
       </button>
-      <button class="seg city" data-idx="4" aria-pressed="false" style="--city:#d97706;--grow:1">
+      <button class="seg city" data-idx="4" aria-pressed="false" style="--city:#d97706">
         <span class="seg-bar"></span><span class="seg-name">Furong</span><span class="seg-n">1n</span>
       </button>
-      <button class="seg city" data-idx="5" aria-pressed="false" style="--city:#7c3aed;--grow:3">
+      <button class="seg city" data-idx="5" aria-pressed="false" style="--city:#7c3aed">
         <span class="seg-bar"></span><span class="seg-name"><span data-l="en">Guangzhou · Canton</span><span data-l="pt">Guangzhou · Cantão</span></span><span class="seg-n">3n</span>
       </button>
-      <button class="seg city" data-idx="1" aria-pressed="false" style="--city:#0d9488;--grow:5">
+      <button class="seg city" data-idx="1" aria-pressed="false" style="--city:#0d9488">
         <span class="seg-bar"></span><span class="seg-name">Shanghai</span><span class="seg-n">5n</span>
       </button>
-      <button class="seg city transit" data-idx="0" aria-pressed="false" style="--city:#6b7280;--grow:3">
+      <button class="seg city transit" data-idx="0" aria-pressed="false" style="--city:#6b7280">
         <span class="seg-bar"></span><span class="seg-name">→ <span data-l="en">Transfers</span><span data-l="pt">Deslocamentos</span></span><span class="seg-n">3d</span>
       </button>
   </div>
@@ -1218,6 +1246,23 @@ var TRIP_I18N = {"today":{"en":"Today","pt":"Hoje"},"mapApp":"📱 app de mapa",
       apply();
     });
   });
+
+  // ---------- fade nas bordas da trilha ----------
+  // A trilha vira carrossel quando não cabe, e o scrollbar está escondido: sem
+  // isto, nada avisa que existem mais cidades fora da tela. Onde ela cabe
+  // inteira (desktop), nenhuma classe entra e não há fade.
+  var rail = document.querySelector('.rail');
+  function railFade() {
+    if (!rail) return;
+    var max = rail.scrollWidth - rail.clientWidth;
+    rail.classList.toggle('fade-l', rail.scrollLeft > 2);
+    rail.classList.toggle('fade-r', rail.scrollLeft < max - 2);
+  }
+  if (rail) {
+    rail.addEventListener('scroll', railFade, { passive: true });
+    window.addEventListener('resize', railFade);
+    railFade();
+  }
 
   // ---------- marca o dia de hoje, se a viagem estiver rolando ----------
   (function markToday() {
