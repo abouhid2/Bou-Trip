@@ -375,7 +375,13 @@
   .mday-range { flex: 1 1 auto; min-width: 0; max-width: 380px; accent-color: var(--accent); cursor: pointer; }
   .mday-lbl { font-size: 12px; font-weight: 600; color: var(--text-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
   .map-legend { display: flex; flex-wrap: wrap; gap: var(--sp-3); margin-bottom: var(--sp-2); font-size: 11.5px; color: var(--muted); }
-  .mk-lg { display: inline-flex; align-items: center; gap: 5px; }
+  /* a legenda é o filtro: cada item é um checkbox */
+  .mk-lg { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; user-select: none; }
+  .mk-lg:hover { color: var(--text-2); }
+  .mk-cb { accent-color: var(--accent); cursor: pointer; margin: 0; width: 13px; height: 13px; }
+  /* desmarcado = tipo escondido no mapa; o rótulo apaga junto */
+  .mk-lg:has(.mk-cb:not(:checked)) { opacity: .45; }
+  .mk-lg:has(.mk-cb:not(:checked)) .mk-lg-ico { filter: grayscale(1); }
   .mk-lg-ico { font-size: 12px; line-height: 1; }
   .mk-lg-place .mk-lg-ico { color: var(--accent); font-size: 18px; }
   /* Pinos de hospedagem/estação. O "className" do L.divIcon SUBSTITUI a classe
@@ -1281,6 +1287,18 @@ var TRIP_I18N = {"today":{"en":"Today","pt":"Hoje"},"mapApp":"📱 app de mapa",
   if (dNext) dNext.addEventListener('click', function () { dayStep(1); });
   dayLabel();
 
+  // ---------- filtro por tipo de ponto (só o mapa) ----------
+  // A legenda é o controle. Tipo ausente da lista = tipo que o mapa não tem,
+  // então nunca é escondido por engano.
+  var kindOff = new Set();
+  q('.mk-cb').forEach(function (cb) {
+    cb.addEventListener('change', function () {
+      var k = cb.getAttribute('data-kind');
+      if (cb.checked) kindOff.delete(k); else kindOff.add(k);
+      renderMarkers();
+    });
+  });
+
   // ---------- mapa ----------
   var mapInited = false, lmap = null, layer = null;
   function popupHtml(m) {
@@ -1324,6 +1342,7 @@ var TRIP_I18N = {"today":{"en":"Today","pt":"Hoje"},"mapApp":"📱 app de mapa",
       if (on && m.idx !== undefined && !selected.has(String(m.idx))) return;
       // days null = ponto sem data conhecida, aparece em qualquer dia.
       if (dayPick && m.days && m.days.indexOf(dayPick) < 0) return;
+      if (kindOff.has(m.kind)) return;
       makeMarker(m).addTo(layer);
       pts.push([m.lat, m.lon]);
     });
