@@ -4,142 +4,142 @@
     <name>China — Outubro 2026</name>
     <Placemark>
       <name>The Bund à noite</name>
-      <description>Shanghai</description>
+      <description>Shanghai · Zhongshan East 1st Rd, Huangpu District, Shanghai · 上海市黄浦区中山东一路</description>
       <Point><coordinates>121.49,31.2397,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Yu Garden · Nanshi Old Town</name>
-      <description>Shanghai</description>
+      <description>Shanghai · 168 Fuyou Rd, Huangpu District, Shanghai · 上海市黄浦区福佑路168号</description>
       <Point><coordinates>121.492,31.227,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>798 Art District</name>
-      <description>Pequim · n1</description>
+      <description>Pequim · 2-4 Jiuxianqiao Rd, Chaoyang District, Beijing · 北京市朝阳区酒仙桥路2-4号</description>
       <Point><coordinates>116.4951,39.9847,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Hutongs Nanluoguxiang + Great Leap Brewing</name>
-      <description>Pequim · n1</description>
+      <description>Pequim · Nanluoguxiang, Dongcheng District, Beijing · 北京市东城区南锣鼓巷</description>
       <Point><coordinates>116.407,39.929,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Muralha — Mutianyu</name>
-      <description>Pequim · n2</description>
+      <description>Pequim · Mutianyu Village, Bohai Town, Huairou District, Beijing · 北京市怀柔区渤海镇慕田峪村</description>
       <Point><coordinates>116.5704,40.4319,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>🦊🐼 Beijing Zoo — pandas gigantes + vermelhos</name>
-      <description>Pequim · n3</description>
+      <description>Pequim · 137 Xizhimenwai St, Xicheng District, Beijing · 北京市西城区西直门外大街137号</description>
       <Point><coordinates>116.3353,39.9383,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Palácio de Verão (Yiheyuan)</name>
-      <description>Pequim · n3</description>
+      <description>Pequim · 19 Xinjiangongmen Rd, Haidian District, Beijing · 北京市海淀区新建宫门路19号</description>
       <Point><coordinates>116.2752,40.0003,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Templo Yonghe (Lama Temple)</name>
-      <description>Pequim · n4</description>
+      <description>Pequim · 12 Yonghegong St, Dongcheng District, Beijing · 北京市东城区雍和宫大街12号</description>
       <Point><coordinates>116.4153,39.9474,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Shichahai + Drum Tower</name>
-      <description>Pequim · n4</description>
+      <description>Pequim · Drum Tower, Di'anmen Outer St, Dongcheng District, Beijing · 北京市东城区地安门外大街</description>
       <Point><coordinates>116.3907,39.9385,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Tianmen Mountain</name>
-      <description>Zhangjiajie · n2</description>
+      <description>Zhangjiajie · Tianmen Mountain Cableway Station, Yongding District, Zhangjiajie · 张家界市永定区天门山索道下站</description>
       <Point><coordinates>110.479,29.0517,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>72 Wonder Tower (noite)</name>
-      <description>Zhangjiajie · n2</description>
+      <description>Zhangjiajie · Wulingyuan District, Zhangjiajie · 张家界市武陵源区</description>
       <Point><coordinates>110.479,29.1163,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Avatar Mountains (Yuanjiajie)</name>
-      <description>Zhangjiajie · n3</description>
+      <description>Zhangjiajie · Zhangjiajie National Forest Park, Wulingyuan District · 张家界国家森林公园（武陵源区）</description>
       <Point><coordinates>110.4344,29.3155,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Yellow Dragon Cave (Huanglong Dong)</name>
-      <description>Zhangjiajie · n4</description>
+      <description>Zhangjiajie · Huanglong Cave, Wulingyuan District, Zhangjiajie · 张家界市武陵源区黄龙洞</description>
       <Point><coordinates>110.5453,29.3567,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Glass Bridge (430m) — reserva obrigatória</name>
-      <description>Zhangjiajie · n4</description>
+      <description>Zhangjiajie · Zhangjiajie Grand Canyon, Sanguansi, Cili County · 张家界慈利县三官寺大峡谷</description>
       <Point><coordinates>110.536,29.347,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Furong Ancient Town · cachoeira</name>
-      <description>Furong</description>
+      <description>Furong · Furong Ancient Town (Wangcun), Yongshun County, Xiangxi · 湘西州永顺县芙蓉镇</description>
       <Point><coordinates>109.999,28.68,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>🦊🐼 Chimelong Safari Park — pandas + trigêmeos</name>
-      <description>Guangzhou · Cantão · n2</description>
+      <description>Guangzhou · Cantão · Changlong Wild Animal World, Panyu District, Guangzhou · 广州市番禺区长隆野生动物世界</description>
       <Point><coordinates>113.328,22.994,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Canton Tower (600m)</name>
-      <description>Guangzhou · Cantão · n2</description>
+      <description>Guangzhou · Cantão · 222 Xinguang St, Haizhu District, Guangzhou · 广州市海珠区新港东路222号</description>
       <Point><coordinates>113.3245,23.1059,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Shamian Island · arquitetura colonial</name>
-      <description>Guangzhou · Cantão · n3</description>
+      <description>Guangzhou · Cantão · Shamian Island, Liwan District, Guangzhou · 广州市荔湾区沙面岛</description>
       <Point><coordinates>113.2418,23.1018,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Templo dos 6 Banians · Mercado Qingping</name>
-      <description>Guangzhou · Cantão · n3</description>
+      <description>Guangzhou · Cantão · 87 Liurong Rd, Yuexiu District, Guangzhou · 广州市越秀区六榕路87号</description>
       <Point><coordinates>113.2659,23.1286,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Humble Administrator's Garden</name>
-      <description>Shanghai · n2</description>
+      <description>Shanghai · 178 Northeast St, Gusu District, Suzhou · 苏州市姑苏区东北街178号</description>
       <Point><coordinates>120.629,31.326,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Suzhou Museum (I.M. Pei)</name>
-      <description>Shanghai · n2</description>
+      <description>Shanghai · 204 Dongbei St, Gusu District, Suzhou · 苏州市姑苏区东北街204号</description>
       <Point><coordinates>120.626,31.326,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Pingjiang Road · canais · seda</name>
-      <description>Shanghai · n2</description>
+      <description>Shanghai · Pingjiang Rd, Gusu District, Suzhou · 苏州市姑苏区平江路</description>
       <Point><coordinates>120.635,31.322,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Concessão Francesa — Wukang + Anfu Rd</name>
-      <description>Shanghai · n3</description>
+      <description>Shanghai · Wukang Rd, Xuhui District, Shanghai · 上海市徐汇区武康路</description>
       <Point><coordinates>121.457,31.211,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Xintiandi</name>
-      <description>Shanghai · n3</description>
+      <description>Shanghai · 181 Taicang Rd, Huangpu District, Shanghai · 上海市黄浦区太仓路181号</description>
       <Point><coordinates>121.471,31.2196,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>M50 Art District</name>
-      <description>Shanghai · n3</description>
+      <description>Shanghai · 50 Moganshan Rd, Putuo District, Shanghai · 上海市普陀区莫干山路50号</description>
       <Point><coordinates>121.4369,31.2461,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Zhujiajiao</name>
-      <description>Shanghai · n4</description>
+      <description>Shanghai · Zhujiajiao, Qingpu District, Shanghai · 上海市青浦区朱家角镇</description>
       <Point><coordinates>121.0636,31.1108,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Shanghai Museum</name>
-      <description>Shanghai · n4</description>
+      <description>Shanghai · 201 Renmin Ave, Huangpu District, Shanghai · 上海市黄浦区人民大道201号</description>
       <Point><coordinates>121.4738,31.2296,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Shanghai Tower — mirante (noite)</name>
-      <description>Shanghai · n5</description>
+      <description>Shanghai · 501 Yincheng Middle Rd, Pudong, Shanghai · 上海市浦东新区银城中路501号</description>
       <Point><coordinates>121.5015,31.2356,0</coordinates></Point>
     </Placemark>
   </Document>
