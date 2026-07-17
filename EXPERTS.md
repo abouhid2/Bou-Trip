@@ -26,6 +26,7 @@ a brasa para a sua sardinha e o maestro recebe 6 pedidos de "mais um dia".
 | Especialista de cidade | 1 por parada | O que fazer, em que ordem, a que horas, e quantas noites a cidade realmente merece |
 | Especialista de transportes | 1 | Trechos entre cidades: modal, horário, estação certa, o que é armadilha |
 | Especialista de hospedagem | 1 | Onde dormir em cada parada e por quê (bairro > estrela) |
+| Especialista de UI/UX | 1, opcional | Só se você for mexer no HTML gerado. Dono do `lib/theme.mjs`; não toca no conteúdo |
 
 Dê a cada um um **codinome curto** — o papel já diz o que ele faz; o nome é a identidade dele
 na conversa ("o Jade defendeu…" lê muito melhor que "o especialista de Guilin defendeu…").
@@ -67,6 +68,23 @@ Você é consultor: NÃO edite o trip.json. Devolva seu parecer; quem monta é o
 Se algo fora do seu escopo bloquear seu plano (um trem que pode não existir), diga
 ao maestro que é bloqueio e de quem é a resposta.
 ```
+
+Um especialista de **UI/UX** só faz sentido se você for mexer no motor, não no roteiro. Ele
+precisa de um **portal** para enxergar o render — sem isso ele opina lendo CSS, que para UX é
+quase adivinhação. Dê a ele o `theme.mjs` e proíba o `trip.json`: conteúdo é dos experts de
+cidade. O que fez ele valer a pena aqui:
+
+> Mobile é o caso REAL: a pessoa usa isso andando, com uma mão, no sol. Desktop é secundário.
+> Teste sempre num viewport de celular antes de opinar.
+> Diga honestamente quando a resposta é NÃO MEXER. Uma tela que já funciona não precisa do seu
+> toque para justificar sua existência.
+> Separe BLOCKER de melhoria e de gosto — e diga qual é qual.
+
+Ele achou o que ninguém tinha visto: no celular a trilha de cidades dimensionava por **número
+de letras do nome**, não por noites, porque `min-width: max-content` é um piso duro e sem
+largura sobrando o `flex-grow` não reparte nada. A parada de 1 noite aparecia como a mais
+larga da viagem. *"Não é uma codificação inerte, é uma codificação que afirma o contrário do
+verdadeiro."* Nenhuma leitura de código teria pego isso — só medir a tela.
 
 Para **transportes** e **hospedagem**, troque o escopo e mantenha o resto:
 - **Transportes**: "Seu escopo são os trechos ENTRE cidades. Confira a estação exata (cidades

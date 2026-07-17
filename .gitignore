@@ -1,6 +1,11 @@
 .DS_Store
 node_modules/
 
+# Papéis do maestri criados ao recrutar um expert aqui dentro. É estado da
+# ferramenta: pasta com nome de UUID e caminho absoluto cozido no prompt, então
+# não serve para quem clonar. O padrão reaproveitável está em EXPERTS.md.
+.maestri/
+
 # Seu roteiro pessoal vive em trip.json / my-trip.html.
 # Por padrão eles SÃO versionados (é o seu repo, a sua viagem).
 # Se preferir mantê-los fora do git, descomente:
