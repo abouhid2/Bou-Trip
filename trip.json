@@ -1,0 +1,2199 @@
+{
+  "title": {
+    "en": "China — October 2026",
+    "pt": "China — Outubro 2026"
+  },
+  "emoji": "🇨🇳",
+  "startDate": "2026-10-11",
+  "lang": "pt",
+  "maps": "osm",
+  "footer": {
+    "en": "Built with Bou-Trip · WGS-84 coords (Google Maps is offset in China)",
+    "pt": "Feito com Bou-Trip · coords WGS-84 (o Google Maps é deslocado na China)"
+  },
+  "stops": [
+    {
+      "city": {
+        "en": "Rio → London → Shanghai",
+        "pt": "Rio → Londres → Shanghai"
+      },
+      "nights": 1,
+      "transit": true,
+      "days": [
+        {
+          "items": [
+            {
+              "type": "move",
+              "text": {
+                "en": "BA0169 · Heathrow T5 12:05 → Shanghai PVG T2 07:55 (+1)",
+                "pt": "BA0169 · Heathrow T5 12:05 → Shanghai PVG T2 07:55 (+1)"
+              }
+            }
+          ],
+          "note": {
+            "en": "In the air. BA0169 leaves Heathrow T5 at 12:05 on the 11th and lands at Shanghai Pudong T2 at 07:55 on the 12th.",
+            "pt": "No ar. O BA0169 sai de Heathrow T5 às 12:05 do dia 11 e pousa em Shanghai Pudong T2 às 07:55 do dia 12."
+          }
+        }
+      ]
+    },
+    {
+      "city": {
+        "en": "Shanghai (arrival)",
+        "pt": "Shanghai (chegada)"
+      },
+      "nights": 1,
+      "days": [
+        {
+          "note": {
+            "en": "Monday 12 Oct. You land at PVG 07:55 and clear the terminal around 09:15, which makes this a full day, not a lost half-day. One catch you cannot beat: Monday shuts the Yu Garden, the M50 galleries and every museum in the city. So today is deliberately the version of Shanghai that never closes, streets, river and food, and the garden waits for 30 Oct. Flat, outdoors, no tickets. Get afternoon sun on your face and stay up until 22:00, because tomorrow you fly to Beijing and the jet lag is better beaten tonight than carried north.",
+            "pt": "Segunda, 12/out. Voce pousa no PVG as 07:55 e sai do terminal por volta das 09:15, o que faz disto um dia cheio, nao meio-dia perdido. Um problema que nao da para contornar: segunda fecha o Yu Garden, as galerias do M50 e todos os museus da cidade. Entao hoje e de proposito a Shanghai que nunca fecha, rua, rio e comida, e o jardim fica para 30/out. Plano, ao ar livre, sem ingresso. Pegue sol da tarde no rosto e fique acordado ate as 22h, porque amanha voce voa para Pequim e o jet-lag e melhor vencido hoje do que carregado para o norte."
+          },
+          "items": [
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "09:15 → ~10:15",
+              "text": {
+                "en": "PVG Terminal 2 to downtown by taxi",
+                "pt": "PVG Terminal 2 ate o centro de taxi"
+              },
+              "note": {
+                "en": "About 50 minutes, roughly CNY 200. With luggage and a night in the air the taxi beats the Maglev, which would mean two legs instead of one. Drop bags and be back on the street by 11:00.",
+                "pt": "Cerca de 50 minutos, uns CNY 200. Com malas e uma noite voando, o taxi ganha do Maglev, que significaria duas pernas em vez de uma. Largue as malas e esteja de volta na rua as 11:00."
+              },
+              "address": "Shanghai Pudong International Airport, T2 · 上海浦东国际机场 2号航站楼",
+              "coords": [
+                31.1427359,
+                121.8041131
+              ]
+            },
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "~11:30–12:30",
+              "text": {
+                "en": "Xiaolongbao at Jia Jia Tang Bao",
+                "pt": "Xiaolongbao no Jia Jia Tang Bao"
+              },
+              "note": {
+                "en": "The soup dumplings you came to China for, eaten just before the lunch crush. Open 07:30 to 20:30, and today is the right day for it because you have no schedule left to wreck. The queue moves fast once it starts.",
+                "pt": "Os xiaolongbao pelos quais voce veio a China, comidos pouco antes do pico do almoco. Abre 07:30 as 20:30, e hoje e o dia certo porque voce nao tem mais agenda para atrasar. A fila anda rapido quando comeca."
+              },
+              "address": "127 Huanghe Road, Huangpu District · 上海市黄浦区黄河路127号",
+              "coords": [
+                31.236418,
+                121.4663129
+              ]
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "~13:15–15:30",
+              "text": {
+                "en": "Nanshi Old Town and Yuyuan Bazaar",
+                "pt": "Nanshi Old Town e Bazar Yuyuan"
+              },
+              "note": {
+                "en": "About 25 minutes by metro from lunch. Curved roofs, narrow lanes and the teahouse on the zigzag bridge. The classical garden inside is shut on Mondays, but the bazaar and the old streets wrapped around it are free and open as usual, which is exactly the kind of thing you want to do on foot with jet lag.",
+                "pt": "Cerca de 25 minutos de metro desde o almoco. Telhados curvos, vielas estreitas e a casa de cha da ponte em ziguezague. O jardim classico la dentro fecha as segundas, mas o bazar e as ruas antigas em volta sao livres e abrem normalmente, que e justamente o que se faz a pe e com jet-lag."
+              },
+              "address": "Yuyuan Old Street, Huangpu District · 上海市黄浦区豫园老街",
+              "coords": [
+                31.2293228,
+                121.487021
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "~15:45–16:45",
+              "text": {
+                "en": "Nanjing Road pedestrian street",
+                "pt": "Rua de pedestres Nanjing Road"
+              },
+              "note": {
+                "en": "The loud neon shopping spine that runs east to the river. Not subtle and not trying to be, but it walks you to the Bund without a metro ride and keeps you upright and moving, which is the real job today.",
+                "pt": "A espinha comercial de neon barulhento que corre para leste ate o rio. Nao e sutil e nem tenta ser, mas te leva ao Bund a pe, sem metro, e te mantem de pe e andando, que e a tarefa real de hoje."
+              },
+              "address": "Nanjing East Road, Huangpu District · 上海市黄浦区南京东路步行街",
+              "coords": [
+                31.2376841,
+                121.4753016
+              ]
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "~17:00–17:45",
+              "text": {
+                "en": "The Bund, walked north",
+                "pt": "The Bund, caminhando para o norte"
+              },
+              "note": {
+                "en": "The waterfront from south to north with Pudong standing across the river. Sunset is 17:27 today, so this window puts the low light straight onto the stone facades.",
+                "pt": "A beira-rio de sul a norte com Pudong plantado do outro lado. O por do sol e as 17:27 hoje, entao esta janela joga a luz baixa direto nas fachadas de pedra."
+              },
+              "address": "Zhongshan East 1st Road, Huangpu District · 上海市黄浦区中山东一路",
+              "coords": [
+                31.2353356,
+                121.487632
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "~17:45–18:20",
+              "text": {
+                "en": "Waibaidu Bridge and Bund Source",
+                "pt": "Waibaidu Bridge e Bund Source"
+              },
+              "note": {
+                "en": "The 1907 steel bridge at the north end, with the restored 1920s blocks of the Bund Source behind it. Quieter than the main promenade and better built. You end up here right as the lights come on.",
+                "pt": "A ponte de aco de 1907 na ponta norte, com os quarteiroes restaurados dos anos 1920 do Bund Source atras. Mais silencioso que o calcadao principal e melhor construido. Voce chega aqui bem na hora em que as luzes acendem."
+              },
+              "address": "Waibaidu Bridge, Huangpu District · 上海市黄浦区外白渡桥",
+              "coords": [
+                31.2453073,
+                121.4857442
+              ]
+            },
+            {
+              "type": "star",
+              "period": "night",
+              "time": "~18:30–20:00",
+              "text": {
+                "en": "The Bund lit up",
+                "pt": "The Bund iluminado"
+              },
+              "note": {
+                "en": "Lights come on around 18:30 and the entire river turns on at once. Eat early and sleep. Do not push past 22:00 tonight.",
+                "pt": "As luzes acendem por volta das 18:30 e o rio inteiro se acende de uma vez. Jante cedo e durma. Nao force nada depois das 22h hoje."
+              },
+              "address": "Zhongshan East 1st Road, Huangpu District · 上海市黄浦区中山东一路",
+              "coords": [
+                31.2353356,
+                121.487632
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": {
+        "en": "Beijing",
+        "pt": "Pequim"
+      },
+      "nights": 4,
+      "days": [
+        {
+          "note": {
+            "en": "Oct 13 (Tue) - The fused day. The G10 lands at 13:26, so this is half an afternoon, and the only way it holds is by staying inside one walkable cluster: the Lama Temple, then the imperial lakes at sunset, fifteen minutes apart. 798 was cut to make this possible - it sits an hour away in the opposite corner of the city and would have eaten the whole afternoon for galleries you can find in any capital. What replaces it is the most alive place in Beijing and the prettiest hour of light in it.",
+            "pt": "13/out (ter) - O dia fundido. O G10 encosta as 13h26, entao isto e meia tarde, e a unica forma de isto se sustentar e ficar dentro de um unico cluster caminhavel: o Templo Lama, depois os lagos imperiais no por do sol, a quinze minutos um do outro. O 798 foi cortado para isto ser possivel - fica a uma hora dali, no canto oposto da cidade, e teria comido a tarde inteira por galerias que voce acha em qualquer capital. O que entra no lugar e o lugar mais vivo de Pequim e a hora de luz mais bonita dela."
+          },
+          "items": [
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "09:00 → 13:26",
+              "text": {
+                "en": "G10 train Shanghai Hongqiao to Beijing South",
+                "pt": "Trem G10 Shanghai Hongqiao a Beijing South"
+              },
+              "note": {
+                "en": "This train eats the whole morning and lands at Beijing South (北京南站) at 13:26, 4h26 door to door, so you are only free from about 14:15. G8 at 08:00 arrives 12:26 and buys back an hour - worth considering now that the afternoon carries two stops. Both arrive at Beijing South, not West or North; metro lines 4 and 14 leave from inside the station. Train choice confirmed by Trilho.",
+                "pt": "Este trem come a manha inteira e encosta em Beijing South (北京南站) as 13h26, 4h26 porta a porta, entao voce so esta livre por volta das 14h15. O G8 das 08h00 chega 12h26 e devolve uma hora - vale considerar agora que a tarde carrega duas paradas. Os dois chegam em Beijing South, nao West nem North; as linhas 4 e 14 do metro saem de dentro da estacao. Escolha do trem confirmada pelo Trilho."
+              },
+              "address": "Beijing South Railway Station, Fengtai District · 丰台区永外大街 北京南站",
+              "coords": [
+                39.8653,
+                116.3786
+              ]
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "~15:00–16:30",
+              "text": {
+                "en": "Yonghe Temple (Lama Temple)",
+                "pt": "Templo Yonghe (Templo Lama)"
+              },
+              "note": {
+                "en": "An active Tibetan Buddhist temple with an 18-metre Maitreya carved from a single sandalwood trunk. Heavy incense, real monks, real worshippers - the most alive place on the whole itinerary, and the right first taste of Beijing. Open 09:00-17:00, LAST ENTRY 16:30, ticket 25 yuan. Beijing South to Yonghegong is about 40 minutes, so 15:00 is realistic and leaves comfortable margin on that cutoff. Ninety minutes is enough.",
+                "pt": "Templo budista tibetano ativo, com uma estatua de Maitreya de 18 metros esculpida num unico tronco de sandalo. Incenso pesado, monges de verdade, fieis de verdade - o lugar mais vivo do roteiro inteiro, e o primeiro gosto certo de Pequim. Aberto 9h-17h, ULTIMA ENTRADA 16h30, ingresso 25 yuan. De Beijing South ate Yonghegong sao uns 40 minutos, entao 15h e realista e deixa margem confortavel nesse corte. Uma hora e meia basta."
+              },
+              "address": "No. 12 Yonghegong Street, Dongcheng District · 东城区雍和宫大街12号",
+              "coords": [
+                39.9475,
+                116.4113
+              ]
+            },
+            {
+              "type": "star",
+              "period": "night",
+              "time": "~17:00–19:30",
+              "text": {
+                "en": "Shichahai and Houhai at sunset",
+                "pt": "Shichahai e Houhai no por do sol"
+              },
+              "note": {
+                "en": "Imperial lakes ringed by hutongs, two metro stops from the temple and then a short walk. Sunset in mid-October falls around 17:45, so you arrive with the light still on the water. Walk the north shore of Houhai and ignore the row of cover-band bars - this is where Beijing still looks like Beijing. It also makes Nanluoguxiang redundant, which is why that one was cut: same hutong idea, done better and for free.",
+                "pt": "Lagos imperiais cercados de hutongs, a duas estacoes de metro do templo e depois uma caminhada curta. O por do sol em meados de outubro cai por volta das 17h45, entao voce chega com a luz ainda na agua. Ande a margem norte do Houhai e ignore a fileira de bares com cover band - e onde Pequim ainda parece Pequim. Isso tambem torna Nanluoguxiang redundante, e por isso ela foi cortada: mesma ideia de hutong, feita melhor e de graca."
+              },
+              "address": "Shichahai, Xicheng District · 西城区什刹海",
+              "coords": [
+                39.94,
+                116.383
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "night",
+              "time": "~19:30–21:00",
+              "text": {
+                "en": "Dinner around the lakes",
+                "pt": "Jantar em volta dos lagos"
+              },
+              "note": {
+                "en": "Eat in the hutongs off the Houhai shore and go to bed early. The alarm tomorrow is 05:30 and that is not negotiable - it is the entire Wall strategy.",
+                "pt": "Coma nos hutongs fora da margem do Houhai e durma cedo. O despertador de amanha e 5h30 e isso nao e negociavel - e a estrategia inteira da Muralha."
+              },
+              "address": "Shichahai, Xicheng District · 西城区什刹海",
+              "coords": [
+                39.94,
+                116.383
+              ]
+            }
+          ]
+        },
+        {
+          "note": {
+            "en": "Oct 14 (Wed) - THE WALL, AND A DECISION. The honest finding stands: no remote section has a toboggan. Only Mutianyu and Badaling have real ones, precisely because they are the tourist sections. So PLAN A is Mutianyu at dawn - a 05:30 alarm buys the wall nearly empty from 07:30 to 09:00, because the tour buses only land at 09:00-10:00. The crowd problem is a timing problem, and timing solves it. You are back in the city by 13:30, which is where the Drum Tower now lives. PLAN B, the last item, is Jinshanling: genuinely wild and empty, but no toboggan, ever. Pick one.",
+            "pt": "14/out (qua) - A MURALHA, E UMA DECISAO. O achado honesto continua de pe: nenhuma secao afastada tem toboga. So Mutianyu e Badaling tem toboga de verdade, justamente por serem as secoes turisticas. Entao o PLANO A e Mutianyu de madrugada - um despertador as 5h30 compra a muralha quase vazia das 7h30 as 9h, porque os onibus de excursao so chegam entre 9h e 10h. O problema da multidao e um problema de horario, e horario resolve. Voce esta de volta na cidade as 13h30, que e onde o Drum Tower passou a morar. O PLANO B, o ultimo item, e Jinshanling: selvagem e vazia de verdade, mas sem toboga, nunca. Escolha um."
+          },
+          "items": [
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "06:00 → 07:30",
+              "text": {
+                "en": "PLAN A - Beijing to Mutianyu, leave 06:00",
+                "pt": "PLANO A - Pequim a Mutianyu, saia 06h00"
+              },
+              "note": {
+                "en": "The 06:00 departure IS the strategy - it is the whole reason this works, so do not soften it. Private car round trip, roughly 600-800 yuan for the day, gets you to the gate for the 07:30 opening. The public route cannot: metro line 2 to Dongzhimen exit B, bus 916 Express (916快, never the slow regular 916) to Huairou Beidajie 70-90 min, then bus H23/H24/H35/H36 to Mutianyu Roundabout 20 min, total 15-30 yuan - but it puts you at the gate around 09:30, exactly when the buses land, which defeats the entire plan. On this one day, pay for the car.",
+                "pt": "A saida as 06h00 E a estrategia - e a razao inteira de isso funcionar, entao nao amoleca. Carro privado ida e volta, aprox. 600-800 yuan o dia, te poe no portao para a abertura das 7h30. A rota publica nao consegue: metro linha 2 ate Dongzhimen saida B, onibus 916 Express (916快, nunca o 916 comum que e lento) ate Huairou Beidajie 70-90 min, depois onibus H23/H24/H35/H36 ate Mutianyu Huandao 20 min, total 15-30 yuan - mas te deixa no portao la pelas 9h30, exatamente quando os onibus chegam, o que destroi o plano inteiro. Neste dia especifico, pague o carro."
+              },
+              "address": "Dongzhimen Wai Bus Station · 东直门外公交枢纽"
+            },
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "07:30–08:00",
+              "text": {
+                "en": "PLAN A - Gate, shuttle and chairlift up to Tower 6",
+                "pt": "PLANO A - Portao, shuttle e chairlift ate a torre 6"
+              },
+              "note": {
+                "en": "Mutianyu opens 07:30 in peak season (Mar 16 - Nov 15); Oct 14 is a Wednesday and well past Golden Week, the best combination available. Entry 40 yuan, chairlift 100 one way. From the visitor centre the internal shuttle to the lift base is compulsory - you cannot walk it. Take the chairlift, not the enclosed cable car, and get off at Tower 6.",
+                "pt": "Mutianyu abre 7h30 na alta temporada (16/mar a 15/nov); 14/out e uma quarta-feira e bem depois da Golden Week, a melhor combinacao disponivel. Entrada 40 yuan, chairlift 100 so ida. Do centro de visitantes o shuttle interno ate a base do teleferico e obrigatorio - nao da para ir a pe. Pegue o chairlift, nao o teleferico fechado, e desca na torre 6."
+              },
+              "address": "Mutianyu Village, Bohai Town, Huairou District · 怀柔区渤海镇慕田峪村",
+              "url": "https://en.mutianyugreatwall.com",
+              "tickets": "https://en.mutianyugreatwall.com/reservation-center/tickets",
+              "coords": [
+                40.4319,
+                116.5704
+              ]
+            },
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "08:00–11:00",
+              "text": {
+                "en": "PLAN A - Walk the wall in the empty window",
+                "pt": "PLANO A - Caminhe a muralha na janela vazia"
+              },
+              "note": {
+                "en": "This is the payoff. Sources agree the calm window is 07:30-09:00 on a weekday and that the crowd builds sharply after 09:00, when the day-trip buses arrive. You get roughly ninety minutes of near-solitude and low autumn light, then it fills in around you and you are already ahead of it. Walk east toward Tower 20 for the emptiest stretch - most people never leave the Tower 6 to 14 stub.",
+                "pt": "Esta e a recompensa. As fontes concordam que a janela calma e 7h30-9h em dia de semana e que a multidao engrossa forte depois das 9h, quando chegam os onibus de bate-volta. Voce ganha uns noventa minutos de quase-solidao e luz baixa de outono, e depois ela enche em volta de voce, que ja saiu na frente. Caminhe para leste rumo a torre 20 para o trecho mais vazio - quase ninguem sai do toco entre as torres 6 e 14."
+              },
+              "address": "Mutianyu Great Wall, Towers 6 to 20 · 慕田峪长城 六号楼至二十号楼",
+              "coords": [
+                40.4319,
+                116.5704
+              ]
+            },
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "~11:00–11:30",
+              "text": {
+                "en": "PLAN A - Toboggan down from Tower 6",
+                "pt": "PLANO A - Toboggan descendo da torre 6"
+              },
+              "note": {
+                "en": "The toboggan is descent only, 100 yuan, 1,580 m of hand-braked stainless track through the forest - the thing that exists nowhere else. The detail that trips everyone up: it leaves from the CHAIRLIFT station at Tower 6, not from the enclosed cable car station at Tower 14, so mixing them costs a 30-45 minute stair climb. Going down at 11:00 also means you beat the queue, which is genuinely long by early afternoon.",
+                "pt": "O toboggan so desce, 100 yuan, 1.580 m de trilho de inox com freio de mao pela mata - a coisa que nao existe em lugar nenhum. O detalhe que derruba todo mundo: ele sai da estacao do CHAIRLIFT na torre 6, nao da estacao do teleferico fechado na torre 14, entao misturar os dois custa 30-45 minutos de escadaria. Descer as 11h tambem significa furar a fila, que fica sinceramente longa no comeco da tarde."
+              },
+              "address": "Mutianyu Great Wall, Tower 6 station · 慕田峪长城 六号楼索道站",
+              "coords": [
+                40.4319,
+                116.5704
+              ]
+            },
+            {
+              "type": "move",
+              "period": "afternoon",
+              "time": "12:00 → 13:30",
+              "text": {
+                "en": "PLAN A - Back to Beijing, rest",
+                "pt": "PLANO A - Volta a Pequim, descanso"
+              },
+              "note": {
+                "en": "The dawn strategy hands the afternoon back as a bonus: you are home by 13:30 while the buses are still disgorging at the gate. Take a real nap - the Drum Tower is gentle but you woke at 05:30 and walked kilometres of Ming staircase, and tomorrow starts early too.",
+                "pt": "A estrategia da madrugada devolve a tarde de bonus: voce esta em casa as 13h30 enquanto os onibus ainda estao despejando gente no portao. Tire um cochilo de verdade - o Drum Tower e leve, mas voce acordou as 5h30 e caminhou quilometros de escadaria Ming, e amanha tambem comeca cedo."
+              }
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "~15:30–17:00",
+              "text": {
+                "en": "Drum Tower and Bell Tower",
+                "pt": "Drum Tower e Bell Tower"
+              },
+              "note": {
+                "en": "Placed here on purpose: squeezed onto the arrival day it would have been a 30-minute sprint against the 17:20 last entry, and this deserves better. With the Forbidden City skipped, the view from the top over the grey hutong roofs is the traveller's one panorama of the old imperial city - it is the compensation, not a filler. Peak season (Apr 26 - Oct 25) 09:30-17:30, last entry 17:20; same-day online sales close 15:30, so buy ahead. Bell Tower 150 m north. Low effort, high reward, perfect for a tired afternoon.",
+                "pt": "Posto aqui de proposito: espremido no dia da chegada, teria virado um sprint de 30 minutos contra a ultima entrada das 17h20, e isto merece melhor. Com a Cidade Proibida pulada, a vista do topo sobre os telhados cinza dos hutongs e o unico panorama que o viajante tera da cidade imperial antiga - e a compensacao, nao enchimento. Alta temporada (26/abr a 25/out) 9h30-17h30, ultima entrada 17h20; venda online no mesmo dia fecha 15h30, entao compre antes. Bell Tower 150 m ao norte. Pouco esforco, muita recompensa, perfeito para uma tarde cansada."
+              },
+              "address": "No. 9 Zhonglouwan Linzi Hutong, Dongcheng District · 东城区钟楼湾临字9号",
+              "coords": [
+                39.941,
+                116.3906
+              ]
+            },
+            {
+              "type": "star",
+              "period": "night",
+              "time": "~19:00–20:30",
+              "text": {
+                "en": "Peking duck",
+                "pt": "Pato laqueado"
+              },
+              "note": {
+                "en": "The classic Beijing reward after a day on the Wall, and it holds whether you picked Plan A or Plan B. The Gulou area around the Drum Tower has good duck, so you can walk to dinner from the tower rather than crossing the city on tired legs. Deliberately no restaurant named - I have not verified one.",
+                "pt": "A recompensa classica de Pequim depois de um dia na Muralha, e vale tanto para o Plano A quanto para o Plano B. A regiao de Gulou, em volta do Drum Tower, tem bom pato, entao da para ir a pe da torre ate o jantar em vez de atravessar a cidade de perna cansada. De proposito nao indico restaurante - nao verifiquei nenhum."
+              },
+              "address": "Gulou area, Dongcheng District · 东城区鼓楼一带",
+              "coords": [
+                39.941,
+                116.3906
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "morning",
+              "time": "PLANO B · 06:30 → 20:00 (dia inteiro)",
+              "text": {
+                "en": "PLAN B (swap) - Jinshanling: empty, but NO toboggan",
+                "pt": "PLANO B (troca) - Jinshanling: vazia, mas SEM toboga"
+              },
+              "note": {
+                "en": "If emptiness matters more than the toboggan, this replaces Plan A above - it is an either/or, not an addition, and it also eats the Drum Tower afternoon. Jinshanling is the real thing: 10.5 km, half-wild and half-restored, 67 watchtowers, 130 km from Beijing, known as the photographer's section precisely because almost nobody is on it. There IS a cable car (15 min up), so it is not a brutal climb. But there is no toboggan and there never will be - that is the whole trade. Private car about 2h each way, or high-speed rail to Gubeikou station then a Didi under 30 yuan to the gate. A direct bus also leaves Wangjing West metro at 08:00 and returns 15:00.",
+                "pt": "Se o vazio importa mais que o toboga, isto substitui o Plano A acima - e um ou outro, nao um acrescimo, e tambem come a tarde do Drum Tower. Jinshanling e a coisa de verdade: 10,5 km, metade selvagem e metade restaurada, 67 torres de vigia, 130 km de Pequim, conhecida como a secao dos fotografos justamente porque quase ninguem esta nela. TEM teleferico (15 min ate o topo), entao nao e uma subida brutal. Mas nao tem toboga e nunca vai ter - essa e a troca inteira. Carro privado cerca de 2h cada trecho, ou trem de alta velocidade ate a estacao Gubeikou e depois um Didi por menos de 30 yuan ate o portao. Ha tambem um onibus direto que sai do metro Wangjing West as 08h00 e volta as 15h00."
+              },
+              "address": "HuaLouGou Village, Bakeshiying Town, Luanping County, Hebei · 河北省滦平县巴克什营镇花楼沟村 金山岭长城",
+              "coords": [
+                40.676644,
+                117.232864
+              ]
+            }
+          ]
+        },
+        {
+          "note": {
+            "en": "Oct 15 (Thu) - The two imperial giants, and the day the second zoo used to be. With Beijing Zoo cut, the morning went to the Temple of Heaven - the thing I always wanted in and never had room for. Get there at 07:00, before the monuments even open, because the point is not the architecture: it is a thousand Beijingers doing tai chi, ballroom dancing, water calligraphy and opera in the cypress groves, and they are gone by 09:00. Then north to the Summer Palace for the best light of the year. It is Ming perfection in the morning and Qing excess in the afternoon, and no Forbidden City needed.",
+            "pt": "15/out (qui) - Os dois gigantes imperiais, e o dia onde ficava o segundo zoologico. Com o Beijing Zoo cortado, a manha foi para o Templo do Ceu - a coisa que eu sempre quis por e nunca teve espaco. Chegue as 7h, antes dos monumentos abrirem, porque o ponto nao e a arquitetura: sao mil pequineses fazendo tai chi, danca de salao, caligrafia com agua e opera nos bosques de ciprestes, e as 9h eles ja foram. Depois para o norte, ao Palacio de Verao, para a melhor luz do ano. E perfeicao Ming de manha e excesso Qing de tarde, e nao falta Cidade Proibida nenhuma."
+          },
+          "items": [
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "07:00–10:00",
+              "text": {
+                "en": "Temple of Heaven at dawn",
+                "pt": "Templo do Ceu de manha cedo"
+              },
+              "note": {
+                "en": "The park opens 06:00 and the golden window is 06:00-09:00, when locals fill the cypress groves with tai chi, chess, jianzi, water calligraphy and full opera choirs - this is the living Beijing that no museum or art district can fake, and it evaporates by 09:00. The monuments open 08:00, so 07:00 gets you the people first and the Hall of Prayer for Good Harvests second, which is the correct order. Park ticket 15 yuan, but buy the 34 yuan through-ticket or you cannot enter the Hall itself. Metro line 5, Tiantandongmen station.",
+                "pt": "O parque abre as 6h e a janela de ouro e 6h-9h, quando os moradores enchem os bosques de ciprestes com tai chi, xadrez, jianzi, caligrafia com agua e corais de opera inteiros - esta e a Pequim viva que museu nenhum e distrito de arte nenhum consegue imitar, e as 9h ela evapora. Os monumentos abrem as 8h, entao 7h te da as pessoas primeiro e o Salao de Oracao pelas Boas Colheitas depois, que e a ordem certa. Ingresso do parque 15 yuan, mas compre o combinado de 34 yuan ou voce nao entra no Salao. Metro linha 5, estacao Tiantandongmen."
+              },
+              "address": "No. 1 Tiantan East Road, Dongcheng District · 东城区天坛东路甲1号",
+              "url": "https://english.beijing.gov.cn/specials/ticketing/parks/202407/t20240719_3753312.html",
+              "coords": [
+                39.88222,
+                116.40639
+              ]
+            },
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "10:00 → 11:15",
+              "text": {
+                "en": "Cross the city to the Summer Palace",
+                "pt": "Atravesse a cidade ate o Palacio de Verao"
+              },
+              "note": {
+                "en": "This is the one clumsy leg of the whole stop, and it is the price of cutting the zoo: the Temple of Heaven is south and the Summer Palace is northwest, so it is about 70 minutes with two changes - line 5 north to Chongwenmen, line 2 to Xizhimen, line 4 north to Beigongmen or Xiyuan. Worth it. Eat something at the transfer.",
+                "pt": "Esta e a unica perna desajeitada da parada inteira, e e o preco de cortar o zoo: o Templo do Ceu fica ao sul e o Palacio de Verao a noroeste, entao sao uns 70 minutos com duas baldeacoes - linha 5 para o norte ate Chongwenmen, linha 2 ate Xizhimen, linha 4 para o norte ate Beigongmen ou Xiyuan. Vale a pena. Coma alguma coisa na baldeacao."
+              },
+              "address": "Metro line 5 to line 2 to line 4 · 地铁5号线转2号线转4号线"
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "~11:30–17:45",
+              "text": {
+                "en": "Summer Palace",
+                "pt": "Palacio de Verao"
+              },
+              "note": {
+                "en": "A vast imperial garden around Kunming Lake, open 06:00-20:00 in high season with last entry 19:00, so the afternoon is wide open and unhurried - eat lunch inside. October gives it the best light of the year, and the Long Corridor plus Foxiang Ge at golden hour is the postcard of the whole trip. Buy the Combination Ticket, not the plain entry, or you will pay piecemeal inside and resent it. Reserve 4 hours minimum; the place is enormous.",
+                "pt": "Jardim imperial enorme em volta do Lago Kunming, aberto 6h-20h na alta temporada com ultima entrada as 19h, entao a tarde e folgada e sem pressa - almoce la dentro. Outubro da a ele a melhor luz do ano, e o Long Corridor mais o Foxiang Ge no fim de tarde e o cartao postal da viagem inteira. Compre o Combination Ticket, nao a entrada simples, ou voce vai pagar avulso la dentro e se arrepender. Reserve 4 horas no minimo; o lugar e gigantesco."
+              },
+              "address": "No. 19 Xinjiangongmen Road, Haidian District · 海淀区新建宫门路19号",
+              "url": "https://english.beijing.gov.cn/specials/parktours/guidevisitors/summerpalace/",
+              "tickets": "https://www.travelchinaguide.com/summer-palace-tickets-booking.htm",
+              "coords": [
+                39.9998,
+                116.2755
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "night",
+              "time": "~17:45–20:00",
+              "text": {
+                "en": "Sunset over Kunming Lake, then dinner",
+                "pt": "Por do sol sobre o Lago Kunming, depois jantar"
+              },
+              "note": {
+                "en": "Sunset in mid-October falls around 17:45 and the park stays open until 20:00, so you can hold the lake until the light goes and still walk out without rushing. Eat on the way back down line 4, and set the alarm - tomorrow leaves at 07:30.",
+                "pt": "O por do sol em meados de outubro cai por volta das 17h45 e o parque fica aberto ate as 20h, entao da para segurar o lago ate a luz acabar e ainda sair sem correr. Coma na volta, descendo pela linha 4, e ponha o despertador - amanha sai as 7h30."
+              },
+              "address": "Kunming Lake, Summer Palace · 颐和园 昆明湖",
+              "coords": [
+                39.9998,
+                116.2755
+              ]
+            }
+          ]
+        },
+        {
+          "note": {
+            "en": "Oct 16 (Fri) - THE RED PANDAS, and the only zoo of the trip. The Beijing Wildlife Park in Daxing is the only place in the region where red pandas actually roam loose among visitors - around 20 of them across a 10,000 sqm garden of woodland, streams and climbing runs, with staff-guided bamboo-leaf feeding. The honest cost, confirmed: this park has NO giant pandas, and Beijing Zoo is the only place in the city that does. One zoo means the loose red pandas OR the giant pandas, not both. You said the red ones are the must, so this is the day. Full day, stacks with nothing, and Friday still lands ahead of the weekend crowd.",
+            "pt": "16/out (sex) - OS PANDAS VERMELHOS, e o unico zoologico da viagem. O Beijing Wildlife Park em Daxing e o unico lugar da regiao onde os pandas vermelhos de fato andam soltos entre os visitantes - cerca de 20 deles num jardim de 10.000 m2 de bosque, riachos e passarelas de escalada, com alimentacao de folhas de bambu assistida por funcionarios. O custo honesto, confirmado: este parque NAO tem panda gigante, e o Beijing Zoo e o unico lugar da cidade que tem. Um zoologico so significa os vermelhos soltos OU os gigantes, nao os dois. Voce disse que os vermelhos sao o must, entao este e o dia. Dia inteiro, nao empilha com nada, e sexta ainda cai na frente da multidao do fim de semana."
+          },
+          "items": [
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "07:30 → 09:00",
+              "text": {
+                "en": "Metro line 4 to Tiangongyuan, then bus 940",
+                "pt": "Metro linha 4 ate Tiangongyuan, depois onibus 940"
+              },
+              "note": {
+                "en": "Metro line 4 south to the terminus Tiangongyuan (天宫院), exit D, then bus 940 about 25 minutes to the Beijing Wildlife Park stop, then 5 minutes on foot to the gate. Buses 849 and 943 also stop there. Budget 1h30 door to door and leave by 07:30 - the park opens 08:30 and you want the red pandas before the crowd thickens.",
+                "pt": "Metro linha 4 para o sul ate o terminal Tiangongyuan (天宫院), saida D, depois onibus 940 por cerca de 25 minutos ate a parada Beijing Wildlife Park, depois 5 minutos a pe ate o portao. Os onibus 849 e 943 tambem param la. Reserve 1h30 porta a porta e saia ate as 7h30 - o parque abre 8h30 e voce quer os pandas vermelhos antes da multidao engrossar."
+              },
+              "address": "Tiangongyuan Station, metro line 4 · 地铁4号线 天宫院站"
+            },
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "~09:00–11:30",
+              "text": {
+                "en": "Red Panda Garden (Xiaoxiongmao Huayuan)",
+                "pt": "Jardim dos Pandas Vermelhos (小熊猫花苑)"
+              },
+              "note": {
+                "en": "The reason this day exists and the reason 798, Nanluoguxiang and the second zoo were all cut to make room. The Red Panda Garden (小熊猫花苑) sits on the north walking route and holds around 20 red pandas across 10,000 sqm, with staff-guided bamboo-leaf feeding. Park open 08:30-17:30 in high season, LAST ENTRY 16:00, ticket 150 yuan adult. Take the north route first and go straight there - this is the one thing on the whole Beijing leg that cannot be substituted. Worth a call to 010-89216666 before burning a day on it: Chinese attractions suspend features without notice.",
+                "pt": "O motivo deste dia existir e o motivo de 798, Nanluoguxiang e o segundo zoologico terem sido todos cortados para abrir espaco. O Jardim dos Pandas Vermelhos (小熊猫花苑) fica na rota norte de caminhada e abriga cerca de 20 pandas vermelhos em 10.000 m2, com alimentacao de folhas de bambu assistida por funcionarios. Parque aberto 8h30-17h30 na alta temporada, ULTIMA ENTRADA 16h, ingresso 150 yuan adulto. Faca a rota norte primeiro e va direto para la - e a unica coisa de toda a perna de Pequim que nao tem substituto. Vale uma ligacao para 010-89216666 antes de queimar um dia inteiro nisso: atracoes chinesas suspendem coisas sem aviso."
+              },
+              "address": "Wanmu Forest, Yufa Town, Daxing District · 大兴区榆垡镇万亩森林",
+              "url": "https://www.bjwildlifepark.com/",
+              "coords": [
+                39.4966,
+                116.3337
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "~12:30–16:00",
+              "text": {
+                "en": "Walking area - south route",
+                "pt": "Area de caminhada - rota sul"
+              },
+              "note": {
+                "en": "The walking circuit runs 2 km with 300+ animals across some 20 species you can approach and feed, and 30+ enclosures. The south route covers the giraffe and elephant interaction area. Plan 5-6 hours in the park total and wear real shoes - the distances are long and this is a forest, not a city zoo.",
+                "pt": "O circuito a pe tem 2 km com mais de 300 animais de umas 20 especies que voce pode chegar perto e alimentar, e mais de 30 recintos. A rota sul cobre a area de interacao com girafas e elefantes. Planeje 5-6 horas no parque no total e use sapato de verdade - as distancias sao longas e isto e uma floresta, nao um zoo urbano."
+              },
+              "address": "Wanmu Forest, Yufa Town, Daxing District · 大兴区榆垡镇万亩森林",
+              "coords": [
+                39.4966,
+                116.3337
+              ]
+            },
+            {
+              "type": "move",
+              "period": "afternoon",
+              "time": "16:00 → 17:30",
+              "text": {
+                "en": "Back to the city - leave by 16:00",
+                "pt": "Volta para a cidade - saia ate 16h00"
+              },
+              "note": {
+                "en": "Same route in reverse: bus 940 to Tiangongyuan, then metro line 4 north. Another 1h30. Leave by 16:00 or you will be doing the bus transfer in the dark.",
+                "pt": "Mesma rota ao contrario: onibus 940 ate Tiangongyuan, depois metro linha 4 para o norte. Mais 1h30. Saia ate as 16h ou voce vai fazer a baldeacao de onibus no escuro."
+              }
+            },
+            {
+              "type": "bullet",
+              "period": "night",
+              "time": "~18:30–20:00",
+              "text": {
+                "en": "Last dinner, and pack for Zhangjiajie",
+                "pt": "Ultimo jantar, e arrume a mala para Zhangjiajie"
+              },
+              "note": {
+                "en": "You get back around 18:00 having walked several kilometres, and you leave for Zhangjiajie tomorrow. Eat near the hotel, pack, and leave it at that - Beijing is done and it ended on the right note.",
+                "pt": "Voce volta por volta das 18h tendo caminhado varios quilometros, e amanha sai para Zhangjiajie. Coma perto do hotel, arrume a mala, e pare por ai - Pequim acabou, e acabou na nota certa."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": {
+        "en": "Zhangjiajie",
+        "pt": "Zhangjiajie"
+      },
+      "nights": 4,
+      "days": [
+        {
+          "note": {
+            "en": "17/Oct, Sat. You land at 09:35 with a full day of light ahead, so the afternoon gets the Golden Whip Stream, and that is not filler: it is the loveliest walk in the park and the guides all say it is at its best after 15:00, when the tour groups have drained out and the low light reaches the canyon floor. It is also flat, which is exactly what a body that woke at 03:45 can handle. Bonus: entering today starts the 4-day clock on the ¥240 park ticket, and 17 to 20 October covers your whole stay. Sleep in Wulingyuan tonight; the city of Zhangjiajie comes at the end, not the start.",
+            "pt": "17/out, sabado. Voce pousa as 9h35 com um dia inteiro de luz pela frente, entao a tarde fica com o Golden Whip Stream, e isso nao e enchimento: e a caminhada mais bonita do parque e todos os guias dizem que ela e melhor depois das 15h, quando os grupos de excursao ja escoaram e a luz baixa alcanca o fundo do canyon. E tambem e plana, que e exatamente o que um corpo que acordou as 3h45 aguenta. Bonus: entrar hoje inicia a contagem de 4 dias do ingresso de ¥240, e 17 a 20 de outubro cobre a parada inteira. Durma em Wulingyuan hoje; a cidade de Zhangjiajie fica para o fim, nao para o comeco."
+          },
+          "items": [
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "04:15 → 05:00",
+              "text": {
+                "en": "Beijing hotel to PEK airport (night departure)",
+                "pt": "Hotel em Pequim ate o aeroporto PEK (saida de madrugada)"
+              },
+              "note": {
+                "en": "This is the real cost of the 07:00 flight: leaving in the dark. Check-in closes around 06:00 and the airport is roughly 40 minutes out, so there is no later option. Arrange the taxi the night before, street-hailing at 04:00 is a gamble.",
+                "pt": "Este e o custo real do voo das 7h: sair no escuro. O check-in fecha por volta das 6h e o aeroporto fica a cerca de 40 minutos, entao nao existe opcao mais tarde. Combine o taxi na vespera, tentar na rua as 4h da manha e aposta."
+              }
+            },
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "07:00 → 09:35",
+              "text": {
+                "en": "Flight CA9659 Beijing PEK to Zhangjiajie DYG",
+                "pt": "Voo CA9659 Pequim PEK ate Zhangjiajie DYG"
+              },
+              "note": {
+                "en": "About 2h35 in the air. Air China is the only carrier flying this nonstop, roughly 11 frequencies a week, so there is almost no redundancy if it cancels: book early.",
+                "pt": "Cerca de 2h35 de voo. A Air China e a unica companhia com este voo direto, cerca de 11 frequencias semanais, entao quase nao ha redundancia se cancelar: reserve cedo."
+              },
+              "address": "Jichang Road, Yongding District, Zhangjiajie · 湖南省张家界市永定区机场路 张家界荷花国际机场",
+              "coords": [
+                29.103,
+                110.4416
+              ]
+            },
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "09:35 → ~11:00",
+              "text": {
+                "en": "DYG airport to Wulingyuan",
+                "pt": "Aeroporto DYG ate Wulingyuan"
+              },
+              "note": {
+                "en": "Baggage takes about 20 minutes, then roughly an hour north to Wulingyuan, 40km away. Wulingyuan is the village at the park's east gate and it is your base for the first three nights.",
+                "pt": "A bagagem leva cerca de 20 minutos, depois aproximadamente uma hora rumo ao norte ate Wulingyuan, a 40km. Wulingyuan e a vila no portao leste do parque e e sua base pelas tres primeiras noites."
+              }
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "11:00–12:30",
+              "text": {
+                "en": "Drop bags, lunch in Wulingyuan",
+                "pt": "Largar as malas, almoco em Wulingyuan"
+              },
+              "note": {
+                "en": "Eat properly here: Tujia sanxiaguo (the local three-in-one hotpot) and Cili rice noodles. There is nothing to eat inside the park worth the money.",
+                "pt": "Coma direito aqui: sanxiaguo Tujia (a panela local tres-em-um) e o macarrao de arroz de Cili. Nao ha nada dentro do parque que valha o dinheiro."
+              }
+            },
+            {
+              "type": "move",
+              "period": "afternoon",
+              "time": "12:30 → ~13:20",
+              "text": {
+                "en": "Wulingyuan gate, then eco-bus to Water Winding Four Gates",
+                "pt": "Portao de Wulingyuan, depois onibus ecologico ate Shuiraosimen"
+              },
+              "note": {
+                "en": "Facial-recognition entry, original passport in hand, at the exact gate and time slot on your reservation, so book the WULINGYUAN gate for today. The eco-bus is included in the ¥240 and drops you at the northern end of the stream.",
+                "pt": "Entrada por reconhecimento facial, passaporte original em maos, no portao e na faixa horaria exatos da sua reserva, entao reserve o portao de WULINGYUAN para hoje. O onibus ecologico esta incluido nos ¥240 e te deixa na ponta norte do riacho."
+              },
+              "url": "http://www.hnzjj.com/index.php/Ticket/list/44.html"
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "13:30–16:30",
+              "text": {
+                "en": "Golden Whip Stream",
+                "pt": "Golden Whip Stream (Riacho do Chicote Dourado)"
+              },
+              "note": {
+                "en": "A flat 7.5km trail along the creek, threading between the same quartzite pillars you will see from above tomorrow, but from the bottom looking up, with macaques on the path. Zero effort and the guides rate after-15:00 as the best window: quietest light, groups gone. Walk the two-to-three hour stretch and turn back.",
+                "pt": "Uma trilha plana de 7,5km ao longo do riacho, serpenteando entre os mesmos pilares de quartzito que voce vera do alto amanha, mas de baixo olhando para cima, com macacos no caminho. Esforco zero, e os guias apontam o periodo apos as 15h como a melhor janela: luz mais quieta, grupos ja foram. Faca o trecho de duas a tres horas e volte."
+              },
+              "address": "Zhangjiajie National Forest Park, Wulingyuan District · 湖南省张家界市武陵源区 金鞭溪",
+              "url": "http://www.hnzjj.com/index.php/Ticket/list/44.html",
+              "coords": [
+                29.3339,
+                110.4389
+              ]
+            },
+            {
+              "type": "move",
+              "period": "afternoon",
+              "time": "16:30 → ~17:15",
+              "text": {
+                "en": "Eco-bus back to Wulingyuan",
+                "pt": "Onibus ecologico de volta a Wulingyuan"
+              },
+              "note": {
+                "en": "The park closes at 18:00 with last entry at 17:00, so this timing has margin. Do not cut it finer than this.",
+                "pt": "O parque fecha as 18h com ultima entrada as 17h, entao este horario tem margem. Nao aperte mais do que isso."
+              }
+            },
+            {
+              "type": "bullet",
+              "period": "night",
+              "time": "18:30–21:30",
+              "text": {
+                "en": "Xibu Street",
+                "pt": "Rua Xibu"
+              },
+              "note": {
+                "en": "Wulingyuan's pedestrian street: Tujia street food, bars along the river with the lights doubled in the water, and folk music most nights. Free to enter, open until 23:30, but you must show your passport at the entrance to get an access ticket. Low-key by design, you woke at 03:45.",
+                "pt": "A rua de pedestres de Wulingyuan: comida de rua Tujia, bares a beira do rio com as luzes dobradas na agua e musica folclorica quase toda noite. Entrada gratuita, aberta ate 23h30, mas e preciso mostrar o passaporte na entrada para receber um cartao de acesso. Programa despretensioso de proposito, voce acordou as 3h45."
+              },
+              "address": "Wulingyuan District, Zhangjiajie · 湖南省张家界市武陵源区 溪布街"
+            }
+          ]
+        },
+        {
+          "note": {
+            "en": "18/Oct, Sun. The most important day of the four, and it runs on morning light and on beating one queue. The park gate opens 07:00 and the Bailong Elevator at 08:00, but the elevator queue routinely runs 1 to 2 hours from April to October: being on the first eco-bus is the difference between riding at 08:15 and riding at 10:00. Your park ticket is already active from yesterday, but the reservation still fixes a gate and time slot, so book this one for the Wulingyuan gate too. Critical: if you wake to heavy fog, swap this whole day with tomorrow and go to the Glass Bridge instead. That swap is exactly what the fourth night buys you.",
+            "pt": "18/out, domingo. O dia mais importante dos quatro, e ele roda na luz da manha e em vencer uma fila. O portao do parque abre as 7h e o Elevador Bailong as 8h, mas a fila do elevador rotineiramente leva de 1 a 2 horas entre abril e outubro: estar no primeiro onibus ecologico e a diferenca entre subir as 8h15 e subir as 10h. Seu ingresso do parque ja esta ativo desde ontem, mas a reserva ainda fixa portao e faixa horaria, entao reserve esta tambem pelo portao de Wulingyuan. Critico: se acordar com nevoa fechada, troque este dia inteiro com o de amanha e va a Glass Bridge. Essa troca e exatamente o que a quarta noite compra."
+          },
+          "items": [
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "07:00 → ~07:45",
+              "text": {
+                "en": "Park gate at opening, then eco-bus to the elevator",
+                "pt": "Portao do parque na abertura, depois onibus ecologico ate o elevador"
+              },
+              "note": {
+                "en": "Gates open at 07:00 and the eco-bus to Bailong takes about 40 minutes. Be on the first one: this single decision decides whether your morning is three hours of pillars or two hours of queue.",
+                "pt": "Os portoes abrem as 7h e o onibus ecologico ate o Bailong leva cerca de 40 minutos. Esteja no primeiro: esta unica decisao define se sua manha sera de tres horas de pilares ou de duas horas de fila."
+              }
+            },
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "08:00–08:30 (fila 1–2h se chegar tarde)",
+              "text": {
+                "en": "Bailong Elevator",
+                "pt": "Elevador Bailong"
+              },
+              "note": {
+                "en": "A 326m glass elevator bolted to the cliff, two minutes from canyon floor to the Yuanjiajie plateau. Opens 08:00 in peak season; the queue commonly hits 1 to 2 hours from April to October, hence the 07:00 start. ¥65 one way, valid only on the booked date.",
+                "pt": "Um elevador panoramico de 326m encravado no penhasco, dois minutos do fundo do canyon ate o planalto de Yuanjiajie. Abre as 8h na alta temporada; a fila comumente chega a 1 ou 2 horas entre abril e outubro, dai a largada as 7h. ¥65 por trecho, valido so na data reservada."
+              },
+              "address": "Wulingyuan District, Zhangjiajie · 湖南省张家界市武陵源区 百龙天梯",
+              "coords": [
+                29.3512,
+                110.4612
+              ]
+            },
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "08:45–11:45",
+              "text": {
+                "en": "Yuanjiajie and First Bridge Under Heaven",
+                "pt": "Yuanjiajie e a Primeira Ponte sob o Ceu"
+              },
+              "note": {
+                "en": "The quartzite pillars that inspired Avatar's floating mountains, including the Hallelujah Mountain and a natural stone span bridging two peaks. This is the postcard, and the reason you flew here. Yesterday you walked between these pillars; today you stand on top of them. Morning is when the mist lifts off them.",
+                "pt": "Os pilares de quartzito que inspiraram as montanhas flutuantes de Avatar, incluindo a Hallelujah Mountain e um arco natural de pedra ligando dois picos. E o cartao-postal, e o motivo de voce ter voado ate aqui. Ontem voce andou entre estes pilares; hoje voce fica em cima deles. A manha e quando a bruma se levanta deles."
+              },
+              "address": "Wulingyuan District, Zhangjiajie · 湖南省张家界市武陵源区 袁家界 天下第一桥",
+              "url": "http://www.hnzjj.com/index.php/Ticket/list/44.html",
+              "coords": [
+                29.3475,
+                110.4332
+              ]
+            },
+            {
+              "type": "move",
+              "period": "afternoon",
+              "time": "12:45 → ~13:30",
+              "text": {
+                "en": "Eco-bus Yuanjiajie to Tianzi Mountain",
+                "pt": "Onibus ecologico de Yuanjiajie ate a Montanha Tianzi"
+              },
+              "note": {
+                "en": "About 45 minutes on the plateau road, included in the ¥240 park ticket. Eat lunch at Yuanjiajie before boarding, options at Tianzi are thinner.",
+                "pt": "Cerca de 45 minutos pela estrada do planalto, incluido nos ¥240 do ingresso do parque. Almoce em Yuanjiajie antes de embarcar, as opcoes em Tianzi sao mais escassas."
+              }
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "13:30–16:30",
+              "text": {
+                "en": "Tianzi Mountain",
+                "pt": "Montanha Tianzi"
+              },
+              "note": {
+                "en": "The panoramic viewpoint of the massif: a sea of sandstone pillars running to the horizon. Late afternoon is deliberate, the low light rakes across the pillars and separates them into layers.",
+                "pt": "O mirante panoramico do macico: um mar de pilares de arenito ate o horizonte. O fim da tarde e proposital, a luz baixa varre os pilares e os separa em camadas."
+              },
+              "address": "Wulingyuan District, Zhangjiajie · 湖南省张家界市武陵源区 天子山",
+              "coords": [
+                29.3941,
+                110.4948
+              ]
+            },
+            {
+              "type": "move",
+              "period": "afternoon",
+              "time": "16:30 → ~17:15",
+              "text": {
+                "en": "Tianzi cable car down to Wulingyuan",
+                "pt": "Teleferico de Tianzi descendo para Wulingyuan"
+              },
+              "note": {
+                "en": "Closes the loop straight into town instead of a long bus haul. Like the Bailong Elevator, it is only valid on the booked date, so reserve it together with today's slot.",
+                "pt": "Fecha o circuito direto na cidade em vez de uma longa viagem de onibus. Assim como o Elevador Bailong, so vale na data reservada, entao reserve junto com a faixa horaria de hoje."
+              }
+            }
+          ]
+        },
+        {
+          "note": {
+            "en": "19/Oct, Mon. Off the park today: both sights sit east of Wulingyuan, outside the National Park, roughly on the same road. Bridge in the morning because it stops admitting around 15:30 and there simply is no afternoon option, cave after lunch. This is also your designated swap day: if the 18th came in fogged, this is the day you trade it for.",
+            "pt": "19/out, segunda. Fora do parque hoje: as duas atracoes ficam a leste de Wulingyuan, fora do Parque Nacional, mais ou menos na mesma estrada. Ponte de manha porque ela para de admitir por volta das 15h30 e simplesmente nao existe opcao a tarde, caverna depois do almoco. Este e tambem o seu dia de troca designado: se o dia 18 amanhecer com nevoa, e por este dia que voce o troca."
+          },
+          "items": [
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "08:00 → ~09:00",
+              "text": {
+                "en": "Wulingyuan to Zhangjiajie Grand Canyon",
+                "pt": "Wulingyuan ate o Grand Canyon de Zhangjiajie"
+              },
+              "note": {
+                "en": "Roughly an hour east by car. Aim to be at the gate when it opens: the bridge closes to new entries around 15:30 and the day has no slack.",
+                "pt": "Aproximadamente uma hora a leste de carro. Chegue no portao na abertura: a ponte fecha para novas entradas por volta das 15h30 e o dia nao tem folga."
+              }
+            },
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "09:00–12:00",
+              "text": {
+                "en": "Zhangjiajie Grand Canyon Glass Bridge",
+                "pt": "Glass Bridge do Grand Canyon de Zhangjiajie"
+              },
+              "note": {
+                "en": "A 430m glass span hung 300m above the canyon, the longest glass-floored bridge in the world. Hard daily quota and the most fragile booking of the whole stop: reserve as soon as the date opens, 3 to 5 days minimum, with exact passport name and number. Line B (canyon plus bridge) is ¥178 and includes the canyon walk below.",
+                "pt": "Um vao de vidro de 430m suspenso a 300m acima do canyon, a ponte de piso de vidro mais longa do mundo. Cota diaria rigida e a reserva mais fragil de toda a parada: reserve assim que a data abrir, no minimo 3 a 5 dias antes, com nome e numero exatos do passaporte. Linha B (canyon + ponte) custa ¥178 e inclui a caminhada no canyon la embaixo."
+              },
+              "address": "Sanguansi Tujia Township, Cili County · 湖南省张家界市慈利县三官寺土家族乡 张家界大峡谷",
+              "tickets": "https://www.klook.com/en-US/activity/6602-grand-canyon-glass-bridge-tickets-zhangjiajie/",
+              "coords": [
+                29.399,
+                110.698
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "14:00–16:30",
+              "text": {
+                "en": "Yellow Dragon Cave",
+                "pt": "Caverna do Dragao Amarelo"
+              },
+              "note": {
+                "en": "A 7.5km karst cave with a navigable underground river and a 19.2m stone column, open 07:30 to 18:00, ¥121, no reservation needed. Honest note: the most skippable sight of the four. Worth it if the day turns wet, since it is indoors; if the sun is out, your park ticket is still valid, so a second run at the pillars beats it.",
+                "pt": "Uma caverna carstica de 7,5km com rio subterraneo navegavel e a Coluna do Dragao de 19,2m, aberta das 7h30 as 18h, ¥121, sem reserva. Aviso honesto: e a atracao mais dispensavel das quatro. Vale se o dia virar chuvoso, porque e indoor; se estiver sol, seu ingresso do parque ainda esta valido, entao uma segunda ida aos pilares ganha dela."
+              },
+              "address": "Suoxiyu Town, Wulingyuan District · 湖南省张家界市武陵源区索溪峪镇 黄龙洞",
+              "tickets": "https://www.chinadiscovery.com/hunan/zhangjiajie/yellow-dragon-cave.html",
+              "coords": [
+                29.368,
+                110.6147
+              ]
+            }
+          ]
+        },
+        {
+          "note": {
+            "en": "20/Oct, Tue. Tianmen Mountain closes the stop, and putting it last is deliberate: you sleep in Zhangjiajie city tonight, which drops tomorrow's ride to the train station from 50 minutes to 20, and it puts the 72 Qilou light show on your doorstep instead of stranding it. Check out of Wulingyuan at 06:45 with the bags, drop them in the city, and be at the cable car by 07:45. Route A is the right order and it is why the stairs come late: cable car up, glass walkways along the summit cliffs in the morning, then the tunnel escalator drops you at Heaven's Gate so you walk the 999 steps DOWN rather than up, and the bus takes the 99 Bends home. All three routes cost the same ¥288, which covers the cable car and the shoe covers.",
+            "pt": "20/out, terca. O Tianmen Shan fecha a parada, e deixa-lo por ultimo e proposital: voce dorme na cidade de Zhangjiajie hoje, o que reduz o trajeto de amanha ate a estacao de trem de 50 para 20 minutos, e coloca o show de luzes do 72 Qilou na sua porta em vez de deixa-lo orfao. Faca check-out em Wulingyuan as 6h45 com as malas, largue-as na cidade e esteja no teleferico as 7h45. A rota A e a ordem certa, e e por isso que a escadaria vem no fim: sobe de teleferico, faz as trilhas de vidro nos penhascos do cume pela manha, depois a escada rolante do tunel te deixa no Portao do Ceu para voce descer os 999 degraus em vez de subir, e o onibus faz as 99 curvas de volta. As tres rotas custam os mesmos ¥288, que cobrem o teleferico e as capas de sapato."
+          },
+          "items": [
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "06:45 → ~07:45",
+              "text": {
+                "en": "Check out of Wulingyuan, transfer to Zhangjiajie city",
+                "pt": "Check-out em Wulingyuan, transfer para a cidade de Zhangjiajie"
+              },
+              "note": {
+                "en": "About 40km south with the bags: drop them at tonight's city hotel and walk to the cable car, which is downtown. Ideally you would be in line at 07:30 for the 08:00 opening; 07:45 on a post-Golden-Week Tuesday is still fine, but do not arrive later.",
+                "pt": "Cerca de 40km ao sul com as malas: largue-as no hotel da cidade de hoje e va a pe ate o teleferico, que fica no centro. O ideal seria estar na fila as 7h30 para a abertura as 8h; 7h45 numa terca pos-Golden Week ainda esta tranquilo, mas nao chegue mais tarde."
+              }
+            },
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "08:00 → ~08:35",
+              "text": {
+                "en": "Tianmen Mountain Cableway",
+                "pt": "Teleferico do Tianmen Shan"
+              },
+              "note": {
+                "en": "The 7,455m cableway climbs from the city centre to the summit in one continuous 30-minute ride, the longest of its kind on earth. Runs 08:00 to 18:00 from March to November. Reserve a timed slot: it sells out days ahead in season.",
+                "pt": "O teleferico de 7.455m sobe do centro da cidade ao cume em um unico trajeto continuo de 30 minutos, o mais longo do mundo em sua categoria. Funciona das 8h as 18h de marco a novembro. Reserve com horario marcado: esgota dias antes na temporada."
+              },
+              "address": "Guanli Road, Yongding District, Zhangjiajie · 湖南省张家界市永定区官黎路 天门山索道下站",
+              "tickets": "https://www.chinadiscovery.com/hunan/zhangjiajie/tianmen-mountain/guide-to-tickets.html",
+              "coords": [
+                29.1141,
+                110.4783
+              ]
+            },
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "08:35–11:30",
+              "text": {
+                "en": "Glass Skywalks (Guigu and Coiling Dragon)",
+                "pt": "Trilhas de vidro (Guigu e Coiling Dragon)"
+              },
+              "note": {
+                "en": "Glass-floored walkways bolted to the sheer cliff face, hundreds of metres of air under your soles, linked by the summit loop trail. Shoe covers are in the ¥288 ticket; three cliffside sections charge ¥5 each on top. Doing these first means doing them before the 10:00 crowd lands.",
+                "pt": "Passarelas de piso de vidro parafusadas na face vertical do penhasco, com centenas de metros de ar sob os pes, ligadas pela trilha circular do cume. As capas de sapato ja vem nos ¥288; tres trechos no penhasco cobram ¥5 cada a parte. Fazer isso primeiro significa fazer antes de a multidao das 10h pousar."
+              },
+              "address": "Tianmen Mountain summit, Yongding District · 湖南省张家界市永定区 天门山鬼谷栈道/盘龙崖玻璃栈道",
+              "coords": [
+                29.0499,
+                110.4789
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "11:30–12:30",
+              "text": {
+                "en": "Lunch at the summit",
+                "pt": "Almoco no cume"
+              },
+              "note": {
+                "en": "Options up here are canteen-grade and overpriced, but coming down and going back up is not a thing. Eat, and keep moving.",
+                "pt": "As opcoes aqui em cima sao nivel refeitorio e caras, mas descer e subir de novo nao existe. Coma e siga em frente."
+              }
+            },
+            {
+              "type": "move",
+              "period": "afternoon",
+              "time": "12:30 → ~13:15",
+              "text": {
+                "en": "Tunnel escalator down to Heaven's Gate",
+                "pt": "Escada rolante do tunel ate o Portao do Ceu"
+              },
+              "note": {
+                "en": "A chain of escalators cut inside the mountain drops you at the top of the 999 steps. Costs ¥32 extra and is not in the base ticket, but the alternative is climbing this stretch on foot.",
+                "pt": "Uma sequencia de escadas rolantes escavada dentro da montanha te deixa no topo dos 999 degraus. Custa ¥32 a parte e nao esta no ingresso base, mas a alternativa e subir este trecho a pe."
+              }
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "13:15–14:45",
+              "text": {
+                "en": "Heaven's Gate (Tianmen Cave) and the 999 steps",
+                "pt": "Portao do Ceu (Caverna Tianmen) e os 999 degraus"
+              },
+              "note": {
+                "en": "A natural arch 131m high punched clean through the mountain. On route A you walk the 999 stone steps downward, which is the whole reason to pick this direction: the same staircase upward is a punishing 40 minutes.",
+                "pt": "Um arco natural de 131m perfurado de lado a lado na montanha. Na rota A voce desce os 999 degraus de pedra, que e a razao inteira de escolher este sentido: a mesma escadaria na subida sao 40 minutos punitivos."
+              },
+              "address": "Tianmen Mountain, Yongding District · 湖南省张家界市永定区 天门洞"
+            },
+            {
+              "type": "move",
+              "period": "afternoon",
+              "time": "15:00 → ~15:50",
+              "text": {
+                "en": "Shuttle bus down the 99 Bends road",
+                "pt": "Onibus pela estrada dos 99 Curvas"
+              },
+              "note": {
+                "en": "Tongtian Avenue switchbacks 99 times down the mountain and the ride is a sight in itself. This is the back half of route A, and it delivers you to the base station, downtown, walking distance from tonight.",
+                "pt": "A Avenida Tongtian faz 99 curvas fechadas descendo a montanha e o trajeto e por si so uma atracao. Esta e a segunda metade da rota A, e te entrega na estacao base, no centro, a pe de onde voce dorme hoje."
+              }
+            },
+            {
+              "type": "bullet",
+              "period": "night",
+              "time": "18:00–21:30 (show ~19:30)",
+              "text": {
+                "en": "72 Qilou (72 Wonder Tower)",
+                "pt": "72 Qilou (Torre das 72 Maravilhas)"
+              },
+              "note": {
+                "en": "The tallest Tujia stilt-house complex in the world at 109.9m. At 19:30 nightly, 36,000 LEDs light the whole thing to Tujia folk music. Unashamedly kitsch, but it is the only real night program in the city and it lands on the one night you sleep here. Entry ¥20 before 16:30 and ¥88 after, open until 23:00, no reservation.",
+                "pt": "O maior complexo de palafitas Tujia do mundo, com 109,9m. As 19h30 todas as noites, 36 mil LEDs iluminam o conjunto inteiro ao som de musica folclorica Tujia. Kitsch assumido, mas e o unico programa noturno de verdade da cidade e cai justamente na unica noite em que voce dorme aqui. Entrada ¥20 antes das 16h30 e ¥88 depois, aberto ate 23h, sem reserva."
+              },
+              "address": "Yongding District, Zhangjiajie · 湖南省张家界市永定区 七十二奇楼",
+              "tickets": "https://us.trip.com/travel-guide/attraction/zhangjiajie/72-wonder-tower-135452452/"
+            },
+            {
+              "type": "move",
+              "period": "night",
+              "time": "21/out · ~10:30 → ~11:00",
+              "text": {
+                "en": "21/Oct: high-speed train to Furong",
+                "pt": "21/out: trem de alta velocidade para Furong"
+              },
+              "note": {
+                "en": "Zhangjiajie West to Furongzhen is about 30 minutes, with more than 10 departures a day until around 21:30. Sleeping in the city pays off here: the station is only 20 minutes away, so you get an unhurried morning instead of a 50-minute dash from Wulingyuan. Exact departure not fixed yet, estimated. The direct bus takes 1h30 to 2h and is not worth it.",
+                "pt": "Zhangjiajie West ate Furongzhen leva cerca de 30 minutos, com mais de 10 partidas por dia ate por volta das 21h30. Dormir na cidade compensa aqui: a estacao fica a apenas 20 minutos, entao voce ganha uma manha sem pressa em vez de uma corrida de 50 minutos desde Wulingyuan. Horario exato ainda nao definido, estimado. O onibus direto leva de 1h30 a 2h e nao compensa."
+              },
+              "address": "Zhangjiajie West Railway Station · 张家界西站",
+              "coords": [
+                29.1714,
+                110.458
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": {
+        "en": "Furong",
+        "pt": "Furong"
+      },
+      "nights": 1,
+      "days": [
+        {
+          "note": {
+            "en": "A deliberately slack day with one hard appointment at the end of it. There is no reason to rush the morning: the train from Zhangjiajie is 23 minutes, so sleep in, ride at 10:26 and be inside the village by 11:10 — a Tujia stilt-house settlement built on the lip of a cliff, with a 60 m waterfall cutting through the middle of it. The afternoon covers everything the place has in daylight: lunch on the rice tofu the village lives on, the stairway down to the foot of the falls and the walkway behind the curtain of water, the flagstone lane down to the You River. October is dry season, so expect a tall veil rather than a roaring torrent — the compensation is that the passage behind the falls is dry and easy. From 17:00 to 19:00 nothing is scheduled on purpose: rest, eat early. Then be on Tuwang Bridge by 19:15. At around 19:30 the cliff, the waterfall and every wooden house light up at once, the day-trip buses are long gone, and the village becomes the thing you came here for. Skip the 20:00 stage show and walk it yourself until closing.",
+            "pt": "Um dia folgado de proposito, com um unico compromisso duro no fim dele. Nao ha por que correr de manha: o trem de Zhangjiajie leva 23 minutos, entao durma ate mais tarde, embarque as 10:26 e esteja dentro da vila as 11:10 — um povoado Tujia de palafitas construido na borda de um paredao, com uma cachoeira de 60 m cortando o meio dele. A tarde cobre tudo o que o lugar tem com luz do dia: almoco no tofu de arroz que sustenta a vila, a escadaria que desce ate o pe da queda e a passagem por tras da cortina d'agua, a rua de lajes descendo ate o rio You. Outubro e estiagem, entao espere um veu alto em vez de um trovao — a compensacao e que a passagem por tras da queda fica seca e facil. Das 17:00 as 19:00 nada esta marcado de proposito: descanse, jante cedo. Depois esteja na Ponte Tuwang as 19:15. Por volta das 19:30 o paredao, a cachoeira e cada casa de madeira acendem de uma vez, os onibus de bate-volta ja foram ha muito, e a vila vira aquilo que voce veio buscar. Pule o espetaculo das 20:00 e ande por conta propria ate fechar."
+          },
+          "items": [
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "10:26 → 10:49",
+              "text": {
+                "en": "Bullet train G687, Zhangjiajie West to Furongzhen",
+                "pt": "Trem-bala G687, Zhangjiajie Oeste ate Furongzhen"
+              },
+              "note": {
+                "en": "The shortest hop of the whole trip: 23 minutes, around CNY 40 in second class. More than 10 departures a day from about 07:06 to 19:05, so there is no reason to take an early one — this train eats nothing and leaves the whole afternoon for the village. Schedule is the current-year timetable; the 2026 numbers will shift, so confirm on 12306 when sales open.",
+                "pt": "O pulo mais curto da viagem inteira: 23 minutos, cerca de CNY 40 na segunda classe. Mais de 10 saidas por dia entre cerca de 07:06 e 19:05, entao nao ha motivo para pegar um cedo — este trem nao come nada e deixa a tarde inteira para a vila. O horario e o da grade do ano atual; os numeros de 2026 vao mudar, entao confirme no 12306 quando a venda abrir."
+              },
+              "address": "Zhangjiajie West Railway Station · 张家界西站",
+              "url": "https://www.12306.cn/",
+              "coords": [
+                29.1714,
+                110.458
+              ]
+            },
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "~10:55 → ~11:10",
+              "text": {
+                "en": "Furongzhen station to the old village by taxi",
+                "pt": "Estacao de Furongzhen ate a vila velha de taxi"
+              },
+              "note": {
+                "en": "The station sits about 6 km of road from the village. Taxi CNY 20 to 30, 10 to 15 minutes; local minibus CNY 2. Have the name of your lodging written in Chinese on your phone.",
+                "pt": "A estacao fica a cerca de 6 km de estrada da vila. Taxi CNY 20 a 30, 10 a 15 minutos; micro-onibus local CNY 2. Tenha o nome da hospedagem escrito em chines no celular."
+              },
+              "address": "Furongzhen Railway Station, X041, Yongshun County · 芙蓉镇站，X041，永顺县",
+              "coords": [
+                28.7731,
+                109.9819
+              ]
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "~11:30",
+              "text": {
+                "en": "Furong Ancient Town scenic area",
+                "pt": "Vila antiga de Furong"
+              },
+              "note": {
+                "en": "A Tujia stilt-house village built on the edge of a cliff with a waterfall cutting through its middle — the only place of its kind in China. Ticket around CNY 108 including the stage show (one source says CNY 103 without it); open 07:30 to 23:59, night circulation until about 22:30. Several visitor reports claim night entry is free without a ticket, which I could not confirm officially — ask at the ticket office whether your ticket covers the night before you buy.",
+                "pt": "Vila Tujia de palafitas construida na borda de um paredao, com uma cachoeira cortando o meio dela — o unico lugar assim na China. Ingresso cerca de CNY 108 incluindo o espetaculo (uma fonte diz CNY 103 sem ele); aberto das 07:30 as 23:59, circulacao noturna ate cerca de 22:30. Varios relatos de visitantes dizem que a entrada a noite e livre sem bilhete, o que nao consegui confirmar oficialmente — pergunte na bilheteria se o bilhete cobre a noite antes de comprar."
+              },
+              "address": "Furong Town, Yongshun County, Xiangxi Tujia and Miao Autonomous Prefecture, Hunan · 湖南省湘西土家族苗族自治州永顺县芙蓉镇",
+              "url": "https://ssdjq.hnhxgp.com/",
+              "coords": [
+                28.7453,
+                109.9417
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "12:00–13:00",
+              "text": {
+                "en": "Lunch: rice tofu at Liu Xiaoqing's shop",
+                "pt": "Almoco: tofu de arroz na casa da Liu Xiaoqing"
+              },
+              "note": {
+                "en": "Rice tofu (mi doufu) is the dish the village lives on, because it is what the heroine sells in the 1986 film Hibiscus Town that made this place famous. The Furong version is shaped like little river shrimp and served cold under chilli oil, pickles, crisp peanuts and soy beans. The shop at No. 113 is the original one.",
+                "pt": "O tofu de arroz (mi doufu) e o prato que sustenta a vila, porque e o que a heroina vende no filme de 1986 Hibiscus Town, que deu fama ao lugar. A versao de Furong tem forma de camaraozinho de rio e vem fria sob oleo de pimenta, conservas, amendoim crocante e soja. A casa do numero 113 e a original."
+              },
+              "address": "No. 113 Furong Town, Yongshun County · 永顺县芙蓉镇113号 (刘晓庆米豆腐店)"
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "13:30–15:00",
+              "text": {
+                "en": "Furong Waterfall and the passage behind it",
+                "pt": "Cachoeira de Furong e a passagem por tras dela"
+              },
+              "note": {
+                "en": "60 m high and 40 m wide, falling in two tiers into the You River. Past Tuwang Bridge a stone stairway drops to the foot of the falls and leads through the walkway behind the curtain of water. Do it in daylight — after dark this is a light show, by day it is a waterfall, and they are two different things. Allow the full 90 minutes: the stairway is steep and the stone is wet.",
+                "pt": "60 m de altura por 40 m de largura, caindo em dois lances no rio You. Passando a Ponte Tuwang, uma escadaria de pedra desce ate o pe da queda e leva a passagem por tras da cortina d'agua. Faca de dia — depois do escuro isto e um show de luz, de dia e uma cachoeira, e sao duas coisas diferentes. Reserve os 90 minutos inteiros: a escadaria e ingreme e a pedra e molhada."
+              },
+              "address": "Furong Waterfall, Furong Town, Yongshun County · 芙蓉镇大瀑布，永顺县芙蓉镇",
+              "coords": [
+                28.7451,
+                109.9398
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "15:00–16:00",
+              "text": {
+                "en": "Wuli Stone Slab Street",
+                "pt": "Rua de lajes de Wuli"
+              },
+              "note": {
+                "en": "The main flagstone lane of the old village, running down toward the You River, and the set of the film Hibiscus Town — the village was called Wangcun before the film renamed it. Busy at this hour; it empties out completely once the last buses leave.",
+                "pt": "A rua principal de pedra da vila velha, descendo em direcao ao rio You, e o cenario do filme Hibiscus Town — a vila se chamava Wangcun antes de o filme rebatiza-la. Cheia nesta hora; esvazia por completo depois que os ultimos onibus vao embora."
+              },
+              "address": "Wuli Stone Slab Street, Furong Town · 五里石板街，芙蓉镇"
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "16:15–16:45",
+              "text": {
+                "en": "Tusi Palace",
+                "pt": "Palacio Tusi"
+              },
+              "note": {
+                "en": "The seat of the old Tujia chieftains inside the village. Worth half an hour on the way back up — the first thing to drop if the afternoon has already delivered.",
+                "pt": "A sede dos antigos chefes Tujia dentro da vila. Vale meia hora na volta subindo — a primeira coisa a cortar se a tarde ja tiver entregue."
+              },
+              "address": "Tusi Palace, Furong Town · 土司王宫，芙蓉镇"
+            },
+            {
+              "type": "star",
+              "period": "night",
+              "time": "~19:30",
+              "text": {
+                "en": "Lights-on at Tuwang Bridge",
+                "pt": "Acendimento das luzes na Ponte Tuwang"
+              },
+              "note": {
+                "en": "This is why the stop exists: the cliff, the waterfall and the wooden houses light up together and the village turns into something out of Spirited Away. Sunset in Hunan in late October is around 18:00, so eat early and be in position by 19:15. Confirm the exact hour on arrival — it shifts with the season and is not published officially.",
+                "pt": "E por isso que a parada existe: o paredao, a cachoeira e as casas de madeira acendem juntos e a vila vira uma cena de A Viagem de Chihiro. O por do sol em Hunan no fim de outubro e por volta das 18:00, entao jante cedo e esteja posicionado as 19:15. Confirme o horario exato na chegada — ele muda com a estacao e nao e publicado oficialmente."
+              },
+              "address": "Tuwang Bridge, Furong Town · 土王桥，芙蓉镇",
+              "coords": [
+                28.7453,
+                109.9417
+              ]
+            },
+            {
+              "type": "star",
+              "period": "night",
+              "time": "19:45–22:00",
+              "text": {
+                "en": "Walk the lit village on your own instead of the stage show",
+                "pt": "Ande pela vila iluminada por conta propria em vez do espetaculo"
+              },
+              "note": {
+                "en": "The scenic area runs an immersive Tujia show, Hua Kai Furong, at 20:00 for 120 minutes, included in the CNY 108 ticket. Skip it: it eats exactly the window when the lit village is at its peak and the day crowds have left. What you came to buy is the village itself after dark, not the staging of it. Night circulation runs until about 22:30.",
+                "pt": "A vila encena um espetaculo Tujia imersivo, Flor de Furong, as 20:00, com 120 minutos, incluido no bilhete de CNY 108. Pule: ele consome exatamente a janela em que a vila iluminada esta no auge e as multidoes do dia ja foram. O que voce veio comprar e a vila em si depois do escuro, nao a encenacao dela. A circulacao noturna vai ate cerca de 22:30."
+              },
+              "address": "Furong Town, Yongshun County · 永顺县芙蓉镇",
+              "url": "https://ssdjq.hnhxgp.com/",
+              "coords": [
+                28.7453,
+                109.9417
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": {
+        "en": "Guilin / Yangshuo",
+        "pt": "Guilin / Yangshuo"
+      },
+      "nights": 4,
+      "days": [
+        {
+          "note": {
+            "en": "Oct 22 (Thu) - Arrival day, and the single most important decision in this block is where the taxi drops you. Not Guilin city: Guilin is a station, not a destination, and its own sights are expensive and thin. Not Yangshuo West Street either, which is a bar strip. The first two nights are in Xingping, a working river village, and the geography does the rest: Yangshuo railway station is not in Yangshuo, it sits 8 km from Xingping, so you land almost at the door. The last two nights move to Yangshuo town on purpose - see the 24th. Today is honest about itself, the train eats the morning, so the afternoon buys exactly two things: the climb up Laozhai Hill for the bend in the river at sunset, and the old street after the day-trippers go home. The river itself is tomorrow.",
+            "pt": "22/out (qui) - Dia de chegada, e a decisao mais importante deste bloco e onde o taxi te larga. Nao na cidade de Guilin: Guilin e uma estacao, nao um destino, e as atracoes dela sao caras e fracas. Nem na West Street de Yangshuo, que e uma rua de bares. As duas primeiras noites sao em Xingping, uma vila de rio que funciona, e a geografia faz o resto: a estacao de trem de Yangshuo nao fica em Yangshuo, fica a 8 km de Xingping, entao voce desce quase na porta. As duas ultimas noites mudam para a cidade de Yangshuo de proposito - veja o dia 24. Hoje e honesto sobre si mesmo, o trem come a manha, entao a tarde compra exatamente duas coisas: a subida do Morro Laozhai para ver a curva do rio no por do sol, e a rua velha depois que os bate-voltas vao embora. O rio em si e amanha."
+          },
+          "items": [
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "~09:00 → ~13:00",
+              "text": {
+                "en": "Train Furongzhen to Yangshuo station (Trilho is locking this)",
+                "pt": "Trem Furongzhen ate a estacao Yangshuo (o Trilho esta travando isto)"
+              },
+              "note": {
+                "en": "Escalated to Trilho and still open: Furongzhen sits on the Zhangjiajie-Jishou-Huaihua line and Yangshuo sits on the Guiyang-Guangzhou line, which meet at Huaihua. A through train of roughly 3h30 is plausible but I could not confirm a direct service for Oct 2026 on any timetable. If it needs a change, the fallback is Furongzhen to Guilin West and a 1h20 car to Xingping, which costs the afternoon and drops Laozhai. Everything in this day depends on landing by 13:00 - Trilho's answer decides whether the sunset climb survives.",
+                "pt": "Escalado ao Trilho e ainda em aberto: Furongzhen esta na linha Zhangjiajie-Jishou-Huaihua e Yangshuo esta na linha Guiyang-Guangzhou, que se encontram em Huaihua. Um trem direto de umas 3h30 e plausivel, mas nao consegui confirmar servico direto para out/2026 em nenhuma tabela. Se exigir baldeacao, o plano B e Furongzhen ate Guilin Oeste e 1h20 de carro ate Xingping, o que custa a tarde e derruba o Laozhai. Tudo neste dia depende de pousar ate as 13:00 - a resposta do Trilho decide se a subida do por do sol sobrevive."
+              },
+              "address": "Yangshuo Railway Station, Xingping, Yangshuo County · 阳朔站，阳朔县兴坪镇",
+              "coords": [
+                24.9633089,
+                110.5634609
+              ]
+            },
+            {
+              "type": "move",
+              "period": "afternoon",
+              "time": "~13:15 → ~13:45",
+              "text": {
+                "en": "Yangshuo station to Xingping village, drop bags",
+                "pt": "Estacao Yangshuo ate a vila de Xingping, largar as malas"
+              },
+              "note": {
+                "en": "About 8 km, 15 to 20 minutes by taxi, roughly CNY 30 to 50. This is the payoff of not sleeping in Guilin city, which would have been 90 minutes away. Show the driver the Chinese name: 兴坪古镇.",
+                "pt": "Cerca de 8 km, 15 a 20 minutos de taxi, uns CNY 30 a 50. Este e o premio de nao dormir na cidade de Guilin, que ficaria a 90 minutos. Mostre o nome em chines ao motorista: 兴坪古镇."
+              },
+              "address": "Xingping Ancient Town, Yangshuo County, Guilin · 桂林市阳朔县兴坪古镇",
+              "coords": [
+                24.91951,
+                110.5216165
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "~14:30-16:30",
+              "text": {
+                "en": "Xingping old street, slow",
+                "pt": "Rua velha de Xingping, devagar"
+              },
+              "note": {
+                "en": "Ming and Qing shophouses on flagstones, a working village rather than a restored set, and at this hour the coaches are still down at the pier. Nothing to buy a ticket for. Treat this as recovery after four hours of train - the day only has one real appointment and it is at sunset.",
+                "pt": "Casas-loja Ming e Qing sobre lajes, uma vila que funciona e nao um cenario restaurado, e a esta hora os onibus ainda estao la embaixo no cais. Nao ha ingresso para nada. Trate isto como recuperacao depois de quatro horas de trem - o dia tem um unico compromisso de verdade e ele e no por do sol."
+              },
+              "address": "Xingping Old Street, Xingping, Yangshuo · 阳朔县兴坪镇老街",
+              "coords": [
+                24.91951,
+                110.5216165
+              ]
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "~17:00-18:45",
+              "text": {
+                "en": "Laozhai Hill at sunset",
+                "pt": "Morro Laozhai no por do sol"
+              },
+              "note": {
+                "en": "The reason to sleep in Xingping. A 20 to 30 minute climb of steep steps starting behind the old street, and at the top the Li River wraps around the village in a horseshoe with karst peaks stacked to the horizon. Sunset in Guangxi in late October is around 18:20, so start up by 17:00 and bring a headlamp for the way down, the steps are unlit. A small local fee of roughly CNY 20 is collected in cash at the trailhead. Steep and slippery when wet - if it is raining, skip it, this is not a hill to negotiate with.",
+                "pt": "A razao para dormir em Xingping. Uma subida de 20 a 30 minutos de degraus ingremes que comeca atras da rua velha, e no alto o rio Li abraca a vila numa ferradura com picos de karst empilhados ate o horizonte. O por do sol em Guangxi no fim de outubro e por volta das 18:20, entao comece a subir as 17:00 e leve lanterna de cabeca para a descida, os degraus nao tem luz. Uma taxa local de uns CNY 20 e cobrada em dinheiro no inicio da trilha. Ingreme e escorregadio molhado - se estiver chovendo, pule, este morro nao negocia."
+              },
+              "address": "Laozhai Hill Park, Xingping, Yangshuo · 阳朔县兴坪镇老寨山公园",
+              "coords": [
+                24.9189334,
+                110.5218451
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "night",
+              "time": "~19:15-21:00",
+              "text": {
+                "en": "Beer fish for dinner in Xingping",
+                "pt": "Peixe na cerveja para jantar em Xingping"
+              },
+              "note": {
+                "en": "Yangshuo beer fish (啤酒鱼) is the one dish this county actually owns: river fish fried skin-on then braised in local beer, chilli and tomato. Eat it in Xingping rather than on Yangshuo's West Street, where it is cooked for tour groups. Roughly CNY 90 to 150 for the fish, shared. Pay attention to it tonight - on the 25th you cook this yourself. Early night, tomorrow starts at 05:15.",
+                "pt": "O peixe na cerveja de Yangshuo (啤酒鱼) e o unico prato que este condado realmente possui: peixe de rio frito com a pele e depois refogado em cerveja local, pimenta e tomate. Coma em Xingping, nao na West Street de Yangshuo, onde e feito para excursao. Uns CNY 90 a 150 pelo peixe, para dividir. Preste atencao nele hoje - no dia 25 voce cozinha este prato com as proprias maos. Noite curta, amanha comeca as 05:15."
+              },
+              "address": "Xingping Old Street, Yangshuo · 阳朔县兴坪镇老街",
+              "coords": [
+                24.91951,
+                110.5216165
+              ]
+            }
+          ]
+        },
+        {
+          "note": {
+            "en": "Oct 23 (Fri) - The whole reason Guilin is in this trip, and it is built around one refusal: no big cruise. The 4-star Guilin-to-Yangshuo boat costs CNY 360-480, eats 09:20 to 13:30, and spends its first two hours on ordinary river before the good part - and you watch it through glass from a seat. Instead the day buys the same 20 km from thirty centimetres above the water, on a bamboo raft, for a fifth of the price. Order matters: Xianggong Hill sits on the way to Yangdi pier, so the sunrise and the raft chain together instead of competing. Up at 05:15, the aerial view of the river at first light, down to Yangdi, and on the water by 09:00 through Nine Horses Hill, the Huangbu reflection and the bend printed on the CNY 20 note, landing back in Xingping for lunch. On rain: late October is the driest, clearest window of the year here and thin mist makes the karst better, not worse - this is not Zhangjiajie, where cloud cancels the mountain, and I am not going to pretend otherwise to justify a spare night. Only a hard downpour closes the rafts. If today opens grey, the 25th is now free enough to take a second run at the sunrise.",
+            "pt": "23/out (sex) - A razao inteira de Guilin estar nesta viagem, e ela e construida sobre uma recusa: nada de cruzeiro grande. O barco 4 estrelas de Guilin a Yangshuo custa CNY 360-480, come das 09:20 as 13:30, e passa as duas primeiras horas em rio comum antes da parte boa - e voce assiste atras de um vidro, sentado. Em vez disso o dia compra os mesmos 20 km a trinta centimetros da agua, numa balsa de bambu, por um quinto do preco. A ordem importa: o Morro Xianggong fica no caminho do cais de Yangdi, entao o nascer do sol e a balsa se encaixam em vez de competir. De pe as 05:15, a vista aerea do rio na primeira luz, descida para Yangdi, e na agua as 09:00 passando pelo Morro dos Nove Cavalos, pelo reflexo de Huangbu e pela curva impressa na nota de CNY 20, desembarcando em Xingping para o almoco. Sobre chuva: o fim de outubro e a janela mais seca e limpa do ano aqui e a nevoa fina deixa o karst melhor, nao pior - isto nao e Zhangjiajie, onde nuvem cancela a montanha, e eu nao vou fingir o contrario so para justificar uma noite sobrando. So um temporal fecha as balsas. Se hoje amanhecer cinza, o dia 25 agora esta livre o bastante para uma segunda tentativa no nascer do sol."
+          },
+          "items": [
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "05:45 → ~06:20",
+              "text": {
+                "en": "Xingping to Xianggong Hill by car",
+                "pt": "Xingping ate o Morro Xianggong de carro"
+              },
+              "note": {
+                "en": "Roughly 35 to 45 minutes on the west bank, and it must be arranged the night before - there is no hailing a car in Xingping at 05:45. Have the guesthouse book a driver who then waits and carries you on to Yangdi pier afterwards, another 30 minutes from the hill. One car, three legs, roughly CNY 250 to 350 for the morning.",
+                "pt": "Uns 35 a 45 minutos pela margem oeste, e tem que ser combinado na vespera - nao existe pegar carro na rua em Xingping as 05:45. Peca a pousada para reservar um motorista que depois espera e te leva ate o cais de Yangdi, mais 30 minutos do morro. Um carro, tres pernas, uns CNY 250 a 350 pela manha."
+              },
+              "address": "Xianggong Hill, Yangshuo County, Guilin · 桂林市阳朔县相公山",
+              "coords": [
+                24.9258073,
+                110.4790015
+              ]
+            },
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "~06:30-08:00",
+              "text": {
+                "en": "Sunrise from Xianggong Hill",
+                "pt": "Nascer do sol no Morro Xianggong"
+              },
+              "note": {
+                "en": "The one view of the Li River from above rather than from on it: a 20 minute climb of built steps to a platform over the widest bend, the river forking around an island with karst towers receding in layers. Sunrise in late October is around 06:45, so be climbing by 06:30. Roughly CNY 60, cash at the gate, opens before dawn in season. Mist here is the point, not the problem - a grey dawn gives you the layered ink-painting version, a clear one gives you the postcard. This is the only thing in the block with no rain substitute at all, and the only thing the fourth night quietly insures.",
+                "pt": "A unica vista do rio Li de cima em vez de dentro: 20 minutos de degraus construidos ate uma plataforma sobre a curva mais larga, o rio se abrindo em torno de uma ilha com torres de karst recuando em camadas. O nascer do sol no fim de outubro e por volta das 06:45, entao esteja subindo as 06:30. Uns CNY 60, dinheiro no portao, abre antes do amanhecer na temporada. A nevoa aqui e o ponto, nao o problema - um amanhecer cinza te da a versao pintura a nanquim em camadas, um limpo te da o cartao postal. Esta e a unica coisa do bloco sem nenhum substituto na chuva, e a unica que a quarta noite segura em silencio."
+              },
+              "address": "Xianggong Hill Scenic Area, Yangshuo · 阳朔县相公山景区",
+              "tickets": "~CNY 60 per person, cash at the gate · ~CNY 60 por pessoa, dinheiro no portao",
+              "coords": [
+                24.9258073,
+                110.4790015
+              ]
+            },
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "~08:15 → ~08:45",
+              "text": {
+                "en": "Xianggong Hill to Yangdi pier",
+                "pt": "Morro Xianggong ate o cais de Yangdi"
+              },
+              "note": {
+                "en": "About 30 minutes north with the same driver. Yangdi is a pier and a bus terminal and nothing else - do not plan to eat here. The raft ticket window is at the pier, 杨堤码头.",
+                "pt": "Cerca de 30 minutos ao norte com o mesmo motorista. Yangdi e um cais e um terminal rodoviario e nada mais - nao planeje comer aqui. A bilheteria da balsa fica no cais, 杨堤码头."
+              },
+              "address": "Yangdi Pier, Yangshuo County · 阳朔县杨堤码头",
+              "coords": [
+                24.9943696,
+                110.4487965
+              ]
+            },
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "~09:00-11:00",
+              "text": {
+                "en": "Bamboo raft, Yangdi down to Xingping - the CNY 20 note stretch",
+                "pt": "Balsa de bambu, Yangdi ate Xingping - o trecho da nota de CNY 20"
+              },
+              "note": {
+                "en": "This is the item the whole block was argued for. About 20 km of the only stretch of the Li that is worth the airfare, on a motorised bamboo raft carrying four, sitting at water level with nothing between you and the karst. Roughly 1h20 to 2h depending on the boatman. Price is the one thing I could not pin down cleanly: sources quote CNY 160 to 216 per person and it moves with season and with which pier you start from - budget CNY 200 and confirm at the window. No reliable online booking for foreigners; buy at Yangdi pier in the morning. Note the raft does NOT continue Xingping to Yangshuo, that lower stretch is closed to rafts. Landmarks in order: Wangfu Rock, Nine Horses Fresco Hill (九马画山), the Huangbu reflection (黄布倒影), then Xingping. Life jackets are on board, take them.",
+                "pt": "Este e o item pelo qual o bloco inteiro foi defendido. Cerca de 20 km do unico trecho do Li que justifica a passagem aerea, numa balsa de bambu motorizada de quatro lugares, sentado ao nivel da agua sem nada entre voce e o karst. Uns 1h20 a 2h, depende do barqueiro. O preco e a unica coisa que nao consegui fechar com limpeza: as fontes citam CNY 160 a 216 por pessoa e isso muda com a estacao e com qual cais voce parte - reserve CNY 200 e confirme na bilheteria. Nao ha reserva online confiavel para estrangeiro; compre no cais de Yangdi de manha. Note que a balsa NAO segue de Xingping ate Yangshuo, aquele trecho de baixo e fechado para balsas. Marcos na ordem: Rocha Wangfu, Morro dos Nove Cavalos (九马画山), o reflexo de Huangbu (黄布倒影) e entao Xingping. Ha coletes a bordo, use."
+              },
+              "address": "Yangdi Pier to Xingping Pier, Li River, Yangshuo · 阳朔县 杨堤码头至兴坪码头，漓江",
+              "tickets": "~CNY 160-216 per person, bought at Yangdi pier · ~CNY 160-216 por pessoa, comprado no cais de Yangdi",
+              "coords": [
+                24.9386814,
+                110.4898269
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "~12:00-13:30",
+              "text": {
+                "en": "Lunch in Xingping, off the water",
+                "pt": "Almoco em Xingping, fora da agua"
+              },
+              "note": {
+                "en": "You land at Xingping pier and the village is a five minute walk up. Two hours on a raft in October wind is colder than the forecast suggests - eat something hot. River snails and stuffed Li River fish are what the village actually cooks.",
+                "pt": "Voce desembarca no cais de Xingping e a vila fica a cinco minutos a pe subindo. Duas horas de balsa no vento de outubro e mais frio do que a previsao sugere - coma algo quente. Caramujo de rio e peixe recheado do Li e o que a vila realmente cozinha."
+              },
+              "address": "Xingping Pier, Yangshuo · 阳朔县兴坪码头",
+              "coords": [
+                24.9259719,
+                110.5096286
+              ]
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "~14:00-16:00",
+              "text": {
+                "en": "Walk to the CNY 20 note viewpoint",
+                "pt": "Caminhada ate o mirante da nota de CNY 20"
+              },
+              "note": {
+                "en": "The exact composition printed on the back of the CNY 20 bill is a riverbank viewpoint about 1 km downstream of Xingping, reachable on foot along the bank in 20 to 25 minutes - no ticket, no boat needed. Take a CNY 20 note out of your wallet and hold it up against the hills, which is corny and which everyone does and which is genuinely the small joy of the afternoon. Afternoon light hits this face better than morning does, which is why it sits here and not on the raft.",
+                "pt": "A composicao exata impressa no verso da nota de CNY 20 e um mirante na margem a cerca de 1 km rio abaixo de Xingping, alcancavel a pe pela margem em 20 a 25 minutos - sem ingresso, sem barco. Tire uma nota de CNY 20 da carteira e levante contra os morros, o que e brega e o que todo mundo faz e o que e genuinamente a pequena alegria da tarde. A luz da tarde bate melhor nesta face do que a da manha, e por isso isto esta aqui e nao na balsa."
+              },
+              "address": "CNY 20 note viewpoint, riverbank downstream of Xingping · 兴坪镇下游 二十元人民币背景观景点",
+              "coords": [
+                24.9259719,
+                110.5096286
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "night",
+              "time": "~18:30-21:00",
+              "text": {
+                "en": "Second night in Xingping, nothing scheduled",
+                "pt": "Segunda noite em Xingping, nada marcado"
+              },
+              "note": {
+                "en": "You were up at 05:15 and the village has no nightlife, which is the correct amount of nightlife. Pack tonight: tomorrow you change base to Yangshuo town and the bags move with you.",
+                "pt": "Voce acordou as 05:15 e a vila nao tem vida noturna, que e a quantidade certa de vida noturna. Faca as malas hoje: amanha voce muda de base para a cidade de Yangshuo e as malas vao junto."
+              },
+              "address": "Xingping, Yangshuo County · 阳朔县兴坪镇",
+              "coords": [
+                24.91951,
+                110.5216165
+              ]
+            }
+          ]
+        },
+        {
+          "note": {
+            "en": "Oct 24 (Sat) - Two nights bought the river and nothing else; this day buys three things the trip does not have anywhere in twenty days: a bicycle, a natural rock arch, and a staged spectacle. Note what is NOT here - I dropped the Yulong River bamboo raft from the main plan, even though every guidebook pairs it with the Li, because you rafted yesterday and rafting again is the same movement on lesser water. It survives only as the rain substitute below. Base moves to Yangshuo town this morning and that is deliberate: the Yulong valley, Moon Hill and the Impression theatre are all clustered here, 30 km from Xingping, and doing them out of Xingping would mean 90 minutes of night road after the show.",
+            "pt": "24/out (sab) - Duas noites compraram o rio e mais nada; este dia compra tres coisas que a viagem nao tem em lugar nenhum dos vinte dias: uma bicicleta, um arco natural de rocha e um espetaculo encenado. Repare no que NAO esta aqui - tirei a balsa de bambu do rio Yulong do plano principal, embora todo guia a case com o Li, porque voce ja fez balsa ontem e fazer de novo e o mesmo movimento em agua menor. Ela sobrevive so como substituta de chuva la embaixo. A base muda para a cidade de Yangshuo hoje de manha e isso e deliberado: o vale do Yulong, o Morro da Lua e o teatro do Impression estao todos agrupados aqui, a 30 km de Xingping, e faze-los saindo de Xingping significaria 90 minutos de estrada noturna depois do espetaculo."
+          },
+          "items": [
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "~09:00 → ~09:45",
+              "text": {
+                "en": "Xingping to Yangshuo town with bags, change base",
+                "pt": "Xingping ate a cidade de Yangshuo com as malas, troca de base"
+              },
+              "note": {
+                "en": "About 30 km, 40 to 50 minutes by taxi, roughly CNY 100 to 150. Sleep near the Yulong side or the south end of town rather than on West Street itself - the strip is loud until 02:00 and you have two nights here. No rush this morning, it is the one lie-in of the block.",
+                "pt": "Cerca de 30 km, 40 a 50 minutos de taxi, uns CNY 100 a 150. Durma do lado do Yulong ou na ponta sul da cidade em vez de na propria West Street - a rua e barulhenta ate as 02:00 e voce tem duas noites aqui. Sem pressa hoje de manha, e a unica dormida ate mais tarde do bloco."
+              },
+              "address": "Yangshuo town, Yangshuo County, Guilin · 桂林市阳朔县阳朔镇",
+              "coords": [
+                24.7809551,
+                110.4909192
+              ]
+            },
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "~10:30-13:00",
+              "text": {
+                "en": "Bike the Yulong valley from Gongnong Bridge",
+                "pt": "Bicicleta pelo vale do Yulong desde a Ponte Gongnong"
+              },
+              "note": {
+                "en": "The genre the trip is missing. Everything else in twenty days is walked, climbed, floated or ridden on rails - this is the one day you move under your own power through flat country, on paved lanes between rice fields with karst towers standing in them like chess pieces. Rent in town, roughly CNY 30 to 50 a day, e-bikes about double; start at Gongnong Bridge (工农桥) and follow the Yulong upstream. Ten to twenty km round trip, no climbing, no ticket, and you set the pace. The Big Banyan (大榕树) is signposted along the way and charges to look at a tree - ride past it.",
+                "pt": "O genero que falta na viagem. Todo o resto dos vinte dias e caminhado, escalado, flutuado ou sobre trilhos - este e o unico dia em que voce se move com a propria forca por terreno plano, em estradinhas asfaltadas entre arrozais com torres de karst plantadas neles como pecas de xadrez. Alugue na cidade, uns CNY 30 a 50 o dia, e-bike o dobro; comece na Ponte Gongnong (工农桥) e siga o Yulong rio acima. Dez a vinte km ida e volta, sem subida, sem ingresso, e voce dita o ritmo. O Grande Figueira (大榕树) e sinalizado no caminho e cobra para olhar uma arvore - passe reto."
+              },
+              "address": "Gongnong Bridge, Yulong River, Yangshuo · 阳朔县遇龙河工农桥",
+              "coords": [
+                24.7381472,
+                110.4877677
+              ]
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "~14:30-16:30",
+              "text": {
+                "en": "Moon Hill - the arch, and the climb through it",
+                "pt": "Morro da Lua - o arco, e a subida por dentro dele"
+              },
+              "note": {
+                "en": "A karst ridge with a 50 m hole punched clean through it, which is a shape the trip has nowhere else: Zhangjiajie gives you pillars, Guilin gives you towers, this gives you a window. About 800 steps and 30 to 40 minutes up through forest, and the arch changes shape as you climb, which is the whole trick of it - from the road it is a circle, from halfway it is a crescent. Roughly CNY 20 to 40. It is also the birthplace of Chinese sport climbing and the bolted routes run right up the inside of the arch, so expect climbers overhead. Reachable by bike from the Yulong ride, 10 km south of town on the G321.",
+                "pt": "Uma crista de karst com um buraco de 50 m furado limpo atraves dela, que e uma forma que a viagem nao tem em nenhum outro lugar: Zhangjiajie te da pilares, Guilin te da torres, isto te da uma janela. Uns 800 degraus e 30 a 40 minutos de subida pela mata, e o arco muda de forma conforme voce sobe, que e o truque inteiro - da estrada e um circulo, do meio do caminho e uma lua crescente. Uns CNY 20 a 40. E tambem o berco da escalada esportiva chinesa e as vias equipadas sobem por dentro do arco, entao espere escaladores sobre a sua cabeca. Da para chegar de bicicleta desde o passeio do Yulong, 10 km ao sul da cidade pela G321."
+              },
+              "address": "Moon Hill, G321, Yangshuo County · 阳朔县月亮山，321国道",
+              "tickets": "~CNY 20-40 per person at the gate · ~CNY 20-40 por pessoa no portao",
+              "coords": [
+                24.7245479,
+                110.4723972
+              ]
+            },
+            {
+              "type": "star",
+              "period": "night",
+              "time": "19:30-20:30",
+              "text": {
+                "en": "Impression Liu Sanjie - Zhang Yimou on the river itself",
+                "pt": "Impression Liu Sanjie - Zhang Yimou sobre o proprio rio"
+              },
+              "note": {
+                "en": "The trip has no theatre in it anywhere, and I told you to skip the Furong stage show, so this is not a repeat - it is the only one, and it is the good one. Zhang Yimou's outdoor spectacle uses a 2 km stretch of the Li as the stage and twelve karst peaks as the backdrop, lit, with around 600 performers who are mostly local fishermen rather than a touring cast. One hour, starts 19:30, sometimes a second show around 21:00 in season. Roughly CNY 200 to 320 depending on section; book a day or two ahead through the hotel or an OTA, Saturday sells. Light rain: they hand out ponchos and it runs. Heavy rain or storm: cancelled with full refund, and free cancellation is generally up to 24h before. The theatre is 10 minutes from town and 90 minutes round trip from Xingping - that is why the base moved.",
+                "pt": "A viagem nao tem teatro em lugar nenhum, e eu mandei voce pular o espetaculo de Furong, entao isto nao e repeticao - e o unico, e e o bom. O espetaculo ao ar livre de Zhang Yimou usa 2 km do rio Li como palco e doze picos de karst como cenario, iluminados, com uns 600 artistas que sao majoritariamente pescadores locais e nao um elenco em turne. Uma hora, comeca 19:30, as vezes uma segunda sessao por volta das 21:00 na temporada. Uns CNY 200 a 320 conforme o setor; reserve um ou dois dias antes pelo hotel ou por uma OTA, sabado vende. Chuva fina: distribuem poncho e roda. Chuva forte ou temporal: cancelado com reembolso integral, e o cancelamento gratuito costuma ir ate 24h antes. O teatro fica a 10 minutos da cidade e a 90 minutos de ida e volta de Xingping - foi por isso que a base mudou."
+              },
+              "address": "Impression Liu Sanjie theatre, Tianyuan Road, Yangshuo · 阳朔县田园路 印象刘三姐",
+              "url": "https://www.chinahighlights.com/yangshuo/attraction/impression-liu-sanjie.htm",
+              "tickets": "~CNY 200-320 per person, book 1-2 days ahead · ~CNY 200-320 por pessoa, reserve 1-2 dias antes",
+              "coords": [
+                24.7699694,
+                110.5035926
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "~09:30-16:00 (rain plan / plano de chuva)",
+              "text": {
+                "en": "RAIN PLAN: Yulong River raft instead of the bike",
+                "pt": "PLANO DE CHUVA: balsa no rio Yulong no lugar da bike"
+              },
+              "note": {
+                "en": "Late October is the end of the wet season in Guangxi and the driest window of the year here. Thin rain stops neither the bike nor the raft; what kills a day is a hard downpour, which closes the Li rafts on safety and makes Laozhai and Xianggong genuinely dangerous. Priority if only one day is dry: give it to the 23rd, the Li. Swap days if the forecast says so - that flexibility is the fourth night's real dividend. The Yulong is the wet-weather substitute precisely because it is lesser: a shallow flat tributary where rafts are punted by pole, running in conditions that close the Li, roughly CNY 130 to 260 per raft for two, about an hour on the water. Wet stack, in order: Yulong raft, Moon Hill (cut stone steps, handles rain), then the show in a poncho.",
+                "pt": "O fim de outubro e o fim da estacao chuvosa em Guangxi e a janela mais seca do ano aqui. Chuva fina nao para nem a bike nem a balsa; o que mata um dia e temporal forte, que fecha as balsas do Li por seguranca e torna o Laozhai e o Xianggong perigosos de verdade. Prioridade se so um dia estiver seco: de ele ao dia 23, ao Li. Troque os dias se a previsao mandar - essa flexibilidade e o dividendo real da quarta noite. O Yulong e a substituta de chuva justamente por ser menor: um afluente raso e parado onde as balsas sao empurradas a vara, rodando em condicoes que fecham o Li, uns CNY 130 a 260 por balsa para dois, cerca de uma hora na agua. Pilha de mau tempo, na ordem: balsa do Yulong, Morro da Lua (degraus de pedra cortada, aguentam chuva) e entao o espetaculo de poncho."
+              },
+              "address": "Yulong River, Yangshuo County · 阳朔县遇龙河",
+              "tickets": "~CNY 130-260 per raft (2 people) · ~CNY 130-260 por balsa (2 pessoas)",
+              "coords": [
+                24.7378806,
+                110.4993701
+              ]
+            }
+          ]
+        },
+        {
+          "note": {
+            "en": "Oct 25 (Sun) - Read this before you keep the night, because this is the weakest day in the block and I am not going to dress it up. There is no must-do here. The Li was yesterday-but-one, the valley and the arch were yesterday, and everything else Guangxi offers at this distance is either a repeat or out of season. I checked the obvious answer and killed it: the Longji rice terraces are the one genuinely new landscape in this province, and they are out on both counts - the harvest runs roughly 10 to 25 October, so by the 25th you would be looking at brown empty paddies rather than the golden terraces in the photographs, and they sit 4 to 4.5 hours from Yangshuo each way, which is a day of bus for a field. So the fourth night rests on two things. First, insurance I did not ask for but will take: if the 23rd opened grey, this morning is a second run at Xianggong at sunrise, and that is the only item here with no substitute. Second, the one genre twenty days of eating Chinese food never touches - actually cooking it, starting in the wet market. That is a real thing and it costs CNY 150 and three hours. If neither the market nor the climbing appeals to you, this night is filler and Shanghai should have it back. My honest read: keep it, but keep it knowing it is the soft day, not a second river day.",
+            "pt": "25/out (dom) - Leia isto antes de manter a noite, porque este e o dia mais fraco do bloco e eu nao vou enfeitar. Nao existe must-do aqui. O Li foi anteontem, o vale e o arco foram ontem, e todo o resto que Guangxi oferece a esta distancia ou e repeticao ou esta fora de temporada. Verifiquei a resposta obvia e matei: os terracos de arroz de Longji sao a unica paisagem genuinamente nova desta provincia, e estao fora pelos dois lados - a colheita vai de mais ou menos 10 a 25 de outubro, entao no dia 25 voce olharia para arrozais marrons e vazios em vez dos terracos dourados das fotos, e eles ficam a 4 ou 4,5 horas de Yangshuo em cada perna, o que e um dia de onibus por um campo. Entao a quarta noite se apoia em duas coisas. Primeiro, um seguro que eu nao pedi mas aceito: se o dia 23 amanheceu cinza, esta manha e uma segunda tentativa no Xianggong no nascer do sol, e esse e o unico item daqui sem substituto. Segundo, o unico genero que vinte dias comendo comida chinesa nunca tocam - cozinha-la de verdade, comecando no mercado. Isso e uma coisa real e custa CNY 150 e tres horas. Se nem o mercado nem a escalada te interessam, esta noite e enchimento e Shanghai deveria ficar com ela de volta. Minha leitura honesta: fique com ela, mas sabendo que e o dia mole, nao um segundo dia de rio."
+          },
+          "items": [
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "~09:00-12:00",
+              "text": {
+                "en": "Wet market with the chef, then cook the beer fish yourself",
+                "pt": "Mercado com o chef, depois cozinhe o peixe na cerveja voce mesmo"
+              },
+              "note": {
+                "en": "The one genre the whole trip never touches. Twenty days of eating Chinese food and this is the only morning you find out how any of it is made. The class starts in the Yangshuo wet market beside Yangshuo Park - the chef walks you through it and you buy the ingredients yourself, which is the better half of the morning: live river fish, taro, the local chillies, things you have been eating for two weeks without knowing the names of. Then back to the kitchen for three or four dishes, and beer fish is the one to insist on, because it is the dish this county owns and you ate it in Xingping on the 22nd. About three hours, roughly CNY 100 to 150 per person including everything you cook, which you then eat as lunch. Cloud 9 on Chengzhong Road is the long-running one; book a day ahead. If you would rather not cook, this is the item that decides the night - say so and give Shanghai the bed.",
+                "pt": "O unico genero que a viagem inteira nunca toca. Vinte dias comendo comida chinesa e esta e a unica manha em que voce descobre como qualquer uma delas e feita. A aula comeca no mercado de Yangshuo, ao lado do Parque de Yangshuo - o chef te leva por ele e voce mesmo compra os ingredientes, que e a melhor metade da manha: peixe de rio vivo, taro, as pimentas locais, coisas que voce vem comendo ha duas semanas sem saber o nome. Depois e a cozinha, tres ou quatro pratos, e o peixe na cerveja e o que voce deve exigir, porque e o prato que este condado possui e voce o comeu em Xingping no dia 22. Cerca de tres horas, uns CNY 100 a 150 por pessoa incluindo tudo o que voce cozinha, que depois voce come de almoco. O Cloud 9, na rua Chengzhong, e o de longa data; reserve com um dia de antecedencia. Se voce prefere nao cozinhar, este e o item que decide a noite - diga e passe a cama para Shanghai."
+              },
+              "address": "Cloud 9 cooking school, Chengzhong Road, Yangshuo · 阳朔县城中路 九重天烹饪学校",
+              "tickets": "~CNY 100-150 per person, includes market and lunch; book 1 day ahead · ~CNY 100-150 por pessoa, inclui mercado e almoco; reserve 1 dia antes",
+              "coords": [
+                24.7774973,
+                110.4897717
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "morning",
+              "time": "~05:45-08:30 (only if Oct 23 was grey / so se o dia 23 foi cinza)",
+              "text": {
+                "en": "Second run at Xianggong Hill sunrise",
+                "pt": "Segunda tentativa no nascer do sol do Morro Xianggong"
+              },
+              "note": {
+                "en": "The honest half of why four nights survive. Xianggong is the only thing in this block that a closed sky can actually take from you - the raft runs in mist, the bike runs in drizzle, the show hands out ponchos, but a sunrise you either get or you do not. If the 23rd gave you grey soup, come back this morning. It is 1h15 each way from Yangshuo town rather than 40 minutes from Xingping, so leave at 05:15 and arrange the car the night before. If the 23rd was clear, delete this and sleep in - do not climb the same hill twice for the sake of filling a box.",
+                "pt": "A metade honesta do porque quatro noites sobrevivem. O Xianggong e a unica coisa deste bloco que um ceu fechado pode de fato te tirar - a balsa roda na nevoa, a bike roda na garoa, o espetaculo distribui poncho, mas um nascer do sol voce pega ou nao pega. Se o dia 23 te deu sopa cinzenta, volte nesta manha. Sao 1h15 em cada perna desde a cidade de Yangshuo, e nao 40 minutos como de Xingping, entao saia as 05:15 e combine o carro na vespera. Se o dia 23 estava limpo, apague isto e durma - nao suba o mesmo morro duas vezes so para preencher uma casinha."
+              },
+              "address": "Xianggong Hill Scenic Area, Yangshuo · 阳朔县相公山景区",
+              "coords": [
+                24.9258073,
+                110.4790015
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "~14:30-17:30",
+              "text": {
+                "en": "Climb, or do nothing - your call",
+                "pt": "Escalar, ou nao fazer nada - voce decide"
+              },
+              "note": {
+                "en": "Yangshuo is where Chinese sport climbing started and it is still the best limestone in Asia, with several hundred bolted routes on the cliffs around the Yulong valley. Half a day with a guide runs roughly CNY 400 to 600 including gear, no experience needed, and October is prime season - dry rock, no summer heat. This is nicher than anything else I have put in front of you and I am not going to pretend it is for everyone. If you do not climb, the correct use of this afternoon is nothing at all: you have been moving for thirteen days, tomorrow is a travel day to Shanghai, and a slow afternoon is a legitimate thing to buy with the last night rather than a wasted one. What I will not do is invent a sight to fill it.",
+                "pt": "Yangshuo e onde a escalada esportiva chinesa comecou e ainda e o melhor calcario da Asia, com varias centenas de vias equipadas nos paredoes ao redor do vale do Yulong. Meio dia com guia sai por uns CNY 400 a 600 com equipamento incluido, sem precisar de experiencia, e outubro e temporada de pico - rocha seca, sem o calor do verao. Isto e mais de nicho do que qualquer coisa que eu te apresentei e nao vou fingir que serve para todo mundo. Se voce nao escala, o uso correto desta tarde e nada mesmo: voce esta em movimento ha treze dias, amanha e dia de viagem para Shanghai, e uma tarde lenta e uma coisa legitima de se comprar com a ultima noite, nao um desperdicio. O que eu nao vou fazer e inventar uma atracao para preencher."
+              },
+              "address": "Climbing crags around Moon Hill and the Yulong valley · 月亮山与遇龙河一带攀岩点",
+              "tickets": "~CNY 400-600 per person, half day with guide and gear · ~CNY 400-600 por pessoa, meio dia com guia e equipamento",
+              "coords": [
+                24.7245479,
+                110.4723972
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "night",
+              "time": "~19:00-21:30",
+              "text": {
+                "en": "Last night, and a warning for the morning",
+                "pt": "Ultima noite, e um aviso para a manha"
+              },
+              "note": {
+                "en": "Nothing scheduled. Eat wherever you found this week, not on West Street. One thing to hand over: tomorrow's departure to Shanghai is not my item, but whoever plans it needs to know that Yangshuo railway station is 30 km and about 40 minutes NORTH of Yangshuo town, back towards Xingping, and Guilin airport is 90 minutes the other way. That gap has to be built into the morning of the 26th - it has bitten people who assumed the station was in the town it is named after.",
+                "pt": "Nada marcado. Coma onde voce descobriu nesta semana, nao na West Street. Uma coisa para passar adiante: a saida de amanha para Shanghai nao e item meu, mas quem planejar precisa saber que a estacao de trem de Yangshuo fica a 30 km e uns 40 minutos ao NORTE da cidade de Yangshuo, de volta na direcao de Xingping, e o aeroporto de Guilin fica a 90 minutos no sentido oposto. Essa distancia tem que entrar na manha do dia 26 - ela ja mordeu gente que assumiu que a estacao ficava na cidade que lhe da nome."
+              },
+              "address": "Yangshuo town, Yangshuo County · 桂林市阳朔县阳朔镇",
+              "coords": [
+                24.7809551,
+                110.4909192
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "nights": 2,
+      "days": [
+        {
+          "note": {
+            "en": "26 Oct, Monday, arriving from Guilin. You were right to want to land in Shanghai and steady yourself before Suzhou instead of going straight there. This is that day. It also happens to be a Monday, which in Shanghai closes the Yu Garden and most of the city's indoor sights, so nothing is lost by spending it on things that never close: a temple boxed in by towers, a neon street walked east, and the river switching on at dusk. Arrival time is still an estimate while the Trilho settles the Guilin leg, so treat the clock loosely and the order strictly.",
+            "pt": "26/out, segunda, chegando de Guilin. Voce estava certo em querer aterrissar em Shanghai e se estabilizar antes de Suzhou em vez de ir direto para la. Este e esse dia. Por acaso e tambem uma segunda-feira, que em Shanghai fecha o Yu Garden e quase tudo que e coberto na cidade, entao nao se perde nada gastando o dia com o que nunca fecha: um templo encaixotado por torres, uma rua de neon percorrida para leste e o rio se acendendo no fim da tarde. O horario de chegada ainda e estimativa enquanto o Trilho fecha a perna de Guilin, entao trate o relogio com folga e a ordem com rigor."
+          },
+          "items": [
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "~11:00 → ~12:30",
+              "text": {
+                "en": "Arrive from Guilin, transfer to the hotel",
+                "pt": "Chegada de Guilin, transfer ate o hotel"
+              },
+              "note": {
+                "en": "The modal is still with the Trilho, so this is an honest estimate, not a fact: assume you are in the city late morning and have bags down by early afternoon. If the Guilin leg turns out to be an overnight train or a late flight, this whole day compresses and Jing'an is the first thing to drop.",
+                "pt": "O modal ainda esta com o Trilho, entao isto e estimativa honesta, nao fato: assuma que voce esta na cidade no fim da manha e com as malas no hotel no comeco da tarde. Se a perna de Guilin acabar sendo trem noturno ou voo tardio, o dia inteiro comprime e o Jing'an e a primeira coisa a cair."
+              },
+              "address": "Shanghai · 上海",
+              "coords": [
+                31.2349378,
+                121.4705704
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "~14:00–15:00",
+              "text": {
+                "en": "Jing'an Temple",
+                "pt": "Templo Jing'an"
+              },
+              "note": {
+                "en": "A gold-roofed Buddhist temple hemmed in by glass towers, which is the entire point of it. Small and quick, the only temple in either Shanghai block, and one of the few things open on a Monday.",
+                "pt": "Um templo budista de telhado dourado cercado por torres de vidro, que e justamente a graca dele. Pequeno e rapido, o unico templo dos dois blocos de Shanghai e uma das poucas coisas abertas numa segunda."
+              },
+              "address": "1686 Nanjing West Road, Jing'an District · 上海市静安区南京西路1686号",
+              "coords": [
+                31.225215,
+                121.4407923
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "~15:30–17:00",
+              "text": {
+                "en": "Nanjing Road pedestrian street",
+                "pt": "Rua de pedestres Nanjing Road"
+              },
+              "note": {
+                "en": "The loud neon shopping spine running east from Jing'an to the river. Not subtle and not trying to be, but it walks you to the Bund without a metro ride and lands you there exactly as the light drops.",
+                "pt": "A espinha comercial de neon barulhento que corre para leste do Jing'an ate o rio. Nao e sutil e nem tenta ser, mas te leva ao Bund a pe, sem metro, e te deixa la exatamente quando a luz cai."
+              },
+              "address": "Nanjing East Road, Huangpu District · 上海市黄浦区南京东路步行街",
+              "coords": [
+                31.2376841,
+                121.4753016
+              ]
+            },
+            {
+              "type": "star",
+              "period": "night",
+              "time": "~18:30–20:00",
+              "text": {
+                "en": "The Bund lit up",
+                "pt": "The Bund iluminado"
+              },
+              "note": {
+                "en": "You saw this jet-lagged on 12 Oct, three weeks and half a country ago; this time you can actually take it in. Lights come on around 18:30 and the whole river turns on at once. The right way to say you are back.",
+                "pt": "Voce viu isto com jet-lag em 12/out, tres semanas e meio pais atras; desta vez da para aproveitar de verdade. As luzes acendem por volta das 18:30 e o rio inteiro se acende de uma vez. O jeito certo de dizer que voltou."
+              },
+              "address": "Zhongshan East 1st Road, Huangpu District · 上海市黄浦区中山东一路",
+              "coords": [
+                31.2353356,
+                121.487632
+              ]
+            }
+          ]
+        },
+        {
+          "note": {
+            "en": "27 Oct, Tuesday, and the most walkable day of the whole trip. It opens with the one thing this itinerary was completely missing: not a monument, but everyday Chinese life. At 08:00 a French park from 1909 in the middle of the old Concession fills with people ballroom dancing, doing tai chi, playing mahjong and, genuinely, playing saxophone. Nobody is performing for you. Then plane trees and art deco, alleys after lunch, and at night acrobats, because in three weeks of temples, karsts and gardens this trip has never once watched anything happen on a stage. Tomorrow you go to Suzhou rested, which was the entire argument for arranging it this way.",
+            "pt": "27/out, terca, e o dia mais a pe da viagem inteira. Ele abre com a unica coisa que faltava por completo neste roteiro: nao um monumento, mas a vida chinesa cotidiana. As 08:00 um parque frances de 1909 no meio da antiga Concessao se enche de gente dancando valsa, fazendo tai chi, jogando mahjong e, de verdade, tocando saxofone. Ninguem esta se apresentando para voce. Depois platanos e art deco, vielas apos o almoco, e a noite acrobatas, porque em tres semanas de templos, karsts e jardins esta viagem nunca viu nada acontecer num palco. Amanha voce vai a Suzhou descansado, que era o argumento inteiro para arrumar as coisas assim."
+          },
+          "items": [
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "~08:00–09:15",
+              "text": {
+                "en": "Fuxing Park at morning exercise hour",
+                "pt": "Fuxing Park na hora do exercicio matinal"
+              },
+              "note": {
+                "en": "The only well-preserved French-style park in China, laid out in 1909, and for a century the backyard of the shikumen lanes around it. Come at 08:00 and it is full of ballroom dancers, tai chi circles, card and mahjong tables and amateur musicians. Locals may well wave you into a waltz. Free, open 05:00 to 21:00. This is the trip's only unstaged look at how the city actually lives.",
+                "pt": "O unico parque de estilo frances bem preservado da China, desenhado em 1909, e ha um seculo o quintal das vielas shikumen ao redor. Chegue as 08:00 e ele esta cheio de dancarinos de salao, rodas de tai chi, mesas de carta e mahjong e musicos amadores. E bem possivel que te chamem para uma valsa. Gratuito, aberto das 05:00 as 21:00. E o unico olhar sem encenacao da viagem sobre como a cidade de fato vive."
+              },
+              "address": "2 Gaolan Road, Huangpu District · 上海市黄浦区皋兰路2号",
+              "coords": [
+                31.2186623,
+                121.4646484
+              ]
+            },
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "~09:45–11:15",
+              "text": {
+                "en": "Wukang Road",
+                "pt": "Rua Wukang"
+              },
+              "note": {
+                "en": "Fifteen minutes west of the park. Plane trees and 1920s villas along the old French Concession. The best walk in the city, and it costs nothing. Morning light through the trees is the whole reason to do it now.",
+                "pt": "Quinze minutos a oeste do parque. Platanos e vilas dos anos 1920 pela antiga Concessao Francesa. A melhor caminhada da cidade, e nao custa nada. A luz da manha entre as arvores e a razao inteira de fazer isso agora."
+              },
+              "address": "Wukang Road, Xuhui District · 上海市徐汇区武康路",
+              "coords": [
+                31.2079627,
+                121.4345823
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "morning",
+              "time": "~11:15–11:45",
+              "text": {
+                "en": "Wukang Mansion",
+                "pt": "Edificio Wukang"
+              },
+              "note": {
+                "en": "The 1924 Hudec building that gives the street its photograph, wedged into an acute corner like a liner coming straight at you. It sits at the end of the walk, so you arrive without planning to.",
+                "pt": "O predio de 1924 de Hudec que da a foto da rua, encaixado numa esquina aguda como um transatlantico vindo em cima de voce. Fica na ponta da caminhada, entao voce chega nele sem planejar."
+              },
+              "address": "1850 Huaihai Middle Road, Xuhui District · 上海市徐汇区淮海中路1850号",
+              "coords": [
+                31.2062561,
+                121.4337292
+              ]
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "~14:00–16:00",
+              "text": {
+                "en": "Tianzifang",
+                "pt": "Tianzifang"
+              },
+              "note": {
+                "en": "Lunch in the Concession, then twenty minutes east. Shikumen stone-gate alleys turned into studios and cafes, tangled enough that getting lost is the activity. Touristy and worth it anyway.",
+                "pt": "Almoce na Concessao e depois vinte minutos para leste. Vielas shikumen viradas ateliês e cafes, emaranhadas o bastante para que se perder seja a atracao. Turistico e vale mesmo assim."
+              },
+              "address": "Lane 210 Taikang Road, Huangpu District · 上海市黄浦区泰康路210弄",
+              "coords": [
+                31.21034,
+                121.4641036
+              ]
+            },
+            {
+              "type": "star",
+              "period": "night",
+              "time": "19:30–20:30",
+              "text": {
+                "en": "ERA acrobatic show at Shanghai Circus World",
+                "pt": "Espetaculo acrobatico ERA no Shanghai Circus World"
+              },
+              "note": {
+                "en": "Chinese acrobatics is a 2,000-year-old discipline and Shanghai's troupe is the one that matters. Contortion, pole work, and the finale with motorcycles inside a steel sphere. Nightly at 19:30 except Mondays, 60 minutes on weekdays, CNY 280 to 880. Book ahead; the venue is about 35 minutes north by metro, so eat before.",
+                "pt": "A acrobacia chinesa e uma disciplina de 2.000 anos e a trupe de Shanghai e a que importa. Contorcionismo, mastro chines e o final com motocicletas dentro de uma esfera de aco. Todas as noites as 19:30 exceto segunda, 60 minutos em dias de semana, CNY 280 a 880. Reserve antes; o teatro fica uns 35 minutos ao norte de metro, entao jante antes."
+              },
+              "address": "2266 Gonghexin Road, Jing'an District · 上海市静安区共和新路2266号",
+              "url": "https://www.shcircusworld.com/",
+              "tickets": "https://www.klook.com/en-US/activity/6365-era-intersection-of-time-acrobatic-show-ticket-shanghai/",
+              "coords": [
+                31.2818029,
+                121.4473012
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": {
+        "en": "Suzhou",
+        "pt": "Suzhou"
+      },
+      "nights": 1,
+      "days": [
+        {
+          "note": {
+            "en": "27 Oct. Suzhou, and the night is the whole reason to sleep here. As a day trip this city gives you gardens between two train rides and nothing else, because you spend it watching the clock. The night buys the Master of the Nets Night Garden, where Kunqu opera, pingtan storytelling and guzheng are staged courtyard by courtyard inside an 800-year-old garden after dark, March to November only, so October is inside the window. It also buys Pingjiang Road at 22:00, lantern-lit and finally emptied of the day trippers who all went back to Shanghai. The day itself deliberately does not repeat itself: one great garden in the morning, then a leaning pagoda on a hill in the afternoon, which is a shape this trip has nowhere else. Dropping the museum was a gift, it killed the only reservation in the whole itinerary that opened 7 days out at 08:00 China time and sold out in minutes, while you were in Zhangjiajie.",
+            "pt": "27/out. Suzhou, e a noite e a razao inteira de dormir aqui. Como bate-volta esta cidade te da jardins entre duas viagens de trem e mais nada, porque voce a passa olhando o relogio. A noite compra o Jardim Noturno do Master of the Nets, onde opera Kunqu, narrativa pingtan e guzheng sao encenados patio a patio dentro de um jardim de 800 anos depois do escuro, so de marco a novembro, entao outubro esta dentro da janela. Compra tambem a Rua Pingjiang as 22:00, iluminada por lanternas e enfim esvaziada dos bate-voltas, que voltaram todos para Shanghai. O dia em si nao se repete de proposito: um grande jardim de manha e um pagode inclinado numa colina a tarde, uma forma que a viagem nao tem em nenhum outro lugar. Cortar o museu foi um presente: matou a unica reserva do roteiro inteiro que abria 7 dias antes as 08:00 da China e esgotava em minutos, justamente enquanto voce estaria em Zhangjiajie."
+          },
+          "items": [
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "~09:00 → ~09:40",
+              "text": {
+                "en": "Bullet train from Shanghai Hongqiao",
+                "pt": "Trem-bala desde Shanghai Hongqiao"
+              },
+              "note": {
+                "en": "23 to 40 minutes, CNY 31 to 60, more than 200 train pairs a day, so the departure time is flexible. Because you sleep here there is no need to catch a dawn train. Book Suzhou Station 苏州站, never Suzhou North 苏州北站, which sits half an hour further from the old town.",
+                "pt": "23 a 40 minutos, CNY 31 a 60, mais de 200 pares de trens por dia, entao o horario de saida e flexivel. Como voce dorme aqui, nao ha necessidade de pegar trem de madrugada. Reserve Suzhou Station 苏州站, nunca Suzhou North 苏州北站, que fica meia hora mais longe da cidade velha."
+              },
+              "address": "Suzhou Railway Station · 苏州站",
+              "coords": [
+                31.3318337,
+                120.6062832
+              ]
+            },
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "~10:15–12:15",
+              "text": {
+                "en": "Humble Administrator's Garden",
+                "pt": "Jardim do Administrador Humilde"
+              },
+              "note": {
+                "en": "The largest and most important classical garden in China, a UNESCO site, and the reason to come to Suzhou at all. CNY 70, open 07:30 to 17:30. The timed entry slot is mandatory and is not sold at the gate, so book the earliest slot you can get.",
+                "pt": "O maior e mais importante jardim classico da China, Patrimonio da UNESCO, e a razao de se ir a Suzhou. CNY 70, aberto 07:30 as 17:30. O slot de horario e obrigatorio e nao se vende na porta, entao reserve o slot mais cedo que conseguir."
+              },
+              "address": "178 Dongbei Street, Gusu District · 苏州市姑苏区东北街178号",
+              "coords": [
+                31.3263526,
+                120.6247123
+              ]
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "~13:45–15:45",
+              "text": {
+                "en": "Tiger Hill and the leaning pagoda",
+                "pt": "Tiger Hill e o pagode inclinado"
+              },
+              "note": {
+                "en": "Lunch, then about 20 minutes northwest by taxi. A wooded hill topped by the Yunyan Pagoda, seven storeys of brick and wood from 959 AD, tilted three degrees because the ground under one side gave way, and standing anyway for a thousand years. Su Dongpo wrote that it is a shame to visit Suzhou and skip it. CNY 70 April to October, open 07:30 to 18:00, last entry 17:30. Not a garden and not a canal, which is exactly why it is here.",
+                "pt": "Almoce e depois uns 20 minutos a noroeste de taxi. Uma colina arborizada coroada pelo Pagode Yunyan, sete andares de tijolo e madeira de 959 d.C., inclinado tres graus porque o solo cedeu de um lado, e de pe assim mesmo ha mil anos. Su Dongpo escreveu que e uma vergonha visitar Suzhou e pular isto. CNY 70 de abril a outubro, aberto das 07:30 as 18:00, ultima entrada 17:30. Nao e jardim e nao e canal, que e exatamente por que esta aqui."
+              },
+              "address": "8 Huqiu Hill Gate, Gusu District · 苏州市姑苏区虎丘山门内8号",
+              "coords": [
+                31.3375463,
+                120.5764425
+              ]
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "~16:30–18:00",
+              "text": {
+                "en": "Pingjiang Road at dusk, and dinner",
+                "pt": "Rua Pingjiang no fim da tarde, e jantar"
+              },
+              "note": {
+                "en": "Back east, about 25 minutes. A canal lined with stone bridges and old houses, where Suzhou stops being a ticket and turns back into a city. Free. Sunset lands around 17:10, and there is plenty to eat along it before the garden.",
+                "pt": "De volta para leste, uns 25 minutos. Um canal ladeado de pontes de pedra e casas antigas, onde Suzhou deixa de ser ingresso e volta a ser cidade. Gratuito. O por do sol cai por volta das 17:10, e ha bastante o que comer ao longo dele antes do jardim."
+              },
+              "address": "Pingjiang Road, Gusu District · 苏州市姑苏区平江路",
+              "coords": [
+                31.3149294,
+                120.6296912
+              ]
+            },
+            {
+              "type": "star",
+              "period": "night",
+              "time": "18:30–21:30",
+              "text": {
+                "en": "Master of the Nets Night Garden",
+                "pt": "Jardim Noturno do Master of the Nets"
+              },
+              "note": {
+                "en": "The single thing a day trip can never give you. An 800-year-old garden opened after dark, with Kunqu opera, pingtan storytelling, guzheng and bamboo flute staged in different courtyards as you move through them. CNY 120, runs 18:30 to 21:30, March to November only. Book with passport details via the official Suzhou tourism channel.",
+                "pt": "A unica coisa que um bate-volta jamais te daria. Um jardim de 800 anos aberto depois do escuro, com opera Kunqu, narrativa pingtan, guzheng e flauta de bambu encenados em patios diferentes conforme voce atravessa. CNY 120, das 18:30 as 21:30, so de marco a novembro. Reserve com dados do passaporte pelo canal oficial de turismo de Suzhou."
+              },
+              "address": "11 Kuojiatou Alley, Gusu District · 苏州市姑苏区阔家头巷11号",
+              "tickets": "https://www.szylly.com",
+              "coords": [
+                31.3004239,
+                120.6297972
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "night",
+              "time": "~21:45–22:30",
+              "text": {
+                "en": "Pingjiang Road after the crowds",
+                "pt": "Rua Pingjiang depois da multidao"
+              },
+              "note": {
+                "en": "Walk back through the canal lanes with the lanterns on and the tour groups gone home to Shanghai. Same street as this afternoon, completely different city. This is what the night bought you.",
+                "pt": "Volte pelas vielas do canal com as lanternas acesas e as excursoes ja de volta para Shanghai. A mesma rua da tarde, uma cidade completamente diferente. Foi isto que a noite te comprou."
+              },
+              "address": "Pingjiang Road, Gusu District · 苏州市姑苏区平江路",
+              "coords": [
+                31.3149294,
+                120.6296912
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "nights": 2,
+      "days": [
+        {
+          "note": {
+            "en": "29 Oct, Thursday, back from Suzhou. This day is deliberately light and it is not laziness: the Night Garden runs until 21:30 and you will have walked Pingjiang Road at 22:00, so you land here with a sleep debt worth respecting. Train mid-morning, the soup dumplings properly this time, then the Bund in daylight, which is a genuinely different building from the Bund at night, walked north to the quiet end. Early dinner. Tomorrow is the last day and it starts at 09:00 sharp.",
+            "pt": "29/out, quinta, de volta de Suzhou. Este dia e leve de proposito e nao e preguica: o Jardim Noturno vai ate as 21:30 e voce tera caminhado pela Rua Pingjiang as 22:00, entao chega aqui com uma divida de sono que merece respeito. Trem no meio da manha, os xiaolongbao direito desta vez e entao o Bund a luz do dia, que e um predio genuinamente diferente do Bund a noite, caminhado para o norte ate a ponta silenciosa. Jantar cedo. Amanha e o ultimo dia e comeca as 09:00 em ponto."
+          },
+          "items": [
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "~10:20 → ~11:00",
+              "text": {
+                "en": "Train back from Suzhou",
+                "pt": "Trem de volta de Suzhou"
+              },
+              "note": {
+                "en": "23 to 40 minutes and trains run constantly, so sleep in, check out slowly and take whatever leaves when you are ready. There is nothing today that punishes a late start.",
+                "pt": "23 a 40 minutos e os trens saem o tempo todo, entao durma, faca o check-out sem pressa e pegue o que sair quando estiver pronto. Nao ha nada hoje que puna um comeco tardio."
+              },
+              "address": "Suzhou Railway Station · 苏州站",
+              "coords": [
+                31.3318337,
+                120.6062832
+              ]
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "~12:15–13:15",
+              "text": {
+                "en": "Xiaolongbao at Jia Jia Tang Bao",
+                "pt": "Xiaolongbao no Jia Jia Tang Bao"
+              },
+              "note": {
+                "en": "The soup dumplings that deserve a second visit. You ate these on 12 Oct on 28 hours of travel and barely registered them; this time you can taste what you came for. Open 07:30 to 20:30; the queue moves fast once it starts.",
+                "pt": "Os xiaolongbao que merecem uma segunda visita. Voce os comeu em 12/out com 28h de viagem nas costas e mal registrou; desta vez da para sentir o gosto do que veio buscar. Abre 07:30 as 20:30; a fila anda rapido quando comeca."
+              },
+              "address": "127 Huanghe Road, Huangpu District · 上海市黄浦区黄河路127号",
+              "coords": [
+                31.236418,
+                121.4663129
+              ]
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "~15:00–16:15",
+              "text": {
+                "en": "The Bund in daylight",
+                "pt": "The Bund a luz do dia"
+              },
+              "note": {
+                "en": "You have only ever seen this lit up. In daylight it stops being a skyline photo and becomes what it actually is: a mile of 1920s banks and trading houses in granite, built by people who thought they were staying. Free.",
+                "pt": "Voce so viu isto iluminado. A luz do dia ele deixa de ser foto de skyline e vira o que de fato e: um quilometro e meio de bancos e casas de comercio dos anos 1920 em granito, erguidos por gente que achava que ia ficar. Gratuito."
+              },
+              "address": "Zhongshan East 1st Road, Huangpu District · 上海市黄浦区中山东一路",
+              "coords": [
+                31.2353356,
+                121.487632
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "~16:15–17:15",
+              "text": {
+                "en": "Waibaidu Bridge and Bund Source",
+                "pt": "Waibaidu Bridge e Bund Source"
+              },
+              "note": {
+                "en": "Keep walking north to the 1907 steel bridge and the restored 1920s blocks behind it. Quieter than the main promenade and better built. Sunset is around 17:10, so you finish in good light.",
+                "pt": "Continue para o norte ate a ponte de aco de 1907 e os quarteiroes restaurados dos anos 1920 atras dela. Mais silencioso que o calcadao principal e melhor construido. O por do sol e por volta das 17:10, entao voce termina com boa luz."
+              },
+              "address": "Waibaidu Bridge, Huangpu District · 上海市黄浦区外白渡桥",
+              "coords": [
+                31.2453073,
+                121.4857442
+              ]
+            }
+          ]
+        },
+        {
+          "note": {
+            "en": "30 Oct, the last day, and the one the whole calendar has been protecting. The Yu Garden was shut on both Mondays you were in this city, so today at 09:00 sharp is the only time it ever opens to you. Garden first while it is empty, the bazaar wrapped around its gate, then cross the Huangpu the way the city crosses it, on the 2 yuan commuter ferry rather than under it by metro. Pudong all afternoon, closing on the tallest building in China as the sun goes down at 17:05. Pack tonight, not tomorrow. Tomorrow: taxi from the hotel at 06:45, Terminal 2 by 08:00, BA0168 check-in closes 09:55. Do not improvise tomorrow.",
+            "pt": "30/out, o ultimo dia, e aquele que o calendario inteiro vinha protegendo. O Yu Garden esteve fechado nas duas segundas em que voce esteve nesta cidade, entao hoje as 09:00 em ponto e a unica hora em que ele abre para voce. Jardim primeiro, enquanto esta vazio, o bazar que envolve o portao dele e entao atravesse o Huangpu como a cidade o atravessa: na balsa de 2 yuan dos moradores, e nao por baixo dele de metro. Pudong a tarde inteira, fechando no predio mais alto da China com o sol se pondo as 17:05. Faca a mala hoje, nao amanha. Amanha: taxi do hotel as 06:45, Terminal 2 as 08:00, check-in do BA0168 fecha as 09:55. Nao improvise amanha."
+          },
+          "items": [
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "09:00–10:45",
+              "text": {
+                "en": "Yu Garden",
+                "pt": "Yu Garden"
+              },
+              "note": {
+                "en": "The real Ming classical garden: rockeries, ponds and dragon walls folded into a space far smaller than it feels. Closed on Mondays, which took it from you on both 12 and 26 Oct, so this is its only slot in the entire trip. CNY 40 in October, 09:00 to 16:30. Arrive at opening and you get it nearly empty.",
+                "pt": "O verdadeiro jardim classico Ming: rochedos, lagos e muros de dragao dobrados num espaco bem menor do que parece. Fecha as segundas, o que te tirou ele em 12 e em 26/out, entao este e o unico encaixe dele na viagem inteira. CNY 40 em outubro, 09:00 as 16:30. Chegue na abertura e voce o pega quase vazio."
+              },
+              "address": "218 Anren Street, Huangpu District · 上海市黄浦区安仁街218号",
+              "coords": [
+                31.2289274,
+                121.4879752
+              ]
+            },
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "~10:45–11:45",
+              "text": {
+                "en": "Nanshi Old Town and Yuyuan Bazaar",
+                "pt": "Nanshi Old Town e Bazar Yuyuan"
+              },
+              "note": {
+                "en": "The bazaar wraps around the garden gate, so you walk straight out into it: food stalls, silk, tea and the teahouse on the zigzag bridge. You saw this jet-lagged on 12 Oct with the garden shut; now the two halves finally fit together. Free.",
+                "pt": "O bazar envolve o portao do jardim, entao voce sai direto nele: barracas de comida, seda, cha e a casa de cha da ponte em ziguezague. Voce viu isto com jet-lag em 12/out, com o jardim fechado; agora as duas metades finalmente se encaixam. Gratuito."
+              },
+              "address": "Yuyuan Old Street, Huangpu District · 上海市黄浦区豫园老街",
+              "coords": [
+                31.2293228,
+                121.487021
+              ]
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "~13:00–13:20",
+              "text": {
+                "en": "Huangpu ferry, Jinling Road to Dongchang Road",
+                "pt": "Balsa do Huangpu, Jinling Road ate Dongchang Road"
+              },
+              "note": {
+                "en": "Lunch near the Old Town, then the best two yuan in Shanghai. The Dongjin line is a commuter ferry, not a tour boat: locals with bicycles and shopping crossing to work, ten minutes on the open deck with the Bund behind you and Lujiazui coming at you. Runs roughly 07:00 to 18:30. It is also simply how you get to Pudong today.",
+                "pt": "Almoce perto da Old Town e depois gaste os melhores dois yuan de Shanghai. A linha Dongjin e balsa de travessia, nao barco de turismo: moradores com bicicleta e compras indo trabalhar, dez minutos no deck aberto com o Bund atras de voce e Lujiazui vindo na sua direcao. Opera mais ou menos das 07:00 as 18:30. E tambem simplesmente como voce vai a Pudong hoje."
+              },
+              "address": "Jinling East Road Ferry Terminal, Huangpu District · 上海市黄浦区金陵东路渡口",
+              "coords": [
+                31.2353356,
+                121.487632
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "~13:30–16:00",
+              "text": {
+                "en": "Lujiazui",
+                "pt": "Lujiazui"
+              },
+              "note": {
+                "en": "The ferry lands you at Dongchang Road, a short walk from the towers. The skyline you have been photographing from the Bund all trip, now seen from underneath. Walk the elevated ring between the three towers, with time to spare before the slot.",
+                "pt": "A balsa te deixa na Dongchang Road, a uma curta caminhada das torres. O skyline que voce fotografou do Bund a viagem inteira, agora visto de baixo. Percorra o anel elevado entre as tres torres, com tempo sobrando antes do horario marcado."
+              },
+              "address": "Lujiazui, Pudong New Area · 上海市浦东新区陆家嘴",
+              "coords": [
+                31.2401683,
+                121.4979446
+              ]
+            },
+            {
+              "type": "star",
+              "period": "night",
+              "time": "~16:15–18:30",
+              "text": {
+                "en": "Shanghai Tower at sunset",
+                "pt": "Shanghai Tower no por do sol"
+              },
+              "note": {
+                "en": "Floor 118 of the tallest building in China, and the right way to end 21 days. Sunset is 17:05, so a 16:15 slot buys you the city in daylight, at golden hour and fully lit, and you come down in the dark. CNY 180, open 08:30 to 21:30. Allow 30 minutes for security. The sunset slot fills, book ahead.",
+                "pt": "O 118o andar do predio mais alto da China, e o jeito certo de encerrar 21 dias. O por do sol e as 17:05, entao um slot as 16:15 te da a cidade de dia, na hora dourada e toda iluminada, e voce desce no escuro. CNY 180, aberto 08:30 as 21:30. Conte 30 minutos para a seguranca. O slot do por do sol enche, reserve antes."
+              },
+              "address": "501 Yincheng Middle Road, Lujiazui, Pudong New Area · 上海市浦东新区陆家嘴银城中路501号",
+              "tickets": "https://www.klook.com/en-US/activity/4333-shanghai-tower-observation-deck-shanghai/",
+              "coords": [
+                31.2356449,
+                121.5012495
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "city": {
+        "en": "Shanghai → London → Rio",
+        "pt": "Shanghai → Londres → Rio"
+      },
+      "nights": 1,
+      "transit": true,
+      "days": [
+        {
+          "note": {
+            "en": "Leave the hotel 06:45–07:00. BA0168 check-in closes at 09:55, one hour before departure. The 4h15 layover at Heathrow T5 is comfortable.",
+            "pt": "Saia do hotel 06:45–07:00. O check-in do BA0168 fecha às 09:55, uma hora antes da partida. A conexão de 4h15 em Heathrow T5 é confortável."
+          },
+          "items": [
+            {
+              "type": "move",
+              "text": {
+                "en": "BA0168 · Shanghai PVG T2 10:55 → Heathrow T5 17:45",
+                "pt": "BA0168 · Shanghai PVG T2 10:55 → Heathrow T5 17:45"
+              }
+            },
+            {
+              "type": "move",
+              "text": {
+                "en": "BA0249 · Heathrow T5 22:00 → Rio 06:50 (+1)",
+                "pt": "BA0249 · Heathrow T5 22:00 → Rio 06:50 (+1)"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "flights": [
+    {
+      "date": "2026-10-11",
+      "flightNo": "BA0169",
+      "from": "London LHR T5",
+      "to": "Shanghai PVG T2",
+      "dep": "12:05",
+      "arr": "07:55 (+1)",
+      "note": {
+        "en": "Arrives on the 12th — that day is a full Shanghai day.",
+        "pt": "Chega no dia 12 — esse dia é um dia cheio em Shanghai."
+      }
+    },
+    {
+      "date": "2026-10-17",
+      "flightNo": "CA9659",
+      "from": "Beijing PEK",
+      "to": "Zhangjiajie DYG",
+      "dep": "07:00",
+      "arr": "09:35",
+      "note": {
+        "en": "The only unavoidable domestic flight. Backup: CA1953, 19:15 → 21:45. CONFIRM it flies daily in October — sources disagree.",
+        "pt": "O único voo doméstico inevitável. Backup: CA1953, 19:15 → 21:45. CONFIRME se voa todo dia em outubro — as fontes divergem."
+      }
+    },
+    {
+      "date": "2026-10-31",
+      "flightNo": "BA0168",
+      "from": "Shanghai PVG T2",
+      "to": "London LHR T5",
+      "dep": "10:55",
+      "arr": "17:45",
+      "note": {
+        "en": "Check-in closes 09:55. Leave the hotel 06:45–07:00 (Friday rush).",
+        "pt": "Check-in fecha 09:55. Saia do hotel 06:45–07:00 (rush de sexta)."
+      }
+    },
+    {
+      "date": "2026-10-31",
+      "flightNo": "BA0249",
+      "from": "London LHR T5",
+      "to": "Rio de Janeiro",
+      "dep": "22:00",
+      "arr": "06:50 (+1)"
+    }
+  ]
+}
