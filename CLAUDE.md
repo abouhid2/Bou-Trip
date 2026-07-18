@@ -2,10 +2,10 @@
 
 Este repositório é um **gerador de roteiro de viagem**. Quando alguém abrir o projeto
 no Claude e pedir algo como *"monta meu roteiro"* / *"me ajuda a planejar minha viagem"*,
-siga este fluxo. O resultado é um HTML com até **6 abas** (📅 Calendário, 🗒️ Roteiro,
-🚆 Transportes, 📍 Lugares, 🛏️ Hospedagem, 🗺️ Mapa) e **filtro por cidade** — quanto mais rica a
+siga este fluxo. O resultado é um HTML com até **7 abas** (📅 Calendário, 🗒️ Roteiro,
+🚆 Transportes, 📍 Lugares, 🛏️ Hospedagem, 🍽️ Restaurantes, 🗺️ Mapa) e **filtro por cidade** — quanto mais rica a
 informação no `trip.json` (descrições, endereços, coordenadas, links), melhor ficam as abas.
-A aba Hospedagem só aparece se houver `stays`.
+A aba Hospedagem só aparece se houver `stays`; a aba Restaurantes, só se houver `dining`.
 
 ## 1. Entreviste a pessoa (em português, ou no idioma dela)
 Pergunte, de forma leve e uma coisa de cada vez:
@@ -35,6 +35,10 @@ Quanto menos extras, mais barato e rápido (bom para quem está no plano grátis
 - **🛏️ Hospedagem** (`stays`): os dados saem dos e-mails de reserva da pessoa, então custa
   ~zero pesquisa — só as `coords` do hotel exigem uma busca. Ofereça sempre que houver reserva.
 - **🚉 Estações** (`from`/`to` com `coords`): onde pegar cada trem/voo. Uma busca por estação.
+- **🍽️ Restaurantes** (`dining`): 3 sugestões por cidade (alta gastronomia · meio-termo · local
+  e barato). Exige pesquisa por cidade — é o extra mais caro em tokens, então ofereça e confirme
+  antes. Para viagens longas rende montar um **subagente especialista em restaurantes** que
+  pesquisa cidade a cidade (ver [`EXPERTS.md`](EXPERTS.md)).
 
 Se a pessoa não opinar, use o default **Base + Mapa & endereços + Notas ricas** (o que mais
 agrega sem explodir o gasto); **Fotos** e **Ingressos** só quando pedir.
@@ -76,6 +80,7 @@ Escreva um `trip.json` seguindo o formato de **`trip.example.json`** (é o exemp
 - `stops`: lista de paradas na ordem da viagem (ver abaixo)
 - `flights`: lista opcional `{ date, flightNo, from, to, dep, arr, note }` (aparece na aba Transportes)
 - `stays`: lista opcional de reservas (ver abaixo) — cria a aba 🛏️ Hospedagem
+- `dining`: lista opcional de restaurantes (ver abaixo) — cria a aba 🍽️ Restaurantes
 
 ### Hospedagem (`stays[]`) — opcional
 Onde a pessoa despeja os dados da reserva. Só `name` é essencial; **o que faltar simplesmente
@@ -99,6 +104,26 @@ não aparece** no card, então não invente nada para preencher.
 - **`city` é o que liga a reserva ao filtro.** Se não casar com nenhuma parada, o card aparece
   em qualquer filtro (não some) — mas o certo é casar.
 - `confirmation`, `price` e `phone` são **dados pessoais**: pergunte, nunca pesquise nem deduza.
+
+### Restaurantes (`dining[]`) — opcional
+Três sugestões por cidade, uma de cada faixa. Só `name` e `tier` são essenciais; **o que faltar
+não aparece** no card. Agrupa por cidade (na ordem do roteiro) e, dentro da cidade, ordena as
+faixas de `fine` → `mid` → `local`.
+```jsonc
+{
+  "city": { "en": "Beijing", "pt": "Pequim" },  // casa com a "city" de uma parada p/ entrar no filtro
+  "tier": "fine",                                // "fine" (alta gastronomia) | "mid" (meio-termo) | "local" (barato)
+  "name": "Da Dong 大董",                         // romanizado + nome local
+  "cuisine": { "en": "Peking duck", "pt": "Pato laqueado" },
+  "note": { "en": "...", "pt": "..." },          // 1 frase de por que vale
+  "address": "... · 北京市东城区",                 // clicável; inclua a versão no idioma local
+  "price": "¥400+/pessoa",                        // faixa por pessoa
+  "coords": [39.9146, 116.4177],                 // 🍽️ ponto próprio no mapa/KML — WGS-84, nunca do Google na China
+  "url": "https://..."                            // site/reserva; vira link no nome
+}
+```
+- **Nunca invente.** Pesquise; se não achar uma faixa numa cidade, deixe-a de fora em vez de inventar.
+- Faixas por cidade: `fine` = Michelin/muito chique, `mid` = bom custo-benefício, `local` = onde o local come.
 
 ### Estações e aeroportos no mapa
 `from`/`to` — de um voo em `flights` **ou** de um item `type: "move"` — aceitam texto simples

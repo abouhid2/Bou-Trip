@@ -142,5 +142,15 @@
       <description>Shanghai · 501 Yincheng Middle Rd, Pudong, Shanghai · 上海市浦东新区银城中路501号</description>
       <Point><coordinates>121.5015,31.2356,0</coordinates></Point>
     </Placemark>
+    <Placemark>
+      <name>🍽️ Da Dong 大董</name>
+      <description>Pequim · Jinbao Place, Dongcheng · 北京市东城区金宝街</description>
+      <Point><coordinates>116.4177,39.9146,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Fu He Hui 福和慧</name>
+      <description>Shanghai · 1037 Yuyuan Road, Changning · 上海市长宁区愚园路1037号</description>
+      <Point><coordinates>121.4331,31.2213,0</coordinates></Point>
+    </Placemark>
   </Document>
 </kml>

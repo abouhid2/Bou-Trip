@@ -45,6 +45,178 @@
       "arr": "06:50+1"
     }
   ],
+  "dining": [
+    {
+      "city": {
+        "en": "Beijing",
+        "pt": "Pequim"
+      },
+      "tier": "fine",
+      "name": "Da Dong 大董",
+      "cuisine": {
+        "en": "Peking duck, modern",
+        "pt": "Pato laqueado moderno"
+      },
+      "note": {
+        "en": "The famous 'super-lean' roast duck, plated like fine dining.",
+        "pt": "O famoso pato 'super magro', empratado como alta gastronomia."
+      },
+      "address": "Jinbao Place, Dongcheng · 北京市东城区金宝街",
+      "price": "¥400+/pessoa",
+      "coords": [
+        39.9146,
+        116.4177
+      ]
+    },
+    {
+      "city": {
+        "en": "Beijing",
+        "pt": "Pequim"
+      },
+      "tier": "mid",
+      "name": "Siji Minfu 四季民福",
+      "cuisine": {
+        "en": "Peking duck",
+        "pt": "Pato laqueado"
+      },
+      "note": {
+        "en": "Beijingers' favourite duck house; expect a queue, the branch by the Forbidden City has a rooftop view.",
+        "pt": "A casa de pato preferida dos pequineses; espere fila, a filial perto da Cidade Proibida tem vista do terraco."
+      },
+      "address": "Nanchizi Dajie, Dongcheng · 北京市东城区南池子大街",
+      "price": "¥150/pessoa"
+    },
+    {
+      "city": {
+        "en": "Beijing",
+        "pt": "Pequim"
+      },
+      "tier": "local",
+      "name": "Jubaoyuan 聚宝源",
+      "cuisine": {
+        "en": "Copper-pot mutton hotpot",
+        "pt": "Hotpot de carneiro em panela de cobre"
+      },
+      "note": {
+        "en": "Old-Beijing hotpot in the Niujie Muslim quarter: cheap, loud, authentic.",
+        "pt": "Hotpot da velha Pequim no bairro muculmano de Niujie: barato, barulhento, autentico."
+      },
+      "address": "Niujie, Xicheng · 北京市西城区牛街",
+      "price": "¥100/pessoa"
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "fine",
+      "name": "Fu He Hui 福和慧",
+      "cuisine": {
+        "en": "Vegetarian tasting menu",
+        "pt": "Menu degustacao vegetariano"
+      },
+      "note": {
+        "en": "Michelin-starred Zen vegetarian, a multi-course meditation.",
+        "pt": "Vegetariano zen com estrela Michelin, uma meditacao de varios pratos."
+      },
+      "address": "1037 Yuyuan Road, Changning · 上海市长宁区愚园路1037号",
+      "price": "¥800+/pessoa",
+      "coords": [
+        31.2213,
+        121.4331
+      ]
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "mid",
+      "name": "Lao Jishi 老吉士酒家",
+      "cuisine": {
+        "en": "Shanghainese (benbang)",
+        "pt": "Cozinha de Shanghai (benbang)"
+      },
+      "note": {
+        "en": "Tiny, beloved benbang classic; book ahead for the red-braised pork.",
+        "pt": "Minusculo e adorado classico benbang; reserve pela barriga de porco caramelizada."
+      },
+      "address": "41 Tianping Road, Xuhui · 上海市徐汇区天平路41号",
+      "price": "¥200/pessoa"
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "local",
+      "name": "Jia Jia Tang Bao 佳家汤包",
+      "cuisine": {
+        "en": "Soup dumplings",
+        "pt": "Xiaolongbao (bolinhos de sopa)"
+      },
+      "note": {
+        "en": "Some of the city's best xiaolongbao at a hole-in-the-wall counter.",
+        "pt": "Alguns dos melhores xiaolongbao da cidade num balcao de esquina."
+      },
+      "address": "90 Huanghe Road, Huangpu · 上海市黄浦区黄河路90号",
+      "price": "¥40/pessoa"
+    },
+    {
+      "city": {
+        "en": "Guangzhou · Canton",
+        "pt": "Guangzhou · Cantão"
+      },
+      "tier": "fine",
+      "name": "Jiang by Chef Fei",
+      "cuisine": {
+        "en": "Cantonese fine dining",
+        "pt": "Alta gastronomia cantonesa"
+      },
+      "note": {
+        "en": "Two-Michelin-star Cantonese at the Mandarin Oriental.",
+        "pt": "Cantonesa com duas estrelas Michelin no Mandarin Oriental."
+      },
+      "address": "Mandarin Oriental, Tianhe · 广州市天河区文华东方酒店",
+      "price": "¥1000+/pessoa"
+    },
+    {
+      "city": {
+        "en": "Guangzhou · Canton",
+        "pt": "Guangzhou · Cantão"
+      },
+      "tier": "mid",
+      "name": "Bing Sheng 炳胜品味",
+      "cuisine": {
+        "en": "Cantonese",
+        "pt": "Cantonesa"
+      },
+      "note": {
+        "en": "The reliable modern Cantonese benchmark: roast goose and seafood.",
+        "pt": "A referencia cantonesa moderna e confiavel: ganso assado e frutos do mar."
+      },
+      "address": "Tianhe District · 广州市天河区",
+      "price": "¥200/pessoa"
+    },
+    {
+      "city": {
+        "en": "Guangzhou · Canton",
+        "pt": "Guangzhou · Cantão"
+      },
+      "tier": "local",
+      "name": "Tao Tao Ju 陶陶居",
+      "cuisine": {
+        "en": "Dim sum / yum cha",
+        "pt": "Dim sum / yum cha"
+      },
+      "note": {
+        "en": "A century-old teahouse for morning dim sum on Shangxiajiu.",
+        "pt": "Uma casa de cha centenaria para o dim sum matinal na Shangxiajiu."
+      },
+      "address": "Shangxiajiu, Liwan · 广州市荔湾区上下九",
+      "price": "¥80/pessoa"
+    }
+  ],
   "stops": [
     {
       "city": {
