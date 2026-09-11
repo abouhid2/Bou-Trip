@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>China — Outubro 2026</name>
+    <Placemark>
+      <name>🚉 Shanghai Pudong PVG 上海浦东国际机场</name>
+      <description>Shanghai (chegada)</description>
+      <Point><coordinates>121.8041,31.1427,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Xiaolongbao no Jia Jia Tang Bao</name>
+      <description>Shanghai (chegada) · 127 Huanghe Road, Huangpu District · 上海市黄浦区黄河路127号</description>
+      <Point><coordinates>121.4663129,31.236418,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Roupa de frio na Uniqlo, Nanjing Road</name>
+      <description>Shanghai (chegada) · Nanjing Road Pedestrian Street, Huangpu District · 上海市黄浦区南京路步行街</description>
+      <Point><coordinates>121.47901,31.23876,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Nanshi Old Town e Bazar Yuyuan</name>
+      <description>Shanghai (chegada) · Yuyuan Old Street, Huangpu District · 上海市黄浦区豫园老街</description>
+      <Point><coordinates>121.487021,31.2293228,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>The Bund, caminhando para o norte</name>
+      <description>Shanghai (chegada) · Zhongshan East 1st Road, Huangpu District · 上海市黄浦区中山东一路</description>
+      <Point><coordinates>121.487632,31.2353356,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Waibaidu Bridge e Bund Source</name>
+      <description>Shanghai (chegada) · Waibaidu Bridge, Huangpu District · 上海市黄浦区外白渡桥</description>
+      <Point><coordinates>121.4857442,31.2453073,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Onibus safari pela area de carro</name>
+      <description>Shanghai (chegada) · 178 Nanliu Road, Nanhui, Pudong New Area · 上海市浦东新区南六公路178号</description>
+      <Point><coordinates>121.7166359,31.0573825,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Hotel ate o aeroporto de Shanghai Pudong (PVG)</name>
+      <description>Zhangjiajie · Shanghai Pudong International Airport · 上海浦东国际机场</description>
+      <Point><coordinates>121.8041,31.1427,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Hotel, central Shanghai 上海市中心</name>
+      <description>Zhangjiajie</description>
+      <Point><coordinates>121.4737,31.2304,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Voo Shanghai PVG ate Zhangjiajie DYG</name>
+      <description>Zhangjiajie · Zhangjiajie Hehua DYG · 张家界荷花国际机场</description>
+      <Point><coordinates>110.4416,29.103,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Zhangjiajie Hehua DYG 张家界荷花国际机场</name>
+      <description>Zhangjiajie</description>
+      <Point><coordinates>110.4416,29.103,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Elevador Bailong</name>
+      <description>Zhangjiajie · Wulingyuan District, Zhangjiajie · 湖南省张家界市武陵源区 百龙天梯</description>
+      <Point><coordinates>110.4612,29.3512,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Yuanjiajie e a Primeira Ponte sob o Ceu</name>
+      <description>Zhangjiajie · Wulingyuan District, Zhangjiajie · 湖南省张家界市武陵源区 袁家界 天下第一桥</description>
+      <Point><coordinates>110.4332,29.3475,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Montanha Tianzi</name>
+      <description>Zhangjiajie · Wulingyuan District, Zhangjiajie · 湖南省张家界市武陵源区 天子山</description>
+      <Point><coordinates>110.4948,29.3941,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Wulingyuan ate o Grand Canyon de Zhangjiajie</name>
+      <description>Zhangjiajie · Zhangjiajie Grand Canyon, Sanguansi, Cili County · 湖南省张家界市慈利县三官寺乡 张家界大峡谷</description>
+      <Point><coordinates>110.6937,29.4119,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Wulingyuan 武陵源</name>
+      <description>Zhangjiajie</description>
+      <Point><coordinates>110.5486,29.3455,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Zhangjiajie Grand Canyon 张家界大峡谷</name>
+      <description>Zhangjiajie</description>
+      <Point><coordinates>110.6937,29.4119,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Ponte de Vidro do Grand Canyon</name>
+      <description>Zhangjiajie · Zhangjiajie Grand Canyon Glass Bridge, Cili County · 湖南省张家界市慈利县 张家界大峡谷玻璃桥</description>
+      <Point><coordinates>110.698,29.399,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Grand Canyon ate a Caverna do Dragao Amarelo</name>
+      <description>Zhangjiajie · Huanglong Rd, Suoxiyu, Wulingyuan District · 湖南省张家界市武陵源区索溪峪黄龙路</description>
+      <Point><coordinates>110.6147,29.368,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Show Charm of Xiangxi (魅力湘西)</name>
+      <description>Zhangjiajie · 20 Guihua Road, Wulingyuan District · 湖南省张家界市武陵源区桂花路20号</description>
+      <Point><coordinates>110.5406691,29.3517007,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Teleferico do Tianmen Shan</name>
+      <description>Zhangjiajie · Guanli Road, Yongding District, Zhangjiajie · 湖南省张家界市永定区官黎路 天门山索道下站</description>
+      <Point><coordinates>110.4783,29.1141,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Trilhas de vidro (Guigu e Coiling Dragon)</name>
+      <description>Zhangjiajie · Tianmen Mountain summit, Yongding District · 湖南省张家界市永定区 天门山鬼谷栈道/盘龙崖玻璃栈道</description>
+      <Point><coordinates>110.4789,29.0499,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Lago Baofeng (宝峰湖)</name>
+      <description>Furong · Baofeng Road, Wulingyuan District · 湖南省张家界市武陵源区宝峰路</description>
+      <Point><coordinates>110.5469203,29.3257585,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Zhangjiajie West 张家界西站</name>
+      <description>Furong</description>
+      <Point><coordinates>110.4577,29.1714,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Furongzhen 芙蓉镇站</name>
+      <description>Furong</description>
+      <Point><coordinates>109.982,28.773,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Cachoeira de Furong e a passagem por tras dela</name>
+      <description>Furong · Furong Waterfall, Furong Town, Yongshun County · 芙蓉镇大瀑布，永顺县芙蓉镇</description>
+      <Point><coordinates>109.9398,28.7451,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Acendimento das luzes na Ponte Tuwang</name>
+      <description>Furong · Tuwang Bridge, Furong Town · 土王桥，芙蓉镇</description>
+      <Point><coordinates>109.9417,28.7453,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Vila de Furong ate a estacao de Furongzhen de taxi</name>
+      <description>Guilin / Yangshuo · Furongzhen Railway Station, X041, Yongshun County · 芙蓉镇站，X041，永顺县</description>
+      <Point><coordinates>109.9819,28.7731,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Trem Furongzhen ate Guilin Norte, baldeacao em Huaihua Sul</name>
+      <description>Guilin / Yangshuo · Guilin North Railway Station, Diecai District, Guilin · 桂林市叠彩区桂林北站</description>
+      <Point><coordinates>110.2976,25.3318,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Guilin North 桂林北站</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>110.2976,25.3318,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Guilin Norte ate o hotel no centro, largar as malas</name>
+      <description>Guilin / Yangshuo · Downtown Guilin, Xiufeng District · 桂林市秀峰区市中心</description>
+      <Point><coordinates>110.2945,25.2816,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Cruzeiro noturno Dois Rios e Quatro Lagos</name>
+      <description>Guilin / Yangshuo · Two Rivers Four Lakes, Fisherman's Wharf ticket office, Binjiang Road, Guilin · 桂林市滨江路 两江四湖景区渔人码头</description>
+      <Point><coordinates>110.2936,25.2746,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Guilin ate Longji de carro</name>
+      <description>Guilin / Yangshuo · Longji Rice Terraces ticket office, Longsheng County, Guilin · 桂林市龙胜各族自治县 龙脊梯田风景区售票处</description>
+      <Point><coordinates>110.0675,25.7274,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Downtown Guilin 桂林市中心</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>110.2945,25.2816,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Longji Rice Terraces 龙脊梯田</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>110.0675,25.7274,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Vila de Ping'an e arroz no bambu</name>
+      <description>Guilin / Yangshuo · Ping'an Village, Longji, Longsheng County · 龙胜各族自治县龙脊平安寨</description>
+      <Point><coordinates>110.1198,25.7585,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Caminhada nos terracos de Longji: Sete Estrelas e Nove Dragoes</name>
+      <description>Guilin / Yangshuo · Seven Stars Accompany the Moon viewpoint, Longji · 龙脊七星伴月观景点</description>
+      <Point><coordinates>110.0907,25.7482,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Check-out, hotel ate o cais de Mopanshan</name>
+      <description>Guilin / Yangshuo · Mopanshan Pier, Guimo Road, Lingchuan County, Guilin · 桂林市灵川县桂磨路磨盘山码头</description>
+      <Point><coordinates>110.4269,25.1506,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Mopanshan Pier 磨盘山码头</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>110.4269,25.1506,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Cruzeiro no rio Li, Guilin ate Yangshuo (83 km)</name>
+      <description>Guilin / Yangshuo · Mopanshan Pier to Yangshuo Longtoushan Pier, Li River · 漓江，磨盘山码头至阳朔龙头山码头</description>
+      <Point><coordinates>110.4898269,24.9386814,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Cais de Yangshuo ate o hotel, largar as malas</name>
+      <description>Guilin / Yangshuo · Yangshuo town, Yangshuo County, Guilin · 桂林市阳朔县阳朔镇</description>
+      <Point><coordinates>110.4909192,24.7809551,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Bicicleta pelo vale do Yulong desde a Ponte Gongnong</name>
+      <description>Guilin / Yangshuo · Gongnong Bridge, Yulong River, Yangshuo · 阳朔县遇龙河工农桥</description>
+      <Point><coordinates>110.4877677,24.7381472,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Impression Liu Sanjie - Zhang Yimou sobre o proprio rio</name>
+      <description>Guilin / Yangshuo · Impression Liu Sanjie theatre, Tianyuan Road, Yangshuo · 阳朔县田园路 印象刘三姐</description>
+      <Point><coordinates>110.5035926,24.7699694,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>West Street e peixe na cerveja, depois do espetaculo</name>
+      <description>Guilin / Yangshuo · West Street, Yangshuo County, Guilin · 桂林市阳朔县西街</description>
+      <Point><coordinates>110.4905,24.7782,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Yangshuo town 阳朔镇</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>110.4909192,24.7809551,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Morro da Tromba de Elefante e a Gruta Agua-Lua</name>
+      <description>Guilin / Yangshuo · Elephant Trunk Hill, Binjiang Road, Xiangshan District, Guilin · 桂林市象山区滨江路象鼻山</description>
+      <Point><coordinates>110.2915,25.2701,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Gruta da Flauta de Junco (corte se preferir)</name>
+      <description>Guilin / Yangshuo · Reed Flute Cave, Ludi Road, Xiufeng District, Guilin · 桂林市秀峰区芦笛路芦笛岩</description>
+      <Point><coordinates>110.2671,25.3119,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Cidade de Guilin ate o aeroporto de Guilin (KWL)</name>
+      <description>Guilin / Yangshuo · Guilin Liangjiang International Airport · 桂林两江国际机场</description>
+      <Point><coordinates>110.039,25.2181,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Guilin Liangjiang KWL 桂林两江国际机场</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>110.039,25.2181,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Voo Guilin KWL ate Pequim</name>
+      <description>Guilin / Yangshuo · Beijing Daxing PKX · 北京大兴国际机场</description>
+      <Point><coordinates>116.4105,39.5098,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Beijing Daxing PKX 北京大兴国际机场</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>116.4105,39.5098,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Ate o Meridian Gate, a entrada sul</name>
+      <description>Pequim · Meridian Gate, Dongcheng District · 北京市东城区午门</description>
+      <Point><coordinates>116.3915912,39.9121168,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>A Cidade Proibida, do Meridian Gate ao Shenwumen</name>
+      <description>Pequim · 4 Jingshan Front Street, Dongcheng District · 北京市东城区景山前街4号</description>
+      <Point><coordinates>116.3907817,39.9174311,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Jingshan Park, a vista do alto</name>
+      <description>Pequim · 44 Jingshan West Street, Xicheng District · 北京市西城区景山西街44号</description>
+      <Point><coordinates>116.3903973,39.9244589,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Drum Tower e Bell Tower</name>
+      <description>Pequim · No. 9 Zhonglouwan Linzi Hutong, Dongcheng District · 东城区钟楼湾临字9号</description>
+      <Point><coordinates>116.3906,39.941,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Rua Qianmen e Dashilan</name>
+      <description>Pequim · Qianmen Street, Dongcheng · 北京市东城区前门大街</description>
+      <Point><coordinates>116.3919,39.8937,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Beco Dashilan, a oeste da Qianmen</name>
+      <description>Pequim · Dashilan Street, Xicheng · 北京市西城区大栅栏街</description>
+      <Point><coordinates>116.3902,39.8945,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Templo do Ceu</name>
+      <description>Pequim · No. 1 Tiantan East Road, Dongcheng District · 东城区天坛东路甲1号</description>
+      <Point><coordinates>116.40639,39.88222,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>PLANO A - Portao, shuttle e chairlift ate a torre 6</name>
+      <description>Pequim · Mutianyu Village, Bohai Town, Huairou District · 怀柔区渤海镇慕田峪村</description>
+      <Point><coordinates>116.5704,40.4319,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Palacio de Verao</name>
+      <description>Pequim · No. 19 Xinjiangongmen Road, Haidian District · 海淀区新建宫门路19号</description>
+      <Point><coordinates>116.2755,39.9998,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Shichahai e Houhai no por do sol</name>
+      <description>Pequim · Shichahai, Xicheng District · 西城区什刹海</description>
+      <Point><coordinates>116.383,39.94,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>PLANO B (troca) - Jinshanling: vazia, mas SEM toboga</name>
+      <description>Pequim · HuaLouGou Village, Bakeshiying Town, Luanping County, Hebei · 河北省滦平县巴克什营镇花楼沟村 金山岭长城</description>
+      <Point><coordinates>117.232864,40.676644,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Beijing North 北京北站</name>
+      <description>Pequim</description>
+      <Point><coordinates>116.3533,39.9481,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Datong South 大同南站</name>
+      <description>Pequim</description>
+      <Point><coordinates>113.1583,40.0206,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Grutas de Yungang</name>
+      <description>Pequim · Yungang Grottoes, Cheng District, Datong, Shanxi · 山西省大同市城区 云冈石窟</description>
+      <Point><coordinates>113.1225,40.1097,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Mosteiro Suspenso (Xuankong Si)</name>
+      <description>Pequim · Hunyuan County, Datong, Shanxi · 山西省大同市浑源县 悬空寺</description>
+      <Point><coordinates>113.6997,39.6672,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Trem G Beijing South ate Shanghai Hongqiao</name>
+      <description>Shanghai · Shanghai Hongqiao Railway Station · 上海虹桥站</description>
+      <Point><coordinates>121.3162,31.196,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Beijing South 北京南站</name>
+      <description>Shanghai</description>
+      <Point><coordinates>116.3726,39.8635,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Shanghai Hongqiao 上海虹桥站</name>
+      <description>Shanghai</description>
+      <Point><coordinates>121.3162,31.196,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Templo Jing'an</name>
+      <description>Shanghai · 1686 Nanjing West Road, Jing'an District · 上海市静安区南京西路1686号</description>
+      <Point><coordinates>121.4407923,31.225215,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Rua de pedestres Nanjing Road</name>
+      <description>Shanghai · Nanjing East Road, Huangpu District · 上海市黄浦区南京东路步行街</description>
+      <Point><coordinates>121.4753016,31.2376841,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Hangzhou East 杭州东站</name>
+      <description>Shanghai</description>
+      <Point><coordinates>120.2082,30.2936,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Templo Lingyin, logo de manha</name>
+      <description>Shanghai · 1 Fayun Alley, Xihu District, Hangzhou · 杭州市西湖区法云弄1号</description>
+      <Point><coordinates>120.0968,30.2428,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Feilai Feng, as grutas esculpidas</name>
+      <description>Shanghai</description>
+      <Point><coordinates>120.0964,30.2389,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Lago Oeste pela Su Causeway</name>
+      <description>Shanghai</description>
+      <Point><coordinates>120.1327,30.2485,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Pagode Leifeng no por do sol</name>
+      <description>Shanghai</description>
+      <Point><coordinates>120.145,30.2339,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Rua Hefang e jantar antes do trem</name>
+      <description>Shanghai</description>
+      <Point><coordinates>120.1556,30.2419,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Trem G Shanghai Hongqiao ate Suzhou, 25 min</name>
+      <description>Shanghai · Suzhou Railway Station · 苏州站</description>
+      <Point><coordinates>120.6062832,31.3318337,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Suzhou 苏州站</name>
+      <description>Shanghai</description>
+      <Point><coordinates>120.6064,31.3329,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Jardim do Administrador Humilde</name>
+      <description>Shanghai · 178 Dongbei Street, Gusu District · 苏州市姑苏区东北街178号</description>
+      <Point><coordinates>120.6247123,31.3263526,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Museu de Suzhou, de I.M. Pei</name>
+      <description>Shanghai · 204 Dongbei Street, Gusu, Suzhou · 苏州市姑苏区东北街204号</description>
+      <Point><coordinates>120.6236,31.3252,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Tiger Hill e o pagode inclinado</name>
+      <description>Shanghai · 8 Huqiu Hill Gate, Gusu District · 苏州市姑苏区虎丘山门内8号</description>
+      <Point><coordinates>120.5764425,31.3375463,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Rua Pingjiang no fim da tarde, e jantar</name>
+      <description>Shanghai · Pingjiang Road, Gusu District · 苏州市姑苏区平江路</description>
+      <Point><coordinates>120.6296912,31.3149294,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>SO SE REABRIR - Jardim Noturno do Master of the Nets</name>
+      <description>Shanghai · 11 Kuojiatou Alley, Gusu District · 苏州市姑苏区阔家头巷11号</description>
+      <Point><coordinates>120.6297972,31.3004239,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Fuxing Park na hora do exercicio matinal</name>
+      <description>Shanghai · 2 Gaolan Road, Huangpu District · 上海市黄浦区皋兰路2号</description>
+      <Point><coordinates>121.4646484,31.2186623,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Rua Wukang</name>
+      <description>Shanghai · Wukang Road, Xuhui District · 上海市徐汇区武康路</description>
+      <Point><coordinates>121.4345823,31.2079627,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Edificio Wukang</name>
+      <description>Shanghai · 1850 Huaihai Middle Road, Xuhui District · 上海市徐汇区淮海中路1850号</description>
+      <Point><coordinates>121.4337292,31.2062561,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Tianzifang</name>
+      <description>Shanghai · Lane 210 Taikang Road, Huangpu District · 上海市黄浦区泰康路210弄</description>
+      <Point><coordinates>121.4641036,31.21034,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Espetaculo acrobatico ERA no Shanghai Circus World</name>
+      <description>Shanghai · 2266 Gonghexin Road, Jing'an District · 上海市静安区共和新路2266号</description>
+      <Point><coordinates>121.4473012,31.2818029,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Yu Garden</name>
+      <description>Shanghai · 218 Anren Street, Huangpu District · 上海市黄浦区安仁街218号</description>
+      <Point><coordinates>121.4879752,31.2289274,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Opcional - Shanghai Museum East, em Pudong</name>
+      <description>Shanghai · 1952 Century Avenue, Pudong · 上海市浦东新区世纪大道1952号</description>
+      <Point><coordinates>121.5344,31.2221,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Lujiazui</name>
+      <description>Shanghai · Lujiazui, Pudong New Area · 上海市浦东新区陆家嘴</description>
+      <Point><coordinates>121.4979446,31.2401683,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Shanghai Tower no por do sol</name>
+      <description>Shanghai · 501 Yincheng Middle Road, Lujiazui, Pudong New Area · 上海市浦东新区陆家嘴银城中路501号</description>
+      <Point><coordinates>121.5012495,31.2356449,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🛏️ Weiting Residence Hotel (Nanjing Road Pedestrian Street)</name>
+      <description>Shanghai (chegada) · 280 Shanxi South Road, Huangpu, Shanghai · 上海市黄浦区山西南路280号</description>
+      <Point><coordinates>121.4789,31.2367,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🛏️ Miss Inn (Zhangjiajie Forest Park Biaozhimen)</name>
+      <description>Zhangjiajie · Wuling Road, beside Charming Xiangxi, Wulingyuan, Zhangjiajie · 张家界市武陵源区武陵大道（魅力湘西旁）</description>
+      <Point><coordinates>110.5407,29.3517,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🛏️ Xiyue·Linjiang Inn 禧粤·临江客栈</name>
+      <description>Furong · 26 Riverside Street, Furong Town, Yongshun · 永顺县芙蓉镇临江街26号</description>
+      <Point><coordinates>109.9398,28.745,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🛏️ Muyunli 暮云·漓酒店（阳朔西街店）</name>
+      <description>Guilin / Yangshuo · 23 Fengming Road, Yangshuo · 阳朔县凤鸣路23号</description>
+      <Point><coordinates>110.489,24.772,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🛏️ Beijing Zhong'an Hotel 北京中安宾馆</name>
+      <description>Pequim · 6 Kuijiachang, Dayangmao Hutong, Dongcheng, Beijing · 北京市东城区大羊毛胡同盔甲厂6号</description>
+      <Point><coordinates>116.4237,39.9023,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Jian Guo 328 建国328</name>
+      <description>Shanghai · 328 Jianguo West Road, Xuhui · 上海市徐汇区建国西路328号</description>
+      <Point><coordinates>121.4533028,31.2070684,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Jia Jia Tang Bao 佳家汤包</name>
+      <description>Shanghai · 90 Huanghe Road, Huangpu · 上海市黄浦区黄河路90号</description>
+      <Point><coordinates>121.4663129,31.236418,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Canton 8 喜粤8号 (Runan Street)</name>
+      <description>Shanghai · 63 Runan Street, Huangpu · 上海市黄浦区汝南街63号</description>
+      <Point><coordinates>121.4788101,31.2045795,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Lost Heaven on the Bund 花马天堂</name>
+      <description>Shanghai · 17 Yan'an East Road, Huangpu · 上海市黄浦区延安东路17号</description>
+      <Point><coordinates>121.4865899,31.2345742,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Da Hu Chun 大壶春</name>
+      <description>Shanghai · 136 Middle Sichuan Road, Huangpu · 上海市黄浦区四川中路136号</description>
+      <Point><coordinates>121.4847725,31.2367029,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Taian Table 泰安门</name>
+      <description>Shanghai · 101-102, Bldg 1, Garden Office, 161 Lane 465 Zhenning Road, Changning · 上海市长宁区镇宁路465弄161号1号楼101-102室</description>
+      <Point><coordinates>121.4283228,31.2238654,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Wei Xiang Zhai 味香斋</name>
+      <description>Shanghai · 14 Yandang Road, Huangpu · 上海市黄浦区雁荡路14号</description>
+      <Point><coordinates>121.4653806,31.2229246,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Lai Lai Xiao Long 莱莱小笼</name>
+      <description>Shanghai · 506 Tianjin Road, Huangpu · 上海市黄浦区天津路506号</description>
+      <Point><coordinates>121.4726404,31.2381093,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Da Dong 大董 (Jinbao Place)</name>
+      <description>Pequim · 5F, Jinbao Place, 88 Jinbao Street, Dongcheng · 北京市东城区金宝街88号金宝汇购物中心5层</description>
+      <Point><coordinates>116.4151611,39.9138657,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Siji Minfu 四季民福 (Wangfujing / Dong'anmen)</name>
+      <description>Pequim · Dong'anmen Dajie, Dongcheng · 北京市东城区东安门大街</description>
+      <Point><coordinates>116.4019727,39.9141268,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ No. 69 Fangzhuanchang Zhajiangmian 方砖厂69号炸酱面</name>
+      <description>Pequim · Fangzhuanchang Hutong, Dongcheng · 北京市东城区方砖厂胡同</description>
+      <Point><coordinates>116.3917452,39.9367072,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Najia Xiaoguan 那家小馆</name>
+      <description>Pequim · 10 Yong'anxili, Jianguomenwai, Chaoyang · 北京市朝阳区建国门外永安里10号</description>
+      <Point><coordinates>116.4411247,39.906236,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Jubaoyuan 聚宝源 (Niujie)</name>
+      <description>Pequim · Niujie Xili, Xicheng · 北京市西城区牛街西里</description>
+      <Point><coordinates>116.3570952,39.8853572,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ King's Joy 京兆尹</name>
+      <description>Pequim · 2 Wudaoying Hutong, Dongcheng · 北京市东城区五道营胡同2号</description>
+      <Point><coordinates>116.409884,39.9468299,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Yaoji Chaogan 姚记炒肝 (Gulou)</name>
+      <description>Pequim · Gulou East Street, Dongcheng (below the Drum Tower) · 北京市东城区鼓楼东大街</description>
+      <Point><coordinates>116.3905653,39.9394536,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Fenglinge 凤临阁</name>
+      <description>Datong · Gulou West Street, Pingcheng District (near Huayan Temple) · 山西省大同市平城区鼓楼西街</description>
+      <Point><coordinates>113.2905569,40.0904829,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Dongfang Xiaomian 东方削面</name>
+      <description>Datong · Yingze Street, Pingcheng District · 山西省大同市平城区迎泽街</description>
+      <Point><coordinates>113.2771686,40.0876215,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Luna @ Yangshuo Village Inn 听月楼</name>
+      <description>Guilin / Yangshuo · Moon Hill, Gaotian, Yangshuo County · 广西壮族自治区阳朔县高田镇月亮山</description>
+      <Point><coordinates>110.4745602,24.7227397,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Chongshan Mifen 崇善米粉</name>
+      <description>Guilin / Yangshuo · Yiren Road Pedestrian Street, Xiufeng District, Guilin · 广西壮族自治区桂林市秀峰区依仁路步行街</description>
+      <Point><coordinates>110.2937604,25.2780661,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Songhelou 松鹤楼 (Guanqian)</name>
+      <description>Suzhou · 72 Taijian Lane, Guanqian, Gusu District · 江苏省苏州市姑苏区太监弄72号</description>
+      <Point><coordinates>120.6215161,31.3127714,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🍽️ Tong De Xing 同得兴 (Jiayu Fang)</name>
+      <description>Suzhou · 6 Jiayu Fang, Renmin Road, Gusu District · 江苏省苏州市姑苏区人民路嘉馀坊6号</description>
+      <Point><coordinates>120.6168809,31.3101121,0</coordinates></Point>
+    </Placemark>
+  </Document>
+</kml>
