@@ -1078,8 +1078,8 @@
       "days": [
         {
           "note": {
-            "en": "Oct 19 (Mon) - The day Furong gave back, spent getting into position. The shape of this block changed: with four days instead of three it now follows the classic Guilin circuit, which means the base is Guilin city for two nights - not because Guilin city is the prize, it is a railway town with expensive thin sights, but because Longji and the cruise pier both leave from there and nothing else works. The morning is still Furong's: the lanes empty out overnight and refill around 09:30, so you get the village to yourself at first light, and only then the taxi to the station. The train eats the middle of the day. You land in Guilin mid-afternoon with nothing owed - check in, and give the evening to the two things the city actually does well after dark: the restored East West Alley behind the old palace wall, and the lit lakes.",
-            "pt": "19/out (seg) - O dia que Furong devolveu, gasto em se posicionar. A forma deste bloco mudou: com quatro dias em vez de tres ele agora segue o circuito classico de Guilin, o que significa base na cidade de Guilin por duas noites - nao porque a cidade seja o premio, ela e uma cidade de estacao com atracoes caras e fracas, mas porque Longji e o cais do cruzeiro saem de la e nada mais fecha. A manha ainda e de Furong: as vielas se esvaziam de noite e enchem la pelas 09:30, entao a vila e sua na primeira luz, e so depois o taxi para a estacao. O trem come o meio do dia. Voce pousa em Guilin no meio da tarde sem dever nada - faca o check-in e de a noite as duas coisas que a cidade faz bem depois do escuro: o restaurado Beco Leste-Oeste atras do muro do velho palacio, e os lagos iluminados."
+            "en": "Oct 19 (Mon) - Out of Furong and straight to Yangshuo, which is the change: the old plan parked two nights in Guilin city and you decided against it. So the train lands at Guilin North and you keep going, about 1h30 more by car, and you sleep in Yangshuo for all three nights with one check-in. What this costs you is the Guilin evening, the Two Rivers Four Lakes night cruise and the Dongxi alley; what it buys you is never packing again until the airport.",
+            "pt": "19/out (seg) - Fora de Furong e direto para Yangshuo, que e a mudanca: o plano antigo estacionava duas noites na cidade de Guilin e voces decidiram contra. Entao o trem pousa em Guilin Norte e voces seguem, mais 1h30 de carro, e dormem em Yangshuo as tres noites com um unico check-in. O que isso custa e a noite de Guilin, o cruzeiro dos Dois Rios e Quatro Lagos e o beco Dongxi; o que compra e nao arrumar mala de novo ate o aeroporto."
           },
           "items": [
             {
@@ -1154,334 +1154,242 @@
             {
               "type": "move",
               "period": "afternoon",
-              "time": "~13:45 → ~14:15",
+              "time": "~1h30",
               "text": {
-                "en": "Guilin North to the hotel downtown, drop bags",
-                "pt": "Guilin Norte ate o hotel no centro, largar as malas"
+                "en": "Guilin North straight on to Yangshuo by car",
+                "pt": "Guilin Norte direto para Yangshuo de carro"
               },
               "note": {
-                "en": "About 8 km south, 20 to 30 minutes by taxi or DiDi, roughly CNY 30. Sleep in the centre, around Zhengyang pedestrian street and the two lakes - everything tonight is walkable from there and tomorrow's car for Longji picks you up at the door. Two nights in the same room, which is a small mercy after a week of moving.",
-                "pt": "Uns 8 km ao sul, 20 a 30 minutos de taxi ou DiDi, uns CNY 30. Durma no centro, em torno da rua de pedestres Zhengyang e dos dois lagos - tudo de hoje a noite e a pe dali e o carro de amanha para Longji te pega na porta. Duas noites no mesmo quarto, o que e uma pequena misericordia depois de uma semana se mudando."
+                "en": "About 80 km, 1h to 1h30 by car and up to 2h with traffic. Do NOT be tempted by the bullet train: Yangshuo's station is 35 km from the town, near Xingping, and the transfer eats whatever the train saved.",
+                "pt": "Uns 80 km, 1h a 1h30 de carro e ate 2h com transito. NAO se tente pelo trem-bala: a estacao de Yangshuo fica a 35 km da cidade, perto de Xingping, e o transfer come o que o trem economizou."
               },
-              "address": "Downtown Guilin, Xiufeng District · 桂林市秀峰区市中心",
-              "coords": [
-                25.2816,
-                110.2945
-              ]
+              "from": {
+                "name": "Guilin North 桂林北站",
+                "coords": [
+                  25.3318,
+                  110.2976
+                ]
+              },
+              "to": {
+                "name": "Yangshuo 阳朔",
+                "coords": [
+                  24.772,
+                  110.489
+                ]
+              }
             },
             {
               "type": "bullet",
               "period": "night",
-              "time": "~17:00-18:30",
               "text": {
-                "en": "East West Alley (Dongxi Xiang)",
-                "pt": "Beco Leste-Oeste (Dongxi Xiang)"
+                "en": "Check in at Muyunli, three nights, one base",
+                "pt": "Check-in na Muyunli, tres noites, uma base so"
               },
-              "note": {
-                "en": "The last surviving lanes of old Guilin, tucked behind the wall of the Jingjiang Prince's City and rebuilt in Ming and Qing style. It is restored rather than original and it knows it, but it is free, it is five minutes from the centre, and at dusk it is the pleasantest thing the city has. Solitary Beauty Peak and the palace itself sit right behind it - a stiff CNY 130 that I would skip, you have had better rock every day for a week.",
-                "pt": "As ultimas vielas sobreviventes da velha Guilin, encaixadas atras do muro da Cidade do Principe Jingjiang e reconstruidas em estilo Ming e Qing. E restaurado e nao original, e sabe disso, mas e de graca, fica a cinco minutos do centro e no fim da tarde e a coisa mais agradavel que a cidade tem. O Pico da Beleza Solitaria e o proprio palacio ficam logo atras - CNY 130 salgados que eu pularia, voce teve pedra melhor todo dia durante uma semana."
-              },
-              "address": "East West Alley, Xiufeng District, Guilin · 桂林市秀峰区东西巷",
               "coords": [
-                25.2816,
-                110.2945
+                24.772,
+                110.489
               ]
             },
             {
               "type": "star",
               "period": "night",
-              "time": "~19:30-20:45",
               "text": {
-                "en": "Two Rivers and Four Lakes night cruise",
-                "pt": "Cruzeiro noturno Dois Rios e Quatro Lagos"
+                "en": "West Street and beer fish",
+                "pt": "West Street e peixe na cerveja"
               },
               "note": {
-                "en": "Guilin's one genuinely good city night: a small boat through the ring of lakes and canals that circles the old town, under lit bridges and past the Sun and Moon twin pagodas standing in the water. About 70 to 90 minutes, roughly CNY 150 to 220, boats from the Fisherman's Wharf ticket office on Binjiang Road. Buy at the pier in the afternoon or through the hotel. It is unashamedly a light show and it is still worth it - after four days of mountains this is the postcard version, and tonight you have nothing better to do with the dark.",
-                "pt": "A unica noite urbana genuinamente boa de Guilin: um barco pequeno pelo anel de lagos e canais que rodeia a cidade velha, sob pontes iluminadas e passando pelos pagodes gemeos do Sol e da Lua plantados dentro da agua. Uns 70 a 90 minutos, uns CNY 150 a 220, barcos saindo da bilheteria do Cais do Pescador na Rua Binjiang. Compre no cais a tarde ou pelo hotel. E descaradamente um show de luzes e ainda assim vale - depois de quatro dias de montanha esta e a versao cartao-postal, e hoje a noite voce nao tem nada melhor para fazer com o escuro."
+                "en": "The hotel is the West Street branch, about 10 min on foot from the strip, so the first night costs no transport at all. Beer fish is the local dish and this is where it is from.",
+                "pt": "O hotel e a filial da West Street, a uns 10 min a pe da rua, entao a primeira noite nao custa transporte nenhum. O peixe na cerveja e o prato local e e daqui que ele vem."
               },
-              "address": "Two Rivers Four Lakes, Fisherman's Wharf ticket office, Binjiang Road, Guilin · 桂林市滨江路 两江四湖景区渔人码头",
-              "tickets": "~CNY 150-220 per person · ~CNY 150-220 por pessoa",
               "coords": [
-                25.2746,
-                110.2936
+                24.7781732,
+                110.4904614
               ]
             }
           ]
         },
         {
           "note": {
-            "en": "Oct 20 (Tue) - The day the extra night bought, and the only reason it was worth buying: Longji. This is the one thing in the four-day circuit that the three-day version does not have, and it is not more of the same - Zhangjiajie gave you pillars and the Li will give you towers, but Longji is landscape that people built. Nine hundred years of Zhuang and Yao terracing wrapped around whole mountainsides, layer on layer to the ridgeline, and in the third week of October the rice is cut or cutting, so expect gold and stubble and water rather than the green of the postcards - the shapes are the point, not the colour. It is a long day out of the city: about two hours up, a village lunch, three or four hours walking the ridges, two hours back, and you sleep in the same Guilin bed. Go with proper shoes, the paths are stone and mud and they climb.",
-            "pt": "20/out (ter) - O dia que a noite extra comprou, e a unica razao pela qual valeu compra-la: Longji. Esta e a unica coisa do circuito de quatro dias que a versao de tres nao tem, e nao e mais do mesmo - Zhangjiajie te deu pilares e o Li vai te dar torres, mas Longji e paisagem que gente construiu. Novecentos anos de terracos Zhuang e Yao envolvendo encostas inteiras, camada sobre camada ate a crista, e na terceira semana de outubro o arroz esta cortado ou sendo cortado, entao espere ouro, restolho e agua em vez do verde dos cartoes-postais - a forma e o ponto, nao a cor. E um dia longo fora da cidade: umas duas horas de subida, um almoco na vila, tres ou quatro horas andando pelas cristas, duas horas de volta, e voce dorme na mesma cama em Guilin. Va de sapato de verdade, as trilhas sao pedra e barro e sobem."
+            "en": "Oct 20 (Tue) - The Li River, done from the Yangshuo side. The old plan rode the full 83 km cruise down from Guilin, four and a half hours of which the first was ordinary river. Based here you skip that and take only the good part: the Yangdi to Xingping stretch, which is the karst everyone came for. Morning in Xingping and its viewpoints, the raft in the afternoon, the Zhang Yimou show at night.",
+            "pt": "20/out (ter) - O rio Li, feito pelo lado de Yangshuo. O plano antigo descia o cruzeiro inteiro de 83 km desde Guilin, quatro horas e meia das quais a primeira era rio comum. Baseados aqui voces pulam isso e ficam so com a parte boa: o trecho de Yangdi ate Xingping, que e o karst pelo qual todo mundo vem. Manha em Xingping e seus mirantes, a balsa a tarde, o espetaculo do Zhang Yimou a noite."
           },
           "items": [
             {
               "type": "move",
               "period": "morning",
-              "time": "08:00 → ~10:00",
+              "time": "~40 min",
               "text": {
-                "en": "Guilin to Longji by car",
-                "pt": "Guilin ate Longji de carro"
+                "en": "Yangshuo to Xingping by bus",
+                "pt": "Yangshuo ate Xingping de onibus"
               },
               "note": {
-                "en": "About 100 km north into Longsheng county, 2 hours on mountain road. A private car for the day is roughly CNY 500 to 700 and is the right call here - the public bus from Qintan station takes 3 hours and strands you on someone else's timetable on the one day that has a lot in it. Scenic-area entry is about CNY 80 per person, collected at the gate, plus a shuttle up to the villages.",
-                "pt": "Uns 100 km ao norte, entrando no condado de Longsheng, 2 horas de estrada de montanha. Um carro privado pelo dia sai por uns CNY 500 a 700 e e a escolha certa aqui - o onibus publico da rodoviaria de Qintan leva 3 horas e te prende ao horario de outra pessoa justo no dia mais cheio. A entrada da area cenica e uns CNY 80 por pessoa, cobrada no portao, mais o shuttle ate as vilas."
-              },
-              "address": "Longji Rice Terraces ticket office, Longsheng County, Guilin · 桂林市龙胜各族自治县 龙脊梯田风景区售票处",
-              "tickets": "~CNY 80 per person at the gate · ~CNY 80 por pessoa no portao",
-              "coords": [
-                25.7274,
-                110.0675
-              ],
-              "from": {
-                "name": "Downtown Guilin 桂林市中心",
-                "coords": [
-                  25.2816,
-                  110.2945
-                ]
+                "en": "The bus to Xingping costs around CNY 5 and runs often; a taxi is faster. Xingping is the old river town the whole Li River section is named after.",
+                "pt": "O onibus para Xingping custa uns CNY 5 e sai a toda hora; de taxi e mais rapido. Xingping e a vila velha de rio que da nome ao trecho inteiro do Li."
               },
               "to": {
-                "name": "Longji Rice Terraces 龙脊梯田",
+                "name": "Xingping 兴坪",
                 "coords": [
-                  25.7274,
-                  110.0675
-                ]
-              }
-            },
-            {
-              "type": "bullet",
-              "period": "morning",
-              "time": "~10:15-11:00",
-              "text": {
-                "en": "Huangluo Yao Village, the long-hair women",
-                "pt": "Vila Yao de Huangluo, as mulheres de cabelo longo"
-              },
-              "note": {
-                "en": "A Red Yao settlement on the road in, where the women cut their hair once in their lives, at eighteen, and keep it coiled thereafter - the village claims the longest average hair in the world and there is a Guinness plaque to prove it. The 45-minute folk show with the hair-combing is optional and costs around CNY 80. It is frankly a staged thing put on for coaches, and it is also the only chance on this whole trip to see a living minority tradition rather than a museum of one. Your call - if you skip it you gain 45 minutes on the ridges, which is not nothing.",
-                "pt": "Um povoado Yao Vermelho na estrada de entrada, onde as mulheres cortam o cabelo uma unica vez na vida, aos dezoito, e depois o mantem enrolado - a vila reivindica a maior media de comprimento de cabelo do mundo e ha uma placa do Guinness para provar. O espetaculo folclorico de 45 minutos com o penteado e opcional e custa uns CNY 80. E, com franqueza, uma coisa encenada para excursao, e e tambem a unica chance da viagem inteira de ver uma tradicao minoritaria viva em vez de um museu dela. Voce decide - se pular, ganha 45 minutos nas cristas, o que nao e pouco."
-              },
-              "address": "Huangluo Yao Village, Heping Township, Longsheng County · 龙胜各族自治县和平乡黄洛瑶寨"
-            },
-            {
-              "type": "bullet",
-              "period": "afternoon",
-              "time": "~11:30-12:30",
-              "text": {
-                "en": "Ping'an village and bamboo-tube rice",
-                "pt": "Vila de Ping'an e arroz no bambu"
-              },
-              "note": {
-                "en": "The Zhuang village that sits inside the terraces, wooden houses stacked on the slope with the fields starting where the last doorstep ends. Lunch here before walking: the local thing is zhutongfan, rice steamed inside a length of green bamboo, plus smoked pork and free-range chicken. Roughly CNY 60 to 100 a head. Note the terraces come in two halves - Ping'an is the classic, gentler and closer; Jinkeng/Dazhai on the far side is bigger and has a cable car. One day does one of them properly, and Ping'an is the one the circuit uses.",
-                "pt": "A vila Zhuang que fica dentro dos terracos, casas de madeira empilhadas na encosta com os campos comecando onde acaba a ultima soleira. Almoce aqui antes de caminhar: o prato local e o zhutongfan, arroz cozido no vapor dentro de um pedaco de bambu verde, mais porco defumado e galinha caipira. Uns CNY 60 a 100 por cabeca. Note que os terracos tem duas metades - Ping'an e o classico, mais suave e mais perto; Jinkeng/Dazhai do outro lado e maior e tem teleferico. Um dia faz um deles direito, e Ping'an e o que o circuito usa."
-              },
-              "address": "Ping'an Village, Longji, Longsheng County · 龙胜各族自治县龙脊平安寨",
-              "coords": [
-                25.7585,
-                110.1198
-              ]
-            },
-            {
-              "type": "star",
-              "period": "afternoon",
-              "time": "~12:45-16:00",
-              "text": {
-                "en": "Walk the Longji terraces: Seven Stars and Nine Dragons",
-                "pt": "Caminhada nos terracos de Longji: Sete Estrelas e Nove Dragoes"
-              },
-              "note": {
-                "en": "The reason you are here, and it is walked, not looked at. Two named viewpoints above Ping'an: Seven Stars Accompany the Moon (七星伴月), where seven mounds left unploughed sit in a bowl of flooded steps, and Nine Dragons and Five Tigers (九龙五虎), where the ridgelines read as animals coming down the mountain. Two to three hours on stone paths between them, climbing maybe 300 m, with the terraces stacked in every direction the whole way. Late October is harvest tail - cut stubble, bare water, some fields already mirrors, and far fewer people than the June green or the May flooding. Go slow, the steps are uneven and the drops are real.",
-                "pt": "A razao de voce estar aqui, e ela e caminhada, nao contemplada. Dois mirantes com nome acima de Ping'an: Sete Estrelas Acompanham a Lua (七星伴月), onde sete morrinhos deixados sem arar ficam numa bacia de degraus alagados, e Nove Dragoes e Cinco Tigres (九龙五虎), onde as cristas se leem como bichos descendo a montanha. Duas a tres horas de trilha de pedra entre eles, subindo uns 300 m, com os terracos empilhados em todas as direcoes o tempo inteiro. O fim de outubro e rabo de colheita - restolho cortado, agua nua, alguns campos ja virados espelho, e bem menos gente do que no verde de junho ou no alagamento de maio. Va devagar, os degraus sao irregulares e as quedas sao de verdade."
-              },
-              "address": "Seven Stars Accompany the Moon viewpoint, Longji · 龙脊七星伴月观景点",
-              "coords": [
-                25.7482,
-                110.0907
-              ]
-            },
-            {
-              "type": "move",
-              "period": "night",
-              "time": "~16:30 → ~18:30",
-              "text": {
-                "en": "Longji back to Guilin",
-                "pt": "Longji de volta a Guilin"
-              },
-              "note": {
-                "en": "Same two hours in reverse, and leave by 16:30 - the mountain road is not one to drive after dark if you can help it. Dinner in Guilin: this is the town for Guilin rice noodles (桂林米粉), which is what the city eats and is worth eating from a plain shop rather than a hotel.",
-                "pt": "As mesmas duas horas ao contrario, e saia as 16:30 - a estrada de montanha nao e para se dirigir no escuro se der para evitar. Jantar em Guilin: esta e a cidade do macarrao de arroz de Guilin (桂林米粉), que e o que a cidade come e que vale comer numa casa simples, nao no hotel."
-              },
-              "address": "Downtown Guilin, Xiufeng District · 桂林市秀峰区市中心",
-              "coords": [
-                25.2816,
-                110.2945
-              ],
-              "from": {
-                "name": "Longji Rice Terraces 龙脊梯田",
-                "coords": [
-                  25.7274,
-                  110.0675
-                ]
-              },
-              "to": {
-                "name": "Downtown Guilin 桂林市中心",
-                "coords": [
-                  25.2816,
-                  110.2945
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "note": {
-            "en": "Oct 21 (Wed) - The Li River, and the day the whole region is famous for. The circuit does it the standard way: the full 83 km cruise from Guilin down to Yangshuo, four and a half hours on the water with lunch aboard, landing at Yangshuo pier in the early afternoon. It is not cheap and the first hour is ordinary river before the karst closes in, but from Yangdi onward it delivers everything - Nine Horses Fresco Hill, the Huangbu reflection, Xingping village, and the exact bend printed on the back of the CNY 20 note, which the crew will announce and everyone will photograph. Sit on the top deck and stay out there; the cabin has glass and a lunch and neither is why you came. The afternoon changes base to Yangshuo and buys the other half of this landscape - the flat lanes between the rice fields, by bike - and the night buys Zhang Yimou's river show. Rain note: late October is the driest window of the year here and thin mist makes karst better, not worse. Only a hard downpour spoils this.",
-            "pt": "21/out (qua) - O rio Li, e o dia pelo qual a regiao inteira e famosa. O circuito faz do jeito padrao: o cruzeiro completo de 83 km de Guilin ate Yangshuo, quatro horas e meia sobre a agua com almoco a bordo, desembarcando no cais de Yangshuo no comeco da tarde. Nao e barato e a primeira hora e rio comum antes de o karst se fechar, mas de Yangdi em diante entrega tudo - o Morro dos Nove Cavalos, o reflexo de Huangbu, a vila de Xingping e a curva exata impressa no verso da nota de CNY 20, que a tripulacao vai anunciar e todo mundo vai fotografar. Sente no deque de cima e fique la; a cabine tem vidro e um almoco, e nenhum dos dois e o motivo de voce ter vindo. A tarde muda a base para Yangshuo e compra a outra metade desta paisagem - as estradinhas planas entre os arrozais, de bicicleta - e a noite compra o espetaculo de Zhang Yimou sobre o rio. Nota sobre chuva: o fim de outubro e a janela mais seca do ano aqui e a nevoa fina deixa o karst melhor, nao pior. So um temporal estraga isto."
-          },
-          "items": [
-            {
-              "type": "move",
-              "period": "morning",
-              "time": "08:30 → ~09:10",
-              "text": {
-                "en": "Check out, hotel to Mopanshan pier",
-                "pt": "Check-out, hotel ate o cais de Mopanshan"
-              },
-              "note": {
-                "en": "Bags come with you - you do not sleep in Guilin tonight. About 30 km southeast of the city, 40 minutes by car. Mopanshan (磨盘山码头) is the pier most foreign-ticketed boats leave from; Zhujiang is the other. Confirm which one your ticket says the night before, they are 20 minutes apart and a taxi driver will happily take you to the wrong one. Boarding closes well before departure, so be there by 09:10.",
-                "pt": "As malas vao com voce - hoje voce nao dorme em Guilin. Uns 30 km a sudeste da cidade, 40 minutos de carro. Mopanshan (磨盘山码头) e o cais de onde saem a maioria dos barcos com bilhete para estrangeiro; Zhujiang e o outro. Confirme na vespera qual deles esta no seu bilhete, ficam a 20 minutos um do outro e um taxista te leva ao errado com o maior prazer. O embarque fecha bem antes da partida, entao esteja la as 09:10."
-              },
-              "address": "Mopanshan Pier, Guimo Road, Lingchuan County, Guilin · 桂林市灵川县桂磨路磨盘山码头",
-              "coords": [
-                25.1506,
-                110.4269
-              ],
-              "from": {
-                "name": "Downtown Guilin 桂林市中心",
-                "coords": [
-                  25.2816,
-                  110.2945
-                ]
-              },
-              "to": {
-                "name": "Mopanshan Pier 磨盘山码头",
-                "coords": [
-                  25.1506,
-                  110.4269
+                  24.9176001,
+                  110.5340329
                 ]
               }
             },
             {
               "type": "star",
               "period": "morning",
-              "time": "~09:30-14:00",
               "text": {
-                "en": "Li River cruise, Guilin to Yangshuo (83 km)",
-                "pt": "Cruzeiro no rio Li, Guilin ate Yangshuo (83 km)"
+                "en": "The 20-yuan note view at Yellow Cloth Shoal",
+                "pt": "A vista da nota de 20 yuan em Huangbu"
               },
               "note": {
-                "en": "Four and a half hours down the most painted river in China. Boats leave in a convoy between 09:00 and 10:00 and there is only one departure a day, so there is no recovering from missing it. Foreign-ticket 4-star boats run roughly CNY 360 to 480 including a set lunch aboard; book two or three days ahead through the hotel or an OTA, October is high season and it sells. The order of the good part, once past Yangdi: Wangfu Rock, Nine Horses Fresco Hill (九马画山), the Huangbu reflection (黄布倒影) which is the CNY 20 note view, then Xingping village, then the run down to Yangshuo. Bring a windbreaker - the top deck in October is colder than the forecast, and the top deck is the whole ticket.",
-                "pt": "Quatro horas e meia descendo o rio mais pintado da China. Os barcos saem em comboio entre 09:00 e 10:00 e ha uma unica partida por dia, entao nao existe se recuperar de perde-la. Barcos 4 estrelas com bilhete para estrangeiro custam uns CNY 360 a 480 incluindo um almoco fixo a bordo; reserve dois ou tres dias antes pelo hotel ou por uma OTA, outubro e alta temporada e esgota. A ordem da parte boa, depois de passar Yangdi: Rocha Wangfu, Morro dos Nove Cavalos (九马画山), o reflexo de Huangbu (黄布倒影) que e a vista da nota de CNY 20, depois a vila de Xingping, e entao a descida ate Yangshuo. Leve corta-vento - o deque de cima em outubro e mais frio que a previsao, e o deque de cima e o bilhete inteiro."
+                "en": "The exact landscape printed on the back of the CNY 20 note, about 10 min on foot from the Xingping wharf. Bring a 20 note and line it up with the skyline, which is the whole point and is genuinely worth doing.",
+                "pt": "A paisagem exata impressa no verso da nota de CNY 20, a uns 10 min a pe do cais de Xingping. Leve uma nota de 20 e alinhe com o horizonte, que e a graca toda e vale de verdade."
               },
-              "address": "Mopanshan Pier to Yangshuo Longtoushan Pier, Li River · 漓江，磨盘山码头至阳朔龙头山码头",
-              "tickets": "~CNY 360-480 per person, book 2-3 days ahead · ~CNY 360-480 por pessoa, reserve 2-3 dias antes",
+              "coords": [
+                24.9251035,
+                110.5166399
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "morning",
+              "text": {
+                "en": "Laozhai Hill, if the legs agree",
+                "pt": "Monte Laozhai, se as pernas deixarem"
+              },
+              "note": {
+                "en": "A steep but short climb straight up from Xingping, and the best panorama of the river bend from above. Skip it if the day is hazy, it is all about visibility.",
+                "pt": "Subida curta e ingreme saindo de Xingping, e o melhor panorama da curva do rio de cima. Pule se o dia estiver de neblina, porque e tudo visibilidade."
+              },
+              "coords": [
+                24.9189334,
+                110.5218451
+              ]
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "13:30 → 17:30",
+              "text": {
+                "en": "Bamboo raft, Yangdi to Nine Horses to Xingping",
+                "pt": "Balsa de bambu, Yangdi ate Nove Cavalos ate Xingping"
+              },
+              "note": {
+                "en": "The Essence section, around CNY 160 per person, and the part of the Li River worth the money. It passes Nine Horses Fresco Hill, a 400 m cliff whose stains are read as nine horses. Book a day ahead to skip the queue, carry your passport for the pier check-in, and screenshot the ticket: signal drops in the gorge.",
+                "pt": "O trecho Essence, uns CNY 160 por pessoa, e a parte do rio Li que vale o dinheiro. Passa pelo Morro dos Nove Cavalos, um paredao de 400 m cujas manchas sao lidas como nove cavalos. Reserve com um dia de antecedencia para pular a fila, leve passaporte para o check-in no cais e tire print do bilhete: o sinal cai no desfiladeiro."
+              },
               "coords": [
                 24.9386814,
                 110.4898269
-              ],
-              "from": {
-                "name": "Mopanshan Pier 磨盘山码头",
-                "coords": [
-                  25.1506,
-                  110.4269
-                ]
-              },
-              "to": {
-                "name": "Yangshuo Longtoushan Pier 阳朔龙头山码头",
-                "coords": [
-                  24.7874,
-                  110.4971
-                ]
-              }
+              ]
             },
             {
-              "type": "move",
-              "period": "afternoon",
-              "time": "~14:15 → ~14:45",
+              "type": "star",
+              "period": "night",
               "text": {
-                "en": "Yangshuo pier to the hotel, drop bags",
-                "pt": "Cais de Yangshuo ate o hotel, largar as malas"
+                "en": "Impression Liu Sanjie, Zhang Yimou on the river itself",
+                "pt": "Impression Liu Sanjie, Zhang Yimou sobre o proprio rio"
               },
               "note": {
-                "en": "The boat lands at Longtoushan pier, ten minutes from town. Sleep near the Yulong side or the south end of Yangshuo, not on West Street itself, which is loud until 02:00. One night here, and tomorrow you leave with the bags again.",
-                "pt": "O barco encosta no cais de Longtoushan, dez minutos da cidade. Durma do lado do Yulong ou na ponta sul de Yangshuo, nao na propria West Street, que e barulhenta ate as 02:00. Uma noite aqui, e amanha voce sai com as malas de novo."
+                "en": "Back in Yangshuo, and the stage is the river with the karst peaks lit behind it. It is tight against the raft: the raft ends 17:30 in Xingping and you need 40 min back, so buy the later session and eat afterwards.",
+                "pt": "De volta a Yangshuo, e o palco e o rio com os picos de karst iluminados atras. Fica justo com a balsa: ela termina 17:30 em Xingping e voces precisam de 40 min de volta, entao comprem a sessao mais tarde e jantem depois."
               },
-              "address": "Yangshuo town, Yangshuo County, Guilin · 桂林市阳朔县阳朔镇",
               "coords": [
-                24.7809551,
-                110.4909192
+                24.7699694,
+                110.5035926
+              ]
+            }
+          ]
+        },
+        {
+          "note": {
+            "en": "Oct 21 (Wed) - The slow day, and the one the Yangshuo base actually pays for. The Yulong is the small river, no cruise boats, only bamboo rafts poled between rice fields, and the valley around it is flat enough to ride. Raft at eight before the tour buses, then bikes for the rest of the light. Late October is the good window here: mild, and past the summer heat.",
+            "pt": "21/out (qua) - O dia lento, e o que a base em Yangshuo de fato paga. O Yulong e o rio pequeno, sem barco de cruzeiro, so balsas de bambu empurradas de vara entre arrozais, e o vale em volta e plano o bastante para pedalar. Balsa as oito, antes dos onibus de excursao, e bicicleta no resto da luz. Fim de outubro e a boa janela aqui: ameno, e passado o calor do verao."
+          },
+          "items": [
+            {
+              "type": "star",
+              "period": "morning",
+              "time": "~08:00",
+              "text": {
+                "en": "Yulong River bamboo raft, first thing",
+                "pt": "Balsa de bambu no rio Yulong, logo cedo"
+              },
+              "note": {
+                "en": "Rafts run 08:00 to 17:30 and a 90 min stretch is CNY 150 to 300 per raft, not per person. Go at eight or after four: between 10:00 and 14:00 the tour groups own the river. The usual sections are Jinlong Bridge to Jiuxian, or Chaoyang down to Gongnong Bridge.",
+                "pt": "As balsas rodam das 08:00 as 17:30 e um trecho de 90 min custa CNY 150 a 300 por balsa, nao por pessoa. Va as oito ou depois das quatro: entre 10:00 e 14:00 os grupos de excursao tomam o rio. Os trechos usuais sao Ponte Jinlong ate Jiuxian, ou Chaoyang descendo ate a Ponte Gongnong."
+              },
+              "coords": [
+                24.783666,
+                110.4225923
               ]
             },
             {
               "type": "star",
               "period": "afternoon",
-              "time": "~15:15-18:00",
               "text": {
-                "en": "Bike the Yulong valley from Gongnong Bridge",
-                "pt": "Bicicleta pelo vale do Yulong desde a Ponte Gongnong"
+                "en": "Cycle the Yulong valley from Gongnong Bridge",
+                "pt": "Pedalar o vale do Yulong desde a Ponte Gongnong"
               },
               "note": {
-                "en": "The genre the trip is otherwise missing. Everything else in twenty days is walked, climbed, floated or ridden on rails - this is the one afternoon you move under your own power through flat country, on paved lanes between rice fields with karst towers standing in them like chess pieces. Rent in town, roughly CNY 30 to 50 a day, e-bikes about double; start at Gongnong Bridge (工农桥) and follow the Yulong upstream. Ten to twenty km round trip, no climbing, no ticket. The Big Banyan (大榕树) is signposted along the way and charges to look at a tree - ride past it. If it is raining, the hand-punted raft on the Yulong is the substitute: shallow, poled, runs in weather that closes the Li, about CNY 130 to 260 per raft for two.",
-                "pt": "O genero que de resto falta na viagem. Todo o resto dos vinte dias e caminhado, escalado, flutuado ou sobre trilhos - esta e a unica tarde em que voce se move com a propria forca por terreno plano, em estradinhas asfaltadas entre arrozais com torres de karst plantadas neles como pecas de xadrez. Alugue na cidade, uns CNY 30 a 50 o dia, e-bike o dobro; comece na Ponte Gongnong (工农桥) e siga o Yulong rio acima. Dez a vinte km ida e volta, sem subida, sem ingresso. A Grande Figueira (大榕树) e sinalizada no caminho e cobra para olhar uma arvore - passe reto. Se chover, a balsa empurrada a vara no Yulong e a substituta: rasa, de vara, roda com tempo que fecha o Li, uns CNY 130 a 260 por balsa para dois."
+                "en": "The full loop is about 30 km and four to five hours through Baisha and Jiuxian village, but you can cut it anywhere: the valley is flat and the scenery does not get worse. Bikes rent everywhere in town.",
+                "pt": "O circuito completo tem uns 30 km e quatro a cinco horas por Baisha e a vila de Jiuxian, mas da para cortar em qualquer ponto: o vale e plano e a paisagem nao piora. Aluga-se bicicleta em qualquer esquina da cidade."
               },
-              "address": "Gongnong Bridge, Yulong River, Yangshuo · 阳朔县遇龙河工农桥",
               "coords": [
                 24.7381472,
                 110.4877677
               ]
             },
             {
-              "type": "star",
-              "period": "night",
-              "time": "19:30-20:30",
+              "type": "bullet",
+              "period": "afternoon",
               "text": {
-                "en": "Impression Liu Sanjie - Zhang Yimou on the river itself",
-                "pt": "Impression Liu Sanjie - Zhang Yimou sobre o proprio rio"
+                "en": "Ten-Mile Gallery, by bike",
+                "pt": "Galeria de Dez Milhas, de bicicleta"
               },
               "note": {
-                "en": "The trip has no theatre in it anywhere else, and I told you to skip the Furong stage show, so this is not a repeat - it is the only one, and it is the good one. Zhang Yimou's outdoor spectacle uses a 2 km stretch of the Li as the stage and twelve karst peaks as the lit backdrop, with around 600 performers who are mostly local fishermen rather than a touring cast. One hour, starts 19:30, sometimes a second show around 21:00 in season. Roughly CNY 200 to 320 depending on section; book a day or two ahead through the hotel or an OTA. Light rain: they hand out ponchos and it runs. Heavy rain: cancelled with full refund, free cancellation generally up to 24h before. The theatre is 10 minutes from town - eat early, around 18:15.",
-                "pt": "A viagem nao tem teatro em nenhum outro lugar, e eu mandei voce pular o espetaculo de Furong, entao isto nao e repeticao - e o unico, e e o bom. O espetaculo ao ar livre de Zhang Yimou usa 2 km do rio Li como palco e doze picos de karst como cenario iluminado, com uns 600 artistas que sao majoritariamente pescadores locais e nao um elenco em turne. Uma hora, comeca 19:30, as vezes uma segunda sessao por volta das 21:00 na temporada. Uns CNY 200 a 320 conforme o setor; reserve um ou dois dias antes pelo hotel ou por uma OTA. Chuva fina: distribuem poncho e roda. Chuva forte: cancelado com reembolso integral, cancelamento gratuito em geral ate 24h antes. O teatro fica a 10 minutos da cidade - jante cedo, la pelas 18:15."
+                "en": "The road of viewpoints south of town. As of 2026 private cars are restricted along it, which is exactly why the bike is the right way to do it.",
+                "pt": "A estrada de mirantes ao sul da cidade. Desde 2026 carros particulares sao restritos nela, que e justamente por que a bicicleta e o jeito certo de fazer."
               },
-              "address": "Impression Liu Sanjie theatre, Tianyuan Road, Yangshuo · 阳朔县田园路 印象刘三姐",
-              "url": "https://www.chinahighlights.com/yangshuo/attraction/impression-liu-sanjie.htm",
-              "tickets": "~CNY 200-320 per person, book 1-2 days ahead · ~CNY 200-320 por pessoa, reserve 1-2 dias antes",
               "coords": [
-                24.7699694,
-                110.5035926
+                24.7369853,
+                110.486052
+              ]
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "text": {
+                "en": "Moon Hill, the arch",
+                "pt": "Monte da Lua, o arco"
+              },
+              "note": {
+                "en": "A 230 m natural arch punched through the karst, with a 30 min climb to the viewpoint underneath it. Short, steep, and the best last view of the valley.",
+                "pt": "Um arco natural de 230 m furado no karst, com 30 min de subida ate o mirante embaixo dele. Curto, ingreme, e a melhor ultima vista do vale."
+              },
+              "coords": [
+                24.7245479,
+                110.4723972
               ]
             },
             {
               "type": "bullet",
               "period": "night",
-              "time": "~20:45-22:00",
               "text": {
-                "en": "West Street and beer fish, after the show",
-                "pt": "West Street e peixe na cerveja, depois do espetaculo"
+                "en": "Last night in Yangshuo",
+                "pt": "Ultima noite em Yangshuo"
               },
-              "note": {
-                "en": "Yangshuo's old pedestrian street, which is now a bar strip and is honest about it - a loud, lit, cheerfully touristy 800 m that is fun for an hour and not more. What you actually came for is the beer fish (啤酒鱼): river fish fried skin-on then braised in local beer, chilli and tomato, the one dish this county genuinely owns. Roughly CNY 90 to 150 for the fish, shared. Eat it a street back from the main drag rather than at the places with photo menus out front.",
-                "pt": "A velha rua de pedestres de Yangshuo, hoje uma rua de bares e honesta quanto a isso - 800 m barulhentos, iluminados e alegremente turisticos que divertem por uma hora e nao mais. O que voce veio buscar mesmo e o peixe na cerveja (啤酒鱼): peixe de rio frito com a pele e depois refogado em cerveja local, pimenta e tomate, o unico prato que este condado realmente possui. Uns CNY 90 a 150 pelo peixe, para dividir. Coma uma rua atras da principal, e nao nas casas com cardapio de foto na porta."
-              },
-              "address": "West Street, Yangshuo County, Guilin · 桂林市阳朔县西街",
               "coords": [
-                24.7782,
-                110.4905
+                24.7781732,
+                110.4904614
               ]
             }
           ]
         },
         {
           "note": {
-            "en": "Oct 22 (Thu) - The last Guangxi day, and the night flight north hangs over the back of it, so the shape is deliberate: a slow start in Yangshuo, then you drift back toward Guilin picking up the two city sights the circuit saves for the end, and you are at the airport before you have to hurry. Elephant Trunk Hill is the emblem of Guilin, printed on everything, and it is genuinely a good shape - a limestone bluff with an arch that reads as an elephant drinking from the river. Reed Flute Cave is a lit stalactite cavern, and I will be straight with you: you did Yellow Dragon Cave in Zhangjiajie six days ago and this is the same idea with more coloured lighting. Keep it if you like caves, drop it if you would rather have a long lunch and a slow riverbank - either way the flight is at 22:00 and the airport is 40 minutes out, so the day has room.",
-            "pt": "22/out (qui) - O ultimo dia de Guangxi, e o voo noturno para o norte paira sobre o fim dele, entao a forma e proposital: comeco lento em Yangshuo, depois voce deriva de volta para Guilin recolhendo as duas atracoes urbanas que o circuito guarda para o final, e chega ao aeroporto antes de precisar correr. O Morro da Tromba de Elefante e o emblema de Guilin, impresso em tudo, e e de fato uma boa forma - um paredao de calcario com um arco que se le como um elefante bebendo do rio. A Gruta da Flauta de Junco e uma caverna de estalactites iluminada, e vou ser direto: voce fez a Gruta do Dragao Amarelo em Zhangjiajie seis dias atras e esta e a mesma ideia com mais luz colorida. Mantenha se voce gosta de caverna, corte se preferir um almoco longo e uma beira de rio sem pressa - de todo jeito o voo e as 22:00 e o aeroporto fica a 40 minutos, entao o dia tem folga."
+            "en": "Oct 22 (Thu) - Last day in Guangxi, and the only Guilin you asked for: one afternoon on the way to the plane. Slow start in Yangshuo, check out, drift back up the 80 km, collect the two city sights that are actually worth it, and be at the airport before you have to run. The flight north leaves 22:15 and lands after midnight, so the Beijing bed is booked from tonight.",
+            "pt": "22/out (qui) - Ultimo dia em Guangxi, e a unica Guilin que voces pediram: uma tarde a caminho do aviao. Comeco lento em Yangshuo, check-out, subir de volta os 80 km, recolher as duas atracoes urbanas que valem, e chegar ao aeroporto antes de precisar correr. O voo para o norte sai 22:15 e pousa depois da meia-noite, entao a cama em Pequim esta reservada desde hoje."
           },
           "items": [
             {
@@ -2240,19 +2148,28 @@
         },
         {
           "note": {
-            "en": "Oct 27 (Tue) - Hangzhou, and the day is one hour of train each way, which is why it works as a day trip at all. The shape you picked: Lingyin and the Feilai Feng carvings first thing, while the temple still belongs to the monks, then lunch in the hills and the rest of the light on West Lake, walking the Su Causeway south to Leifeng for sunset. Dinner near Hefang Street and a late train home. One warning: this is the day with the most walking after Beijing.",
-            "pt": "27/out (ter) - Hangzhou, e o dia e uma hora de trem para cada lado, que e justamente o que faz o bate-volta funcionar. A forma que voce escolheu: Lingyin e as esculturas do Feilai Feng logo de manha, enquanto o templo ainda pertence aos monges, depois almoco nas colinas e o resto da luz no Lago Oeste, andando a Su Causeway para o sul ate o Leifeng no por do sol. Jantar perto da rua Hefang e trem tarde de volta. Um aviso: este e o dia de mais caminhada depois de Pequim."
+            "en": "Oct 27 (Tue) - Maling Tianguan, in Jiande, on the ridge where Jiande, Tonglu and Pujiang meet. Two things brought you here and they are the same circuit: the Buddha Hand Bridge, a golden walkway held up by a pair of 22 m stone hands at around 1000 m, and the Scream Slide, 3900 m of cliff-hugging chute with a 230 m drop, which is simply how you come back down the mountain. Go up by the magic carpet, do the bridge and the sky mirror on top, come down soaked. Tuesday is the point: on weekends the bridge queue is the worst thing in the park.",
+            "pt": "27/out (ter) - Maling Tianguan, em Jiande, na serra onde Jiande, Tonglu e Pujiang se encontram. Duas coisas trouxeram voces aqui e sao o mesmo circuito: a Ponte das Maos de Buda, uma passarela dourada erguida por duas maos de pedra de 22 m a cerca de 1000 m, e o tobaga Scream Slide, 3900 m de calha colada no penhasco com 230 m de desnivel, que e simplesmente como se desce a montanha. Suba de tapete rolante, faca a ponte e o espelho do ceu no alto, desca encharcado. Terca e o ponto: no fim de semana a fila da ponte e a pior coisa do parque."
           },
           "items": [
             {
               "type": "move",
+              "period": "morning",
+              "time": "~06:30 → ~07:30",
               "text": {
                 "en": "G-train Shanghai Hongqiao to Hangzhou East",
                 "pt": "Trem G Shanghai Hongqiao ate Hangzhou Leste"
               },
               "note": {
-                "en": "The easiest day trip in China: around 317 trains a day, every 5 to 15 min at peak, 34 min on the fastest and under an hour on most. First one leaves 04:08, so a 07:00 departure is trivial to get.",
-                "pt": "O bate-volta mais facil da China: cerca de 317 trens por dia, a cada 5 a 15 min no pico, 34 min no mais rapido e menos de uma hora na maioria. O primeiro sai as 04:08, entao pegar um das 07:00 e trivial."
+                "en": "Leave early: the park stops letting people in mid-afternoon, and the whole day hinges on the morning margin. Trains run every 5 to 15 min at peak and take 34 min on the fastest, under an hour on most.",
+                "pt": "Saia cedo: o parque para de deixar entrar no meio da tarde, e o dia inteiro depende da margem da manha. Os trens saem a cada 5 a 15 min no pico e levam 34 min no mais rapido, menos de uma hora na maioria."
+              },
+              "from": {
+                "name": "Shanghai Hongqiao 上海虹桥站",
+                "coords": [
+                  31.196,
+                  121.3162
+                ]
               },
               "to": {
                 "name": "Hangzhou East 杭州东站",
@@ -2263,90 +2180,114 @@
               }
             },
             {
-              "type": "star",
+              "type": "move",
+              "period": "morning",
+              "time": "~08:00 → ~08:35",
               "text": {
-                "en": "Lingyin Temple, first thing",
-                "pt": "Templo Lingyin, logo de manha"
+                "en": "Hangzhou East to Tonglu, then 25 km by taxi",
+                "pt": "Hangzhou Leste ate Tonglu, depois 25 km de taxi"
               },
               "note": {
-                "en": "The most important Buddhist temple in southern China, founded in 328, and the reason to come early: it opens 06:30 and closes 17:45 from October, and by 10:00 the incense crowd owns it. Metro line 1 to Longxiangqiao then bus 7, or 35 min by taxi from the station.",
-                "pt": "O templo budista mais importante do sul da China, fundado em 328, e a razao para chegar cedo: abre as 06:30 e fecha as 17:45 a partir de outubro, e as 10:00 a multidao do incenso toma conta. Metro linha 1 ate Longxiangqiao e depois onibus 7, ou 35 min de taxi da estacao."
+                "en": "Tonglu, not Jiande: the park sits about 25 km from Tonglu and the train leg is shorter, 20 to 38 min against 40 to 55 min to Jiande. From Tonglu station it is roughly 35 to 40 min by car. Arrange the return car now, with the same driver or with the park: this is a rural mountain road and at closing time there may be nothing waiting.",
+                "pt": "Tonglu, nao Jiande: o parque fica a uns 25 km de Tonglu e a perna de trem e mais curta, 20 a 38 min contra 40 a 55 min ate Jiande. Da estacao de Tonglu sao uns 35 a 40 min de carro. Combine o carro da volta agora, com o mesmo motorista ou com o parque: e estrada de montanha e na hora de fechar pode nao ter nada esperando."
               },
-              "address": "1 Fayun Alley, Xihu District, Hangzhou · 杭州市西湖区法云弄1号",
-              "coords": [
-                30.2428,
-                120.0968
-              ],
-              "url": "https://www.lingyinsi.org/"
-            },
-            {
-              "type": "star",
-              "text": {
-                "en": "Feilai Feng, the carved grottoes",
-                "pt": "Feilai Feng, as grutas esculpidas"
+              "from": {
+                "name": "Hangzhou East 杭州东站",
+                "coords": [
+                  30.2936,
+                  120.2082
+                ]
               },
-              "note": {
-                "en": "Right at the temple gate, and the part people skip: over 300 Buddhist carvings cut into the limestone between the Five Dynasties and the Yuan. The Feilai Feng ticket is CNY 45 in peak season, and the temple itself is entered with a separate CNY 30 incense voucher.",
-                "pt": "Colado no portao do templo, e a parte que as pessoas pulam: mais de 300 esculturas budistas talhadas no calcario entre as Cinco Dinastias e os Yuan. O ingresso do Feilai Feng e CNY 45 na alta temporada, e no templo em si se entra com um voucher de incenso separado de CNY 30."
-              },
-              "coords": [
-                30.2389,
-                120.0964
-              ]
-            },
-            {
-              "type": "bullet",
-              "text": {
-                "en": "Lunch in the hills, then down to the lake",
-                "pt": "Almoco nas colinas, depois descer ate o lago"
+              "to": {
+                "name": "Tonglu 桐庐站",
+                "coords": [
+                  29.7916,
+                  119.7272
+                ]
               }
             },
             {
               "type": "star",
+              "period": "morning",
               "text": {
-                "en": "West Lake on the Su Causeway",
-                "pt": "Lago Oeste pela Su Causeway"
+                "en": "Buddha Hand Bridge 佛手金桥",
+                "pt": "Ponte das Maos de Buda 佛手金桥"
               },
               "note": {
-                "en": "Su Dongpo built this 2.8 km bank out of dredged mud in 1090 and it is still the best way to be inside the lake rather than beside it: six bridges, willows, and the hills closing the far end. Walk it north to south, or rent a bike.",
-                "pt": "Su Dongpo construiu esta margem de 2,8 km com a lama dragada em 1090 e ela segue sendo o melhor jeito de estar dentro do lago em vez de ao lado dele: seis pontes, salgueiros e as colinas fechando o fundo. Faca de norte a sul, a pe ou de bicicleta."
+                "en": "The reason you came: a golden deck cradled by two giant Buddha hands 22 m tall, on a summit at around 1000 m. Go up by the flying magic carpet, five belts straight to the top, and do the bridge before the day fills. Note this is NOT the Vietnamese Golden Bridge of Ba Na Hills, which is the one in the viral photos; this is the Chinese answer to it.",
+                "pt": "A razao de voces virem: um tabuleiro dourado embalado por duas maos de Buda gigantes de 22 m, num cume a cerca de 1000 m. Suba pelo tapete rolante voador, cinco esteiras direto ao topo, e faca a ponte antes do dia encher. Repare que NAO e a Golden Bridge vietnamita de Ba Na Hills, que e a das fotos virais; esta e a resposta chinesa a ela."
               },
+              "address": "Zizhou Village, Qiantan, Jiande, Hangzhou · 浙江省杭州市建德市乾潭镇梓洲村",
               "coords": [
-                30.2485,
-                120.1327
+                29.5695,
+                119.7338
               ]
             },
             {
               "type": "bullet",
+              "period": "morning",
               "text": {
-                "en": "Leifeng Pagoda at sunset",
-                "pt": "Pagode Leifeng no por do sol"
+                "en": "Sky Mirror and Wanfu summit",
+                "pt": "Espelho do Ceu e cume Wanfu"
               },
               "note": {
-                "en": "The south end of the causeway, with a lift inside, and the one place that gives you the whole lake from above with the light going.",
-                "pt": "A ponta sul da causeway, com elevador dentro, e o unico lugar que te da o lago inteiro de cima com a luz indo embora."
+                "en": "The viewing platform and the high point of the park, both on the same ridge as the bridge, so they cost you almost nothing in extra walking.",
+                "pt": "A plataforma de observacao e o ponto mais alto do parque, os dois na mesma crista da ponte, entao custam quase nada de caminhada extra."
+              }
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "text": {
+                "en": "Scream Slide, 3900 m, the way down",
+                "pt": "Scream Slide, 3900 m, a descida"
+              },
+              "note": {
+                "en": "The chute you saw in the video: 3900 m winding around the cliff face with more than 230 m of drop, and it is the descent, not a side attraction. It soaks you completely, so this is the LAST thing you do. Bring a full change of clothes and a waterproof phone pouch; ponchos at the gate cost more than outside. There is also a four-season dry slide if the water is too cold in late October.",
+                "pt": "A calha que voce viu no video: 3900 m contornando a face do penhasco com mais de 230 m de desnivel, e ela e a descida, nao uma atracao a parte. Molha voce inteiro, entao e a ULTIMA coisa do dia. Leve muda de roupa completa e saco a prova d'agua para o celular; a capa na portaria custa mais do que fora. Existe tambem um tobaga seco de quatro estacoes, se a agua estiver fria demais no fim de outubro."
               },
               "coords": [
-                30.2339,
-                120.145
+                29.5695,
+                119.7338
               ]
             },
             {
               "type": "bullet",
+              "period": "afternoon",
               "text": {
-                "en": "Hefang Street and dinner before the train",
-                "pt": "Rua Hefang e jantar antes do trem"
+                "en": "CONFIRM BEFORE BUYING - hours, price, and whether the water slide runs",
+                "pt": "CONFIRMAR ANTES DE COMPRAR - horario, preco e se o tobaga de agua funciona"
               },
-              "coords": [
-                30.2419,
-                120.1556
-              ]
+              "note": {
+                "en": "Sources disagree: 08:30-16:30, 08:30-16:00 and 07:30-17:00 all appear, and the ticket shows up as CNY 108, CNY 188 sightseeing and CNY 388 for the all-in pass that covers the slide, the uphill carpet, the via ferrata and the zipline. Worse, the slide is sold as a summer water ride even though one source says it runs year round, and late October at 1000 m is cold to be soaked. The park answers on these numbers, both also WeChat: 190 6961 7081 and 131 1287 6408.",
+                "pt": "As fontes divergem: aparecem 08:30-16:30, 08:30-16:00 e 07:30-17:00, e o ingresso aparece como CNY 108, CNY 188 so paisagem e CNY 388 no passe completo, que cobre o tobaga, o tapete de subida, a via ferrata e a tirolesa. Pior, o tobaga e vendido como atracao de agua de verao, ainda que uma fonte diga que roda o ano todo, e fim de outubro a 1000 m e frio para ficar encharcado. O parque atende nestes numeros, os dois tambem WeChat: 190 6961 7081 e 131 1287 6408."
+              }
             },
             {
               "type": "move",
+              "period": "night",
+              "time": "~16:00 → ~19:30",
               "text": {
-                "en": "Back to Shanghai, last trains run late",
-                "pt": "Volta a Shanghai, os ultimos trens sao tarde"
+                "en": "Back to Shanghai via Tonglu and Hangzhou East",
+                "pt": "Volta a Shanghai via Tonglu e Hangzhou Leste"
+              },
+              "note": {
+                "en": "Change into dry clothes before you get in the car. It is about 2 to 2.5 h door to door from the park to the hotel, so plan on being back around dinner time.",
+                "pt": "Troque de roupa seca antes de entrar no carro. Sao cerca de 2 a 2h30 de porta a porta do parque ate o hotel, entao conte com voltar na hora do jantar."
+              },
+              "from": {
+                "name": "Tonglu 桐庐站",
+                "coords": [
+                  29.7916,
+                  119.7272
+                ]
+              },
+              "to": {
+                "name": "Shanghai Hongqiao 上海虹桥站",
+                "coords": [
+                  31.196,
+                  121.3162
+                ]
               }
             }
           ]
@@ -3609,8 +3550,8 @@
       ],
       "url": "https://us.trip.com/hotels/yangshuo-hotel-detail-122003572/muyunli/",
       "note": {
-        "en": "In YANGSHUO, about 10 min on foot from West Street, but the itinerary sleeps in Guilin city on the 19th and 20th. Check which one is right. Check-out inferred.",
-        "pt": "Fica em YANGSHUO, a uns 10 min a pé da West Street, mas o roteiro dorme na cidade de Guilin nos dias 19 e 20. Confira qual está certo. Check-out deduzido."
+        "en": "Three nights in Yangshuo, the base for the whole Guangxi block after you dropped the Guilin nights. About 10 min on foot from West Street. Confirm on Trip.com that the booking really covers the 19th, 20th and 21st: the spreadsheet only gives the check-in date, so the check-out here is inferred.",
+        "pt": "Tres noites em Yangshuo, a base do bloco inteiro de Guangxi depois que voces cortaram as noites de Guilin. A uns 10 min a pe da West Street. Confirme na Trip.com que a reserva cobre mesmo os dias 19, 20 e 21: a planilha so traz a data de check-in, entao o check-out aqui e deduzido."
       }
     },
     {
@@ -3630,6 +3571,25 @@
       "note": {
         "en": "Booked from the 22nd so the bed is waiting when the Guilin flight lands after midnight. 5 min on foot from Beijing Railway Station. Check-out inferred.",
         "pt": "Reservado desde o dia 22 para a cama estar pronta quando o voo de Guilin pousar depois da meia-noite. 5 min a pé da Estação Ferroviária de Pequim. Check-out deduzido."
+      }
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "name": "BAIhome Hotel 百致酒店 (Shanghai People's Square Fuzhou Road Branch)",
+      "checkIn": "2026-10-26",
+      "checkOut": "2026-10-31",
+      "address": "Building 1, 355 Fuzhou Road, Huangpu, Shanghai · 上海市黄浦区福州路355号1号楼",
+      "coords": [
+        31.2347,
+        121.4748
+      ],
+      "url": "https://us.trip.com/hotels/shanghai-hotel-detail-124743144/baihome-hotel/",
+      "note": {
+        "en": "The base for the last five nights, one hotel the whole time. Check-out on the 31st is the morning of the flight home. Walking distance to People's Square and the Nanjing Road end of the Bund. The pin is approximate, on Fuzhou Road near People's Square: the street number is in the address above, show it to the driver.",
+        "pt": "A base das cinco ultimas noites, um hotel so o tempo todo. O check-out no dia 31 e a manha do voo de volta. A pe da Praca do Povo e da ponta da Nanjing Road no Bund. O ponto no mapa e aproximado, na Fuzhou Road perto da Praca do Povo: o numero esta no endereco acima, mostre ao motorista."
       }
     }
   ]
