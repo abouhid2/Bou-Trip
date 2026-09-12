@@ -153,79 +153,84 @@
       <Point><coordinates>110.2976,25.3318,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Guilin Norte ate o hotel no centro, largar as malas</name>
-      <description>Guilin / Yangshuo · Downtown Guilin, Xiufeng District · 桂林市秀峰区市中心</description>
-      <Point><coordinates>110.2945,25.2816,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Cruzeiro noturno Dois Rios e Quatro Lagos</name>
-      <description>Guilin / Yangshuo · Two Rivers Four Lakes, Fisherman's Wharf ticket office, Binjiang Road, Guilin · 桂林市滨江路 两江四湖景区渔人码头</description>
-      <Point><coordinates>110.2936,25.2746,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Guilin ate Longji de carro</name>
-      <description>Guilin / Yangshuo · Longji Rice Terraces ticket office, Longsheng County, Guilin · 桂林市龙胜各族自治县 龙脊梯田风景区售票处</description>
-      <Point><coordinates>110.0675,25.7274,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>🚉 Downtown Guilin 桂林市中心</name>
+      <name>🚉 Yangshuo 阳朔</name>
       <description>Guilin / Yangshuo</description>
-      <Point><coordinates>110.2945,25.2816,0</coordinates></Point>
+      <Point><coordinates>110.489,24.772,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>🚉 Longji Rice Terraces 龙脊梯田</name>
+      <name>Check-in na Muyunli, tres noites, uma base so</name>
       <description>Guilin / Yangshuo</description>
-      <Point><coordinates>110.0675,25.7274,0</coordinates></Point>
+      <Point><coordinates>110.489,24.772,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Vila de Ping'an e arroz no bambu</name>
-      <description>Guilin / Yangshuo · Ping'an Village, Longji, Longsheng County · 龙胜各族自治县龙脊平安寨</description>
-      <Point><coordinates>110.1198,25.7585,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Caminhada nos terracos de Longji: Sete Estrelas e Nove Dragoes</name>
-      <description>Guilin / Yangshuo · Seven Stars Accompany the Moon viewpoint, Longji · 龙脊七星伴月观景点</description>
-      <Point><coordinates>110.0907,25.7482,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Check-out, hotel ate o cais de Mopanshan</name>
-      <description>Guilin / Yangshuo · Mopanshan Pier, Guimo Road, Lingchuan County, Guilin · 桂林市灵川县桂磨路磨盘山码头</description>
-      <Point><coordinates>110.4269,25.1506,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>🚉 Mopanshan Pier 磨盘山码头</name>
+      <name>West Street e peixe na cerveja</name>
       <description>Guilin / Yangshuo</description>
-      <Point><coordinates>110.4269,25.1506,0</coordinates></Point>
+      <Point><coordinates>110.4904614,24.7781732,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Cruzeiro no rio Li, Guilin ate Yangshuo (83 km)</name>
-      <description>Guilin / Yangshuo · Mopanshan Pier to Yangshuo Longtoushan Pier, Li River · 漓江，磨盘山码头至阳朔龙头山码头</description>
+      <name>🚉 Xingping 兴坪</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>110.5340329,24.9176001,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>A vista da nota de 20 yuan em Huangbu</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>110.5166399,24.9251035,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Monte Laozhai, se as pernas deixarem</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>110.5218451,24.9189334,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Balsa de bambu, Yangdi ate Nove Cavalos ate Xingping</name>
+      <description>Guilin / Yangshuo</description>
       <Point><coordinates>110.4898269,24.9386814,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Cais de Yangshuo ate o hotel, largar as malas</name>
-      <description>Guilin / Yangshuo · Yangshuo town, Yangshuo County, Guilin · 桂林市阳朔县阳朔镇</description>
-      <Point><coordinates>110.4909192,24.7809551,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Bicicleta pelo vale do Yulong desde a Ponte Gongnong</name>
-      <description>Guilin / Yangshuo · Gongnong Bridge, Yulong River, Yangshuo · 阳朔县遇龙河工农桥</description>
-      <Point><coordinates>110.4877677,24.7381472,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Impression Liu Sanjie - Zhang Yimou sobre o proprio rio</name>
-      <description>Guilin / Yangshuo · Impression Liu Sanjie theatre, Tianyuan Road, Yangshuo · 阳朔县田园路 印象刘三姐</description>
+      <name>Impression Liu Sanjie, Zhang Yimou sobre o proprio rio</name>
+      <description>Guilin / Yangshuo</description>
       <Point><coordinates>110.5035926,24.7699694,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>West Street e peixe na cerveja, depois do espetaculo</name>
-      <description>Guilin / Yangshuo · West Street, Yangshuo County, Guilin · 桂林市阳朔县西街</description>
-      <Point><coordinates>110.4905,24.7782,0</coordinates></Point>
+      <name>Balsa de bambu no rio Yulong, logo cedo</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>110.4225923,24.783666,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Pedalar o vale do Yulong desde a Ponte Gongnong</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>110.4877677,24.7381472,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Galeria de Dez Milhas, de bicicleta</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>110.486052,24.7369853,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Monte da Lua, o arco</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>110.4723972,24.7245479,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Caminhada lenta pelo campo de Yangshuo</name>
+      <description>Guilin / Yangshuo · Yangshuo countryside, Yangshuo County · 桂林市阳朔县乡间</description>
+      <Point><coordinates>110.4909192,24.7809551,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Yangshuo ate a cidade de Guilin de carro</name>
+      <description>Guilin / Yangshuo · Downtown Guilin, Xiufeng District · 桂林市秀峰区市中心</description>
+      <Point><coordinates>110.2945,25.2816,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>🚉 Yangshuo town 阳朔镇</name>
       <description>Guilin / Yangshuo</description>
       <Point><coordinates>110.4909192,24.7809551,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Downtown Guilin 桂林市中心</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>110.2945,25.2816,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Morro da Tromba de Elefante e a Gruta Agua-Lua</name>
@@ -363,29 +368,14 @@
       <Point><coordinates>120.2082,30.2936,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Templo Lingyin, logo de manha</name>
-      <description>Shanghai · 1 Fayun Alley, Xihu District, Hangzhou · 杭州市西湖区法云弄1号</description>
-      <Point><coordinates>120.0968,30.2428,0</coordinates></Point>
+      <name>🚉 Tonglu 桐庐站</name>
+      <description>Shanghai</description>
+      <Point><coordinates>119.7272,29.7916,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Feilai Feng, as grutas esculpidas</name>
-      <description>Shanghai</description>
-      <Point><coordinates>120.0964,30.2389,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Lago Oeste pela Su Causeway</name>
-      <description>Shanghai</description>
-      <Point><coordinates>120.1327,30.2485,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Pagode Leifeng no por do sol</name>
-      <description>Shanghai</description>
-      <Point><coordinates>120.145,30.2339,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Rua Hefang e jantar antes do trem</name>
-      <description>Shanghai</description>
-      <Point><coordinates>120.1556,30.2419,0</coordinates></Point>
+      <name>Ponte das Maos de Buda 佛手金桥</name>
+      <description>Shanghai · Zizhou Village, Qiantan, Jiande, Hangzhou · 浙江省杭州市建德市乾潭镇梓洲村</description>
+      <Point><coordinates>119.7338,29.5695,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Trem G Shanghai Hongqiao ate Suzhou, 25 min</name>
@@ -491,6 +481,11 @@
       <name>🛏️ Beijing Zhong'an Hotel 北京中安宾馆</name>
       <description>Pequim · 6 Kuijiachang, Dayangmao Hutong, Dongcheng, Beijing · 北京市东城区大羊毛胡同盔甲厂6号</description>
       <Point><coordinates>116.4237,39.9023,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🛏️ BAIhome Hotel 百致酒店 (Shanghai People's Square Fuzhou Road Branch)</name>
+      <description>Shanghai · Building 1, 355 Fuzhou Road, Huangpu, Shanghai · 上海市黄浦区福州路355号1号楼</description>
+      <Point><coordinates>121.4748,31.2347,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>🍽️ Jian Guo 328 建国328</name>
