@@ -3021,6 +3021,346 @@
     },
     {
       "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "mid",
+      "name": "DOPASTTA 帕萨朵手工意面 (Xintiandi Plaza)",
+      "cuisine": {
+        "en": "Handmade pasta",
+        "pt": "Massa artesanal"
+      },
+      "note": {
+        "en": "Fresh pasta made in-house at a bargain price, and a favourite for all-you-can-eat pasta. The Weihai Road branch has closed; this is the Xintiandi Plaza one.",
+        "pt": "Massa fresca feita na casa a preço camarada, famosa pela massa à vontade. A unidade da Weihai Road fechou; esta é a do Xintiandi Plaza."
+      },
+      "address": "B1, Xintiandi Plaza, 333 Middle Huaihai Road, Huangpu · 上海市黄浦区淮海中路333号新天地广场B1层",
+      "coords": [
+        31.224812,
+        121.469395
+      ]
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "local",
+      "name": "He Shan Mian Jia 和膳面家",
+      "cuisine": {
+        "en": "Wok-fried topping noodles (pork)",
+        "pt": "Lámen com cobertura salteada na hora (porco)"
+      },
+      "note": {
+        "en": "A neighbourhood noodle shop where every topping is stir-fried to order; go for the pork. It is far north, near Hualing Road.",
+        "pt": "Casa de lámen de bairro em que cada cobertura é salteada na hora; peça a de porco. Fica bem ao norte, perto da Hualing Road."
+      },
+      "address": "1190-1 Hutai Road, Jing'an · 上海市静安区沪太路1190-1号",
+      "coords": [
+        31.2823,
+        121.4198
+      ]
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "local",
+      "name": "Aunt Huang's Guotie 黄阿姨锅贴大王",
+      "cuisine": {
+        "en": "Guotie (pan-fried dumplings)",
+        "pt": "Guotie (dumpling na chapa)"
+      },
+      "note": {
+        "en": "A no-frills potsticker counter near Jing'an Temple: crisp-bottomed guotie straight off the pan.",
+        "pt": "Balcão simples de guotie perto do Jing'an Temple: dumplings de fundo crocante, direto da chapa."
+      },
+      "address": "174 Wanhangdu Road, Jing'an · 上海市静安区万航渡路174号",
+      "coords": [
+        31.226931,
+        121.436612
+      ]
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "mid",
+      "name": "Li Bai Xie 李百蟹 (Bund 22)",
+      "cuisine": {
+        "en": "Crab roe rice and noodles",
+        "pt": "Arroz e macarrão com molho de caranguejo"
+      },
+      "note": {
+        "en": "Crab roe, meat and leg mixed into a rich sauce, over rice or scallion noodles, with a view of the Bund. Queues are long, so book ahead. Open 10h to 22h.",
+        "pt": "Ova, carne e perna de caranguejo num molho denso, sobre arroz ou macarrão com cebolinha, com vista para o Bund. A fila é grande, reserve antes. Aberto das 10h às 22h."
+      },
+      "address": "3F, 22 Zhongshan East 2nd Road, Huangpu · 上海市黄浦区中山东二路22号3楼",
+      "price": "~¥338/set p/ 2",
+      "coords": [
+        31.232666,
+        121.489503
+      ]
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "mid",
+      "name": "Si Ji Min Fu 四季民福 (Peking Chamber, Jing'an Joy City)",
+      "cuisine": {
+        "en": "Peking duck",
+        "pt": "Pato laqueado"
+      },
+      "note": {
+        "en": "The Beijing favourite for Peking duck, carved at the table. This branch is on the 5th floor of Joy City's North Building.",
+        "pt": "O queridinho de Pequim para pato laqueado, fatiado na mesa. Esta unidade fica no 5º andar do prédio norte do Joy City."
+      },
+      "address": "5F, North Building, Jing'an Joy City, 198 North Xizang Road · 上海市静安区西藏北路198号大悦城北座5楼",
+      "coords": [
+        31.246104,
+        121.467596
+      ]
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "local",
+      "name": "Shandong Zaliang Jianbing 山东杂粮煎饼 (Guoqing Road)",
+      "cuisine": {
+        "en": "Jianbing (stuffed street crêpe)",
+        "pt": "Jianbing (crepe recheado de rua)"
+      },
+      "note": {
+        "en": "A street stall for the classic Shandong-style jianbing: egg, crispy cracker, sauce and scallions, folded while you wait.",
+        "pt": "Barraca de rua do jianbing clássico ao estilo de Shandong: ovo, massa crocante, molho e cebolinha, dobrado na hora."
+      },
+      "address": "166-7 Guoqing Road, Jing'an · 上海市静安区国庆路166-7号",
+      "coords": [
+        31.2436,
+        121.4643
+      ]
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "local",
+      "name": "Dingxing Road Danbingtan 定兴路蛋饼摊",
+      "cuisine": {
+        "en": "Danbing (egg pancake)",
+        "pt": "Danbing (panqueca de ovo)"
+      },
+      "note": {
+        "en": "A couple who have run this breakfast stall for 15+ years, near People's Square: crispy egg pancakes with as many fillings as you want. Open 5h30 to about 13h; go before 7h30.",
+        "pt": "Um casal que toca esta barraca de café da manhã há mais de 15 anos, perto da People's Square: panqueca de ovo crocante com quantos recheios quiser. Abre das 5h30 até umas 13h; chegue antes das 7h30."
+      },
+      "address": "6 Dingxing Road, Huangpu · 上海市黄浦区定兴路6号",
+      "price": "~¥15",
+      "coords": [
+        31.2371,
+        121.4667
+      ]
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "local",
+      "name": "Shui Feng Lu Ji Dan Bing 水丰路鸡蛋饼",
+      "cuisine": {
+        "en": "Soft egg pancake",
+        "pt": "Panqueca de ovo macia"
+      },
+      "note": {
+        "en": "A husband-and-wife stall that has made the same soft egg pancake for 20+ years, now on Dianping's Must-Eat list. Closed on Mondays. It is in Yangpu, far from the centre.",
+        "pt": "Barraca de um casal que faz a mesma panqueca de ovo macia há mais de 20 anos e agora está no Must-Eat do Dianping. Fecha às segundas. Fica em Yangpu, longe do centro."
+      },
+      "address": "4 Yingkou Road, Yangpu · 上海市杨浦区营口路4号 (antes: 延吉东路557弄2号)",
+      "price": "~¥12",
+      "coords": [
+        31.2858,
+        121.5325
+      ]
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "local",
+      "name": "Apoli Itabakery AP意大利料理面包坊",
+      "cuisine": {
+        "en": "Italian bakery (the Harry Potter one)",
+        "pt": "Padaria italiana (a do Harry Potter)"
+      },
+      "note": {
+        "en": "Its first shop, done up as a castle: stone walls, lanterns and more than 50 breads, puffs and doughnuts. Near Jiaotong University station. Open 10h to 20h.",
+        "pt": "A primeira loja, decorada como um castelo: paredes de pedra, lanternas e mais de 50 pães, carolinas e donuts. Perto da estação Jiaotong University. Aberta das 10h às 20h."
+      },
+      "address": "380 Xingguo Road, Changning · 上海市长宁区兴国路380号",
+      "coords": [
+        31.205,
+        121.4336
+      ]
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "mid",
+      "name": "Polux 普罗之星",
+      "cuisine": {
+        "en": "French café and bistro",
+        "pt": "Café e bistrô francês"
+      },
+      "note": {
+        "en": "An all-day French bistro from Paul Pairet (the chef of Ultraviolet), with a Bib Gourmand, in Xintiandi.",
+        "pt": "Bistrô francês que funciona o dia todo, de Paul Pairet (o chef do Ultraviolet), com Bib Gourmand, no Xintiandi."
+      },
+      "address": "No. 5, Xintiandi North Block, Lane 181 Taicang Road, Huangpu · 上海市黄浦区太仓路181弄新天地北里5号",
+      "coords": [
+        31.223215,
+        121.4706557
+      ],
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/polux"
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "mid",
+      "name": "Ren He Guan 人和馆 (Zhaojiabang Road)",
+      "cuisine": {
+        "en": "Shanghainese, crab roe rice",
+        "pt": "Shanghainesa, arroz com ova de caranguejo"
+      },
+      "note": {
+        "en": "A MICHELIN star with a 1930s Old Shanghai feel. Order the crab roe rice with lots of sauce, and the hong shao rou.",
+        "pt": "Estrela MICHELIN num clima de Xangai dos anos 1930. Peça o arroz com ova de caranguejo cheio de molho e o hong shao rou."
+      },
+      "address": "407 Zhaojiabang Road, Xuhui · 上海市徐汇区肇嘉浜路407号",
+      "coords": [
+        31.2036624,
+        121.4537364
+      ],
+      "url": "https://guide.michelin.com/th/th/shanghai-municipality/shanghai/restaurant/ren-he-guan-zhaojiabang-road"
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "local",
+      "name": "Yong Feng Mian Guan 永丰面馆",
+      "cuisine": {
+        "en": "Halal lamb noodles",
+        "pt": "Macarrão halal de cordeiro"
+      },
+      "note": {
+        "en": "A family-run halal noodle shop open since 1962, with a MICHELIN listing. Get the red-braised lamb noodles, in curry beef broth or with scallion oil.",
+        "pt": "Casa de macarrão halal da mesma família desde 1962, recomendada pelo MICHELIN. Peça o de cordeiro braseado, no caldo de curry ou com óleo de cebolinha."
+      },
+      "address": "320 Hankou Road, Huangpu · 上海市黄浦区汉口路320号",
+      "coords": [
+        31.2376249,
+        121.4795586
+      ],
+      "url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/yong-feng-mian-guan"
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "local",
+      "name": "Lao Han Fried Chicken 老韩炸鸡",
+      "cuisine": {
+        "en": "Fried chicken",
+        "pt": "Frango frito"
+      },
+      "note": {
+        "en": "A Chinese fried-chicken chain. We still need the branch you have in mind.",
+        "pt": "Rede chinesa de frango frito. Ainda falta saber qual unidade você quer."
+      }
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "local",
+      "name": "Shanghai Harbin Food Factory 哈尔滨食品厂 (Huaihai Road)",
+      "cuisine": {
+        "en": "Shanghai-style Western pastries",
+        "pt": "Doces ocidentais ao estilo de Xangai"
+      },
+      "note": {
+        "en": "A heritage bakery on Huaihai Road for Old Shanghai's European-style biscuits: butterfly puffs and almond strips.",
+        "pt": "Confeitaria tradicional na Huaihai Road dos biscoitos europeus da velha Xangai: palmier (butterfly) e tiras de amêndoa."
+      },
+      "address": "603 Middle Huaihai Road, Huangpu · 上海市黄浦区淮海中路603号 (近成都南路)",
+      "price": "¥42/pacote",
+      "coords": [
+        31.222,
+        121.4628
+      ]
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "local",
+      "name": "Fa Hua Tang Bao 法华汤包馆",
+      "cuisine": {
+        "en": "Nanjing-style soup dumplings, handmade",
+        "pt": "Tang bao estilo Nanjing, feito à mão"
+      },
+      "note": {
+        "en": "A neighbourhood breakfast favourite since 2000: thin-skinned tang bao with sweet-savoury broth, handmade. Open 6h to 20h.",
+        "pt": "Café da manhã preferido do bairro desde 2000: tang bao de massa fina e caldo agridoce, feito à mão. Aberto das 6h às 20h."
+      },
+      "address": "503 Fahuazhen Road, Changning · 上海市长宁区法华镇路503号",
+      "price": "¥8-15",
+      "coords": [
+        31.207,
+        121.4211
+      ]
+    },
+    {
+      "city": {
+        "en": "Shanghai",
+        "pt": "Shanghai"
+      },
+      "tier": "local",
+      "name": "Luo Chun Ge 萝春阁",
+      "cuisine": {
+        "en": "Shengjianbao",
+        "pt": "Shengjianbao"
+      },
+      "note": {
+        "en": "The 'original' shengjianbao house, back in January 2026 after 21 years away: old-school pan-fried buns, the local rival of Da Hu Chun. Open 9h to 19h; they sell out early.",
+        "pt": "A casa 'original' do shengjianbao, que voltou em janeiro de 2026 depois de 21 anos: pãozinho na chapa à moda antiga, rival local do Da Hu Chun. Aberta das 9h às 19h; acaba cedo."
+      },
+      "address": "425 Middle Zhejiang Road, Huangpu · 上海市黄浦区浙江中路425号",
+      "price": "¥9/4 unid.",
+      "coords": [
+        31.2386,
+        121.473
+      ]
+    },
+    {
+      "city": {
         "en": "Beijing",
         "pt": "Pequim"
       },
