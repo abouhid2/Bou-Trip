@@ -183,6 +183,15 @@ String vira bullet simples. Para algo rico, use objeto:
 - `coords`: **sempre WGS-84 (GPS real / OpenStreetMap)**. ⚠️ Na China não pegue do Google Maps:
   ele aplica o desvio GCJ-02 e as coordenadas saem ~centenas de metros erradas.
 
+### Decisões, opcionais e avisos
+Para a pessoa decidir **durante a viagem**, não escreva "PLANO A/B" ou "opcional" no texto:
+- **Decisão**: um item `{ "type": "choice", "id": "beijing-wall", "period": "morning", "text": "Qual trecho?",
+  "options": [{ "label": "...", "note": "...", "items": [...] }, ...] }`. Vira um card com botões; a
+  escolha fica salva no aparelho e esconde as outras opções em todas as abas e no mapa. `id` estável
+  (é a chave salva). Um topo "N decisões em aberto" leva até a primeira sem escolha.
+- **Opcional**: `"optional": true` num item. Ganha selo e botão "Pular", também salvo no aparelho.
+- **Aviso**: `"type": "warn"` para "confirmar antes de comprar" e afins (destaque âmbar).
+
 As datas dos dias são **calculadas automaticamente** a partir de `startDate` somando as noites.
 
 ## 3. Gere o HTML (e o KML)

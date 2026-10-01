@@ -1254,8 +1254,8 @@
               "type": "bullet",
               "period": "morning",
               "text": {
-                "en": "Laozhai Hill, if the legs agree",
-                "pt": "Monte Laozhai, se as pernas deixarem"
+                "en": "Laozhai Hill",
+                "pt": "Monte Laozhai"
               },
               "note": {
                 "en": "A steep but short climb straight up from Xingping, and the best panorama of the river bend from above. Skip it if the day is hazy, it is all about visibility.",
@@ -1264,7 +1264,8 @@
               "coords": [
                 24.9189334,
                 110.5218451
-              ]
+              ],
+              "optional": true
             },
             {
               "type": "star",
@@ -1484,8 +1485,8 @@
               "period": "afternoon",
               "time": "~15:00-16:30",
               "text": {
-                "en": "Reed Flute Cave (drop it if you would rather not)",
-                "pt": "Gruta da Flauta de Junco (corte se preferir)"
+                "en": "Reed Flute Cave",
+                "pt": "Gruta da Flauta de Junco"
               },
               "note": {
                 "en": "A 240 m walking route through a limestone cavern of stalactites and stone curtains, lit in colour, with a mirror pool at the end that doubles the whole chamber. About CNY 90 to 110. The name comes from the reeds at the mouth that were cut into flutes; the ink inscriptions on the walls go back to the Tang dynasty. The straight assessment: it is well done, and it is also the second lit cave of this trip after Yellow Dragon in Zhangjiajie, which was bigger and had an underground river. If the day has been enough already, spend the 90 minutes on the Li embankment instead and go to the airport early - nothing is lost.",
@@ -1496,7 +1497,8 @@
               "coords": [
                 25.3119,
                 110.2671
-              ]
+              ],
+              "optional": true
             },
             {
               "type": "move",
@@ -1765,124 +1767,177 @@
           },
           "items": [
             {
-              "type": "move",
+              "type": "choice",
+              "id": "beijing-wall",
               "period": "morning",
-              "time": "06:00 → 07:30",
               "text": {
-                "en": "PLAN A - Beijing to Mutianyu, leave 06:00",
-                "pt": "PLANO A - Pequim a Mutianyu, saia 06h00"
+                "en": "Which section of the Wall?",
+                "pt": "Qual trecho da Muralha?"
               },
-              "note": {
-                "en": "The 06:00 departure IS the strategy - it is the whole reason this works, so do not soften it. Private car round trip, roughly 600-800 yuan for the day, gets you to the gate for the 07:30 opening. The public route cannot: metro line 2 to Dongzhimen exit B, bus 916 Express (916快, never the slow regular 916) to Huairou Beidajie 70-90 min, then bus H23/H24/H35/H36 to Mutianyu Roundabout 20 min, total 15-30 yuan - but it puts you at the gate around 09:30, exactly when the buses land, which defeats the entire plan. On this one day, pay for the car.",
-                "pt": "A saida as 06h00 E a estrategia - e a razao inteira de isso funcionar, entao nao amoleca. Carro privado ida e volta, aprox. 600-800 yuan o dia, te poe no portao para a abertura das 7h30. A rota publica nao consegue: metro linha 2 ate Dongzhimen saida B, onibus 916 Express (916快, nunca o 916 comum que e lento) ate Huairou Beidajie 70-90 min, depois onibus H23/H24/H35/H36 ate Mutianyu Huandao 20 min, total 15-30 yuan - mas te deixa no portao la pelas 9h30, exatamente quando os onibus chegam, o que destroi o plano inteiro. Neste dia especifico, pague o carro."
-              },
-              "address": "Dongzhimen Wai Bus Station · 东直门外公交枢纽"
-            },
-            {
-              "type": "star",
-              "period": "morning",
-              "time": "07:30–08:00",
-              "text": {
-                "en": "PLAN A - Gate, shuttle and chairlift up to Tower 6",
-                "pt": "PLANO A - Portao, shuttle e chairlift ate a torre 6"
-              },
-              "note": {
-                "en": "Mutianyu opens 07:30 in peak season (Mar 16 - Nov 15); Oct 24 is a Saturday, but well past Golden Week - and the dawn start is exactly what carries a weekend. Entry 40 yuan, chairlift 100 one way. From the visitor centre the internal shuttle to the lift base is compulsory - you cannot walk it. Take the chairlift, not the enclosed cable car, and get off at Tower 6.",
-                "pt": "Mutianyu abre 7h30 na alta temporada (16/mar a 15/nov); 24/out e um sabado, mas bem depois da Golden Week - e a largada de madrugada e justamente o que segura um fim de semana. Entrada 40 yuan, chairlift 100 so ida. Do centro de visitantes o shuttle interno ate a base do teleferico e obrigatorio - nao da para ir a pe. Pegue o chairlift, nao o teleferico fechado, e desca na torre 6."
-              },
-              "address": "Mutianyu Village, Bohai Town, Huairou District · 怀柔区渤海镇慕田峪村",
-              "url": "https://en.mutianyugreatwall.com",
-              "tickets": "https://en.mutianyugreatwall.com/reservation-center/tickets",
-              "coords": [
-                40.4319,
-                116.5704
-              ]
-            },
-            {
-              "type": "star",
-              "period": "morning",
-              "time": "08:00–11:00",
-              "text": {
-                "en": "PLAN A - Walk the wall in the empty window",
-                "pt": "PLANO A - Caminhe a muralha na janela vazia"
-              },
-              "note": {
-                "en": "This is the payoff. Sources agree the calm window is 07:30-09:00 on a weekday and that the crowd builds sharply after 09:00, when the day-trip buses arrive. You get roughly ninety minutes of near-solitude and low autumn light, then it fills in around you and you are already ahead of it. Walk east toward Tower 20 for the emptiest stretch - most people never leave the Tower 6 to 14 stub.",
-                "pt": "Esta e a recompensa. As fontes concordam que a janela calma e 7h30-9h em dia de semana e que a multidao engrossa forte depois das 9h, quando chegam os onibus de bate-volta. Voce ganha uns noventa minutos de quase-solidao e luz baixa de outono, e depois ela enche em volta de voce, que ja saiu na frente. Caminhe para leste rumo a torre 20 para o trecho mais vazio - quase ninguem sai do toco entre as torres 6 e 14."
-              },
-              "address": "Mutianyu Great Wall, Towers 6 to 20 · 慕田峪长城 六号楼至二十号楼",
-              "coords": [
-                40.4319,
-                116.5704
-              ]
-            },
-            {
-              "type": "star",
-              "period": "morning",
-              "time": "~11:00–11:30",
-              "text": {
-                "en": "PLAN A - Toboggan down from Tower 6",
-                "pt": "PLANO A - Toboggan descendo da torre 6"
-              },
-              "note": {
-                "en": "The toboggan is descent only, 100 yuan, 1,580 m of hand-braked stainless track through the forest - the thing that exists nowhere else. The detail that trips everyone up: it leaves from the CHAIRLIFT station at Tower 6, not from the enclosed cable car station at Tower 14, so mixing them costs a 30-45 minute stair climb. Going down at 11:00 also means you beat the queue, which is genuinely long by early afternoon.",
-                "pt": "O toboggan so desce, 100 yuan, 1.580 m de trilho de inox com freio de mao pela mata - a coisa que nao existe em lugar nenhum. O detalhe que derruba todo mundo: ele sai da estacao do CHAIRLIFT na torre 6, nao da estacao do teleferico fechado na torre 14, entao misturar os dois custa 30-45 minutos de escadaria. Descer as 11h tambem significa furar a fila, que fica sinceramente longa no comeco da tarde."
-              },
-              "address": "Mutianyu Great Wall, Tower 6 station · 慕田峪长城 六号楼索道站",
-              "coords": [
-                40.4319,
-                116.5704
-              ]
-            },
-            {
-              "type": "move",
-              "period": "afternoon",
-              "time": "12:00 → 13:30",
-              "text": {
-                "en": "PLAN A - Back to Beijing, rest",
-                "pt": "PLANO A - Volta a Pequim, descanso"
-              },
-              "note": {
-                "en": "The dawn strategy hands the afternoon back as a bonus: you are home by 13:30 while the buses are still disgorging at the gate. Take a real nap - the Drum Tower is gentle but you woke at 05:30 and walked kilometres of Ming staircase, and tomorrow starts early too.",
-                "pt": "A estrategia da madrugada devolve a tarde de bonus: voce esta em casa as 13h30 enquanto os onibus ainda estao despejando gente no portao. Tire um cochilo de verdade - o Drum Tower e leve, mas voce acordou as 5h30 e caminhou quilometros de escadaria Ming, e amanha tambem comeca cedo."
-              }
-            },
-            {
-              "type": "star",
-              "period": "afternoon",
-              "time": "~13:00-16:30",
-              "text": {
-                "en": "Summer Palace",
-                "pt": "Palacio de Verao"
-              },
-              "note": {
-                "en": "A vast imperial garden around Kunming Lake, open from 06:30 but taken this afternoon after a late start. October gives it the best light of the year; the Long Corridor and Foxiang Ge over the lake are the postcard. Buy the Combination Ticket, not the plain entry. It sits in the far northwest, which is why it pairs with Houhai on the way back toward the centre.",
-                "pt": "Um jardim imperial enorme em volta do Lago Kunming, aberto desde as 06:30 mas pego nesta tarde depois de um comeco tardio. Outubro da a ele a melhor luz do ano; o Long Corridor e o Foxiang Ge sobre o lago sao o cartao-postal. Compre o Combination Ticket, nao a entrada simples. Fica no extremo noroeste, e por isso casa com o Houhai na volta em direcao ao centro."
-              },
-              "address": "No. 19 Xinjiangongmen Road, Haidian District · 海淀区新建宫门路19号",
-              "url": "https://english.beijing.gov.cn/specials/parktours/guidevisitors/summerpalace/",
-              "tickets": "https://www.travelchinaguide.com/summer-palace-tickets-booking.htm",
-              "coords": [
-                39.9998,
-                116.2755
-              ]
-            },
-            {
-              "type": "star",
-              "period": "night",
-              "time": "~17:00–19:30",
-              "text": {
-                "en": "Shichahai and Houhai at sunset",
-                "pt": "Shichahai e Houhai no por do sol"
-              },
-              "note": {
-                "en": "Imperial lakes ringed by hutongs, an easy hop from the Summer Palace back toward the centre. Sunset in mid-October falls around 17:45, so you arrive with the light still on the water. Walk the north shore of Houhai and ignore the row of cover-band bars - this is where Beijing still looks like Beijing. It also makes Nanluoguxiang redundant, which is why that one was cut: same hutong idea, done better and for free.",
-                "pt": "Lagos imperiais cercados de hutongs, a um pulo do Palacio de Verao de volta ao centro. O por do sol em meados de outubro cai por volta das 17h45, entao voce chega com a luz ainda na agua. Ande a margem norte do Houhai e ignore a fileira de bares com cover band - e onde Pequim ainda parece Pequim. Isso tambem torna Nanluoguxiang redundante, e por isso ela foi cortada: mesma ideia de hutong, feita melhor e de graca."
-              },
-              "address": "Shichahai, Xicheng District · 西城区什刹海",
-              "coords": [
-                39.94,
-                116.383
+              "options": [
+                {
+                  "label": {
+                    "en": "Mutianyu, with the toboggan",
+                    "pt": "Mutianyu, com o toboggan"
+                  },
+                  "note": {
+                    "en": "Dawn start, back by 13:30, and the afternoon goes to the Summer Palace and Houhai.",
+                    "pt": "Saída de madrugada, volta às 13:30, e a tarde vai para o Palácio de Verão e o Houhai."
+                  },
+                  "items": [
+                    {
+                      "type": "move",
+                      "period": "morning",
+                      "time": "06:00 → 07:30",
+                      "text": {
+                        "en": "Beijing to Mutianyu, leave 06:00",
+                        "pt": "Pequim a Mutianyu, saia 06h00"
+                      },
+                      "note": {
+                        "en": "The 06:00 departure IS the strategy - it is the whole reason this works, so do not soften it. Private car round trip, roughly 600-800 yuan for the day, gets you to the gate for the 07:30 opening. The public route cannot: metro line 2 to Dongzhimen exit B, bus 916 Express (916快, never the slow regular 916) to Huairou Beidajie 70-90 min, then bus H23/H24/H35/H36 to Mutianyu Roundabout 20 min, total 15-30 yuan - but it puts you at the gate around 09:30, exactly when the buses land, which defeats the entire plan. On this one day, pay for the car.",
+                        "pt": "A saida as 06h00 E a estrategia - e a razao inteira de isso funcionar, entao nao amoleca. Carro privado ida e volta, aprox. 600-800 yuan o dia, te poe no portao para a abertura das 7h30. A rota publica nao consegue: metro linha 2 ate Dongzhimen saida B, onibus 916 Express (916快, nunca o 916 comum que e lento) ate Huairou Beidajie 70-90 min, depois onibus H23/H24/H35/H36 ate Mutianyu Huandao 20 min, total 15-30 yuan - mas te deixa no portao la pelas 9h30, exatamente quando os onibus chegam, o que destroi o plano inteiro. Neste dia especifico, pague o carro."
+                      },
+                      "address": "Dongzhimen Wai Bus Station · 东直门外公交枢纽"
+                    },
+                    {
+                      "type": "star",
+                      "period": "morning",
+                      "time": "07:30–08:00",
+                      "text": {
+                        "en": "Gate, shuttle and chairlift up to Tower 6",
+                        "pt": "Portao, shuttle e chairlift ate a torre 6"
+                      },
+                      "note": {
+                        "en": "Mutianyu opens 07:30 in peak season (Mar 16 - Nov 15); Oct 24 is a Saturday, but well past Golden Week - and the dawn start is exactly what carries a weekend. Entry 40 yuan, chairlift 100 one way. From the visitor centre the internal shuttle to the lift base is compulsory - you cannot walk it. Take the chairlift, not the enclosed cable car, and get off at Tower 6.",
+                        "pt": "Mutianyu abre 7h30 na alta temporada (16/mar a 15/nov); 24/out e um sabado, mas bem depois da Golden Week - e a largada de madrugada e justamente o que segura um fim de semana. Entrada 40 yuan, chairlift 100 so ida. Do centro de visitantes o shuttle interno ate a base do teleferico e obrigatorio - nao da para ir a pe. Pegue o chairlift, nao o teleferico fechado, e desca na torre 6."
+                      },
+                      "address": "Mutianyu Village, Bohai Town, Huairou District · 怀柔区渤海镇慕田峪村",
+                      "url": "https://en.mutianyugreatwall.com",
+                      "tickets": "https://en.mutianyugreatwall.com/reservation-center/tickets",
+                      "coords": [
+                        40.4319,
+                        116.5704
+                      ]
+                    },
+                    {
+                      "type": "star",
+                      "period": "morning",
+                      "time": "08:00–11:00",
+                      "text": {
+                        "en": "Walk the wall in the empty window",
+                        "pt": "Caminhe a muralha na janela vazia"
+                      },
+                      "note": {
+                        "en": "This is the payoff. Sources agree the calm window is 07:30-09:00 on a weekday and that the crowd builds sharply after 09:00, when the day-trip buses arrive. You get roughly ninety minutes of near-solitude and low autumn light, then it fills in around you and you are already ahead of it. Walk east toward Tower 20 for the emptiest stretch - most people never leave the Tower 6 to 14 stub.",
+                        "pt": "Esta e a recompensa. As fontes concordam que a janela calma e 7h30-9h em dia de semana e que a multidao engrossa forte depois das 9h, quando chegam os onibus de bate-volta. Voce ganha uns noventa minutos de quase-solidao e luz baixa de outono, e depois ela enche em volta de voce, que ja saiu na frente. Caminhe para leste rumo a torre 20 para o trecho mais vazio - quase ninguem sai do toco entre as torres 6 e 14."
+                      },
+                      "address": "Mutianyu Great Wall, Towers 6 to 20 · 慕田峪长城 六号楼至二十号楼",
+                      "coords": [
+                        40.4319,
+                        116.5704
+                      ]
+                    },
+                    {
+                      "type": "star",
+                      "period": "morning",
+                      "time": "~11:00–11:30",
+                      "text": {
+                        "en": "Toboggan down from Tower 6",
+                        "pt": "Toboggan descendo da torre 6"
+                      },
+                      "note": {
+                        "en": "The toboggan is descent only, 100 yuan, 1,580 m of hand-braked stainless track through the forest - the thing that exists nowhere else. The detail that trips everyone up: it leaves from the CHAIRLIFT station at Tower 6, not from the enclosed cable car station at Tower 14, so mixing them costs a 30-45 minute stair climb. Going down at 11:00 also means you beat the queue, which is genuinely long by early afternoon.",
+                        "pt": "O toboggan so desce, 100 yuan, 1.580 m de trilho de inox com freio de mao pela mata - a coisa que nao existe em lugar nenhum. O detalhe que derruba todo mundo: ele sai da estacao do CHAIRLIFT na torre 6, nao da estacao do teleferico fechado na torre 14, entao misturar os dois custa 30-45 minutos de escadaria. Descer as 11h tambem significa furar a fila, que fica sinceramente longa no comeco da tarde."
+                      },
+                      "address": "Mutianyu Great Wall, Tower 6 station · 慕田峪长城 六号楼索道站",
+                      "coords": [
+                        40.4319,
+                        116.5704
+                      ]
+                    },
+                    {
+                      "type": "move",
+                      "period": "afternoon",
+                      "time": "12:00 → 13:30",
+                      "text": {
+                        "en": "Back to Beijing, rest",
+                        "pt": "Volta a Pequim, descanso"
+                      },
+                      "note": {
+                        "en": "The dawn strategy hands the afternoon back as a bonus: you are home by 13:30 while the buses are still disgorging at the gate. Take a real nap - the Drum Tower is gentle but you woke at 05:30 and walked kilometres of Ming staircase, and tomorrow starts early too.",
+                        "pt": "A estrategia da madrugada devolve a tarde de bonus: voce esta em casa as 13h30 enquanto os onibus ainda estao despejando gente no portao. Tire um cochilo de verdade - o Drum Tower e leve, mas voce acordou as 5h30 e caminhou quilometros de escadaria Ming, e amanha tambem comeca cedo."
+                      }
+                    },
+                    {
+                      "type": "star",
+                      "period": "afternoon",
+                      "time": "~13:00-16:30",
+                      "text": {
+                        "en": "Summer Palace",
+                        "pt": "Palacio de Verao"
+                      },
+                      "note": {
+                        "en": "A vast imperial garden around Kunming Lake, open from 06:30 but taken this afternoon after a late start. October gives it the best light of the year; the Long Corridor and Foxiang Ge over the lake are the postcard. Buy the Combination Ticket, not the plain entry. It sits in the far northwest, which is why it pairs with Houhai on the way back toward the centre.",
+                        "pt": "Um jardim imperial enorme em volta do Lago Kunming, aberto desde as 06:30 mas pego nesta tarde depois de um comeco tardio. Outubro da a ele a melhor luz do ano; o Long Corridor e o Foxiang Ge sobre o lago sao o cartao-postal. Compre o Combination Ticket, nao a entrada simples. Fica no extremo noroeste, e por isso casa com o Houhai na volta em direcao ao centro."
+                      },
+                      "address": "No. 19 Xinjiangongmen Road, Haidian District · 海淀区新建宫门路19号",
+                      "url": "https://english.beijing.gov.cn/specials/parktours/guidevisitors/summerpalace/",
+                      "tickets": "https://www.travelchinaguide.com/summer-palace-tickets-booking.htm",
+                      "coords": [
+                        39.9998,
+                        116.2755
+                      ]
+                    },
+                    {
+                      "type": "star",
+                      "period": "night",
+                      "time": "~17:00–19:30",
+                      "text": {
+                        "en": "Shichahai and Houhai at sunset",
+                        "pt": "Shichahai e Houhai no por do sol"
+                      },
+                      "note": {
+                        "en": "Imperial lakes ringed by hutongs, an easy hop from the Summer Palace back toward the centre. Sunset in mid-October falls around 17:45, so you arrive with the light still on the water. Walk the north shore of Houhai and ignore the row of cover-band bars - this is where Beijing still looks like Beijing. It also makes Nanluoguxiang redundant, which is why that one was cut: same hutong idea, done better and for free.",
+                        "pt": "Lagos imperiais cercados de hutongs, a um pulo do Palacio de Verao de volta ao centro. O por do sol em meados de outubro cai por volta das 17h45, entao voce chega com a luz ainda na agua. Ande a margem norte do Houhai e ignore a fileira de bares com cover band - e onde Pequim ainda parece Pequim. Isso tambem torna Nanluoguxiang redundante, e por isso ela foi cortada: mesma ideia de hutong, feita melhor e de graca."
+                      },
+                      "address": "Shichahai, Xicheng District · 西城区什刹海",
+                      "coords": [
+                        39.94,
+                        116.383
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": {
+                    "en": "Jinshanling, empty, no toboggan",
+                    "pt": "Jinshanling, vazia, sem toboggan"
+                  },
+                  "note": {
+                    "en": "The whole day goes to the Wall: no Summer Palace and no Houhai at sunset.",
+                    "pt": "O dia inteiro fica na Muralha: sem Palácio de Verão e sem Houhai no pôr do sol."
+                  },
+                  "items": [
+                    {
+                      "type": "bullet",
+                      "period": "morning",
+                      "time": "06:30 → 20:00",
+                      "text": {
+                        "en": "Jinshanling: empty, but NO toboggan",
+                        "pt": "Jinshanling: vazia, mas SEM toboga"
+                      },
+                      "note": {
+                        "en": "If emptiness matters more than the toboggan, this replaces Plan A above - it is an either/or, not an addition, and it also eats the Drum Tower afternoon. Jinshanling is the real thing: 10.5 km, half-wild and half-restored, 67 watchtowers, 130 km from Beijing, known as the photographer's section precisely because almost nobody is on it. There IS a cable car (15 min up), so it is not a brutal climb. But there is no toboggan and there never will be - that is the whole trade. Private car about 2h each way, or high-speed rail to Gubeikou station then a Didi under 30 yuan to the gate. A direct bus also leaves Wangjing West metro at 08:00 and returns 15:00.",
+                        "pt": "Se o vazio importa mais que o toboga, isto substitui o Plano A acima - e um ou outro, nao um acrescimo, e tambem come a tarde do Drum Tower. Jinshanling e a coisa de verdade: 10,5 km, metade selvagem e metade restaurada, 67 torres de vigia, 130 km de Pequim, conhecida como a secao dos fotografos justamente porque quase ninguem esta nela. TEM teleferico (15 min ate o topo), entao nao e uma subida brutal. Mas nao tem toboga e nunca vai ter - essa e a troca inteira. Carro privado cerca de 2h cada trecho, ou trem de alta velocidade ate a estacao Gubeikou e depois um Didi por menos de 30 yuan ate o portao. Ha tambem um onibus direto que sai do metro Wangjing West as 08h00 e volta as 15h00."
+                      },
+                      "address": "HuaLouGou Village, Bakeshiying Town, Luanping County, Hebei · 河北省滦平县巴克什营镇花楼沟村 金山岭长城",
+                      "coords": [
+                        40.676644,
+                        117.232864
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -1902,24 +1957,6 @@
                 39.94,
                 116.383
               ]
-            },
-            {
-              "type": "bullet",
-              "period": "morning",
-              "time": "PLANO B · 06:30 → 20:00 (dia inteiro)",
-              "text": {
-                "en": "PLAN B (swap) - Jinshanling: empty, but NO toboggan",
-                "pt": "PLANO B (troca) - Jinshanling: vazia, mas SEM toboga"
-              },
-              "note": {
-                "en": "If emptiness matters more than the toboggan, this replaces Plan A above - it is an either/or, not an addition, and it also eats the Drum Tower afternoon. Jinshanling is the real thing: 10.5 km, half-wild and half-restored, 67 watchtowers, 130 km from Beijing, known as the photographer's section precisely because almost nobody is on it. There IS a cable car (15 min up), so it is not a brutal climb. But there is no toboggan and there never will be - that is the whole trade. Private car about 2h each way, or high-speed rail to Gubeikou station then a Didi under 30 yuan to the gate. A direct bus also leaves Wangjing West metro at 08:00 and returns 15:00.",
-                "pt": "Se o vazio importa mais que o toboga, isto substitui o Plano A acima - e um ou outro, nao um acrescimo, e tambem come a tarde do Drum Tower. Jinshanling e a coisa de verdade: 10,5 km, metade selvagem e metade restaurada, 67 torres de vigia, 130 km de Pequim, conhecida como a secao dos fotografos justamente porque quase ninguem esta nela. TEM teleferico (15 min ate o topo), entao nao e uma subida brutal. Mas nao tem toboga e nunca vai ter - essa e a troca inteira. Carro privado cerca de 2h cada trecho, ou trem de alta velocidade ate a estacao Gubeikou e depois um Didi por menos de 30 yuan ate o portao. Ha tambem um onibus direto que sai do metro Wangjing West as 08h00 e volta as 15h00."
-              },
-              "address": "HuaLouGou Village, Bakeshiying Town, Luanping County, Hebei · 河北省滦平县巴克什营镇花楼沟村 金山岭长城",
-              "coords": [
-                40.676644,
-                117.232864
-              ]
             }
           ]
         },
@@ -1929,17 +1966,6 @@
             "pt": "25/out (dom) - Datong, o maior desvio unico da viagem, e o unico dia cuja forma ainda esta aberta. O trem e a parte facil: 43 trens-bala por dia saem de Qinghe ou de Pequim Norte para Datong Sul entre 06:44 e 20:17, o mais rapido em 1h46, a maioria em torno de 2h. O dificil e que os dois grandes sitios ficam longe um do outro, entao escolha uma das tres formas abaixo antes de reservar qualquer coisa. Em qualquer caso voces desembarcam em Datong Sul, e o que faz o dia funcionar e um motorista esperando na estacao."
           },
           "items": [
-            {
-              "type": "bullet",
-              "text": {
-                "en": "DECISION STILL OPEN - pick one of the three shapes",
-                "pt": "DECISAO EM ABERTO - escolha uma das tres formas"
-              },
-              "note": {
-                "en": "SHAPE A, both sights with a hired car: Yungang first, lunch, then 1h30 across to the Hanging Temple. Out at 06:30, back near 22:00, about 15 hours door to door. SHAPE B, Yungang only: 20 min from the station, back in Beijing mid-afternoon, evening free. SHAPE C, Hanging Temple plus the Huayan Temple or Datong's earth wall, dropping the UNESCO caves.",
-                "pt": "FORMA A, os dois com carro contratado: Yungang primeiro, almoco, depois 1h30 atravessando ate o Mosteiro Suspenso. Saida 06:30, volta perto das 22:00, uns 15 horas de porta a porta. FORMA B, so Yungang: 20 min da estacao, de volta a Pequim no meio da tarde, noite livre. FORMA C, Mosteiro Suspenso mais o Templo Huayan ou a muralha de terra de Datong, abrindo mao das grutas UNESCO."
-              }
-            },
             {
               "type": "move",
               "period": "morning",
@@ -1968,39 +1994,129 @@
               }
             },
             {
-              "type": "star",
-              "period": "afternoon",
-              "time": "~14:00–16:30",
-              "text": {
-                "en": "Yungang Grottoes",
-                "pt": "Grutas de Yungang"
-              },
-              "note": {
-                "en": "51,000 Buddhas carved into 252 sandstone caves in the 5th century, some over 15 m tall, a UNESCO World Heritage site and one of China's three great cave-temple complexes. About 16 km west of Datong, so it pairs with the drive back toward the station. Open roughly 08:30-17:00, ticket around CNY 120. Give it two hours minimum - the great central caves are worth slowing down for.",
-                "pt": "51.000 budas esculpidos em 252 cavernas de arenito no seculo V, alguns com mais de 15 m, um sitio do Patrimonio Mundial da UNESCO e um dos tres grandes complexos de grutas-templo da China. Cerca de 16 km a oeste de Datong, entao casa com a volta em direcao a estacao. Aberto mais ou menos das 8h30 as 17h, ingresso uns CNY 120. Reserve no minimo duas horas - as grandes cavernas centrais merecem que voce va devagar."
-              },
-              "address": "Yungang Grottoes, Cheng District, Datong, Shanxi · 山西省大同市城区 云冈石窟",
-              "coords": [
-                40.1097,
-                113.1225
-              ]
-            },
-            {
-              "type": "star",
+              "type": "choice",
+              "id": "datong-shape",
               "period": "morning",
-              "time": "~10:30–12:00",
               "text": {
-                "en": "Hanging Temple (Xuankong Si)",
-                "pt": "Mosteiro Suspenso (Xuankong Si)"
+                "en": "Which Datong day?",
+                "pt": "Qual forma do dia em Datong?"
               },
-              "note": {
-                "en": "A monastery built into a cliff face 1,500 years ago, its halls held up by slender wooden posts over a 50 m drop, the only one of its kind. About an hour by car from Datong South. Around CNY 100 plus a climb ticket; the walkways are narrow and form a queue, so go before the tour groups. Pairing it with Yungang in one day is the standard Datong loop, but it is tight - keep moving.",
-                "pt": "Um mosteiro encravado num paredao ha 1.500 anos, com os saloes sustentados por finos pilares de madeira sobre uma queda de 50 m, o unico do genero. Cerca de uma hora de carro de Datong South. Uns CNY 100 mais um bilhete de subida; as passarelas sao estreitas e formam fila, entao va antes dos grupos. Juntar com Yungang no mesmo dia e o circuito padrao de Datong, mas e apertado - nao pare muito."
-              },
-              "address": "Hunyuan County, Datong, Shanxi · 山西省大同市浑源县 悬空寺",
-              "coords": [
-                39.6672,
-                113.6997
+              "options": [
+                {
+                  "label": {
+                    "en": "Both sights, hired car",
+                    "pt": "Os dois, com carro contratado"
+                  },
+                  "note": {
+                    "en": "Hanging Temple first, lunch, then Yungang. Out at 06:30, back near 22:00, about 15 hours door to door.",
+                    "pt": "Mosteiro Suspenso primeiro, almoço, depois Yungang. Saída 06:30, volta perto das 22:00, umas 15 horas de porta a porta."
+                  },
+                  "items": [
+                    {
+                      "type": "star",
+                      "period": "morning",
+                      "time": "~10:30–12:00",
+                      "text": {
+                        "en": "Hanging Temple (Xuankong Si)",
+                        "pt": "Mosteiro Suspenso (Xuankong Si)"
+                      },
+                      "note": {
+                        "en": "A monastery built into a cliff face 1,500 years ago, its halls held up by slender wooden posts over a 50 m drop, the only one of its kind. About an hour by car from Datong South. Around CNY 100 plus a climb ticket; the walkways are narrow and form a queue, so go before the tour groups. Pairing it with Yungang in one day is the standard Datong loop, but it is tight - keep moving.",
+                        "pt": "Um mosteiro encravado num paredao ha 1.500 anos, com os saloes sustentados por finos pilares de madeira sobre uma queda de 50 m, o unico do genero. Cerca de uma hora de carro de Datong South. Uns CNY 100 mais um bilhete de subida; as passarelas sao estreitas e formam fila, entao va antes dos grupos. Juntar com Yungang no mesmo dia e o circuito padrao de Datong, mas e apertado - nao pare muito."
+                      },
+                      "address": "Hunyuan County, Datong, Shanxi · 山西省大同市浑源县 悬空寺",
+                      "coords": [
+                        39.6672,
+                        113.6997
+                      ]
+                    },
+                    {
+                      "type": "star",
+                      "period": "afternoon",
+                      "time": "~14:00–16:30",
+                      "text": {
+                        "en": "Yungang Grottoes",
+                        "pt": "Grutas de Yungang"
+                      },
+                      "note": {
+                        "en": "51,000 Buddhas carved into 252 sandstone caves in the 5th century, some over 15 m tall, a UNESCO World Heritage site and one of China's three great cave-temple complexes. About 16 km west of Datong, so it pairs with the drive back toward the station. Open roughly 08:30-17:00, ticket around CNY 120. Give it two hours minimum - the great central caves are worth slowing down for.",
+                        "pt": "51.000 budas esculpidos em 252 cavernas de arenito no seculo V, alguns com mais de 15 m, um sitio do Patrimonio Mundial da UNESCO e um dos tres grandes complexos de grutas-templo da China. Cerca de 16 km a oeste de Datong, entao casa com a volta em direcao a estacao. Aberto mais ou menos das 8h30 as 17h, ingresso uns CNY 120. Reserve no minimo duas horas - as grandes cavernas centrais merecem que voce va devagar."
+                      },
+                      "address": "Yungang Grottoes, Cheng District, Datong, Shanxi · 山西省大同市城区 云冈石窟",
+                      "coords": [
+                        40.1097,
+                        113.1225
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": {
+                    "en": "Yungang only",
+                    "pt": "Só Yungang"
+                  },
+                  "note": {
+                    "en": "20 min from the station. Book an earlier return: back in Beijing mid-afternoon, evening free.",
+                    "pt": "20 min da estação. Reserve uma volta mais cedo: de volta a Pequim no meio da tarde, noite livre."
+                  },
+                  "items": [
+                    {
+                      "type": "star",
+                      "period": "afternoon",
+                      "text": {
+                        "en": "Yungang Grottoes",
+                        "pt": "Grutas de Yungang"
+                      },
+                      "note": {
+                        "en": "51,000 Buddhas carved into 252 sandstone caves in the 5th century, some over 15 m tall, a UNESCO World Heritage site and one of China's three great cave-temple complexes. About 16 km west of Datong, so it pairs with the drive back toward the station. Open roughly 08:30-17:00, ticket around CNY 120. Give it two hours minimum - the great central caves are worth slowing down for.",
+                        "pt": "51.000 budas esculpidos em 252 cavernas de arenito no seculo V, alguns com mais de 15 m, um sitio do Patrimonio Mundial da UNESCO e um dos tres grandes complexos de grutas-templo da China. Cerca de 16 km a oeste de Datong, entao casa com a volta em direcao a estacao. Aberto mais ou menos das 8h30 as 17h, ingresso uns CNY 120. Reserve no minimo duas horas - as grandes cavernas centrais merecem que voce va devagar."
+                      },
+                      "address": "Yungang Grottoes, Cheng District, Datong, Shanxi · 山西省大同市城区 云冈石窟",
+                      "coords": [
+                        40.1097,
+                        113.1225
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": {
+                    "en": "Hanging Temple + Huayan",
+                    "pt": "Mosteiro Suspenso + Huayan"
+                  },
+                  "note": {
+                    "en": "Drops the UNESCO caves. The Hanging Temple, then the Huayan Temple or Datong's earth wall in town.",
+                    "pt": "Abre mão das grutas UNESCO. Mosteiro Suspenso, depois o Templo Huayan ou a muralha de terra de Datong, na cidade."
+                  },
+                  "items": [
+                    {
+                      "type": "star",
+                      "period": "morning",
+                      "time": "~10:30–12:00",
+                      "text": {
+                        "en": "Hanging Temple (Xuankong Si)",
+                        "pt": "Mosteiro Suspenso (Xuankong Si)"
+                      },
+                      "note": {
+                        "en": "A monastery built into a cliff face 1,500 years ago, its halls held up by slender wooden posts over a 50 m drop, the only one of its kind. About an hour by car from Datong South. Around CNY 100 plus a climb ticket; the walkways are narrow and form a queue, so go before the tour groups. Pairing it with Yungang in one day is the standard Datong loop, but it is tight - keep moving.",
+                        "pt": "Um mosteiro encravado num paredao ha 1.500 anos, com os saloes sustentados por finos pilares de madeira sobre uma queda de 50 m, o unico do genero. Cerca de uma hora de carro de Datong South. Uns CNY 100 mais um bilhete de subida; as passarelas sao estreitas e formam fila, entao va antes dos grupos. Juntar com Yungang no mesmo dia e o circuito padrao de Datong, mas e apertado - nao pare muito."
+                      },
+                      "address": "Hunyuan County, Datong, Shanxi · 山西省大同市浑源县 悬空寺",
+                      "coords": [
+                        39.6672,
+                        113.6997
+                      ]
+                    },
+                    {
+                      "type": "bullet",
+                      "period": "afternoon",
+                      "text": {
+                        "en": "Huayan Temple or the Datong city wall",
+                        "pt": "Templo Huayan ou a muralha da cidade de Datong"
+                      }
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -2043,27 +2159,22 @@
       "days": [
         {
           "note": {
-            "en": "Oct 26 (Mon) - Out of Beijing and into the base that carries the rest of the trip. The fast trains leave Beijing South early, G1 at 06:30 into Hongqiao at 11:24, and the quickest run of the day is 4h18, so by early afternoon you are checking into the room you will keep for five nights. Monday is the worst museum day in Shanghai and it does not matter: this afternoon is deliberately street level, a temple boxed in by towers, neon walked east, and the river lighting up.",
-            "pt": "26/out (seg) - Fora de Pequim e dentro da base que carrega o resto da viagem. Os trens rapidos saem de Pequim Sul cedo, o G1 as 06:30 chegando em Hongqiao as 11:24, e o mais rapido do dia faz 4h18, entao no comeco da tarde voces estao fazendo check-in no quarto que vao manter por cinco noites. Segunda e o pior dia de museu em Shanghai e nao faz diferenca: esta tarde e de proposito no nivel da rua, um templo encaixotado por torres, neon percorrido para leste e o rio se acendendo."
+            "en": "Oct 26 (Mon) - Out of Beijing, with Suzhou on the way. Instead of riding all the way to Hongqiao, get off at Suzhou, which sits on the same line: leave the bags at the station, spend the afternoon in the city, and take a 30-minute train to Shanghai at night. Monday closes the museums (Suzhou Museum included), but not the gardens: the Humble Administrator's Garden is open 07:30-17:30, last entry 17:00. The ticket is name-based and booked online with the passport, so buy it ahead.",
+            "pt": "26/out (seg) - Fora de Pequim, com Suzhou no caminho. Em vez de ir até Hongqiao, desçam em Suzhou, que fica na mesma linha: malas no guarda-volumes da estação, tarde na cidade, e à noite um trem de 30 minutos até Shanghai. Segunda fecha os museus (inclusive o Museu de Suzhou), mas não os jardins: o Jardim do Administrador Humilde abre 07:30-17:30, última entrada às 17:00. O ingresso é nominal e se reserva online com o passaporte, então comprem antes."
           },
           "items": [
             {
               "type": "move",
               "period": "morning",
-              "time": "~09:30 → ~14:00",
+              "time": "~08:00 → ~13:00",
               "text": {
-                "en": "G-train Beijing South to Shanghai Hongqiao",
-                "pt": "Trem G Beijing South ate Shanghai Hongqiao"
+                "en": "G train Beijing South to Suzhou",
+                "pt": "Trem G Beijing South até Suzhou"
               },
               "note": {
-                "en": "The Beijing-Shanghai high-speed line runs about 4h30. Leave Beijing South mid-morning and you are in Shanghai Hongqiao by early afternoon, bags down by around 15:00. Book Beijing South (北京南), not West or North, and Shanghai Hongqiao, not the far-out Pudong.",
-                "pt": "A linha de alta velocidade Pequim-Shanghai leva cerca de 4h30. Saindo de Beijing South no meio da manha voce esta em Shanghai Hongqiao no comeco da tarde, com as malas no hotel la pelas 15:00. Reserve Beijing South (北京南), nao West nem North, e Shanghai Hongqiao, nao o distante Pudong."
+                "en": "Pick a Beijing South to Shanghai G train that stops at Suzhou (苏州站), not Suzhou North, so the old town is 10 minutes away. Confirm the exact train on 12306 or Trip.com.",
+                "pt": "Escolham um trem G Beijing South → Shanghai que pare em Suzhou (苏州站), não em Suzhou Norte, para o centro antigo ficar a 10 minutos. Confirmem o trem exato no 12306 ou no Trip.com."
               },
-              "address": "Shanghai Hongqiao Railway Station · 上海虹桥站",
-              "coords": [
-                31.196,
-                121.3162
-              ],
               "from": {
                 "name": "Beijing South 北京南站",
                 "coords": [
@@ -2072,77 +2183,116 @@
                 ]
               },
               "to": {
-                "name": "Shanghai Hongqiao 上海虹桥站",
+                "name": "Suzhou 苏州站",
                 "coords": [
-                  31.196,
-                  121.3162
+                  31.3318,
+                  120.6063
                 ]
               }
             },
             {
               "type": "bullet",
+              "period": "afternoon",
+              "time": "~13:00",
               "text": {
-                "en": "Check in for five nights, one hotel",
-                "pt": "Check-in de cinco noites, um hotel so"
+                "en": "Bags into the station left-luggage",
+                "pt": "Malas no guarda-volumes da estação"
               },
               "note": {
-                "en": "The whole point of this block: the same room from the 26th to the 31st, so Hangzhou and Suzhou cost a train ticket each and not a packed bag. Nothing is booked yet for these nights.",
-                "pt": "A ideia inteira deste bloco: o mesmo quarto do dia 26 ao 31, para que Hangzhou e Suzhou custem uma passagem de trem cada e nao uma mala feita. Estas noites ainda nao estao reservadas."
-              }
+                "en": "Left-luggage (行李寄存) at Suzhou station, roughly CNY 15-20 a bag. Then a taxi to the garden, about 10 minutes.",
+                "pt": "Guarda-volumes (行李寄存) da estação de Suzhou, uns CNY 15-20 por mala. Depois táxi até o jardim, uns 10 minutos."
+              },
+              "address": "Suzhou Railway Station · 苏州站"
             },
             {
-              "type": "bullet",
+              "type": "star",
               "period": "afternoon",
-              "time": "~14:00–15:00",
+              "time": "~13:45–16:00",
               "text": {
-                "en": "Jing'an Temple",
-                "pt": "Templo Jing'an"
+                "en": "Humble Administrator's Garden",
+                "pt": "Jardim do Administrador Humilde"
               },
               "note": {
-                "en": "A gold-roofed Buddhist temple hemmed in by glass towers, which is the entire point of it. Small and quick, the only temple in either Shanghai block.",
-                "pt": "Um templo budista de telhado dourado cercado por torres de vidro, que e justamente a graca dele. Pequeno e rapido, o unico templo dos dois blocos de Shanghai."
+                "en": "The largest and most important classical garden in China, a UNESCO site, and the reason to come to Suzhou at all. CNY 70, open 07:30 to 17:30. The timed entry slot is mandatory and is not sold at the gate, so book the earliest slot you can get.",
+                "pt": "O maior e mais importante jardim classico da China, Patrimonio da UNESCO, e a razao de se ir a Suzhou. CNY 70, aberto 07:30 as 17:30. O slot de horario e obrigatorio e nao se vende na porta, entao reserve o slot mais cedo que conseguir."
               },
-              "address": "1686 Nanjing West Road, Jing'an District · 上海市静安区南京西路1686号",
+              "address": "178 Dongbei Street, Gusu District · 苏州市姑苏区东北街178号",
               "coords": [
-                31.225215,
-                121.4407923
-              ]
-            },
-            {
-              "type": "bullet",
-              "period": "afternoon",
-              "time": "~15:30–17:00",
-              "text": {
-                "en": "Nanjing Road pedestrian street",
-                "pt": "Rua de pedestres Nanjing Road"
-              },
-              "note": {
-                "en": "The loud neon shopping spine running east from Jing'an to the river. Not subtle and not trying to be, but it walks you to the Bund without a metro ride and lands you there exactly as the light drops.",
-                "pt": "A espinha comercial de neon barulhento que corre para leste do Jing'an ate o rio. Nao e sutil e nem tenta ser, mas te leva ao Bund a pe, sem metro, e te deixa la exatamente quando a luz cai."
-              },
-              "address": "Nanjing East Road, Huangpu District · 上海市黄浦区南京东路步行街",
-              "coords": [
-                31.2376841,
-                121.4753016
+                31.3263526,
+                120.6247123
               ]
             },
             {
               "type": "star",
-              "period": "night",
-              "time": "~18:30–20:00",
+              "period": "afternoon",
+              "time": "~16:30–19:00",
               "text": {
-                "en": "The Bund lit up",
-                "pt": "The Bund iluminado"
+                "en": "Pingjiang Road at dusk, and dinner",
+                "pt": "Rua Pingjiang no fim da tarde, e jantar"
               },
               "note": {
-                "en": "You saw this jet-lagged on 12 Oct, three weeks and half a country ago; this time you can actually take it in. Lights come on around 18:30 and the whole river turns on at once. The right way to say you are back.",
-                "pt": "Voce viu isto com jet-lag em 12/out, tres semanas e meio pais atras; desta vez da para aproveitar de verdade. As luzes acendem por volta das 18:30 e o rio inteiro se acende de uma vez. O jeito certo de dizer que voltou."
+                "en": "Back east, about 25 minutes. A canal lined with stone bridges and old houses, where Suzhou stops being a ticket and turns back into a city. Free. Sunset lands around 17:10, and there is plenty to eat along it before the garden.",
+                "pt": "De volta para leste, uns 25 minutos. Um canal ladeado de pontes de pedra e casas antigas, onde Suzhou deixa de ser ingresso e volta a ser cidade. Gratuito. O por do sol cai por volta das 17:10, e ha bastante o que comer ao longo dele antes do jardim."
               },
-              "address": "Zhongshan East 1st Road, Huangpu District · 上海市黄浦区中山东一路",
+              "address": "Pingjiang Road, Gusu District · 苏州市姑苏区平江路",
               "coords": [
-                31.2353356,
-                121.487632
+                31.3149294,
+                120.6296912
               ]
+            },
+            {
+              "type": "move",
+              "period": "night",
+              "time": "~19:30 → ~20:00",
+              "text": {
+                "en": "Train Suzhou to Shanghai station, bags in hand",
+                "pt": "Trem Suzhou até Shanghai station, com as malas"
+              },
+              "note": {
+                "en": "Shanghai station (上海站), not Hongqiao: from there it is two metro stops on line 1 to People's Square, next to the hotel.",
+                "pt": "Shanghai station (上海站), não Hongqiao: de lá são duas estações na linha 1 do metrô até People's Square, ao lado do hotel."
+              },
+              "from": {
+                "name": "Suzhou 苏州站",
+                "coords": [
+                  31.3318,
+                  120.6063
+                ]
+              },
+              "to": {
+                "name": "Shanghai 上海站",
+                "coords": [
+                  31.2515,
+                  121.4511
+                ]
+              }
+            },
+            {
+              "type": "bullet",
+              "period": "night",
+              "time": "~20:45",
+              "text": {
+                "en": "Five-night check-in, one hotel",
+                "pt": "Check-in de cinco noites, um hotel só"
+              }
+            },
+            {
+              "type": "bullet",
+              "period": "night",
+              "optional": true,
+              "text": {
+                "en": "Nanjing Road at night",
+                "pt": "Nanjing Road à noite"
+              },
+              "note": {
+                "en": "Five minutes from the hotel, if there is energy left.",
+                "pt": "A cinco minutos do hotel, se sobrar energia."
+              },
+              "coords": [
+                31.2376841,
+                121.4753016
+              ],
+              "address": "Nanjing East Road, Huangpu District · 上海市黄浦区南京东路步行街"
             }
           ]
         },
@@ -2252,11 +2402,11 @@
               ]
             },
             {
-              "type": "bullet",
+              "type": "warn",
               "period": "afternoon",
               "text": {
-                "en": "CONFIRM BEFORE BUYING - hours, price, and whether the water slide runs",
-                "pt": "CONFIRMAR ANTES DE COMPRAR - horario, preco e se o tobaga de agua funciona"
+                "en": "Confirm before buying: hours, price, and whether the water slide runs",
+                "pt": "Confirmar antes de comprar: horário, preço e se o tobogã de água funciona"
               },
               "note": {
                 "en": "Sources disagree: 08:30-16:30, 08:30-16:00 and 07:30-17:00 all appear, and the ticket shows up as CNY 108, CNY 188 sightseeing and CNY 388 for the all-in pass that covers the slide, the uphill carpet, the via ferrata and the zipline. Worse, the slide is sold as a summer water ride even though one source says it runs year round, and late October at 1000 m is cold to be soaked. The park answers on these numbers, both also WeChat: 190 6961 7081 and 131 1287 6408.",

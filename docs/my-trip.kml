@@ -178,7 +178,7 @@
       <Point><coordinates>110.5166399,24.9251035,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Monte Laozhai, se as pernas deixarem</name>
+      <name>Monte Laozhai</name>
       <description>Guilin / Yangshuo</description>
       <Point><coordinates>110.5218451,24.9189334,0</coordinates></Point>
     </Placemark>
@@ -238,7 +238,7 @@
       <Point><coordinates>110.2915,25.2701,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Gruta da Flauta de Junco (corte se preferir)</name>
+      <name>Gruta da Flauta de Junco</name>
       <description>Guilin / Yangshuo · Reed Flute Cave, Ludi Road, Xiufeng District, Guilin · 桂林市秀峰区芦笛路芦笛岩</description>
       <Point><coordinates>110.2671,25.3119,0</coordinates></Point>
     </Placemark>
@@ -298,7 +298,7 @@
       <Point><coordinates>116.40639,39.88222,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>PLANO A - Portao, shuttle e chairlift ate a torre 6</name>
+      <name>Portao, shuttle e chairlift ate a torre 6</name>
       <description>Pequim · Mutianyu Village, Bohai Town, Huairou District · 怀柔区渤海镇慕田峪村</description>
       <Point><coordinates>116.5704,40.4319,0</coordinates></Point>
     </Placemark>
@@ -313,9 +313,14 @@
       <Point><coordinates>116.383,39.94,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>PLANO B (troca) - Jinshanling: vazia, mas SEM toboga</name>
+      <name>Jinshanling: vazia, mas SEM toboga</name>
       <description>Pequim · HuaLouGou Village, Bakeshiying Town, Luanping County, Hebei · 河北省滦平县巴克什营镇花楼沟村 金山岭长城</description>
       <Point><coordinates>117.232864,40.676644,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Jantar em volta dos lagos</name>
+      <description>Pequim · Shichahai, Xicheng District · 西城区什刹海</description>
+      <Point><coordinates>116.383,39.94,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>🚉 Beijing North 北京北站</name>
@@ -328,19 +333,14 @@
       <Point><coordinates>113.1583,40.0206,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Grutas de Yungang</name>
-      <description>Pequim · Yungang Grottoes, Cheng District, Datong, Shanxi · 山西省大同市城区 云冈石窟</description>
-      <Point><coordinates>113.1225,40.1097,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
       <name>Mosteiro Suspenso (Xuankong Si)</name>
       <description>Pequim · Hunyuan County, Datong, Shanxi · 山西省大同市浑源县 悬空寺</description>
       <Point><coordinates>113.6997,39.6672,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Trem G Beijing South ate Shanghai Hongqiao</name>
-      <description>Shanghai · Shanghai Hongqiao Railway Station · 上海虹桥站</description>
-      <Point><coordinates>121.3162,31.196,0</coordinates></Point>
+      <name>Grutas de Yungang</name>
+      <description>Pequim · Yungang Grottoes, Cheng District, Datong, Shanxi · 山西省大同市城区 云冈石窟</description>
+      <Point><coordinates>113.1225,40.1097,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>🚉 Beijing South 北京南站</name>
@@ -348,19 +348,34 @@
       <Point><coordinates>116.3726,39.8635,0</coordinates></Point>
     </Placemark>
     <Placemark>
+      <name>🚉 Suzhou 苏州站</name>
+      <description>Shanghai</description>
+      <Point><coordinates>120.6063,31.3318,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Jardim do Administrador Humilde</name>
+      <description>Shanghai · 178 Dongbei Street, Gusu District · 苏州市姑苏区东北街178号</description>
+      <Point><coordinates>120.6247123,31.3263526,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Rua Pingjiang no fim da tarde, e jantar</name>
+      <description>Shanghai · Pingjiang Road, Gusu District · 苏州市姑苏区平江路</description>
+      <Point><coordinates>120.6296912,31.3149294,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Shanghai 上海站</name>
+      <description>Shanghai</description>
+      <Point><coordinates>121.4511,31.2515,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Nanjing Road à noite</name>
+      <description>Shanghai · Nanjing East Road, Huangpu District · 上海市黄浦区南京东路步行街</description>
+      <Point><coordinates>121.4753016,31.2376841,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
       <name>🚉 Shanghai Hongqiao 上海虹桥站</name>
       <description>Shanghai</description>
       <Point><coordinates>121.3162,31.196,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Templo Jing'an</name>
-      <description>Shanghai · 1686 Nanjing West Road, Jing'an District · 上海市静安区南京西路1686号</description>
-      <Point><coordinates>121.4407923,31.225215,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Rua de pedestres Nanjing Road</name>
-      <description>Shanghai · Nanjing East Road, Huangpu District · 上海市黄浦区南京东路步行街</description>
-      <Point><coordinates>121.4753016,31.2376841,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>🚉 Hangzhou East 杭州东站</name>
@@ -388,11 +403,6 @@
       <Point><coordinates>120.6064,31.3329,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Jardim do Administrador Humilde</name>
-      <description>Shanghai · 178 Dongbei Street, Gusu District · 苏州市姑苏区东北街178号</description>
-      <Point><coordinates>120.6247123,31.3263526,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
       <name>Museu de Suzhou, de I.M. Pei</name>
       <description>Shanghai · 204 Dongbei Street, Gusu, Suzhou · 苏州市姑苏区东北街204号</description>
       <Point><coordinates>120.6236,31.3252,0</coordinates></Point>
@@ -401,11 +411,6 @@
       <name>Tiger Hill e o pagode inclinado</name>
       <description>Shanghai · 8 Huqiu Hill Gate, Gusu District · 苏州市姑苏区虎丘山门内8号</description>
       <Point><coordinates>120.5764425,31.3375463,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <name>Rua Pingjiang no fim da tarde, e jantar</name>
-      <description>Shanghai · Pingjiang Road, Gusu District · 苏州市姑苏区平江路</description>
-      <Point><coordinates>120.6296912,31.3149294,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>SO SE REABRIR - Jardim Noturno do Master of the Nets</name>
