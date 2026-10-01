@@ -2,10 +2,13 @@
 
 Este repositório é um **gerador de roteiro de viagem**. Quando alguém abrir o projeto
 no Claude e pedir algo como *"monta meu roteiro"* / *"me ajuda a planejar minha viagem"*,
-siga este fluxo. O resultado é um HTML com até **7 abas** (📅 Calendário, 🗒️ Roteiro,
+siga este fluxo. O resultado é um HTML com até **8 abas** (☀️ Hoje, 📅 Calendário, 🗒️ Roteiro,
 🚆 Transportes, 📍 Lugares, 🛏️ Hospedagem, 🍽️ Restaurantes, 🗺️ Mapa) e **filtro por cidade** — quanto mais rica a
 informação no `trip.json` (descrições, endereços, coordenadas, links), melhor ficam as abas.
 A aba Hospedagem só aparece se houver `stays`; a aba Restaurantes, só se houver `dining`.
+A aba **Hoje** abre por padrão: o dia da viagem pela data do aparelho (antes da viagem, o 1º dia com
+contagem regressiva), com "agora"/"a seguir" pelos horários (`time`) e o hotel da noite com botão
+"mostrar ao taxista" (usa a parte em escrita local do `address`). No celular as abas viram uma barra embaixo.
 
 ## 1. Entreviste a pessoa (em português, ou no idioma dela)
 Pergunte, de forma leve e uma coisa de cada vez:
