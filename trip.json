@@ -564,8 +564,8 @@
         },
         {
           "note": {
-            "en": "16 Oct, Fri - The heavy day, and it now ends on a stage instead of in a car. Grand Canyon in the morning, Huanglong cave in the afternoon, and then the Charm of Xiangxi show at 19:30, which sits in Wulingyuan itself, ten minutes from the bed. That is the whole reason it lands tonight: the old plan drove an hour into Zhangjiajie city for a night show and an hour back, and this one costs no driving at all. It is also the safest night to hold a non-refundable ticket, because unlike arrival day nothing upstream of it can be delayed. The canyon is the piece the guide's email had and the plan did not: a 430 m glass bridge strung 300 m above the gorge, then a walk down to the bottom and out by boat.",
-            "pt": "16/out, sex - O dia pesado, e agora ele termina num palco em vez de dentro de um carro. Grand Canyon de manha, caverna Huanglong a tarde, e as 19:30 o show Charm of Xiangxi, que fica na propria Wulingyuan, a dez minutos da cama. E essa a razao inteira de ele cair hoje: o plano antigo dirigia uma hora ate a cidade de Zhangjiajie para um show noturno e uma hora de volta, e este nao custa carro nenhum. Tambem e a noite mais segura para segurar um ingresso nao reembolsavel, porque ao contrario do dia da chegada nada antes dele pode atrasar. O canion e a peca que o e-mail do guia tinha e o plano nao tinha: uma ponte de vidro de 430 m esticada 300 m acima da garganta, depois uma descida a pe ate o fundo e a saida de barco."
+            "en": "16 Oct, Fri - The heavy day, all outdoors and underground, and it ends on foot ten minutes from the bed. Grand Canyon in the morning, Huanglong cave in the afternoon, then nothing booked: dinner in Wulingyuan and a slow walk down Xibu Street, the lit-up old street on the river, with the bonfire at 21:30. Nothing tonight is non-refundable, so if the canyon or the cave runs long, nothing is lost. The canyon is the piece the guide's email had and the plan did not: a 430 m glass bridge strung 300 m above the gorge, then a walk down to the bottom and out by boat.",
+            "pt": "16/out, sex - O dia pesado, todo ao ar livre e debaixo da terra, e ele termina a pé, a dez minutos da cama. Grand Canyon de manhã, caverna Huanglong à tarde, e depois nada marcado: jantar em Wulingyuan e uma volta lenta pela Xibu Street, a rua antiga iluminada à beira do rio, com a fogueira às 21:30. Nada hoje à noite é não reembolsável, então se o cânion ou a caverna se esticarem, nada se perde. O cânion é a peça que o e-mail do guia tinha e o plano não: uma ponte de vidro de 430 m esticada 300 m acima da garganta, depois uma descida a pé até o fundo e a saída de barco."
           },
           "items": [
             {
@@ -684,26 +684,27 @@
                 "pt": "Volta a Wulingyuan, jantar cedo"
               },
               "note": {
-                "en": "Twenty-five minutes from the cave. Eat before the show, not after: it ends at 21:00 and the village kitchens start closing.",
-                "pt": "Vinte e cinco minutos da caverna. Coma antes do show, nao depois: ele termina as 21:00 e as cozinhas da vila comecam a fechar."
+                "en": "Twenty-five minutes from the cave. A shower and a rest before going out again: the canyon stairs will have been felt.",
+                "pt": "Vinte e cinco minutos da caverna. Banho e descanso antes de sair de novo: as escadas do cânion vão estar nas pernas."
               }
             },
             {
               "type": "star",
               "period": "night",
-              "time": "19:30–21:00",
+              "time": "~19:30–22:00",
               "text": {
-                "en": "Charm of Xiangxi show",
-                "pt": "Show Charm of Xiangxi (魅力湘西)"
+                "en": "Xibu Street at night (溪布街)",
+                "pt": "Xibu Street à noite (溪布街)"
               },
               "note": {
-                "en": "The Tujia and Miao folk spectacular, and the reason it lands tonight is pure logistics: the theatre is in Wulingyuan itself, a few minutes from the hotel, so it costs you no driving on a day that is already a flight. Ninety minutes, roughly an hour indoors and then thirty minutes of outdoor stunts, so dress for the night air. The 19:30 session is the main one; a 21:00 session is added in peak season. Zone A super VIP is the front block. Tickets are collected, not scanned off the phone, so pick them up at the theatre before the doors.",
-                "pt": "O espetaculo folclorico Tujia e Miao, e a razao de ele cair hoje a noite e pura logistica: o teatro fica na propria Wulingyuan, a poucos minutos do hotel, entao nao custa nenhum carro num dia que ja e dia de voo. Noventa minutos, mais ou menos uma hora coberto e depois trinta minutos de acrobacias ao ar livre, entao vista algo para o ar da noite. A sessao das 19:30 e a principal; uma sessao das 21:00 entra na alta temporada. A Zona A super VIP e o bloco da frente. O ingresso e retirado, nao lido do celular, entao pegue no teatro antes de abrir a porta."
+                "en": "Wulingyuan's old street on the Suoxi river, rebuilt in Tujia style and at its best after dark, when the wooden houses and the water light up: snack stalls, bars, little shops, and free intangible-heritage performances (Xiangxi opera, shadow puppets, Nuo opera) along the way. The bonfire party starts at 21:30. Free, but they register your passport at the entrance, so bring it. About 15 minutes on foot from the hotel, or a short taxi.",
+                "pt": "A rua antiga de Wulingyuan à beira do rio Suoxi, refeita no estilo Tujia e no seu melhor depois do escuro, quando as casas de madeira e a água acendem: barracas de petisco, bares, lojinhas e apresentações gratuitas de patrimônio imaterial (ópera de Xiangxi, teatro de sombras, ópera Nuo) pelo caminho. A fogueira começa às 21:30. É grátis, mas registram o passaporte na entrada, então leve. Uns 15 minutos a pé do hotel, ou um táxi curto."
               },
-              "address": "20 Guihua Road, Wulingyuan District · 湖南省张家界市武陵源区桂花路20号",
+              "address": "Xibu Street, Suoxiyu, Wulingyuan District · 张家界市武陵源区索溪峪 溪布街",
+              "url": "https://www.zhangjiajieguide.com/attractions/zhangjiajie-niche-attraction/xibu-street.html",
               "coords": [
-                29.3517007,
-                110.5406691
+                29.3472,
+                110.5524
               ]
             }
           ]
@@ -4255,7 +4256,8 @@
         "en": "East Gate = the Wulingyuan gate (武陵源 东门), about 1 km from the hotel. Line B = up by the Bailong Elevator, down by the Tianzi cableway, which is the plan.\n¥236, valid 4 consecutive days from the first entry, any gate. EVERY entry needs a booked time slot, including re-entries (e.g. 18 Oct).\nPassport: the first entry registers your face.",
         "pt": "East Gate = o portão de Wulingyuan (武陵源 东门), a ~1 km do hotel. Line B = sobe pelo Elevador Bailong e desce pelo teleférico de Tianzi, que é o plano.\n¥236, vale 4 dias corridos a partir da 1ª entrada, por qualquer portão. TODA entrada precisa de horário reservado, inclusive as voltas (ex.: 18/out).\nPassaporte: a 1ª entrada cadastra o rosto."
       },
-      "url": "https://www.trip.com/travel-guide/attraction/zhangjiajie/zhangjiajie-national-forest-park-10559092"
+      "url": "https://www.trip.com/travel-guide/attraction/zhangjiajie/zhangjiajie-national-forest-park-10559092",
+      "kind": "tour"
     },
     {
       "id": "zjj-lifts",
@@ -4271,7 +4273,8 @@
       "detail": {
         "en": "Bailong ~¥65 one way, Tianzi cableway ~¥72 one way. Both are valid only on the booked date: if fog makes you swap 15 and 16, these move too.",
         "pt": "Bailong ~¥65 só a subida, teleférico de Tianzi ~¥72 só a descida. Os dois valem só na data reservada: se a névoa fizer trocar o 15 pelo 16, eles mudam junto."
-      }
+      },
+      "kind": "tour"
     },
     {
       "id": "zjj-canyon",
@@ -4287,7 +4290,8 @@
       "detail": {
         "en": "Zhangjiajie Grand Canyon (张家界大峡谷), Cili County, 40-45 min from Wulingyuan. The bridge alone ~¥130-160; the canyon + boat ~¥100-130 more. Sells out in season.",
         "pt": "Zhangjiajie Grand Canyon (张家界大峡谷), condado de Cili, 40-45 min de Wulingyuan. Só a ponte ~¥130-160; cânion + barco ~¥100-130 a mais. Esgota na temporada."
-      }
+      },
+      "kind": "tour"
     },
     {
       "id": "zjj-huanglong",
@@ -4304,23 +4308,8 @@
         "en": "~¥100. If you take the Huanglong + Baofeng combo, check the halves can be used on different dates (cave 16, lake 18).",
         "pt": "~¥100. Se pegar o combo Huanglong + Lago Baofeng, confira se as metades valem em datas diferentes (caverna 16, lago 18)."
       },
-      "url": "https://www.trip.com/travel-guide/attraction/zhangjiajie/the-yellow-dragon-cave-75851/"
-    },
-    {
-      "id": "zjj-xiangxi",
-      "date": "2026-10-16",
-      "what": {
-        "en": "Charm of Xiangxi show (魅力湘西), 19:30",
-        "pt": "Show Charm of Xiangxi (魅力湘西), 19:30"
-      },
-      "where": {
-        "en": "Trip.com",
-        "pt": "Trip.com"
-      },
-      "detail": {
-        "en": "Theatre in Wulingyuan itself, next to the hotel. Tickets are collected at the box office, not scanned from the phone.",
-        "pt": "Teatro na própria Wulingyuan, ao lado do hotel. O ingresso é retirado na bilheteria, não lido do celular."
-      }
+      "url": "https://www.trip.com/travel-guide/attraction/zhangjiajie/the-yellow-dragon-cave-75851/",
+      "kind": "tour"
     },
     {
       "id": "zjj-tianmen",
@@ -4337,7 +4326,8 @@
         "en": "~¥288. Route A = up by the cableway from the city, down by the 99 Bends bus. Starts at the cableway lower station in Zhangjiajie city (天门山索道下站), NOT in Wulingyuan: about 1 h by car. Escalator to the Heaven's Gate is ¥32 extra, on the day.",
         "pt": "~¥288. Rota A = sobe pelo teleférico saindo da cidade, desce de ônibus pelas 99 Curvas. Começa na estação base do teleférico na cidade de Zhangjiajie (天门山索道下站), NÃO em Wulingyuan: ~1 h de carro. A escada rolante até o Portão do Céu é ¥32 à parte, na hora."
       },
-      "url": "https://www.chinadiscovery.com/hunan/zhangjiajie/tianmen-mountain/guide-to-tickets.html"
+      "url": "https://www.chinadiscovery.com/hunan/zhangjiajie/tianmen-mountain/guide-to-tickets.html",
+      "kind": "tour"
     },
     {
       "id": "zjj-fox",
@@ -4353,7 +4343,8 @@
       "detail": {
         "en": "Non-refundable. Theatre in the valley at the foot of Tianmen (天门狐仙剧场), shuttle from the cableway base. Be there by 19:50.",
         "pt": "Não reembolsável. Teatro no vale ao pé do Tianmen (天门狐仙剧场), shuttle desde a base do teleférico. Esteja lá às 19:50."
-      }
+      },
+      "kind": "show"
     },
     {
       "id": "train-zjj-furong",
@@ -4370,7 +4361,8 @@
       "detail": {
         "en": "From: Zhangjiajie WEST (张家界西站), the high-speed station, not the old Zhangjiajie station downtown.\nTo: Furongzhen (芙蓉镇站), 6 km from the village.\n~13 trains a day, 23 min, ~¥30. Plan: one around 14:00.",
         "pt": "De: Zhangjiajie OESTE (张家界西站), a estação de alta velocidade, não a antiga do centro.\nPara: Furongzhen (芙蓉镇站), a 6 km da vila.\n~13 trens por dia, 23 min, ~¥30. Plano: um por volta das 14:00."
-      }
+      },
+      "kind": "train"
     },
     {
       "id": "train-furong-guilin",
@@ -4387,7 +4379,8 @@
       "detail": {
         "en": "First choose the route in the 19 Oct decision (Itinerary tab).\nVia Changsha: G1367 07:53 Furongzhen → 10:42 Changsha South (长沙南站); G1479 11:12 → 14:52 Guilin North.\nVia Huaihua: G3847 10:28 Furongzhen → 11:30 Huaihua South (怀化南站); D3969 13:29 → 18:24 Guilin North.\nGet off at Guilin NORTH (桂林北站). Then ~1h30 by car to Yangshuo.",
         "pt": "Antes, escolha o caminho na decisão do dia 19 (aba Roteiro).\nVia Changsha: G1367 07:53 Furongzhen → 10:42 Changsha Sul (长沙南站); G1479 11:12 → 14:52 Guilin Norte.\nVia Huaihua: G3847 10:28 Furongzhen → 11:30 Huaihua Sul (怀化南站); D3969 13:29 → 18:24 Guilin Norte.\nDesça em Guilin NORTE (桂林北站). Depois ~1h30 de carro até Yangshuo."
-      }
+      },
+      "kind": "train"
     },
     {
       "id": "ys-raft",
@@ -4403,7 +4396,8 @@
       "detail": {
         "en": "The \"Essence\" stretch, ~¥160 per person, 13:30 start. Passport at the pier check-in; screenshot the ticket, there is no signal in the gorge.",
         "pt": "O trecho \"Essence\", ~¥160 por pessoa, saída 13:30. Passaporte no check-in do cais; tire print do bilhete, não tem sinal no desfiladeiro."
-      }
+      },
+      "kind": "tour"
     },
     {
       "id": "ys-impression",
@@ -4419,7 +4413,8 @@
       "detail": {
         "en": "The raft ends at 17:30 in Xingping and it is 40 min back, so the first session is too tight.",
         "pt": "A balsa termina 17:30 em Xingping e são 40 min de volta, então a primeira sessão fica apertada demais."
-      }
+      },
+      "kind": "show"
     },
     {
       "id": "bj-forbidden",
@@ -4437,7 +4432,8 @@
         "en": "Sells out within minutes in October. Entry only through the Meridian Gate (午门), south side, with the same passport used to book.",
         "pt": "Esgota em minutos em outubro. Entrada só pelo Meridian Gate (午门), lado sul, com o mesmo passaporte da reserva."
       },
-      "url": "https://ticket.dpm.org.cn/"
+      "url": "https://ticket.dpm.org.cn/",
+      "kind": "tour"
     },
     {
       "id": "bj-heaven",
@@ -4454,7 +4450,8 @@
       "detail": {
         "en": "The combined ¥34 one, not the ¥15 entry: otherwise you can't go into the Hall.",
         "pt": "O combinado de ¥34, não a entrada de ¥15: senão você não entra no Salão."
-      }
+      },
+      "kind": "tour"
     },
     {
       "id": "bj-wall",
@@ -4471,7 +4468,8 @@
         "en": "Mutianyu: shuttle + chairlift up to tower 6, toboggan down. Jinshanling: ticket at the gate is fine.",
         "pt": "Mutianyu: shuttle + teleférico até a torre 6, tobogã na descida. Jinshanling: dá para comprar no portão."
       },
-      "url": "https://en.mutianyugreatwall.com/reservation-center/tickets"
+      "url": "https://en.mutianyugreatwall.com/reservation-center/tickets",
+      "kind": "tour"
     },
     {
       "id": "bj-summer",
@@ -4489,7 +4487,8 @@
         "en": "The Combination Ticket, not plain entry.",
         "pt": "O Combination Ticket, não a entrada simples."
       },
-      "url": "https://www.travelchinaguide.com/summer-palace-tickets-booking.htm"
+      "url": "https://www.travelchinaguide.com/summer-palace-tickets-booking.htm",
+      "kind": "tour"
     },
     {
       "id": "train-datong",
@@ -4506,7 +4505,8 @@
       "detail": {
         "en": "Out ~07:00 from Qinghe (清河站) or Beijing North (北京北站) → Datong SOUTH (大同南站), ~2 h.\nBack ~18:30 Datong South → Beijing. Don't cut the return short.",
         "pt": "Ida ~07:00 de Qinghe (清河站) ou Pequim Norte (北京北站) → Datong SUL (大同南站), ~2 h.\nVolta ~18:30 Datong Sul → Pequim. Não aperte a volta."
-      }
+      },
+      "kind": "train"
     },
     {
       "id": "train-bj-suzhou",
@@ -4523,7 +4523,8 @@
       "detail": {
         "en": "From: Beijing SOUTH (北京南站).\nCheck the ARRIVAL station: the plan assumes Suzhou station (苏州站), next to the old town, but most fast G trains stop at Suzhou NORTH (苏州北站), ~12 km out (metro line 2, ~30 min). Either works; the luggage-locker plan just moves with it.",
         "pt": "De: Pequim SUL (北京南站).\nConfira a estação de CHEGADA: o plano conta com Suzhou (苏州站), colada no centro antigo, mas a maioria dos G rápidos para em Suzhou NORTE (苏州北站), a ~12 km (metrô linha 2, ~30 min). Os dois servem; o guarda-volumes só muda junto."
-      }
+      },
+      "kind": "train"
     },
     {
       "id": "suzhou-garden",
@@ -4539,7 +4540,8 @@
       "detail": {
         "en": "The time slot is mandatory and not sold at the door.",
         "pt": "O horário é obrigatório e não se vende na porta."
-      }
+      },
+      "kind": "tour"
     },
     {
       "id": "train-suzhou-sh",
@@ -4556,7 +4558,8 @@
       "detail": {
         "en": "Leave from the station where the bags are. Go to Shanghai station (上海站), not Hongqiao: it's closer to the hotel (People's Square).",
         "pt": "Saia da estação onde ficaram as malas. Vá para Shanghai (上海站), não Hongqiao: é mais perto do hotel (People's Square)."
-      }
+      },
+      "kind": "train"
     },
     {
       "id": "train-sh-hangzhou",
@@ -4573,7 +4576,8 @@
       "detail": {
         "en": "Hongqiao (虹桥站) ~06:30 → Hangzhou EAST (杭州东站) → Tonglu (桐庐站), then ~25 km by taxi. Agree the return car on the way in.",
         "pt": "Hongqiao (虹桥站) ~06:30 → Hangzhou LESTE (杭州东站) → Tonglu (桐庐站), depois ~25 km de táxi. Combine o carro da volta já na ida."
-      }
+      },
+      "kind": "train"
     },
     {
       "id": "hz-park",
@@ -4589,7 +4593,8 @@
       "detail": {
         "en": "Sources disagree on hours (08:30-16:30 / 07:30-17:00) and price (¥108 / ¥188 scenery / ¥388 full pass with the slide). Ask whether the water slide runs in late October.",
         "pt": "As fontes divergem no horário (08:30-16:30 / 07:30-17:00) e no preço (¥108 / ¥188 só paisagem / ¥388 passe completo com o tobogã). Pergunte se o tobogã de água funciona no fim de outubro."
-      }
+      },
+      "kind": "tour"
     }
   ]
 }

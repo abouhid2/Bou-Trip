@@ -202,6 +202,7 @@ da data (trem na China: 15 dias antes; Cidade Proibida: 7). "Já comprei" fica s
 {
   "id": "train-zjj-furong",             // estável: é a chave salva
   "date": "2026-10-18",                 // dia de uso
+  "kind": "train",                      // "train" | "tour" (passeio/ingresso) | "show" — vira filtro na aba
   "opens": "2026-10-04",                // quando a venda abre; sem ele = já à venda
   "what":   { "en": "...", "pt": "Trem Zhangjiajie Oeste → Furongzhen" },
   "where":  { "en": "...", "pt": "12306 ou Trip.com, com o passaporte" },
