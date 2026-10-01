@@ -195,6 +195,22 @@ Para a pessoa decidir **durante a viagem**, não escreva "PLANO A/B" ou "opciona
 - **Opcional**: `"optional": true` num item. Ganha selo e botão "Pular", também salvo no aparelho.
 - **Aviso**: `"type": "warn"` para "confirmar antes de comprar" e afins (destaque âmbar).
 
+### O que falta comprar (`toBuy[]`) — opcional
+Cria a aba 🎟️ **Comprar** e um atalho "N compras pendentes" no topo do Hoje. Para o que só vende perto
+da data (trem na China: 15 dias antes; Cidade Proibida: 7). "Já comprei" fica salvo no aparelho.
+```jsonc
+{
+  "id": "train-zjj-furong",             // estável: é a chave salva
+  "date": "2026-10-18",                 // dia de uso
+  "opens": "2026-10-04",                // quando a venda abre; sem ele = já à venda
+  "what":   { "en": "...", "pt": "Trem Zhangjiajie Oeste → Furongzhen" },
+  "where":  { "en": "...", "pt": "12306 ou Trip.com, com o passaporte" },
+  "detail": { "en": "...", "pt": "De: Zhangjiajie OESTE (张家界西站), não a antiga..." }, // quebras de linha viram linhas
+  "url": "https://..."
+}
+```
+Ponha no `detail` o que costuma dar errado na hora: **qual estação** (nome local), qual portão, qual pacote.
+
 As datas dos dias são **calculadas automaticamente** a partir de `startDate` somando as noites.
 
 ## 3. Gere o HTML (e o KML)

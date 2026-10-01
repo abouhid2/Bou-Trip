@@ -58,6 +58,11 @@
       <Point><coordinates>110.4416,29.103,0</coordinates></Point>
     </Placemark>
     <Placemark>
+      <name>Portão de Wulingyuan (East Gate) na abertura, depois ônibus ecológico até o elevador</name>
+      <description>Zhangjiajie · Wulingyuan East Gate, Jundi Road, Wulingyuan District · 武陵源风景名胜区游客服务中心（东门），张家界市武陵源区军邸路</description>
+      <Point><coordinates>110.5306,29.3543,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
       <name>Elevador Bailong</name>
       <description>Zhangjiajie · Wulingyuan District, Zhangjiajie · 湖南省张家界市武陵源区 百龙天梯</description>
       <Point><coordinates>110.4612,29.3512,0</coordinates></Point>
@@ -138,13 +143,43 @@
       <Point><coordinates>109.9417,28.7453,0</coordinates></Point>
     </Placemark>
     <Placemark>
+      <name>Furong antes dos onibus, depois check-out</name>
+      <description>Guilin / Yangshuo · Wuli Stone Slab Street, Furong Town · 五里石板街，芙蓉镇</description>
+      <Point><coordinates>109.9417,28.7453,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
       <name>Vila de Furong ate a estacao de Furongzhen de taxi</name>
       <description>Guilin / Yangshuo · Furongzhen Railway Station, X041, Yongshun County · 芙蓉镇站，X041，永顺县</description>
       <Point><coordinates>109.9819,28.7731,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Trem Furongzhen ate Guilin Norte, baldeacao em Huaihua Sul</name>
-      <description>Guilin / Yangshuo · Guilin North Railway Station, Diecai District, Guilin · 桂林市叠彩区桂林北站</description>
+      <name>🚉 Furongzhen 芙蓉镇站</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>109.982,28.773,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Changsha South 长沙南站</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>113.0597,28.1499,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Guilin North 桂林北站</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>110.2976,25.3318,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Furongzhen 芙蓉镇站</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>109.982,28.773,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Huaihua South 怀化南站</name>
+      <description>Guilin / Yangshuo</description>
+      <Point><coordinates>109.9891,27.5145,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Guilin North 桂林北站</name>
+      <description>Guilin / Yangshuo</description>
       <Point><coordinates>110.2976,25.3318,0</coordinates></Point>
     </Placemark>
     <Placemark>
