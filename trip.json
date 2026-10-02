@@ -4798,6 +4798,99 @@
       ]
     },
     {
+      "icon": "🗣️",
+      "group": {
+        "en": "Small talk",
+        "pt": "Conversa"
+      },
+      "items": [
+        {
+          "text": {
+            "en": "Where are you from?",
+            "pt": "De onde você é?"
+          },
+          "local": "你是哪里人？",
+          "roman": "nǐ shì nǎlǐ rén?"
+        },
+        {
+          "text": {
+            "en": "It's our first time in China",
+            "pt": "É nossa primeira vez na China"
+          },
+          "local": "这是我们第一次来中国",
+          "roman": "zhè shì wǒmen dì-yī cì lái Zhōngguó"
+        },
+        {
+          "text": {
+            "en": "We really like China",
+            "pt": "Gostamos muito da China"
+          },
+          "local": "我们很喜欢中国",
+          "roman": "wǒmen hěn xǐhuan Zhōngguó"
+        },
+        {
+          "text": {
+            "en": "Chinese food is delicious",
+            "pt": "A comida chinesa é muito boa"
+          },
+          "local": "中国菜很好吃",
+          "roman": "Zhōngguó cài hěn hǎochī"
+        },
+        {
+          "text": {
+            "en": "I'm learning Chinese",
+            "pt": "Estou aprendendo chinês"
+          },
+          "local": "我在学中文",
+          "roman": "wǒ zài xué Zhōngwén",
+          "note": {
+            "en": "Expect big smiles and a \"你的中文很好！\" (your Chinese is great).",
+            "pt": "Espere sorrisos e um \"你的中文很好！\" (seu chinês é ótimo)."
+          }
+        },
+        {
+          "text": {
+            "en": "Let's take a photo together",
+            "pt": "Vamos tirar uma foto juntos"
+          },
+          "local": "我们一起拍张照吧",
+          "roman": "wǒmen yìqǐ pāi zhāng zhào ba",
+          "note": {
+            "en": "Locals often ask foreigners for a photo; this is the friendly yes.",
+            "pt": "É comum pedirem foto com estrangeiros; este é o \"sim\" simpático."
+          }
+        },
+        {
+          "text": {
+            "en": "Really?",
+            "pt": "Sério?"
+          },
+          "local": "真的吗？",
+          "roman": "zhēn de ma?"
+        },
+        {
+          "text": {
+            "en": "Great!",
+            "pt": "Ótimo!"
+          },
+          "local": "太好了！",
+          "roman": "tài hǎo le!"
+        },
+        {
+          "text": {
+            "en": "Welcome (said as you walk in)",
+            "pt": "Bem-vindo (dito quando você entra)"
+          },
+          "local": "欢迎光临",
+          "roman": "huānyíng guānglín",
+          "note": {
+            "en": "You'll hear it in every shop and restaurant; no need to answer.",
+            "pt": "Você vai ouvir em toda loja e restaurante; não precisa responder."
+          }
+        }
+      ]
+    },
+    {
       "icon": "🧭",
       "group": {
         "en": "Directions & transport",
@@ -5819,5 +5912,1097 @@
         }
       ]
     }
-  ]
+  ],
+  "glossary": {
+    "你": {
+      "roman": "nǐ",
+      "en": "you",
+      "pt": "você"
+    },
+    "好": {
+      "roman": "hǎo",
+      "en": "good",
+      "pt": "bom"
+    },
+    "您": {
+      "roman": "nín",
+      "en": "you (polite)",
+      "pt": "você (educado)"
+    },
+    "早": {
+      "roman": "zǎo",
+      "en": "early",
+      "pt": "cedo"
+    },
+    "上": {
+      "roman": "shàng",
+      "en": "up; on",
+      "pt": "em cima; em"
+    },
+    "晚": {
+      "roman": "wǎn",
+      "en": "evening; late",
+      "pt": "noite; tarde"
+    },
+    "安": {
+      "roman": "ān",
+      "en": "peace",
+      "pt": "paz"
+    },
+    "再": {
+      "roman": "zài",
+      "en": "again",
+      "pt": "de novo"
+    },
+    "见": {
+      "roman": "jiàn",
+      "en": "see",
+      "pt": "ver"
+    },
+    "谢": {
+      "roman": "xiè",
+      "en": "thank",
+      "pt": "agradecer"
+    },
+    "不": {
+      "roman": "bù",
+      "en": "not",
+      "pt": "não"
+    },
+    "客": {
+      "roman": "kè",
+      "en": "guest",
+      "pt": "convidado"
+    },
+    "气": {
+      "roman": "qì",
+      "en": "air; manner",
+      "pt": "ar; jeito"
+    },
+    "对": {
+      "roman": "duì",
+      "en": "right; towards",
+      "pt": "certo; para com"
+    },
+    "起": {
+      "roman": "qǐ",
+      "en": "rise",
+      "pt": "levantar"
+    },
+    "没": {
+      "roman": "méi",
+      "en": "not have",
+      "pt": "não ter"
+    },
+    "关": {
+      "roman": "guān",
+      "en": "close; concern",
+      "pt": "fechar; dizer respeito"
+    },
+    "系": {
+      "roman": "xì",
+      "en": "tie",
+      "pt": "ligação"
+    },
+    "请": {
+      "roman": "qǐng",
+      "en": "please; invite",
+      "pt": "por favor; convidar"
+    },
+    "问": {
+      "roman": "wèn",
+      "en": "ask",
+      "pt": "perguntar"
+    },
+    "我": {
+      "roman": "wǒ",
+      "en": "I; me",
+      "pt": "eu"
+    },
+    "叫": {
+      "roman": "jiào",
+      "en": "be called; call",
+      "pt": "chamar(-se)"
+    },
+    "什": {
+      "roman": "shén",
+      "en": "what (什么)",
+      "pt": "o que (什么)"
+    },
+    "么": {
+      "roman": "me",
+      "en": "(particle)",
+      "pt": "(partícula)"
+    },
+    "名": {
+      "roman": "míng",
+      "en": "name",
+      "pt": "nome"
+    },
+    "字": {
+      "roman": "zì",
+      "en": "character",
+      "pt": "letra"
+    },
+    "们": {
+      "roman": "men",
+      "en": "(plural)",
+      "pt": "(plural)"
+    },
+    "是": {
+      "roman": "shì",
+      "en": "to be",
+      "pt": "ser"
+    },
+    "巴": {
+      "roman": "bā",
+      "en": "Ba- (sound)",
+      "pt": "Ba- (som)"
+    },
+    "西": {
+      "roman": "xī",
+      "en": "west",
+      "pt": "oeste"
+    },
+    "人": {
+      "roman": "rén",
+      "en": "person",
+      "pt": "pessoa"
+    },
+    "游": {
+      "roman": "yóu",
+      "en": "roam; swim",
+      "pt": "passear; nadar"
+    },
+    "很": {
+      "roman": "hěn",
+      "en": "very",
+      "pt": "muito"
+    },
+    "高": {
+      "roman": "gāo",
+      "en": "high",
+      "pt": "alto"
+    },
+    "兴": {
+      "roman": "xìng",
+      "en": "mood",
+      "pt": "ânimo"
+    },
+    "认": {
+      "roman": "rèn",
+      "en": "recognise",
+      "pt": "reconhecer"
+    },
+    "识": {
+      "roman": "shi",
+      "en": "know",
+      "pt": "conhecer"
+    },
+    "会": {
+      "roman": "huì",
+      "en": "can (learned)",
+      "pt": "saber (fazer)"
+    },
+    "说": {
+      "roman": "shuō",
+      "en": "speak",
+      "pt": "falar"
+    },
+    "中": {
+      "roman": "zhōng",
+      "en": "middle",
+      "pt": "meio"
+    },
+    "文": {
+      "roman": "wén",
+      "en": "writing; language",
+      "pt": "escrita; língua"
+    },
+    "英": {
+      "roman": "yīng",
+      "en": "England",
+      "pt": "Inglaterra"
+    },
+    "语": {
+      "roman": "yǔ",
+      "en": "language",
+      "pt": "língua"
+    },
+    "吗": {
+      "roman": "ma",
+      "en": "(question)",
+      "pt": "(pergunta)"
+    },
+    "听": {
+      "roman": "tīng",
+      "en": "listen",
+      "pt": "ouvir"
+    },
+    "懂": {
+      "roman": "dǒng",
+      "en": "understand",
+      "pt": "entender"
+    },
+    "一": {
+      "roman": "yī",
+      "en": "one",
+      "pt": "um"
+    },
+    "遍": {
+      "roman": "biàn",
+      "en": "time (once through)",
+      "pt": "vez"
+    },
+    "慢": {
+      "roman": "màn",
+      "en": "slow",
+      "pt": "devagar"
+    },
+    "点": {
+      "roman": "diǎn",
+      "en": "a bit; dot",
+      "pt": "um pouco; ponto"
+    },
+    "可": {
+      "roman": "kě",
+      "en": "may",
+      "pt": "poder"
+    },
+    "以": {
+      "roman": "yǐ",
+      "en": "by means of",
+      "pt": "por meio de"
+    },
+    "写": {
+      "roman": "xiě",
+      "en": "write",
+      "pt": "escrever"
+    },
+    "在": {
+      "roman": "zài",
+      "en": "at; in",
+      "pt": "em; estar"
+    },
+    "手": {
+      "roman": "shǒu",
+      "en": "hand",
+      "pt": "mão"
+    },
+    "机": {
+      "roman": "jī",
+      "en": "machine",
+      "pt": "máquina"
+    },
+    "哪": {
+      "roman": "nǎ",
+      "en": "which; where",
+      "pt": "qual; onde"
+    },
+    "里": {
+      "roman": "lǐ",
+      "en": "inside",
+      "pt": "dentro"
+    },
+    "洗": {
+      "roman": "xǐ",
+      "en": "wash",
+      "pt": "lavar"
+    },
+    "间": {
+      "roman": "jiān",
+      "en": "room",
+      "pt": "sala"
+    },
+    "地": {
+      "roman": "dì",
+      "en": "ground",
+      "pt": "chão; terra"
+    },
+    "铁": {
+      "roman": "tiě",
+      "en": "iron",
+      "pt": "ferro"
+    },
+    "站": {
+      "roman": "zhàn",
+      "en": "station",
+      "pt": "estação"
+    },
+    "出": {
+      "roman": "chū",
+      "en": "go out",
+      "pt": "sair"
+    },
+    "口": {
+      "roman": "kǒu",
+      "en": "mouth; opening",
+      "pt": "boca; abertura"
+    },
+    "远": {
+      "roman": "yuǎn",
+      "en": "far",
+      "pt": "longe"
+    },
+    "走": {
+      "roman": "zǒu",
+      "en": "walk",
+      "pt": "andar"
+    },
+    "路": {
+      "roman": "lù",
+      "en": "road",
+      "pt": "caminho"
+    },
+    "到": {
+      "roman": "dào",
+      "en": "arrive",
+      "pt": "chegar"
+    },
+    "左": {
+      "roman": "zuǒ",
+      "en": "left",
+      "pt": "esquerda"
+    },
+    "边": {
+      "roman": "biān",
+      "en": "side",
+      "pt": "lado"
+    },
+    "右": {
+      "roman": "yòu",
+      "en": "right",
+      "pt": "direita"
+    },
+    "直": {
+      "roman": "zhí",
+      "en": "straight",
+      "pt": "reto"
+    },
+    "带": {
+      "roman": "dài",
+      "en": "take along",
+      "pt": "levar"
+    },
+    "去": {
+      "roman": "qù",
+      "en": "go",
+      "pt": "ir"
+    },
+    "这": {
+      "roman": "zhè",
+      "en": "this",
+      "pt": "este"
+    },
+    "个": {
+      "roman": "gè",
+      "en": "(counter)",
+      "pt": "(contador)"
+    },
+    "址": {
+      "roman": "zhǐ",
+      "en": "site",
+      "pt": "local"
+    },
+    "停": {
+      "roman": "tíng",
+      "en": "stop",
+      "pt": "parar"
+    },
+    "几": {
+      "roman": "jǐ",
+      "en": "how many",
+      "pt": "quantos"
+    },
+    "号": {
+      "roman": "hào",
+      "en": "number",
+      "pt": "número"
+    },
+    "检": {
+      "roman": "jiǎn",
+      "en": "check",
+      "pt": "conferir"
+    },
+    "票": {
+      "roman": "piào",
+      "en": "ticket",
+      "pt": "bilhete"
+    },
+    "趟": {
+      "roman": "tàng",
+      "en": "(counter for trips)",
+      "pt": "(contador de viagens)"
+    },
+    "车": {
+      "roman": "chē",
+      "en": "vehicle",
+      "pt": "veículo"
+    },
+    "迷": {
+      "roman": "mí",
+      "en": "lost",
+      "pt": "perdido"
+    },
+    "了": {
+      "roman": "le",
+      "en": "(done; change)",
+      "pt": "(já; mudança)"
+    },
+    "多": {
+      "roman": "duō",
+      "en": "many",
+      "pt": "muito"
+    },
+    "少": {
+      "roman": "shǎo",
+      "en": "few",
+      "pt": "pouco"
+    },
+    "钱": {
+      "roman": "qián",
+      "en": "money",
+      "pt": "dinheiro"
+    },
+    "太": {
+      "roman": "tài",
+      "en": "too",
+      "pt": "demais"
+    },
+    "贵": {
+      "roman": "guì",
+      "en": "expensive",
+      "pt": "caro"
+    },
+    "便": {
+      "roman": "pián",
+      "en": "(cheap, with 宜)",
+      "pt": "(barato, com 宜)"
+    },
+    "宜": {
+      "roman": "yi",
+      "en": "(cheap, with 便)",
+      "pt": "(barato, com 便)"
+    },
+    "要": {
+      "roman": "yào",
+      "en": "want",
+      "pt": "querer"
+    },
+    "只": {
+      "roman": "zhǐ",
+      "en": "only",
+      "pt": "só"
+    },
+    "看": {
+      "roman": "kàn",
+      "en": "look",
+      "pt": "olhar"
+    },
+    "用": {
+      "roman": "yòng",
+      "en": "use",
+      "pt": "usar"
+    },
+    "支": {
+      "roman": "zhī",
+      "en": "pay out",
+      "pt": "pagar"
+    },
+    "付": {
+      "roman": "fù",
+      "en": "pay",
+      "pt": "pagar"
+    },
+    "宝": {
+      "roman": "bǎo",
+      "en": "treasure",
+      "pt": "tesouro"
+    },
+    "微": {
+      "roman": "wēi",
+      "en": "tiny",
+      "pt": "pequeno"
+    },
+    "信": {
+      "roman": "xìn",
+      "en": "message",
+      "pt": "mensagem"
+    },
+    "扫": {
+      "roman": "sǎo",
+      "en": "sweep; scan",
+      "pt": "varrer; escanear"
+    },
+    "还": {
+      "roman": "hái",
+      "en": "or (还是)",
+      "pt": "ou (还是)"
+    },
+    "刷": {
+      "roman": "shuā",
+      "en": "brush; swipe",
+      "pt": "escovar; passar"
+    },
+    "卡": {
+      "roman": "kǎ",
+      "en": "card",
+      "pt": "cartão"
+    },
+    "袋": {
+      "roman": "dài",
+      "en": "bag",
+      "pt": "saco"
+    },
+    "子": {
+      "roman": "zi",
+      "en": "(noun ending)",
+      "pt": "(final de substantivo)"
+    },
+    "零": {
+      "roman": "líng",
+      "en": "zero",
+      "pt": "zero"
+    },
+    "二": {
+      "roman": "èr",
+      "en": "two",
+      "pt": "dois"
+    },
+    "两": {
+      "roman": "liǎng",
+      "en": "two (of)",
+      "pt": "dois (de)"
+    },
+    "三": {
+      "roman": "sān",
+      "en": "three",
+      "pt": "três"
+    },
+    "四": {
+      "roman": "sì",
+      "en": "four",
+      "pt": "quatro"
+    },
+    "五": {
+      "roman": "wǔ",
+      "en": "five",
+      "pt": "cinco"
+    },
+    "六": {
+      "roman": "liù",
+      "en": "six",
+      "pt": "seis"
+    },
+    "七": {
+      "roman": "qī",
+      "en": "seven",
+      "pt": "sete"
+    },
+    "八": {
+      "roman": "bā",
+      "en": "eight",
+      "pt": "oito"
+    },
+    "九": {
+      "roman": "jiǔ",
+      "en": "nine",
+      "pt": "nove"
+    },
+    "十": {
+      "roman": "shí",
+      "en": "ten",
+      "pt": "dez"
+    },
+    "百": {
+      "roman": "bǎi",
+      "en": "hundred",
+      "pt": "cem"
+    },
+    "千": {
+      "roman": "qiān",
+      "en": "thousand",
+      "pt": "mil"
+    },
+    "万": {
+      "roman": "wàn",
+      "en": "ten thousand",
+      "pt": "dez mil"
+    },
+    "块": {
+      "roman": "kuài",
+      "en": "piece; yuan",
+      "pt": "pedaço; yuan"
+    },
+    "给": {
+      "roman": "gěi",
+      "en": "give",
+      "pt": "dar"
+    },
+    "菜": {
+      "roman": "cài",
+      "en": "dish; greens",
+      "pt": "prato; verdura"
+    },
+    "单": {
+      "roman": "dān",
+      "en": "list",
+      "pt": "lista"
+    },
+    "来": {
+      "roman": "lái",
+      "en": "come",
+      "pt": "vir"
+    },
+    "辣": {
+      "roman": "là",
+      "en": "spicy",
+      "pt": "picante"
+    },
+    "都": {
+      "roman": "dōu",
+      "en": "all",
+      "pt": "todos"
+    },
+    "能": {
+      "roman": "néng",
+      "en": "be able",
+      "pt": "conseguir"
+    },
+    "吃": {
+      "roman": "chī",
+      "en": "eat",
+      "pt": "comer"
+    },
+    "花": {
+      "roman": "huā",
+      "en": "flower",
+      "pt": "flor"
+    },
+    "椒": {
+      "roman": "jiāo",
+      "en": "pepper",
+      "pt": "pimenta"
+    },
+    "肉": {
+      "roman": "ròu",
+      "en": "meat",
+      "pt": "carne"
+    },
+    "猪": {
+      "roman": "zhū",
+      "en": "pig",
+      "pt": "porco"
+    },
+    "有": {
+      "roman": "yǒu",
+      "en": "have",
+      "pt": "ter"
+    },
+    "鸡": {
+      "roman": "jī",
+      "en": "chicken",
+      "pt": "galinha"
+    },
+    "的": {
+      "roman": "de",
+      "en": "('s; of)",
+      "pt": "(de; posse)"
+    },
+    "素": {
+      "roman": "sù",
+      "en": "plain; vegetarian",
+      "pt": "simples; vegetariano"
+    },
+    "香": {
+      "roman": "xiāng",
+      "en": "fragrant",
+      "pt": "cheiroso"
+    },
+    "瓶": {
+      "roman": "píng",
+      "en": "bottle",
+      "pt": "garrafa"
+    },
+    "水": {
+      "roman": "shuǐ",
+      "en": "water",
+      "pt": "água"
+    },
+    "冰": {
+      "roman": "bīng",
+      "en": "ice",
+      "pt": "gelo"
+    },
+    "啤": {
+      "roman": "pí",
+      "en": "(beer, sound)",
+      "pt": "(cerveja, som)"
+    },
+    "酒": {
+      "roman": "jiǔ",
+      "en": "alcohol",
+      "pt": "bebida alcoólica"
+    },
+    "打": {
+      "roman": "dǎ",
+      "en": "hit; do",
+      "pt": "bater; fazer"
+    },
+    "包": {
+      "roman": "bāo",
+      "en": "wrap",
+      "pt": "embrulhar"
+    },
+    "买": {
+      "roman": "mǎi",
+      "en": "buy",
+      "pt": "comprar"
+    },
+    "生": {
+      "roman": "shēng",
+      "en": "life; raw",
+      "pt": "vida; cru"
+    },
+    "严": {
+      "roman": "yán",
+      "en": "strict",
+      "pt": "severo"
+    },
+    "重": {
+      "roman": "zhòng",
+      "en": "heavy",
+      "pt": "pesado"
+    },
+    "过": {
+      "roman": "guò",
+      "en": "pass",
+      "pt": "passar"
+    },
+    "敏": {
+      "roman": "mǐn",
+      "en": "sensitive",
+      "pt": "sensível"
+    },
+    "放": {
+      "roman": "fàng",
+      "en": "put",
+      "pt": "colocar"
+    },
+    "油": {
+      "roman": "yóu",
+      "en": "oil",
+      "pt": "óleo"
+    },
+    "或": {
+      "roman": "huò",
+      "en": "or",
+      "pt": "ou"
+    },
+    "酱": {
+      "roman": "jiàng",
+      "en": "sauce; paste",
+      "pt": "molho; pasta"
+    },
+    "做": {
+      "roman": "zuò",
+      "en": "make",
+      "pt": "fazer"
+    },
+    "料": {
+      "roman": "liào",
+      "en": "ingredient",
+      "pt": "ingrediente"
+    },
+    "坚": {
+      "roman": "jiān",
+      "en": "hard",
+      "pt": "duro"
+    },
+    "果": {
+      "roman": "guǒ",
+      "en": "fruit; nut",
+      "pt": "fruto"
+    },
+    "命": {
+      "roman": "mìng",
+      "en": "life",
+      "pt": "vida"
+    },
+    "危": {
+      "roman": "wēi",
+      "en": "danger",
+      "pt": "perigo"
+    },
+    "险": {
+      "roman": "xiǎn",
+      "en": "risk",
+      "pt": "risco"
+    },
+    "救": {
+      "roman": "jiù",
+      "en": "rescue",
+      "pt": "salvar"
+    },
+    "护": {
+      "roman": "hù",
+      "en": "protect",
+      "pt": "proteger"
+    },
+    "牛": {
+      "roman": "niú",
+      "en": "cow",
+      "pt": "boi"
+    },
+    "羊": {
+      "roman": "yáng",
+      "en": "sheep",
+      "pt": "ovelha"
+    },
+    "鸭": {
+      "roman": "yā",
+      "en": "duck",
+      "pt": "pato"
+    },
+    "鱼": {
+      "roman": "yú",
+      "en": "fish",
+      "pt": "peixe"
+    },
+    "虾": {
+      "roman": "xiā",
+      "en": "shrimp",
+      "pt": "camarão"
+    },
+    "蛋": {
+      "roman": "dàn",
+      "en": "egg",
+      "pt": "ovo"
+    },
+    "豆": {
+      "roman": "dòu",
+      "en": "bean",
+      "pt": "feijão; soja"
+    },
+    "腐": {
+      "roman": "fǔ",
+      "en": "curdled",
+      "pt": "coalhado"
+    },
+    "芝": {
+      "roman": "zhī",
+      "en": "(sesame, with 麻)",
+      "pt": "(gergelim, com 麻)"
+    },
+    "麻": {
+      "roman": "má",
+      "en": "sesame; numbing",
+      "pt": "gergelim; dormente"
+    },
+    "密": {
+      "roman": "mì",
+      "en": "secret",
+      "pt": "secreto"
+    },
+    "码": {
+      "roman": "mǎ",
+      "en": "code",
+      "pt": "código"
+    },
+    "寄": {
+      "roman": "jì",
+      "en": "entrust; send",
+      "pt": "confiar; enviar"
+    },
+    "存": {
+      "roman": "cún",
+      "en": "keep",
+      "pt": "guardar"
+    },
+    "行": {
+      "roman": "xíng",
+      "en": "go; OK",
+      "pt": "ir; ok"
+    },
+    "李": {
+      "roman": "li",
+      "en": "plum",
+      "pt": "ameixa"
+    },
+    "拍": {
+      "roman": "pāi",
+      "en": "pat; shoot (a photo)",
+      "pt": "bater; fotografar"
+    },
+    "照": {
+      "roman": "zhào",
+      "en": "photo",
+      "pt": "foto"
+    },
+    "帮": {
+      "roman": "bāng",
+      "en": "help",
+      "pt": "ajudar"
+    },
+    "张": {
+      "roman": "zhāng",
+      "en": "(counter for flat things)",
+      "pt": "(contador de coisas planas)"
+    },
+    "开": {
+      "roman": "kāi",
+      "en": "open",
+      "pt": "abrir"
+    },
+    "门": {
+      "roman": "mén",
+      "en": "door",
+      "pt": "porta"
+    },
+    "充": {
+      "roman": "chōng",
+      "en": "fill",
+      "pt": "encher"
+    },
+    "电": {
+      "roman": "diàn",
+      "en": "electricity",
+      "pt": "eletricidade"
+    },
+    "药": {
+      "roman": "yào",
+      "en": "medicine",
+      "pt": "remédio"
+    },
+    "店": {
+      "roman": "diàn",
+      "en": "shop",
+      "pt": "loja"
+    },
+    "需": {
+      "roman": "xū",
+      "en": "need",
+      "pt": "precisar"
+    },
+    "医": {
+      "roman": "yī",
+      "en": "heal; doctor",
+      "pt": "curar; médico"
+    },
+    "丢": {
+      "roman": "diū",
+      "en": "lose",
+      "pt": "perder"
+    },
+    "题": {
+      "roman": "tí",
+      "en": "question; topic",
+      "pt": "questão"
+    },
+    "等": {
+      "roman": "děng",
+      "en": "wait",
+      "pt": "esperar"
+    },
+    "下": {
+      "roman": "xià",
+      "en": "down; a moment",
+      "pt": "baixo; um instante"
+    },
+    "知": {
+      "roman": "zhī",
+      "en": "know",
+      "pt": "saber"
+    },
+    "道": {
+      "roman": "dào",
+      "en": "way",
+      "pt": "caminho"
+    },
+    "烦": {
+      "roman": "fán",
+      "en": "bother",
+      "pt": "incomodar"
+    },
+    "漂": {
+      "roman": "piào",
+      "en": "(pretty, with 亮)",
+      "pt": "(bonito, com 亮)"
+    },
+    "亮": {
+      "roman": "liàng",
+      "en": "bright",
+      "pt": "brilhante"
+    },
+    "干": {
+      "roman": "gān",
+      "en": "dry",
+      "pt": "seco"
+    },
+    "杯": {
+      "roman": "bēi",
+      "en": "cup",
+      "pt": "copo"
+    },
+    "加": {
+      "roman": "jiā",
+      "en": "add",
+      "pt": "somar"
+    },
+    "第": {
+      "roman": "dì",
+      "en": "(ordinal)",
+      "pt": "(ordinal)"
+    },
+    "次": {
+      "roman": "cì",
+      "en": "time; occasion",
+      "pt": "vez"
+    },
+    "国": {
+      "roman": "guó",
+      "en": "country",
+      "pt": "país"
+    },
+    "喜": {
+      "roman": "xǐ",
+      "en": "joy",
+      "pt": "alegria"
+    },
+    "欢": {
+      "roman": "huān",
+      "en": "glad",
+      "pt": "contente"
+    },
+    "学": {
+      "roman": "xué",
+      "en": "study",
+      "pt": "estudar"
+    },
+    "吧": {
+      "roman": "ba",
+      "en": "(let's)",
+      "pt": "(vamos)"
+    },
+    "真": {
+      "roman": "zhēn",
+      "en": "true",
+      "pt": "verdadeiro"
+    },
+    "迎": {
+      "roman": "yíng",
+      "en": "welcome",
+      "pt": "receber"
+    },
+    "光": {
+      "roman": "guāng",
+      "en": "light",
+      "pt": "luz"
+    },
+    "临": {
+      "roman": "lín",
+      "en": "arrive",
+      "pt": "chegar"
+    }
+  }
 }

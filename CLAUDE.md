@@ -230,6 +230,14 @@ Um toque abre a frase em tela cheia para mostrar à pessoa, com botão "Ouvir" s
 ```
 Use `…` onde entra um nome ou lugar ("…在哪里？"); a voz pula esse trecho. Confira a romanização com tons.
 
+Cada card tem um 🔊 que fala a frase ali mesmo. As mesmas frases alimentam a aba 🎓 **Estudar**:
+flashcards (reconhecer: chinês → sentido; falar: sentido → chinês), "Sei"/"Revisar" salvos no
+aparelho e um grupo "Para revisar" com os erros. Para a carta explicar cada caractere, ponha um
+`glossary` (só os caracteres usados nas frases entram; carta de um caractere só não mostra):
+```jsonc
+"glossary": { "你": { "roman": "nǐ", "en": "you", "pt": "você" }, "好": { "roman": "hǎo", "en": "good", "pt": "bom" } }
+```
+
 As datas dos dias são **calculadas automaticamente** a partir de `startDate` somando as noites.
 
 ## 3. Gere o HTML (e o KML)
