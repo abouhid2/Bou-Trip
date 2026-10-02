@@ -5182,11 +5182,55 @@
         },
         {
           "text": {
+            "en": "Is it spicy?",
+            "pt": "É apimentado?"
+          },
+          "local": "辣不辣？",
+          "roman": "là bu là?"
+        },
+        {
+          "text": {
             "en": "Not spicy",
             "pt": "Sem pimenta"
           },
           "local": "不要辣",
           "roman": "bú yào là"
+        },
+        {
+          "text": {
+            "en": "No chili at all",
+            "pt": "Nada de pimenta, nem um pouco"
+          },
+          "local": "一点辣都不要",
+          "roman": "yìdiǎn là dōu bú yào",
+          "note": {
+            "en": "Use it when a plain 不要辣 still came spicy.",
+            "pt": "Use quando o 不要辣 sozinho ainda veio ardido."
+          }
+        },
+        {
+          "text": {
+            "en": "I can't eat spicy food",
+            "pt": "Não posso comer pimenta"
+          },
+          "local": "我不能吃辣",
+          "roman": "wǒ bù néng chī là",
+          "note": {
+            "en": "Sounds like a health reason, so kitchens take it more seriously.",
+            "pt": "Soa como motivo de saúde, então a cozinha leva mais a sério."
+          }
+        },
+        {
+          "text": {
+            "en": "No Sichuan pepper",
+            "pt": "Sem pimenta-de-sichuan"
+          },
+          "local": "不要花椒",
+          "roman": "bú yào huājiāo",
+          "note": {
+            "en": "The one that numbs your mouth; it's separate from chili.",
+            "pt": "A que adormece a boca; é diferente da pimenta vermelha."
+          }
         },
         {
           "text": {
@@ -5199,6 +5243,54 @@
             "en": "Even \"a little\" in Hunan is a lot.",
             "pt": "Em Hunan, até o \"pouco\" é bastante."
           }
+        },
+        {
+          "text": {
+            "en": "What meat is this?",
+            "pt": "Que carne é essa?"
+          },
+          "local": "这是什么肉？",
+          "roman": "zhè shì shénme ròu?",
+          "note": {
+            "en": "肉 on its own almost always means pork.",
+            "pt": "肉 sozinho quase sempre quer dizer porco."
+          }
+        },
+        {
+          "text": {
+            "en": "Is this pork?",
+            "pt": "Isso é porco?"
+          },
+          "local": "这是猪肉吗？",
+          "roman": "zhè shì zhūròu ma?",
+          "note": {
+            "en": "Swap in the meat: 鸡肉 chicken, 牛肉 beef.",
+            "pt": "Troque a carne: 鸡肉 frango, 牛肉 boi."
+          }
+        },
+        {
+          "text": {
+            "en": "Do you have something with chicken?",
+            "pt": "Tem algum prato de frango?"
+          },
+          "local": "有鸡肉的吗？",
+          "roman": "yǒu jīròu de ma?"
+        },
+        {
+          "text": {
+            "en": "I don't eat pork",
+            "pt": "Não como carne de porco"
+          },
+          "local": "我不吃猪肉",
+          "roman": "wǒ bù chī zhūròu"
+        },
+        {
+          "text": {
+            "en": "Any dishes without meat?",
+            "pt": "Tem prato sem carne?"
+          },
+          "local": "有素菜吗？",
+          "roman": "yǒu sùcài ma?"
         },
         {
           "text": {
@@ -5259,6 +5351,116 @@
           },
           "local": "买单",
           "roman": "mǎidān"
+        }
+      ]
+    },
+    {
+      "icon": "🥢",
+      "group": {
+        "en": "Reading the menu",
+        "pt": "Ler o cardápio"
+      },
+      "compact": true,
+      "note": {
+        "en": "Look for these characters in the dish name: 宫保鸡丁 has 鸡 = chicken, 水煮牛肉 has 牛 = beef, 回锅肉 is pork (plain 肉).\nIn Hunan almost everything has chili: ask for 不辣 before you choose. A 🌶️ on the menu means spicy.",
+        "pt": "Procure estes caracteres no nome do prato: 宫保鸡丁 tem 鸡 = frango, 水煮牛肉 tem 牛 = boi, 回锅肉 é porco (肉 sozinho).\nEm Hunan quase tudo leva pimenta: peça 不辣 antes de escolher. Um 🌶️ no cardápio quer dizer apimentado."
+      },
+      "items": [
+        {
+          "text": {
+            "en": "Pork",
+            "pt": "Porco"
+          },
+          "local": "猪",
+          "roman": "zhū"
+        },
+        {
+          "text": {
+            "en": "Chicken",
+            "pt": "Frango"
+          },
+          "local": "鸡",
+          "roman": "jī"
+        },
+        {
+          "text": {
+            "en": "Beef",
+            "pt": "Boi"
+          },
+          "local": "牛",
+          "roman": "niú"
+        },
+        {
+          "text": {
+            "en": "Lamb",
+            "pt": "Cordeiro"
+          },
+          "local": "羊",
+          "roman": "yáng"
+        },
+        {
+          "text": {
+            "en": "Duck",
+            "pt": "Pato"
+          },
+          "local": "鸭",
+          "roman": "yā"
+        },
+        {
+          "text": {
+            "en": "Fish",
+            "pt": "Peixe"
+          },
+          "local": "鱼",
+          "roman": "yú"
+        },
+        {
+          "text": {
+            "en": "Shrimp",
+            "pt": "Camarão"
+          },
+          "local": "虾",
+          "roman": "xiā"
+        },
+        {
+          "text": {
+            "en": "Egg",
+            "pt": "Ovo"
+          },
+          "local": "蛋",
+          "roman": "dàn"
+        },
+        {
+          "text": {
+            "en": "Tofu",
+            "pt": "Tofu"
+          },
+          "local": "豆腐",
+          "roman": "dòufu"
+        },
+        {
+          "text": {
+            "en": "Greens",
+            "pt": "Verdura"
+          },
+          "local": "菜",
+          "roman": "cài"
+        },
+        {
+          "text": {
+            "en": "Meat",
+            "pt": "Carne"
+          },
+          "local": "肉",
+          "roman": "ròu"
+        },
+        {
+          "text": {
+            "en": "Spicy",
+            "pt": "Picante"
+          },
+          "local": "辣",
+          "roman": "là"
         }
       ]
     },
