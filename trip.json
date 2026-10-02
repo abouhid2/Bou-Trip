@@ -5355,6 +5355,115 @@
       ]
     },
     {
+      "icon": "🥜",
+      "group": {
+        "en": "Peanut allergy",
+        "pt": "Alergia a amendoim"
+      },
+      "note": {
+        "en": "Peanuts and peanut oil are common in Chinese cooking, often where you can't see them. Usual suspects: 宫保鸡丁 (kung pao chicken), 担担面 (dan dan noodles), cold starters with 花生米, and 桂林米粉 (Guilin rice noodles, topped with fried peanuts).\nShow the first card to the waiter before ordering.",
+        "pt": "Amendoim e óleo de amendoim são comuns na cozinha chinesa, muitas vezes sem aparecer no prato. Os suspeitos de sempre: 宫保鸡丁 (frango kung pao), 担担面 (macarrão dan dan), entradas frias com 花生米 e 桂林米粉 (macarrão de arroz de Guilin, que vem com amendoim frito).\nMostre o primeiro cartão ao garçom antes de pedir."
+      },
+      "items": [
+        {
+          "text": {
+            "en": "I have a severe peanut allergy. Please don't put peanuts, peanut oil or peanut sauce in my food. Thank you!",
+            "pt": "Tenho alergia grave a amendoim. Por favor, não coloque amendoim, óleo de amendoim nem molho de amendoim na minha comida. Obrigado!"
+          },
+          "local": "我对花生严重过敏。请不要在我的菜里放花生、花生油或花生酱。谢谢！",
+          "roman": "wǒ duì huāshēng yánzhòng guòmǐn. qǐng bú yào zài wǒ de cài lǐ fàng huāshēng, huāshēngyóu huò huāshēngjiàng. xièxie!",
+          "note": {
+            "en": "The card for the waiter and the kitchen.",
+            "pt": "O cartão para o garçom e a cozinha."
+          }
+        },
+        {
+          "text": {
+            "en": "I'm allergic to peanuts",
+            "pt": "Tenho alergia a amendoim"
+          },
+          "local": "我对花生过敏",
+          "roman": "wǒ duì huāshēng guòmǐn"
+        },
+        {
+          "text": {
+            "en": "It's serious",
+            "pt": "É grave"
+          },
+          "local": "很严重",
+          "roman": "hěn yánzhòng"
+        },
+        {
+          "text": {
+            "en": "Does this have peanuts?",
+            "pt": "Isto tem amendoim?"
+          },
+          "local": "这个有花生吗？",
+          "roman": "zhège yǒu huāshēng ma?"
+        },
+        {
+          "text": {
+            "en": "Is it cooked in peanut oil?",
+            "pt": "É feito com óleo de amendoim?"
+          },
+          "local": "是用花生油做的吗？",
+          "roman": "shì yòng huāshēngyóu zuò de ma?"
+        },
+        {
+          "text": {
+            "en": "Is there peanut in the sauce?",
+            "pt": "O molho tem amendoim?"
+          },
+          "local": "酱料里有花生吗？",
+          "roman": "jiàngliào lǐ yǒu huāshēng ma?"
+        },
+        {
+          "text": {
+            "en": "No peanuts, please",
+            "pt": "Sem amendoim, por favor"
+          },
+          "local": "请不要放花生",
+          "roman": "qǐng bú yào fàng huāshēng"
+        },
+        {
+          "text": {
+            "en": "No nuts of any kind",
+            "pt": "Nenhum tipo de castanha"
+          },
+          "local": "坚果都不要",
+          "roman": "jiānguǒ dōu bú yào"
+        },
+        {
+          "text": {
+            "en": "If I eat it, my life is in danger",
+            "pt": "Se eu comer, corro risco de vida"
+          },
+          "local": "我吃了会有生命危险",
+          "roman": "wǒ chī le huì yǒu shēngmìng wēixiǎn"
+        },
+        {
+          "text": {
+            "en": "I'm having an allergic reaction",
+            "pt": "Estou tendo uma reação alérgica"
+          },
+          "local": "我过敏了",
+          "roman": "wǒ guòmǐn le"
+        },
+        {
+          "text": {
+            "en": "Please call an ambulance!",
+            "pt": "Chame uma ambulância, por favor!"
+          },
+          "local": "请叫救护车！",
+          "roman": "qǐng jiào jiùhùchē!",
+          "note": {
+            "en": "Ambulance: 120.",
+            "pt": "Ambulância: 120."
+          }
+        }
+      ]
+    },
+    {
       "icon": "🥢",
       "group": {
         "en": "Reading the menu",
@@ -5362,8 +5471,8 @@
       },
       "compact": true,
       "note": {
-        "en": "Look for these characters in the dish name: 宫保鸡丁 has 鸡 = chicken, 水煮牛肉 has 牛 = beef, 回锅肉 is pork (plain 肉).\nIn Hunan almost everything has chili: ask for 不辣 before you choose. A 🌶️ on the menu means spicy.",
-        "pt": "Procure estes caracteres no nome do prato: 宫保鸡丁 tem 鸡 = frango, 水煮牛肉 tem 牛 = boi, 回锅肉 é porco (肉 sozinho).\nEm Hunan quase tudo leva pimenta: peça 不辣 antes de escolher. Um 🌶️ no cardápio quer dizer apimentado."
+        "en": "Look for these characters in the dish name: 宫保鸡丁 has 鸡 = chicken (and peanuts!), 水煮牛肉 has 牛 = beef, 回锅肉 is pork (plain 肉).\nIn Hunan almost everything has chili: ask for 不辣 before you choose. A 🌶️ on the menu means spicy.",
+        "pt": "Procure estes caracteres no nome do prato: 宫保鸡丁 tem 鸡 = frango (e leva amendoim!), 水煮牛肉 tem 牛 = boi, 回锅肉 é porco (肉 sozinho).\nEm Hunan quase tudo leva pimenta: peça 不辣 antes de escolher. Um 🌶️ no cardápio quer dizer apimentado."
       },
       "items": [
         {
@@ -5461,6 +5570,30 @@
           },
           "local": "辣",
           "roman": "là"
+        },
+        {
+          "text": {
+            "en": "Peanut",
+            "pt": "Amendoim"
+          },
+          "local": "花生",
+          "roman": "huāshēng"
+        },
+        {
+          "text": {
+            "en": "Nuts",
+            "pt": "Castanhas"
+          },
+          "local": "坚果",
+          "roman": "jiānguǒ"
+        },
+        {
+          "text": {
+            "en": "Sesame",
+            "pt": "Gergelim"
+          },
+          "local": "芝麻",
+          "roman": "zhīma"
         }
       ]
     },
