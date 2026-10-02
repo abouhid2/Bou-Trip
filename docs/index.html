@@ -597,6 +597,36 @@
   .bc.bought .bc-detail, .bc.bought .bc-where { display: none; }
   .bc-mark[aria-pressed="true"] { background: var(--surface-2); color: var(--text-2); }
 
+  /* ---------- aba Frases ---------- */
+  body[data-view="phrases"] .rail, body[data-view="phrases"] .legend, body[data-view="phrases"] .dec-bar { display: none; }
+  .panel[data-tab="phrases"] { max-width: 760px; margin: 0 auto; }
+  /* Atalhos para os grupos: uma faixa que rola de lado, sem quebrar em várias linhas. */
+  .ph-jumps { display: flex; gap: 6px; overflow-x: auto; margin: 0 calc(-1 * var(--sp-4)) var(--sp-5); padding: 0 var(--sp-4) 2px; scrollbar-width: none; }
+  .ph-jumps::-webkit-scrollbar { display: none; }
+  .ph-jump { flex: none; white-space: nowrap; }
+  .ph-group { margin-bottom: var(--sp-6); scroll-margin-top: var(--sp-4); }
+  .ph-title { font-size: 15px; font-weight: 800; color: var(--text); margin-bottom: var(--sp-2); }
+  .ph-gnote { font-size: 13.5px; line-height: 1.6; color: var(--text-2); margin-bottom: var(--sp-3); white-space: pre-line; }
+  .ph-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--sp-2); }
+  .ph {
+    -webkit-appearance: none; appearance: none; font: inherit; cursor: pointer; text-align: left;
+    display: flex; flex-direction: column; gap: 2px; padding: var(--sp-3) var(--sp-4);
+    border: 1px solid var(--border); border-radius: var(--r-md); background: var(--surface); color: var(--text);
+  }
+  .ph-tr { font-size: 13px; font-weight: 600; color: var(--muted); }
+  .ph-local { font-size: 22px; font-weight: 700; line-height: 1.3; }
+  .ph-roman { font-size: 14px; color: var(--text-2); }
+  .ph-note { font-size: 12.5px; line-height: 1.5; color: var(--muted); margin-top: 2px; }
+  /* Números: grade de quadradinhos, o algarismo em cima. */
+  .ph-compact .ph-list { grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); }
+  .ph-compact .ph { align-items: center; text-align: center; padding: var(--sp-2); }
+  .ph-compact .ph-tr { font-size: 17px; font-weight: 800; color: var(--text); }
+  .ph-compact .ph-local { font-size: 20px; }
+  .ph-compact .ph-roman { font-size: 13px; }
+  .phs-roman { font-size: 22px; color: #333; }
+  .phs-tr { font-size: 16px; color: #666; }
+  .phs-acts { display: flex; justify-content: center; flex-wrap: wrap; gap: var(--sp-2); }
+
   /* ---------- barra de baixo e menu "Mais" (celular) ---------- */
   .bnav { display: none; }
   .ln-short { display: none; }
@@ -961,6 +991,7 @@
     <button class="tab" role="tab" aria-selected="false" tabindex="-1" data-panel="stays">🛏️ <span data-l="en">Lodging</span><span data-l="pt">Hospedagem</span></button>
     <button class="tab" role="tab" aria-selected="false" tabindex="-1" data-panel="food">🍽️ <span data-l="en">Food</span><span data-l="pt">Restaurantes</span></button>
     <button class="tab" role="tab" aria-selected="false" tabindex="-1" data-panel="map">🗺️ <span data-l="en">Map</span><span data-l="pt">Mapa</span></button>
+    <button class="tab" role="tab" aria-selected="false" tabindex="-1" data-panel="phrases">💬 <span data-l="en">Phrases</span><span data-l="pt">Frases</span></button>
   </div>
 
   <div class="panel active" role="tabpanel" data-tab="today">
@@ -3223,15 +3254,583 @@ Confira a estação de CHEGADA: o plano conta com Suzhou (苏州站), colada no 
     <div id="map" class="mapbox"><div class="map-fallback"><span data-l="en">🗺️ The live map needs internet — with an eSIM/Wi-Fi it works right here, no app needed. For fully offline use, import the my-trip.kml file into a maps app (Organic Maps, Maps.me, OsmAnd…). The other tabs work offline.</span><span data-l="pt">🗺️ O mapa ao vivo precisa de internet — com eSIM/Wi-Fi funciona aqui mesmo, sem instalar nada. Só para usar 100% offline, importe o arquivo my-trip.kml num app de mapa (Organic Maps, Maps.me, OsmAnd…). As outras abas funcionam offline.</span></div></div>
   </div>
 
+  <div class="panel" role="tabpanel" data-tab="phrases">
+    <p class="bc-intro"><span data-l="en">The basics for getting by. Tap a phrase to show it full screen to the person (and hear it, if the phone has the voice).</span><span data-l="pt">O básico para se virar. Toque numa frase para mostrar em tela cheia à pessoa (e ouvir, se o celular tiver a voz).</span></p>
+    <nav class="ph-jumps" aria-label="Frases"><button class="bc-seg ph-jump" type="button" data-target="ph-g0">👋 <span data-l="en">Greetings</span><span data-l="pt">Cumprimentos</span></button><button class="bc-seg ph-jump" type="button" data-target="ph-g1">🙋 <span data-l="en">Introductions</span><span data-l="pt">Apresentação</span></button><button class="bc-seg ph-jump" type="button" data-target="ph-g2">🧭 <span data-l="en">Directions &amp; transport</span><span data-l="pt">Direções e transporte</span></button><button class="bc-seg ph-jump" type="button" data-target="ph-g3">💰 <span data-l="en">Prices &amp; shopping</span><span data-l="pt">Valores e compras</span></button><button class="bc-seg ph-jump" type="button" data-target="ph-g4">🔢 <span data-l="en">Numbers</span><span data-l="pt">Números</span></button><button class="bc-seg ph-jump" type="button" data-target="ph-g5">🍜 <span data-l="en">Eating out</span><span data-l="pt">Restaurante</span></button><button class="bc-seg ph-jump" type="button" data-target="ph-g6">🏨 <span data-l="en">Day to day</span><span data-l="pt">Dia a dia</span></button><button class="bc-seg ph-jump" type="button" data-target="ph-g7">💬 <span data-l="en">Common expressions</span><span data-l="pt">Expressões comuns</span></button></nav>
+    <section class="ph-group" id="ph-g0">
+      <h3 class="ph-title"><span aria-hidden="true">👋</span> <span data-l="en">Greetings</span><span data-l="pt">Cumprimentos</span></h3>
+      <div class="ph-list">
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Hello</span><span data-l="pt">Olá</span></span>
+          <span class="ph-local" lang="zh-CN">你好</span>
+          <span class="ph-roman">nǐ hǎo</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Hello (polite, to older people)</span><span data-l="pt">Olá (educado, para mais velhos)</span></span>
+          <span class="ph-local" lang="zh-CN">您好</span>
+          <span class="ph-roman">nín hǎo</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Good morning</span><span data-l="pt">Bom dia</span></span>
+          <span class="ph-local" lang="zh-CN">早上好</span>
+          <span class="ph-roman">zǎoshang hǎo</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Good evening</span><span data-l="pt">Boa noite (ao chegar)</span></span>
+          <span class="ph-local" lang="zh-CN">晚上好</span>
+          <span class="ph-roman">wǎnshang hǎo</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Good night (going to bed)</span><span data-l="pt">Boa noite (ao dormir)</span></span>
+          <span class="ph-local" lang="zh-CN">晚安</span>
+          <span class="ph-roman">wǎn'ān</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Goodbye</span><span data-l="pt">Tchau</span></span>
+          <span class="ph-local" lang="zh-CN">再见</span>
+          <span class="ph-roman">zàijiàn</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Thank you</span><span data-l="pt">Obrigado</span></span>
+          <span class="ph-local" lang="zh-CN">谢谢</span>
+          <span class="ph-roman">xièxie</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">You're welcome</span><span data-l="pt">De nada</span></span>
+          <span class="ph-local" lang="zh-CN">不客气</span>
+          <span class="ph-roman">bú kèqi</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Sorry</span><span data-l="pt">Desculpe</span></span>
+          <span class="ph-local" lang="zh-CN">对不起</span>
+          <span class="ph-roman">duìbuqǐ</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">It's fine / no problem</span><span data-l="pt">Tudo bem / não tem problema</span></span>
+          <span class="ph-local" lang="zh-CN">没关系</span>
+          <span class="ph-roman">méi guānxi</span><span class="ph-note"><span data-l="en">The answer to someone's &quot;sorry&quot;.</span><span data-l="pt">A resposta para quando alguém pede desculpa.</span></span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Excuse me, may I ask…</span><span data-l="pt">Com licença, uma pergunta…</span></span>
+          <span class="ph-local" lang="zh-CN">请问…</span>
+          <span class="ph-roman">qǐngwèn…</span><span class="ph-note"><span data-l="en">The polite way to start any question to a stranger.</span><span data-l="pt">Jeito educado de começar qualquer pergunta a um desconhecido.</span></span>
+        </button>
+      </div>
+    </section>
+    <section class="ph-group" id="ph-g1">
+      <h3 class="ph-title"><span aria-hidden="true">🙋</span> <span data-l="en">Introductions</span><span data-l="pt">Apresentação</span></h3>
+      <div class="ph-list">
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">My name is…</span><span data-l="pt">Meu nome é…</span></span>
+          <span class="ph-local" lang="zh-CN">我叫…</span>
+          <span class="ph-roman">wǒ jiào…</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">What's your name?</span><span data-l="pt">Como você se chama?</span></span>
+          <span class="ph-local" lang="zh-CN">你叫什么名字？</span>
+          <span class="ph-roman">nǐ jiào shénme míngzi?</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">We are Brazilian</span><span data-l="pt">Somos brasileiros</span></span>
+          <span class="ph-local" lang="zh-CN">我们是巴西人</span>
+          <span class="ph-roman">wǒmen shì Bāxī rén</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">We are tourists</span><span data-l="pt">Somos turistas</span></span>
+          <span class="ph-local" lang="zh-CN">我们是游客</span>
+          <span class="ph-roman">wǒmen shì yóukè</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Nice to meet you</span><span data-l="pt">Prazer em conhecer</span></span>
+          <span class="ph-local" lang="zh-CN">很高兴认识你</span>
+          <span class="ph-roman">hěn gāoxìng rènshi nǐ</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">I don't speak Chinese</span><span data-l="pt">Não falo chinês</span></span>
+          <span class="ph-local" lang="zh-CN">我不会说中文</span>
+          <span class="ph-roman">wǒ bú huì shuō Zhōngwén</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Do you speak English?</span><span data-l="pt">Você fala inglês?</span></span>
+          <span class="ph-local" lang="zh-CN">你会说英语吗？</span>
+          <span class="ph-roman">nǐ huì shuō Yīngyǔ ma?</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">I don't understand</span><span data-l="pt">Não entendi</span></span>
+          <span class="ph-local" lang="zh-CN">我听不懂</span>
+          <span class="ph-roman">wǒ tīng bu dǒng</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Please say it again, slowly</span><span data-l="pt">Pode repetir, mais devagar?</span></span>
+          <span class="ph-local" lang="zh-CN">请再说一遍，慢一点</span>
+          <span class="ph-roman">qǐng zài shuō yí biàn, màn yìdiǎn</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Can you type it on my phone?</span><span data-l="pt">Pode escrever no meu celular?</span></span>
+          <span class="ph-local" lang="zh-CN">可以写在我手机上吗？</span>
+          <span class="ph-roman">kěyǐ xiě zài wǒ shǒujī shang ma?</span><span class="ph-note"><span data-l="en">Then paste it into the translator.</span><span data-l="pt">Depois é só colar no tradutor.</span></span>
+        </button>
+      </div>
+    </section>
+    <section class="ph-group" id="ph-g2">
+      <h3 class="ph-title"><span aria-hidden="true">🧭</span> <span data-l="en">Directions &amp; transport</span><span data-l="pt">Direções e transporte</span></h3>
+      <div class="ph-list">
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Where is…?</span><span data-l="pt">Onde fica…?</span></span>
+          <span class="ph-local" lang="zh-CN">…在哪里？</span>
+          <span class="ph-roman">… zài nǎlǐ?</span><span class="ph-note"><span data-l="en">Say the place first: &quot;地铁站在哪里？&quot;</span><span data-l="pt">O lugar vem antes: &quot;地铁站在哪里？&quot;</span></span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Where is the toilet?</span><span data-l="pt">Onde é o banheiro?</span></span>
+          <span class="ph-local" lang="zh-CN">洗手间在哪里？</span>
+          <span class="ph-roman">xǐshǒujiān zài nǎlǐ?</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Where is the metro station?</span><span data-l="pt">Onde é a estação de metrô?</span></span>
+          <span class="ph-local" lang="zh-CN">地铁站在哪里？</span>
+          <span class="ph-roman">dìtiězhàn zài nǎlǐ?</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Where is the exit?</span><span data-l="pt">Onde é a saída?</span></span>
+          <span class="ph-local" lang="zh-CN">出口在哪里？</span>
+          <span class="ph-roman">chūkǒu zài nǎlǐ?</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Is it far?</span><span data-l="pt">É longe?</span></span>
+          <span class="ph-local" lang="zh-CN">远吗？</span>
+          <span class="ph-roman">yuǎn ma?</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Can I walk there?</span><span data-l="pt">Dá para ir a pé?</span></span>
+          <span class="ph-local" lang="zh-CN">走路可以到吗？</span>
+          <span class="ph-roman">zǒulù kěyǐ dào ma?</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Left · right · straight ahead</span><span data-l="pt">Esquerda · direita · em frente</span></span>
+          <span class="ph-local" lang="zh-CN">左边 · 右边 · 一直走</span>
+          <span class="ph-roman">zuǒbian · yòubian · yìzhí zǒu</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Please take me to this address</span><span data-l="pt">Me leve a este endereço, por favor</span></span>
+          <span class="ph-local" lang="zh-CN">请带我去这个地址</span>
+          <span class="ph-roman">qǐng dài wǒ qù zhège dìzhǐ</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Stop here, please</span><span data-l="pt">Pare aqui, por favor</span></span>
+          <span class="ph-local" lang="zh-CN">请在这里停</span>
+          <span class="ph-roman">qǐng zài zhèlǐ tíng</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Which ticket gate?</span><span data-l="pt">Qual o portão de embarque?</span></span>
+          <span class="ph-local" lang="zh-CN">几号检票口？</span>
+          <span class="ph-roman">jǐ hào jiǎnpiàokǒu?</span><span class="ph-note"><span data-l="en">At high-speed train stations you board through a numbered gate.</span><span data-l="pt">Nas estações de trem-bala o embarque é por um portão numerado.</span></span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Does this train go to…?</span><span data-l="pt">Este trem vai para…?</span></span>
+          <span class="ph-local" lang="zh-CN">这趟车去…吗？</span>
+          <span class="ph-roman">zhè tàng chē qù … ma?</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">I'm lost</span><span data-l="pt">Estou perdido</span></span>
+          <span class="ph-local" lang="zh-CN">我迷路了</span>
+          <span class="ph-roman">wǒ mílù le</span>
+        </button>
+      </div>
+    </section>
+    <section class="ph-group" id="ph-g3">
+      <h3 class="ph-title"><span aria-hidden="true">💰</span> <span data-l="en">Prices &amp; shopping</span><span data-l="pt">Valores e compras</span></h3>
+      <div class="ph-list">
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">How much is it?</span><span data-l="pt">Quanto custa?</span></span>
+          <span class="ph-local" lang="zh-CN">多少钱？</span>
+          <span class="ph-roman">duōshao qián?</span><span class="ph-note"><span data-l="en">Prices are said in 块 (kuài) = yuan: 35块 = ¥35.</span><span data-l="pt">O preço vem em 块 (kuài) = yuan: 35块 = ¥35.</span></span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Too expensive!</span><span data-l="pt">Muito caro!</span></span>
+          <span class="ph-local" lang="zh-CN">太贵了！</span>
+          <span class="ph-roman">tài guì le!</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Can you make it cheaper?</span><span data-l="pt">Pode fazer mais barato?</span></span>
+          <span class="ph-local" lang="zh-CN">可以便宜一点吗？</span>
+          <span class="ph-roman">kěyǐ piányi yìdiǎn ma?</span><span class="ph-note"><span data-l="en">Bargaining is normal at markets and stalls, not in shops with fixed prices.</span><span data-l="pt">Pechinchar é normal em feira e barraca, não em loja com preço fixo.</span></span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">I want this one</span><span data-l="pt">Quero este</span></span>
+          <span class="ph-local" lang="zh-CN">我要这个</span>
+          <span class="ph-roman">wǒ yào zhège</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">No thanks</span><span data-l="pt">Não, obrigado</span></span>
+          <span class="ph-local" lang="zh-CN">不要，谢谢</span>
+          <span class="ph-roman">bú yào, xièxie</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Just looking</span><span data-l="pt">Só estou olhando</span></span>
+          <span class="ph-local" lang="zh-CN">我只是看看</span>
+          <span class="ph-roman">wǒ zhǐshì kànkan</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Can I pay with Alipay / WeChat?</span><span data-l="pt">Posso pagar com Alipay / WeChat?</span></span>
+          <span class="ph-local" lang="zh-CN">可以用支付宝/微信吗？</span>
+          <span class="ph-roman">kěyǐ yòng Zhīfùbǎo / Wēixìn ma?</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Do I scan you, or do you scan me?</span><span data-l="pt">Eu leio o seu QR ou você lê o meu?</span></span>
+          <span class="ph-local" lang="zh-CN">我扫你还是你扫我？</span>
+          <span class="ph-roman">wǒ sǎo nǐ háishi nǐ sǎo wǒ?</span><span class="ph-note"><span data-l="en">The everyday question at the till.</span><span data-l="pt">A pergunta de todo dia no caixa.</span></span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Can I pay by card?</span><span data-l="pt">Aceita cartão?</span></span>
+          <span class="ph-local" lang="zh-CN">可以刷卡吗？</span>
+          <span class="ph-roman">kěyǐ shuā kǎ ma?</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">No bag needed</span><span data-l="pt">Não preciso de sacola</span></span>
+          <span class="ph-local" lang="zh-CN">不要袋子</span>
+          <span class="ph-roman">bú yào dàizi</span>
+        </button>
+      </div>
+    </section>
+    <section class="ph-group ph-compact" id="ph-g4">
+      <h3 class="ph-title"><span aria-hidden="true">🔢</span> <span data-l="en">Numbers</span><span data-l="pt">Números</span></h3><p class="ph-gnote"><span data-l="en">Numbers are built like Lego: 37 = 三十七 (3·10·7), 248 = 两百四十八. A zero in the middle is said 零: 105 = 一百零五.
+To count things use 两 (liǎng) instead of 二: 两个 = two (of them), 两张票 = two tickets.
+In phone and room numbers 1 is said yāo (幺).
+10,000 has its own word, 万 (wàn): 30,000 = 三万.
+Hand signs: 6 = thumb and pinky out, 7 = fingertips pinched, 8 = thumb and index (an L), 9 = hooked index, 10 = fist or crossed index fingers.</span><span data-l="pt">Os números se montam como Lego: 37 = 三十七 (3·10·7), 248 = 两百四十八. Zero no meio se fala 零: 105 = 一百零五.
+Para contar coisas usa-se 两 (liǎng) em vez de 二: 两个 = dois (deles), 两张票 = dois ingressos.
+Em telefone e número de quarto o 1 vira yāo (幺).
+10.000 tem palavra própria, 万 (wàn): 30.000 = 三万.
+Com a mão: 6 = polegar e mindinho, 7 = pontas dos dedos juntas, 8 = polegar e indicador (um L), 9 = indicador dobrado, 10 = punho fechado ou indicadores em cruz.</span></p>
+      <div class="ph-list">
+        <button class="ph" type="button">
+          <span class="ph-tr">0</span>
+          <span class="ph-local" lang="zh-CN">零</span>
+          <span class="ph-roman">líng</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">1</span>
+          <span class="ph-local" lang="zh-CN">一</span>
+          <span class="ph-roman">yī</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">2</span>
+          <span class="ph-local" lang="zh-CN">二 · 两</span>
+          <span class="ph-roman">èr · liǎng</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">3</span>
+          <span class="ph-local" lang="zh-CN">三</span>
+          <span class="ph-roman">sān</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">4</span>
+          <span class="ph-local" lang="zh-CN">四</span>
+          <span class="ph-roman">sì</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">5</span>
+          <span class="ph-local" lang="zh-CN">五</span>
+          <span class="ph-roman">wǔ</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">6</span>
+          <span class="ph-local" lang="zh-CN">六</span>
+          <span class="ph-roman">liù</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">7</span>
+          <span class="ph-local" lang="zh-CN">七</span>
+          <span class="ph-roman">qī</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">8</span>
+          <span class="ph-local" lang="zh-CN">八</span>
+          <span class="ph-roman">bā</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">9</span>
+          <span class="ph-local" lang="zh-CN">九</span>
+          <span class="ph-roman">jiǔ</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">10</span>
+          <span class="ph-local" lang="zh-CN">十</span>
+          <span class="ph-roman">shí</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">11</span>
+          <span class="ph-local" lang="zh-CN">十一</span>
+          <span class="ph-roman">shíyī</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">12</span>
+          <span class="ph-local" lang="zh-CN">十二</span>
+          <span class="ph-roman">shí'èr</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">20</span>
+          <span class="ph-local" lang="zh-CN">二十</span>
+          <span class="ph-roman">èrshí</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">35</span>
+          <span class="ph-local" lang="zh-CN">三十五</span>
+          <span class="ph-roman">sānshíwǔ</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">99</span>
+          <span class="ph-local" lang="zh-CN">九十九</span>
+          <span class="ph-roman">jiǔshíjiǔ</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">100</span>
+          <span class="ph-local" lang="zh-CN">一百</span>
+          <span class="ph-roman">yìbǎi</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">105</span>
+          <span class="ph-local" lang="zh-CN">一百零五</span>
+          <span class="ph-roman">yìbǎi líng wǔ</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">150</span>
+          <span class="ph-local" lang="zh-CN">一百五</span>
+          <span class="ph-roman">yìbǎi wǔ</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">200</span>
+          <span class="ph-local" lang="zh-CN">两百</span>
+          <span class="ph-roman">liǎngbǎi</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">1.000</span>
+          <span class="ph-local" lang="zh-CN">一千</span>
+          <span class="ph-roman">yìqiān</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">2.000</span>
+          <span class="ph-local" lang="zh-CN">两千</span>
+          <span class="ph-roman">liǎngqiān</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">10.000</span>
+          <span class="ph-local" lang="zh-CN">一万</span>
+          <span class="ph-roman">yíwàn</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr">¥35</span>
+          <span class="ph-local" lang="zh-CN">三十五块</span>
+          <span class="ph-roman">sānshíwǔ kuài</span>
+        </button>
+      </div>
+    </section>
+    <section class="ph-group" id="ph-g5">
+      <h3 class="ph-title"><span aria-hidden="true">🍜</span> <span data-l="en">Eating out</span><span data-l="pt">Restaurante</span></h3>
+      <div class="ph-list">
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Menu, please</span><span data-l="pt">O cardápio, por favor</span></span>
+          <span class="ph-local" lang="zh-CN">请给我菜单</span>
+          <span class="ph-roman">qǐng gěi wǒ càidān</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Table for … people</span><span data-l="pt">Mesa para … pessoas</span></span>
+          <span class="ph-local" lang="zh-CN">…个人</span>
+          <span class="ph-roman">… ge rén</span><span class="ph-note"><span data-l="en">Show the number with your hand.</span><span data-l="pt">Mostre o número com a mão.</span></span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">One of this, please (pointing)</span><span data-l="pt">Um desse, por favor (apontando)</span></span>
+          <span class="ph-local" lang="zh-CN">来一个这个</span>
+          <span class="ph-roman">lái yí ge zhège</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Not spicy</span><span data-l="pt">Sem pimenta</span></span>
+          <span class="ph-local" lang="zh-CN">不要辣</span>
+          <span class="ph-roman">bú yào là</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Just a little spicy</span><span data-l="pt">Pouca pimenta</span></span>
+          <span class="ph-local" lang="zh-CN">微辣</span>
+          <span class="ph-roman">wēi là</span><span class="ph-note"><span data-l="en">Even &quot;a little&quot; in Hunan is a lot.</span><span data-l="pt">Em Hunan, até o &quot;pouco&quot; é bastante.</span></span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">No coriander</span><span data-l="pt">Sem coentro</span></span>
+          <span class="ph-local" lang="zh-CN">不要香菜</span>
+          <span class="ph-roman">bú yào xiāngcài</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">A bottle of water</span><span data-l="pt">Uma garrafa de água</span></span>
+          <span class="ph-local" lang="zh-CN">一瓶水</span>
+          <span class="ph-roman">yì píng shuǐ</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Cold one, please</span><span data-l="pt">Gelada, por favor</span></span>
+          <span class="ph-local" lang="zh-CN">要冰的</span>
+          <span class="ph-roman">yào bīng de</span><span class="ph-note"><span data-l="en">Water and drinks often come at room temperature or hot.</span><span data-l="pt">Água e bebida muitas vezes vêm em temperatura ambiente ou quente.</span></span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">A beer</span><span data-l="pt">Uma cerveja</span></span>
+          <span class="ph-local" lang="zh-CN">一瓶啤酒</span>
+          <span class="ph-roman">yì píng píjiǔ</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Delicious!</span><span data-l="pt">Muito gostoso!</span></span>
+          <span class="ph-local" lang="zh-CN">很好吃！</span>
+          <span class="ph-roman">hěn hǎochī!</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">To take away / pack the leftovers</span><span data-l="pt">Para viagem / embrulhar o que sobrou</span></span>
+          <span class="ph-local" lang="zh-CN">打包</span>
+          <span class="ph-roman">dǎbāo</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">The bill, please</span><span data-l="pt">A conta, por favor</span></span>
+          <span class="ph-local" lang="zh-CN">买单</span>
+          <span class="ph-roman">mǎidān</span>
+        </button>
+      </div>
+    </section>
+    <section class="ph-group" id="ph-g6">
+      <h3 class="ph-title"><span aria-hidden="true">🏨</span> <span data-l="en">Day to day</span><span data-l="pt">Dia a dia</span></h3>
+      <div class="ph-list">
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">What's the Wi-Fi password?</span><span data-l="pt">Qual a senha do Wi-Fi?</span></span>
+          <span class="ph-local" lang="zh-CN">WiFi密码是多少？</span>
+          <span class="ph-roman">WiFi mìmǎ shì duōshao?</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Can you keep our luggage?</span><span data-l="pt">Pode guardar nossas malas?</span></span>
+          <span class="ph-local" lang="zh-CN">可以寄存行李吗？</span>
+          <span class="ph-roman">kěyǐ jìcún xíngli ma?</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Can I take a photo?</span><span data-l="pt">Posso tirar foto?</span></span>
+          <span class="ph-local" lang="zh-CN">可以拍照吗？</span>
+          <span class="ph-roman">kěyǐ pāizhào ma?</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Could you take a photo of us?</span><span data-l="pt">Pode tirar uma foto nossa?</span></span>
+          <span class="ph-local" lang="zh-CN">可以帮我们拍张照吗？</span>
+          <span class="ph-roman">kěyǐ bāng wǒmen pāi zhāng zhào ma?</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">What time does it open / close?</span><span data-l="pt">Que horas abre / fecha?</span></span>
+          <span class="ph-local" lang="zh-CN">几点开门？几点关门？</span>
+          <span class="ph-roman">jǐ diǎn kāimén? jǐ diǎn guānmén?</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Where can I charge my phone?</span><span data-l="pt">Onde posso carregar o celular?</span></span>
+          <span class="ph-local" lang="zh-CN">哪里可以充电？</span>
+          <span class="ph-roman">nǎlǐ kěyǐ chōngdiàn?</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Pharmacy</span><span data-l="pt">Farmácia</span></span>
+          <span class="ph-local" lang="zh-CN">药店</span>
+          <span class="ph-roman">yàodiàn</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">I need a doctor</span><span data-l="pt">Preciso de um médico</span></span>
+          <span class="ph-local" lang="zh-CN">我需要看医生</span>
+          <span class="ph-roman">wǒ xūyào kàn yīshēng</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Help!</span><span data-l="pt">Socorro!</span></span>
+          <span class="ph-local" lang="zh-CN">救命！</span>
+          <span class="ph-roman">jiùmìng!</span><span class="ph-note"><span data-l="en">Emergency numbers: police 110, ambulance 120.</span><span data-l="pt">Emergência: polícia 110, ambulância 120.</span></span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">I lost my passport</span><span data-l="pt">Perdi meu passaporte</span></span>
+          <span class="ph-local" lang="zh-CN">我的护照丢了</span>
+          <span class="ph-roman">wǒ de hùzhào diū le</span>
+        </button>
+      </div>
+    </section>
+    <section class="ph-group" id="ph-g7">
+      <h3 class="ph-title"><span aria-hidden="true">💬</span> <span data-l="en">Common expressions</span><span data-l="pt">Expressões comuns</span></h3>
+      <div class="ph-list">
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Yes / right</span><span data-l="pt">Sim / isso</span></span>
+          <span class="ph-local" lang="zh-CN">对</span>
+          <span class="ph-roman">duì</span><span class="ph-note"><span data-l="en">Chinese has no plain &quot;yes&quot;: people repeat the verb (要 = want it, 有 = have it).</span><span data-l="pt">Não existe um &quot;sim&quot; solto: repete-se o verbo (要 = quero, 有 = tem).</span></span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">OK / sure</span><span data-l="pt">Ok / pode ser</span></span>
+          <span class="ph-local" lang="zh-CN">好的</span>
+          <span class="ph-roman">hǎo de</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Is there…? / There isn't</span><span data-l="pt">Tem…? / Não tem</span></span>
+          <span class="ph-local" lang="zh-CN">有…吗？ / 没有</span>
+          <span class="ph-roman">yǒu … ma? / méiyǒu</span><span class="ph-note"><span data-l="en">Méiyǒu is the answer you'll hear most.</span><span data-l="pt">Méiyǒu é a resposta que mais se ouve.</span></span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">No need, thanks</span><span data-l="pt">Não precisa, obrigado</span></span>
+          <span class="ph-local" lang="zh-CN">不用了，谢谢</span>
+          <span class="ph-roman">bú yòng le, xièxie</span><span class="ph-note"><span data-l="en">The polite way to wave off touts and offers.</span><span data-l="pt">O jeito educado de dispensar vendedor e oferta.</span></span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">No problem</span><span data-l="pt">Sem problema</span></span>
+          <span class="ph-local" lang="zh-CN">没问题</span>
+          <span class="ph-roman">méi wèntí</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Wait a moment</span><span data-l="pt">Espera um pouco</span></span>
+          <span class="ph-local" lang="zh-CN">等一下</span>
+          <span class="ph-roman">děng yíxià</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">I don't know</span><span data-l="pt">Não sei</span></span>
+          <span class="ph-local" lang="zh-CN">我不知道</span>
+          <span class="ph-roman">wǒ bù zhīdào</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Sorry to bother you</span><span data-l="pt">Desculpe incomodar</span></span>
+          <span class="ph-local" lang="zh-CN">麻烦你了</span>
+          <span class="ph-roman">máfan nǐ le</span><span class="ph-note"><span data-l="en">Used when asking for a favour; also a warm thank-you afterwards.</span><span data-l="pt">Para pedir um favor, e também como um obrigado caloroso depois.</span></span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">So beautiful!</span><span data-l="pt">Que lindo!</span></span>
+          <span class="ph-local" lang="zh-CN">太漂亮了！</span>
+          <span class="ph-roman">tài piàoliang le!</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Cheers!</span><span data-l="pt">Saúde!</span></span>
+          <span class="ph-local" lang="zh-CN">干杯！</span>
+          <span class="ph-roman">gānbēi!</span><span class="ph-note"><span data-l="en">Literally &quot;dry the glass&quot;.</span><span data-l="pt">Literalmente &quot;seca o copo&quot;.</span></span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Go for it! / You can do it!</span><span data-l="pt">Força! / Vai que dá!</span></span>
+          <span class="ph-local" lang="zh-CN">加油！</span>
+          <span class="ph-roman">jiāyóu!</span>
+        </button>
+        <button class="ph" type="button">
+          <span class="ph-tr"><span data-l="en">Take care (when you leave a shop)</span><span data-l="pt">Vá com cuidado (ao sair da loja)</span></span>
+          <span class="ph-local" lang="zh-CN">慢走</span>
+          <span class="ph-roman">màn zǒu</span><span class="ph-note"><span data-l="en">You'll hear it, no need to answer; a 谢谢 is enough.</span><span data-l="pt">Você vai ouvir; não precisa responder, um 谢谢 basta.</span></span>
+        </button>
+      </div>
+    </section>
+    <dialog class="driver" id="phshow">
+      <p class="driver-hint"><span data-l="en">Show this screen to the person</span><span data-l="pt">Mostre esta tela para a pessoa</span></p>
+      <p class="driver-addr phs-local" lang="zh-CN"></p>
+      <p class="phs-roman"></p>
+      <p class="phs-tr"></p>
+      <div class="phs-acts">
+        <button class="driver-close phs-say" type="button" data-lang="zh-CN" hidden>🔊 <span data-l="en">Listen</span><span data-l="pt">Ouvir</span></button>
+        <form method="dialog"><button class="driver-close" type="submit"><span data-l="en">Close</span><span data-l="pt">Fechar</span></button></form>
+      </div>
+    </dialog>
+  </div>
+
   <div class="footer"><span data-l="en">Built with Bou-Trip · WGS-84 coords (Google Maps is offset in China)</span><span data-l="pt">Feito com Bou-Trip · coords WGS-84 (o Google Maps é deslocado na China)</span></div>
 
 </div>
 <nav class="bnav" aria-label="Navegação principal">
     <button class="bn" type="button" data-go="today"><span class="bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><circle cx="12" cy="15" r="1.8" fill="currentColor"/></svg></span><span class="bn-lbl"><span data-l="en">Today</span><span data-l="pt">Hoje</span></span></button><button class="bn" type="button" data-go="roteiro"><span class="bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></svg></span><span class="bn-lbl"><span data-l="en">Itinerary</span><span data-l="pt">Roteiro</span></span></button><button class="bn" type="button" data-go="map"><span class="bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6.5V20l6-2.5 6 2.5 6-2.5V4l-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/></svg></span><span class="bn-lbl"><span data-l="en">Map</span><span data-l="pt">Mapa</span></span></button>
-    <button class="bn" type="button" id="bnMore" data-more="buy cal trans places stays food"><span class="bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="1.3" fill="currentColor"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/><circle cx="19" cy="12" r="1.3" fill="currentColor"/></svg></span><span class="bn-lbl"><span data-l="en">More</span><span data-l="pt">Mais</span></span></button>
+    <button class="bn" type="button" id="bnMore" data-more="buy cal trans places stays food phrases"><span class="bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="1.3" fill="currentColor"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/><circle cx="19" cy="12" r="1.3" fill="currentColor"/></svg></span><span class="bn-lbl"><span data-l="en">More</span><span data-l="pt">Mais</span></span></button>
   </nav>
   <dialog class="sheet" id="moresheet">
-    <div class="sheet-grid"><button class="sheet-btn" type="button" data-go="buy"><span class="sheet-ico" aria-hidden="true">🎟️</span><span data-l="en">To buy</span><span data-l="pt">Comprar</span></button><button class="sheet-btn" type="button" data-go="cal"><span class="sheet-ico" aria-hidden="true">📅</span><span data-l="en">Calendar</span><span data-l="pt">Calendário</span></button><button class="sheet-btn" type="button" data-go="trans"><span class="sheet-ico" aria-hidden="true">🚆</span><span data-l="en">Transport</span><span data-l="pt">Transportes</span></button><button class="sheet-btn" type="button" data-go="places"><span class="sheet-ico" aria-hidden="true">📍</span><span data-l="en">Places</span><span data-l="pt">Lugares</span></button><button class="sheet-btn" type="button" data-go="stays"><span class="sheet-ico" aria-hidden="true">🛏️</span><span data-l="en">Lodging</span><span data-l="pt">Hospedagem</span></button><button class="sheet-btn" type="button" data-go="food"><span class="sheet-ico" aria-hidden="true">🍽️</span><span data-l="en">Food</span><span data-l="pt">Restaurantes</span></button></div>
+    <div class="sheet-grid"><button class="sheet-btn" type="button" data-go="buy"><span class="sheet-ico" aria-hidden="true">🎟️</span><span data-l="en">To buy</span><span data-l="pt">Comprar</span></button><button class="sheet-btn" type="button" data-go="cal"><span class="sheet-ico" aria-hidden="true">📅</span><span data-l="en">Calendar</span><span data-l="pt">Calendário</span></button><button class="sheet-btn" type="button" data-go="trans"><span class="sheet-ico" aria-hidden="true">🚆</span><span data-l="en">Transport</span><span data-l="pt">Transportes</span></button><button class="sheet-btn" type="button" data-go="places"><span class="sheet-ico" aria-hidden="true">📍</span><span data-l="en">Places</span><span data-l="pt">Lugares</span></button><button class="sheet-btn" type="button" data-go="stays"><span class="sheet-ico" aria-hidden="true">🛏️</span><span data-l="en">Lodging</span><span data-l="pt">Hospedagem</span></button><button class="sheet-btn" type="button" data-go="food"><span class="sheet-ico" aria-hidden="true">🍽️</span><span data-l="en">Food</span><span data-l="pt">Restaurantes</span></button><button class="sheet-btn" type="button" data-go="phrases"><span class="sheet-ico" aria-hidden="true">💬</span><span data-l="en">Phrases</span><span data-l="pt">Frases</span></button></div>
   </dialog>
 <script>
 var TRIP_MARKERS = [{"kind":"station","lat":31.1427,"lon":121.8041,"map":"https://www.openstreetmap.org/?mlat=31.1427&mlon=121.8041#map=16/31.1427/121.8041","name":"Shanghai Pudong PVG 上海浦东国际机场","idx":1,"days":["2026-10-12","2026-10-14","2026-10-11","2026-10-31"],"city":{"en":"Shanghai (arrival)","pt":"Shanghai (chegada)"},"color":"#0d9488","icon":"🚕","address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.236418,"lon":121.4663129,"map":"https://www.openstreetmap.org/?mlat=31.236418&mlon=121.4663129#map=16/31.236418/121.4663129","name":{"en":"Xiaolongbao at Jia Jia Tang Bao","pt":"Xiaolongbao no Jia Jia Tang Bao"},"idx":1,"days":["2026-10-12"],"city":{"en":"Shanghai (arrival)","pt":"Shanghai (chegada)"},"color":"#0d9488","url":null,"tickets":null,"address":"127 Huanghe Road, Huangpu District · 上海市黄浦区黄河路127号","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.23876,"lon":121.47901,"map":"https://www.openstreetmap.org/?mlat=31.23876&mlon=121.47901#map=16/31.23876/121.47901","name":{"en":"Cold-weather layers at Uniqlo, Nanjing Road","pt":"Roupa de frio na Uniqlo, Nanjing Road"},"idx":1,"days":["2026-10-12"],"city":{"en":"Shanghai (arrival)","pt":"Shanghai (chegada)"},"color":"#0d9488","url":null,"tickets":null,"address":"Nanjing Road Pedestrian Street, Huangpu District · 上海市黄浦区南京路步行街","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.2293228,"lon":121.487021,"map":"https://www.openstreetmap.org/?mlat=31.2293228&mlon=121.487021#map=16/31.2293228/121.487021","name":{"en":"Nanshi Old Town and Yuyuan Bazaar","pt":"Nanshi Old Town e Bazar Yuyuan"},"idx":1,"days":["2026-10-12","2026-10-30"],"city":{"en":"Shanghai (arrival)","pt":"Shanghai (chegada)"},"color":"#0d9488","url":null,"tickets":null,"address":"Yuyuan Old Street, Huangpu District · 上海市黄浦区豫园老街","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.2353356,"lon":121.487632,"map":"https://www.openstreetmap.org/?mlat=31.2353356&mlon=121.487632#map=16/31.2353356/121.487632","name":{"en":"The Bund, walked north","pt":"The Bund, caminhando para o norte"},"idx":1,"days":["2026-10-12","2026-10-30"],"city":{"en":"Shanghai (arrival)","pt":"Shanghai (chegada)"},"color":"#0d9488","url":null,"tickets":null,"address":"Zhongshan East 1st Road, Huangpu District · 上海市黄浦区中山东一路","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.2453073,"lon":121.4857442,"map":"https://www.openstreetmap.org/?mlat=31.2453073&mlon=121.4857442#map=16/31.2453073/121.4857442","name":{"en":"Waibaidu Bridge and Bund Source","pt":"Waibaidu Bridge e Bund Source"},"idx":1,"days":["2026-10-12"],"city":{"en":"Shanghai (arrival)","pt":"Shanghai (chegada)"},"color":"#0d9488","url":null,"tickets":null,"address":"Waibaidu Bridge, Huangpu District · 上海市黄浦区外白渡桥","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.0573825,"lon":121.7166359,"map":"https://www.openstreetmap.org/?mlat=31.0573825&mlon=121.7166359#map=16/31.0573825/121.7166359","name":{"en":"Safari bus through the drive-through area","pt":"Onibus safari pela area de carro"},"idx":1,"days":["2026-10-13"],"city":{"en":"Shanghai (arrival)","pt":"Shanghai (chegada)"},"color":"#0d9488","url":null,"tickets":null,"address":"178 Nanliu Road, Nanhui, Pudong New Area · 上海市浦东新区南六公路178号","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.1427,"lon":121.8041,"map":"https://www.openstreetmap.org/?mlat=31.1427&mlon=121.8041#map=16/31.1427/121.8041","name":{"en":"Hotel to Shanghai Pudong airport (PVG)","pt":"Hotel ate o aeroporto de Shanghai Pudong (PVG)"},"idx":2,"days":["2026-10-14"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":"#e11d48","url":null,"tickets":null,"address":"Shanghai Pudong International Airport · 上海浦东国际机场","ch":null,"opt":null,"sk":null},{"kind":"station","lat":31.2304,"lon":121.4737,"map":"https://www.openstreetmap.org/?mlat=31.2304&mlon=121.4737#map=16/31.2304/121.4737","name":"Hotel, central Shanghai 上海市中心","idx":2,"days":["2026-10-14"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":"#e11d48","icon":"✈️","address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":29.103,"lon":110.4416,"map":"https://www.openstreetmap.org/?mlat=29.103&mlon=110.4416#map=16/29.103/110.4416","name":{"en":"Flight Shanghai PVG to Zhangjiajie DYG","pt":"Voo Shanghai PVG ate Zhangjiajie DYG"},"idx":2,"days":["2026-10-14"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":"#e11d48","url":null,"tickets":null,"address":"Zhangjiajie Hehua DYG · 张家界荷花国际机场","ch":null,"opt":null,"sk":null},{"kind":"station","lat":29.103,"lon":110.4416,"map":"https://www.openstreetmap.org/?mlat=29.103&mlon=110.4416#map=16/29.103/110.4416","name":"Zhangjiajie Hehua DYG 张家界荷花国际机场","idx":2,"days":["2026-10-14"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":"#e11d48","icon":"✈️","address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":29.3543,"lon":110.5306,"map":"https://www.openstreetmap.org/?mlat=29.3543&mlon=110.5306#map=16/29.3543/110.5306","name":{"en":"Wulingyuan gate (East Gate) at opening, then eco-bus to the elevator","pt":"Portão de Wulingyuan (East Gate) na abertura, depois ônibus ecológico até o elevador"},"idx":2,"days":["2026-10-15"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":"#e11d48","url":null,"tickets":"https://www.trip.com/travel-guide/attraction/zhangjiajie/zhangjiajie-national-forest-park-10559092","address":"Wulingyuan East Gate, Jundi Road, Wulingyuan District · 武陵源风景名胜区游客服务中心（东门），张家界市武陵源区军邸路","ch":null,"opt":null,"sk":null},{"kind":"place","lat":29.3512,"lon":110.4612,"map":"https://www.openstreetmap.org/?mlat=29.3512&mlon=110.4612#map=16/29.3512/110.4612","name":{"en":"Bailong Elevator","pt":"Elevador Bailong"},"idx":2,"days":["2026-10-15"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":"#e11d48","url":null,"tickets":null,"address":"Wulingyuan District, Zhangjiajie · 湖南省张家界市武陵源区 百龙天梯","ch":null,"opt":null,"sk":null},{"kind":"place","lat":29.3475,"lon":110.4332,"map":"https://www.openstreetmap.org/?mlat=29.3475&mlon=110.4332#map=16/29.3475/110.4332","name":{"en":"Yuanjiajie and First Bridge Under Heaven","pt":"Yuanjiajie e a Primeira Ponte sob o Ceu"},"idx":2,"days":["2026-10-15"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":"#e11d48","url":"http://www.hnzjj.com/index.php/Ticket/list/44.html","tickets":null,"address":"Wulingyuan District, Zhangjiajie · 湖南省张家界市武陵源区 袁家界 天下第一桥","ch":null,"opt":null,"sk":null},{"kind":"place","lat":29.3941,"lon":110.4948,"map":"https://www.openstreetmap.org/?mlat=29.3941&mlon=110.4948#map=16/29.3941/110.4948","name":{"en":"Tianzi Mountain","pt":"Montanha Tianzi"},"idx":2,"days":["2026-10-15"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":"#e11d48","url":null,"tickets":null,"address":"Wulingyuan District, Zhangjiajie · 湖南省张家界市武陵源区 天子山","ch":null,"opt":null,"sk":null},{"kind":"place","lat":29.4119,"lon":110.6937,"map":"https://www.openstreetmap.org/?mlat=29.4119&mlon=110.6937#map=16/29.4119/110.6937","name":{"en":"Wulingyuan to Zhangjiajie Grand Canyon","pt":"Wulingyuan ate o Grand Canyon de Zhangjiajie"},"idx":2,"days":["2026-10-16"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":"#e11d48","url":null,"tickets":null,"address":"Zhangjiajie Grand Canyon, Sanguansi, Cili County · 湖南省张家界市慈利县三官寺乡 张家界大峡谷","ch":null,"opt":null,"sk":null},{"kind":"station","lat":29.3455,"lon":110.5486,"map":"https://www.openstreetmap.org/?mlat=29.3455&mlon=110.5486#map=16/29.3455/110.5486","name":"Wulingyuan 武陵源","idx":2,"days":["2026-10-16","2026-10-18"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":"#e11d48","icon":"🚕","address":null,"ch":null,"opt":null,"sk":null},{"kind":"station","lat":29.4119,"lon":110.6937,"map":"https://www.openstreetmap.org/?mlat=29.4119&mlon=110.6937#map=16/29.4119/110.6937","name":"Zhangjiajie Grand Canyon 张家界大峡谷","idx":2,"days":["2026-10-16"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":"#e11d48","icon":"🚕","address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":29.399,"lon":110.698,"map":"https://www.openstreetmap.org/?mlat=29.399&mlon=110.698#map=16/29.399/110.698","name":{"en":"Grand Canyon Glass Bridge","pt":"Ponte de Vidro do Grand Canyon"},"idx":2,"days":["2026-10-16"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":"#e11d48","url":null,"tickets":"~CNY 130-160, timed slot, book days ahead · ~CNY 130-160, horario marcado, reserve dias antes","address":"Zhangjiajie Grand Canyon Glass Bridge, Cili County · 湖南省张家界市慈利县 张家界大峡谷玻璃桥","ch":null,"opt":null,"sk":null},{"kind":"place","lat":29.368,"lon":110.6147,"map":"https://www.openstreetmap.org/?mlat=29.368&mlon=110.6147#map=16/29.368/110.6147","name":{"en":"Grand Canyon to Yellow Dragon Cave","pt":"Grand Canyon ate a Caverna do Dragao Amarelo"},"idx":2,"days":["2026-10-16"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":"#e11d48","url":null,"tickets":null,"address":"Huanglong Rd, Suoxiyu, Wulingyuan District · 湖南省张家界市武陵源区索溪峪黄龙路","ch":null,"opt":null,"sk":null},{"kind":"place","lat":29.3472,"lon":110.5524,"map":"https://www.openstreetmap.org/?mlat=29.3472&mlon=110.5524#map=16/29.3472/110.5524","name":{"en":"Xibu Street at night (溪布街)","pt":"Xibu Street à noite (溪布街)"},"idx":2,"days":["2026-10-16"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":"#e11d48","url":"https://www.zhangjiajieguide.com/attractions/zhangjiajie-niche-attraction/xibu-street.html","tickets":null,"address":"Xibu Street, Suoxiyu, Wulingyuan District · 张家界市武陵源区索溪峪 溪布街","ch":null,"opt":null,"sk":null},{"kind":"place","lat":29.1141,"lon":110.4783,"map":"https://www.openstreetmap.org/?mlat=29.1141&mlon=110.4783#map=16/29.1141/110.4783","name":{"en":"Tianmen Mountain Cableway","pt":"Teleferico do Tianmen Shan"},"idx":2,"days":["2026-10-17"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":"#e11d48","url":null,"tickets":"https://www.chinadiscovery.com/hunan/zhangjiajie/tianmen-mountain/guide-to-tickets.html","address":"Guanli Road, Yongding District, Zhangjiajie · 湖南省张家界市永定区官黎路 天门山索道下站","ch":null,"opt":null,"sk":null},{"kind":"place","lat":29.0499,"lon":110.4789,"map":"https://www.openstreetmap.org/?mlat=29.0499&mlon=110.4789#map=16/29.0499/110.4789","name":{"en":"Glass Skywalks (Guigu and Coiling Dragon)","pt":"Trilhas de vidro (Guigu e Coiling Dragon)"},"idx":2,"days":["2026-10-17"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":"#e11d48","url":null,"tickets":null,"address":"Tianmen Mountain summit, Yongding District · 湖南省张家界市永定区 天门山鬼谷栈道/盘龙崖玻璃栈道","ch":null,"opt":null,"sk":null},{"kind":"place","lat":29.3257585,"lon":110.5469203,"map":"https://www.openstreetmap.org/?mlat=29.3257585&mlon=110.5469203#map=16/29.3257585/110.5469203","name":{"en":"Baofeng Lake","pt":"Lago Baofeng (宝峰湖)"},"idx":3,"days":["2026-10-18"],"city":{"en":"Furong","pt":"Furong"},"color":"#059669","url":null,"tickets":null,"address":"Baofeng Road, Wulingyuan District · 湖南省张家界市武陵源区宝峰路","ch":null,"opt":null,"sk":null},{"kind":"station","lat":29.1714,"lon":110.4577,"map":"https://www.openstreetmap.org/?mlat=29.1714&mlon=110.4577#map=16/29.1714/110.4577","name":"Zhangjiajie West 张家界西站","idx":3,"days":["2026-10-18"],"city":{"en":"Furong","pt":"Furong"},"color":"#059669","icon":"🚆","address":null,"ch":null,"opt":null,"sk":null},{"kind":"station","lat":28.773,"lon":109.982,"map":"https://www.openstreetmap.org/?mlat=28.773&mlon=109.982#map=16/28.773/109.982","name":"Furongzhen 芙蓉镇站","idx":3,"days":["2026-10-18"],"city":{"en":"Furong","pt":"Furong"},"color":"#059669","icon":"🚆","address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":28.7451,"lon":109.9398,"map":"https://www.openstreetmap.org/?mlat=28.7451&mlon=109.9398#map=16/28.7451/109.9398","name":{"en":"Furong Waterfall and the passage behind it","pt":"Cachoeira de Furong e a passagem por tras dela"},"idx":3,"days":["2026-10-18"],"city":{"en":"Furong","pt":"Furong"},"color":"#059669","url":null,"tickets":null,"address":"Furong Waterfall, Furong Town, Yongshun County · 芙蓉镇大瀑布，永顺县芙蓉镇","ch":null,"opt":null,"sk":null},{"kind":"place","lat":28.7453,"lon":109.9417,"map":"https://www.openstreetmap.org/?mlat=28.7453&mlon=109.9417#map=16/28.7453/109.9417","name":{"en":"Lights-on at Tuwang Bridge","pt":"Acendimento das luzes na Ponte Tuwang"},"idx":3,"days":["2026-10-18"],"city":{"en":"Furong","pt":"Furong"},"color":"#059669","url":null,"tickets":null,"address":"Tuwang Bridge, Furong Town · 土王桥，芙蓉镇","ch":null,"opt":null,"sk":null},{"kind":"place","lat":28.7453,"lon":109.9417,"map":"https://www.openstreetmap.org/?mlat=28.7453&mlon=109.9417#map=16/28.7453/109.9417","name":{"en":"Furong before the buses, then check out","pt":"Furong antes dos onibus, depois check-out"},"idx":4,"days":["2026-10-19"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":null,"address":"Wuli Stone Slab Street, Furong Town · 五里石板街，芙蓉镇","ch":"furong-guilin","opt":"0 1","sk":null},{"kind":"place","lat":28.7731,"lon":109.9819,"map":"https://www.openstreetmap.org/?mlat=28.7731&mlon=109.9819#map=16/28.7731/109.9819","name":{"en":"Furong village to Furongzhen station by taxi","pt":"Vila de Furong ate a estacao de Furongzhen de taxi"},"idx":4,"days":["2026-10-19"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":null,"address":"Furongzhen Railway Station, X041, Yongshun County · 芙蓉镇站，X041，永顺县","ch":"furong-guilin","opt":"0 1","sk":null},{"kind":"station","lat":28.773,"lon":109.982,"map":"https://www.openstreetmap.org/?mlat=28.773&mlon=109.982#map=16/28.773/109.982","name":"Furongzhen 芙蓉镇站","idx":4,"days":["2026-10-19"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","icon":"🚆","address":null,"ch":"furong-guilin","opt":"0","sk":null},{"kind":"station","lat":28.1499,"lon":113.0597,"map":"https://www.openstreetmap.org/?mlat=28.1499&mlon=113.0597#map=16/28.1499/113.0597","name":"Changsha South 长沙南站","idx":4,"days":["2026-10-19"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","icon":"🚆","address":null,"ch":"furong-guilin","opt":"0","sk":null},{"kind":"station","lat":25.3318,"lon":110.2976,"map":"https://www.openstreetmap.org/?mlat=25.3318&mlon=110.2976#map=16/25.3318/110.2976","name":"Guilin North 桂林北站","idx":4,"days":["2026-10-19"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","icon":"🚆","address":null,"ch":"furong-guilin","opt":"0","sk":null},{"kind":"station","lat":28.773,"lon":109.982,"map":"https://www.openstreetmap.org/?mlat=28.773&mlon=109.982#map=16/28.773/109.982","name":"Furongzhen 芙蓉镇站","idx":4,"days":["2026-10-19"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","icon":"🚆","address":null,"ch":"furong-guilin","opt":"1","sk":null},{"kind":"station","lat":27.5145,"lon":109.9891,"map":"https://www.openstreetmap.org/?mlat=27.5145&mlon=109.9891#map=16/27.5145/109.9891","name":"Huaihua South 怀化南站","idx":4,"days":["2026-10-19"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","icon":"🚆","address":null,"ch":"furong-guilin","opt":"1","sk":null},{"kind":"station","lat":25.3318,"lon":110.2976,"map":"https://www.openstreetmap.org/?mlat=25.3318&mlon=110.2976#map=16/25.3318/110.2976","name":"Guilin North 桂林北站","idx":4,"days":["2026-10-19"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","icon":"🚆","address":null,"ch":"furong-guilin","opt":"1","sk":null},{"kind":"station","lat":25.3318,"lon":110.2976,"map":"https://www.openstreetmap.org/?mlat=25.3318&mlon=110.2976#map=16/25.3318/110.2976","name":"Guilin North 桂林北站","idx":4,"days":["2026-10-19"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","icon":"🚆","address":null,"ch":null,"opt":null,"sk":null},{"kind":"station","lat":24.772,"lon":110.489,"map":"https://www.openstreetmap.org/?mlat=24.772&mlon=110.489#map=16/24.772/110.489","name":"Yangshuo 阳朔","idx":4,"days":["2026-10-19"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","icon":"🚆","address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":24.772,"lon":110.489,"map":"https://www.openstreetmap.org/?mlat=24.772&mlon=110.489#map=16/24.772/110.489","name":{"en":"Check in at Muyunli, three nights, one base","pt":"Check-in na Muyunli, tres noites, uma base so"},"idx":4,"days":["2026-10-19"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":null,"address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":24.7781732,"lon":110.4904614,"map":"https://www.openstreetmap.org/?mlat=24.7781732&mlon=110.4904614#map=16/24.7781732/110.4904614","name":{"en":"West Street and beer fish","pt":"West Street e peixe na cerveja"},"idx":4,"days":["2026-10-19","2026-10-21"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":null,"address":null,"ch":null,"opt":null,"sk":null},{"kind":"station","lat":24.9176001,"lon":110.5340329,"map":"https://www.openstreetmap.org/?mlat=24.9176001&mlon=110.5340329#map=16/24.9176001/110.5340329","name":"Xingping 兴坪","idx":4,"days":["2026-10-20"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","icon":"🚕","address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":24.9251035,"lon":110.5166399,"map":"https://www.openstreetmap.org/?mlat=24.9251035&mlon=110.5166399#map=16/24.9251035/110.5166399","name":{"en":"The 20-yuan note view at Yellow Cloth Shoal","pt":"A vista da nota de 20 yuan em Huangbu"},"idx":4,"days":["2026-10-20"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":null,"address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":24.9189334,"lon":110.5218451,"map":"https://www.openstreetmap.org/?mlat=24.9189334&mlon=110.5218451#map=16/24.9189334/110.5218451","name":{"en":"Laozhai Hill","pt":"Monte Laozhai"},"idx":4,"days":["2026-10-20"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":null,"address":null,"ch":null,"opt":null,"sk":"2026-10-20:laozhai-hill"},{"kind":"place","lat":24.9386814,"lon":110.4898269,"map":"https://www.openstreetmap.org/?mlat=24.9386814&mlon=110.4898269#map=16/24.9386814/110.4898269","name":{"en":"Bamboo raft, Yangdi to Nine Horses to Xingping","pt":"Balsa de bambu, Yangdi ate Nove Cavalos ate Xingping"},"idx":4,"days":["2026-10-20"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":null,"address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":24.7699694,"lon":110.5035926,"map":"https://www.openstreetmap.org/?mlat=24.7699694&mlon=110.5035926#map=16/24.7699694/110.5035926","name":{"en":"Impression Liu Sanjie, Zhang Yimou on the river itself","pt":"Impression Liu Sanjie, Zhang Yimou sobre o proprio rio"},"idx":4,"days":["2026-10-20"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":null,"address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":24.783666,"lon":110.4225923,"map":"https://www.openstreetmap.org/?mlat=24.783666&mlon=110.4225923#map=16/24.783666/110.4225923","name":{"en":"Yulong River bamboo raft, first thing","pt":"Balsa de bambu no rio Yulong, logo cedo"},"idx":4,"days":["2026-10-21"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":null,"address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":24.7381472,"lon":110.4877677,"map":"https://www.openstreetmap.org/?mlat=24.7381472&mlon=110.4877677#map=16/24.7381472/110.4877677","name":{"en":"Cycle the Yulong valley from Gongnong Bridge","pt":"Pedalar o vale do Yulong desde a Ponte Gongnong"},"idx":4,"days":["2026-10-21"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":null,"address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":24.7369853,"lon":110.486052,"map":"https://www.openstreetmap.org/?mlat=24.7369853&mlon=110.486052#map=16/24.7369853/110.486052","name":{"en":"Ten-Mile Gallery, by bike","pt":"Galeria de Dez Milhas, de bicicleta"},"idx":4,"days":["2026-10-21"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":null,"address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":24.7245479,"lon":110.4723972,"map":"https://www.openstreetmap.org/?mlat=24.7245479&mlon=110.4723972#map=16/24.7245479/110.4723972","name":{"en":"Moon Hill, the arch","pt":"Monte da Lua, o arco"},"idx":4,"days":["2026-10-21"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":null,"address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":24.7809551,"lon":110.4909192,"map":"https://www.openstreetmap.org/?mlat=24.7809551&mlon=110.4909192#map=16/24.7809551/110.4909192","name":{"en":"Slow morning walk in the Yangshuo countryside","pt":"Caminhada lenta pelo campo de Yangshuo"},"idx":4,"days":["2026-10-22"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":null,"address":"Yangshuo countryside, Yangshuo County · 桂林市阳朔县乡间","ch":null,"opt":null,"sk":null},{"kind":"place","lat":25.2816,"lon":110.2945,"map":"https://www.openstreetmap.org/?mlat=25.2816&mlon=110.2945#map=16/25.2816/110.2945","name":{"en":"Yangshuo to Guilin city by car","pt":"Yangshuo ate a cidade de Guilin de carro"},"idx":4,"days":["2026-10-22"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":null,"address":"Downtown Guilin, Xiufeng District · 桂林市秀峰区市中心","ch":null,"opt":null,"sk":null},{"kind":"station","lat":24.7809551,"lon":110.4909192,"map":"https://www.openstreetmap.org/?mlat=24.7809551&mlon=110.4909192#map=16/24.7809551/110.4909192","name":"Yangshuo town 阳朔镇","idx":4,"days":["2026-10-22"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","icon":"✈️","address":null,"ch":null,"opt":null,"sk":null},{"kind":"station","lat":25.2816,"lon":110.2945,"map":"https://www.openstreetmap.org/?mlat=25.2816&mlon=110.2945#map=16/25.2816/110.2945","name":"Downtown Guilin 桂林市中心","idx":4,"days":["2026-10-22"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","icon":"✈️","address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":25.2701,"lon":110.2915,"map":"https://www.openstreetmap.org/?mlat=25.2701&mlon=110.2915#map=16/25.2701/110.2915","name":{"en":"Elephant Trunk Hill and Water-Moon Cave","pt":"Morro da Tromba de Elefante e a Gruta Agua-Lua"},"idx":4,"days":["2026-10-22"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":"~CNY 55-70 per person · ~CNY 55-70 por pessoa","address":"Elephant Trunk Hill, Binjiang Road, Xiangshan District, Guilin · 桂林市象山区滨江路象鼻山","ch":null,"opt":null,"sk":null},{"kind":"place","lat":25.3119,"lon":110.2671,"map":"https://www.openstreetmap.org/?mlat=25.3119&mlon=110.2671#map=16/25.3119/110.2671","name":{"en":"Reed Flute Cave","pt":"Gruta da Flauta de Junco"},"idx":4,"days":["2026-10-22"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":"~CNY 90-110 per person · ~CNY 90-110 por pessoa","address":"Reed Flute Cave, Ludi Road, Xiufeng District, Guilin · 桂林市秀峰区芦笛路芦笛岩","ch":null,"opt":null,"sk":"2026-10-22:reed-flute-cave"},{"kind":"place","lat":25.2181,"lon":110.039,"map":"https://www.openstreetmap.org/?mlat=25.2181&mlon=110.039#map=16/25.2181/110.039","name":{"en":"Guilin city to Guilin airport (KWL)","pt":"Cidade de Guilin ate o aeroporto de Guilin (KWL)"},"idx":4,"days":["2026-10-22"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":null,"address":"Guilin Liangjiang International Airport · 桂林两江国际机场","ch":null,"opt":null,"sk":null},{"kind":"station","lat":25.2181,"lon":110.039,"map":"https://www.openstreetmap.org/?mlat=25.2181&mlon=110.039#map=16/25.2181/110.039","name":"Guilin Liangjiang KWL 桂林两江国际机场","idx":4,"days":["2026-10-22"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","icon":"✈️","address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":39.5098,"lon":116.4105,"map":"https://www.openstreetmap.org/?mlat=39.5098&mlon=116.4105#map=16/39.5098/116.4105","name":{"en":"Flight Guilin KWL to Beijing","pt":"Voo Guilin KWL ate Pequim"},"idx":4,"days":["2026-10-22","2026-10-23"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","url":null,"tickets":null,"address":"Beijing Daxing PKX · 北京大兴国际机场","ch":null,"opt":null,"sk":null},{"kind":"station","lat":39.5098,"lon":116.4105,"map":"https://www.openstreetmap.org/?mlat=39.5098&mlon=116.4105#map=16/39.5098/116.4105","name":"Beijing Daxing PKX 北京大兴国际机场","idx":4,"days":["2026-10-22","2026-10-23"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":"#d97706","icon":"✈️","address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":39.9121168,"lon":116.3915912,"map":"https://www.openstreetmap.org/?mlat=39.9121168&mlon=116.3915912#map=16/39.9121168/116.3915912","name":{"en":"To the Meridian Gate, the south entrance","pt":"Ate o Meridian Gate, a entrada sul"},"idx":5,"days":["2026-10-23"],"city":{"en":"Beijing","pt":"Pequim"},"color":"#7c3aed","url":null,"tickets":null,"address":"Meridian Gate, Dongcheng District · 北京市东城区午门","ch":null,"opt":null,"sk":null},{"kind":"place","lat":39.9174311,"lon":116.3907817,"map":"https://www.openstreetmap.org/?mlat=39.9174311&mlon=116.3907817#map=16/39.9174311/116.3907817","name":{"en":"The Forbidden City, Meridian Gate to Shenwumen","pt":"A Cidade Proibida, do Meridian Gate ao Shenwumen"},"idx":5,"days":["2026-10-23"],"city":{"en":"Beijing","pt":"Pequim"},"color":"#7c3aed","url":"https://www.dpm.org.cn/","tickets":"https://ticket.dpm.org.cn/","address":"4 Jingshan Front Street, Dongcheng District · 北京市东城区景山前街4号","ch":null,"opt":null,"sk":null},{"kind":"place","lat":39.9244589,"lon":116.3903973,"map":"https://www.openstreetmap.org/?mlat=39.9244589&mlon=116.3903973#map=16/39.9244589/116.3903973","name":{"en":"Jingshan Park, the view from the hill","pt":"Jingshan Park, a vista do alto"},"idx":5,"days":["2026-10-23"],"city":{"en":"Beijing","pt":"Pequim"},"color":"#7c3aed","url":null,"tickets":null,"address":"44 Jingshan West Street, Xicheng District · 北京市西城区景山西街44号","ch":null,"opt":null,"sk":null},{"kind":"place","lat":39.941,"lon":116.3906,"map":"https://www.openstreetmap.org/?mlat=39.941&mlon=116.3906#map=16/39.941/116.3906","name":{"en":"Drum Tower and Bell Tower","pt":"Drum Tower e Bell Tower"},"idx":5,"days":["2026-10-23"],"city":{"en":"Beijing","pt":"Pequim"},"color":"#7c3aed","url":null,"tickets":null,"address":"No. 9 Zhonglouwan Linzi Hutong, Dongcheng District · 东城区钟楼湾临字9号","ch":null,"opt":null,"sk":null},{"kind":"place","lat":39.8937,"lon":116.3919,"map":"https://www.openstreetmap.org/?mlat=39.8937&mlon=116.3919#map=16/39.8937/116.3919","name":{"en":"Qianmen Street and Dashilan","pt":"Rua Qianmen e Dashilan"},"idx":5,"days":["2026-10-23"],"city":{"en":"Beijing","pt":"Pequim"},"color":"#7c3aed","url":null,"tickets":null,"address":"Qianmen Street, Dongcheng · 北京市东城区前门大街","ch":null,"opt":null,"sk":null},{"kind":"place","lat":39.8945,"lon":116.3902,"map":"https://www.openstreetmap.org/?mlat=39.8945&mlon=116.3902#map=16/39.8945/116.3902","name":{"en":"Dashilan lane, west off Qianmen","pt":"Beco Dashilan, a oeste da Qianmen"},"idx":5,"days":["2026-10-23"],"city":{"en":"Beijing","pt":"Pequim"},"color":"#7c3aed","url":null,"tickets":null,"address":"Dashilan Street, Xicheng · 北京市西城区大栅栏街","ch":null,"opt":null,"sk":null},{"kind":"place","lat":39.88222,"lon":116.40639,"map":"https://www.openstreetmap.org/?mlat=39.88222&mlon=116.40639#map=16/39.88222/116.40639","name":{"en":"Temple of Heaven","pt":"Templo do Ceu"},"idx":5,"days":["2026-10-23"],"city":{"en":"Beijing","pt":"Pequim"},"color":"#7c3aed","url":"https://english.beijing.gov.cn/specials/ticketing/parks/202407/t20240719_3753312.html","tickets":null,"address":"No. 1 Tiantan East Road, Dongcheng District · 东城区天坛东路甲1号","ch":null,"opt":null,"sk":null},{"kind":"place","lat":40.4319,"lon":116.5704,"map":"https://www.openstreetmap.org/?mlat=40.4319&mlon=116.5704#map=16/40.4319/116.5704","name":{"en":"Gate, shuttle and chairlift up to Tower 6","pt":"Portao, shuttle e chairlift ate a torre 6"},"idx":5,"days":["2026-10-24"],"city":{"en":"Beijing","pt":"Pequim"},"color":"#7c3aed","url":"https://en.mutianyugreatwall.com","tickets":"https://en.mutianyugreatwall.com/reservation-center/tickets","address":"Mutianyu Village, Bohai Town, Huairou District · 怀柔区渤海镇慕田峪村","ch":"beijing-wall","opt":"0","sk":null},{"kind":"place","lat":39.9998,"lon":116.2755,"map":"https://www.openstreetmap.org/?mlat=39.9998&mlon=116.2755#map=16/39.9998/116.2755","name":{"en":"Summer Palace","pt":"Palacio de Verao"},"idx":5,"days":["2026-10-24"],"city":{"en":"Beijing","pt":"Pequim"},"color":"#7c3aed","url":"https://english.beijing.gov.cn/specials/parktours/guidevisitors/summerpalace/","tickets":"https://www.travelchinaguide.com/summer-palace-tickets-booking.htm","address":"No. 19 Xinjiangongmen Road, Haidian District · 海淀区新建宫门路19号","ch":"beijing-wall","opt":"0","sk":null},{"kind":"place","lat":39.94,"lon":116.383,"map":"https://www.openstreetmap.org/?mlat=39.94&mlon=116.383#map=16/39.94/116.383","name":{"en":"Shichahai and Houhai at sunset","pt":"Shichahai e Houhai no por do sol"},"idx":5,"days":["2026-10-24"],"city":{"en":"Beijing","pt":"Pequim"},"color":"#7c3aed","url":null,"tickets":null,"address":"Shichahai, Xicheng District · 西城区什刹海","ch":"beijing-wall","opt":"0","sk":null},{"kind":"place","lat":40.676644,"lon":117.232864,"map":"https://www.openstreetmap.org/?mlat=40.676644&mlon=117.232864#map=16/40.676644/117.232864","name":{"en":"Jinshanling: empty, but no toboggan","pt":"Jinshanling: vazia, mas sem toboggan"},"idx":5,"days":["2026-10-24"],"city":{"en":"Beijing","pt":"Pequim"},"color":"#7c3aed","url":null,"tickets":null,"address":"HuaLouGou Village, Bakeshiying Town, Luanping County, Hebei · 河北省滦平县巴克什营镇花楼沟村 金山岭长城","ch":"beijing-wall","opt":"1","sk":null},{"kind":"place","lat":39.94,"lon":116.383,"map":"https://www.openstreetmap.org/?mlat=39.94&mlon=116.383#map=16/39.94/116.383","name":{"en":"Dinner around the lakes","pt":"Jantar em volta dos lagos"},"idx":5,"days":["2026-10-24"],"city":{"en":"Beijing","pt":"Pequim"},"color":"#7c3aed","url":null,"tickets":null,"address":"Shichahai, Xicheng District · 西城区什刹海","ch":null,"opt":null,"sk":null},{"kind":"station","lat":39.9481,"lon":116.3533,"map":"https://www.openstreetmap.org/?mlat=39.9481&mlon=116.3533#map=16/39.9481/116.3533","name":"Beijing North 北京北站","idx":5,"days":["2026-10-25"],"city":{"en":"Beijing","pt":"Pequim"},"color":"#7c3aed","icon":"🚆","address":null,"ch":null,"opt":null,"sk":null},{"kind":"station","lat":40.0206,"lon":113.1583,"map":"https://www.openstreetmap.org/?mlat=40.0206&mlon=113.1583#map=16/40.0206/113.1583","name":"Datong South 大同南站","idx":5,"days":["2026-10-25"],"city":{"en":"Beijing","pt":"Pequim"},"color":"#7c3aed","icon":"🚆","address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":39.6672,"lon":113.6997,"map":"https://www.openstreetmap.org/?mlat=39.6672&mlon=113.6997#map=16/39.6672/113.6997","name":{"en":"Hanging Temple (Xuankong Si)","pt":"Mosteiro Suspenso (Xuankong Si)"},"idx":5,"days":["2026-10-25"],"city":{"en":"Beijing","pt":"Pequim"},"color":"#7c3aed","url":null,"tickets":null,"address":"Hunyuan County, Datong, Shanxi · 山西省大同市浑源县 悬空寺","ch":"datong-shape","opt":"0 2","sk":null},{"kind":"place","lat":40.1097,"lon":113.1225,"map":"https://www.openstreetmap.org/?mlat=40.1097&mlon=113.1225#map=16/40.1097/113.1225","name":{"en":"Yungang Grottoes","pt":"Grutas de Yungang"},"idx":5,"days":["2026-10-25"],"city":{"en":"Beijing","pt":"Pequim"},"color":"#7c3aed","url":null,"tickets":null,"address":"Yungang Grottoes, Cheng District, Datong, Shanxi · 山西省大同市城区 云冈石窟","ch":"datong-shape","opt":"0 1","sk":null},{"kind":"station","lat":39.8635,"lon":116.3726,"map":"https://www.openstreetmap.org/?mlat=39.8635&mlon=116.3726#map=16/39.8635/116.3726","name":"Beijing South 北京南站","idx":6,"days":["2026-10-26"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","icon":"🚆","address":null,"ch":null,"opt":null,"sk":null},{"kind":"station","lat":31.3318,"lon":120.6063,"map":"https://www.openstreetmap.org/?mlat=31.3318&mlon=120.6063#map=16/31.3318/120.6063","name":"Suzhou 苏州站","idx":6,"days":["2026-10-26"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","icon":"🚆","address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.3263526,"lon":120.6247123,"map":"https://www.openstreetmap.org/?mlat=31.3263526&mlon=120.6247123#map=16/31.3263526/120.6247123","name":{"en":"Humble Administrator's Garden","pt":"Jardim do Administrador Humilde"},"idx":6,"days":["2026-10-26","2026-10-28"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":null,"tickets":null,"address":"178 Dongbei Street, Gusu District · 苏州市姑苏区东北街178号","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.3149294,"lon":120.6296912,"map":"https://www.openstreetmap.org/?mlat=31.3149294&mlon=120.6296912#map=16/31.3149294/120.6296912","name":{"en":"Pingjiang Road at dusk, and dinner","pt":"Rua Pingjiang no fim da tarde, e jantar"},"idx":6,"days":["2026-10-26","2026-10-28"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":null,"tickets":null,"address":"Pingjiang Road, Gusu District · 苏州市姑苏区平江路","ch":null,"opt":null,"sk":null},{"kind":"station","lat":31.2515,"lon":121.4511,"map":"https://www.openstreetmap.org/?mlat=31.2515&mlon=121.4511#map=16/31.2515/121.4511","name":"Shanghai 上海站","idx":6,"days":["2026-10-26"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","icon":"🚆","address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.2376841,"lon":121.4753016,"map":"https://www.openstreetmap.org/?mlat=31.2376841&mlon=121.4753016#map=16/31.2376841/121.4753016","name":{"en":"Nanjing Road at night","pt":"Nanjing Road à noite"},"idx":6,"days":["2026-10-26"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":null,"tickets":null,"address":"Nanjing East Road, Huangpu District · 上海市黄浦区南京东路步行街","ch":null,"opt":null,"sk":"2026-10-26:nanjing-road-at-night"},{"kind":"station","lat":31.196,"lon":121.3162,"map":"https://www.openstreetmap.org/?mlat=31.196&mlon=121.3162#map=16/31.196/121.3162","name":"Shanghai Hongqiao 上海虹桥站","idx":6,"days":["2026-10-27","2026-10-28"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","icon":"🚆","address":null,"ch":null,"opt":null,"sk":null},{"kind":"station","lat":30.2936,"lon":120.2082,"map":"https://www.openstreetmap.org/?mlat=30.2936&mlon=120.2082#map=16/30.2936/120.2082","name":"Hangzhou East 杭州东站","idx":6,"days":["2026-10-27"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","icon":"🚆","address":null,"ch":null,"opt":null,"sk":null},{"kind":"station","lat":29.7916,"lon":119.7272,"map":"https://www.openstreetmap.org/?mlat=29.7916&mlon=119.7272#map=16/29.7916/119.7272","name":"Tonglu 桐庐站","idx":6,"days":["2026-10-27"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","icon":"🚆","address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":29.5695,"lon":119.7338,"map":"https://www.openstreetmap.org/?mlat=29.5695&mlon=119.7338#map=16/29.5695/119.7338","name":{"en":"Buddha Hand Bridge 佛手金桥","pt":"Ponte das Maos de Buda 佛手金桥"},"idx":6,"days":["2026-10-27"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":null,"tickets":null,"address":"Zizhou Village, Qiantan, Jiande, Hangzhou · 浙江省杭州市建德市乾潭镇梓洲村","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.3318337,"lon":120.6062832,"map":"https://www.openstreetmap.org/?mlat=31.3318337&mlon=120.6062832#map=16/31.3318337/120.6062832","name":{"en":"G-train Shanghai Hongqiao to Suzhou, 25 min","pt":"Trem G Shanghai Hongqiao ate Suzhou, 25 min"},"idx":6,"days":["2026-10-28"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":null,"tickets":null,"address":"Suzhou Railway Station · 苏州站","ch":null,"opt":null,"sk":null},{"kind":"station","lat":31.3329,"lon":120.6064,"map":"https://www.openstreetmap.org/?mlat=31.3329&mlon=120.6064#map=16/31.3329/120.6064","name":"Suzhou 苏州站","idx":6,"days":["2026-10-28"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","icon":"🚆","address":null,"ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.3252,"lon":120.6236,"map":"https://www.openstreetmap.org/?mlat=31.3252&mlon=120.6236#map=16/31.3252/120.6236","name":{"en":"Suzhou Museum, by I.M. Pei","pt":"Museu de Suzhou, de I.M. Pei"},"idx":6,"days":["2026-10-28"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":"https://www.szmuseum.com/En","tickets":null,"address":"204 Dongbei Street, Gusu, Suzhou · 苏州市姑苏区东北街204号","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.3375463,"lon":120.5764425,"map":"https://www.openstreetmap.org/?mlat=31.3375463&mlon=120.5764425#map=16/31.3375463/120.5764425","name":{"en":"Tiger Hill and the leaning pagoda","pt":"Tiger Hill e o pagode inclinado"},"idx":6,"days":["2026-10-28"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":null,"tickets":null,"address":"8 Huqiu Hill Gate, Gusu District · 苏州市姑苏区虎丘山门内8号","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.3004239,"lon":120.6297972,"map":"https://www.openstreetmap.org/?mlat=31.3004239&mlon=120.6297972#map=16/31.3004239/120.6297972","name":{"en":"ONLY IF IT REOPENS - Master of the Nets Night Garden","pt":"SO SE REABRIR - Jardim Noturno do Master of the Nets"},"idx":6,"days":["2026-10-28"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":null,"tickets":"https://www.szylly.com","address":"11 Kuojiatou Alley, Gusu District · 苏州市姑苏区阔家头巷11号","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.2186623,"lon":121.4646484,"map":"https://www.openstreetmap.org/?mlat=31.2186623&mlon=121.4646484#map=16/31.2186623/121.4646484","name":{"en":"Fuxing Park at morning exercise hour","pt":"Fuxing Park na hora do exercicio matinal"},"idx":6,"days":["2026-10-29"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":null,"tickets":null,"address":"2 Gaolan Road, Huangpu District · 上海市黄浦区皋兰路2号","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.2079627,"lon":121.4345823,"map":"https://www.openstreetmap.org/?mlat=31.2079627&mlon=121.4345823#map=16/31.2079627/121.4345823","name":{"en":"Wukang Road","pt":"Rua Wukang"},"idx":6,"days":["2026-10-29"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":null,"tickets":null,"address":"Wukang Road, Xuhui District · 上海市徐汇区武康路","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.2062561,"lon":121.4337292,"map":"https://www.openstreetmap.org/?mlat=31.2062561&mlon=121.4337292#map=16/31.2062561/121.4337292","name":{"en":"Wukang Mansion","pt":"Edificio Wukang"},"idx":6,"days":["2026-10-29"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":null,"tickets":null,"address":"1850 Huaihai Middle Road, Xuhui District · 上海市徐汇区淮海中路1850号","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.21034,"lon":121.4641036,"map":"https://www.openstreetmap.org/?mlat=31.21034&mlon=121.4641036#map=16/31.21034/121.4641036","name":{"en":"Tianzifang","pt":"Tianzifang"},"idx":6,"days":["2026-10-29"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":null,"tickets":null,"address":"Lane 210 Taikang Road, Huangpu District · 上海市黄浦区泰康路210弄","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.2818029,"lon":121.4473012,"map":"https://www.openstreetmap.org/?mlat=31.2818029&mlon=121.4473012#map=16/31.2818029/121.4473012","name":{"en":"ERA acrobatic show at Shanghai Circus World","pt":"Espetaculo acrobatico ERA no Shanghai Circus World"},"idx":6,"days":["2026-10-29"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":"https://www.shcircusworld.com/","tickets":"https://www.klook.com/en-US/activity/6365-era-intersection-of-time-acrobatic-show-ticket-shanghai/","address":"2266 Gonghexin Road, Jing'an District · 上海市静安区共和新路2266号","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.2289274,"lon":121.4879752,"map":"https://www.openstreetmap.org/?mlat=31.2289274&mlon=121.4879752#map=16/31.2289274/121.4879752","name":{"en":"Yu Garden","pt":"Yu Garden"},"idx":6,"days":["2026-10-30"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":null,"tickets":null,"address":"218 Anren Street, Huangpu District · 上海市黄浦区安仁街218号","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.2221,"lon":121.5344,"map":"https://www.openstreetmap.org/?mlat=31.2221&mlon=121.5344#map=16/31.2221/121.5344","name":{"en":"Optional - Shanghai Museum East, in Pudong","pt":"Opcional - Shanghai Museum East, em Pudong"},"idx":6,"days":["2026-10-30"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":"https://www.shanghaimuseum.net/mu/frontend/pg/en/service/visit-east","tickets":null,"address":"1952 Century Avenue, Pudong · 上海市浦东新区世纪大道1952号","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.2401683,"lon":121.4979446,"map":"https://www.openstreetmap.org/?mlat=31.2401683&mlon=121.4979446#map=16/31.2401683/121.4979446","name":{"en":"Lujiazui","pt":"Lujiazui"},"idx":6,"days":["2026-10-30"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":null,"tickets":null,"address":"Lujiazui, Pudong New Area · 上海市浦东新区陆家嘴","ch":null,"opt":null,"sk":null},{"kind":"place","lat":31.2356449,"lon":121.5012495,"map":"https://www.openstreetmap.org/?mlat=31.2356449&mlon=121.5012495#map=16/31.2356449/121.5012495","name":{"en":"Shanghai Tower at sunset","pt":"Shanghai Tower no por do sol"},"idx":6,"days":["2026-10-30"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":"#4f46e5","url":null,"tickets":"https://www.klook.com/en-US/activity/4333-shanghai-tower-observation-deck-shanghai/","address":"501 Yincheng Middle Road, Lujiazui, Pudong New Area · 上海市浦东新区陆家嘴银城中路501号","ch":null,"opt":null,"sk":null},{"kind":"stay","lat":31.2367,"lon":121.4789,"map":"https://www.openstreetmap.org/?mlat=31.2367&mlon=121.4789#map=16/31.2367/121.4789","name":"Weiting Residence Hotel (Nanjing Road Pedestrian Street)","idx":1,"days":["2026-10-12","2026-10-13"],"city":{"en":"Shanghai (arrival)","pt":"Shanghai (chegada)"},"color":null,"url":"https://us.trip.com/hotels/shanghai-hotel-detail-133683750/weiting-residence-hotel/","address":"280 Shanxi South Road, Huangpu, Shanghai · 上海市黄浦区山西南路280号","icon":"🛏️"},{"kind":"stay","lat":29.3517,"lon":110.5407,"map":"https://www.openstreetmap.org/?mlat=29.3517&mlon=110.5407#map=16/29.3517/110.5407","name":"Miss Inn (Zhangjiajie Forest Park Biaozhimen)","idx":2,"days":["2026-10-14","2026-10-15","2026-10-16","2026-10-17"],"city":{"en":"Zhangjiajie","pt":"Zhangjiajie"},"color":null,"url":"https://us.trip.com/hotels/zhangjiajie-hotel-detail-2882216/miss-inn-old-time-branch/","address":"Wuling Road, beside Charming Xiangxi, Wulingyuan, Zhangjiajie · 张家界市武陵源区武陵大道（魅力湘西旁）","icon":"🛏️"},{"kind":"stay","lat":28.745,"lon":109.9398,"map":"https://www.openstreetmap.org/?mlat=28.745&mlon=109.9398#map=16/28.745/109.9398","name":"Xiyue·Linjiang Inn 禧粤·临江客栈","idx":3,"days":["2026-10-18"],"city":{"en":"Furong","pt":"Furong"},"color":null,"url":"https://us.trip.com/hotels/yongshun-hotel-detail-46565423/furong-xiyue-lnn/","address":"26 Riverside Street, Furong Town, Yongshun · 永顺县芙蓉镇临江街26号","icon":"🛏️"},{"kind":"stay","lat":24.772,"lon":110.489,"map":"https://www.openstreetmap.org/?mlat=24.772&mlon=110.489#map=16/24.772/110.489","name":"Muyunli 暮云·漓酒店（阳朔西街店）","idx":4,"days":["2026-10-19","2026-10-20","2026-10-21"],"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":null,"url":"https://us.trip.com/hotels/yangshuo-hotel-detail-122003572/muyunli/","address":"23 Fengming Road, Yangshuo · 阳朔县凤鸣路23号","icon":"🛏️"},{"kind":"stay","lat":39.9023,"lon":116.4237,"map":"https://www.openstreetmap.org/?mlat=39.9023&mlon=116.4237#map=16/39.9023/116.4237","name":"Beijing Zhong'an Hotel 北京中安宾馆","idx":5,"days":["2026-10-22","2026-10-23","2026-10-24","2026-10-25"],"city":{"en":"Beijing","pt":"Pequim"},"color":null,"url":"https://us.trip.com/hotels/beijing-hotel-detail-473542/beijing-zhong-an-hotel/","address":"6 Kuijiachang, Dayangmao Hutong, Dongcheng, Beijing · 北京市东城区大羊毛胡同盔甲厂6号","icon":"🛏️"},{"kind":"stay","lat":31.2347,"lon":121.4748,"map":"https://www.openstreetmap.org/?mlat=31.2347&mlon=121.4748#map=16/31.2347/121.4748","name":"BAIhome Hotel 百致酒店 (Shanghai People's Square Fuzhou Road Branch)","idx":6,"days":["2026-10-26","2026-10-27","2026-10-28","2026-10-29","2026-10-30"],"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":"https://us.trip.com/hotels/shanghai-hotel-detail-124743144/baihome-hotel/","address":"Building 1, 355 Fuzhou Road, Huangpu, Shanghai · 上海市黄浦区福州路355号1号楼","icon":"🛏️"},{"kind":"food","lat":31.2070684,"lon":121.4533028,"map":"https://www.openstreetmap.org/?mlat=31.2070684&mlon=121.4533028#map=16/31.2070684/121.4533028","name":"Jian Guo 328 建国328","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":null,"address":"328 Jianguo West Road, Xuhui · 上海市徐汇区建国西路328号","icon":"🍽️","cuisine":{"en":"Home-style Shanghainese","pt":"Shanghainesa caseira"},"note":{"en":"A converted lane house in the old French Concession serving the Shanghainese classics MSG-free, at neighbourhood prices.","pt":"Casa de vila reformada na antiga concessao francesa, servindo os classicos shanghaineses sem glutamato e a preco de bairro."},"price":"¥120/pessoa"},{"kind":"food","lat":31.236418,"lon":121.4663129,"map":"https://www.openstreetmap.org/?mlat=31.236418&mlon=121.4663129#map=16/31.236418/121.4663129","name":"Jia Jia Tang Bao 佳家汤包","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":null,"address":"90 Huanghe Road, Huangpu · 上海市黄浦区黄河路90号","icon":"🍽️","cuisine":{"en":"Xiao long bao (soup dumplings)","pt":"Xiao long bao (bolinho de sopa)"},"note":{"en":"Family-run since 1986 and a Bib Gourmand regular: eighteen folds, paper-thin skin, pork-and-crab filling, always a queue.","pt":"Familiar desde 1986 e habitue do Bib Gourmand: dezoito dobras, massa fininha, recheio de porco com caranguejo e fila na porta."},"price":"¥40/pessoa"},{"kind":"food","lat":31.2045795,"lon":121.4788101,"map":"https://www.openstreetmap.org/?mlat=31.2045795&mlon=121.4788101#map=16/31.2045795/121.4788101","name":"Canton 8 喜粤8号 (Runan Street)","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":"https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/canton-8-runan-street","address":"63 Runan Street, Huangpu · 上海市黄浦区汝南街63号","icon":"🍽️","cuisine":{"en":"Cantonese, dim sum","pt":"Cantonesa, dim sum"},"note":{"en":"Widely called the world's cheapest two-MICHELIN-star table: Chef Mak's 40 years of Cantonese classics and handmade dim sum in a casual room.","pt":"Chamada de a mesa com duas estrelas MICHELIN mais barata do mundo: 40 anos de classicos cantoneses do chef Mak e dim sum feito a mao, num salao descontraido."},"price":"¥300-500/pessoa"},{"kind":"food","lat":31.2345742,"lon":121.4865899,"map":"https://www.openstreetmap.org/?mlat=31.2345742&mlon=121.4865899#map=16/31.2345742/121.4865899","name":"Lost Heaven on the Bund 花马天堂","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":null,"address":"17 Yan'an East Road, Huangpu · 上海市黄浦区延安东路17号","icon":"🍽️","cuisine":{"en":"Yunnan folk cuisine","pt":"Cozinha popular de Yunnan"},"note":{"en":"Yunnan cooking with Burmese and Thai accents in a dark, ornate room a block off the Bund — and a rooftop terrace for drinks after.","pt":"Cozinha de Yunnan com sotaque birmanes e tailandes num salao escuro e ornamentado a um quarteirao do Bund, com terraco na cobertura para o drink depois."},"price":"¥225/pessoa"},{"kind":"food","lat":31.2367029,"lon":121.4847725,"map":"https://www.openstreetmap.org/?mlat=31.2367029&mlon=121.4847725#map=16/31.2367029/121.4847725","name":"Da Hu Chun 大壶春","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":"https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/da-hu-chun-middle-sichuan-road","address":"136 Middle Sichuan Road, Huangpu · 上海市黄浦区四川中路136号","icon":"🍽️","cuisine":{"en":"Shengjianbao (pan-fried pork buns)","pt":"Shengjianbao (paezinhos de porco na chapa)"},"note":{"en":"Open since 1932 and Bib Gourmand listed: the old-school leavened shengjianbao, fluffy on top and lacquer-crisp on the bottom.","pt":"Aberta desde 1932 e listada no Bib Gourmand: o shengjianbao de massa fermentada a moda antiga, fofo em cima e crocante feito laca embaixo."},"price":"¥20-30/pessoa"},{"kind":"food","lat":31.2238654,"lon":121.4283228,"map":"https://www.openstreetmap.org/?mlat=31.2238654&mlon=121.4283228#map=16/31.2238654/121.4283228","name":"Taian Table 泰安门","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":"https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/taian-table","address":"101-102, Bldg 1, Garden Office, 161 Lane 465 Zhenning Road, Changning · 上海市长宁区镇宁路465弄161号1号楼101-102室","icon":"🍽️","cuisine":{"en":"Contemporary European, tasting menu","pt":"Europeia contemporanea, menu degustacao"},"note":{"en":"Shanghai's only three-MICHELIN-star kitchen: a counter around the open pass, a menu that changes every few weeks and an all-German wine list.","pt":"A unica cozinha com tres estrelas MICHELIN de Shanghai: um balcao ao redor do pass aberto, menu que muda a cada poucas semanas e carta so de vinhos alemaes."},"price":"¥2588+/pessoa (menu de 8 tempos)"},{"kind":"food","lat":31.2229246,"lon":121.4653806,"map":"https://www.openstreetmap.org/?mlat=31.2229246&mlon=121.4653806#map=16/31.2229246/121.4653806","name":"Wei Xiang Zhai 味香斋","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":"https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/wei-xiang-zhai","address":"14 Yandang Road, Huangpu · 上海市黄浦区雁荡路14号","icon":"🍽️","cuisine":{"en":"Sesame sauce noodles","pt":"Macarrao no molho de gergelim"},"note":{"en":"Open since 1937 and a repeat Bib Gourmand: a bowl of sesame-peanut noodles with spicy pork and a side of clear beef broth, eaten elbow to elbow.","pt":"Aberta desde 1937 e Bib Gourmand repetido: uma tigela de macarrao no gergelim com amendoim e porco apimentado, com caldo claro de boi, comida cotovelo a cotovelo."},"price":"¥15-30/pessoa"},{"kind":"food","lat":31.2381093,"lon":121.4726404,"map":"https://www.openstreetmap.org/?mlat=31.2381093&mlon=121.4726404#map=16/31.2381093/121.4726404","name":"Lai Lai Xiao Long 莱莱小笼","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":null,"address":"506 Tianjin Road, Huangpu · 上海市黄浦区天津路506号","icon":"🍽️","cuisine":{"en":"Xiao long bao (soup dumplings)","pt":"Xiao long bao (bolinho de sopa)"},"note":{"en":"A twenty-year alley institution near Nanjing Road and a Bib Gourmand pick: paper-thin skins, generous broth and pork-and-crab-roe baskets, open 8h to 20h.","pt":"Instituicao de vinte anos num beco perto da Nanjing Road e escolha do Bib Gourmand: massa fininha, caldo generoso e cestas de porco com ova de caranguejo, aberta das 8h as 20h."},"price":"¥30/pessoa"},{"kind":"food","lat":31.224812,"lon":121.469395,"map":"https://www.openstreetmap.org/?mlat=31.224812&mlon=121.469395#map=16/31.224812/121.469395","name":"DOPASTTA 帕萨朵手工意面 (Xintiandi Plaza)","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":null,"address":"B1, Xintiandi Plaza, 333 Middle Huaihai Road, Huangpu · 上海市黄浦区淮海中路333号新天地广场B1层","icon":"🍽️","cuisine":{"en":"Handmade pasta","pt":"Massa artesanal"},"note":{"en":"Fresh pasta made in-house at a bargain price, and a favourite for all-you-can-eat pasta. The Weihai Road branch has closed; this is the Xintiandi Plaza one.","pt":"Massa fresca feita na casa a preço camarada, famosa pela massa à vontade. A unidade da Weihai Road fechou; esta é a do Xintiandi Plaza."},"price":null},{"kind":"food","lat":31.2823,"lon":121.4198,"map":"https://www.openstreetmap.org/?mlat=31.2823&mlon=121.4198#map=16/31.2823/121.4198","name":"He Shan Mian Jia 和膳面家","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":null,"address":"1190-1 Hutai Road, Jing'an · 上海市静安区沪太路1190-1号","icon":"🍽️","cuisine":{"en":"Wok-fried topping noodles (pork)","pt":"Lámen com cobertura salteada na hora (porco)"},"note":{"en":"A neighbourhood noodle shop where every topping is stir-fried to order; go for the pork. It is far north, near Hualing Road.","pt":"Casa de lámen de bairro em que cada cobertura é salteada na hora; peça a de porco. Fica bem ao norte, perto da Hualing Road."},"price":null},{"kind":"food","lat":31.226931,"lon":121.436612,"map":"https://www.openstreetmap.org/?mlat=31.226931&mlon=121.436612#map=16/31.226931/121.436612","name":"Aunt Huang's Guotie 黄阿姨锅贴大王","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":null,"address":"174 Wanhangdu Road, Jing'an · 上海市静安区万航渡路174号","icon":"🍽️","cuisine":{"en":"Guotie (pan-fried dumplings)","pt":"Guotie (dumpling na chapa)"},"note":{"en":"A no-frills potsticker counter near Jing'an Temple: crisp-bottomed guotie straight off the pan.","pt":"Balcão simples de guotie perto do Jing'an Temple: dumplings de fundo crocante, direto da chapa."},"price":null},{"kind":"food","lat":31.232666,"lon":121.489503,"map":"https://www.openstreetmap.org/?mlat=31.232666&mlon=121.489503#map=16/31.232666/121.489503","name":"Li Bai Xie 李百蟹 (Bund 22)","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":null,"address":"3F, 22 Zhongshan East 2nd Road, Huangpu · 上海市黄浦区中山东二路22号3楼","icon":"🍽️","cuisine":{"en":"Crab roe rice and noodles","pt":"Arroz e macarrão com molho de caranguejo"},"note":{"en":"Crab roe, meat and leg mixed into a rich sauce, over rice or scallion noodles, with a view of the Bund. Queues are long, so book ahead. Open 10h to 22h.","pt":"Ova, carne e perna de caranguejo num molho denso, sobre arroz ou macarrão com cebolinha, com vista para o Bund. A fila é grande, reserve antes. Aberto das 10h às 22h."},"price":"~¥338/set p/ 2"},{"kind":"food","lat":31.246104,"lon":121.467596,"map":"https://www.openstreetmap.org/?mlat=31.246104&mlon=121.467596#map=16/31.246104/121.467596","name":"Si Ji Min Fu 四季民福 (Peking Chamber, Jing'an Joy City)","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":null,"address":"5F, North Building, Jing'an Joy City, 198 North Xizang Road · 上海市静安区西藏北路198号大悦城北座5楼","icon":"🍽️","cuisine":{"en":"Peking duck","pt":"Pato laqueado"},"note":{"en":"The Beijing favourite for Peking duck, carved at the table. This branch is on the 5th floor of Joy City's North Building.","pt":"O queridinho de Pequim para pato laqueado, fatiado na mesa. Esta unidade fica no 5º andar do prédio norte do Joy City."},"price":null},{"kind":"food","lat":31.2436,"lon":121.4643,"map":"https://www.openstreetmap.org/?mlat=31.2436&mlon=121.4643#map=16/31.2436/121.4643","name":"Shandong Zaliang Jianbing 山东杂粮煎饼 (Guoqing Road)","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":null,"address":"166-7 Guoqing Road, Jing'an · 上海市静安区国庆路166-7号","icon":"🍽️","cuisine":{"en":"Jianbing (stuffed street crêpe)","pt":"Jianbing (crepe recheado de rua)"},"note":{"en":"A street stall for the classic Shandong-style jianbing: egg, crispy cracker, sauce and scallions, folded while you wait.","pt":"Barraca de rua do jianbing clássico ao estilo de Shandong: ovo, massa crocante, molho e cebolinha, dobrado na hora."},"price":null},{"kind":"food","lat":31.2371,"lon":121.4667,"map":"https://www.openstreetmap.org/?mlat=31.2371&mlon=121.4667#map=16/31.2371/121.4667","name":"Dingxing Road Danbingtan 定兴路蛋饼摊","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":null,"address":"6 Dingxing Road, Huangpu · 上海市黄浦区定兴路6号","icon":"🍽️","cuisine":{"en":"Danbing (egg pancake)","pt":"Danbing (panqueca de ovo)"},"note":{"en":"A couple who have run this breakfast stall for 15+ years, near People's Square: crispy egg pancakes with as many fillings as you want. Open 5h30 to about 13h; go before 7h30.","pt":"Um casal que toca esta barraca de café da manhã há mais de 15 anos, perto da People's Square: panqueca de ovo crocante com quantos recheios quiser. Abre das 5h30 até umas 13h; chegue antes das 7h30."},"price":"~¥15"},{"kind":"food","lat":31.2858,"lon":121.5325,"map":"https://www.openstreetmap.org/?mlat=31.2858&mlon=121.5325#map=16/31.2858/121.5325","name":"Shui Feng Lu Ji Dan Bing 水丰路鸡蛋饼","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":null,"address":"4 Yingkou Road, Yangpu · 上海市杨浦区营口路4号 (antes: 延吉东路557弄2号)","icon":"🍽️","cuisine":{"en":"Soft egg pancake","pt":"Panqueca de ovo macia"},"note":{"en":"A husband-and-wife stall that has made the same soft egg pancake for 20+ years, now on Dianping's Must-Eat list. Closed on Mondays. It is in Yangpu, far from the centre.","pt":"Barraca de um casal que faz a mesma panqueca de ovo macia há mais de 20 anos e agora está no Must-Eat do Dianping. Fecha às segundas. Fica em Yangpu, longe do centro."},"price":"~¥12"},{"kind":"food","lat":31.205,"lon":121.4336,"map":"https://www.openstreetmap.org/?mlat=31.205&mlon=121.4336#map=16/31.205/121.4336","name":"Apoli Itabakery AP意大利料理面包坊","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":null,"address":"380 Xingguo Road, Changning · 上海市长宁区兴国路380号","icon":"🍽️","cuisine":{"en":"Italian bakery (the Harry Potter one)","pt":"Padaria italiana (a do Harry Potter)"},"note":{"en":"Its first shop, done up as a castle: stone walls, lanterns and more than 50 breads, puffs and doughnuts. Near Jiaotong University station. Open 10h to 20h.","pt":"A primeira loja, decorada como um castelo: paredes de pedra, lanternas e mais de 50 pães, carolinas e donuts. Perto da estação Jiaotong University. Aberta das 10h às 20h."},"price":null},{"kind":"food","lat":31.223215,"lon":121.4706557,"map":"https://www.openstreetmap.org/?mlat=31.223215&mlon=121.4706557#map=16/31.223215/121.4706557","name":"Polux 普罗之星","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":"https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/polux","address":"No. 5, Xintiandi North Block, Lane 181 Taicang Road, Huangpu · 上海市黄浦区太仓路181弄新天地北里5号","icon":"🍽️","cuisine":{"en":"French café and bistro","pt":"Café e bistrô francês"},"note":{"en":"An all-day French bistro from Paul Pairet (the chef of Ultraviolet), with a Bib Gourmand, in Xintiandi.","pt":"Bistrô francês que funciona o dia todo, de Paul Pairet (o chef do Ultraviolet), com Bib Gourmand, no Xintiandi."},"price":null},{"kind":"food","lat":31.2036624,"lon":121.4537364,"map":"https://www.openstreetmap.org/?mlat=31.2036624&mlon=121.4537364#map=16/31.2036624/121.4537364","name":"Ren He Guan 人和馆 (Zhaojiabang Road)","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":"https://guide.michelin.com/th/th/shanghai-municipality/shanghai/restaurant/ren-he-guan-zhaojiabang-road","address":"407 Zhaojiabang Road, Xuhui · 上海市徐汇区肇嘉浜路407号","icon":"🍽️","cuisine":{"en":"Shanghainese, crab roe rice","pt":"Shanghainesa, arroz com ova de caranguejo"},"note":{"en":"A MICHELIN star with a 1930s Old Shanghai feel. Order the crab roe rice with lots of sauce, and the hong shao rou.","pt":"Estrela MICHELIN num clima de Xangai dos anos 1930. Peça o arroz com ova de caranguejo cheio de molho e o hong shao rou."},"price":null},{"kind":"food","lat":31.2376249,"lon":121.4795586,"map":"https://www.openstreetmap.org/?mlat=31.2376249&mlon=121.4795586#map=16/31.2376249/121.4795586","name":"Yong Feng Mian Guan 永丰面馆","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":"https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/yong-feng-mian-guan","address":"320 Hankou Road, Huangpu · 上海市黄浦区汉口路320号","icon":"🍽️","cuisine":{"en":"Halal lamb noodles","pt":"Macarrão halal de cordeiro"},"note":{"en":"A family-run halal noodle shop open since 1962, with a MICHELIN listing. Get the red-braised lamb noodles, in curry beef broth or with scallion oil.","pt":"Casa de macarrão halal da mesma família desde 1962, recomendada pelo MICHELIN. Peça o de cordeiro braseado, no caldo de curry ou com óleo de cebolinha."},"price":null},{"kind":"food","lat":31.222,"lon":121.4628,"map":"https://www.openstreetmap.org/?mlat=31.222&mlon=121.4628#map=16/31.222/121.4628","name":"Shanghai Harbin Food Factory 哈尔滨食品厂 (Huaihai Road)","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":null,"address":"603 Middle Huaihai Road, Huangpu · 上海市黄浦区淮海中路603号 (近成都南路)","icon":"🍽️","cuisine":{"en":"Shanghai-style Western pastries","pt":"Doces ocidentais ao estilo de Xangai"},"note":{"en":"A heritage bakery on Huaihai Road for Old Shanghai's European-style biscuits: butterfly puffs and almond strips.","pt":"Confeitaria tradicional na Huaihai Road dos biscoitos europeus da velha Xangai: palmier (butterfly) e tiras de amêndoa."},"price":"¥42/pacote"},{"kind":"food","lat":31.207,"lon":121.4211,"map":"https://www.openstreetmap.org/?mlat=31.207&mlon=121.4211#map=16/31.207/121.4211","name":"Fa Hua Tang Bao 法华汤包馆","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":null,"address":"503 Fahuazhen Road, Changning · 上海市长宁区法华镇路503号","icon":"🍽️","cuisine":{"en":"Nanjing-style soup dumplings, handmade","pt":"Tang bao estilo Nanjing, feito à mão"},"note":{"en":"A neighbourhood breakfast favourite since 2000: thin-skinned tang bao with sweet-savoury broth, handmade. Open 6h to 20h.","pt":"Café da manhã preferido do bairro desde 2000: tang bao de massa fina e caldo agridoce, feito à mão. Aberto das 6h às 20h."},"price":"¥8-15"},{"kind":"food","lat":31.2386,"lon":121.473,"map":"https://www.openstreetmap.org/?mlat=31.2386&mlon=121.473#map=16/31.2386/121.473","name":"Luo Chun Ge 萝春阁","idx":6,"days":null,"city":{"en":"Shanghai","pt":"Shanghai"},"color":null,"url":null,"address":"425 Middle Zhejiang Road, Huangpu · 上海市黄浦区浙江中路425号","icon":"🍽️","cuisine":{"en":"Shengjianbao","pt":"Shengjianbao"},"note":{"en":"The 'original' shengjianbao house, back in January 2026 after 21 years away: old-school pan-fried buns, the local rival of Da Hu Chun. Open 9h to 19h; they sell out early.","pt":"A casa 'original' do shengjianbao, que voltou em janeiro de 2026 depois de 21 anos: pãozinho na chapa à moda antiga, rival local do Da Hu Chun. Aberta das 9h às 19h; acaba cedo."},"price":"¥9/4 unid."},{"kind":"food","lat":39.9138657,"lon":116.4151611,"map":"https://www.openstreetmap.org/?mlat=39.9138657&mlon=116.4151611#map=16/39.9138657/116.4151611","name":"Da Dong 大董 (Jinbao Place)","idx":5,"days":null,"city":{"en":"Beijing","pt":"Pequim"},"color":null,"url":"https://guide.michelin.com/en/beijing-municipality/beijing/restaurant/gastro-esthetics-dadong","address":"5F, Jinbao Place, 88 Jinbao Street, Dongcheng · 北京市东城区金宝街88号金宝汇购物中心5层","icon":"🍽️","cuisine":{"en":"Peking duck, modern Chinese","pt":"Pato laqueado, chinesa moderna"},"note":{"en":"The most famous modern take on Peking duck: leaner 22-day birds, carved tableside, plated like fine dining.","pt":"A releitura moderna mais famosa do pato laqueado: aves de 22 dias, menos gordurosas, cortadas na mesa e empratadas como alta gastronomia."},"price":"¥400-500/pessoa"},{"kind":"food","lat":39.9141268,"lon":116.4019727,"map":"https://www.openstreetmap.org/?mlat=39.9141268&mlon=116.4019727#map=16/39.9141268/116.4019727","name":"Siji Minfu 四季民福 (Wangfujing / Dong'anmen)","idx":5,"days":null,"city":{"en":"Beijing","pt":"Pequim"},"color":null,"url":null,"address":"Dong'anmen Dajie, Dongcheng · 北京市东城区东安门大街","icon":"🍽️","cuisine":{"en":"Peking duck, Beijing home cooking","pt":"Pato laqueado, comida caseira de Pequim"},"note":{"en":"Beijing's best value roast duck, minutes from the Forbidden City — go early or expect a long ticketed queue.","pt":"O melhor custo-beneficio de pato laqueado, a minutos da Cidade Proibida. Va cedo ou conte com fila longa por senha."},"price":"¥150/pessoa"},{"kind":"food","lat":39.9367072,"lon":116.3917452,"map":"https://www.openstreetmap.org/?mlat=39.9367072&mlon=116.3917452#map=16/39.9367072/116.3917452","name":"No. 69 Fangzhuanchang Zhajiangmian 方砖厂69号炸酱面","idx":5,"days":null,"city":{"en":"Beijing","pt":"Pequim"},"color":null,"url":"https://guide.michelin.com/us/en/beijing-municipality/beijing/restaurant/no-69-fangzhuanchang-zhajiangmian","address":"Fangzhuanchang Hutong, Dongcheng · 北京市东城区方砖厂胡同","icon":"🍽️","cuisine":{"en":"Zhajiangmian (noodles in soybean-pork sauce)","pt":"Zhajiangmian (macarrao no molho de soja com porco)"},"note":{"en":"A Bib Gourmand hutong counter with one dish only — the city's benchmark bowl of zhajiangmian, noodles and sauce refilled free.","pt":"Balcao de hutong com Bib Gourmand e um prato so: a tigela de referencia de zhajiangmian em Pequim, com macarrao e molho de graca a vontade."},"price":"¥30/pessoa"},{"kind":"food","lat":39.906236,"lon":116.4411247,"map":"https://www.openstreetmap.org/?mlat=39.906236&mlon=116.4411247#map=16/39.906236/116.4411247","name":"Najia Xiaoguan 那家小馆","idx":5,"days":null,"city":{"en":"Beijing","pt":"Pequim"},"color":null,"url":null,"address":"10 Yong'anxili, Jianguomenwai, Chaoyang · 北京市朝阳区建国门外永安里10号","icon":"🍽️","cuisine":{"en":"Manchu and Qing court home cooking","pt":"Caseira manchu e da corte Qing"},"note":{"en":"Manchu recipes traced to 1748 in a lantern-lit courtyard — order the huang tanzi, a pot simmered eighteen hours, and the braised venison.","pt":"Receitas manchus que remontam a 1748 num patio iluminado por lanternas. Peca o huang tanzi, uma panela cozida por dezoito horas, e o veado braseado."},"price":"¥150/pessoa"},{"kind":"food","lat":39.8853572,"lon":116.3570952,"map":"https://www.openstreetmap.org/?mlat=39.8853572&mlon=116.3570952#map=16/39.8853572/116.3570952","name":"Jubaoyuan 聚宝源 (Niujie)","idx":5,"days":null,"city":{"en":"Beijing","pt":"Pequim"},"color":null,"url":null,"address":"Niujie Xili, Xicheng · 北京市西城区牛街西里","icon":"🍽️","cuisine":{"en":"Halal instant-boiled mutton hotpot","pt":"Hotpot halal de carneiro escaldado"},"note":{"en":"Seventy years of copper-pot mutton on Beijing's Muslim quarter street: hand-cut lamb, sesame paste dip and the best sesame buns in town.","pt":"Setenta anos de carneiro na panela de cobre na rua do bairro muculmano de Pequim: cordeiro cortado a mao, molho de gergelim e os melhores paezinhos de gergelim da cidade."},"price":"¥120-150/pessoa"},{"kind":"food","lat":39.9468299,"lon":116.409884,"map":"https://www.openstreetmap.org/?mlat=39.9468299&mlon=116.409884#map=16/39.9468299/116.409884","name":"King's Joy 京兆尹","idx":5,"days":null,"city":{"en":"Beijing","pt":"Pequim"},"color":null,"url":"https://www.kingsjoy.com/brand","address":"2 Wudaoying Hutong, Dongcheng · 北京市东城区五道营胡同2号","icon":"🍽️","cuisine":{"en":"Vegetarian fine dining","pt":"Alta gastronomia vegetariana"},"note":{"en":"A MICHELIN Green Star vegetarian tasting menu, all ingredients sourced in China, in a courtyard directly opposite the Lama Temple.","pt":"Um menu degustacao vegetariano com Estrela Verde MICHELIN, todos os ingredientes vindos da China, num patio bem em frente ao Templo dos Lamas."},"price":"¥600+/pessoa"},{"kind":"food","lat":39.9394536,"lon":116.3905653,"map":"https://www.openstreetmap.org/?mlat=39.9394536&mlon=116.3905653#map=16/39.9394536/116.3905653","name":"Yaoji Chaogan 姚记炒肝 (Gulou)","idx":5,"days":null,"city":{"en":"Beijing","pt":"Pequim"},"color":null,"url":null,"address":"Gulou East Street, Dongcheng (below the Drum Tower) · 北京市东城区鼓楼东大街","icon":"🍽️","cuisine":{"en":"Chaogan (garlicky pork offal stew), baozi","pt":"Chaogan (ensopado de miudos de porco com alho), baozi"},"note":{"en":"The Drum Tower counter where breakfast starts at six: a bowl of glossy garlic-heavy chaogan and pork buns, famously eaten by a visiting US vice-president.","pt":"O balcao da Torre do Tambor onde o cafe da manha comeca as seis: uma tigela de chaogan brilhante e carregado de alho com paezinhos de porco, comida celebre de um vice-presidente americano em visita."},"price":"¥30/pessoa"},{"kind":"food","lat":40.0904829,"lon":113.2905569,"map":"https://www.openstreetmap.org/?mlat=40.0904829&mlon=113.2905569#map=16/40.0904829/113.2905569","name":"Fenglinge 凤临阁","days":null,"city":{"en":"Datong","pt":"Datong"},"color":null,"url":null,"address":"Gulou West Street, Pingcheng District (near Huayan Temple) · 山西省大同市平城区鼓楼西街","icon":"🍽️","cuisine":{"en":"Shanxi cuisine, shaomai","pt":"Cozinha de Shanxi, shaomai"},"note":{"en":"Datong's culinary landmark: a lavishly carved Ming-style pavilion by Huayan Temple, famous for its hundred-flower shaomai.","pt":"O marco gastronomico de Datong: um pavilhao estilo Ming ricamente entalhado ao lado do Templo Huayan, famoso pelo shaomai das cem flores."},"price":"¥100/pessoa"},{"kind":"food","lat":40.0876215,"lon":113.2771686,"map":"https://www.openstreetmap.org/?mlat=40.0876215&mlon=113.2771686#map=16/40.0876215/113.2771686","name":"Dongfang Xiaomian 东方削面","days":null,"city":{"en":"Datong","pt":"Datong"},"color":null,"url":null,"address":"Yingze Street, Pingcheng District · 山西省大同市平城区迎泽街","icon":"🍽️","cuisine":{"en":"Daoxiaomian (knife-shaved noodles)","pt":"Daoxiaomian (macarrao cortado a faca)"},"note":{"en":"The local chain everyone in Datong eats at: knife-shaved noodles thick in the middle, thin at the edge, in lamb or beef broth.","pt":"A rede local onde todo mundo em Datong come: macarrao cortado a faca, grosso no meio e fino nas bordas, em caldo de carneiro ou boi."},"price":"¥15-25/pessoa"},{"kind":"food","lat":24.7227397,"lon":110.4745602,"map":"https://www.openstreetmap.org/?mlat=24.7227397&mlon=110.4745602#map=16/24.7227397/110.4745602","name":"Luna @ Yangshuo Village Inn 听月楼","idx":4,"days":null,"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":null,"url":"https://yangshuovillageinn.com/luna-yangshuo-restaurant/","address":"Moon Hill, Gaotian, Yangshuo County · 广西壮族自治区阳朔县高田镇月亮山","icon":"🍽️","cuisine":{"en":"Italian and Chinese, rooftop","pt":"Italiana e chinesa, cobertura"},"note":{"en":"The area's most romantic table: a rooftop facing Moon Hill, wood-fired pizza and an imported wine list — book for sunset.","pt":"A mesa mais romantica da regiao: uma cobertura de frente para a Moon Hill, pizza de forno a lenha e carta de vinhos importados. Reserve para o por do sol."},"price":"¥150-250/pessoa"},{"kind":"food","lat":25.2780661,"lon":110.2937604,"map":"https://www.openstreetmap.org/?mlat=25.2780661&mlon=110.2937604#map=16/25.2780661/110.2937604","name":"Chongshan Mifen 崇善米粉","idx":4,"days":null,"city":{"en":"Guilin / Yangshuo","pt":"Guilin / Yangshuo"},"color":null,"url":null,"address":"Yiren Road Pedestrian Street, Xiufeng District, Guilin · 广西壮族自治区桂林市秀峰区依仁路步行街","icon":"🍽️","cuisine":{"en":"Guilin rice noodles","pt":"Macarrao de arroz de Guilin"},"note":{"en":"Guilin's breakfast institution: rice noodles under crisp pork and braised beef, free refills of pickles and broth for a few yuan.","pt":"A instituicao do cafe da manha de Guilin: macarrao de arroz com porco crocante e carne cozida, com conservas e caldo a vontade por poucos yuan."},"price":"¥10-15/pessoa"},{"kind":"food","lat":31.3127714,"lon":120.6215161,"map":"https://www.openstreetmap.org/?mlat=31.3127714&mlon=120.6215161#map=16/31.3127714/120.6215161","name":"Songhelou 松鹤楼 (Guanqian)","days":null,"city":{"en":"Suzhou","pt":"Suzhou"},"color":null,"url":null,"address":"72 Taijian Lane, Guanqian, Gusu District · 江苏省苏州市姑苏区太监弄72号","icon":"🍽️","cuisine":{"en":"Classic Suzhou cuisine","pt":"Cozinha classica de Suzhou"},"note":{"en":"Open since 1737 and the home of squirrel-shaped mandarin fish — the one historic Suzhou dining room worth the tourist crowd.","pt":"Aberto desde 1737 e a casa do peixe esquilo agridoce: a unica sala historica de Suzhou que compensa encarar a multidao de turistas."},"price":"¥150/pessoa"},{"kind":"food","lat":31.3101121,"lon":120.6168809,"map":"https://www.openstreetmap.org/?mlat=31.3101121&mlon=120.6168809#map=16/31.3101121/120.6168809","name":"Tong De Xing 同得兴 (Jiayu Fang)","days":null,"city":{"en":"Suzhou","pt":"Suzhou"},"color":null,"url":"https://guide.michelin.com/en/jiang-su/suzhou_1031079/restaurant/tong-de-xing-jiayu-fang","address":"6 Jiayu Fang, Renmin Road, Gusu District · 江苏省苏州市姑苏区人民路嘉馀坊6号","icon":"🍽️","cuisine":{"en":"Suzhou soup noodles","pt":"Macarrao de caldo de Suzhou"},"note":{"en":"Bib Gourmand noodle house open only until early afternoon — the clear white broth and Fengzhen pork noodles are the reason to set an alarm.","pt":"Casa de macarrao com Bib Gourmand aberta so ate o inicio da tarde: o caldo claro e o macarrao de porco Fengzhen valem o despertador."},"price":"¥40/pessoa"}];
@@ -3779,6 +4378,38 @@ var TRIP_I18N = {"today":{"en":"Today","pt":"Hoje"},"mapApp":"📱 app de mapa",
   });
   if (buyList) buyView(buyViewGet());
   buyRefresh();
+
+
+  // ---------- aba Frases ----------
+  var phShow = document.getElementById('phshow');
+  var phSay = phShow && phShow.querySelector('.phs-say');
+  var canSpeak = !!(window.speechSynthesis && window.SpeechSynthesisUtterance);
+  q('.ph').forEach(function (b) {
+    b.addEventListener('click', function () {
+      if (!phShow || !phShow.showModal) return;
+      phShow.querySelector('.phs-local').textContent = b.querySelector('.ph-local').textContent;
+      phShow.querySelector('.phs-roman').textContent = b.querySelector('.ph-roman').textContent;
+      phShow.querySelector('.phs-tr').innerHTML = b.querySelector('.ph-tr').innerHTML;
+      if (phSay) phSay.hidden = !canSpeak || !phSay.getAttribute('data-lang');
+      phShow.showModal();
+    });
+  });
+  if (phSay) phSay.addEventListener('click', function () {
+    // "…" marca onde entra um nome ou lugar: não é para ler em voz alta
+    var text = phShow.querySelector('.phs-local').textContent.replace(/…/g, ' ');
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = phSay.getAttribute('data-lang');
+    u.rate = 0.8;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(u);
+  });
+  if (phShow) phShow.addEventListener('close', function () { if (canSpeak) window.speechSynthesis.cancel(); });
+  q('.ph-jump').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var g = document.getElementById(b.getAttribute('data-target'));
+      if (g) g.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
 
 })();
 

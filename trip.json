@@ -4596,5 +4596,893 @@
       },
       "kind": "tour"
     }
+  ],
+  "phrasesLang": "zh-CN",
+  "phrases": [
+    {
+      "icon": "👋",
+      "group": {
+        "en": "Greetings",
+        "pt": "Cumprimentos"
+      },
+      "items": [
+        {
+          "text": {
+            "en": "Hello",
+            "pt": "Olá"
+          },
+          "local": "你好",
+          "roman": "nǐ hǎo"
+        },
+        {
+          "text": {
+            "en": "Hello (polite, to older people)",
+            "pt": "Olá (educado, para mais velhos)"
+          },
+          "local": "您好",
+          "roman": "nín hǎo"
+        },
+        {
+          "text": {
+            "en": "Good morning",
+            "pt": "Bom dia"
+          },
+          "local": "早上好",
+          "roman": "zǎoshang hǎo"
+        },
+        {
+          "text": {
+            "en": "Good evening",
+            "pt": "Boa noite (ao chegar)"
+          },
+          "local": "晚上好",
+          "roman": "wǎnshang hǎo"
+        },
+        {
+          "text": {
+            "en": "Good night (going to bed)",
+            "pt": "Boa noite (ao dormir)"
+          },
+          "local": "晚安",
+          "roman": "wǎn'ān"
+        },
+        {
+          "text": {
+            "en": "Goodbye",
+            "pt": "Tchau"
+          },
+          "local": "再见",
+          "roman": "zàijiàn"
+        },
+        {
+          "text": {
+            "en": "Thank you",
+            "pt": "Obrigado"
+          },
+          "local": "谢谢",
+          "roman": "xièxie"
+        },
+        {
+          "text": {
+            "en": "You're welcome",
+            "pt": "De nada"
+          },
+          "local": "不客气",
+          "roman": "bú kèqi"
+        },
+        {
+          "text": {
+            "en": "Sorry",
+            "pt": "Desculpe"
+          },
+          "local": "对不起",
+          "roman": "duìbuqǐ"
+        },
+        {
+          "text": {
+            "en": "It's fine / no problem",
+            "pt": "Tudo bem / não tem problema"
+          },
+          "local": "没关系",
+          "roman": "méi guānxi",
+          "note": {
+            "en": "The answer to someone's \"sorry\".",
+            "pt": "A resposta para quando alguém pede desculpa."
+          }
+        },
+        {
+          "text": {
+            "en": "Excuse me, may I ask…",
+            "pt": "Com licença, uma pergunta…"
+          },
+          "local": "请问…",
+          "roman": "qǐngwèn…",
+          "note": {
+            "en": "The polite way to start any question to a stranger.",
+            "pt": "Jeito educado de começar qualquer pergunta a um desconhecido."
+          }
+        }
+      ]
+    },
+    {
+      "icon": "🙋",
+      "group": {
+        "en": "Introductions",
+        "pt": "Apresentação"
+      },
+      "items": [
+        {
+          "text": {
+            "en": "My name is…",
+            "pt": "Meu nome é…"
+          },
+          "local": "我叫…",
+          "roman": "wǒ jiào…"
+        },
+        {
+          "text": {
+            "en": "What's your name?",
+            "pt": "Como você se chama?"
+          },
+          "local": "你叫什么名字？",
+          "roman": "nǐ jiào shénme míngzi?"
+        },
+        {
+          "text": {
+            "en": "We are Brazilian",
+            "pt": "Somos brasileiros"
+          },
+          "local": "我们是巴西人",
+          "roman": "wǒmen shì Bāxī rén"
+        },
+        {
+          "text": {
+            "en": "We are tourists",
+            "pt": "Somos turistas"
+          },
+          "local": "我们是游客",
+          "roman": "wǒmen shì yóukè"
+        },
+        {
+          "text": {
+            "en": "Nice to meet you",
+            "pt": "Prazer em conhecer"
+          },
+          "local": "很高兴认识你",
+          "roman": "hěn gāoxìng rènshi nǐ"
+        },
+        {
+          "text": {
+            "en": "I don't speak Chinese",
+            "pt": "Não falo chinês"
+          },
+          "local": "我不会说中文",
+          "roman": "wǒ bú huì shuō Zhōngwén"
+        },
+        {
+          "text": {
+            "en": "Do you speak English?",
+            "pt": "Você fala inglês?"
+          },
+          "local": "你会说英语吗？",
+          "roman": "nǐ huì shuō Yīngyǔ ma?"
+        },
+        {
+          "text": {
+            "en": "I don't understand",
+            "pt": "Não entendi"
+          },
+          "local": "我听不懂",
+          "roman": "wǒ tīng bu dǒng"
+        },
+        {
+          "text": {
+            "en": "Please say it again, slowly",
+            "pt": "Pode repetir, mais devagar?"
+          },
+          "local": "请再说一遍，慢一点",
+          "roman": "qǐng zài shuō yí biàn, màn yìdiǎn"
+        },
+        {
+          "text": {
+            "en": "Can you type it on my phone?",
+            "pt": "Pode escrever no meu celular?"
+          },
+          "local": "可以写在我手机上吗？",
+          "roman": "kěyǐ xiě zài wǒ shǒujī shang ma?",
+          "note": {
+            "en": "Then paste it into the translator.",
+            "pt": "Depois é só colar no tradutor."
+          }
+        }
+      ]
+    },
+    {
+      "icon": "🧭",
+      "group": {
+        "en": "Directions & transport",
+        "pt": "Direções e transporte"
+      },
+      "items": [
+        {
+          "text": {
+            "en": "Where is…?",
+            "pt": "Onde fica…?"
+          },
+          "local": "…在哪里？",
+          "roman": "… zài nǎlǐ?",
+          "note": {
+            "en": "Say the place first: \"地铁站在哪里？\"",
+            "pt": "O lugar vem antes: \"地铁站在哪里？\""
+          }
+        },
+        {
+          "text": {
+            "en": "Where is the toilet?",
+            "pt": "Onde é o banheiro?"
+          },
+          "local": "洗手间在哪里？",
+          "roman": "xǐshǒujiān zài nǎlǐ?"
+        },
+        {
+          "text": {
+            "en": "Where is the metro station?",
+            "pt": "Onde é a estação de metrô?"
+          },
+          "local": "地铁站在哪里？",
+          "roman": "dìtiězhàn zài nǎlǐ?"
+        },
+        {
+          "text": {
+            "en": "Where is the exit?",
+            "pt": "Onde é a saída?"
+          },
+          "local": "出口在哪里？",
+          "roman": "chūkǒu zài nǎlǐ?"
+        },
+        {
+          "text": {
+            "en": "Is it far?",
+            "pt": "É longe?"
+          },
+          "local": "远吗？",
+          "roman": "yuǎn ma?"
+        },
+        {
+          "text": {
+            "en": "Can I walk there?",
+            "pt": "Dá para ir a pé?"
+          },
+          "local": "走路可以到吗？",
+          "roman": "zǒulù kěyǐ dào ma?"
+        },
+        {
+          "text": {
+            "en": "Left · right · straight ahead",
+            "pt": "Esquerda · direita · em frente"
+          },
+          "local": "左边 · 右边 · 一直走",
+          "roman": "zuǒbian · yòubian · yìzhí zǒu"
+        },
+        {
+          "text": {
+            "en": "Please take me to this address",
+            "pt": "Me leve a este endereço, por favor"
+          },
+          "local": "请带我去这个地址",
+          "roman": "qǐng dài wǒ qù zhège dìzhǐ"
+        },
+        {
+          "text": {
+            "en": "Stop here, please",
+            "pt": "Pare aqui, por favor"
+          },
+          "local": "请在这里停",
+          "roman": "qǐng zài zhèlǐ tíng"
+        },
+        {
+          "text": {
+            "en": "Which ticket gate?",
+            "pt": "Qual o portão de embarque?"
+          },
+          "local": "几号检票口？",
+          "roman": "jǐ hào jiǎnpiàokǒu?",
+          "note": {
+            "en": "At high-speed train stations you board through a numbered gate.",
+            "pt": "Nas estações de trem-bala o embarque é por um portão numerado."
+          }
+        },
+        {
+          "text": {
+            "en": "Does this train go to…?",
+            "pt": "Este trem vai para…?"
+          },
+          "local": "这趟车去…吗？",
+          "roman": "zhè tàng chē qù … ma?"
+        },
+        {
+          "text": {
+            "en": "I'm lost",
+            "pt": "Estou perdido"
+          },
+          "local": "我迷路了",
+          "roman": "wǒ mílù le"
+        }
+      ]
+    },
+    {
+      "icon": "💰",
+      "group": {
+        "en": "Prices & shopping",
+        "pt": "Valores e compras"
+      },
+      "items": [
+        {
+          "text": {
+            "en": "How much is it?",
+            "pt": "Quanto custa?"
+          },
+          "local": "多少钱？",
+          "roman": "duōshao qián?",
+          "note": {
+            "en": "Prices are said in 块 (kuài) = yuan: 35块 = ¥35.",
+            "pt": "O preço vem em 块 (kuài) = yuan: 35块 = ¥35."
+          }
+        },
+        {
+          "text": {
+            "en": "Too expensive!",
+            "pt": "Muito caro!"
+          },
+          "local": "太贵了！",
+          "roman": "tài guì le!"
+        },
+        {
+          "text": {
+            "en": "Can you make it cheaper?",
+            "pt": "Pode fazer mais barato?"
+          },
+          "local": "可以便宜一点吗？",
+          "roman": "kěyǐ piányi yìdiǎn ma?",
+          "note": {
+            "en": "Bargaining is normal at markets and stalls, not in shops with fixed prices.",
+            "pt": "Pechinchar é normal em feira e barraca, não em loja com preço fixo."
+          }
+        },
+        {
+          "text": {
+            "en": "I want this one",
+            "pt": "Quero este"
+          },
+          "local": "我要这个",
+          "roman": "wǒ yào zhège"
+        },
+        {
+          "text": {
+            "en": "No thanks",
+            "pt": "Não, obrigado"
+          },
+          "local": "不要，谢谢",
+          "roman": "bú yào, xièxie"
+        },
+        {
+          "text": {
+            "en": "Just looking",
+            "pt": "Só estou olhando"
+          },
+          "local": "我只是看看",
+          "roman": "wǒ zhǐshì kànkan"
+        },
+        {
+          "text": {
+            "en": "Can I pay with Alipay / WeChat?",
+            "pt": "Posso pagar com Alipay / WeChat?"
+          },
+          "local": "可以用支付宝/微信吗？",
+          "roman": "kěyǐ yòng Zhīfùbǎo / Wēixìn ma?"
+        },
+        {
+          "text": {
+            "en": "Do I scan you, or do you scan me?",
+            "pt": "Eu leio o seu QR ou você lê o meu?"
+          },
+          "local": "我扫你还是你扫我？",
+          "roman": "wǒ sǎo nǐ háishi nǐ sǎo wǒ?",
+          "note": {
+            "en": "The everyday question at the till.",
+            "pt": "A pergunta de todo dia no caixa."
+          }
+        },
+        {
+          "text": {
+            "en": "Can I pay by card?",
+            "pt": "Aceita cartão?"
+          },
+          "local": "可以刷卡吗？",
+          "roman": "kěyǐ shuā kǎ ma?"
+        },
+        {
+          "text": {
+            "en": "No bag needed",
+            "pt": "Não preciso de sacola"
+          },
+          "local": "不要袋子",
+          "roman": "bú yào dàizi"
+        }
+      ]
+    },
+    {
+      "icon": "🔢",
+      "group": {
+        "en": "Numbers",
+        "pt": "Números"
+      },
+      "compact": true,
+      "note": {
+        "en": "Numbers are built like Lego: 37 = 三十七 (3·10·7), 248 = 两百四十八. A zero in the middle is said 零: 105 = 一百零五.\nTo count things use 两 (liǎng) instead of 二: 两个 = two (of them), 两张票 = two tickets.\nIn phone and room numbers 1 is said yāo (幺).\n10,000 has its own word, 万 (wàn): 30,000 = 三万.\nHand signs: 6 = thumb and pinky out, 7 = fingertips pinched, 8 = thumb and index (an L), 9 = hooked index, 10 = fist or crossed index fingers.",
+        "pt": "Os números se montam como Lego: 37 = 三十七 (3·10·7), 248 = 两百四十八. Zero no meio se fala 零: 105 = 一百零五.\nPara contar coisas usa-se 两 (liǎng) em vez de 二: 两个 = dois (deles), 两张票 = dois ingressos.\nEm telefone e número de quarto o 1 vira yāo (幺).\n10.000 tem palavra própria, 万 (wàn): 30.000 = 三万.\nCom a mão: 6 = polegar e mindinho, 7 = pontas dos dedos juntas, 8 = polegar e indicador (um L), 9 = indicador dobrado, 10 = punho fechado ou indicadores em cruz."
+      },
+      "items": [
+        {
+          "text": "0",
+          "local": "零",
+          "roman": "líng"
+        },
+        {
+          "text": "1",
+          "local": "一",
+          "roman": "yī"
+        },
+        {
+          "text": "2",
+          "local": "二 · 两",
+          "roman": "èr · liǎng"
+        },
+        {
+          "text": "3",
+          "local": "三",
+          "roman": "sān"
+        },
+        {
+          "text": "4",
+          "local": "四",
+          "roman": "sì"
+        },
+        {
+          "text": "5",
+          "local": "五",
+          "roman": "wǔ"
+        },
+        {
+          "text": "6",
+          "local": "六",
+          "roman": "liù"
+        },
+        {
+          "text": "7",
+          "local": "七",
+          "roman": "qī"
+        },
+        {
+          "text": "8",
+          "local": "八",
+          "roman": "bā"
+        },
+        {
+          "text": "9",
+          "local": "九",
+          "roman": "jiǔ"
+        },
+        {
+          "text": "10",
+          "local": "十",
+          "roman": "shí"
+        },
+        {
+          "text": "11",
+          "local": "十一",
+          "roman": "shíyī"
+        },
+        {
+          "text": "12",
+          "local": "十二",
+          "roman": "shí'èr"
+        },
+        {
+          "text": "20",
+          "local": "二十",
+          "roman": "èrshí"
+        },
+        {
+          "text": "35",
+          "local": "三十五",
+          "roman": "sānshíwǔ"
+        },
+        {
+          "text": "99",
+          "local": "九十九",
+          "roman": "jiǔshíjiǔ"
+        },
+        {
+          "text": "100",
+          "local": "一百",
+          "roman": "yìbǎi"
+        },
+        {
+          "text": "105",
+          "local": "一百零五",
+          "roman": "yìbǎi líng wǔ"
+        },
+        {
+          "text": "150",
+          "local": "一百五",
+          "roman": "yìbǎi wǔ"
+        },
+        {
+          "text": "200",
+          "local": "两百",
+          "roman": "liǎngbǎi"
+        },
+        {
+          "text": "1.000",
+          "local": "一千",
+          "roman": "yìqiān"
+        },
+        {
+          "text": "2.000",
+          "local": "两千",
+          "roman": "liǎngqiān"
+        },
+        {
+          "text": "10.000",
+          "local": "一万",
+          "roman": "yíwàn"
+        },
+        {
+          "text": "¥35",
+          "local": "三十五块",
+          "roman": "sānshíwǔ kuài"
+        }
+      ]
+    },
+    {
+      "icon": "🍜",
+      "group": {
+        "en": "Eating out",
+        "pt": "Restaurante"
+      },
+      "items": [
+        {
+          "text": {
+            "en": "Menu, please",
+            "pt": "O cardápio, por favor"
+          },
+          "local": "请给我菜单",
+          "roman": "qǐng gěi wǒ càidān"
+        },
+        {
+          "text": {
+            "en": "Table for … people",
+            "pt": "Mesa para … pessoas"
+          },
+          "local": "…个人",
+          "roman": "… ge rén",
+          "note": {
+            "en": "Show the number with your hand.",
+            "pt": "Mostre o número com a mão."
+          }
+        },
+        {
+          "text": {
+            "en": "One of this, please (pointing)",
+            "pt": "Um desse, por favor (apontando)"
+          },
+          "local": "来一个这个",
+          "roman": "lái yí ge zhège"
+        },
+        {
+          "text": {
+            "en": "Not spicy",
+            "pt": "Sem pimenta"
+          },
+          "local": "不要辣",
+          "roman": "bú yào là"
+        },
+        {
+          "text": {
+            "en": "Just a little spicy",
+            "pt": "Pouca pimenta"
+          },
+          "local": "微辣",
+          "roman": "wēi là",
+          "note": {
+            "en": "Even \"a little\" in Hunan is a lot.",
+            "pt": "Em Hunan, até o \"pouco\" é bastante."
+          }
+        },
+        {
+          "text": {
+            "en": "No coriander",
+            "pt": "Sem coentro"
+          },
+          "local": "不要香菜",
+          "roman": "bú yào xiāngcài"
+        },
+        {
+          "text": {
+            "en": "A bottle of water",
+            "pt": "Uma garrafa de água"
+          },
+          "local": "一瓶水",
+          "roman": "yì píng shuǐ"
+        },
+        {
+          "text": {
+            "en": "Cold one, please",
+            "pt": "Gelada, por favor"
+          },
+          "local": "要冰的",
+          "roman": "yào bīng de",
+          "note": {
+            "en": "Water and drinks often come at room temperature or hot.",
+            "pt": "Água e bebida muitas vezes vêm em temperatura ambiente ou quente."
+          }
+        },
+        {
+          "text": {
+            "en": "A beer",
+            "pt": "Uma cerveja"
+          },
+          "local": "一瓶啤酒",
+          "roman": "yì píng píjiǔ"
+        },
+        {
+          "text": {
+            "en": "Delicious!",
+            "pt": "Muito gostoso!"
+          },
+          "local": "很好吃！",
+          "roman": "hěn hǎochī!"
+        },
+        {
+          "text": {
+            "en": "To take away / pack the leftovers",
+            "pt": "Para viagem / embrulhar o que sobrou"
+          },
+          "local": "打包",
+          "roman": "dǎbāo"
+        },
+        {
+          "text": {
+            "en": "The bill, please",
+            "pt": "A conta, por favor"
+          },
+          "local": "买单",
+          "roman": "mǎidān"
+        }
+      ]
+    },
+    {
+      "icon": "🏨",
+      "group": {
+        "en": "Day to day",
+        "pt": "Dia a dia"
+      },
+      "items": [
+        {
+          "text": {
+            "en": "What's the Wi-Fi password?",
+            "pt": "Qual a senha do Wi-Fi?"
+          },
+          "local": "WiFi密码是多少？",
+          "roman": "WiFi mìmǎ shì duōshao?"
+        },
+        {
+          "text": {
+            "en": "Can you keep our luggage?",
+            "pt": "Pode guardar nossas malas?"
+          },
+          "local": "可以寄存行李吗？",
+          "roman": "kěyǐ jìcún xíngli ma?"
+        },
+        {
+          "text": {
+            "en": "Can I take a photo?",
+            "pt": "Posso tirar foto?"
+          },
+          "local": "可以拍照吗？",
+          "roman": "kěyǐ pāizhào ma?"
+        },
+        {
+          "text": {
+            "en": "Could you take a photo of us?",
+            "pt": "Pode tirar uma foto nossa?"
+          },
+          "local": "可以帮我们拍张照吗？",
+          "roman": "kěyǐ bāng wǒmen pāi zhāng zhào ma?"
+        },
+        {
+          "text": {
+            "en": "What time does it open / close?",
+            "pt": "Que horas abre / fecha?"
+          },
+          "local": "几点开门？几点关门？",
+          "roman": "jǐ diǎn kāimén? jǐ diǎn guānmén?"
+        },
+        {
+          "text": {
+            "en": "Where can I charge my phone?",
+            "pt": "Onde posso carregar o celular?"
+          },
+          "local": "哪里可以充电？",
+          "roman": "nǎlǐ kěyǐ chōngdiàn?"
+        },
+        {
+          "text": {
+            "en": "Pharmacy",
+            "pt": "Farmácia"
+          },
+          "local": "药店",
+          "roman": "yàodiàn"
+        },
+        {
+          "text": {
+            "en": "I need a doctor",
+            "pt": "Preciso de um médico"
+          },
+          "local": "我需要看医生",
+          "roman": "wǒ xūyào kàn yīshēng"
+        },
+        {
+          "text": {
+            "en": "Help!",
+            "pt": "Socorro!"
+          },
+          "local": "救命！",
+          "roman": "jiùmìng!",
+          "note": {
+            "en": "Emergency numbers: police 110, ambulance 120.",
+            "pt": "Emergência: polícia 110, ambulância 120."
+          }
+        },
+        {
+          "text": {
+            "en": "I lost my passport",
+            "pt": "Perdi meu passaporte"
+          },
+          "local": "我的护照丢了",
+          "roman": "wǒ de hùzhào diū le"
+        }
+      ]
+    },
+    {
+      "icon": "💬",
+      "group": {
+        "en": "Common expressions",
+        "pt": "Expressões comuns"
+      },
+      "items": [
+        {
+          "text": {
+            "en": "Yes / right",
+            "pt": "Sim / isso"
+          },
+          "local": "对",
+          "roman": "duì",
+          "note": {
+            "en": "Chinese has no plain \"yes\": people repeat the verb (要 = want it, 有 = have it).",
+            "pt": "Não existe um \"sim\" solto: repete-se o verbo (要 = quero, 有 = tem)."
+          }
+        },
+        {
+          "text": {
+            "en": "OK / sure",
+            "pt": "Ok / pode ser"
+          },
+          "local": "好的",
+          "roman": "hǎo de"
+        },
+        {
+          "text": {
+            "en": "Is there…? / There isn't",
+            "pt": "Tem…? / Não tem"
+          },
+          "local": "有…吗？ / 没有",
+          "roman": "yǒu … ma? / méiyǒu",
+          "note": {
+            "en": "Méiyǒu is the answer you'll hear most.",
+            "pt": "Méiyǒu é a resposta que mais se ouve."
+          }
+        },
+        {
+          "text": {
+            "en": "No need, thanks",
+            "pt": "Não precisa, obrigado"
+          },
+          "local": "不用了，谢谢",
+          "roman": "bú yòng le, xièxie",
+          "note": {
+            "en": "The polite way to wave off touts and offers.",
+            "pt": "O jeito educado de dispensar vendedor e oferta."
+          }
+        },
+        {
+          "text": {
+            "en": "No problem",
+            "pt": "Sem problema"
+          },
+          "local": "没问题",
+          "roman": "méi wèntí"
+        },
+        {
+          "text": {
+            "en": "Wait a moment",
+            "pt": "Espera um pouco"
+          },
+          "local": "等一下",
+          "roman": "děng yíxià"
+        },
+        {
+          "text": {
+            "en": "I don't know",
+            "pt": "Não sei"
+          },
+          "local": "我不知道",
+          "roman": "wǒ bù zhīdào"
+        },
+        {
+          "text": {
+            "en": "Sorry to bother you",
+            "pt": "Desculpe incomodar"
+          },
+          "local": "麻烦你了",
+          "roman": "máfan nǐ le",
+          "note": {
+            "en": "Used when asking for a favour; also a warm thank-you afterwards.",
+            "pt": "Para pedir um favor, e também como um obrigado caloroso depois."
+          }
+        },
+        {
+          "text": {
+            "en": "So beautiful!",
+            "pt": "Que lindo!"
+          },
+          "local": "太漂亮了！",
+          "roman": "tài piàoliang le!"
+        },
+        {
+          "text": {
+            "en": "Cheers!",
+            "pt": "Saúde!"
+          },
+          "local": "干杯！",
+          "roman": "gānbēi!",
+          "note": {
+            "en": "Literally \"dry the glass\".",
+            "pt": "Literalmente \"seca o copo\"."
+          }
+        },
+        {
+          "text": {
+            "en": "Go for it! / You can do it!",
+            "pt": "Força! / Vai que dá!"
+          },
+          "local": "加油！",
+          "roman": "jiāyóu!"
+        },
+        {
+          "text": {
+            "en": "Take care (when you leave a shop)",
+            "pt": "Vá com cuidado (ao sair da loja)"
+          },
+          "local": "慢走",
+          "roman": "màn zǒu",
+          "note": {
+            "en": "You'll hear it, no need to answer; a 谢谢 is enough.",
+            "pt": "Você vai ouvir; não precisa responder, um 谢谢 basta."
+          }
+        }
+      ]
+    }
   ]
 }

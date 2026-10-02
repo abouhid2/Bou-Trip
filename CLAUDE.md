@@ -212,6 +212,24 @@ da data (trem na China: 15 dias antes; Cidade Proibida: 7). "Já comprei" fica s
 ```
 Ponha no `detail` o que costuma dar errado na hora: **qual estação** (nome local), qual portão, qual pacote.
 
+### Frases úteis (`phrases[]`) — opcional
+Cria a aba 💬 **Frases**: o básico na língua local, em grupos (cumprimentos, direções, números…).
+Um toque abre a frase em tela cheia para mostrar à pessoa, com botão "Ouvir" se o aparelho tiver a voz.
+```jsonc
+"phrasesLang": "zh-CN",                 // voz do botão "Ouvir" (código BCP-47); sem ele, o botão não aparece
+"phrases": [{
+  "icon": "👋",
+  "group": { "en": "Greetings", "pt": "Cumprimentos" },
+  "note":  { "en": "...", "pt": "..." },  // opcional, explica a regra do grupo (quebras de linha viram linhas)
+  "compact": true,                        // opcional: grade de quadradinhos (bom para números)
+  "items": [
+    { "text": { "en": "Hello", "pt": "Olá" }, "local": "你好", "roman": "nǐ hǎo",
+      "note": { "en": "...", "pt": "..." } }  // note opcional
+  ]
+}]
+```
+Use `…` onde entra um nome ou lugar ("…在哪里？"); a voz pula esse trecho. Confira a romanização com tons.
+
 As datas dos dias são **calculadas automaticamente** a partir de `startDate` somando as noites.
 
 ## 3. Gere o HTML (e o KML)
