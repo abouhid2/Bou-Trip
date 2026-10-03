@@ -2455,21 +2455,41 @@
         },
         {
           "note": {
-            "en": "Oct 27 (Tue) - Maling Tianguan, in Jiande, on the ridge where Jiande, Tonglu and Pujiang meet. Two things brought you here and they are the same circuit: the Buddha Hand Bridge, a golden walkway held up by a pair of 22 m stone hands at around 1000 m, and the Scream Slide, 3900 m of cliff-hugging chute with a 230 m drop, which is simply how you come back down the mountain. Go up by the magic carpet, do the bridge and the sky mirror on top, come down soaked. Tuesday is the point: on weekends the bridge queue is the worst thing in the park.",
-            "pt": "27/out (ter) - Maling Tianguan, em Jiande, na serra onde Jiande, Tonglu e Pujiang se encontram. Duas coisas trouxeram voces aqui e sao o mesmo circuito: a Ponte das Maos de Buda, uma passarela dourada erguida por duas maos de pedra de 22 m a cerca de 1000 m, e o tobaga Scream Slide, 3900 m de calha colada no penhasco com 230 m de desnivel, que e simplesmente como se desce a montanha. Suba de tapete rolante, faca a ponte e o espelho do ceu no alto, desca encharcado. Terca e o ponto: no fim de semana a fila da ponte e a pior coisa do parque."
+            "en": "Oct 27 (Tue) - The day with the cousins. They sleep in Hangzhou (Zhejiang Xizi Hotel), you come down from Shanghai, and the four of you meet at Hangzhou East at 08:30. From there one chartered 7-seat van with a driver does the whole day: Maling Tianguan in Jiande, 2 h each way, for the Buddha Hand Bridge and the Scream Slide, then drops you at Lou Wai Lou on Gushan for dinner by West Lake. A taxi back from Jiande does not exist, which is why the van and not the train to Tonglu. You end the night on Hefang Street and take the last trains back to Shanghai; your hotel stays BAIhome the whole time. Long day: up at 05:45, in bed around 23:30.",
+            "pt": "27/out (ter) - O dia com os primos. Eles dormem em Hangzhou (Zhejiang Xizi Hotel), vocês descem de Shanghai e os quatro se encontram na Hangzhou Leste às 08:30. Dali uma van de 7 lugares fretada com motorista faz o dia inteiro: Maling Tianguan em Jiande, 2 h para cada lado, pela Ponte das Mãos de Buda e pelo Scream Slide, e depois deixa vocês no Lou Wai Lou, na ilha de Gushan, para jantar à beira do Lago Oeste. Táxi de volta de Jiande não existe, por isso a van e não o trem até Tonglu. A noite termina na Hefang Street e vocês pegam um dos últimos trens para Shanghai; o hotel continua o BAIhome. Dia longo: acordar 05:45, cama por volta das 23:30."
           },
           "items": [
             {
               "type": "move",
               "period": "morning",
-              "time": "~06:30 → ~07:30",
+              "time": "06:15 → ~06:50",
               "text": {
-                "en": "G-train Shanghai Hongqiao to Hangzhou East",
-                "pt": "Trem G Shanghai Hongqiao ate Hangzhou Leste"
+                "en": "Didi from the hotel to Hongqiao station",
+                "pt": "Didi do hotel até a estação Hongqiao"
               },
               "note": {
-                "en": "Leave early: the park stops letting people in mid-afternoon, and the whole day hinges on the morning margin. Trains run every 5 to 15 min at peak and take 34 min on the fastest, under an hour on most.",
-                "pt": "Saia cedo: o parque para de deixar entrar no meio da tarde, e o dia inteiro depende da margem da manha. Os trens saem a cada 5 a 15 min no pico e levam 34 min no mais rapido, menos de uma hora na maioria."
+                "en": "BAIhome is at People's Square, not next to Hongqiao: it is about 18 km, 30 to 40 min by car at that hour (~¥70-90). Metro line 2 also goes straight there (People's Square to Hongqiao Railway Station, ~40 min), but at 06:00 the Didi gives you the margin. Get there 30 min early: passport check and security at Hongqiao take time.",
+                "pt": "O BAIhome fica na Praça do Povo, não colado em Hongqiao: são uns 18 km, 30 a 40 min de carro nesse horário (~¥70-90). O metrô linha 2 também vai direto (People's Square até Hongqiao Railway Station, ~40 min), mas às 06:00 o Didi dá a folga. Cheguem 30 min antes: conferência de passaporte e segurança em Hongqiao demoram."
+              },
+              "to": {
+                "name": "Shanghai Hongqiao 上海虹桥站",
+                "coords": [
+                  31.196,
+                  121.3162
+                ]
+              }
+            },
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "~07:15 → ~08:25",
+              "text": {
+                "en": "G-train Hongqiao → Hangzhou East",
+                "pt": "Trem G Hongqiao → Hangzhou Leste"
+              },
+              "note": {
+                "en": "About 1 h, ¥73 each. Buy it on 12306 the day sales open (Oct 13): rush-hour trains sell out. Aim to arrive by 08:30, which is when the van leaves.",
+                "pt": "Cerca de 1 h, ¥73 cada. Comprem no 12306 no dia em que a venda abre (13/out): trem de hora do rush esgota. A meta é chegar até 08:30, que é quando a van sai."
               },
               "from": {
                 "name": "Shanghai Hongqiao 上海虹桥站",
@@ -2487,16 +2507,33 @@
               }
             },
             {
-              "type": "move",
+              "type": "bullet",
               "period": "morning",
-              "time": "~08:00 → ~08:35",
+              "time": "08:30",
               "text": {
-                "en": "Hangzhou East to Tonglu, then 25 km by taxi",
-                "pt": "Hangzhou Leste ate Tonglu, depois 25 km de taxi"
+                "en": "Meet the cousins at the arrivals exit 到达口",
+                "pt": "Encontro com os primos na saída de desembarque 到达口"
               },
               "note": {
-                "en": "Tonglu, not Jiande: the park sits about 25 km from Tonglu and the train leg is shorter, 20 to 38 min against 40 to 55 min to Jiande. From Tonglu station it is roughly 35 to 40 min by car. Arrange the return car now, with the same driver or with the park: this is a rural mountain road and at closing time there may be nothing waiting.",
-                "pt": "Tonglu, nao Jiande: o parque fica a uns 25 km de Tonglu e a perna de trem e mais curta, 20 a 38 min contra 40 a 55 min ate Jiande. Da estacao de Tonglu sao uns 35 a 40 min de carro. Combine o carro da volta agora, com o mesmo motorista ou com o parque: e estrada de montanha e na hora de fechar pode nao ter nada esperando."
+                "en": "Hangzhou East is one of the biggest stations in Asia: fix the exact spot the day before by message (the arrivals exit of your train, or the McDonald's in the arrivals hall). Send them the train number and the car you are in.",
+                "pt": "A Hangzhou Leste é uma das maiores estações da Ásia: combinem o ponto exato no dia anterior por mensagem (a saída de desembarque do trem de vocês, ou o McDonald's do saguão de chegadas). Mandem o número do trem e o vagão."
+              },
+              "coords": [
+                30.2936,
+                120.2082
+              ]
+            },
+            {
+              "type": "move",
+              "period": "morning",
+              "time": "08:30 → ~10:30",
+              "text": {
+                "en": "Chartered van to Maling Tianguan (~130 km)",
+                "pt": "Van fretada até Maling Tianguan (~130 km)"
+              },
+              "note": {
+                "en": "A 7-seat Buick GL8 with a driver from 08:30 to about 19:00, booked by the cousins through their hotel concierge on the 25th or 26th. Around ¥1,000-1,300 for the day, so ~¥575 per couple: cheaper than two long-distance Didis and no risk of being stuck in Jiande. No luggage: it all stays at the hotels.",
+                "pt": "Uma Buick GL8 de 7 lugares com motorista das 08:30 até umas 19:00, reservada pelos primos no concierge do hotel deles no dia 25 ou 26. Cerca de ¥1.000-1.300 o dia, então ~¥575 por casal: mais barato que dois Didis de longa distância e sem risco de ficar preso em Jiande. Sem malas: tudo fica nos hotéis."
               },
               "from": {
                 "name": "Hangzhou East 杭州东站",
@@ -2506,10 +2543,10 @@
                 ]
               },
               "to": {
-                "name": "Tonglu 桐庐站",
+                "name": "Maling Tianguan 马岭天观",
                 "coords": [
-                  29.7916,
-                  119.7272
+                  29.5695,
+                  119.7338
                 ]
               }
             },
@@ -2543,6 +2580,19 @@
               }
             },
             {
+              "type": "bullet",
+              "period": "afternoon",
+              "time": "13:00",
+              "text": {
+                "en": "Light lunch at the top or the base",
+                "pt": "Lanche leve no topo ou na base"
+              },
+              "note": {
+                "en": "Food up there is basic and expensive: bring water and fruit from Hangzhou or Shanghai. Bring a jacket too: at ~1000 m late October can be 8-10 °C colder than the city.",
+                "pt": "A comida lá é básica e cara: levem água e frutas de Shanghai. Levem casaco também: a ~1000 m o fim de outubro pode estar 8-10 °C mais frio que a cidade."
+              }
+            },
+            {
               "type": "star",
               "period": "afternoon",
               "text": {
@@ -2556,7 +2606,8 @@
               "coords": [
                 29.5695,
                 119.7338
-              ]
+              ],
+              "time": "~14:00 → 14:40"
             },
             {
               "type": "warn",
@@ -2572,21 +2623,110 @@
             },
             {
               "type": "move",
-              "period": "night",
-              "time": "~16:00 → ~19:30",
+              "period": "afternoon",
+              "time": "14:45 → ~17:15",
               "text": {
-                "en": "Back to Shanghai via Tonglu and Hangzhou East",
-                "pt": "Volta a Shanghai via Tonglu e Hangzhou Leste"
+                "en": "Van back to Hangzhou, drop-off at Gushan",
+                "pt": "Van de volta a Hangzhou, deixa vocês em Gushan"
               },
               "note": {
-                "en": "Change into dry clothes before you get in the car. It is about 2 to 2.5 h door to door from the park to the hotel, so plan on being back around dinner time.",
-                "pt": "Troque de roupa seca antes de entrar no carro. Sao cerca de 2 a 2h30 de porta a porta do parque ate o hotel, entao conte com voltar na hora do jantar."
+                "en": "Change into dry clothes before getting in. About 2h15 on the road.",
+                "pt": "Troquem de roupa seca antes de entrar. Cerca de 2h15 de estrada."
+              },
+              "to": {
+                "name": "Lou Wai Lou 楼外楼",
+                "coords": [
+                  30.2527,
+                  120.1361
+                ]
+              }
+            },
+            {
+              "type": "star",
+              "period": "night",
+              "time": "17:30 → 19:00",
+              "text": {
+                "en": "Dinner at Lou Wai Lou 楼外楼",
+                "pt": "Jantar no Lou Wai Lou 楼外楼"
+              },
+              "note": {
+                "en": "West Lake's institution since 1848, on Gushan island. Order 西湖醋鱼 (West Lake fish in sweet vinegar), 东坡肉 (Dongpo pork) and 龙井虾仁 (shrimp with Longjing tea). ~¥180 per person. The cousins book a table for four through the concierge the day before. Peanut allergy: show the card in the Phrases tab when you order.",
+                "pt": "A instituição do Lago Oeste desde 1848, na ilha de Gushan. Peçam 西湖醋鱼 (peixe do lago no vinagre agridoce), 东坡肉 (porco Dongpo) e 龙井虾仁 (camarão com chá Longjing). ~¥180 por pessoa. Os primos reservam mesa para quatro pelo concierge na véspera. Alergia a amendoim: mostrem o cartão da aba Frases ao pedir."
+              },
+              "address": "30 Gushan Road, Xihu District, Hangzhou · 杭州市西湖区孤山路30号",
+              "coords": [
+                30.2527,
+                120.1361
+              ]
+            },
+            {
+              "type": "bullet",
+              "period": "night",
+              "time": "19:00 → 19:20",
+              "text": {
+                "en": "Walk Gushan and the Bai Causeway",
+                "pt": "Caminhada por Gushan e pelo dique Bai"
+              },
+              "note": {
+                "en": "From the island along the Bai Causeway to the north shore: West Lake lit up at night is the postcard moment of the trip.",
+                "pt": "Da ilha pelo dique Bai até a margem norte: o Lago Oeste iluminado à noite é o momento cartão-postal da viagem."
+              }
+            },
+            {
+              "type": "bullet",
+              "period": "night",
+              "time": "19:30 → 21:00",
+              "text": {
+                "en": "Hefang Street 河坊街",
+                "pt": "Hefang Street 河坊街"
+              },
+              "note": {
+                "en": "Historic street of snacks, tea and crafts, alive until about 22:00. Didi there from the north shore, ~15 min, ~¥25. Your cut-off is 21:00: the cousins stay, you head for the train.",
+                "pt": "Rua histórica de petiscos, chá e artesanato, viva até umas 22:00. Didi até lá da margem norte, ~15 min, ~¥25. O limite de vocês é 21:00: os primos ficam, vocês vão para o trem."
+              },
+              "address": "Hefang Street, Shangcheng District, Hangzhou · 杭州市上城区河坊街",
+              "coords": [
+                30.2421,
+                120.1699
+              ]
+            },
+            {
+              "type": "move",
+              "period": "night",
+              "time": "21:00 → ~21:30",
+              "text": {
+                "en": "Didi Hefang Street → Hangzhou East",
+                "pt": "Didi Hefang Street → Hangzhou Leste"
+              },
+              "note": {
+                "en": "About 20-25 min. Arrive 20 min before the train.",
+                "pt": "Cerca de 20-25 min. Cheguem 20 min antes do trem."
+              },
+              "to": {
+                "name": "Hangzhou East 杭州东站",
+                "coords": [
+                  30.2936,
+                  120.2082
+                ]
+              }
+            },
+            {
+              "type": "move",
+              "period": "night",
+              "time": "~21:50 → ~22:50",
+              "text": {
+                "en": "G-train Hangzhou East → Shanghai, then Didi to the hotel",
+                "pt": "Trem G Hangzhou Leste → Shanghai, depois Didi até o hotel"
+              },
+              "note": {
+                "en": "The last trains to Shanghai leave around 22:00-22:30, so take one around 21:50 and keep a later one as a fallback. Shanghai Station (上海站) is closer to the hotel than Hongqiao, if your train goes there. From Hongqiao, Didi to the hotel is ~30 min: metro line 2 may already be closing.",
+                "pt": "Os últimos trens para Shanghai saem por volta das 22:00-22:30, então peguem um por volta das 21:50 e deixem um mais tarde como plano B. A estação Shanghai (上海站) fica mais perto do hotel que Hongqiao, se o trem for para lá. De Hongqiao, Didi até o hotel ~30 min: o metrô linha 2 pode já estar fechando."
               },
               "from": {
-                "name": "Tonglu 桐庐站",
+                "name": "Hangzhou East 杭州东站",
                 "coords": [
-                  29.7916,
-                  119.7272
+                  30.2936,
+                  120.2082
                 ]
               },
               "to": {
@@ -4566,16 +4706,16 @@
       "date": "2026-10-27",
       "opens": "2026-10-13",
       "what": {
-        "en": "Train Shanghai Hongqiao → Hangzhou East → Tonglu, out and back",
-        "pt": "Trem Shanghai Hongqiao → Hangzhou Leste → Tonglu, ida e volta"
+        "en": "Train Shanghai Hongqiao ⇄ Hangzhou East, out and back",
+        "pt": "Trem Shanghai Hongqiao ⇄ Hangzhou Leste, ida e volta"
       },
       "where": {
         "en": "12306 or Trip.com",
         "pt": "12306 ou Trip.com"
       },
       "detail": {
-        "en": "Hongqiao (虹桥站) ~06:30 → Hangzhou EAST (杭州东站) → Tonglu (桐庐站), then ~25 km by taxi. Agree the return car on the way in.",
-        "pt": "Hongqiao (虹桥站) ~06:30 → Hangzhou LESTE (杭州东站) → Tonglu (桐庐站), depois ~25 km de táxi. Combine o carro da volta já na ida."
+        "en": "Out: Hongqiao (虹桥站) ~07:15 → Hangzhou EAST (杭州东站), arriving by 08:30 to meet the cousins.\nBack: Hangzhou East ~21:50 → Shanghai (Hongqiao or 上海站). The last trains leave around 22:00-22:30. ¥73 each per leg.",
+        "pt": "Ida: Hongqiao (虹桥站) ~07:15 → Hangzhou LESTE (杭州东站), chegando até 08:30 para encontrar os primos.\nVolta: Hangzhou Leste ~21:50 → Shanghai (Hongqiao ou 上海站). Os últimos trens saem por volta das 22:00-22:30. ¥73 cada por trecho."
       },
       "kind": "train"
     },
@@ -4587,14 +4727,31 @@
         "pt": "Parque da Ponte das Mãos de Buda e Scream Slide"
       },
       "where": {
-        "en": "Confirm by phone/WeChat before buying: 190 6961 7081 · 131 1287 6408",
-        "pt": "Confirme por telefone/WeChat antes de comprar: 190 6961 7081 · 131 1287 6408"
+        "en": "Ticket office or Trip.com; confirm by phone/WeChat: 190 6961 7081 · 131 1287 6408",
+        "pt": "Bilheteria ou Trip.com; confirme por telefone/WeChat: 190 6961 7081 · 131 1287 6408"
       },
       "detail": {
-        "en": "Sources disagree on hours (08:30-16:30 / 07:30-17:00) and price (¥108 / ¥188 scenery / ¥388 full pass with the slide). Ask whether the water slide runs in late October.",
-        "pt": "As fontes divergem no horário (08:30-16:30 / 07:30-17:00) e no preço (¥108 / ¥188 só paisagem / ¥388 passe completo com o tobogã). Pergunte se o tobogã de água funciona no fim de outubro."
+        "en": "The cousins' estimate: entry ~¥100-130, ride up ~¥60-80, slide ~¥50-60, so ~¥220-260 each. Other sources list ¥108 / ¥188 scenery / ¥388 full pass with the slide. Ask whether the water slide runs in late October.",
+        "pt": "Estimativa dos primos: entrada ~¥100-130, subida ~¥60-80, tobogã ~¥50-60, então ~¥220-260 cada. Outras fontes falam em ¥108 / ¥188 só paisagem / ¥388 passe completo com o tobogã. Pergunte se o tobogã de água funciona no fim de outubro."
       },
       "kind": "tour"
+    },
+    {
+      "id": "hz-van",
+      "date": "2026-10-27",
+      "kind": "tour",
+      "what": {
+        "en": "Van with driver + table at Lou Wai Lou (the cousins book)",
+        "pt": "Van com motorista + mesa no Lou Wai Lou (os primos reservam)"
+      },
+      "where": {
+        "en": "Concierge of the Zhejiang Xizi Hotel, on the 25th or 26th",
+        "pt": "Concierge do Zhejiang Xizi Hotel, no dia 25 ou 26"
+      },
+      "detail": {
+        "en": "Check with the cousins that both are booked: 7-seat van (Buick GL8) 08:30-~19:00, Hangzhou East → Maling Tianguan → Lou Wai Lou, ~¥1,000-1,300, half is yours (~¥575). Table for four at 17:30.\nThe day before, fix the meeting point at Hangzhou East by message.",
+        "pt": "Confirmem com os primos que as duas reservas saíram: van de 7 lugares (Buick GL8) 08:30-~19:00, Hangzhou Leste → Maling Tianguan → Lou Wai Lou, ~¥1.000-1.300, metade é de vocês (~¥575). Mesa para quatro às 17:30.\nNa véspera, combinem por mensagem o ponto de encontro na Hangzhou Leste."
+      }
     }
   ],
   "phrasesLang": "zh-CN",

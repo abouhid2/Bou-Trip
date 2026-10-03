@@ -418,14 +418,34 @@
       <Point><coordinates>120.2082,30.2936,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>🚉 Tonglu 桐庐站</name>
+      <name>Encontro com os primos na saída de desembarque 到达口</name>
       <description>Shanghai</description>
-      <Point><coordinates>119.7272,29.7916,0</coordinates></Point>
+      <Point><coordinates>120.2082,30.2936,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Maling Tianguan 马岭天观</name>
+      <description>Shanghai</description>
+      <Point><coordinates>119.7338,29.5695,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Ponte das Maos de Buda 佛手金桥</name>
       <description>Shanghai · Zizhou Village, Qiantan, Jiande, Hangzhou · 浙江省杭州市建德市乾潭镇梓洲村</description>
       <Point><coordinates>119.7338,29.5695,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>🚉 Lou Wai Lou 楼外楼</name>
+      <description>Shanghai</description>
+      <Point><coordinates>120.1361,30.2527,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Jantar no Lou Wai Lou 楼外楼</name>
+      <description>Shanghai · 30 Gushan Road, Xihu District, Hangzhou · 杭州市西湖区孤山路30号</description>
+      <Point><coordinates>120.1361,30.2527,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Hefang Street 河坊街</name>
+      <description>Shanghai · Hefang Street, Shangcheng District, Hangzhou · 杭州市上城区河坊街</description>
+      <Point><coordinates>120.1699,30.2421,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Trem G Shanghai Hongqiao ate Suzhou, 25 min</name>
