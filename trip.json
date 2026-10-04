@@ -1363,6 +1363,25 @@
           },
           "items": [
             {
+              "type": "star",
+              "optional": true,
+              "period": "morning",
+              "time": "~05:30 → ~08:00",
+              "text": {
+                "en": "Sunrise at Xianggong Hill (相公山)",
+                "pt": "Nascer do sol no Xianggong Shan (相公山)"
+              },
+              "note": {
+                "en": "Considered the best viewpoint over the Li River: from the top you look down on a wide bend of the river wrapped in karst peaks, and at sunrise the mist sits between them. It costs an early alarm: a car leaves Yangshuo around 05:30, sunrise is near 06:40, and the last stretch is 15-20 minutes of steps, with a small entrance fee at the gate. The hill is only a few kilometres from Xingping, so the same car drops you there afterwards and you skip the bus below. If the morning is foggy, go back to sleep: it is all about visibility.",
+                "pt": "Considerado o melhor mirante do rio Li: lá de cima vocês veem uma curva larga do rio cercada de picos de karst, e no nascer do sol a névoa fica entre eles. O preço é acordar cedo: um carro sai de Yangshuo por volta das 05:30, o sol nasce perto das 06:40, e o fim é uma subida de 15-20 minutos de escadas, com um ingresso pequeno na entrada. O morro fica a poucos quilômetros de Xingping, então o mesmo carro deixa vocês lá depois e o ônibus abaixo fica dispensado. Se a manhã amanhecer com neblina, voltem a dormir: é tudo visibilidade."
+              },
+              "address": "Xianggong Hill, Xingping, Yangshuo County · 广西桂林市阳朔县兴坪镇 相公山",
+              "coords": [
+                24.9258,
+                110.479
+              ]
+            },
+            {
               "type": "move",
               "period": "morning",
               "time": "~40 min",
