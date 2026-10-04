@@ -711,8 +711,8 @@
         },
         {
           "note": {
-            "en": "17 Oct, Sat - Tianmen Shan all day and the Fox Fairy at night, which is the only sane way to buy that ticket: the theatre sits in the valley at the foot of Tianmen, ten minutes from the cable car base, and Wulingyuan is an hour away. Put the show on any other night and you pay two hours of driving for it. So today runs long and stays in the city. The booking also fixed the shape of it: Furong is only the night of the 18th, so you keep the room in Wulingyuan and the bags stay in it. Up early anyway, because the cable car queue is the whole game: the world's longest cableway lifts you off a city street and hangs you over the 99 Bends. Glass walkways on the cliff in the morning, the tunnel escalators through the mountain, Heaven's Gate and the 999 steps in the afternoon. Then a long slow evening in Zhangjiajie city, dinner without rushing, and the show at 20:20. Bring a warm layer: the stage is a mountainside and you sit outdoors for an hour.",
-            "pt": "17/out, sab - Tianmen Shan o dia inteiro e a Raposa de Tianmen a noite, que e o unico jeito sensato de comprar esse ingresso: o teatro fica no vale ao pe do Tianmen, a dez minutos da base do teleferico, e Wulingyuan fica a uma hora dali. Bote o show em qualquer outra noite e voce paga duas horas de carro por ele. Entao hoje corre longo e fica na cidade. A reserva tambem resolveu o formato: Furong e so a noite do dia 18, entao voce mantem o quarto em Wulingyuan e as malas ficam nele. Saia cedo mesmo assim, porque a fila do teleferico e o jogo inteiro: o teleferico mais longo do mundo te levanta de uma rua da cidade e te pendura sobre as 99 Curvas. Passarelas de vidro no penhasco de manha, as escadas rolantes do tunel atravessando a montanha, o Portao do Ceu e os 999 degraus a tarde. Depois uma noite longa e lenta na cidade de Zhangjiajie, jantar sem pressa, e o show as 20:20. Leve um casaco: o palco e uma encosta de montanha e voce fica sentado ao ar livre por uma hora."
+            "en": "17 Oct, Sat - Tianmen Shan all day, then the 72 Qilou lighting up at dusk, and back to the same bed at a sane hour. The booking fixed the shape of it: Furong is only the night of the 18th, so you keep the room in Wulingyuan and the bags stay in it. Up early, because the cable car queue is the whole game: the world's longest cableway lifts you off a city street and hangs you over the 99 Bends. Glass walkways on the cliff in the morning, the tunnel escalators through the mountain, Heaven's Gate and the 999 steps in the afternoon, the 99 Bends bus down. Then a slow hour in Zhangjiajie city and the 72 Qilou, the giant stilt house against the rock, for dinner as its lights come on. No ticket tonight, no fixed time: leave when you have had enough, and you are in Wulingyuan by about 21:00 with a quiet evening to pack for tomorrow.",
+            "pt": "17/out, sáb - Tianmen Shan o dia inteiro, depois o 72 Qilou acendendo no fim da tarde, e de volta para a mesma cama num horário decente. A reserva resolveu o formato: Furong é só a noite do dia 18, então vocês mantêm o quarto em Wulingyuan e as malas ficam nele. Saiam cedo, porque a fila do teleférico é o jogo inteiro: o teleférico mais longo do mundo levanta vocês de uma rua da cidade e os pendura sobre as 99 Curvas. Passarelas de vidro no penhasco de manhã, as escadas rolantes do túnel atravessando a montanha, o Portão do Céu e os 999 degraus à tarde, o ônibus das 99 Curvas na descida. Depois uma hora lenta na cidade de Zhangjiajie e o 72 Qilou, a palafita gigante encostada na rocha, para jantar enquanto as luzes acendem. Sem ingresso e sem horário hoje à noite: vão embora quando cansarem, e por volta das 21:00 estão em Wulingyuan com a noite tranquila para arrumar a mala de amanhã."
           },
           "items": [
             {
@@ -774,8 +774,8 @@
                 "pt": "Almoco no cume"
               },
               "note": {
-                "en": "Options up here are canteen-grade and overpriced, but coming down and going back up is not a thing. Eat, and keep moving - today has a train at the end of it.",
-                "pt": "As opcoes aqui em cima sao nivel refeitorio e caras, mas descer e subir de novo nao existe. Coma e siga em frente - hoje tem um trem no fim."
+                "en": "Options up here are canteen-grade and overpriced, but coming down and going back up is not a thing. Eat, and keep moving: the best of the mountain is still ahead.",
+                "pt": "As opcoes aqui em cima sao nivel refeitorio e caras, mas descer e subir de novo nao existe. Coma e siga em frente: o melhor da montanha ainda vem."
               }
             },
             {
@@ -818,61 +818,52 @@
                 "pt": "Onibus pela estrada das 99 Curvas"
               },
               "note": {
-                "en": "Tongtian Avenue switchbacks 99 times down the mountain and the ride is a sight in itself. This is the back half of route A and it delivers you to the base station downtown, where the car and the bags are waiting.",
-                "pt": "A Avenida Tongtian faz 99 curvas fechadas descendo a montanha e o trajeto e por si so uma atracao. Esta e a segunda metade da rota A e te entrega na estacao base, no centro, onde o carro e as malas estao esperando."
+                "en": "Tongtian Avenue switchbacks 99 times down the mountain and the ride is a sight in itself. This is the back half of route A and it delivers you to the base station downtown, where the car is waiting.",
+                "pt": "A Avenida Tongtian faz 99 curvas fechadas descendo a montanha e o trajeto e por si so uma atracao. Esta e a segunda metade da rota A e te entrega na estacao base, no centro, onde o carro esta esperando."
               }
             },
             {
               "type": "bullet",
               "period": "afternoon",
-              "time": "~16:00–18:00",
+              "time": "~16:00–17:30",
               "text": {
                 "en": "Slow down in Zhangjiajie city",
                 "pt": "Desacelere na cidade de Zhangjiajie"
               },
               "note": {
-                "en": "Four hours between the mountain and the show, and there is no point driving back to Wulingyuan to fill them. A cafe, a foot massage, a shower somewhere if the hotel will sell you a day room. You have been on a mountain since 08:00 and the evening is still ahead.",
-                "pt": "Quatro horas entre a montanha e o show, e nao adianta voltar para Wulingyuan para preencher. Um cafe, uma massagem nos pes, um banho em algum lugar se algum hotel te vender day-use. Voce esta numa montanha desde as 08:00 e a noite ainda vem."
-              }
-            },
-            {
-              "type": "bullet",
-              "period": "night",
-              "time": "~18:00–19:30",
-              "text": {
-                "en": "Early dinner in the city",
-                "pt": "Jantar cedo na cidade"
-              },
-              "note": {
-                "en": "Eat before, not after. The show ends at 21:25 and you still have an hour of road back to Wulingyuan. Be at the theatre by 19:50: they ask for thirty minutes ahead and the last stretch is a shuttle from the cable car base.",
-                "pt": "Coma antes, nao depois. O show acaba as 21:25 e voce ainda tem uma hora de estrada de volta para Wulingyuan. Esteja no teatro as 19:50: eles pedem trinta minutos de antecedencia e o ultimo trecho e um shuttle desde a base do teleferico."
+                "en": "You have been on a mountain since 08:00. A cafe or a foot massage near the cable car base, then a 15-minute car ride to the 72 Qilou while it is still light.",
+                "pt": "Vocês estão numa montanha desde as 08:00. Um café ou uma massagem nos pés perto da base do teleférico, depois 15 minutos de carro até o 72 Qilou ainda com luz."
               }
             },
             {
               "type": "star",
               "period": "night",
-              "time": "20:20–21:25",
+              "time": "~17:45–19:30",
               "text": {
-                "en": "Tianmen Fox Fairy show",
-                "pt": "Show da Raposa de Tianmen (天门狐仙)"
+                "en": "72 Qilou (72奇楼) at dusk, dinner as the lights come on",
+                "pt": "72 Qilou (72奇楼) no fim da tarde, jantar com as luzes acendendo"
               },
               "note": {
-                "en": "A musical staged on the real mountainside, with the cliff, a waterfall and a valley as the set instead of a backdrop, and Tianmen Shan itself black above it. Roughly 65 minutes, one session a night at 20:20, running March to December. It is entirely outdoors and the valley gets cold after dark in late October, so take the warm layer you bought in Shanghai on day one. Non-refundable, and this is the right night for it because you are already at the foot of this mountain.",
-                "pt": "Um musical encenado na encosta real da montanha, com o penhasco, uma cachoeira e um vale como cenario em vez de um fundo pintado, e o Tianmen Shan preto por cima de tudo. Uns 65 minutos, uma sessao por noite as 20:20, de marco a dezembro. E inteiramente ao ar livre e o vale esfria depois do escuro no fim de outubro, entao leve o casaco que voce comprou em Shanghai no primeiro dia. Nao reembolsavel, e esta e a noite certa porque voce ja esta no pe desta montanha."
+                "en": "A giant building in the style of the Tujia stilt houses, built against a rock wall in the middle of Zhangjiajie city, with a food street and lookouts inside and around it. Sunset is around 18:20, and the whole facade lights up after dark, which is the photo. The outside is free; some inner areas charge. Touristy, honestly, and an hour or so is plenty, but it asks nothing of you after a long day: eat here and leave whenever you like.",
+                "pt": "Um prédio gigante no estilo das palafitas tujia, construído contra um paredão de rocha no meio da cidade de Zhangjiajie, com rua de comida e mirantes dentro e em volta. O pôr do sol é por volta das 18:20, e a fachada inteira acende depois que escurece, que é a foto. Por fora é de graça; algumas áreas internas cobram. Turístico, sinceramente, e uma hora e pouco basta, mas não pede nada depois de um dia longo: jantem aqui e vão embora quando quiserem."
               },
-              "address": "Tianmen Mountain Valley Grand Theatre, Yongding District · 湖南省张家界市永定区 天门狐仙剧场"
+              "address": "Wulingshan Avenue, Yongding District, Zhangjiajie · 湖南省张家界市永定区武陵山大道 72奇楼",
+              "coords": [
+                29.1476,
+                110.4508
+              ]
             },
             {
               "type": "move",
               "period": "night",
-              "time": "~21:40 → ~22:40",
+              "time": "~19:45 → ~20:45",
               "text": {
                 "en": "Back up to Wulingyuan, same bed",
                 "pt": "De volta a Wulingyuan, mesma cama"
               },
               "note": {
-                "en": "An hour of road, and the latest night of the trip so far. Pack before you leave in the morning is not an option now, so pack tomorrow at checkout: the 18th starts at 08:00 with the park or the lake, then the train.",
-                "pt": "Uma hora de estrada, e a noite mais tarde da viagem ate aqui. Arrumar a mala hoje ja nao da, entao arrume amanha no check-out: o dia 18 comeca as 08:00 com o parque ou o lago, e depois o trem."
+                "en": "About an hour of road. Pack tonight: the 18th starts at 08:00 with Baofeng Lake, then checkout and the train.",
+                "pt": "Cerca de uma hora de estrada. Arrumem a mala hoje: o dia 18 começa às 08:00 com o lago Baofeng, depois check-out e o trem."
               }
             }
           ]
@@ -1547,8 +1538,8 @@
         },
         {
           "note": {
-            "en": "Oct 22 (Thu) - Last day in Guangxi, and the only Guilin you asked for: one afternoon on the way to the plane. Slow start in Yangshuo, check out, drift back up the 80 km, collect the two city sights that are actually worth it, and be at the airport before you have to run. The flight north leaves 22:15 and lands after midnight, so the Beijing bed is booked from tonight.",
-            "pt": "22/out (qui) - Ultimo dia em Guangxi, e a unica Guilin que voces pediram: uma tarde a caminho do aviao. Comeco lento em Yangshuo, check-out, subir de volta os 80 km, recolher as duas atracoes urbanas que valem, e chegar ao aeroporto antes de precisar correr. O voo para o norte sai 22:15 e pousa depois da meia-noite, entao a cama em Pequim esta reservada desde hoje."
+            "en": "Oct 22 (Thu) - Last day in Guangxi, and the only Guilin you asked for: one afternoon on the way to the plane. Slow start in Yangshuo, check out, drift back up the 80 km, collect the city sights that are actually worth it, and be at the airport before you have to run. The flight north leaves 22:15 and lands after midnight, so the Beijing bed is booked from tonight.",
+            "pt": "22/out (qui) - Ultimo dia em Guangxi, e a unica Guilin que voces pediram: uma tarde a caminho do aviao. Comeco lento em Yangshuo, check-out, subir de volta os 80 km, recolher as atrações urbanas que valem, e chegar ao aeroporto antes de precisar correr. O voo para o norte sai 22:15 e pousa depois da meia-noite, entao a cama em Pequim esta reservada desde hoje."
           },
           "items": [
             {
@@ -1578,8 +1569,8 @@
                 "pt": "Yangshuo ate a cidade de Guilin de carro"
               },
               "note": {
-                "en": "About 65 km north, 1h15 to 1h30 by car or DiDi, roughly CNY 200 to 250. Hire the car for the whole day if you can - it then carries you between Elephant Trunk Hill, lunch, Reed Flute Cave and the airport with the bags in the boot, which is worth a lot on a day you have already checked out.",
-                "pt": "Uns 65 km ao norte, 1h15 a 1h30 de carro ou DiDi, uns CNY 200 a 250. Contrate o carro para o dia inteiro se der - ele entao te leva entre o Morro da Tromba, o almoco, a Gruta da Flauta e o aeroporto com as malas no porta-malas, o que vale muito num dia em que voce ja fez o check-out."
+                "en": "About 65 km north, 1h15 to 1h30 by car or DiDi, roughly CNY 200 to 250. Hire the car for the whole day if you can - it then carries you between Elephant Trunk Hill, lunch, the old quarter, the lakes and the airport with the bags in the boot, which is worth a lot on a day you have already checked out.",
+                "pt": "Uns 65 km ao norte, 1h15 a 1h30 de carro ou DiDi, uns CNY 200 a 250. Contrate o carro para o dia inteiro se der - ele entao te leva entre o Morro da Tromba, o almoço, o bairro antigo, os lagos e o aeroporto com as malas no porta-malas, o que vale muito num dia em que voce ja fez o check-out."
               },
               "address": "Downtown Guilin, Xiufeng District · 桂林市秀峰区市中心",
               "coords": [
@@ -1639,24 +1630,40 @@
               ]
             },
             {
-              "type": "star",
+              "type": "bullet",
               "period": "afternoon",
-              "time": "~15:00-16:30",
+              "time": "~14:30–16:30",
               "text": {
-                "en": "Reed Flute Cave",
-                "pt": "Gruta da Flauta de Junco"
+                "en": "Dongxi Alley and Zhengyang Street",
+                "pt": "Beco Dongxi e rua Zhengyang"
               },
               "note": {
-                "en": "A 240 m walking route through a limestone cavern of stalactites and stone curtains, lit in colour, with a mirror pool at the end that doubles the whole chamber. About CNY 90 to 110. The name comes from the reeds at the mouth that were cut into flutes; the ink inscriptions on the walls go back to the Tang dynasty. The straight assessment: it is well done, and it is also the second lit cave of this trip after Yellow Dragon in Zhangjiajie, which was bigger and had an underground river. If the day has been enough already, spend the 90 minutes on the Li embankment instead and go to the airport early - nothing is lost.",
-                "pt": "Um percurso a pe de 240 m por uma caverna de calcario com estalactites e cortinas de pedra, iluminada em cores, com um lago-espelho no fim que duplica a camara inteira. Uns CNY 90 a 110. O nome vem dos juncos da boca da gruta, que eram cortados em flautas; as inscricoes a tinta nas paredes remontam a dinastia Tang. A avaliacao direta: e bem feita, e e tambem a segunda caverna iluminada desta viagem depois da do Dragao Amarelo em Zhangjiajie, que era maior e tinha rio subterraneo. Se o dia ja tiver bastado, gaste os 90 minutos na beira do Li e va cedo para o aeroporto - nao se perde nada."
+                "en": "The restored old quarter of Guilin, grey-brick lanes of snacks, tea and small shops, ten minutes on foot from Elephant Trunk Hill and running into the Zhengyang pedestrian street. This is the Guilin evening you gave up by sleeping in Yangshuo, done in the afternoon instead. No ticket: wander, sit down for tea.",
+                "pt": "O bairro antigo restaurado de Guilin, vielas de tijolo cinza com petiscos, chá e lojinhas, a dez minutos a pé do Morro da Tromba e emendando na rua de pedestres Zhengyang. É a noite de Guilin que vocês trocaram por dormir em Yangshuo, feita à tarde. Sem ingresso: andem, sentem para um chá."
               },
-              "address": "Reed Flute Cave, Ludi Road, Xiufeng District, Guilin · 桂林市秀峰区芦笛路芦笛岩",
-              "tickets": "~CNY 90-110 per person · ~CNY 90-110 por pessoa",
+              "address": "Dongxi Alley, Xiufeng District, Guilin · 广西桂林市秀峰区 东西巷",
               "coords": [
-                25.3119,
-                110.2671
-              ],
-              "optional": true
+                25.2816,
+                110.2945
+              ]
+            },
+            {
+              "type": "star",
+              "period": "afternoon",
+              "time": "~16:30–18:30",
+              "text": {
+                "en": "Sun and Moon Pagodas on Shan Lake, early dinner",
+                "pt": "Pagodes do Sol e da Lua no lago Shan, jantar cedo"
+              },
+              "note": {
+                "en": "Two pagodas standing in the lake in the middle of the city, the bronze Sun Pagoda and the stone Moon Pagoda, linked by a tunnel under the water. Walk the lakeshore in the late light, sunset is around 18:20, and eat nearby before the airport. They are lit at night; if the lights come on before you leave, you get the postcard too.",
+                "pt": "Dois pagodes dentro do lago no meio da cidade, o do Sol de bronze e o da Lua de pedra, ligados por um túnel sob a água. Caminhem pela beira do lago na luz do fim da tarde, o pôr do sol é por volta das 18:20, e jantem por perto antes do aeroporto. Eles acendem à noite; se as luzes acenderem antes de vocês saírem, ganham o cartão-postal também."
+              },
+              "address": "Shan Lake, Xiangshan District, Guilin · 广西桂林市象山区 杉湖 日月双塔",
+              "coords": [
+                25.2744,
+                110.2904
+              ]
             },
             {
               "type": "move",
@@ -1667,8 +1674,8 @@
                 "pt": "Cidade de Guilin ate o aeroporto de Guilin (KWL)"
               },
               "note": {
-                "en": "About 28 km west, 35 to 45 minutes by car, roughly CNY 100 to 130 - much easier than the 1h45 it would have been from Yangshuo, which is the quiet reason the circuit ends in the city. Leave a wide margin anyway: this is the one flight you cannot miss. Eat before you go.",
-                "pt": "Uns 28 km a oeste, 35 a 45 minutos de carro, uns CNY 100 a 130 - bem mais facil do que a 1h45 que seria a partir de Yangshuo, e essa e a razao silenciosa de o circuito terminar na cidade. Ainda assim deixe margem larga: este e o voo que voce nao pode perder. Coma antes de ir."
+                "en": "About 28 km west, 35 to 45 minutes by car, roughly CNY 100 to 130 - much easier than the 1h45 it would have been from Yangshuo, which is the quiet reason the circuit ends in the city. Leave a wide margin anyway: this is the one flight you cannot miss. Flight at 22:15, so this keeps a wide margin.",
+                "pt": "Uns 28 km a oeste, 35 a 45 minutos de carro, uns CNY 100 a 130 - bem mais facil do que a 1h45 que seria a partir de Yangshuo, e essa e a razao silenciosa de o circuito terminar na cidade. Ainda assim deixe margem larga: este e o voo que voce nao pode perder. O voo sai às 22:15, então isto deixa margem larga."
               },
               "address": "Guilin Liangjiang International Airport · 桂林两江国际机场",
               "coords": [
@@ -1693,14 +1700,14 @@
             {
               "type": "move",
               "period": "night",
-              "time": "22:00 → ~00:40 (+1)",
+              "time": "22:15 → ~00:55 (+1)",
               "text": {
                 "en": "Flight Guilin KWL to Beijing",
                 "pt": "Voo Guilin KWL ate Pequim"
               },
               "note": {
-                "en": "The cheap night flight the whole route was rebuilt around: about 3 hours in the air, landing in Beijing around 00:40. Confirm the exact flight, the 2026 time and whether it lands at Daxing (PKX) or Capital (PEK) when you book. You reach the hotel near 01:30, which is why tomorrow starts late by design.",
-                "pt": "O voo noturno barato em torno do qual a rota inteira foi refeita: cerca de 3 horas de voo, pousando em Pequim por volta das 00:40. Confirme o voo exato, o horario de 2026 e se pousa em Daxing (PKX) ou Capital (PEK) ao reservar. Voce chega ao hotel perto da 01:30, e por isso amanha comeca tarde de proposito."
+                "en": "The night flight the whole route was rebuilt around, already booked: about 3 hours in the air, landing at Beijing Daxing (PKX) around 00:55. You reach the hotel near 02:00, which is why tomorrow starts late by design.",
+                "pt": "O voo noturno em torno do qual a rota inteira foi refeita, já comprado: cerca de 3 horas de voo, pousando em Pequim Daxing (PKX) por volta das 00:55. Vocês chegam ao hotel perto das 02:00, e por isso amanhã começa tarde de propósito."
               },
               "address": "Beijing Daxing PKX · 北京大兴国际机场",
               "coords": [
@@ -4498,23 +4505,6 @@
       },
       "url": "https://www.chinadiscovery.com/hunan/zhangjiajie/tianmen-mountain/guide-to-tickets.html",
       "kind": "tour"
-    },
-    {
-      "id": "zjj-fox",
-      "date": "2026-10-17",
-      "what": {
-        "en": "Tianmen Fox Fairy show (天门狐仙), 20:20",
-        "pt": "Show da Raposa de Tianmen (天门狐仙), 20:20"
-      },
-      "where": {
-        "en": "Trip.com",
-        "pt": "Trip.com"
-      },
-      "detail": {
-        "en": "Non-refundable. Theatre in the valley at the foot of Tianmen (天门狐仙剧场), shuttle from the cableway base. Be there by 19:50.",
-        "pt": "Não reembolsável. Teatro no vale ao pé do Tianmen (天门狐仙剧场), shuttle desde a base do teleférico. Esteja lá às 19:50."
-      },
-      "kind": "show"
     },
     {
       "id": "train-zjj-furong",

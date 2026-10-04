@@ -118,6 +118,11 @@
       <Point><coordinates>110.4789,29.0499,0</coordinates></Point>
     </Placemark>
     <Placemark>
+      <name>72 Qilou (72奇楼) no fim da tarde, jantar com as luzes acendendo</name>
+      <description>Zhangjiajie · Wulingshan Avenue, Yongding District, Zhangjiajie · 湖南省张家界市永定区武陵山大道 72奇楼</description>
+      <Point><coordinates>110.4508,29.1476,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
       <name>Lago Baofeng (宝峰湖)</name>
       <description>Furong · Baofeng Road, Wulingyuan District · 湖南省张家界市武陵源区宝峰路</description>
       <Point><coordinates>110.5469203,29.3257585,0</coordinates></Point>
@@ -273,9 +278,9 @@
       <Point><coordinates>110.2915,25.2701,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <name>Gruta da Flauta de Junco</name>
-      <description>Guilin / Yangshuo · Reed Flute Cave, Ludi Road, Xiufeng District, Guilin · 桂林市秀峰区芦笛路芦笛岩</description>
-      <Point><coordinates>110.2671,25.3119,0</coordinates></Point>
+      <name>Pagodes do Sol e da Lua no lago Shan, jantar cedo</name>
+      <description>Guilin / Yangshuo · Shan Lake, Xiangshan District, Guilin · 广西桂林市象山区 杉湖 日月双塔</description>
+      <Point><coordinates>110.2904,25.2744,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <name>Cidade de Guilin ate o aeroporto de Guilin (KWL)</name>
