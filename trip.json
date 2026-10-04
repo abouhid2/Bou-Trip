@@ -245,8 +245,8 @@
                 "pt": "Onibus safari pela area de carro"
               },
               "note": {
-                "en": "The reason to arrive at opening. A caged bus crosses the open enclosures where lions, tigers, bears, cheetahs and wolves roam loose, and the animals are far more active in the first hour than they will be at noon. Later in the day this is the longest queue in the park.",
-                "pt": "O motivo de chegar na abertura. Um onibus gradeado atravessa os recintos abertos onde leoes, tigres, ursos, guepardos e lobos andam soltos, e os bichos estao bem mais ativos na primeira hora do que estarao ao meio-dia. Mais tarde essa vira a maior fila do parque."
+                "en": "The reason to arrive at opening. A caged bus crosses the open enclosures where lions, tigers, bears, cheetahs and wolves roam loose, and the animals are far more active in the first hour than they will be at noon. Later in the day this is the longest queue in the park. Your ticket already includes this bus.",
+                "pt": "O motivo de chegar na abertura. Um onibus gradeado atravessa os recintos abertos onde leoes, tigres, ursos, guepardos e lobos andam soltos, e os bichos estao bem mais ativos na primeira hora do que estarao ao meio-dia. Mais tarde essa vira a maior fila do parque. O ingresso comprado já inclui este ônibus."
               },
               "address": "178 Nanliu Road, Nanhui, Pudong New Area · 上海市浦东新区南六公路178号",
               "coords": [
@@ -456,21 +456,21 @@
         },
         {
           "note": {
-            "en": "15/Oct, Thu - The core day, and the one the whole plan bets on. This is your only day inside the National Forest Park, so it has to hold the postcard: the Bailong Elevator up, Yuanjiajie and the Avatar pillars in the morning mist, Tianzi Mountain in the raking afternoon light. The gate opens 07:00 and the elevator at 08:00, but the elevator queue routinely runs 1-2 hours from April to October - being on the first eco-bus is the difference between riding at 08:15 and 10:00. The park ticket is booked ahead with a time slot (East Gate Line B; see the To buy tab). Honest note: if you wake to heavy fog the pillars may hide, and there is still a hedge - tomorrow's Yellow Dragon Cave is indoors and does not care about weather, so you can swap the two days and hope the mountain reads better. It costs more than it used to: tomorrow is now a long day with the canyon and the night show in it, so only make the trade if the fog is genuinely thick. Sleep in Wulingyuan tonight.",
-            "pt": "15/out, qui - O dia central, e aquele em que o plano inteiro aposta. Este e seu unico dia dentro do Parque Nacional, entao ele precisa segurar o cartao-postal: o Elevador Bailong para cima, Yuanjiajie e os pilares de Avatar na bruma da manha, a Montanha Tianzi na luz baixa da tarde. O portao abre as 7h e o elevador as 8h, mas a fila do elevador rotineiramente leva de 1 a 2 horas entre abril e outubro - estar no primeiro onibus ecologico e a diferenca entre subir as 8h15 ou as 10h. O ingresso do parque se compra antes, com horário marcado (East Gate Line B; veja a aba Comprar). Aviso honesto: se acordar com nevoa fechada os pilares podem sumir, e ainda ha uma protecao - a Caverna do Dragao Amarelo de amanha e coberta e nao liga para o tempo, entao da para trocar os dois dias e torcer para a montanha render melhor. Custa mais caro do que antes: amanha agora e um dia longo, com o canion e o show noturno dentro dele, entao so faca a troca se a nevoa estiver mesmo fechada. Durma em Wulingyuan hoje."
+            "en": "15/Oct, Thu - The core day, and the one the whole plan bets on. This is your only day inside the National Forest Park, so it has to hold the postcard: the Bailong Elevator up, Yuanjiajie and the Avatar pillars in the morning mist, Tianzi Mountain in the raking afternoon light. The ticket is bought with entry between 08:00 and 09:00 at the East Gate (Line B), and the elevator queue routinely runs 1-2 hours from April to October, so be at the gate at 08:00 sharp, the very start of your slot: an early bus is the difference between riding around 09:00 and well after 10:00. Honest note: if you wake to heavy fog the pillars may hide, and there is still a hedge - tomorrow's Yellow Dragon Cave is indoors and does not care about weather, so you can swap the two days and hope the mountain reads better. It costs more than it used to: tomorrow is now a long day with the canyon and the night show in it, so only make the trade if the fog is genuinely thick. Sleep in Wulingyuan tonight.",
+            "pt": "15/out, qui - O dia central, e aquele em que o plano inteiro aposta. Este e seu unico dia dentro do Parque Nacional, entao ele precisa segurar o cartao-postal: o Elevador Bailong para cima, Yuanjiajie e os pilares de Avatar na bruma da manha, a Montanha Tianzi na luz baixa da tarde. O ingresso já está comprado, com entrada entre 08:00 e 09:00 pelo East Gate (Line B), e a fila do elevador rotineiramente leva de 1 a 2 horas entre abril e outubro, então esteja no portão às 08:00 em ponto, no começo da sua janela: pegar um ônibus cedo é a diferença entre subir por volta das 9h ou bem depois das 10h. Aviso honesto: se acordar com nevoa fechada os pilares podem sumir, e ainda ha uma protecao - a Caverna do Dragao Amarelo de amanha e coberta e nao liga para o tempo, entao da para trocar os dois dias e torcer para a montanha render melhor. Custa mais caro do que antes: amanha agora e um dia longo, com o canion e o show noturno dentro dele, entao so faca a troca se a nevoa estiver mesmo fechada. Durma em Wulingyuan hoje."
           },
           "items": [
             {
               "type": "move",
               "period": "morning",
-              "time": "07:00 → ~07:45",
+              "time": "08:00 → ~08:45",
               "text": {
-                "en": "Wulingyuan gate (East Gate) at opening, then eco-bus to the elevator",
-                "pt": "Portão de Wulingyuan (East Gate) na abertura, depois ônibus ecológico até o elevador"
+                "en": "Wulingyuan gate (East Gate) at 08:00, start of your slot, then eco-bus to the elevator",
+                "pt": "Portão de Wulingyuan (East Gate) às 08:00, começo do seu horário, depois ônibus ecológico até o elevador"
               },
               "note": {
-                "en": "The East Gate is the Wulingyuan visitor centre, about 1 km west of the hotel along Jundi Road: a 15-minute walk or a short taxi. Gates open at 07:00 and the eco-bus to Bailong takes about 40 minutes. Be on the first one: this single decision decides whether your morning is three hours of pillars or two hours of queue. Bring the passport: the first entry registers your face, and that face is your ticket for the next 4 days.",
-                "pt": "O East Gate é o centro de visitantes de Wulingyuan, a cerca de 1 km a oeste do hotel pela Jundi Road: 15 minutos a pé ou um táxi curto. Os portões abrem às 7h e o ônibus ecológico até o Bailong leva cerca de 40 minutos. Esteja no primeiro: esta única decisão define se sua manhã será de três horas de pilares ou de duas horas de fila. Leve o passaporte: a primeira entrada cadastra seu rosto, e ele vira o ingresso pelos próximos 4 dias."
+                "en": "The East Gate is the Wulingyuan visitor centre, about 1 km west of the hotel along Jundi Road: a 15-minute walk or a short taxi. Your ticket enters between 08:00 and 09:00, so be at the gate at 08:00 sharp; the eco-bus to Bailong takes about 40 minutes. Entering at the start of the slot: this single decision decides whether your morning is three hours of pillars or two hours of queue. Bring the passport: the first entry registers your face, and that face is your ticket for the next 4 days.",
+                "pt": "O East Gate é o centro de visitantes de Wulingyuan, a cerca de 1 km a oeste do hotel pela Jundi Road: 15 minutos a pé ou um táxi curto. Seu ingresso entra entre 08:00 e 09:00, então esteja no portão às 08:00 em ponto; o ônibus ecológico até o Bailong leva cerca de 40 minutos. Entrar no começo da janela: esta única decisão define se sua manhã será de três horas de pilares ou de duas horas de fila. Leve o passaporte: a primeira entrada cadastra seu rosto, e ele vira o ingresso pelos próximos 4 dias."
               },
               "address": "Wulingyuan East Gate, Jundi Road, Wulingyuan District · 武陵源风景名胜区游客服务中心（东门），张家界市武陵源区军邸路",
               "coords": [
@@ -482,14 +482,14 @@
             {
               "type": "star",
               "period": "morning",
-              "time": "08:00–08:30 (fila 1–2h se chegar tarde)",
+              "time": "~08:45–09:30 (fila pode passar de 1h)",
               "text": {
                 "en": "Bailong Elevator",
                 "pt": "Elevador Bailong"
               },
               "note": {
-                "en": "A 326m glass elevator bolted to the cliff, two minutes from canyon floor to the Yuanjiajie plateau. Opens 08:00 in peak season; the queue commonly hits 1 to 2 hours from April to October, hence the 07:00 start. ¥65 one way, valid only on the booked date.",
-                "pt": "Um elevador panoramico de 326m encravado no penhasco, dois minutos do fundo do canyon ate o planalto de Yuanjiajie. Abre as 8h na alta temporada; a fila comumente chega a 1 ou 2 horas entre abril e outubro, dai a largada as 7h. ¥65 por trecho, valido so na data reservada."
+                "en": "A 326m glass elevator bolted to the cliff, two minutes from canyon floor to the Yuanjiajie plateau. Opens 08:00 in peak season; the queue commonly hits 1 to 2 hours from April to October, hence being at the gate at 08:00 sharp. ¥65 one way, valid only on the booked date.",
+                "pt": "Um elevador panoramico de 326m encravado no penhasco, dois minutos do fundo do canyon ate o planalto de Yuanjiajie. Abre as 8h na alta temporada; a fila comumente chega a 1 ou 2 horas entre abril e outubro, daí estar no portão às 8h em ponto. ¥65 por trecho, valido so na data reservada."
               },
               "address": "Wulingyuan District, Zhangjiajie · 湖南省张家界市武陵源区 百龙天梯",
               "coords": [
@@ -500,7 +500,7 @@
             {
               "type": "star",
               "period": "morning",
-              "time": "08:45–11:45",
+              "time": "~09:30–12:15",
               "text": {
                 "en": "Yuanjiajie and First Bridge Under Heaven",
                 "pt": "Yuanjiajie e a Primeira Ponte sob o Ceu"
@@ -1449,13 +1449,14 @@
                 "pt": "Impression Liu Sanjie, Zhang Yimou sobre o proprio rio"
               },
               "note": {
-                "en": "Back in Yangshuo, and the stage is the river with the karst peaks lit behind it. It is tight against the raft: the raft ends 17:30 in Xingping and you need 40 min back, so buy the later session and eat afterwards.",
-                "pt": "De volta a Yangshuo, e o palco e o rio com os picos de karst iluminados atras. Fica justo com a balsa: ela termina 17:30 em Xingping e voces precisam de 40 min de volta, entao comprem a sessao mais tarde e jantem depois."
+                "en": "Back in Yangshuo, and the stage is the river with the karst peaks lit behind it. It is tight against the raft: the raft ends 17:30 in Xingping and you need 40 min back, and your ticket is the 19:30 session, so that leaves about an hour for a quick dinner in Yangshuo before. Be at the venue by 19:00.",
+                "pt": "De volta a Yangshuo, e o palco e o rio com os picos de karst iluminados atras. Fica justo com a balsa: ela termina 17:30 em Xingping e voces precisam de 40 min de volta, e o ingresso é da sessão das 19:30, então sobra ~1 h para um jantar rápido em Yangshuo antes. Estejam no teatro às 19:00."
               },
               "coords": [
                 24.7699694,
                 110.5035926
-              ]
+              ],
+              "time": "19:30"
             }
           ]
         },
@@ -4382,22 +4383,51 @@
   ],
   "toBuy": [
     {
+      "id": "sh-zoo",
+      "date": "2026-10-13",
+      "kind": "tour",
+      "bought": true,
+      "what": {
+        "en": "Shanghai Wild Animal Park, ticket with the drive-through bus",
+        "pt": "Shanghai Wild Animal Park, ingresso com o ônibus da área de carro"
+      },
+      "where": {
+        "en": "Bought on Trip.com",
+        "pt": "Comprado no Trip.com"
+      }
+    },
+    {
+      "id": "sh-songcheng",
+      "date": "2026-10-29",
+      "kind": "show",
+      "bought": true,
+      "what": {
+        "en": "Shanghai Songcheng Show Park, show at 17:30, VIP seats (park entry included)",
+        "pt": "Shanghai Songcheng Show Park, espetáculo às 17:30, assentos VIP (entrada do parque inclusa)"
+      },
+      "where": {
+        "en": "Bought on Trip.com",
+        "pt": "Comprado no Trip.com"
+      }
+    },
+    {
       "id": "zjj-park",
       "date": "2026-10-15",
       "what": {
-        "en": "Zhangjiajie National Forest Park",
-        "pt": "Parque Nacional de Zhangjiajie"
+        "en": "Zhangjiajie National Forest Park, 4-day ticket with eco-bus",
+        "pt": "Parque Nacional de Zhangjiajie, ingresso de 4 dias com ônibus ecológico"
       },
       "where": {
-        "en": "Trip.com → package \"East gate - Line B (Bailong Elevator direction)\", date 15 Oct",
-        "pt": "Trip.com → pacote \"East gate - Line B (direção Elevador Bailong)\", data 15/out"
+        "en": "Bought on Trip.com: valid 15-18 Oct, first entry on the 15th between 08:00 and 09:00, East Gate Line B",
+        "pt": "Comprado no Trip.com: vale de 15 a 18/out, 1ª entrada no dia 15 entre 08:00 e 09:00, East Gate Line B"
       },
       "detail": {
-        "en": "East Gate = the Wulingyuan gate (武陵源 东门), about 1 km from the hotel. Line B = up by the Bailong Elevator, down by the Tianzi cableway, which is the plan.\n¥236, valid 4 consecutive days from the first entry, any gate. EVERY entry needs a booked time slot, including re-entries (e.g. 18 Oct).\nPassport: the first entry registers your face.",
-        "pt": "East Gate = o portão de Wulingyuan (武陵源 东门), a ~1 km do hotel. Line B = sobe pelo Elevador Bailong e desce pelo teleférico de Tianzi, que é o plano.\n¥236, vale 4 dias corridos a partir da 1ª entrada, por qualquer portão. TODA entrada precisa de horário reservado, inclusive as voltas (ex.: 18/out).\nPassaporte: a 1ª entrada cadastra o rosto."
+        "en": "East Gate = the Wulingyuan gate (武陵源 东门), about 1 km from the hotel. Line B = up by the Bailong Elevator, down by the Tianzi cableway, which is the plan.\nValid 4 consecutive days from the first entry, any gate. EVERY entry needs a booked time slot, including re-entries (e.g. 18 Oct).\nPassport: the first entry registers your face.",
+        "pt": "East Gate = o portão de Wulingyuan (武陵源 东门), a ~1 km do hotel. Line B = sobe pelo Elevador Bailong e desce pelo teleférico de Tianzi, que é o plano.\nVale 4 dias corridos a partir da 1ª entrada, por qualquer portão. TODA entrada precisa de horário reservado, inclusive as voltas (ex.: 18/out).\nPassaporte: a 1ª entrada cadastra o rosto."
       },
       "url": "https://www.trip.com/travel-guide/attraction/zhangjiajie/zhangjiajie-national-forest-park-10559092",
-      "kind": "tour"
+      "kind": "tour",
+      "bought": true
     },
     {
       "id": "zjj-lifts",
@@ -4543,18 +4573,19 @@
       "id": "ys-impression",
       "date": "2026-10-20",
       "what": {
-        "en": "Impression Liu Sanjie (Yangshuo)",
-        "pt": "Impression Liu Sanjie (Yangshuo)"
+        "en": "Impression Liu Sanjie, 19:30, VIP area B2",
+        "pt": "Impression Liu Sanjie, 19:30, Área VIP B2"
       },
       "where": {
-        "en": "Trip.com, the LATER session",
-        "pt": "Trip.com, a sessão MAIS TARDE"
+        "en": "Bought on Trip.com",
+        "pt": "Comprado no Trip.com"
       },
       "detail": {
-        "en": "The raft ends at 17:30 in Xingping and it is 40 min back, so the first session is too tight.",
-        "pt": "A balsa termina 17:30 em Xingping e são 40 min de volta, então a primeira sessão fica apertada demais."
+        "en": "19:30 session: the raft ends 17:30 in Xingping and it is 40 min back, so there is about an hour for a quick dinner before. Be at the venue by 19:00.",
+        "pt": "Sessão das 19:30: a balsa termina 17:30 em Xingping e são 40 min de volta, então sobra ~1 h para um jantar rápido antes. Estejam no teatro às 19:00."
       },
-      "kind": "show"
+      "kind": "show",
+      "bought": true
     },
     {
       "id": "bj-forbidden",

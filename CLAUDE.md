@@ -210,6 +210,8 @@ da data (trem na China: 15 dias antes; Cidade Proibida: 7). "Já comprei" fica s
   "url": "https://..."
 }
 ```
+Quando a pessoa já comprou, ponha `"bought": true`: o card aparece como comprado em qualquer aparelho
+(o "Já comprei" do botão só vale no aparelho onde foi marcado). Nunca publique o nº da reserva: o site é público.
 Ponha no `detail` o que costuma dar errado na hora: **qual estação** (nome local), qual portão, qual pacote.
 
 ### Frases úteis (`phrases[]`) — opcional
