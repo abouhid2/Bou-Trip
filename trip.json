@@ -4085,7 +4085,8 @@
       "coords": [
         40.0904829,
         113.2905569
-      ]
+      ],
+      "base": "Beijing"
     },
     {
       "city": {
@@ -4107,7 +4108,8 @@
       "coords": [
         40.0876215,
         113.2771686
-      ]
+      ],
+      "base": "Beijing"
     },
     {
       "city": {
@@ -4243,7 +4245,8 @@
       },
       "address": "54 Daru Lane, Gusu District · 江苏省苏州市姑苏区大儒巷54号",
       "price": "¥900+/pessoa",
-      "url": "https://guide.michelin.com/us/en/jiang-su/suzhou_1031079/restaurant/pingjiangsong"
+      "url": "https://guide.michelin.com/us/en/jiang-su/suzhou_1031079/restaurant/pingjiangsong",
+      "base": "Shanghai"
     },
     {
       "city": {
@@ -4265,7 +4268,8 @@
       "coords": [
         31.3127714,
         120.6215161
-      ]
+      ],
+      "base": "Shanghai"
     },
     {
       "city": {
@@ -4288,7 +4292,8 @@
         31.3101121,
         120.6168809
       ],
-      "url": "https://guide.michelin.com/en/jiang-su/suzhou_1031079/restaurant/tong-de-xing-jiayu-fang"
+      "url": "https://guide.michelin.com/en/jiang-su/suzhou_1031079/restaurant/tong-de-xing-jiayu-fang",
+      "base": "Shanghai"
     }
   ],
   "stays": [
